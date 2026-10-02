@@ -26,3 +26,9 @@ artifacts/**/*.png
 artifacts/**/run.log
 artifacts/**/candidates.jpg
 artifacts/**/heldout-candidates.jpg
+
+# Immutable historical Chinese snapshots stay local and in prior Git history
+artifacts/model/source_snapshot.zip
+artifacts/preview_v2/source_snapshot.zip
+artifacts/preview_v3/source_snapshot.zip
+artifacts/model/app-preview.jpg

@@ -1,77 +1,77 @@
-# 预览改进实施计划（2026-10-02）
+# Preview Improvement Plan (2026-10-02)
 
-## 目标与范围
+## Goal and scope
 
-改善已观察到的天空泛白、层次减弱和低分辨率问题。模型建议、预览实际采用的值和下载内容必须对应。保持已验证的 ONNX、224×224 模型输入、132D 特征、标签和正式数据划分不变。只应用已验证的 Exposure／HighlightRecovery；其余参数仍实验。预览依旧是自定义近似显影，不宣称 Lightroom/PV2003 等价，不宣称恢复已剪裁的 RAW 通道。
+Improve washed-out skies, reduced tonal separation, and low-resolution previews. Model recommendations, applied preview values, and downloads must agree. Retain the verified ONNX model, 224×224 model inputs, 132D features, labels, and formal splits. Apply only validated Exposure/HighlightRecovery; other parameters remain experimental. Rendering remains a custom approximation, not Lightroom/PV2003 equivalence or recovery of clipped RAW channels.
 
-## 原因与约束
+## Causes and constraints
 
-1. 旧预览从已编码的 8-bit JPEG 解码，原本裁剪的信息已丢失；224×224 图还改变了原图纵横比。
-2. 曝光乘 2^EV 后，旧高光曲线可能仍大于 1，随后 RGB clip 造成新的平坦白块。
-3. 加强压缩不能直接改变模型建议，需明确记录自定义曲线及预览实际采用的参数。
-4. 浏览器保存的权限禁止访问本地页面，本轮不绕过该限制。采用数值检查、真实 DNG 离线渲染和 Streamlit 应用集成测试；真实浏览器验收保留未完成。
+1. The previous preview decoded an encoded 8-bit JPEG; clipped information was already absent. Its 224×224 shape also distorted aspect ratio.
+2. After multiplying exposure by 2^EV, the old highlight curve could exceed 1; RGB clipping then created flat white areas.
+3. Stronger compression must not change model recommendations. Record the custom curve and actual applied parameters explicitly.
+4. Saved browser permissions prohibit access to localhost. Do not bypass them. Use numerical checks, offline real-DNG rendering, and Streamlit integration tests; latest real-browser acceptance remains incomplete.
 
-## 执行顺序
+## Implementation sequence
 
-### 1. 独立预览源
+### 1. Independent preview source
 
-- [x] 在独立 preview.py 中复用已验收的 RAW 双输出函数，保留相机 WB／方向／几何设置。
-- [x] 使用线性 16-bit ProPhoto 输出，经 LibRaw 同版本矩阵转为线性 sRGB；明确显示域的色域裁剪限制。
-- [x] 以最长边 1600 为上限等比缩小，不放大。模型仍使用原先独立的 224×224 JPEG。
-- [x] 在现有受限 worker 中生成预览源，使用 allow_pickle=False 的 NPZ 传回；临时 DNG/NPZ 随任务清理。保留源在当前会话，调节强度无需再次读取 RAW。
-- [x] 为旧会话提供重新生成提示，避免静默使用旧 JPEG 或显示错位数据。
+- [x] Reuse accepted dual-output RAW development in independent `preview.py`, preserving camera WB/orientation/geometry.
+- [x] Convert linear 16-bit ProPhoto to linear sRGB using matching LibRaw matrices; document display-gamut clipping.
+- [x] Preserve aspect ratio, maximum edge 1600, without upscaling. Model inputs remain separate 224×224 JPEGs.
+- [x] Generate the source in the bounded worker and return NPZ with `allow_pickle=False`; clean temporary DNG/NPZ files. Keep source in session so strength changes do not reread RAW.
+- [x] Ask old sessions to regenerate instead of silently using old JPEGs or mismatched results.
 
-### 2. 单调高光保护
+### 2. Monotonic highlight protection (v2)
 
-- [x] Exposure 为请求增益 g=2^EV。默认开启高光保护；RGB 最大通道 m 作为保护量，让所有通道按同一比例缩放以维持 RGB 比例。
-- [x] g>1 时使用端点约束曲线 t=g*m/(1+(g-1)*m)，在 0≤m≤1 时单调、不会把一段高光直接裁成 1；暗部增益趋近 g。
-- [x] g≤1 时使用 t=g*m。HighlightRecovery 用原有明确标注的软压缩代理，在 t>0.6 时单调压缩，不影响其余范围。
-- [x] 关闭保护时提供直接曝光对照，展示新增通道满值像素比例，不能将该对照当成默认优质渲染。
-- [x] 每次从相同线性源计算；0 强度精确返回基准，重复操作不叠加。
+- [x] Exposure requests gain g=2^EV. Protection defaults on. Use maximum RGB channel m and scale all channels together to preserve their ratios.
+- [x] For g>1, v2 uses t=g*m/(1+(g-1)*m), monotonic on 0≤m≤1 without a hard full-value plateau; dark-pixel gain approaches g.
+- [x] For g≤1, t=g*m. The explicitly labeled HighlightRecovery proxy monotonically compresses t>0.6 without affecting lower values.
+- [x] Allow protection-off direct-exposure comparison and report newly full-value-channel pixels; do not present it as the default quality result.
+- [x] Recompute from the same linear source. Zero strength exactly returns baseline; repeated actions do not accumulate.
 
-### 3. 页面与导出
+### 3. Page and export
 
-- [x] 显示保持原比例的应用前／近似应用后图片、真实尺寸及近似语义。
-- [x] 增加 0–100% 应用强度，默认 100%，有效 Exposure=建议EV×强度、有效 Recovery=建议值×强度；建议数值独立保留。
-- [x] 显示实际预览参数和保护开关状态，注明它不是现代 Highlights 映射。
-- [x] PNG 对应当前强度与保护状态；JSON 附 preview 元数据：来源、尺寸、渲染版本、实际参数、强度、保护状态和剪裁统计。
-- [x] 不支持 JPG/PNG 参数预测、不加入新的训练依赖或渲染服务。
+- [x] Display aspect-preserving before/approximate-after images, actual dimensions, and approximation limits.
+- [x] Strength 0–100%, default 100%. Effective EV=recommended EV×strength and recovery=recommended value×strength; keep recommendations separate.
+- [x] Show applied values/protection state and clarify that the proxy is not modern Highlights mapping.
+- [x] PNG reflects current state; JSON includes source/dimensions/renderer/applied values/strength/protection/clipping metadata.
+- [x] Do not add JPG/PNG parameter prediction, training dependencies, or a rendering service.
 
-### 4. 数值与流程验收
+### 4. Numerical and workflow acceptance
 
-- [x] 验证零强度恒等、正负曝光方向、保护映射单调及 RGB 比例、高光压缩暗部不变、有限值／边界、拒绝非法源和参数。
-- [x] 检查尺寸和纵横比、重复渲染、不同强度从同源计算、PNG 与 JSON 匹配。
-- [x] 验证同一 DNG 的模型 JPEG／X／预测不变，部署哈希检查仍通过，推理仍不导入 Torch。
-- [x] 页面测试覆盖样例、两幅图、强度变化、保护开关、两种下载；运行一次完整必要测试。
+- [x] Test zero-strength identity, positive/negative exposure, monotonic protection/RGB ratios, unchanged dark pixels under recovery, finite boundaries, and invalid-source/parameter rejection.
+- [x] Check dimensions/aspect ratio/repeated rendering/same-source strength changes/PNG–JSON correspondence.
+- [x] Verify unchanged model JPEG/X/prediction for the same DNG, passing deployment hashes, and Torch-free inference.
+- [x] App tests cover sample/two images/strength/protection/two downloads; run the necessary full suite.
 
-### 5. 真实照片验收和交付
+### 5. Real-photo acceptance and delivery
 
-- [x] 固定挑选 3 张输入：当前沙漠样例、低亮度样例、高亮度样例（按输入缓存亮度选，非测试集质量调参）。参数分别用已有固定模型预测，不更改模型。
-- [x] 输出原图、旧 224 JPEG 算法结果、直接曝光和新保护渲染对比；统计剪裁比例、尺寸、前景亮度与耗时。
-- [x] 视觉检查天空层次、色偏、光晕及画幅；不得将主观改善包装为模型准确度或 Lightroom 等价。
-- [x] 保存对比图和验收 JSON、同步 README／主计划。若新方案未减少直接曝光导致的高光剪裁，查明原因再交付。
+- [x] Fix three inputs: desert sample, low-brightness sample, and high-brightness sample selected from cached input brightness, not test quality tuning. Use the existing fixed model.
+- [x] Compare baseline/old 224-JPEG/direct-exposure/protected renderings; measure clipping/dimensions/foreground brightness/timing.
+- [x] Review sky detail/color cast/halos/geometry. Subjective improvement is not model accuracy or Lightroom equivalence.
+- [x] Save comparisons/acceptance JSON and update README/master plan. Investigate before delivery if protection fails to reduce direct-exposure clipping.
 
-## 完成标准
+## Completion criteria
 
-默认预览来自比例正确的更高分辨率线性源；数值和应用测试通过；建议与实际应用状态可核对；多张真实输入产生可检查的前后对比；模型契约未改变。忠实 Lightroom 显影和真实浏览器验收保持明确未完成。
+Default preview uses a higher-resolution aspect-preserving linear source. Numerical/app checks pass, recommendations/applied state are auditable, multiple real inputs have reviewable comparisons, and model contracts remain unchanged. Faithful Lightroom and latest real-browser gates remain incomplete.
 
-## 实施结果
+## v2 results
 
-25 项测试通过，禁用 Torch／网络的完整 RAW 预览检查通过；模型与训练缓存契约保持不变。3 张固定样例生成四列对比并完成离线视觉检查。沙漠／暗场样例新增通道满值比例从 1.3167%／1.7179% 降至 0%；明场负曝光样例两种方式均为 0%。沙漠源尺寸 1600×1060，暗场 1060×1600，明场 1600×1065。数据及图片见 artifacts/preview_v2；真实浏览器验收受保存权限限制，未执行。
+25 checks passed, including Torch/network-disabled RAW preview. Model/training-cache contracts stayed unchanged. Three fixed samples produced four-column comparisons and offline visual reviews. New full-channel fractions for desert/dark samples fell from 1.3167%/1.7179% to zero. The bright negative-exposure sample had zero in both modes. Sizes: desert 1600×1060, dark 1060×1600, bright 1600×1065. Reports/comparisons are in `artifacts/preview_v2`; original individual PNGs remain local. Saved permissions prevented real-browser acceptance.
 
-## 后续语义区域调色（本轮不实施）
+## Future regional semantic adjustments (deferred)
 
-现有双分支已经结合整图语义与物理统计。后续若要分别处理天空、地面或人脸，需要另行定义区域掩膜、局部参数及平滑边界，并验证局部标签／损失和颜色一致性。这会扩展六项全局参数契约，不能把当前全局建议直接当成每个区域的最佳值。本轮仅修复预览，不使用这三张图片重新选择模型或调整训练参数。
+The dual-branch model already combines full-image semantics and physical statistics. Separate sky/ground/face adjustments require defined masks/local parameters/soft boundaries and validation of regional labels/losses/color consistency. This expands the six-global-field contract; global recommendations cannot be assumed optimal for each region. This work only fixes previews and does not use these three photos to select/retrain models.
 
-## 第二轮：正常亮部与过曝诊断（2026-10-02）
+## Round 2: Normal highlights and ceiling diagnostics (2026-10-02)
 
-用户确认先实施全局曲线优化与过曝诊断。保留 v2 源码及已有 12 张对比结果，模型、RAW 输入与区域语义契约保持不变。
+The user approved global-curve optimization and overexposure diagnostics first. Preserve v2 source and 12 existing comparisons; keep model/RAW input/regional-semantic contracts unchanged.
 
-- [x] 将全域曝光压缩改为连续肩部曲线：输出 0.6 以下保持线性曝光增益；以上使用单调有理肩部，端点保持 1，连接处一阶导数连续。减少正常暗部／中间调的提前压缩。
-- [x] 高光压缩代理起点由 0.6 改为 0.8，减少普通亮部压暗；仍不宣称旧 Lightroom 参数等价。
-- [x] 统计线性预览源达到通道上限与三通道白色上限的比例，页面与 JSON 明确显示。此诊断发生在显示色域转换后，不能区分传感器过曝、显影剪裁或显示色域裁剪。
-- [x] 验证单调性、肩部连接、RGB 比例、零强度恒等和导出一致性；使用固定 12 张图片比较 v2/v3。
-- [x] 原 4 张测试集图已被查看，本轮用作回归案例，不再视作独立质量验收。额外选取固定随机的未查看测试集图片做检查，不依据结果继续调参。
-- [x] 数值及可视检查通过后采用新版，保留真实浏览器／忠实显影限制，并同步开发记录。
+- [x] Replace global compression with a continuous shoulder. Below output 0.6 retain linear gain; above it use a monotonic rational shoulder with endpoint 1 and continuous first derivative. Avoid early compression of normal shadows/midtones.
+- [x] Move the recovery-proxy knee from 0.6 to 0.8 to reduce normal-highlight darkening; do not claim legacy Lightroom equivalence.
+- [x] Report linear-preview channel/three-channel-white ceiling fractions in page/JSON. These are measured after display-gamut conversion and cannot distinguish sensor overexposure/development/display clipping.
+- [x] Test monotonicity/shoulder continuity/RGB ratios/zero-strength identity/export correspondence; compare v2/v3 on 12 fixed photos.
+- [x] Treat the four previously viewed test photos as regressions, not independent acceptance. Add unseen fixed-random test photos and do not retune based on their results.
+- [x] Adopt the new renderer after numerical/offline review; retain browser/faithful-development limitations and update development records.
 
-第二轮结果：26 项测试通过；16 张固定 DNG 两档强度无新增通道满值，全部离线视觉检查完成；采用 linear-raw-shoulder-v3。原版和新旧对比保存在 artifacts/preview_v3。新增诊断只描述显影后显示源上限，忠实高光恢复仍未完成。
+Round 2: 26 checks passed; all 16 fixed DNGs had zero newly full-value-channel pixels at both strengths and completed offline review. Adopted `linear-raw-shoulder-v3`. Original/new comparisons and provenance are in `artifacts/preview_v3`. Diagnostics only describe the developed display source; faithful highlight reconstruction remains incomplete.

@@ -1,63 +1,70 @@
-# ShotSense 正式验收报告（2026-10-02）
+# ShotSense Production Acceptance Report (2026-10-02)
 
-本地参数建议 MVP 已实现。支持包含有效相机白平衡信息的未调色 DNG；输出旧版 Camera Raw PV2003 绝对参数。业务可接受误差仍待标定。
+The local parameter-recommendation MVP is implemented. It supports unedited DNGs with valid camera WB and returns absolute legacy Camera Raw PV2003 values. Acceptable practical error remains uncalibrated.
 
-## 数据与训练
+## Data and training
 
-- 输入 5000 张：4946 成功、3 标签异常、51 缺少有效相机 WB 的不支持输入；原始数据保留。
-- 固定 photo ID 划分：训练 3957、验证 495、测试 494；seed=42。尚无连拍／近重复分组。
-- 冻结 EfficientNet-B0，训练 MLP；最佳 checkpoint 按验证集宏平均 MAE 选择，骨干权重与 BN buffer 检查保持不变。
+- 5000 inputs: 4946 successful, 3 invalid labels, 51 unsupported missing-camera-WB inputs. Original data retained.
+- Fixed photo-ID split: 3957 training, 495 validation, 494 test; seed 42. Burst/near-duplicate grouping unavailable.
+- Frozen EfficientNet-B0, trainable MLP, best checkpoint selected by validation macro MAE; backbone weights/BN buffers unchanged.
 
-| 模型 | 验证集归一化 MAE | 测试集归一化 MAE |
+| Model | Validation normalized MAE | Test normalized MAE |
 |---|---:|---:|
 | constant | 0.081530 | 0.082541 |
 | physical_linear | 0.068191 | 0.068102 |
 | semantic | 0.074476 | 0.076934 |
 | dual | 0.066111 | 0.067113 |
 
-## 逐参数最终测试
+## Final per-parameter test
 
-| 参数 | 单位 | 双分支 MAE | 常量 MAE | 状态 |
+| Parameter | Unit | Dual MAE | Constant MAE | Status |
 |---|---|---:|---:|---|
-| Exposure | EV | 0.281 | 0.409 | 验证集优于常量，作为建议 |
-| Contrast | slider | 5.989 | 5.759 | 实验输出 |
-| Saturation | slider | 2.958 | 2.656 | 实验输出 |
-| Temperature | K | 592.006 | 773.889 | 实验输出 |
-| Tint | slider | 7.454 | 8.174 | 实验输出 |
-| HighlightRecovery | slider | 7.428 | 10.147 | 验证集优于常量，作为建议 |
+| Exposure | EV | 0.281 | 0.409 | Beats constant on validation; recommended |
+| Contrast | slider | 5.989 | 5.759 | Experimental |
+| Saturation | slider | 2.958 | 2.656 | Experimental |
+| Temperature | K | 592.006 | 773.889 | Experimental |
+| Tint | slider | 7.454 | 8.174 | Experimental |
+| HighlightRecovery | slider | 7.428 | 10.147 | Beats constant on validation; recommended |
 
-双分支测试宏平均误差比常量降低 18.7%。高光恢复的测试误差略高于物理线性回归（7.298）；不声称双分支对每项都最优。
+Dual test macro error was 18.7% below constant. Highlight recovery was slightly worse than physical-linear test MAE 7.298; dual is not best for every field.
 
-## 白平衡与分层
+## White balance and strata
 
-相机、Catalog 标签与训练集 p1/p99 长尾的样本数和逐参数 MAE／RMSE 见 evaluation.json。Catalog 标签重叠且不完整，不能视为完整场景真值。Temperature/Tint 未具备线上同定义的 Kelvin/Tint 基线，保持实验状态。
-- val：明确 As-Shot 基线覆盖 341/495（68.9%）；同 ID 基线／模型色温 MAE 703.2/555.0 K，Tint MAE 7.49/7.83。
-- test：明确 As-Shot 基线覆盖 340/494（68.8%）；同 ID 基线／模型色温 MAE 707.7/600.4 K，Tint MAE 7.03/7.76。
+Camera/Catalog-tag/training-p1/p99-tail counts and MAE/RMSE are in `evaluation.json`. Catalog tags overlap and are incomplete, not full scene ground truth. Temperature/Tint lack matching online absolute baselines and remain experimental.
 
-## 部署
+- Validation explicit As-Shot coverage: 341/495 (68.9%). Matched baseline/model Temperature MAE 703.2/555.0 K, Tint MAE 7.49/7.83.
+- Test explicit As-Shot coverage: 340/494 (68.8%). Matched baseline/model Temperature MAE 707.7/600.4 K, Tint MAE 7.03/7.76.
 
-- FP32 ONNX，动态 batch、双输入、标准化包含在图中；模型体积 18.30 MiB。
-- PyTorch／ORT 最大归一化误差 3.2e-07（容差 1e-4）。
-- macOS-14.8.4-arm64-arm-64bit，CPUExecutionProvider，4 threads，batch=1，预热 10 次、计时 100 次：p50 18.66 ms，p95 19.39 ms；未量化。
-- 完整 RAW→参数耗时包含解码和特征；页面另报告含进程启动的本地任务时间，不与 forward 混用。
-- 推理通过禁用 torch／torchvision 和联网的独立进程检查；同一 DNG 的离线／线上特征与 JPEG 完全一致。
+## Deployment
 
-## 产品支持范围
+- FP32 ONNX, dynamic batch, dual inputs, in-graph standardization; 18.30 MiB.
+- Maximum PyTorch/ORT normalized difference 3.2e-07 (tolerance 1e-4).
+- macOS-14.8.4-arm64-arm-64bit, CPUExecutionProvider, 4 threads, batch=1, 10 warmups/100 timed runs: p50 18.66 ms/p95 19.39 ms. No quantization.
+- Full RAW→parameters includes decoding/features; local-job timing includes process startup and is separate from forward time.
+- Independent inference passed with torch/torchvision/network disabled. Offline/online same-DNG features/JPEG matched exactly.
 
-本地页面提供上传、样例、输入基准显影、验证／实验参数区分与 JSON 下载。文件 128 MB／4000 万像素上限、单进程任务 60 秒超时、临时文件清理与明确失败反馈。更换输入会清除旧结果。忠实 Lightroom 高清渲染、现代 Highlights 映射和业务误差标定尚未完成；本 MVP 不提供 XMP 或叠加 Delta。
+## Product scope
 
-## 应用验收
+Local upload/sample/baseline development, recommended/experimental separation, and JSON download. Limits: 128 MB/40 megapixels, 60-second bounded worker, temporary cleanup, explicit failure feedback. Replacing input clears old results. Faithful Lightroom high-resolution rendering, modern Highlights mapping, and practical error calibration remain incomplete. No XMP or accumulated Delta.
 
-22 项测试全部通过。真实浏览器完成样例、DNG 上传、生成参数和实际 JSON 下载；替换输入后旧结果被清除，损坏 DNG 报错且没有旧参数残留。已保存 browser_acceptance.json、example_parameters.json、app-preview.jpg 和 source_snapshot.zip。
+## Initial application acceptance
 
-## 近似预览增补
+22 checks passed. Real browser sample/DNG upload/recommendation/downloaded JSON passed; replacing input cleared old results and corrupt DNG produced an error without stale values. Saved `browser_acceptance.json` and `example_parameters.json`. The initial screenshot and exact source ZIP remain historical evidence, retained locally/earlier Git history with hashes in `artifacts/SNAPSHOT_PROVENANCE.md`.
 
-新增基准图／近似应用效果并排显示与 224×224 PNG 下载，只模拟验证参数中的曝光增益和高光软压缩。不能复现 Lightroom 或恢复已剪裁高光；实验参数未应用。每次以相同基准图重算，保持幂等。2 项针对性数值与页面集成测试通过；浏览器权限被用户拒绝，新版真实浏览器验收未执行。此前截图和源码快照对应初版参数建议页面。
+## Initial approximate preview addendum
 
-## 线性 RAW 预览 v2 增补
+Added baseline/approximate-after images and 224×224 PNG download, simulating only validated exposure gain and a soft recovery proxy. No Lightroom equivalence/clipped-highlight reconstruction; experimental values excluded. Recompute from baseline without accumulation. Two targeted numerical/UI checks passed. Saved user browser denial blocked newer real-browser acceptance. Initial screenshot/source snapshot describe the first recommendations page.
 
-已按 PREVIEW_IMPROVEMENT_PLAN.md 实施保持比例、最长边 1600 的独立 RAW 预览。高光保护、强度、实际参数和剪裁诊断均可核对，PNG／JSON 对应当前状态。25 项测试通过，三张真实输入的离线视觉与数值验收见 artifacts/preview_v2/acceptance.json。此前 224 JPEG 预览已由此替代；模型推荐不变。此为自定义近似显影，新版真实浏览器验收未执行，Lightroom 等价和局部语义调色均未完成。
+## Linear RAW preview v2 addendum
 
-## 2026-10-02：预览 v3
+Implemented independent aspect-preserving maximum-edge-1600 RAW preview per `PREVIEW_IMPROVEMENT_PLAN.md`. Protection/strength/applied values/clipping diagnostics and PNG/JSON align. 25 checks passed. Three real-photo offline reviews and numerical results are in `artifacts/preview_v2/acceptance.json`. Replaces 224-JPEG previews without changing recommendations. Custom approximate development; latest browser acceptance, Lightroom equivalence, and regional semantic editing incomplete.
 
-26 项测试通过。连续高光肩部减少中间调提前压缩，0.8 起点的高光代理减少普通亮部压暗；页面与 JSON 记录显影后显示源上限，不把它当作传感器过曝检测。16 张 v2/v3 对比（12 回归＋4 未查看测试图）完成离线视觉检查，两档强度无新增通道满值。源码与开发记录见 artifacts/preview_v3。模型指标不变，真实浏览器、局部语义调整和忠实高光恢复未验收。
+## Preview v3 (2026-10-02)
+
+26 checks passed. Continuous shoulder reduces premature midtone compression; recovery knee 0.8 reduces normal-highlight darkening. Page/JSON diagnose developed display-source ceilings, not sensor overexposure. Sixteen v2/v3 comparisons (12 regressions plus 4 unseen test photos) completed offline review, with zero newly full-value-channel pixels at both strengths. See `artifacts/preview_v3`. Model metrics unchanged; latest browser/regional semantics/faithful highlight reconstruction incomplete.
+
+## English localization
+
+Current interface, documentation, development milestones, and review observations have been translated to English. Numerical contracts/model artifacts remain unchanged. Original immutable Chinese-interface evidence is retained separately and described by an English provenance record rather than silently rewritten.
+
+All 26 tests passed after localization, including English sample/strength/protection/ceiling-warning/download assertions. ONNX, checkpoint, preprocessing, and renderer identities were checked against the previous Git revision and remain identical.

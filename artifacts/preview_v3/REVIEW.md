@@ -1,13 +1,13 @@
-# 预览 v3 改进记录（2026-10-02）
+# Preview v3 Development Record (2026-10-02)
 
-问题：v2 的全域有理曝光压缩提前影响中间调，0.6 起点的高光代理又压暗正常亮部，使部分画面偏平，已剪裁云层压暗后发灰。
+Problem: v2's global rational exposure mapping compressed midtones early. Its recovery knee at 0.6 also darkened ordinary highlights, flattening some images and turning clipped clouds gray.
 
-改动：曝光增益 g>1 时，以 k=0.6/g 为肩部起点，k 以下保持 g*m；以上采用 0.6+g*(m-k)/(1+b*(m-k))，b=(g-1)/(0.4*(1-k))。在连接处值与一阶导数连续，端点保持 1，单调且 RGB 比例不变。高光代理起点移到 0.8。仍是自定义全局曲线，不是旧 Lightroom 高光恢复的忠实实现。
+Change: for exposure gain g>1, set shoulder start k=0.6/g. Below k, retain g*m; above it, use 0.6+g*(m-k)/(1+b*(m-k)), with b=(g-1)/(0.4*(1-k)). Value and first derivative are continuous at the join; endpoint is 1; mapping is monotonic and preserves RGB ratios. Recovery proxy knee moves to 0.8. This is a custom global curve, not faithful legacy Lightroom highlight recovery.
 
-页面与 JSON 新增线性显示预览源的至少一个通道上限／三通道全白比例及明确语义。统计位于 RAW 显影、缩放和显示色域裁剪之后，不是传感器过曝检测，不能证明恢复纹理。达到上限的像素比例 ≥0.1% 时显示提示。
+Page/JSON include linear display-source at-least-one-channel and three-channel-white ceiling fractions with explicit semantics. These are measured after RAW development, resizing, and display-gamut clipping; they do not detect sensor overexposure or prove texture recovery. Show a notice when channel-ceiling pixels reach at least 0.1%.
 
-验收：12 张原回归案例＋4 张未查看测试集图片（排除先前候选图，固定随机种子 20261002，推理前选择）。所有 16 张 100% 与 75% 强度均无新增通道满值像素。查看全部原图/v2/v3 对比：人像、雪地、树干中间调提升更充分；过曝云层减轻发灰，但没有恢复原有缺失纹理；逆光主体仍有全局调整限制。未见明显新光晕，未进行像素级噪声、真实浏览器或 Lightroom 对照。四张新增测试图只是小样本检查，不代表总体质量。
+Acceptance: 12 previous regression cases plus 4 unseen test photos, excluding earlier candidates and selected before inference with seed 20261002. All 16 had zero new full-channel pixels at 100% and 75%. All baseline/v2/v3 sheets were reviewed: portrait/snow/bark midtones lift more fully; clipped clouds look less gray but missing texture is not restored; backlit subjects remain constrained by global adjustment. No obvious new halos at display size. Pixel-level noise, latest real-browser, and Lightroom checks were not performed. Four new test photos are a small-sample check, not population quality evidence.
 
-保留 preview_v2_reference.py、旧版既有 artifacts/preview_variety、逐图 PNG、四张 overview、参数与哈希 report.json。模型、输入显影、训练特征和参数预测不变。
+Retain `preview_v2_reference.py`, existing `artifacts/preview_variety` reports, comparison JPGs, four overviews, and parameter/hash `report.json`. Individual PNGs and original ZIPs remain local with provenance documented separately. Model/development inputs/features/predictions remain unchanged.
 
-复现：`OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 venv/bin/python -m scripts.compare_preview_v3`。
+Reproduce: `OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 venv/bin/python -m scripts.compare_preview_v3`.

@@ -1,297 +1,265 @@
-# ShotSense V3.1：AI 调色参数推荐系统 — 修订实施计划
+# ShotSense V3.1: AI Photo Adjustment Recommendations — Revised Implementation Plan
 
-## 当前状态与计划审查（2026-10-02）
+## Current status and plan review (2026-10-02)
 
-- [x] 完成本次计划审查：核对全部现有源码、5000 张 DNG、专家 JSON、只读 Catalog 查询和关键库官方文档；修订数据契约、任务顺序与阶段验收。
-- **实现已扩展至训练、ONNX 和本地应用**：隔离环境、标签审计、颜色管道、缓存、Dataset、模型和 20 张 Pilot 已验收；全量支持范围审计与预处理已完成，N=4946，正式模型、FP32 ONNX、Torch-free 推理与页面样例／上传／下载已完成验收。
-- **标签修复**：50000 行 Catalog 联表记录中选择每图／专家唯一非空记录。43 个字段修复，3 张缺少绝对白平衡的图像隔离，4997 张候选。Saturation／HighlightRecovery 省略零值经命名历史记录证明；全部专家记录确认属于 PV2003。
-- **可复现环境**：项目独立 venv、锁定依赖、官方 EfficientNet-B0 权重本地缓存；pip check 通过。运行代码与模型使用哈希标识版本。
-- **验证状态**：26 项检查通过；正式 PyTorch／ORT 最大归一化误差 3.21e-7，离线／线上同 DNG 特征与 JPEG 完全相同。正式测试宏平均误差比常量降低 18.7%；曝光／高光恢复为验证建议，其余四项为实验。
-- **交付范围**：可运行本地参数建议 MVP（http://127.0.0.1:8501）与 JSON 导出；Contrast／Saturation／Temperature／Tint 保持实验，忠实 Lightroom 渲染、现代参数映射和业务误差标定未完成。验收汇总见 artifacts/model/ACCEPTANCE.md。
+- [x] Reviewed all existing source, 5000 DNGs, expert JSON, read-only Catalog queries, and official documentation for key libraries; revised data contracts, task order, and acceptance gates.
+- **Implementation includes training, ONNX, and the local application**: the isolated environment, label audit, color pipeline, cache, Dataset, model, and 20-photo pilot passed acceptance. Full support auditing/preprocessing completed with N=4946. The production model, FP32 ONNX, Torch-free inference, and sample/upload/download workflow passed acceptance.
+- **Label repairs**: selected one nonempty record per photo/expert from 50000 joined Catalog rows. Repaired 43 fields, quarantined 3 photos without absolute WB, and retained 4997 candidates. Named history records prove omitted zero defaults for Saturation/HighlightRecovery. All expert records were confirmed as PV2003.
+- **Reproducible environment**: isolated venv, locked dependencies, locally cached official EfficientNet-B0 weights, and successful `pip check`. Source and model hashes identify versions.
+- **Validation**: 26 checks passed after English localization. Maximum production PyTorch/ORT normalized difference was 3.21e-7; offline/online features and JPEGs for the same DNG were identical. Final test macro-average error was 18.7% below the constant baseline. Exposure/highlight recovery are validated recommendations; the other four fields are experimental.
+- **Delivery**: local recommendations MVP at http://127.0.0.1:8501/ with JSON export. Contrast/Saturation/Temperature/Tint remain experimental. Faithful Lightroom rendering, modern parameter mapping, and practical error calibration remain incomplete. See `artifacts/model/ACCEPTANCE.md`.
 
-### 审查发现与处理优先级
+### Review findings and priorities
 
-| 优先级 | 漏洞／逻辑错误 | 修订后的处理 |
+| Priority | Issue | Resolution |
 |---|---|---|
-| P0 | 绝对参数、Delta 与归一化符号混用 | 固定绝对目标；明确逐图基线后才能算 Delta（KI-004） |
-| P0 | Contrast、Temperature 编码区间覆盖不了标签 | 扩展区间，禁止静默裁剪有效标签（KI-003） |
-| P0 | rawpy 默认 BT.709 编码被按 ProPhoto CCTF 解码 | 物理输出改为显式线性，验证 D50 矩阵；锁定 sRGB 编码（KI-002） |
-| P0 | 空设置覆盖、字段误匹配、缺失直接补 0 | 修复提取器，确认去重、键边界与默认值来源（KI-001） |
-| P0 | 高光恢复混写为现代 Highlights | 保留旧流程字段，跨版本转换独立验证（KI-005） |
-| P1 | 相机 WB 已应用，却要求恢复绝对 Kelvin/Tint | 增加白平衡可行性 Gate 与上下文／降级规则（KI-006） |
-| P1 | 物理特征尺度差异大，划分与标准化未保存 | 固定图像级划分；只用训练集拟合并保存标准化 |
-| P1 | 冻结梯度被视为完全冻结骨干 | 保持骨干 eval，验证 BatchNorm buffer 不漂移 |
-| P1 | 续传只检查 JPEG，没有特征／版本一致性 | 每个 ID 的图片、特征、配置共同验收，原子写入 |
-| P1 | CNN 默认动态 INT8，整条 RAW 流程承诺 <30ms | 先 FP32，按测量选量化，分开模型与端到端计时 |
-| P1 | CSS/Canvas 被当作 Lightroom 忠实显影器 | 首版参数建议与导出，预览独立验收（KI-007） |
-| P2 | 依赖与本机不一致，计划额外引入 timm | 复用 torchvision；隔离环境验证依赖组合 |
+| P0 | Absolute values, Delta, and normalized signs were conflated | Fix absolute targets; require a per-photo baseline for Delta (KI-004) |
+| P0 | Contrast/Temperature ranges did not cover valid labels | Expand ranges; never silently clip valid labels (KI-003) |
+| P0 | Default rawpy BT.709 encoding was decoded as ProPhoto CCTF | Use explicit linear physical output, verify D50 matrices, lock sRGB encoding (KI-002) |
+| P0 | Empty settings overwrote records; partial key matches and generic zero defaults | Repair extraction, deduplication, key boundaries, and default provenance (KI-001) |
+| P0 | Legacy highlight recovery was described as modern Highlights | Retain legacy fields; validate cross-version conversion separately (KI-005) |
+| P1 | Camera WB is already applied, yet targets are absolute Kelvin/Tint | Add a WB feasibility gate, context, and fallback delivery rules (KI-006) |
+| P1 | Physical feature scales differ; splits/statistics were not persisted | Persist photo-level splits and train-only standardization |
+| P1 | Freezing gradients was treated as fully freezing the backbone | Keep backbone in eval mode and verify BatchNorm buffers |
+| P1 | Resume checked only JPEGs | Validate image/features/config per ID; write atomically |
+| P1 | Dynamic INT8 assumed for CNN; entire RAW pipeline promised under 30 ms | Start with FP32; measure before quantization; separate forward/end-to-end timing |
+| P1 | CSS/Canvas treated as faithful Lightroom development | Deliver recommendations/export first; validate preview separately (KI-007) |
+| P2 | Dependencies differed from the local machine; timm proposed unnecessarily | Reuse torchvision and verify dependencies in an isolated environment |
 
-### 执行顺序（20 张 Pilot 已完成）
+### Execution order (20-photo pilot completed)
 
-执行顺序：**依赖与标签契约 → 色彩正确性 → 串行 Pilot → 恢复／失败测试 → Dataset 契约 → 小批并行比较 → 全量预处理 → 训练基线**。
+**Dependencies/labels → color correctness → serial pilot → recovery/failure tests → Dataset contract → small parallel comparison → full preprocessing → training baselines.**
 
-1. 修复标签提取器并输出审计；保留旧 JSON 快照与原 Catalog，确认字段默认值与参数版本。
-2. 修正物理输出 gamma、线性缩小与 D50 转换；迁移 `RGB_to_XYZ` API 并分别验证等价性和色彩正确性。
-3. 实现单次读取 RAW、双次显影、224×224 JPEG、逐图特征缓存、`--limit`、`--workers` 和失败清单。
-4. 固定排序的前 20 个候选 ID 运行串行 Pilot；另用 3 个已知异常 ID 与一个模拟失败验证过滤／重试，不计入这 20 个候选 ID。
-5. 完成归一化、Dataset 和小规模数据测试；重跑同一 Pilot 验证续传无重复、损坏补建、版本不匹配拒绝。
-6. 对相同样本比较串行／并行结果、吞吐和峰值内存，通过后全量运行并固定正式划分。
+1. Repair extraction and produce an audit. Preserve the previous JSON snapshot and original Catalog; confirm field defaults and parameter versions.
+2. Correct physical-output gamma, linear resizing, and D50 conversion; migrate `RGB_to_XYZ` and verify API equivalence separately from color correctness.
+3. Implement one RAW read/two developments, 224×224 JPEGs, per-photo feature caches, `--limit`, `--workers`, and failure lists.
+4. Run a serial pilot on the first 20 sorted candidate IDs. Separately test the 3 known invalid IDs and one simulated failure for filtering/retry; do not count them in the 20 candidates.
+5. Implement normalization, Dataset, and small data tests. Repeat the same pilot to verify duplicate-free resume, corruption repair, and version mismatch rejection.
+6. Compare serial/parallel values, throughput, and peak memory on identical samples; then process all data and fix the formal split.
 
----
+## Core Architecture
 
-## 🧠 核心架构设计 (Core Architecture)
+Recommend six official Catalog parameters from DNGs without expert adjustments. Retain V3.1 supervised dual-branch regression. Labels are expert edit records, not unique aesthetic truth or complete Lightroom recipes.
 
-目标是从**未应用专家调色的 DNG**推荐官方 Catalog 中的 6 个参数。保留 V3.1 双分支监督回归方案；标签是专家编辑记录，不是唯一审美真值，也不是完整 Lightroom 显影配方。
+- **Semantic branch**: torchvision `EfficientNet-B0`, fixed `IMAGENET1K_V1` weights, classifier removed, global pooling to **1280D**. Freeze gradients and keep the backbone in `eval()` while training only the MLP. Prepare/version weights in advance; inference does not download them.
+- **Physical branch**: verified linear ProPhoto → XYZ D50 → Lab, producing **132D** descriptive statistics. These do not directly measure sensor exposure or scene illumination.
+  - 96D: normalized global 32-bin histograms for each of L/a/b.
+  - 18D: L/a/b mean/std in upper/middle/lower spatial thirds.
+  - 18D: L/a/b mean/std for L≤33.3, 33.3<L≤66.7, and L>66.7. Occupancy fractions are absent; describe this as luminance-region statistics, not a complete Zone System.
+- **Fusion head**: concatenate train-standardized physical features and semantic features: **1280+132=1412D → 512 → 128 → 6**, ReLU hidden layers and Tanh output. If KI-006 requires WB context, explicitly revise the input contract/dimensions rather than inserting it into existing 132D fields.
+- **Targets**: arithmetic mean of experts A–E for each parameter in original units, then normalize. Store original-unit means in `Y`, expert values, and `Y_std` for disagreement auditing. Parameter means need not render the mean expert image or any individual expert style.
+- **Field order**: `Exposure, Contrast, Saturation, Temperature, Tint, HighlightRecovery`, identical in the model, NPZ, export, and API. UI labels: exposure, contrast, saturation, temperature, tint, and legacy highlight recovery.
+- **Initial inputs**: DNGs compatible with the training-development pipeline. Edited JPEG/PNG, additional RAW formats, and modern Lightroom mapping require separate validation.
 
-- **语义分支**：使用已有 torchvision 的 `EfficientNet-B0` 与固定 `IMAGENET1K_V1` 权重，移除分类层、全局池化取得 **1280D**。冻结梯度并持续保持骨干 `eval()`，MLP 单独训练；权重提前准备并记录版本，推理不联网下载。
-- **物理分支**：经验证的线性 ProPhoto 输出→XYZ D50→Lab，提取 **132D** 描述统计；不宣称其直接测量传感器曝光或场景照度。
-  - 96D：L、a、b 各 32-bin 的归一化全局直方图。
-  - 18D：上／中／下三区的 L、a、b 均值与标准差。
-  - 18D：L≤33.3、33.3<L≤66.7、L>66.7 的 L、a、b 均值与标准差。现有实现没有分区像素占比，称“亮度分区统计”，不称完整 Zone System。
-- **融合回归头**：训练集标准化后的物理特征与语义特征拼接，**1280+132=1412D → 512 → 128 → 6**，隐藏层 ReLU，末层 Tanh。KI-006 若证明需要 WB 上下文，须显式修改输入契约和维数，不能塞入已有 132D 字段。
-- **目标定义**：每张图先在原始单位中对 A–E 的 6 个参数分别取算术均值，再归一化；`Y` 保存原始单位均值，保存专家原值与 `Y_std` 供分歧审计。参数均值不保证等于专家图像的平均渲染或任一专家风格。
-- **固定字段顺序**：`Exposure, Contrast, Saturation, Temperature, Tint, HighlightRecovery`。界面名称为曝光、对比度、饱和度、色温、色调、高光恢复；模型、NPZ、导出和 API 同序。
-- **首版输入范围**：与训练显影流程一致的 DNG；已调色 JPEG／PNG、其他 RAW 格式和现代 Lightroom 参数映射另行验证。
+### Normalization Specification
 
-### 6D 参数归一化映射 (Normalization Spec)
+These are this model's **legacy-process encoding ranges**, not universal ranges for all Lightroom versions. They cover existing valid expert labels. Statistics were recomputed from 4997 repaired valid labels and agree with this table's three-decimal display; exact values are in `label_audit.json`.
 
-下表是本模型采用的**旧流程参数编码区间**，不是所有 Lightroom 版本通用的范围。区间覆盖现有有效专家标签；分布已经修复后的 4997 张有效标签重算，与本表三位小数显示一致；精确值见 label_audit.json。
-
-| 参数 | 原始单位编码区间 | 归一化区间 | 映射中心（→0） | 专家均值 p1～p99 | 专家均值 min～max |
+| Parameter | Original-unit range | Normalized range | Center mapped to 0 | Expert-mean p1–p99 | Expert-mean min–max |
 |---|---|---|---|---|---|
-| Exposure | `[-4,4]` EV | `[-1,1]` | 0 EV | -0.344～2.254 | -1.518～3.274 |
-| Contrast | `[-50,100]` | `[-1,1]` | 25 | 0～34.008 | -6.8～68 |
-| Saturation | `[-100,100]` | `[-1,1]` | 0 | -4.8～16.408 | -15.6～30.8 |
-| Temperature | `[2000,50000]` K | `[-1,1]` | 26000 K | 2379.938～8202.301 | 2000～35558.054 |
-| Tint | `[-150,150]` | `[-1,1]` | 0 | -21.6～37.808 | -96.4～97 |
-| HighlightRecovery | `[0,100]` | `[-1,1]` | 50 | 3.8～68.208 | 0～98.4 |
+| Exposure | `[-4,4]` EV | `[-1,1]` | 0 EV | -0.344–2.254 | -1.518–3.274 |
+| Contrast | `[-50,100]` | `[-1,1]` | 25 | 0–34.008 | -6.8–68 |
+| Saturation | `[-100,100]` | `[-1,1]` | 0 | -4.8–16.408 | -15.6–30.8 |
+| Temperature | `[2000,50000]` K | `[-1,1]` | 26000 K | 2379.938–8202.301 | 2000–35558.054 |
+| Tint | `[-150,150]` | `[-1,1]` | 0 | -21.6–37.808 | -96.4–97 |
+| HighlightRecovery | `[0,100]` | `[-1,1]` | 50 | 3.8–68.208 | 0–98.4 |
 
-映射：`norm = 2 * (raw - min) / (max - min) - 1`；逆映射：`raw = (norm + 1) / 2 * (max - min) + min`。
+`norm = 2 * (raw - min) / (max - min) - 1`; inverse: `raw = (norm + 1) / 2 * (max - min) + min`.
 
-- 验证单个专家值和聚合后的 Y；缺失、NaN/Inf、越界明确报错／隔离并记录原因，不裁剪后冒充有效真值。合法高色温必须保留。
-- 现有有效样本中，Contrast 均值有 **20 张<0**，Temperature 均值有 **13 张>10000K**，单个专家有 **101 条>10000K**。原映射会产生无法表示的目标或标签损失。
-- `norm=0` 只是区间中心，不是“无需调整”。温度区间扩大改变损失尺度，必须单独报告 Kelvin 与 mired 误差；验证显示必要时再考虑非线性温度编码。
-- 模型输出 `recommended_absolute`。只有使用方提供同参数版本的 `current_absolute`，才计算 `delta = recommended_absolute - current_absolute`；没有基线不返回 Delta、不计算方向准确率。相机 WB 乘数不是 Lightroom Kelvin/Tint。
-- 本表已修订，`ParameterNormalizer` 已实现并验证 NumPy／Tensor 往返；后续映射改动必须同步代码、缓存／模型版本和导出元数据。
+- Validate individual expert values and aggregated Y. Missing, NaN/Inf, and out-of-range values must fail/be quarantined with reasons, not clipped and presented as valid truth. Preserve valid high temperatures.
+- Valid labels include **20 photos with mean Contrast<0**, **13 with mean Temperature>10000 K**, and **101 individual Temperature values>10000 K**. Previous ranges could not represent them.
+- `norm=0` is a range center, not “no adjustment.” Expanding the temperature range changes loss scale; report Kelvin/mired errors separately and consider nonlinear encoding only if validation justifies it.
+- Return `recommended_absolute`. Only compute `delta = recommended_absolute - current_absolute` when the caller supplies a same-version baseline. Without one, return no Delta/direction accuracy. Camera WB multipliers are not Lightroom Kelvin/Tint.
+- `ParameterNormalizer` has NumPy/Tensor round-trip verification. Future changes must update this specification, code, cache/model versions, and export metadata.
 
----
+## Data, Color, and Reproducibility Contracts
 
-## 数据、色彩与复现契约
+### Catalog labels
 
-### Catalog 标签
+1. Open SQLite read-only and verify expert A–E collection names/IDs. Associate `(source-file ID, expert)`, discard empty settings, and require exactly one valid record. Zero/multiple nonempty records must fail, not arbitrarily overwrite.
+2. Match complete keys. Temperature/Tint must not match Incremental or other prefixed fields. Define Custom-field priority when `WhiteBalance=Custom`; otherwise use valid absolute fields.
+3. **Only confirmed omitted defaults**: 17390 missing Saturation and 8597 missing HighlightRecovery values in nonempty expert records. Confirm serialization semantics before filling zero and record provenance. No generic missing→zero rule. Temperature/Tint are each missing in 15 records from 3 known invalid photos; relative values cannot replace absolute WB.
+4. Audit ProcessVersion, CameraProfile, WhiteBalance, source-record IDs, and default rules. Only **283 of 25000 records explicitly contain `ProcessVersion="5.0"`**; 24717 omit it. Do not infer universal PV2010 without verifying omission semantics.
+5. Never modify the original Catalog. Preserve old JSON extraction snapshots, output repaired labels/differences, and fix parser bugs rather than keeping them for provenance.
+6. Do not use expert TIFFs, expert WB, or `(default) Input with ExpertC WhiteBalance minus1.5` settings as model inputs. Labels always come from the official Catalog.
 
-1. 只读 SQLite；验证 A–E collection 名称与 ID。按 `(源文件ID, 专家)` 关联，剔除空设置后要求恰好一条有效记录；零条／多条非空必须失败，不能随意覆盖。
-2. 匹配完整键名，不能让 Temperature/Tint 匹配 Incremental 或其他前缀字段。明确 `WhiteBalance=Custom` 时 Custom 字段优先规则，其他模式读取有效绝对值。
-3. **仅允许已确认的省略默认值**：非空专家记录中，Saturation 缺失 17390 条、HighlightRecovery 缺失 8597 条；先确认序列化默认语义再补 0，并记录来源。禁止通用“缺失→0”。Temperature/Tint 缺失各 15 条，对应 3 张已知异常图像，不能以相对量代替。
-4. 审计 ProcessVersion、CameraProfile、WhiteBalance、来源记录 ID 与默认规则。25000 条中仅 **283 条显式 `ProcessVersion="5.0"`**，其他 24717 条省略；不得据此宣称全部 PV2010，先核实省略版本语义。
-5. 原 Catalog 不修改；旧 JSON 保留提取版本快照，修复后输出新标签与差异报告。“保留溯源”不构成永久保留解析 bug 的理由。
-6. 输入不使用专家 TIFF、专家 WB 或 Catalog 中 `(default) Input with ExpertC WhiteBalance minus1.5` 的设置，避免目标泄漏。训练标签始终来自官方 Catalog。
+### RAW and color
 
-### RAW 与颜色
+- One `rawpy.imread()` context and two `postprocess()` calls with consistent WB, demosaicing, orientation, cropping, and exposure baseline. Explicitly lock `use_camera_wb=True`, `use_auto_wb=False`, `no_auto_bright=True`, `bright=1.0`, `half_size=False`, highlight mode, and all other output-affecting options. Record rawpy/LibRaw versions.
+- **Physical output**: `output_color=ProPhoto, output_bps=16, gamma=(1,1)`. Normalize linear RGB, area-resize to 224×224, then convert XYZ D50→Lab without ProPhoto CCTF decoding. Verify LibRaw/colour-science matrix compatibility rather than assuming D50 from an enum name.
+- **Semantic output**: `output_color=sRGB, output_bps=8, gamma=(2.4,12.92)`, resize to 224×224, JPEG quality=95, explicit RGB/BGR handling. Training/inference share JPEG encode/decode, resizing, and ImageNet mean/std; do not mix JPEG and uncompressed inputs.
+- rawpy defaults to gamma `(2.222,4.5)`, not automatically ROMM encoding for ProPhoto. The previous ProPhoto CCTF decode of default output was unverified. [rawpy parameters](https://letmaik.github.io/rawpy/api/rawpy.Params.html), [LibRaw parameters](https://www.libraw.org/docs/API-datastruct-eng.html).
+- LibRaw 0.22.1 calls this output `ProPhoto D65`; its automatic ICC derives D50 coefficients. Source-derived versus standard ProPhoto matrix maximum coefficient difference was approximately `1.22e-4`. Explicitly document matrices/whitepoint/tolerance and avoid duplicate chromatic adaptation. [Color constants](https://github.com/LibRaw/LibRaw/blob/0.22.1/src/tables/colorconst.cpp), [conversion implementation](https://github.com/LibRaw/LibRaw/blob/0.22.1/src/postprocessing/postprocessing_utils_dcrdefs.cpp).
+- Use `RGB_to_XYZ(..., colourspace=..., illuminant=..., apply_cctf_decoding=False)`. Old/new API difference was zero on a small numerical check; that establishes migration equivalence, not old gamma correctness.
+- Retain direct sRGB output via the second development. Historical PSNR 23.5 dB lacks a unified encoding/whitepoint baseline and cannot establish unavoidable colour-science conversion loss.
+- Initial model inputs resize the whole frame to 224×224, with aspect-ratio distortion documented. This differs from pretrained resize-256/center-crop. Compare aspect-preserving preprocessing only if needed and update training/inference together. [torchvision weights/transforms](https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_b0.html).
+- Wide-gamut Lab a/b may exceed histogram ranges. Merge overflow into endpoint bins and record fractions, never discard it silently. Means/std use unclipped Lab. Empty luminance regions return zeros; spatial thirds must be nonempty.
+- `HighlightMode.Clip` and low-resolution statistics cannot retain all recoverable RAW highlights. Validate highlight parameters against baselines/ablations; never promise recovery of clipped JPEG detail.
 
-- 单次 `rawpy.imread()`、双次 `postprocess()`；两次使用一致的 WB、去马赛克、方向、裁剪与曝光基准。显式锁定 `use_camera_wb=True`、`use_auto_wb=False`、`no_auto_bright=True`、`bright=1.0`、`half_size=False`、高光模式及其他影响输出的选项，记录 rawpy／LibRaw 版本。
-- **物理输出**：`output_color=ProPhoto, output_bps=16, gamma=(1,1)`；归一化为线性 RGB，用面积插值缩至 224×224 后转换 XYZ D50→Lab，不再调用 ProPhoto CCTF 解码。验证 LibRaw 输出矩阵与 colour-science 矩阵相容，不能仅凭枚举名称认定严格 D50。
-- **语义输出**：`output_color=sRGB, output_bps=8, gamma=(2.4,12.92)`；缩至 224×224、JPEG quality=95，显式处理 RGB/BGR。训练与线上共用 JPEG 编解码、缩放和 ImageNet mean/std 归一化，避免一边用 JPEG、一边用未压缩数组。
-- rawpy 默认 gamma 是 `(2.222,4.5)`，不会随 ProPhoto 枚举自动变成 ROMM 编码；现代码对默认输出使用 ProPhoto CCTF 解码，颜色正确性未通过。[rawpy 参数文档](https://letmaik.github.io/rawpy/api/rawpy.Params.html)、[LibRaw 参数文档](https://www.libraw.org/docs/API-datastruct-eng.html)。
-- LibRaw 0.22.1 源码将该输出称为 `ProPhoto D65`，自动 ICC 使用矩阵推导 D50 值。本次源码矩阵推导值与标准 ProPhoto 矩阵的最大系数差约 `1.22e-4`；实现时明确采用并验证的矩阵、白点与容差，避免重复色适应。[LibRaw 色彩常量](https://github.com/LibRaw/LibRaw/blob/0.22.1/src/tables/colorconst.cpp)、[转换实现](https://github.com/LibRaw/LibRaw/blob/0.22.1/src/postprocessing/postprocessing_utils_dcrdefs.cpp)。
-- 迁移至 `RGB_to_XYZ(..., colourspace=..., illuminant=..., apply_cctf_decoding=False)`。本次小型数值检查新旧签名 diff=0，仅证明迁移等价，不能证明旧 gamma 正确。
-- 保留直接输出 sRGB 的双次显影方案。历史 PSNR 23.5dB 缺少统一编码／白点基准，是两种实现的观察，不能解释为 colour-science 转换必然造成损失。
-- 首版全画面直接缩为 224×224，记录纵横比变形限制；它不完全采用预训练权重 resize-256／中心裁切流程。若效果不足再比较保持比例方案，同时更新训练与推理。[torchvision 权重与预处理说明](https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_b0.html)。
-- 广色域 Lab a/b 可能越出直方图区间；计数前把越界值并入端点 bin 并记录比例，不能静默丢掉像素；均值／标准差保留未裁剪 Lab。空亮度区返回零，空间三区必须非空。
-- `HighlightMode.Clip` 与低分辨率统计不保留全部可恢复 RAW 高光信息；须通过高光参数基线／消融验证，不能承诺恢复 JPEG 已剪裁的细节。
+### Caches, splits, and standardization
 
-### 缓存、划分与特征标准化
+- `metadata.npz`: `X float32 (N,132)`, `Y float32 (N,6)`, `Y_std float32 (N,6)`, `ids Unicode (N,)`. X/Y retain original features/units; Dataset normalizes labels. Load with `allow_pickle=False`.
+- IDs are lowercase full filenames; map to original-case paths and reject canonicalization collisions. Sort tasks and aggregate by ID independently of worker completion order.
+- Per-ID feature cache/JPEG, parent-process NPZ/report aggregation, temporary files validated before atomic replacement. Resume requires valid image/features/label-source/version; a JPEG alone is insufficient.
+- Configuration records label hashes, field/feature order, development/resizing/JPEG options, code/dependency versions. Mismatch explicitly requires rebuild; do not mix versions or introduce a database/complex queue.
+- `--limit N` selects the first N sorted candidates, including cached ones. Repeated pilots select the same IDs. Version-compatible pilot caches can be reused for full processing; temporary splits cannot overwrite formal splits.
+- Success (including resume), filtered, and failed inputs are mutually exclusive and sum to all inputs. No successful photos means no trainable NPZ. Unresolved failures produce nonzero exit status and a report.
+- Fix valid IDs, then split by **original photo**, seed 42, 80/10/10. Persist `splits.json`/data version; A–E cannot cross sets. Group identifiable bursts/near-duplicates when possible, allow approximate ratios, and document unavailable grouping.
+- Fit X statistics only on training data. Use scale=1 for zero variance. Save means/scales as model buffers and export them into ONNX; Dataset does not standardize twice. Fixed label ranges cannot be fitted on validation/test data.
+- Initial training does not independently augment color, exposure, WB, or spatial statistics. Future augmentation must update both branches and affected labels together.
 
-- `metadata.npz`：`X float32 (N,132)`、`Y float32 (N,6)`、`Y_std float32 (N,6)`、`ids Unicode (N,)`；X/Y 保留原始特征／单位，Dataset 归一化标签。使用 `allow_pickle=False`。
-- ID 为小写完整文件名，实际路径映射至原始大小写；检查规范化冲突。任务固定排序，汇总按 ID 排序，不受 worker 完成顺序影响。
-- 每个 ID 保存小型特征缓存与 JPEG，主进程汇总 NPZ／报告。写临时文件、验证后原子替换；图片、特征、标签来源及处理版本都有效才跳过。只有 JPEG 存在不算完成。
-- 配置清单记录标签哈希、字段／特征顺序、显影／缩放／JPEG 设置、代码与依赖版本；不匹配时明确要求重建，禁止混用。不引入数据库或复杂任务队列。
-- `--limit N` 为固定排序后的前 N 个候选 ID，包含已缓存项；重跑处理同一集合。Pilot 缓存版本一致可用于全量，临时划分不覆盖正式划分。
-- 输入按成功（含有效续传）／过滤／失败互斥分类，总数等于输入数。零成功不生成可训练 NPZ；未解决失败以非零退出状态和清单报告。
-- 正式有效 ID 固定后，seed=42 按**原始照片**划分 80/10/10，保存 `splits.json` 与数据版本；A–E 不跨集合。可识别的连拍／近重复合组后分配，比例允许近似；未知分组限制写入报告。
-- X 标准化仅用训练集拟合，零方差列 scale=1；均值／尺度作为模型 buffer 保存并导出 ONNX，Dataset 不重复标准化。标签区间固定，不能用验证／测试集拟合新的映射。
-- 首版不做单独改变色彩、曝光、白平衡或空间统计的增强；增加增强时同时更新两个分支及必要标签。
+## Directory Architecture
 
----
-
-## 📂 目录架构 (Directory Architecture)
-
-以下结构已实现；预览采用独立 preview.py，不改变训练与 RAW 推理输入。
+Implemented structure; `preview.py` is independent and does not change trained inputs:
 
 ```text
 ShotSense/
-├── data/
-│   ├── raw/dngs/                      # 原始 DNG，不修改
-│   ├── raw/fivek_dataset/raw_photos/   # 原 Catalog，不修改
-│   ├── intermediate/
-│   │   ├── expert_labels.json         # 经版本化审计的专家标签
-│   │   └── label_audit.json           # 字段／默认／版本／差异报告
-│   └── processed/
-│       ├── images/                    # 224×224 sRGB JPEG
-│       ├── features/                  # 逐图特征与版本缓存
-│       ├── metadata.npz               # X、Y、Y_std、ids
-│       ├── manifest.json              # 配置与处理报告
-│       └── splits.json                # 正式图像级划分
+├── data/                              # Local only
+│   ├── raw/dngs/                      # Original DNGs, unchanged
+│   ├── raw/fivek_dataset/raw_photos/   # Read-only Catalog
+│   ├── intermediate/                 # Versioned labels and audits
+│   └── processed/                    # Images, features, metadata, splits
 ├── src/
-│   ├── color_pipeline.py              # 训练／推理共用显影与色彩流程
-│   ├── extract_labels.py              # 完整键解析、去重与审计
-│   ├── preprocess.py                  # 共用特征提取与离线缓存
-│   ├── dataset.py                     # Dataset、ParameterNormalizer
-│   ├── model.py                       # 冻结骨干、X 标准化、MLP
-│   ├── train.py                       # 基线、训练、验证与 checkpoint
-│   ├── export_onnx.py                 # FP32 导出与可选量化
-│   └── inference.py                   # 共用预处理 + ONNX Runtime
-├── artifacts/                         # 模型、配置、评估与计时报告
-├── app/
-│   └── streamlit_app.py               # 首版本地应用；远程 API 按需增加
-├── tests/
-│   ├── test_labels.py                 # 解析边界、空记录与默认语义
-│   ├── test_color_pipeline.py         # 编码／矩阵／双次显影
-│   ├── test_dataset.py                # 数据与续传契约
-│   ├── test_model.py                  # 形状、冻结状态、小批过拟合
-│   └── test_inference.py              # 预处理与 PyTorch／ONNX 等价
+│   ├── color_pipeline.py              # Shared RAW/color pipeline
+│   ├── extract_labels.py              # Complete-key parsing and audits
+│   ├── preprocess.py                  # Shared features and resumable cache
+│   ├── dataset.py                     # Dataset, normalization, fixed splits
+│   ├── model.py                       # Frozen backbone and MLP
+│   ├── train.py                       # Baselines, training, checkpoints
+│   ├── export_onnx.py                 # FP32 export and parity checks
+│   ├── inference.py                   # Torch-free online inference
+│   └── preview.py                     # Independent approximate rendering
+├── artifacts/                         # Models, evaluation, development evidence
+├── app/streamlit_app.py                # Local application
+├── scripts/                           # Data preparation and preview comparisons
+├── tests/                             # Data, model, inference, and UI checks
 ├── ANTIGRAVITY.md
 ├── SHOTSENSE_MASTER_PLAN.md
 └── requirements.txt
 ```
 
----
+## Phases and Milestones
 
-## 🎯 实施阶段里程碑 (Phases & Milestones)
+### Phase 1: Reliable labels, color correctness, and resumable data processing
 
-### Phase 1：可信标签、色彩正确性与可恢复数据通路
+- [x] Original 5000 DNGs and Catalog available; IDs aligned.
+- [x] GATE 3 prototype: 5000×5×6 numeric records extracted; formal semantic audit completed (`label_audit.json`).
+- [x] GATE 1/2 prototype: rawpy/colour-science/132D implementation present; numerical color/RAW-context parity passed (`color_audit.json`).
+- [x] **P1-A Environment**: correct Torch/OpenCV requirements, reuse torchvision, remove unused dependencies, retain one OpenCV package. Verify conflicts, two RAW developments, and model imports in an isolated versioned environment.
+- [x] **P1-B Labels**: deduplicate and parse complete keys, confirm omitted defaults/ProcessVersion, audit differences/quarantines/reasons, recompute normalization statistics.
+- [x] **P1-C Color**: explicit linear physical/sRGB output; black/white/gray/color checks for conversion/gamma with neutral a/b near zero. Compare shared two-development context against separate contexts for at least one DNG; record matrices/tolerances/versions. Separate API parity from color acceptance.
+- [x] **P1-D Serial pilot**: per-photo caches, atomic writes, filtering, ID alignment, `--limit 20 --workers 1`. Handle errors throughout development/conversion/features/writes.
+- [x] **P1-E Data tests**: normalization limits/round trips, valid negative Contrast/high temperatures, missing-value rejection, Tensor/batch shapes, finite values, JPEG size/RGB order; idempotent resume, corruption repair, version mismatch rejection, unique IDs.
+- [x] **P1-F Parallel pilot**: macOS spawn, module-level worker, `__main__` guard, `--workers`. Compare 1/2/6 workers with controlled OpenCV/OpenMP threads; choose defaults from throughput/peak memory, not core count alone.
+- [x] **P1-G Full data/split**: account for all 5000 inputs, resolve failures, verify complete caches, fix filtering/version, record final N, persist mutually exclusive formal splits.
 
-- [x] 原始数据齐备：5000 张 DNG 与 Catalog 已存在，ID 对齐。
-- [x] GATE 3 原型：5000×5×6 数值记录已提取；正式语义审计已完成（label_audit.json）。
-- [x] GATE 1/2 原型：rawpy／colour-science 和 132D 代码已存在；颜色数值与 RAW 上下文等价验收已完成（color_audit.json）。
-- [x] **P1-A 环境**：整理 requirements，校正 Torch／OpenCV 声明，复用 torchvision，删除没有调用需求的依赖，只保留一种 OpenCV 包；隔离环境验证依赖冲突、RAW 双次显影与模型导入，记录可复现版本。
-- [x] **P1-B 标签**：实现去重与完整键解析；确认省略默认值和 ProcessVersion；输出审计、旧／新差异、隔离 ID／原因，重算归一化表统计。
-- [x] **P1-C 色彩**：显式线性物理输出与 sRGB 编码；黑／白／中性灰／彩色样本验证转换与 gamma，灰色 a/b 接近 0；至少一张 DNG 比较共享上下文双次显影与两个独立上下文结果，记录矩阵／容差／版本。API 等价和颜色正确性分开验收。
-- [x] **P1-D 串行 Pilot**：实现逐图缓存、原子写入、过滤、ID 对齐与 `--limit 20 --workers 1`。错误处理覆盖显影、转换、特征和写盘全过程，不只 rawpy。
-- [x] **P1-E 数据测试**：归一化边界／往返、合法负 Contrast／高色温、缺失拒绝、Tensor／批形状、finite、JPEG 尺寸与 RGB 顺序；验证续传幂等、损坏重建、版本不匹配拒绝、无重复 ID。
-- [x] **P1-F 并行 Pilot**：macOS spawn、模块级 worker、`__main__` 保护与 `--workers`；比较 1/2/6 workers，控制 OpenCV／OpenMP 嵌套线程，以吞吐及峰值内存决定默认值，不能只按 CPU 核数决定。
-- [x] **P1-G 全量与划分**：全部 5000 输入分类核算；没有未解决处理失败，每个成功 ID 对应完整有效缓存；筛选规则和版本固定后记录最终 N，保存正式 splits 并验证互斥。
+**Phase 2 entry**: defaults/version semantics confirmed, color numerical checks and pilot/recovery tests passed, full failures resolved, formal splits fixed. Generated files/correct shapes alone are not acceptance.
 
-**进入 Phase 2**：标签默认／版本语义确认、颜色数值检查通过、Pilot／恢复测试通过、全量失败解决、正式划分固定。只生成文件或形状正确不足以验收。
+### Phase 2: Baselines, dual-branch training, and effectiveness
 
-### Phase 2：基线、双分支训练与有效性评估
+- [x] **Training baselines**: per-field training median, simple physical-feature linear regression with intercept (prefer NumPy), semantic/dual comparisons on identical splits. Store expert disagreement without calling it calibrated confidence.
+- [x] **WB gate (KI-006)**: camera/scene Temperature/Tint strata versus constants and available As-Shot baselines. Add online-available context/update input contract if needed, or deliver only non-WB fields beating baselines. Currently only Exposure/HighlightRecovery are validated; four fields remain experimental.
+- [x] **Model**: 1412D MLP, train-only X buffer standardization; verify `(B,6)`, finite values, Tanh range, unchanged frozen weights/BatchNorm buffers.
+- [x] **Training checks**: fixed Python/NumPy/Torch seeds/device; small-batch overfit check for gradients/pairing before full training. Overfitting is not generalization evidence.
+- [x] **Training loop**: equal mean of per-field Smooth L1/Huber on normalized targets, AdamW, MLP only initially. Record validation-selected learning rate, batch, epoch cap, and patience.
+- [x] **Model selection**: best validation six-field macro normalized MAE. Save field order, mappings, X statistics, development/data/split/weights versions, and seed. One final test after selection; further tuning after failure requires a new final-evaluation arrangement, not repeated test peeking.
+- [x] **Evaluation**: per-field original-unit MAE/RMSE, mired temperature MAE, tails/camera/scene errors and counts. Add Delta three-way direction metrics only with reliable matching baselines; report zero tolerance/class balance/coverage.
 
-- [x] **训练集基线**：逐参数训练集中位数常量预测；仅物理特征的简单线性回归（含常数列，优先 NumPy）；语义／双分支同划分比较。保存专家分歧，不将其视为校准后的模型置信度。
-- [x] **白平衡 Gate（KI-006）**：检查相机／场景分层 Temp/Tint 误差，与常量及可得的 As-Shot 基线比较；不足则增加在线可获得的 WB 上下文并更新输入契约，或只交付优于对应基线的非白平衡参数。当前只验证曝光／高光恢复，另外四项保持实验；不能将六项全标为已验证。
-- [x] **模型**：1412D MLP，训练集 X 标准化 buffer；验证 `(B,6)`、finite、Tanh 区间以及训练后冻结参数与 BatchNorm buffer 不变。
-- [x] **训练检查**：固定 Python／NumPy／Torch seed，记录设备；先小批过拟合检查梯度与标签配对，再全量训练。小批过拟合不替代泛化指标。
-- [x] **训练循环**：归一化目标逐参数 Smooth L1／Huber 后等权平均；初始只训练 MLP，AdamW。学习率、batch、epoch 上限与早停耐心保存到配置，通过验证集选择。
-- [x] **模型选择**：按验证集六项归一化 MAE 宏平均保存 best checkpoint；同步保存字段顺序、映射、X 统计、显影配置、数据／划分版本、权重版本与种子。选定后一次正式测试；测试失败后再调参需新的最终评估安排，不能循环窥看测试集。
-- [x] **评估**：逐参数原始单位 MAE／RMSE、温度 mired MAE、长尾／相机／场景误差及样本数。可靠逐图基线存在时才增加 Delta 三分类方向指标，记录零附近容差、类占比与覆盖率。
+**Phase 3 entry**: validation macro error beats the training median; each claimed field beats its own constant baseline, with simple-regression comparison reported. On failure inspect labels/scales/WB context/information loss before enlarging the network. Practical absolute-error calibration remains pending; call this a research prototype.
 
-**进入 Phase 3**：验证集宏平均误差优于训练集中位数基线；每项声称有效的参数也要优于对应常量基线，并报告与简单回归比较。失败先查标签、尺度、WB 上下文和信息损失，不直接增大网络。业务可接受的绝对误差尚待标定，标定前称研究原型。
+### Phase 3: FP32 ONNX, parity, and measured deployment
 
-### Phase 3：FP32 ONNX、等价性与实测部署
+- [x] FP32 dual inputs: `image float32 (B,3,224,224)` and `physical_raw float32 (B,132)` → normalized absolute values in fixed order. Include X standardization in the graph; record opset/input names/dynamic batch/provider.
+- [x] ONNX checker and PyTorch/ORT batch/boundary parity. Initial maximum normalized FP32 tolerance `1e-4`; investigate violations before revising tolerance. Check denormalization and single/batch results.
+- [x] Shared development/features/JPEG codec/mapping; identical DNG offline/online X/image/prediction comparison. Inference acceptance disables network and torch/torchvision; RAW processing still needs rawpy/colour-science/NumPy/image libraries.
+- [x] FP32 benchmark: hardware/provider/threads/batch=1, 10 warmups, at least 100 timed runs, p50/p95/size. **Under 30 ms is a model-forward target**, not a RAW end-to-end promise. Measure read/two developments/features/JPEG/end-to-end separately without substituting cached timing.
+- [x] **Quantize only if needed**: production FP32 18.30 MiB, CPU 4 threads p50=18.66 ms/p95=19.39 ms meets current needs; no INT8. If measured needs change, prefer training-calibrated static QDQ INT8 for CNN; evaluate dynamic INT8 for MLP only. Require provider support, ≤2% relative per-field MAE degradation (numerical tolerance if baseline error=0), and measured size/latency benefits or target compliance; otherwise retain FP32. [ORT quantization guidance](https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html).
 
-- [x] 导出双输入 FP32：`image float32 (B,3,224,224)`、`physical_raw float32 (B,132)`→同序归一化绝对参数。X 标准化包含在图内；记录 opset、输入名、动态 batch 支持与目标 provider。
-- [x] ONNX checker、PyTorch／ORT 小批与边界样本等价；初始 FP32 归一化输出最大误差容差 `1e-4`，超限先排查，再确定有依据的容差。检查反归一化和单张／批量结果。
-- [x] 推理共用显影、特征、JPEG 编解码和映射；同一 DNG 比较离线与线上 X／image／预测。推理验收环境不联网、不导入 torch／torchvision；RAW 处理仍需 rawpy、colour-science、NumPy 与图像库。
-- [x] FP32 基准：指定硬件、provider、线程、batch=1，预热 10 次、计时至少 100 次，报告 p50／p95、体积。**<30ms 是模型 forward 的待验证目标**；另外测 RAW 读取／双次显影、特征、JPEG 与端到端时间，不以缓存耗时替代。
-- [x] **按需量化**：正式 FP32 18.30 MiB，CPU 4 threads p50=18.66ms／p95=19.39ms，满足当前需求，不实施 INT8。以后 FP32 体积／延迟不满足实测需求时再尝试。CNN 优先训练集校准的静态 QDQ INT8；只量化 MLP 时可评估动态 INT8。验证 provider 支持、逐参数 MAE 相对退化≤2%（基准误差为 0 用数值精度容差），且符合原目标或实测改善延迟／体积；不达标保留 FP32。[ONNX Runtime 量化建议](https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html)。
+**Phase 4 entry**: framework/preprocessing parity, complete model/config bundle, reproducible environment, measured quality/timing. INT8 and under 30 ms are not unconditional promises.
 
-**进入 Phase 4**：框架／预处理等价、模型包和配置完整、环境可复现、质量与耗时有实测报告。INT8 和 <30ms 均非无条件承诺。
+### Phase 4: Local recommendations MVP and independent preview acceptance
 
-### Phase 4：本地参数建议 MVP 与独立预览验收
+- [x] Streamlit invokes local inference: DNG upload→recommendations→baseline display→structured download. Add FastAPI only for a real remote multi-client need.
+- [x] Validate file type/size/decoded pixels, bounded RAW worker, temporary cleanup, clear loading/failure states. Configure limits from memory/timing evidence, not extension checks alone.
+- [x] Fields/units/version semantics/model/data versions/validation state; absolute suggestions without current parameters. Applying values sets them rather than repeatedly adding Delta.
+- [x] JSON first. XMP/Lightroom import only after validating fields/legacy mapping; never rename HighlightRecovery to Highlights2012/modern Highlights.
+- [x] **Approximate preview**: independent linear 16-bit RAW → aspect-preserving maximum-edge-1600 preview, default highlight protection, strength/applied values, PNG/JSON alignment; numerical/application/three-DNG offline checks passed. Model inputs unchanged. See `PREVIEW_IMPROVEMENT_PLAN.md` and subsequent v3 records.
+- [ ] **Faithful preview gate**: custom curves are not Lightroom/PV2003 equivalent. Validate a full renderer, matching configuration, and RAW highlight reconstruction separately. Saved browser permissions block latest real-browser acceptance.
+- [ ] Representative faithful single/combined adjustments and idempotent application. Experts also edit Brightness/Shadows/FillLight/ToneCurve/CameraProfile and other unmodeled fields; complete expert TIFF pixel differences cannot alone validate six-field predictions.
 
-- [x] Streamlit 直接调用本地 inference：DNG 上传→参数建议→原图显示→结构化参数下载；远程多客户端需求出现后再增加 FastAPI。
-- [x] 检查文件类型、大小和解码像素数；大 RAW 在受限 worker 内处理、清理临时文件，显示明确加载／失败状态。上限按实际内存和耗时写入配置，不能只检查扩展名。
-- [x] 返回字段、单位、参数版本语义、模型／数据版本及功能验证状态；无当前参数时显示绝对建议。“应用”使用设值语义，重复点击不叠加 Delta。
-- [x] 先导出 JSON；XMP／Lightroom 导入在字段与旧流程映射验证后提供，禁止直接改名 HighlightRecovery 为 Highlights2012／现代 Highlights。
-- [x] **近似预览验收**：独立线性 RAW 16-bit→最长边 1600 等比预览；默认高光保护、强度调节、实际参数与 PNG／JSON 对齐；数值、应用及 3 张真实 DNG 离线视觉检查通过。模型输入与已训练模型未改变。详见 PREVIEW_IMPROVEMENT_PLAN.md。
-- [ ] **忠实预览 Gate**：自定义曲线仍非 Lightroom/PV2003 等价；完整显影器、同版本配置和原始高光重建须单独验证。真实浏览器验收受保存权限限制，未完成。
-- [ ] 代表性图像检查单参数／组合变化与幂等应用。专家还调整 Brightness、Shadows、FillLight、ToneCurve、CameraProfile 等未建模项；六项全预测正确也不能仅用完整专家 TIFF 像素差验收。
+**MVP complete**: Phases 1–3 passed, upload/recommend/download/error handling work, scope/legacy semantics are clear. Faithful high-resolution development and modern Lightroom mapping remain incomplete.
 
-**MVP 完成**：Phase 1–3 验收通过，上传／建议／下载／错误处理可用，支持范围及旧流程语义清楚；未验收的忠实高清预览与现代 Lightroom 映射保持未完成。
+## Known Issues & Decisions
 
----
+### KI-001: Label boundaries, empty settings, and omitted defaults
 
-## ⚠️ 已知问题与技术决策 (Known Issues & Decisions)
+- Invalid IDs: `a3131-ke_.dng`, `a3214-ke_-8375.dng`, `a3741-ke_-8337.dng`; retain actual path casing. Cause: missing absolute WB, not PV2003 without evidence.
+- Reverse the earlier filter-only decision: fix parsing/record selection, retain old snapshots, then quarantine photos still lacking absolute WB. Temperature<1000 K is a known-error guard, not complete quality validation.
+- Complete JSON keys do not prove correct defaults/versions. Repair/audit completed: 43 changed fields, 3 quarantined photos, previous snapshots retained.
 
-### KI-001：标签解析边界、空设置与缺失默认
+### KI-002: Keep dual development; redo color acceptance
 
-- 异常 ID：`a3131-ke_.dng`、`a3214-ke_-8375.dng`、`a3741-ke_-8337.dng`；实际路径保留原大小写。原因是绝对 WB 字段缺失，不未经证据归因于 PV2003。
-- 撤销“只过滤不修提取器”：修解析根因和记录选择，保留旧快照，绝对 WB 仍不可得的图像才隔离。Temperature<1000K 只是已知错误防线，不是完整质量校验。
-- JSON 键齐全不证明默认值／版本语义正确；修复与审计已完成，43 个字段变化、3 张异常隔离；保留旧快照。
+- Keep one read/two developments, explicit linear physical output/sRGB encoding, and separate API/color acceptance.
+- PSNR 23.5 dB does not establish unavoidable conversion loss. Earlier “strict pipeline complete” GATE 1/2 claims were downgraded to prototype completion.
 
-### KI-002：双次显影保留，颜色验收重做
+### KI-003: Cover valid labels in normalization
 
-- 保留单次读取、双次显影；物理线性输出、sRGB 编码显式锁定，API 等价与颜色正确性分别验收。
-- 不将 PSNR 23.5dB 解释为转换必然损失。原 GATE 1/2 的“严格管道完成”下调为原型完成。
+- Replace Contrast `[0,100]` and Temperature `[2000,10000]` with current table ranges. Do not clip labels to p1–p99; report tails separately.
+- Temperature center 26000 K is an encoding consequence, not neutral WB. Decide on mired/nonlinear encoding using validation errors.
 
-### KI-003：归一化覆盖有效标签
+### KI-004: Absolute parameters and Delta
 
-- 撤销 Contrast `[0,100]` 和 Temperature `[2000,10000]`，使用本表范围。不按 p1～p99 裁剪训练标签，长尾独立报告。
-- 温度中心 26000K 是编码结果，不是中性 WB；是否用 mired 等编码由验证误差决定。
+- Targets are original-unit arithmetic expert means. Delta requires a same-version caller baseline; no baseline means no direction accuracy.
+- Tanh sign/range center cannot establish adjustment direction.
 
-### KI-004：绝对参数与 Delta
+### KI-005: Legacy recovery versus modern Highlights
 
-- 目标是原始单位专家算术均值的绝对建议；Delta 来自使用方提供的同版本基线。没有基线不报告方向准确率。
-- 调整方向不能由 Tanh 符号或映射中心推断。
+- Labels are HighlightRecovery. Process controls/algorithms differ; renaming/range changes are insufficient. [Adobe process versions](https://helpx.adobe.com/ie/lightroom-classic/desktop/process-and-develop-photos/develop-module-options.html), [legacy differences](https://helpx.adobe.com/sk/archive/lightroom/lightroom-5-troubleshooting.pdf).
+- Verify Catalog process semantics first; validate modern compatibility and faithful previews independently.
 
-### KI-005：高光恢复与现代 Highlights
+### KI-006: WB context and target leakage
 
-- 标签是 HighlightRecovery；旧／新流程控制项和算法不同，不能只改名／区间。[Adobe 流程版本说明](https://helpx.adobe.com/ie/lightroom-classic/desktop/process-and-develop-photos/develop-module-options.html)、[Adobe 旧版流程差异文档](https://helpx.adobe.com/sk/archive/lightroom/lightroom-5-troubleshooting.pdf)。
-- 先核实 Catalog 流程语义，现代兼容与忠实预览分别验收。
+- Inference: applied camera WB removes part of the original color cast. Existing pixel features omit WB baselines and cannot guarantee recovery of absolute Kelvin/Tint; verify capabilities by strata.
+- Catalog `InputAsShotZeroed` collection `943690` has 5000 unique nonempty records: **3395 explicitly contain Temperature/Tint, 1605 omit them**. Use it to investigate baselines, not to assume universal coverage or fill missing values using expert WB.
+- Phase 2 must evaluate the WB gate. Added context must have matching training/online definitions and update caches/model inputs. Earlier fallback was to deliver validated non-WB fields and keep WB experimental; actual validation approved only Exposure/HighlightRecovery. Never improve metrics using unavailable expert inputs.
 
-### KI-006：白平衡上下文与目标泄漏
+### KI-008: Unsupported missing-camera-WB inputs
 
-- 推论：相机 WB 会消除部分原色偏；当前像素特征不包含 WB 基线，单凭处理后像素不能保证恢复绝对 Kelvin/Tint，能力需要分层验证。
-- Catalog `InputAsShotZeroed` collection `943690` 有 5000 条唯一非空记录，其中 **3395 条显式 Temperature/Tint、1605 条缺失**。它是基线调查起点，不能假设全量有绝对基线，也不能用专家 WB 补缺。
-- Phase 2 必须通过 WB Gate；新增上下文要在训练／线上同定义可得，并更新缓存和模型输入。不可得时先交付经过验证的四项建议，Temp/Tint 保持实验状态，禁止用线上得不到的专家数据提高指标。
+- Full development found 51 DNGs with camera WB `[0,1,0,0]` from older cameras. Implicit LibRaw AWB violates the training contract. Reject consistently online/offline; do not add unvalidated fallback/expert WB.
+- Separate support audit only classifies this confirmed violation as unsupported. Recheck per-file LibRaw headers, retain IDs/camera/file metadata/original failure report/selection version. Unknown decode/numerical/I/O errors must still fail.
+- Exclude 51 from 4997 candidates → N=4946. With 3 invalid-label photos, 54 inputs are quarantined. Retain existing successful cache contracts/hashes; original data/color algorithms remain unchanged. Create the formal split after support is fixed.
 
-### KI-008：缺失相机白平衡的输入支持边界
+### KI-007: Deployment and rendering boundaries
 
-- 全量显影发现 51 张 DNG 的相机 WB 为 `[0,1,0,0]`，分属旧式相机输入；LibRaw 的隐式自动 WB 不符合训练契约。保持线上／离线拒绝，不引入无验证的 fallback 或专家 WB。
-- 数据准备增加独立支持范围审计：只将这一确证的契约违例分类为 unsupported，逐文件用 LibRaw header 重新确认无有效相机 WB，保存 ID、相机、文件信息、原失败报告及选择代码版本。未知解码／数值／I/O 错误仍必须失败，不能一概过滤。
-- 最终候选 4997 中排除 51 张 unsupported，正式有效 N=4946；与 3 张标签异常合计隔离 54 张。保留原 4946 张缓存的显影契约与哈希，不重写原数据、不修改颜色算法。正式划分在支持范围固定后创建。
+- Separate model and RAW→result timing; quantize based on measured benefit. Unverified CSS/Canvas rendering is approximate.
+- Six fields are not a complete expert recipe; clipping/downsampling limit recovery.
 
-### KI-007：部署与渲染边界
+### Environment and dependency checkpoints
 
-- 模型与 RAW→结果分开计时，量化按实际收益启用；未验证的 CSS／Canvas 渲染只作近似预览。
-- 六项参数不构成完整专家配方，高光剪裁和缩小限制恢复能力。
+- Verified isolated Python 3.9.8, NumPy 1.26.4, rawpy 0.27.0/LibRaw 0.22.1, colour-science 0.4.4, opencv-python-headless 4.11.0.86, Torch 2.8.0/torchvision 0.23.0, onnx 1.19.1/onnxruntime 1.19.2, Streamlit 1.50.0. Full environment locked in `requirements.lock.txt`; `pip check` passed.
+- Same 20-photo pilot: 1/2/6 workers achieved 1.072/1.813/3.053 photos/s and process-tree peak RSS 0.82/1.33/2.75 GB, with identical outputs. One worker for pilots, explicit six for full processing, nested threads limited.
+- Before Git initialization, source/label/config hashes and snapshots identified versions. Git was initialized and uploaded on 2026-10-02; do not invent historical commit IDs.
 
-### 环境与依赖检查点
+## Progress Log
 
-- 验证环境：独立 Python 3.9.8 venv，NumPy 1.26.4、rawpy 0.27.0／LibRaw 0.22.1、colour-science 0.4.4、opencv-python-headless 4.11.0.86、Torch 2.8.0／torchvision 0.23.0、onnx 1.19.1／onnxruntime 1.19.2、Streamlit 1.50.0。requirements.lock.txt 锁定完整环境，pip check 通过。
-- 同一 20 张 Pilot：1／2／6 workers 吞吐 1.072／1.813／3.053 张/秒，进程树峰值 RSS 0.82／1.33／2.75 GB，输出完全一致。Pilot 默认 1，正式运行显式选择 6；限制嵌套线程。
-- 当前目录没有 Git 仓库；建立版本管理前以源码／标签／配置哈希和快照标识版本，不虚构 commit ID。
+Historical entries preserve what was recorded at the time. Earlier strict-color completion claims, normalization ranges, filter-only parsing decisions, and PSNR explanations were superseded by the contracts above.
 
----
+- **2026-07-21 — Project initialization**: Created the master architecture/tasks and the EfficientNet-B0 1280D + physical 132D fusion (1412D). Initialized Antigravity synchronization/logging rules.
+- **2026-07-25 — V3.1 Ground-Truth Parameter Supervision**: Replaced incomplete Kaggle JPGs with the official approximately 50 GB MIT-Adobe FiveK dataset. Parsed `fivek.lrcat` labels (GATE 3), prototyped rawpy/colour-science color processing (GATE 1/2), and implemented 132D features. Later review corrected the original color-completion claim.
+- **2026-09-12 — Phase 1 audit/plan revision**: Audited code/data/environment. Found IncrementalTemperature partial matching in 3 PV2003 photos (0.06%; then planned preprocessing filtering), deprecated `RGB_to_XYZ` API with verified migration parity, one-context/two-development support, and multiprocessing compatibility with observed 1.9× speedup on 8 cores. Planned six-field normalization from 25000 labels, Dataset, and data tests. Later review corrected filter-only handling and conversion-loss interpretations.
+- **2026-10-02 — Resume status review**: Confirmed 5000 DNGs/25000 expert records/3 known invalid photos. JPEG/metadata, Dataset/model/training/application were not implemented yet. Added 20-photo pilot→tests→full preprocessing order and acceptance, clarified absolute/Delta and dependency discrepancies. Only plan/read-only work completed.
+- **2026-10-02 — Plan corrections**: Verified code/full labels/read-only Catalog, 25000 empty settings, omitted defaults, 20 negative Contrast means, 13 Temperature means>10000 K, 15 missing-absolute-WB records, and incomplete As-Shot baselines. Verified new/old `RGB_to_XYZ` parity and default gamma/ProPhoto decode mismatch. Revised absolute/legacy semantics and data/training/export/app gates; implementation still pending.
+- **2026-10-02 — Implementation/pilot acceptance**: Built isolated environment/locks, top-level Catalog parsing/default evidence, linear LibRaw→D50 Lab, resumable caches, Dataset/splits, frozen-backbone training, FP32 ONNX, Torch-free inference, and local page. 18 checks passed; serial/parallel pilot outputs matched. Full six-worker preprocessing started; final training/strata/deployment/UI acceptance pending.
+- **2026-10-02 — Full data acceptance**: Accounted for 5000 inputs: 4946 successful, 3 invalid labels, 51 unsupported missing camera WB (28 DCS460D, 17 PowerShot S70, 6 EOS D30). Rechecked LibRaw headers and retained original failure reports. Color algorithms/AWB unchanged; unknown errors remain blocking. Fixed 3957/495/494 splits and started full training.
+- **2026-10-02 — Production model/local MVP acceptance**: Frozen backbone remained unchanged. Dual validation/test macro normalized MAE 0.066111/0.067113 versus constant 0.081530/0.082541. Exposure test MAE 0.281 EV, recovery 7.428; only those two passed the gate. Recorded camera/Catalog-tag/tail/3395-available-As-Shot evaluation. FP32 ONNX 18.30 MiB, parity 3.21e-7, CPU p95 19.39 ms, no quantization. 22 tests and sample/upload/JSON download passed. Sample local job approximately 2.00 s, RAW→result approximately 0.69 s. Faithful rendering/modern mapping/practical calibration incomplete.
+- **2026-10-02 — Browser workflow**: Real DNG upload→recommendation→downloaded JSON verified fields/model version. Replacing input cleared old results; corrupt DNG failed without stale parameters. Restored sample/local app. Saved acceptance, example JSON, screenshot, and exact source snapshot in `artifacts/model`.
+- **2026-10-02 — Initial approximate preview**: Added baseline/approximate side-by-side display and 224×224 PNG download for validated exposure/recovery proxies only. Recomputed from baseline without accumulation. Gray-ramp checks covered identity/exposure direction/monotonic highlights/unchanged dark pixels/invalid inputs/repeatability. Two targeted numerical/UI checks passed. Faithful development gate incomplete; saved browser denial prevented latest browser acceptance.
+- **2026-10-02 — Preview v2 plan/implementation**: Independent linear RAW source, aspect preservation/max edge 1600, monotonic highlight protection, 0–100% strength, applied values/clipping diagnostics, PNG/JSON alignment. 25 checks passed and Torch/network-disabled RAW preview passed. New full-channel fractions for desert/dark samples fell from 1.3167%/1.7179% to zero; foreground brightened. Three offline samples showed no obvious halos and improved geometry/detail. Model/features/data unchanged. Existing full-image semantics documented; local semantic adjustments deferred for separate validation. Browser/Lightroom gates incomplete.
+- **2026-10-02 — Refresh diagnosis**: Old server was running with `runOnSave=false`. Restarted to clear process caches, enabled `runOnSave=true`/`fileWatcherType=poll`, and added `linear-raw-protected-v2` caption. Verified localhost listener/import/config. Refresh alone does not process RAW; regenerate/upload again. Browser restrictions were not bypassed.
+- **2026-10-02 — Multi-scene preview check**: Tested 12 DNGs: 8 training-scene checks plus 4 held-out test photos, covering portraits/dark interiors/night/backlight/snow/sunset/textiles/lake. Saved baseline/100%/75% comparisons and JSON. All zero-strength PNGs exactly matched baselines; neither strength introduced full-channel pixels. Offline review found improved portrait/interior/night visibility, limited backlit-subject lifting, and flat gray clipped clouds. Did not interpret clipping reduction as texture recovery. Recorded `artifacts/preview_variety/REVIEW.md`; no model/renderer change or population-accuracy claim.
+- **2026-10-02 — Preview v3 shoulder/ceiling diagnostics**: Planned first, preserved v2 source/12 comparisons, then implemented `linear-raw-shoulder-v3`. Linear midtones, continuous monotonic shoulder, recovery proxy knee 0.8. Page/JSON diagnose developed display-source channel/white ceilings, not sensor overexposure/recovery. 26 checks passed. Twelve regressions plus four unseen random test photos had zero new full-channel pixels at 100%/75%. Improved portrait/snow/bark midtones and reduced gray cloud blocks; backlight/missing texture limitations remain. Saved code/images/reports/scripts in `artifacts/preview_v3`; model/preprocessing unchanged. Restarted app; latest real-browser acceptance not performed.
+- **2026-10-02 — GitHub preparation**: User supplied `git@github.com:Evannn888/ShotSense.git` and authorized upload. Verified empty target and working SSH; initialized Git, excluding raw data/environment/secrets/training caches/duplicate PNGs. Included model/source/acceptance/development/comparison JPGs/source snapshots; documented clone/data requirements.
+- **2026-10-02 — Initial GitHub upload**: Pushed `3d0b7fd6899d19d6809a5b1e2fd2e1d270ccaedd` to `main`, verified matching remote/local SHA. 98 files, approximately 46.43 MiB. Original data/environment stayed local. Staged formatting/size/credential-pattern checks passed; runtime unchanged, prior 26 passing checks retained. Upload record committed as `4c79d10ae4dda98a0a4a4352466dc7bc33ce2a68`.
+- **2026-10-02 — English localization in progress**: User requested English throughout the app and GitHub project. Translate current UI/docs/development records/review JSON; preserve numerical contracts and all milestone history. Keep original Chinese screenshots/immutable ZIPs locally with hashes in an English provenance record instead of falsifying historical evidence. Update the GitHub About description and retain prior Git history.
 
-## 📖 进度日志 (Progress Log)
-
-历史条目保留当时记录；其中“严格颜色管道已完成”、旧归一化范围、“只过滤不修解析器”和 PSNR 因果解释已被本次审查修正，当前规范以上述契约为准。
-
-- **2026-07-21**: 项目正式建立。完成了 `SHOTSENSE_MASTER_PLAN.md` 核心架构与各阶段任务清单的初始化。定义了 `EfficientNet-B0` (1280D) 与物理统计 (132D) 的双分支融合架构（融合至 1412D）。同步初始化了 `ANTIGRAVITY.md` 自动同步与日志规范。
-- **2026-07-25**: 架构升级至 **V3.1 Ground-Truth Parameter Supervision**。废弃了残缺的 Kaggle JPG 数据集，重新下载完整的 50GB MIT-Adobe FiveK 官方数据。成功解析 `fivek.lrcat` 提取真实标签（GATE 3），并建立基于 `rawpy` 和 `colour-science` 的绝对颜色科学管道（GATE 1 & 2）。实现了 132D 物理特征提取流水线。
-- **2026-09-12**: **Phase 1 深度审查与方案修订**。对全部代码、数据、环境进行了完整审计。关键发现: (1) `extract_labels.py` 对 3 张 PV2003 图像存在 IncrementalTemperature 误匹配 Bug（影响 0.06%，决策为在预处理阶段过滤）; (2) `colour-science 0.4.4` 的 `RGB_to_XYZ` API 弃用警告需迁移至新签名（已验证输出一致）; (3) rawpy 支持单次 imread 双次 postprocess（ProPhoto+sRGB），避免色空间转换精度损失; (4) multiprocessing 兼容性验证通过，8 核 CPU 实测加速比 1.9x。制定了完整的 6D 参数归一化映射方案（基于 25000 条标签的全量统计）、`src/dataset.py` 设计与 `tests/test_dataset.py` 单元测试矩阵。
-- **2026-10-02**: **复工状态复核与下一步整理**。确认 5000 张 DNG、25000 条专家记录及 3 张已知异常图像；JPEG 缓存与 metadata 尚未生成，Dataset、模型、训练及应用尚未实施。补充 20 张 Pilot → 数据测试 → 全量预处理的执行顺序与验收标准，标记绝对参数／Delta 定义及当前环境与依赖声明的差异。本次完成计划整理与只读检查，未实施数据管道改动或运行训练。
-
-- **2026-10-02（计划审查修订）**：核对源码、全量标签与只读 Catalog，确认 25000 空设置、省略默认字段、20 张负 Contrast、13 张均值色温>10000K、15 条无绝对 WB 异常记录和 As-Shot 基线缺失；数值检查 RGB_to_XYZ 新旧 API 等价，并确认默认 gamma 与 ProPhoto 解码不匹配。统一绝对输出、旧流程高光语义，完善缓存／划分／训练／ONNX／应用的依赖和验收，同步 ANTIGRAVITY。完成文档修订；运行代码修复和正式 Gate 尚未实施。
-
-- **2026-10-02（实现与 Pilot 验收）**：完成隔离环境和依赖锁、顶层 Catalog 解析与省略默认证据、线性 LibRaw→D50 Lab、可恢复缓存、Dataset／持久划分、冻结骨干训练、FP32 ONNX、Torch-free 推理和本地页面。18 项测试通过，单／多进程 Pilot 输出一致；6 workers 正式预处理运行中。正式训练、分层评估、部署计时及页面端到端验收尚待完成。
-
-- **2026-10-02（全量数据验收）**：5000 输入完成核算：4946 成功、3 标签异常、51 不支持的缺失相机 WB 输入（DCS460D 28、PowerShot S70 17、EOS D30 6）。逐文件 LibRaw header 复核并保留原始失败报告，不改变颜色算法或启用隐式 AWB；未知错误仍阻断。正式互斥划分固定 3957／495／494，全量训练启动。
-
-- **2026-10-02（正式模型与本地 MVP 验收）**：冻结骨干保持不变，正式双分支验证／测试宏平均归一化 MAE 0.066111／0.067113，常量基线 0.081530／0.082541。曝光测试 MAE 0.281 EV，高光恢复 7.428；只有这两项通过验证建议门槛，另外四项实验。相机／Catalog 标签／长尾、3395 条可得 As-Shot 基线覆盖评估已记录。FP32 ONNX 18.30 MiB，框架最大误差 3.21e-7，CPU p95 19.39ms，未量化。22 项测试、真实页面样例、上传与 JSON 下载通过；样例本地任务约 2.00 秒、RAW→结果约 0.69 秒。忠实渲染、现代流程映射和业务误差标定仍未完成。
-
-- **2026-10-02（真实浏览器闭环）**：完成 DNG 文件上传→参数生成→实际 JSON 下载并核对字段／模型版本；替换输入清除旧结果，损坏 DNG 显示错误且不保留旧参数。应用恢复可用样例并保持本地运行。验收报告、JSON 示例、页面截图与精确源码快照保存于 artifacts/model。
-
-- **2026-10-02（网页近似效果预览）**：新增应用前／近似应用后并排图片及 224×224 PNG 下载，只模拟已验证的曝光和高光软压缩，实验参数不应用；每次从基准图计算，不叠加。灰阶数值检查覆盖零值恒等、曝光方向、高光单调／暗部不变、非法参数拒绝与重复渲染；页面集成测试验证两幅图片和两种下载，2 项针对性测试通过。忠实显影 Gate 未完成。浏览器权限被用户拒绝，未进行新版页面的真实浏览器验收，需要用户自行刷新查看。
-
-- **2026-10-02（预览改进计划与实施）**：按 PREVIEW_IMPROVEMENT_PLAN.md 加入独立线性 RAW 预览源，最长边 1600、等比显示；加入单调高光保护、0–100% 强度、实际参数／剪裁诊断及 PNG／JSON 对齐。25 项测试通过，禁用 Torch／网络的 RAW 预览检查通过；沙漠／暗场样例新增通道满值比例从 1.3167%／1.7179% 降到 0%，前景有所提亮；3 张固定样例已离线检查，无明显光晕，比例与细节改善。模型、特征和数据版本不变。整图语义已经参与参数预测；区域语义调色列为后续单独验证。真实浏览器与忠实 Lightroom 验收保持未完成。
-
-- **2026-10-02（页面更新诊断）**：确认旧服务仍在运行且 runOnSave=false；重启当前项目服务以清除旧进程缓存，启用 runOnSave=true／fileWatcherType=poll。页面顶部新增 linear-raw-protected-v2 版本标识。新服务启动并监听 127.0.0.1:8501，模块导入及配置读取验证通过；用户需重新生成样例或上传结果，刷新本身不会运行 RAW 推理。未绕过浏览器保存的权限限制。
-
-- **2026-10-02（多场景预览抽查）**：完成 12 张真实 DNG：8 张训练集场景抽查＋4 张未参与训练的固定测试集照片，包含人像、暗室、夜景、逆光、雪山、日落、织物和湖景。使用当前模型和保护高光，生成基准／100%／75% 对比及逐图 JSON；12 张零强度 PNG 逐字节恒等，两档均无新增通道满值。离线可视检查发现人像／暗室／夜景可见度改善，逆光主体提升有限，原过曝云层压暗后仍平坦发灰；未把数值剪裁下降当作纹理恢复。报告见 artifacts/preview_variety/REVIEW.md；不改变模型或渲染器，不据小样本宣称整体准确率。
-
-- **2026-10-02（预览 v3：连续肩部与上限诊断）**：先记录计划，保留 v2 源码和原 12 张对比，再实现 linear-raw-shoulder-v3。正常中间调保持线性曝光，高光肩部连续且单调，代理压缩起点移到 0.8；页面／JSON 加入显影后显示源通道上限及全白比例，明确不等于传感器过曝或细节恢复。26 项测试通过；12 张回归＋4 张未查看随机测试集图片全部完成新旧对比，100%／75% 均无新增通道满值。人像／雪地／树干中间调改善、云层灰块减轻，逆光及已丢失纹理问题仍保留。保存 artifacts/preview_v3 的源码、图片、报告及复现脚本；模型与预处理不变。本地服务已重启加载新版，真实浏览器验收未执行。
-
-- **2026-10-02（GitHub 版本管理准备）**：用户指定 git@github.com:Evannn888/ShotSense.git 并授权上传。只读核对目标为空、SSH 可用；初始化版本管理并排除原始数据、虚拟环境、私密配置、训练缓存和重复 PNG。纳入正式模型、源码、验收报告、开发记录、对比 JPG 与历史源码快照；README 记录仓库范围及克隆后的数据要求。推送结果以 Git remote 核对为准。
-
-- **2026-10-02（GitHub 首次上传完成）**：首次提交 3d0b7fd6899d19d6809a5b1e2fd2e1d270ccaedd 已推送至 Evannn888/ShotSense 的 main 分支，并通过 git ls-remote 验证远端 SHA 与本地一致。98 个文件共约 46.43 MiB，包含正式模型及开发／验收记录；原始数据与环境未上传。提交前暂存区格式检查、文件大小与凭据模式检查通过；运行逻辑未改动，沿用此前 26 项通过的测试结果。
+- **2026-10-02 — English localization verified**: Translated all current tracked UI/documentation/development milestones/review JSON to English; app sample, strength, warnings, and downloads passed in the full 26-test suite. No Chinese text remains in tracked text files. Verified unchanged ONNX/checkpoint/preprocessing/renderer bytes. Saved original ZIP/screenshot hashes and retained originals locally/earlier Git history; created a separate English source snapshot. GitHub About description saved in English and verified in the signed-in page. Local app will be restarted before delivery; latest real-browser localhost acceptance remains blocked.

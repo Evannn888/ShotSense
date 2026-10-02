@@ -1,0 +1,33 @@
+{
+  "originals": [
+    {
+      "path": "artifacts/model/source_snapshot.zip",
+      "sha256": "9b0acab1247fea0a5664f6dcf177b2ef3c7112b9ca2f7b838b357341f1004432",
+      "size_bytes": 65741,
+      "original_git_commit": "4c79d10ae4dda98a0a4a4352466dc7bc33ce2a68",
+      "storage": "Retained unchanged locally and in prior Git history; excluded from the current English tree."
+    },
+    {
+      "path": "artifacts/preview_v2/source_snapshot.zip",
+      "sha256": "08d00eb33f2956c8ad24b140ecb6df48d0b57232574da80af226d0bce7d2d16c",
+      "size_bytes": 74315,
+      "original_git_commit": "4c79d10ae4dda98a0a4a4352466dc7bc33ce2a68",
+      "storage": "Retained unchanged locally and in prior Git history; excluded from the current English tree."
+    },
+    {
+      "path": "artifacts/preview_v3/source_snapshot.zip",
+      "sha256": "709dea648f919e3a53ccc682e0ef45a175c9535410ee6b12c8376cb08ac3d56f",
+      "size_bytes": 46100,
+      "original_git_commit": "4c79d10ae4dda98a0a4a4352466dc7bc33ce2a68",
+      "storage": "Retained unchanged locally and in prior Git history; excluded from the current English tree."
+    },
+    {
+      "path": "artifacts/model/app-preview.jpg",
+      "sha256": "b68211c00e05951893558eff817eeddf1a6e3908a503b4ac766bc38f467af4c7",
+      "size_bytes": 22120,
+      "original_git_commit": "4c79d10ae4dda98a0a4a4352466dc7bc33ce2a68",
+      "storage": "Retained unchanged locally and in prior Git history; excluded from the current English tree."
+    }
+  ],
+  "policy": "Do not translate immutable evidence in place. Current English sources and records are versioned in Git. Earlier commits remain unchanged."
+}
