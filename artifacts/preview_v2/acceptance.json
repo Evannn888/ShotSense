@@ -1,0 +1,153 @@
+{
+  "selection": "first ID, input Lab brightness p5/p95; fixed model; no expert renderings or model selection",
+  "photos": [
+    {
+      "photo_id": "a0001-jmac_dsc1459.dng",
+      "parameters": {
+        "Exposure": 0.80077064037323,
+        "HighlightRecovery": 10.32404899597168
+      },
+      "protected": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1060
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.80077064037323,
+          "HighlightRecovery": 10.32404899597168
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "direct": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1060
+        ],
+        "strength": 1.0,
+        "protect_highlights": false,
+        "applied_parameters": {
+          "Exposure": 0.80077064037323,
+          "HighlightRecovery": 10.32404899597168
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.01316686320754717,
+        "new_full_channel_fraction": 0.01316686320754717,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "dark_region_mean_rgb_before": 92.42301177978516,
+      "dark_region_mean_rgb_after": 112.78103637695312,
+      "elapsed_seconds": 2.668729666,
+      "comparison": "a0001-jmac_dsc1459-comparison.jpg"
+    },
+    {
+      "photo_id": "a4373-dsc_0050-2.dng",
+      "parameters": {
+        "Exposure": 0.7465938925743103,
+        "HighlightRecovery": 39.895300567150116
+      },
+      "protected": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1060,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.7465938925743103,
+          "HighlightRecovery": 39.895300567150116
+        },
+        "before_full_channel_fraction": 0.013433962264150943,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "direct": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1060,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": false,
+        "applied_parameters": {
+          "Exposure": 0.7465938925743103,
+          "HighlightRecovery": 39.895300567150116
+        },
+        "before_full_channel_fraction": 0.013433962264150943,
+        "after_full_channel_fraction": 0.030612617924528303,
+        "new_full_channel_fraction": 0.017178655660377358,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "dark_region_mean_rgb_before": 25.75617218017578,
+      "dark_region_mean_rgb_after": 34.26945114135742,
+      "elapsed_seconds": 2.2361346250000005,
+      "comparison": "a4373-dsc_0050-2-comparison.jpg"
+    },
+    {
+      "photo_id": "a0589-lsstone_060806_8886.dng",
+      "parameters": {
+        "Exposure": -0.02686549350619316,
+        "HighlightRecovery": 37.31841444969177
+      },
+      "protected": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": -0.02686549350619316,
+          "HighlightRecovery": 37.31841444969177
+        },
+        "before_full_channel_fraction": 0.0945768779342723,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "direct": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": false,
+        "applied_parameters": {
+          "Exposure": -0.02686549350619316,
+          "HighlightRecovery": 37.31841444969177
+        },
+        "before_full_channel_fraction": 0.0945768779342723,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "dark_region_mean_rgb_before": 66.13007354736328,
+      "dark_region_mean_rgb_after": 65.50949096679688,
+      "elapsed_seconds": 4.019130415999999,
+      "comparison": "a0589-lsstone_060806_8886-comparison.jpg"
+    }
+  ],
+  "preview_source_sha256": "ecbdf60f6bd52c6056595c11ab7f7ec9d1a16868204008286088bfd3d0cfa179",
+  "old_reference_sha256": "b997300a51f74e2f66a1f8fc271f079c681f2a74d72d31032b668fd35f243861",
+  "browser_acceptance": "not performed: saved browser permission blocks localhost access",
+  "torch_free_and_network_disabled_preview_check": true,
+  "tests_passed": 25,
+  "visual_review": "All three comparison sheets inspected: correct aspect ratio, brighter foreground with retained sky in sample, fine window details, no visible halos. Clipped-source detail recovery and Lightroom equivalence unverified.",
+  "source_snapshot_sha256": "08d00eb33f2956c8ad24b140ecb6df48d0b57232574da80af226d0bce7d2d16c"
+}

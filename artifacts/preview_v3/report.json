@@ -1,0 +1,1173 @@
+{
+  "selection": "12 previously reviewed regression scenes plus four unseen test IDs drawn before inference with NumPy seed 20261002; no expert labels consulted.",
+  "unseen_test_ids": [
+    "a0423-07-06-02-at-07h35m36-s_mg_1355.dng",
+    "a0453-dsc_0025.dng",
+    "a4878-duggan_080207_5155.dng",
+    "a0627-_dsc5388.dng"
+  ],
+  "photos": [
+    {
+      "scene": "portrait",
+      "photo_id": "a3503-050731_155906__I2E5378.dng",
+      "parameters": {
+        "Exposure": 0.7622492909431458,
+        "HighlightRecovery": 20.806416869163513
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.7622492909431458,
+          "HighlightRecovery": 20.806416869163513
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.7622492909431458,
+          "HighlightRecovery": 20.806416869163513
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.5716869682073593,
+          "HighlightRecovery": 15.604812651872635
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "train",
+      "elapsed_seconds": 2.730822708,
+      "comparison": "portrait-comparison.jpg"
+    },
+    {
+      "scene": "dark-interior",
+      "photo_id": "a3953-jn_20080803_0524.dng",
+      "parameters": {
+        "Exposure": 2.1203970909118652,
+        "HighlightRecovery": 15.005737543106079
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 2.1203970909118652,
+          "HighlightRecovery": 15.005737543106079
+        },
+        "before_full_channel_fraction": 5.857544517338331e-07,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 2.1203970909118652,
+          "HighlightRecovery": 15.005737543106079
+        },
+        "before_full_channel_fraction": 5.857544517338331e-07,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 5.857544517338331e-07,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.590297818183899,
+          "HighlightRecovery": 11.25430315732956
+        },
+        "before_full_channel_fraction": 5.857544517338331e-07,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 5.857544517338331e-07,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "train",
+      "elapsed_seconds": 2.687060666,
+      "comparison": "dark-interior-comparison.jpg"
+    },
+    {
+      "scene": "night-building",
+      "photo_id": "a3861-jn_2007_12_10__BU_CRUISE_010.dng",
+      "parameters": {
+        "Exposure": 1.115967869758606,
+        "HighlightRecovery": 19.235897064208984
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1067,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.115967869758606,
+          "HighlightRecovery": 19.235897064208984
+        },
+        "before_full_channel_fraction": 0.0013501640112464856,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1067,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.115967869758606,
+          "HighlightRecovery": 19.235897064208984
+        },
+        "before_full_channel_fraction": 0.0013501640112464856,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0011574507966260544,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1067,
+          1600
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.8369759023189545,
+          "HighlightRecovery": 14.426922798156738
+        },
+        "before_full_channel_fraction": 0.0013501640112464856,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0011574507966260544,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "train",
+      "elapsed_seconds": 2.6850181660000008,
+      "comparison": "night-building-comparison.jpg"
+    },
+    {
+      "scene": "backlit-ruins",
+      "photo_id": "a3246-kme_445.dng",
+      "parameters": {
+        "Exposure": 0.1876860111951828,
+        "HighlightRecovery": 40.25511145591736
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.1876860111951828,
+          "HighlightRecovery": 40.25511145591736
+        },
+        "before_full_channel_fraction": 0.07637886597938144,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.1876860111951828,
+          "HighlightRecovery": 40.25511145591736
+        },
+        "before_full_channel_fraction": 0.07637886597938144,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.05163659793814433,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.1407645083963871,
+          "HighlightRecovery": 30.19133359193802
+        },
+        "before_full_channel_fraction": 0.07637886597938144,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.05163659793814433,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "train",
+      "elapsed_seconds": 2.7700225419999995,
+      "comparison": "backlit-ruins-comparison.jpg"
+    },
+    {
+      "scene": "snow-mountain",
+      "photo_id": "a3954-_MG_0841.dng",
+      "parameters": {
+        "Exposure": 0.6352583169937134,
+        "HighlightRecovery": 16.130298376083374
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.6352583169937134,
+          "HighlightRecovery": 16.130298376083374
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.6352583169937134,
+          "HighlightRecovery": 16.130298376083374
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1067
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.47644373774528503,
+          "HighlightRecovery": 12.09772378206253
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "train",
+      "elapsed_seconds": 3.0309237909999993,
+      "comparison": "snow-mountain-comparison.jpg"
+    },
+    {
+      "scene": "sunset",
+      "photo_id": "a2270-_DSC0033.dng",
+      "parameters": {
+        "Exposure": 0.38580045104026794,
+        "HighlightRecovery": 25.337974727153778
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1060,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.38580045104026794,
+          "HighlightRecovery": 25.337974727153778
+        },
+        "before_full_channel_fraction": 0.005495283018867925,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1060,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.38580045104026794,
+          "HighlightRecovery": 25.337974727153778
+        },
+        "before_full_channel_fraction": 0.005495283018867925,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.005492924528301887,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1060,
+          1600
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.28935033828020096,
+          "HighlightRecovery": 19.003481045365334
+        },
+        "before_full_channel_fraction": 0.005495283018867925,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.005492924528301887,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "train",
+      "elapsed_seconds": 2.830069042,
+      "comparison": "sunset-comparison.jpg"
+    },
+    {
+      "scene": "colorful-textiles",
+      "photo_id": "a0575-kme_040.dng",
+      "parameters": {
+        "Exposure": 0.6240450143814087,
+        "HighlightRecovery": 18.376681208610535
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.6240450143814087,
+          "HighlightRecovery": 18.376681208610535
+        },
+        "before_full_channel_fraction": 0.003393779342723005,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.6240450143814087,
+          "HighlightRecovery": 18.376681208610535
+        },
+        "before_full_channel_fraction": 0.003393779342723005,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.00288556338028169,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.4680337607860565,
+          "HighlightRecovery": 13.782510906457901
+        },
+        "before_full_channel_fraction": 0.003393779342723005,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.00288556338028169,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "train",
+      "elapsed_seconds": 3.394806958,
+      "comparison": "colorful-textiles-comparison.jpg"
+    },
+    {
+      "scene": "cloudy-lake",
+      "photo_id": "a2049-IMG_1585.dng",
+      "parameters": {
+        "Exposure": 0.06035543233156204,
+        "HighlightRecovery": 26.032429933547974
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.06035543233156204,
+          "HighlightRecovery": 26.032429933547974
+        },
+        "before_full_channel_fraction": 0.0020592723004694835,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.06035543233156204,
+          "HighlightRecovery": 26.032429933547974
+        },
+        "before_full_channel_fraction": 0.0020592723004694835,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0019330985915492957,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.04526657424867153,
+          "HighlightRecovery": 19.52432245016098
+        },
+        "before_full_channel_fraction": 0.0020592723004694835,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0019330985915492957,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "train",
+      "elapsed_seconds": 3.6433162500000016,
+      "comparison": "cloudy-lake-comparison.jpg"
+    },
+    {
+      "scene": "test-portrait",
+      "photo_id": "a2132-IMG_4947.dng",
+      "parameters": {
+        "Exposure": 0.6711828112602234,
+        "HighlightRecovery": 27.99840122461319
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1065,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.6711828112602234,
+          "HighlightRecovery": 27.99840122461319
+        },
+        "before_full_channel_fraction": 0.012505868544600939,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1065,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.6711828112602234,
+          "HighlightRecovery": 27.99840122461319
+        },
+        "before_full_channel_fraction": 0.012505868544600939,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0116537558685446,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1065,
+          1600
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.5033871084451675,
+          "HighlightRecovery": 20.998800918459892
+        },
+        "before_full_channel_fraction": 0.012505868544600939,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0116537558685446,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "test",
+      "elapsed_seconds": 3.7901898339999995,
+      "comparison": "test-portrait-comparison.jpg"
+    },
+    {
+      "scene": "test-backlit-sky",
+      "photo_id": "a0715-060812_182920__MG_6255.dng",
+      "parameters": {
+        "Exposure": 1.0060311555862427,
+        "HighlightRecovery": 17.60004758834839
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.0060311555862427,
+          "HighlightRecovery": 17.60004758834839
+        },
+        "before_full_channel_fraction": 0.0002922535211267606,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.0060311555862427,
+          "HighlightRecovery": 17.60004758834839
+        },
+        "before_full_channel_fraction": 0.0002922535211267606,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.00027816901408450704,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.754523366689682,
+          "HighlightRecovery": 13.200035691261292
+        },
+        "before_full_channel_fraction": 0.0002922535211267606,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.00027816901408450704,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "test",
+      "elapsed_seconds": 3.3429074160000027,
+      "comparison": "test-backlit-sky-comparison.jpg"
+    },
+    {
+      "scene": "test-night-street",
+      "photo_id": "a3998-dgw_041.dng",
+      "parameters": {
+        "Exposure": 1.041764736175537,
+        "HighlightRecovery": 25.960904359817505
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1062,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.041764736175537,
+          "HighlightRecovery": 25.960904359817505
+        },
+        "before_full_channel_fraction": 0.009284957627118643,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1062,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.041764736175537,
+          "HighlightRecovery": 25.960904359817505
+        },
+        "before_full_channel_fraction": 0.009284957627118643,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.009231403013182675,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1062,
+          1600
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.7813235521316528,
+          "HighlightRecovery": 19.47067826986313
+        },
+        "before_full_channel_fraction": 0.009284957627118643,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.009231403013182675,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "test",
+      "elapsed_seconds": 3.400821541999999,
+      "comparison": "test-night-street-comparison.jpg"
+    },
+    {
+      "scene": "test-mountain-valley",
+      "photo_id": "a0113-IMG_1129.dng",
+      "parameters": {
+        "Exposure": -0.01058575976639986,
+        "HighlightRecovery": 33.85494500398636
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": -0.01058575976639986,
+          "HighlightRecovery": 33.85494500398636
+        },
+        "before_full_channel_fraction": 0.2791531690140845,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": -0.01058575976639986,
+          "HighlightRecovery": 33.85494500398636
+        },
+        "before_full_channel_fraction": 0.2791531690140845,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.27340903755868545,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": -0.007939319824799895,
+          "HighlightRecovery": 25.39120875298977
+        },
+        "before_full_channel_fraction": 0.2791531690140845,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.27340903755868545,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "test",
+      "elapsed_seconds": 3.169943959000001,
+      "comparison": "test-mountain-valley-comparison.jpg"
+    },
+    {
+      "scene": "unseen-test-1",
+      "photo_id": "a0423-07-06-02-at-07h35m36-s_MG_1355.dng",
+      "parameters": {
+        "Exposure": 0.8298993110656738,
+        "HighlightRecovery": 13.6953204870224
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.8298993110656738,
+          "HighlightRecovery": 13.6953204870224
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.8298993110656738,
+          "HighlightRecovery": 13.6953204870224
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.6224244832992554,
+          "HighlightRecovery": 10.2714903652668
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "test",
+      "elapsed_seconds": 3.4302706249999986,
+      "comparison": "unseen-test-1-comparison.jpg"
+    },
+    {
+      "scene": "unseen-test-2",
+      "photo_id": "a0453-DSC_0025.dng",
+      "parameters": {
+        "Exposure": 1.0188581943511963,
+        "HighlightRecovery": 10.184183716773987
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1060,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.0188581943511963,
+          "HighlightRecovery": 10.184183716773987
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1060,
+          1600
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.0188581943511963,
+          "HighlightRecovery": 10.184183716773987
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1060,
+          1600
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.7641436457633972,
+          "HighlightRecovery": 7.63813778758049
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "test",
+      "elapsed_seconds": 2.2426462079999965,
+      "comparison": "unseen-test-2-comparison.jpg"
+    },
+    {
+      "scene": "unseen-test-3",
+      "photo_id": "a4878-Duggan_080207_5155.dng",
+      "parameters": {
+        "Exposure": 1.0080556869506836,
+        "HighlightRecovery": 15.213263034820557
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.0080556869506836,
+          "HighlightRecovery": 15.213263034820557
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 1.0080556869506836,
+          "HighlightRecovery": 15.213263034820557
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1065
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.7560417652130127,
+          "HighlightRecovery": 11.409947276115417
+        },
+        "before_full_channel_fraction": 0.0,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.0,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "test",
+      "elapsed_seconds": 3.543273124999999,
+      "comparison": "unseen-test-3-comparison.jpg"
+    },
+    {
+      "scene": "unseen-test-4",
+      "photo_id": "a0627-_DSC5388.dng",
+      "parameters": {
+        "Exposure": 0.21311084926128387,
+        "HighlightRecovery": 29.691240191459656
+      },
+      "v2": {
+        "renderer_version": "linear-raw-protected-v2",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1062
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.21311084926128387,
+          "HighlightRecovery": 29.691240191459656
+        },
+        "before_full_channel_fraction": 0.04425788606403013,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1062
+        ],
+        "strength": 1.0,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.21311084926128387,
+          "HighlightRecovery": 29.691240191459656
+        },
+        "before_full_channel_fraction": 0.04425788606403013,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.04350635593220339,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "v3_75pct": {
+        "renderer_version": "linear-raw-shoulder-v3",
+        "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+        "size": [
+          1600,
+          1062
+        ],
+        "strength": 0.75,
+        "protect_highlights": true,
+        "applied_parameters": {
+          "Exposure": 0.1598331369459629,
+          "HighlightRecovery": 22.268430143594742
+        },
+        "before_full_channel_fraction": 0.04425788606403013,
+        "after_full_channel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "source_channel_ceiling_fraction": 0.04350635593220339,
+        "source_white_ceiling_fraction": 0.0,
+        "source_ceiling_semantics": "Display-linear source ceiling after RAW development, resizing and gamut clipping; not sensor overexposure detection. Dimming cannot reconstruct missing texture.",
+        "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+      },
+      "split": "test",
+      "elapsed_seconds": 3.5472387920000017,
+      "comparison": "unseen-test-4-comparison.jpg"
+    }
+  ],
+  "v2_sha256": "ecbdf60f6bd52c6056595c11ab7f7ec9d1a16868204008286088bfd3d0cfa179",
+  "v3_sha256": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62",
+  "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+  "limits": "Global custom approximation; source ceiling is after display gamut clipping, not sensor clipping; no Lightroom reference or population quality estimate.",
+  "offline_visual_review": {
+    "scope": "All 16 before/v2/v3 comparison sheets at display size",
+    "findings": [
+      "Portraits, snow and tree bark show stronger midtone lifting than v2.",
+      "Clipped clouds appear less gray in v3 but missing texture remains absent.",
+      "Backlit subjects remain limited by the global adjustment.",
+      "No obvious new halos at display size; pixel-level noise and faithful Lightroom comparison not evaluated."
+    ],
+    "decision": "Adopt v3 as an approximate global preview; retain v2 source and regression artifacts."
+  },
+  "summary": {
+    "images": 16,
+    "previously_reviewed_regression_images": 12,
+    "new_unseen_test_images": 4,
+    "max_new_full_channel_fraction": 0.0,
+    "max_new_full_channel_fraction_75pct": 0.0
+  },
+  "tests": {
+    "passed": 26,
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 venv/bin/python -m pytest -q",
+    "warning": "Optional colour-science Matplotlib APIs unavailable; no failure"
+  }
+}

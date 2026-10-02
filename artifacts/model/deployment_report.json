@@ -1,0 +1,50 @@
+{
+  "framework_parity": [
+    {
+      "threads": 1,
+      "max_normalized_difference": 3.203749656677246e-07
+    },
+    {
+      "threads": 2,
+      "max_normalized_difference": 3.203749656677246e-07
+    },
+    {
+      "threads": 4,
+      "max_normalized_difference": 3.203749656677246e-07
+    }
+  ],
+  "model_forward_timings": [
+    {
+      "threads": 1,
+      "p50_ms": 27.723583499999815,
+      "p95_ms": 28.103004150000377,
+      "runs": 100,
+      "batch_size": 1,
+      "warmup_runs": 10
+    },
+    {
+      "threads": 2,
+      "p50_ms": 21.08877099999873,
+      "p95_ms": 22.104581899999776,
+      "runs": 100,
+      "batch_size": 1,
+      "warmup_runs": 10
+    },
+    {
+      "threads": 4,
+      "p50_ms": 18.655375000000696,
+      "p95_ms": 19.386022600000086,
+      "runs": 100,
+      "batch_size": 1,
+      "warmup_runs": 10
+    }
+  ],
+  "selected_threads": 4,
+  "model_forward_p95_under_30ms": true,
+  "hardware": "macOS-14.8.4-arm64-arm-64bit",
+  "processor": "arm64",
+  "onnx": "1.19.1",
+  "onnxruntime": "1.19.2",
+  "model_size_bytes": 19190031,
+  "quantization": "Not applied: FP32 is the verified reference; optimize only if a deployment measurement requires it."
+}

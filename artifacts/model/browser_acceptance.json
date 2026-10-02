@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "checks": {
+    "project_sample": true,
+    "real_dng_upload": true,
+    "json_download": true,
+    "replacement_clears_previous_result": true,
+    "corrupt_dng_error_without_stale_result": true,
+    "torch_free_offline_inference": true,
+    "tests_passed": 22
+  },
+  "sample_parameters": "example_parameters.json",
+  "screenshot": "app-preview.jpg",
+  "service": "http://127.0.0.1:8501",
+  "notes": [
+    "Local only; no remote upload.",
+    "Full-resolution faithful Lightroom preview remains unverified."
+  ]
+}

@@ -1,0 +1,28 @@
+# Local environments and generated Python files
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Credentials and machine-local agent plugins
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.agents/
+.streamlit/secrets.toml
+
+# Original datasets and preprocessing caches stay local
+data/
+artifacts/torch/
+artifacts/pilot_model/
+artifacts/model/semantic_features.npz
+
+# Keep reports, comparison JPGs and source snapshots; skip duplicate PNGs/logs
+artifacts/**/*.png
+artifacts/**/run.log
+artifacts/**/candidates.jpg
+artifacts/**/heldout-candidates.jpg

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "recommended_absolute": {
+    "Exposure": 0.80077064037323,
+    "HighlightRecovery": 10.32404899597168
+  },
+  "experimental_absolute": {
+    "Contrast": 19.169082678854465,
+    "Saturation": 4.140035435557365,
+    "Temperature": 4788.365840911865,
+    "Tint": -7.663987576961517
+  },
+  "units": {
+    "Exposure": "EV",
+    "Contrast": "slider",
+    "Saturation": "slider",
+    "Temperature": "K",
+    "Tint": "slider",
+    "HighlightRecovery": "slider"
+  },
+  "parameter_semantics": "absolute legacy Camera Raw PV2003, HighlightRecovery is not modern Highlights",
+  "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+  "data_version": "8939e047cd68e3d20491f5449daf7433b51a7236f7594d1bc17ceedb8e2d3326",
+  "timing": {
+    "preprocess_seconds": 0.581863917,
+    "model_forward_ms": 19.938208999999986,
+    "end_to_end_seconds": 0.636689208
+  },
+  "lab_outside_fraction": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "preview": {
+    "renderer_version": "linear-raw-protected-v2",
+    "source": "linear 16-bit RAW ProPhoto converted to display sRGB",
+    "size": [
+      1600,
+      1060
+    ],
+    "strength": 1.0,
+    "protect_highlights": true,
+    "applied_parameters": {
+      "Exposure": 0.80077064037323,
+      "HighlightRecovery": 10.32404899597168
+    },
+    "before_full_channel_fraction": 0.0,
+    "after_full_channel_fraction": 0.0,
+    "new_full_channel_fraction": 0.0,
+    "semantics": "Custom global exposure/highlight approximation; not Lightroom/PV2003 equivalence; experimental parameters excluded."
+  }
+}

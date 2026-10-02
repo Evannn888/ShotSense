@@ -1,0 +1,186 @@
+{
+  "parameter_order": [
+    "Exposure",
+    "Contrast",
+    "Saturation",
+    "Temperature",
+    "Tint",
+    "HighlightRecovery"
+  ],
+  "parameter_min": [
+    -4.0,
+    -50.0,
+    -100.0,
+    2000.0,
+    -150.0,
+    0.0
+  ],
+  "parameter_max": [
+    4.0,
+    100.0,
+    100.0,
+    50000.0,
+    150.0,
+    100.0
+  ],
+  "validated_parameters": [
+    "Exposure",
+    "HighlightRecovery"
+  ],
+  "experimental_parameters": [
+    "Contrast",
+    "Saturation",
+    "Temperature",
+    "Tint"
+  ],
+  "pipeline_config": {
+    "implementation_sha256": {
+      "color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+      "parameters.py": "6a9b1107c04894556069c40019de2660cea7aaaf95ce55eddd2066342cc8439d",
+      "preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6"
+    },
+    "interpolation": "cv2.INTER_AREA",
+    "jpeg_quality": 95,
+    "labels_sha256": "86a02d54e75a09c190536349ac3b722b61c00812e59d5e3a4e9bbcb318eb5036",
+    "numpy": "1.26.4",
+    "opencv": "4.11.0",
+    "parameters": [
+      "Exposure",
+      "Contrast",
+      "Saturation",
+      "Temperature",
+      "Tint",
+      "HighlightRecovery"
+    ],
+    "physical_dimensions": 132,
+    "pipeline": {
+      "apply_cctf_decoding": false,
+      "chromatic_adaptation_transform": null,
+      "common_raw_params": {
+        "adjust_maximum_thr": 0.0,
+        "auto_bright_thr": 0.01,
+        "bad_pixels_path": null,
+        "bright": 1.0,
+        "chromatic_aberration": [
+          1.0,
+          1.0
+        ],
+        "dcb_enhance": false,
+        "dcb_iterations": 0,
+        "demosaic_algorithm": "AHD",
+        "exp_preserve_highlights": 0.0,
+        "exp_shift": null,
+        "fbdd_noise_reduction": "Off",
+        "four_color_rgb": false,
+        "half_size": false,
+        "highlight_mode": "Clip",
+        "median_filter_passes": 0,
+        "no_auto_bright": true,
+        "no_auto_scale": false,
+        "noise_thr": null,
+        "use_auto_wb": false,
+        "use_camera_wb": true,
+        "user_black": null,
+        "user_cblack": null,
+        "user_flip": null,
+        "user_sat": null,
+        "user_wb": null
+      },
+      "dependencies": {
+        "colour-science": "0.4.4",
+        "libraw": [
+          0,
+          22,
+          1
+        ],
+        "numpy": "1.26.4",
+        "rawpy": "0.27.0"
+      },
+      "lab_illuminant_xy": [
+        0.3457,
+        0.3585
+      ],
+      "matrix_source_libraw": "0.22.1",
+      "missing_camera_wb": "reject",
+      "outputs": {
+        "prophoto16": {
+          "gamma": [
+            1.0,
+            1.0
+          ],
+          "output_bps": 16,
+          "output_color": "ProPhoto"
+        },
+        "srgb8": {
+          "gamma": [
+            2.4,
+            12.92
+          ],
+          "output_bps": 8,
+          "output_color": "sRGB"
+        }
+      },
+      "prophoto_to_xyz_d50": [
+        [
+          0.7977404241168965,
+          0.13517615785022608,
+          0.03130657220840635
+        ],
+        [
+          0.2880713012147518,
+          0.7118663544053732,
+          6.47849258548094e-05
+        ],
+        [
+          3.917905568725097e-06,
+          2.425260324700474e-05,
+          0.8250216544760873
+        ]
+      ],
+      "version": "linear-libraw-d50-v1"
+    },
+    "python": "3.9.8",
+    "schema_version": 1,
+    "size": [
+      224,
+      224
+    ]
+  },
+  "schema_version": 1,
+  "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+  "model_size_bytes": 19190031,
+  "checkpoint_sha256": "a6679016809fb3a945f9d8a8b50d5478e51e414b889113b40769a01a9a14344e",
+  "training_config": {
+    "seed": 42,
+    "epochs": 120,
+    "patience": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "batch_size": 128,
+    "device": "cpu",
+    "threads": 4,
+    "loss": "smooth_l1, beta=0.1, equal parameter weights",
+    "weights": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+    "metadata_sha256": "bbf36e2a2278f5f7c38973b30cb7b66c475c3b4807c7b5be94b98e967fe4c5e8",
+    "config_hash": "8939e047cd68e3d20491f5449daf7433b51a7236f7594d1bc17ceedb8e2d3326",
+    "pilot": false,
+    "decoder_sha256": "5f03aed72ea74d0e0ec6e62f3d651f1091a6ed9812de98f60698bdf1ef18bd4e",
+    "pillow": "11.3.0",
+    "torch": "2.8.0",
+    "torchvision": "0.23.0",
+    "weights_sha256": "7f5810bc96def8f7552d5b7e68d53c4786f81167d28291b21c0d90e1fca14934",
+    "split_sha256": "ada9395713c9aa41b305cf2a98157339f598d29e8ce2d2e647f3c0879b03b514",
+    "implementation_sha256": {
+      "train.py": "095f5b8e02550687ab295fae59e854aedd35a0d2ba5f20e531658eacbd3986b5",
+      "model.py": "eaa72f62b16faa982db71031c615d17dabcd493a2cbf9a9976a720d9aa144a4a",
+      "dataset.py": "92a9d1c941fc067a1f096db4cb51e5b3ca15391b31d09bd71ffa37952bfab0ed",
+      "evaluation.py": "b7c8c945b68d7fdc7a56c3b4a7bf35ef1a15c89ed0a2f3983622cfe22fd99c42"
+    }
+  },
+  "parameter_semantics": "absolute legacy Camera Raw PV2003, HighlightRecovery is not modern Highlights",
+  "provider": "CPUExecutionProvider",
+  "threads": 4,
+  "opset": 17,
+  "precision": "FP32",
+  "source_snapshot_sha256": "9b0acab1247fea0a5664f6dcf177b2ef3c7112b9ca2f7b838b357341f1004432"
+}

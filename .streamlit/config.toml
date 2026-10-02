@@ -1,0 +1,12 @@
+[server]
+address = "127.0.0.1"
+maxUploadSize = 128
+runOnSave = true
+fileWatcherType = "poll"
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#147d92"
+base = "light"
