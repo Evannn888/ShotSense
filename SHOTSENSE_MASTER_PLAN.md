@@ -9,6 +9,15 @@
 - **Validation**: 26 checks passed after English localization. Maximum production PyTorch/ORT normalized difference was 3.21e-7; offline/online features and JPEGs for the same DNG were identical. Final test macro-average error was 18.7% below the constant baseline. Exposure/highlight recovery are validated recommendations; the other four fields are experimental.
 - **Delivery**: local recommendations MVP at http://127.0.0.1:8501/ with JSON export. Contrast/Saturation/Temperature/Tint remain experimental. Faithful Lightroom rendering, modern parameter mapping, and practical error calibration remain incomplete. See `artifacts/model/ACCEPTANCE.md`.
 
+### Next model research cycle
+
+- [x] Created and reviewed [the detailed model improvement plan](MODEL_IMPROVEMENT_PLAN.md), including evaluation leakage controls, grouped splits, matched baselines, geometry experiments, bounded optimization, conditional fine-tuning, and promotion gates.
+- [ ] Implement the new experiment protocol and review photo grouping before training.
+- [ ] Run the staged experiments and three-seed confirmations using validation only.
+- [ ] Freeze a candidate, perform recorded final evaluation, and promote only after deployment acceptance.
+
+The production model and its historical results remain the current release. Proposed model experiments and thresholds are not completed acceptance evidence.
+
 ### Review findings and priorities
 
 | Priority | Issue | Resolution |
@@ -244,6 +253,7 @@ ShotSense/
 
 Historical entries preserve what was recorded at the time. Earlier strict-color completion claims, normalization ranges, filter-only parsing decisions, and PSNR explanations were superseded by the contracts above.
 
+
 - **2026-07-21 — Project initialization**: Created the master architecture/tasks and the EfficientNet-B0 1280D + physical 132D fusion (1412D). Initialized Antigravity synchronization/logging rules.
 - **2026-07-25 — V3.1 Ground-Truth Parameter Supervision**: Replaced incomplete Kaggle JPGs with the official approximately 50 GB MIT-Adobe FiveK dataset. Parsed `fivek.lrcat` labels (GATE 3), prototyped rawpy/colour-science color processing (GATE 1/2), and implemented 132D features. Later review corrected the original color-completion claim.
 - **2026-09-12 — Phase 1 audit/plan revision**: Audited code/data/environment. Found IncrementalTemperature partial matching in 3 PV2003 photos (0.06%; then planned preprocessing filtering), deprecated `RGB_to_XYZ` API with verified migration parity, one-context/two-development support, and multiprocessing compatibility with observed 1.9× speedup on 8 cores. Planned six-field normalization from 25000 labels, Dataset, and data tests. Later review corrected filter-only handling and conversion-loss interpretations.
@@ -265,3 +275,5 @@ Historical entries preserve what was recorded at the time. Earlier strict-color 
 - **2026-10-02 — English localization verified**: Translated all current tracked UI/documentation/development milestones/review JSON to English; app sample, strength, warnings, and downloads passed in the full 26-test suite. No Chinese text remains in tracked text files. Verified unchanged ONNX/checkpoint/preprocessing/renderer bytes. Saved original ZIP/screenshot hashes and retained originals locally/earlier Git history; created a separate English source snapshot. GitHub About description saved in English and verified in the signed-in page. Local app will be restarted before delivery; latest real-browser localhost acceptance remains blocked.
 
 - **2026-10-02 — English GitHub publication verified**: Localization commit `82d4b14194b2adbdd59ea0aa0b16dfb89d3c9717` was pushed to `main`. The signed-in GitHub page visibly shows the English README and English About description. Saved `artifacts/github-english-verification.jpg` as browser evidence. The local English app was restarted and its localhost listener verified; full 26-test integration coverage passed, without bypassing the saved localhost browser restriction. Historical milestones remain translated in the current plan and originals remain retrievable from prior commits.
+
+- **2026-10-02 — Detailed model improvement planning:** Reviewed current training/test access, group-split support, coupled split/training seeds, cached semantic features, and preprocessing/deployment contracts. Created `MODEL_IMPROVEMENT_PLAN.md` with validation-only experiments, grouped matched baselines retrained from ImageNet, geometry-first comparisons, bounded head search, conditional partial fine-tuning, three-seed confirmation, uncertainty, proposed promotion gates, and later WB/style tracks. Linked the roadmap from README. Documentation only; no training, split/cache mutation, or model replacement.

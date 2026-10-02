@@ -61,6 +61,10 @@ JSON separates `recommended_absolute` and `experimental_absolute`, with units, l
 
 Beating a baseline on a fixed validation set is evidence of research effectiveness; acceptable error for practical use remains uncalibrated. Six parameters cannot fully reproduce expert development. Modern Lightroom mapping, faithful high-resolution development, additional RAW formats, and edited JPEG inputs are outside the verified scope. Final test macro-average error was 18.7% below the constant baseline; exposure MAE was 0.281 EV and highlight recovery MAE was 7.428. FP32 CPU forward p95 was 19.39 ms. All 26 checks passed after English localization. See [acceptance](artifacts/model/ACCEPTANCE.md) and the [master plan and development log](SHOTSENSE_MASTER_PLAN.md).
 
+## Model improvement roadmap
+
+The [detailed model improvement plan](MODEL_IMPROVEMENT_PLAN.md) defines grouped evaluation, validation-only experiment selection, matched baselines, aspect-preserving semantic inputs, a bounded head search, and conditional partial backbone fine-tuning. It includes three-seed confirmation, proposed promotion gates, deployment checks, and development records. Planning is complete; these experiments have not started. White-balance context, expert styles, and regional editing are conditional later work.
+
 ## Preview development
 
 The [preview improvement plan](PREVIEW_IMPROVEMENT_PLAN.md) records each stage. Three-photo v2 results are retained in [the v2 report](artifacts/preview_v2/acceptance.json). Current reproduction scripts call the current renderer; historical results identify their original source hashes.
