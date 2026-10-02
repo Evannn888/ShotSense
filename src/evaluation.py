@@ -53,23 +53,30 @@ def diagnostics(dataset,predictions,groups,train_ids,metric):
     cameras,tags,baseline=catalog_context(ROOT/'data/raw/fivek_dataset/raw_photos/fivek.lrcat')
     # All thresholds are specified or fitted on train, before reading test errors.
     low,high=np.percentile(dataset.Y[train_ids],[1,99],axis=0)
+    # Histogram-bin centers approximate developed Lab lightness, not sensor exposure.
+    lightness=dataset.X[:,:32] @ ((np.arange(32)+.5)*100/32)
+    dark,bright=np.quantile(lightness[train_ids],[1/3,2/3])
     output={'notes':['Catalog tags overlap and are incomplete; they are not exhaustive scene ground truth.',
                      'Groups smaller than 10 are retained with counts; interpret their errors cautiously.',
                      'As-Shot comparison uses only explicit valid Catalog Temperature/Tint on the same IDs; it is not an online input.'],
-            'train_tail_thresholds':{'p1':low.tolist(),'p99':high.tolist()},'splits':{}}
+            'train_tail_thresholds':{'p1':low.tolist(),'p99':high.tolist()},
+            'train_brightness_thresholds':{'lower_tertile':float(dark),'upper_tertile':float(bright),
+                'definition':'Lab L histogram-center estimate; thresholds fitted on training inputs only, not sensor exposure.'},'splits':{}}
     for split in groups:
         if split not in ('val','test'): raise ValueError('Diagnostics accept only explicit validation/test partitions')
         indices=groups[split]; buckets=defaultdict(list)
         for index in indices:
             photo=str(dataset.ids[index])
+            brightness='dark' if lightness[index]<=dark else 'bright' if lightness[index]>bright else 'middle'
+            buckets['brightness/'+brightness].append(int(index))
             buckets['camera/'+cameras.get(photo,'unknown')].append(int(index))
             for tag in tags.get(photo,()): buckets['catalog_tag/'+tag].append(int(index))
             if not tags.get(photo): buckets['catalog_tag/untagged'].append(int(index))
             for column,name in enumerate(PARAMS):
                 if dataset.Y[index,column]<low[column] or dataset.Y[index,column]>high[column]:
                     buckets['tail/'+name].append(int(index))
-        summaries={name:{'count':len(ids),'dual':metric(predictions['dual'][ids],dataset.labels.numpy()[ids]),
-                         'constant':metric(predictions['constant'][ids],dataset.labels.numpy()[ids])}
+        summaries={name:dict(count=len(ids),**{model:metric(values[ids],dataset.labels.numpy()[ids])
+                                              for model,values in predictions.items()})
                    for name,ids in sorted(buckets.items())}
         overlap=np.array([int(i) for i in indices if str(dataset.ids[i]) in baseline],dtype=int)
         wb={'count':len(overlap),'total':len(indices),'coverage':len(overlap)/len(indices)}

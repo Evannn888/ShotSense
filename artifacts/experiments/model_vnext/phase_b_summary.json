@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "phase": "B",
+  "status": "accepted_as_validation_reference_only",
+  "run_id": "control-seed42",
+  "seed": 42,
+  "split_seed": 42,
+  "split_sizes": {
+    "train": 3957,
+    "val": 495,
+    "test": 494
+  },
+  "validation": {
+    "constant": {
+      "normalized_mae": [
+        0.10216916352510452,
+        0.07504354417324066,
+        0.02739960141479969,
+        0.03275277838110924,
+        0.05552950128912926,
+        0.21308164298534393
+      ],
+      "macro_normalized_mae": 0.08432935923337936,
+      "p2": 0.07881268858909607,
+      "mae": [
+        0.40867672027417956,
+        5.628265718520252,
+        2.739956773996278,
+        786.0664974559437,
+        8.329425779361234,
+        10.65407681579918
+      ],
+      "rmse": [
+        0.529701790264722,
+        7.181177342573906,
+        3.6781693347143887,
+        1202.7943478752231,
+        11.206620179987867,
+        13.780263654043832
+      ],
+      "temperature_mired_mae": 35.697997789206205
+    },
+    "physical_linear": {
+      "normalized_mae": [
+        0.0744050070643425,
+        0.07729984074831009,
+        0.026555007323622704,
+        0.025848686695098877,
+        0.056439563632011414,
+        0.14845378696918488
+      ],
+      "macro_normalized_mae": 0.06816697865724564,
+      "p2": 0.055714696645736694,
+      "mae": [
+        0.2976201599727225,
+        5.7974848290199805,
+        2.6555003009788276,
+        620.3681396715568,
+        8.465936762012545,
+        7.422687293999274
+      ],
+      "rmse": [
+        0.38004774796306345,
+        7.389598139944041,
+        3.6314722046125265,
+        968.6425331304131,
+        11.566334557553695,
+        10.447783767828904
+      ],
+      "temperature_mired_mae": 27.259765347113284
+    },
+    "dual": {
+      "normalized_mae": [
+        0.06943797320127487,
+        0.07810789346694946,
+        0.027960648760199547,
+        0.025723624974489212,
+        0.05281514301896095,
+        0.1421615034341812
+      ],
+      "macro_normalized_mae": 0.06603445112705231,
+      "p2": 0.052899863570928574,
+      "mae": [
+        0.2777519116413337,
+        5.8580908979021125,
+        2.7960639334262605,
+        617.366886138916,
+        7.922267035738707,
+        7.108073258640791
+      ],
+      "rmse": [
+        0.3668687220734883,
+        7.516379513906149,
+        3.8244996373169062,
+        934.0050372884222,
+        10.752436091565972,
+        9.459870282420315
+      ],
+      "temperature_mired_mae": 27.639190066756726
+    },
+    "semantic": {
+      "normalized_mae": [
+        0.08936087787151337,
+        0.07584676891565323,
+        0.02666640095412731,
+        0.02957971766591072,
+        0.0508362241089344,
+        0.1762751191854477
+      ],
+      "macro_normalized_mae": 0.07476086169481277,
+      "p2": 0.06640899181365967,
+      "mae": [
+        0.3574436161018005,
+        5.688509774380222,
+        2.6666400487231314,
+        709.9134098399769,
+        7.625435044333382,
+        8.813754671695406
+      ],
+      "rmse": [
+        0.4562627618991666,
+        7.212718332830165,
+        3.5865179222208994,
+        1095.386457343604,
+        10.326340551264646,
+        12.601139653569268
+      ],
+      "temperature_mired_mae": 32.45353666538079
+    }
+  },
+  "dual_p2_improvement_over_constant": 0.3287900144260857,
+  "dual_p2_improvement_over_physical_linear": 0.050522272295697945,
+  "training": {
+    "training": {
+      "epochs_run": 23,
+      "best_val_p2": 0.052899863570928574,
+      "elapsed_seconds": 2.8407980000000066
+    },
+    "semantic_training": {
+      "epochs_run": 22,
+      "best_val_p2": 0.06640899926424026,
+      "elapsed_seconds": 2.338140083999974
+    }
+  },
+  "process_resources": {
+    "wall_seconds": 288.44,
+    "peak_rss_bytes": 1379155968,
+    "measurement": "macOS /usr/bin/time -l, full run including fresh embeddings; observed local run, not an inference benchmark"
+  },
+  "artifact_sha256": {
+    "config.json": "6892c191c16c4d3bc61966ea0b81e5311a6ef297b93b17c5dc35cb1709e0467f",
+    "evaluation.json": "9c95f9038f6e1fb84ac07053f9a5b86720977c16bbbd8841e4eccb0ed32cbfed",
+    "best.pt": "81bd87cea9697f9d5d7281460641cf48a078b326e1abcc116ad0fc1b89a9a0da",
+    "controls.pt": "60062d8e21025927b82f091fa4477945c8528702776ec6158fd19f67d09ae193",
+    "split_manifest.json": "a409c9fde89d6ea3117decfd2b41fd4ead115361b16589ab76cef8287c4a1a07",
+    "frozen_run.json": "9eb164b6287cb9a04a99666391d4609f901370b78e2828ca5823ed0e2e4ede1a",
+    "reproduction.json": "041966bf103d1d52b65d20d64ca0d181ebe8966696122d93bf727d9f1958c574"
+  },
+  "reproduction": {
+    "status": "passed",
+    "initialization": "Official ImageNet weights; no ShotSense checkpoint loaded",
+    "evaluation_scope": "validation_only",
+    "seed": 42,
+    "validation_max_absolute_normalized_difference": {
+      "dual": 0.0,
+      "semantic": 0.0
+    },
+    "training_histories_identical": true,
+    "frozen_run_sha256": "9eb164b6287cb9a04a99666391d4609f901370b78e2828ca5823ed0e2e4ede1a",
+    "replay_elapsed_seconds": {
+      "dual": 2.2465409999999997,
+      "semantic": 1.9891549170000005
+    }
+  },
+  "test_accessed": false,
+  "production_replaced": false,
+  "notes": [
+    "Single training seed; seeds 43/44 are pending candidate confirmation.",
+    "New grouped split and training-mean baseline differ from the historical evaluation.",
+    "FiveK data were previously inspected; grouping remains incomplete.",
+    "Validation reference acceptance does not grant release promotion."
+  ]
+}

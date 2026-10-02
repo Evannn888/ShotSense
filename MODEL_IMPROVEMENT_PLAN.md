@@ -1,6 +1,6 @@
 # ShotSense Model Improvement Plan
 
-Date: 2026-10-02. Status: Phase A implemented and checked; full-data model experiments not started.
+Date: 2026-10-02. Status: Phases A and B accepted; grouped seed-42 validation reference trained and reproduced. Candidate geometry experiments and release promotion remain pending.
 
 This plan improves parameter prediction. Preview rendering has its own acceptance process in `PREVIEW_IMPROVEMENT_PLAN.md`. A brighter preview does not establish a more accurate model.
 
@@ -32,7 +32,7 @@ These numbers describe the existing split, not the future grouped benchmark. The
 4. Change one major factor at a time: evaluation protocol → semantic geometry → head optimization → partial backbone fine-tuning.
 5. Keep the physical 132D feature calculation unchanged during the geometry comparison. Keep the preview renderer fixed during all first-wave model comparisons.
 6. Use the existing dependencies and EfficientNet-B0. No additional model service, new backbone family, segmentation system, or quantization in the first wave.
-7. Do not begin training until the evaluation protocol and candidate preprocessing acceptance checks pass.
+7. Do not begin a training run until the evaluation protocol and that run's input preprocessing checks pass. The existing stretch-input pipeline is already verified for Phase B controls; Phase C candidate geometry must pass its own checks before candidate training.
 
 ## 3. Phase A — Make experiments reliable
 
@@ -67,12 +67,15 @@ The existing split helper supports groups; the training entry point now exposes 
 
 ## 4. Phase B — Establish matched baselines
 
-- [ ] Retrain a training-mean constant baseline, physical linear baseline, frozen semantic baseline, and current dual architecture on the new grouped split.
-- [ ] Use identical labels, split, validation IDs, normalization, and evaluation code across the comparisons.
-- [ ] Use the predefined validation P2 score for checkpoint selection in both trainable controls and candidates; do not compare checkpoints selected using different objectives as a single-factor experiment.
-- [ ] Run the dual control with training seed 42 initially. Repeat the matched control with seeds 43 and 44 when a candidate reaches the confirmation stage.
-- [ ] Report Exposure/HighlightRecovery separately, all six original-unit MAEs, the historical six-field macro metric, and camera/brightness/error-tail strata.
-- [ ] Define strata from input information or training-derived thresholds. Record small sample counts; do not claim subgroup improvement from a few examples.
+- [x] Retrain a training-mean constant baseline, physical linear baseline, frozen semantic baseline, and current dual architecture on the new grouped split.
+- [x] Use identical labels, split, validation IDs, normalization, and evaluation code across the comparisons.
+- [x] Use the predefined validation P2 score for checkpoint selection in both trainable controls and candidates; do not compare checkpoints selected using different objectives as a single-factor experiment.
+- [x] Run the dual control with training seed 42 initially and reproduce both trainable heads from ImageNet initialization.
+- [ ] Repeat the matched control with seeds 43 and 44 when a candidate reaches the confirmation stage.
+- [x] Report Exposure/HighlightRecovery separately, all six original-unit MAEs, the historical six-field macro metric, and camera/brightness/error-tail strata.
+- [x] Define strata from input information or training-derived thresholds. Record small sample counts; do not claim subgroup improvement from a few examples.
+
+Phase B evidence: `artifacts/experiments/model_vnext/PHASE_B_ACCEPTANCE.md`, `phase_b_summary.json`, `experiment_ledger.csv`, and the full validation report under `control-seed42/`. Dual Exposure/HighlightRecovery MAE is 0.277752 EV / 7.108073; P2 is 0.052900 versus constant 0.078813 and physical linear 0.055715. This is a single-seed validation reference, not a promoted model. Head replay produced exactly identical training histories and validation predictions; no final test access occurred.
 
 **Exit gate:** a reproducible reference on the new split. The existing 18.7% improvement is historical context and must not be used as the denominator for new-split improvements.
 
@@ -170,7 +173,7 @@ Existing preview review photos include test photos from the historical split. Th
 - [ ] Keep the previous bundle as a rollback option. Promote only the accepted bundle and matching preprocessing contract.
 - [ ] Update `SHOTSENSE_MASTER_PLAN.md`, acceptance evidence, README results, and the experiment ledger. Mark implementation complete only after its checks pass.
 
-Proposed local layout; these experiment directories do not exist yet:
+Experiment layout; Phase A/B directories now exist, while candidate/final-evaluation outputs remain pending:
 
 ```text
 data/processed/model_vnext/             # Candidate inputs, metadata, group mapping, split
@@ -241,3 +244,4 @@ A session is a rough development unit, not a promised completion date. Log elaps
 
 - **2026-10-02:** Created the detailed improvement plan after reviewing the current trainer, split support, input geometry, evaluation, and deployment contracts. Defined phased experiments and proposed promotion gates. No training, dataset split change, model replacement, or runtime change performed.
 - **2026-10-02 — Phase A:** Implemented validation-only training and P2 checkpoint selection, independent seeds, immutable run directories, failure records, validation prediction exports, frozen artifacts, and explicit one-time final evaluation. Saved the production baseline and conservatively reviewed all 11 grouping candidates. Created a separate grouped split and train-only normalization preview. Synthetic protocol checks and existing production RAW/inference checks passed; no new full-data training or model promotion.
+- **2026-10-02 — Phase B:** Clarified that each run requires its own input-preprocessing acceptance; the existing stretch pipeline is verified for controls. Added train-derived Lab-lightness strata and per-stratum reports for all four baselines. Trained seed-42 grouped controls from official ImageNet initialization and replayed the two heads with identical histories/predictions. Recorded full validation metrics, observed runtime/memory, hashes, and ledger. Thirty tests passed; test metrics, candidate geometry, three-seed confirmation, and production replacement remain pending.
