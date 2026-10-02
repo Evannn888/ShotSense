@@ -12,11 +12,13 @@
 ### Next model research cycle
 
 - [x] Created and reviewed [the detailed model improvement plan](MODEL_IMPROVEMENT_PLAN.md), including evaluation leakage controls, grouped splits, matched baselines, geometry experiments, bounded optimization, conditional fine-tuning, and promotion gates.
-- [ ] Implement the new experiment protocol and review photo grouping before training.
+- [x] Implemented validation-only experiments, independent split/training seeds, protected run directories, explicit recorded final evaluation, and conservative reviewed photo grouping before new full-data training.
 - [ ] Run the staged experiments and three-seed confirmations using validation only.
 - [ ] Freeze a candidate, perform recorded final evaluation, and promote only after deployment acceptance.
 
 The production model and its historical results remain the current release. Proposed model experiments and thresholds are not completed acceptance evidence.
+
+Phase A evidence is in `artifacts/experiments/baseline_manifest.json` and `group_audit_summary.json`. All 4946 inputs were screened; 11 candidate pairs were visually reviewed, 8 merged and 3 rejected, producing 4938 groups. Two merged pairs crossed historical partitions. The new group-exclusive split remains 3957/495/494 with seed 42 and lives separately under local `data/processed/model_vnext/`. Its train-only physical normalization preview was recorded. Grouping is conservative/incomplete, and previously inspected FiveK data cannot establish fresh external acceptance. New experiments select checkpoints on validation P2 and use a training-mean constant baseline; the historical trainer used a training median. No new full-data model is trained or promoted.
 
 ### Review findings and priorities
 
@@ -277,3 +279,5 @@ Historical entries preserve what was recorded at the time. Earlier strict-color 
 - **2026-10-02 — English GitHub publication verified**: Localization commit `82d4b14194b2adbdd59ea0aa0b16dfb89d3c9717` was pushed to `main`. The signed-in GitHub page visibly shows the English README and English About description. Saved `artifacts/github-english-verification.jpg` as browser evidence. The local English app was restarted and its localhost listener verified; full 26-test integration coverage passed, without bypassing the saved localhost browser restriction. Historical milestones remain translated in the current plan and originals remain retrievable from prior commits.
 
 - **2026-10-02 — Detailed model improvement planning:** Reviewed current training/test access, group-split support, coupled split/training seeds, cached semantic features, and preprocessing/deployment contracts. Created `MODEL_IMPROVEMENT_PLAN.md` with validation-only experiments, grouped matched baselines retrained from ImageNet, geometry-first comparisons, bounded head search, conditional partial fine-tuning, three-seed confirmation, uncertainty, proposed promotion gates, and later WB/style tracks. Linked the roadmap from README. Documentation only; no training, split/cache mutation, or model replacement.
+
+- **2026-10-02 — Model research Phase A acceptance:** Saved a compact production baseline manifest at revision `6d4fa17ce71747f09cd3facc003c1322f6dccd11`. Added validation-only experiments, P2 checkpoint selection, separate split/training seeds, exposed group/split paths, non-overwriting run directories, failure/config records, validation predictions, frozen-artifact checks, and explicit one-time final evaluation. Synthetic checks prove no test metrics during training, stable grouped splits across seeds, rejected run overwrites/artifact tampering, and logged final access. Screened 4946 unedited previews/source metadata, reviewed 11 candidates, merged 8/rejected 3 into 4938 groups; 2 accepted pairs crossed historical partitions. Saved a separate 3957/495/494 split and train-only normalization preview, with camera coverage and incomplete-grouping limitations. Full suite: 29 passed; original production RAW/ONNX/offline inference still works, and model/preprocessing/original cache/split hashes are unchanged. No new full-data training, production replacement, or fresh external acceptance claim.

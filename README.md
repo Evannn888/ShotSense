@@ -32,12 +32,25 @@ The full test suite requires the locally retained dataset and caches. Original d
 ```sh
 venv/bin/python -m src.extract_labels
 venv/bin/python -m src.preprocess --limit 20 --workers 1
-venv/bin/python -m src.train --pilot --metadata data/processed/pilot/metadata.npz --output-dir artifacts/pilot_model --epochs 30
-venv/bin/python -m src.export_onnx --checkpoint artifacts/pilot_model/best.pt --metadata data/processed/pilot/metadata.npz --output-dir artifacts/pilot_model
+venv/bin/python -m src.train --pilot --metadata data/processed/pilot/metadata.npz --output-dir artifacts/experiments/pilot-new --epochs 30
 venv/bin/python -m scripts.prepare_data --workers 6
-venv/bin/python -m src.train
-venv/bin/python -m src.export_onnx
 ```
+
+The included production bundle was trained/exported under the historical protocol. New training runs now require a **new output directory**, select checkpoints on validation P2, and produce validation results only. They do not grant validated recommendation status or replace the included bundle. A changed training seed does not change the split seed.
+
+After reviewing photo groups and completing candidate preprocessing acceptance, use the local group map and fixed split:
+
+```sh
+venv/bin/python -m src.train --output-dir artifacts/experiments/model_vnext/control-seed42 --seed 42 --split-seed 42 --groups data/processed/model_vnext/groups.json --split-path data/processed/model_vnext/splits.json
+```
+
+Replace the run name and model seed for subsequent experiments; reuse the same group map and split. Run directories cannot be overwritten. Once architecture/settings/checkpoint selection are frozen, explicitly perform final evaluation:
+
+```sh
+venv/bin/python -m src.train --final-evaluate --output-dir artifacts/experiments/model_vnext/control-seed42
+```
+
+This creates an exclusive test-access record and refuses repeat evaluation of the same run. Training uses the training-mean constant baseline; the historical trainer used a training median. Final results do not automatically authorize promotion: three-seed comparisons, uncertainty, visual review, and deployment gates remain required. All large experimental caches/checkpoints stay local.
 
 Caches are identified by processing-code, dependency, label, and configuration hashes. Repeated runs resume and rebuild corrupt files. Configuration changes require a new output directory or explicit `--rebuild`. Pilot and full data, splits, and models are separate. The full photo-ID split uses seed 42 and an 80/10/10 ratio. Feature standardization uses only training data. Burst/near-duplicate grouping is unavailable, so this split does not establish that all similar-scene leakage has been excluded.
 
@@ -63,7 +76,7 @@ Beating a baseline on a fixed validation set is evidence of research effectivene
 
 ## Model improvement roadmap
 
-The [detailed model improvement plan](MODEL_IMPROVEMENT_PLAN.md) defines grouped evaluation, validation-only experiment selection, matched baselines, aspect-preserving semantic inputs, a bounded head search, and conditional partial backbone fine-tuning. It includes three-seed confirmation, proposed promotion gates, deployment checks, and development records. Planning is complete; these experiments have not started. White-balance context, expert styles, and regional editing are conditional later work.
+The [detailed model improvement plan](MODEL_IMPROVEMENT_PLAN.md) defines grouped evaluation, validation-only experiment selection, matched baselines, aspect-preserving semantic inputs, a bounded head search, and conditional partial backbone fine-tuning. Phase A is implemented: a [production baseline manifest](artifacts/experiments/baseline_manifest.json), [reviewed grouping summary](artifacts/experiments/group_audit_summary.json), independent split/training seeds, protected run directories, and explicit final evaluation. Screening 4946 inputs proposed 11 pairs; review merged 8 and rejected 3, yielding 4938 groups. Two merged pairs crossed historical partitions. Grouping remains incomplete; a FiveK resplit is not a fresh external benchmark. No new full-data training has started. White-balance context, expert styles, and regional editing are conditional later work.
 
 ## Preview development
 

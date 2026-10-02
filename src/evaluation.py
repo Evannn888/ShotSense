@@ -57,7 +57,8 @@ def diagnostics(dataset,predictions,groups,train_ids,metric):
                      'Groups smaller than 10 are retained with counts; interpret their errors cautiously.',
                      'As-Shot comparison uses only explicit valid Catalog Temperature/Tint on the same IDs; it is not an online input.'],
             'train_tail_thresholds':{'p1':low.tolist(),'p99':high.tolist()},'splits':{}}
-    for split in ('val','test'):
+    for split in groups:
+        if split not in ('val','test'): raise ValueError('Diagnostics accept only explicit validation/test partitions')
         indices=groups[split]; buckets=defaultdict(list)
         for index in indices:
             photo=str(dataset.ids[index])

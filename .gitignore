@@ -20,6 +20,9 @@ data/
 artifacts/torch/
 artifacts/pilot_model/
 artifacts/model/semantic_features.npz
+artifacts/experiments/**/semantic_features.npz
+artifacts/experiments/**/*.pt
+artifacts/experiments/**/*.npz
 
 # Keep reports, comparison JPGs and source snapshots; skip duplicate PNGs/logs
 artifacts/**/*.png

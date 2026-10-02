@@ -1,6 +1,6 @@
 # ShotSense Model Improvement Plan
 
-Date: 2026-10-02. Status: planning complete; implementation and experiments not started.
+Date: 2026-10-02. Status: Phase A implemented and checked; full-data model experiments not started.
 
 This plan improves parameter prediction. Preview rendering has its own acceptance process in `PREVIEW_IMPROVEMENT_PLAN.md`. A brighter preview does not establish a more accurate model.
 
@@ -38,30 +38,30 @@ These numbers describe the existing split, not the future grouped benchmark. The
 
 ### A1. Freeze the current baseline
 
-- [ ] Record the Git revision, checkpoint/ONNX hashes, dependency versions, source hashes, labels, supported IDs, original split, and original metrics in a baseline manifest.
-- [ ] Verify the original bundle still loads and processes a supported DNG after experimental support is added.
-- [ ] Retain the original source snapshots and acceptance evidence; do not rewrite historical results.
+- [x] Record the Git revision, checkpoint/ONNX hashes, dependency versions, source hashes, labels, supported IDs, original split, and original metrics in a baseline manifest.
+- [x] Verify the original bundle still loads and processes a supported DNG after experimental support is added.
+- [x] Retain the original source snapshots and acceptance evidence; do not rewrite historical results.
 
 ### A2. Audit related photos and establish a grouped split
 
-- [ ] Generate duplicate/burst candidates using source metadata where available and inexpensive image similarity from unedited previews. Use existing OpenCV/standard-library tools.
-- [ ] Review candidate matches before using model errors or expert edits. Similar-looking landscapes alone do not prove that photos belong to the same burst.
-- [ ] Persist a complete photo-ID → group-ID map, the matching rules, reviewed examples, and unresolved cases. Connected related-photo groups must remain within one partition.
-- [ ] Create an approximately 80/10/10 group-exclusive split with fixed split seed 42. Report actual photo/group counts and camera coverage; exact ratios are secondary to group isolation.
-- [ ] If reliable grouping is incomplete, report that limitation rather than claiming all scene leakage has been removed.
-- [ ] Fit physical feature means/scales on the new training partition only. Verify no overlap by photo ID or group.
+- [x] Generate duplicate/burst candidates using source metadata where available and inexpensive image similarity from unedited previews. Use existing OpenCV/standard-library tools.
+- [x] Review candidate matches before using model errors or expert edits. Similar-looking landscapes alone do not prove that photos belong to the same burst.
+- [x] Persist a complete photo-ID → group-ID map, the matching rules, reviewed examples, and unresolved cases. Connected related-photo groups must remain within one partition.
+- [x] Create an approximately 80/10/10 group-exclusive split with fixed split seed 42. Report actual photo/group counts and camera coverage; exact ratios are secondary to group isolation.
+- [x] If reliable grouping is incomplete, report that limitation rather than claiming all scene leakage has been removed.
+- [x] Fit physical feature means/scales on the new training partition only. Verify no overlap by photo ID or group.
 
-The existing split helper supports groups, but the training entry point does not currently expose the group mapping. Add that connection rather than writing a second splitting framework.
+The existing split helper supports groups; the training entry point now exposes `--groups`, `--split-path`, and `--split-seed`. Screening used 64-bit difference/perceptual hashes (limits 4/8) and matching camera/capture times within three seconds, followed by visual review. All 11 candidates were reviewed: 8 merges, 3 rejections, 4938 groups. Camera/time metadata was unambiguous for 2348 of 4946 photos. The local candidate map/split and normalization preview are separate from production. Source-camera coverage remains incomplete; timestamps without serial information may be unreliable. See `artifacts/experiments/group_audit_summary.json`.
 
 **Important:** a new split of FiveK is not a genuinely unseen external benchmark. Previous work has already inspected parts of FiveK. Retrain all grouped-benchmark baselines from ImageNet initialization; do not reuse the current ShotSense checkpoint, which may have trained on newly held-out photos. Separately collected personal RAW files and final settings can later supply an external evaluation set.
 
 ### A3. Separate validation from final testing
 
-- [ ] Make experimental training validation-only by default. The current trainer computes test metrics and Catalog test diagnostics on every run; remove that behavior from the experiment path.
-- [ ] Provide a separate, explicit final-evaluation action that loads frozen candidates. Record each final test access.
-- [ ] Separate the fixed split seed from the model initialization/data-order seed. Changing training seeds must never change the split or invalidate it accidentally.
-- [ ] Save training configuration, split/group hashes, preprocessing version, seed, checkpoint-selection rule, validation predictions, original-unit errors, timing, and failure reasons for every run.
-- [ ] Reject incompatible caches and checkpoints. Use a new directory rather than silently rebuilding or overwriting production files.
+- [x] Make experimental training validation-only by default. The historical trainer computed test metrics and Catalog test diagnostics on every run; that behavior is removed from the experiment path.
+- [x] Provide a separate, explicit final-evaluation action that loads frozen candidates. Record each final test access.
+- [x] Separate the fixed split seed from the model initialization/data-order seed. Changing training seeds must never change the split or invalidate it accidentally.
+- [x] Save training configuration, split/group hashes, preprocessing version, seed, checkpoint-selection rule, validation predictions, original-unit errors, timing, and failure reasons for every run.
+- [x] Reject incompatible caches and checkpoints. Use a new directory rather than silently rebuilding or overwriting production files.
 
 **Exit gate:** reproducible group-exclusive partitions; train-only statistics; validation-only experiments; original production bundle still usable. No model-quality claim at this stage.
 
@@ -240,3 +240,4 @@ A session is a rough development unit, not a promised completion date. Log elaps
 ## Revision record
 
 - **2026-10-02:** Created the detailed improvement plan after reviewing the current trainer, split support, input geometry, evaluation, and deployment contracts. Defined phased experiments and proposed promotion gates. No training, dataset split change, model replacement, or runtime change performed.
+- **2026-10-02 — Phase A:** Implemented validation-only training and P2 checkpoint selection, independent seeds, immutable run directories, failure records, validation prediction exports, frozen artifacts, and explicit one-time final evaluation. Saved the production baseline and conservatively reviewed all 11 grouping candidates. Created a separate grouped split and train-only normalization preview. Synthetic protocol checks and existing production RAW/inference checks passed; no new full-data training or model promotion.

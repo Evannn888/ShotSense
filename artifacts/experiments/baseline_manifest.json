@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-02T23:27:27.135076+00:00",
+  "git_revision": "6d4fa17ce71747f09cd3facc003c1322f6dccd11",
+  "purpose": "Immutable reference for the existing production release; historical test data have already been inspected.",
+  "files": {
+    "artifacts/model/best.pt": "a6679016809fb3a945f9d8a8b50d5478e51e414b889113b40769a01a9a14344e",
+    "artifacts/model/model.onnx": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+    "artifacts/model/model.json": "0e8f81c12684ce3ae2b993dbb097883df1576786c830235da2cfb4e6003b01b2",
+    "artifacts/model/evaluation.json": "3dd67aa00ca59ff97beea0c9a990d01244beaff4580171e84f83534f4c70fa60",
+    "artifacts/model/deployment_report.json": "69407668b565aa609486f2e7d7721f135dc5e01e956eae18715f5f6a5714b93e",
+    "requirements.lock.txt": "ffb75a6c8d35174a1eea8a0dda18d80eb74b13952061ac144a2c540a381fb40a",
+    "data/processed/metadata.npz": "bbf36e2a2278f5f7c38973b30cb7b66c475c3b4807c7b5be94b98e967fe4c5e8",
+    "data/processed/manifest.json": "2e756527fc55b7627b539cfe1ace0e881c5c919b07fde988530b8f52d29b75b2",
+    "data/processed/splits.json": "5daf75979d66fbba393f667fbc0f6661902e838a6065d8f80402214a8461b73b",
+    "data/processed/input_support_audit.json": "2a2dec00875b819dd9d16d0d47c445ffc1413f9077160a732373a5d64acdc880",
+    "data/intermediate/label_audit.json": "da2088b6a9a56d419af51ee32df2de0281d3e9196bec6b361cb568df1d1d781c",
+    "src/color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+    "src/dataset.py": "92a9d1c941fc067a1f096db4cb51e5b3ca15391b31d09bd71ffa37952bfab0ed",
+    "src/evaluation.py": "b7c8c945b68d7fdc7a56c3b4a7bf35ef1a15c89ed0a2f3983622cfe22fd99c42",
+    "src/export_onnx.py": "2c863802b7b15ac767d845ab5ba4786145131e32c7f9d3e9130e5f240455f026",
+    "src/extract_labels.py": "d8c9b2b2a261f41329437284de9874afa87b062c9d9b02ad51380eed548e4dde",
+    "src/image_io.py": "5f03aed72ea74d0e0ec6e62f3d651f1091a6ed9812de98f60698bdf1ef18bd4e",
+    "src/inference.py": "0582b3b24c067fb4011dd872bb7d74def0f0b0d829d3c1499ee03c30bb1bd2ad",
+    "src/model.py": "eaa72f62b16faa982db71031c615d17dabcd493a2cbf9a9976a720d9aa144a4a",
+    "src/parameters.py": "6a9b1107c04894556069c40019de2660cea7aaaf95ce55eddd2066342cc8439d",
+    "src/preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6",
+    "src/preview.py": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62",
+    "src/train.py": "095f5b8e02550687ab295fae59e854aedd35a0d2ba5f20e531658eacbd3986b5"
+  },
+  "split": {
+    "schema_version": 1,
+    "scope": "full",
+    "seed": 42,
+    "ratios": [
+      0.8,
+      0.1,
+      0.1
+    ],
+    "data_version": "8939e047cd68e3d20491f5449daf7433b51a7236f7594d1bc17ceedb8e2d3326",
+    "data_hash": "bbf36e2a2278f5f7c38973b30cb7b66c475c3b4807c7b5be94b98e967fe4c5e8",
+    "groups_hash": "4e8d67f26898b7c7ed2071d500f670227e882f06c24c460b511afd7eb22b44ea",
+    "grouping": "photo_id_only; near-duplicate grouping unavailable",
+    "counts": {
+      "train": 3957,
+      "val": 495,
+      "test": 494
+    }
+  },
+  "model_contract": {
+    "parameter_order": [
+      "Exposure",
+      "Contrast",
+      "Saturation",
+      "Temperature",
+      "Tint",
+      "HighlightRecovery"
+    ],
+    "parameter_min": [
+      -4.0,
+      -50.0,
+      -100.0,
+      2000.0,
+      -150.0,
+      0.0
+    ],
+    "parameter_max": [
+      4.0,
+      100.0,
+      100.0,
+      50000.0,
+      150.0,
+      100.0
+    ],
+    "validated_parameters": [
+      "Exposure",
+      "HighlightRecovery"
+    ],
+    "experimental_parameters": [
+      "Contrast",
+      "Saturation",
+      "Temperature",
+      "Tint"
+    ],
+    "pipeline_config": {
+      "implementation_sha256": {
+        "color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+        "parameters.py": "6a9b1107c04894556069c40019de2660cea7aaaf95ce55eddd2066342cc8439d",
+        "preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6"
+      },
+      "interpolation": "cv2.INTER_AREA",
+      "jpeg_quality": 95,
+      "labels_sha256": "86a02d54e75a09c190536349ac3b722b61c00812e59d5e3a4e9bbcb318eb5036",
+      "numpy": "1.26.4",
+      "opencv": "4.11.0",
+      "parameters": [
+        "Exposure",
+        "Contrast",
+        "Saturation",
+        "Temperature",
+        "Tint",
+        "HighlightRecovery"
+      ],
+      "physical_dimensions": 132,
+      "pipeline": {
+        "apply_cctf_decoding": false,
+        "chromatic_adaptation_transform": null,
+        "common_raw_params": {
+          "adjust_maximum_thr": 0.0,
+          "auto_bright_thr": 0.01,
+          "bad_pixels_path": null,
+          "bright": 1.0,
+          "chromatic_aberration": [
+            1.0,
+            1.0
+          ],
+          "dcb_enhance": false,
+          "dcb_iterations": 0,
+          "demosaic_algorithm": "AHD",
+          "exp_preserve_highlights": 0.0,
+          "exp_shift": null,
+          "fbdd_noise_reduction": "Off",
+          "four_color_rgb": false,
+          "half_size": false,
+          "highlight_mode": "Clip",
+          "median_filter_passes": 0,
+          "no_auto_bright": true,
+          "no_auto_scale": false,
+          "noise_thr": null,
+          "use_auto_wb": false,
+          "use_camera_wb": true,
+          "user_black": null,
+          "user_cblack": null,
+          "user_flip": null,
+          "user_sat": null,
+          "user_wb": null
+        },
+        "dependencies": {
+          "colour-science": "0.4.4",
+          "libraw": [
+            0,
+            22,
+            1
+          ],
+          "numpy": "1.26.4",
+          "rawpy": "0.27.0"
+        },
+        "lab_illuminant_xy": [
+          0.3457,
+          0.3585
+        ],
+        "matrix_source_libraw": "0.22.1",
+        "missing_camera_wb": "reject",
+        "outputs": {
+          "prophoto16": {
+            "gamma": [
+              1.0,
+              1.0
+            ],
+            "output_bps": 16,
+            "output_color": "ProPhoto"
+          },
+          "srgb8": {
+            "gamma": [
+              2.4,
+              12.92
+            ],
+            "output_bps": 8,
+            "output_color": "sRGB"
+          }
+        },
+        "prophoto_to_xyz_d50": [
+          [
+            0.7977404241168965,
+            0.13517615785022608,
+            0.03130657220840635
+          ],
+          [
+            0.2880713012147518,
+            0.7118663544053732,
+            6.47849258548094e-05
+          ],
+          [
+            3.917905568725097e-06,
+            2.425260324700474e-05,
+            0.8250216544760873
+          ]
+        ],
+        "version": "linear-libraw-d50-v1"
+      },
+      "python": "3.9.8",
+      "schema_version": 1,
+      "size": [
+        224,
+        224
+      ]
+    },
+    "schema_version": 1,
+    "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+    "model_size_bytes": 19190031,
+    "checkpoint_sha256": "a6679016809fb3a945f9d8a8b50d5478e51e414b889113b40769a01a9a14344e",
+    "training_config": {
+      "seed": 42,
+      "epochs": 120,
+      "patience": 20,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "batch_size": 128,
+      "device": "cpu",
+      "threads": 4,
+      "loss": "smooth_l1, beta=0.1, equal parameter weights",
+      "weights": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+      "metadata_sha256": "bbf36e2a2278f5f7c38973b30cb7b66c475c3b4807c7b5be94b98e967fe4c5e8",
+      "config_hash": "8939e047cd68e3d20491f5449daf7433b51a7236f7594d1bc17ceedb8e2d3326",
+      "pilot": false,
+      "decoder_sha256": "5f03aed72ea74d0e0ec6e62f3d651f1091a6ed9812de98f60698bdf1ef18bd4e",
+      "pillow": "11.3.0",
+      "torch": "2.8.0",
+      "torchvision": "0.23.0",
+      "weights_sha256": "7f5810bc96def8f7552d5b7e68d53c4786f81167d28291b21c0d90e1fca14934",
+      "split_sha256": "ada9395713c9aa41b305cf2a98157339f598d29e8ce2d2e647f3c0879b03b514",
+      "implementation_sha256": {
+        "train.py": "095f5b8e02550687ab295fae59e854aedd35a0d2ba5f20e531658eacbd3986b5",
+        "model.py": "eaa72f62b16faa982db71031c615d17dabcd493a2cbf9a9976a720d9aa144a4a",
+        "dataset.py": "92a9d1c941fc067a1f096db4cb51e5b3ca15391b31d09bd71ffa37952bfab0ed",
+        "evaluation.py": "b7c8c945b68d7fdc7a56c3b4a7bf35ef1a15c89ed0a2f3983622cfe22fd99c42"
+      }
+    },
+    "parameter_semantics": "absolute legacy Camera Raw PV2003, HighlightRecovery is not modern Highlights",
+    "provider": "CPUExecutionProvider",
+    "threads": 4,
+    "opset": 17,
+    "precision": "FP32",
+    "source_snapshot_sha256": "9b0acab1247fea0a5664f6dcf177b2ef3c7112b9ca2f7b838b357341f1004432"
+  },
+  "historical_evaluation": {
+    "config": {
+      "seed": 42,
+      "epochs": 120,
+      "patience": 20,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "batch_size": 128,
+      "device": "cpu",
+      "threads": 4,
+      "loss": "smooth_l1, beta=0.1, equal parameter weights",
+      "weights": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+      "metadata_sha256": "bbf36e2a2278f5f7c38973b30cb7b66c475c3b4807c7b5be94b98e967fe4c5e8",
+      "config_hash": "8939e047cd68e3d20491f5449daf7433b51a7236f7594d1bc17ceedb8e2d3326",
+      "pilot": false,
+      "decoder_sha256": "5f03aed72ea74d0e0ec6e62f3d651f1091a6ed9812de98f60698bdf1ef18bd4e",
+      "pillow": "11.3.0",
+      "torch": "2.8.0",
+      "torchvision": "0.23.0",
+      "weights_sha256": "7f5810bc96def8f7552d5b7e68d53c4786f81167d28291b21c0d90e1fca14934",
+      "split_sha256": "ada9395713c9aa41b305cf2a98157339f598d29e8ce2d2e647f3c0879b03b514",
+      "implementation_sha256": {
+        "train.py": "095f5b8e02550687ab295fae59e854aedd35a0d2ba5f20e531658eacbd3986b5",
+        "model.py": "eaa72f62b16faa982db71031c615d17dabcd493a2cbf9a9976a720d9aa144a4a",
+        "dataset.py": "92a9d1c941fc067a1f096db4cb51e5b3ca15391b31d09bd71ffa37952bfab0ed",
+        "evaluation.py": "b7c8c945b68d7fdc7a56c3b4a7bf35ef1a15c89ed0a2f3983622cfe22fd99c42"
+      }
+    },
+    "parameter_order": [
+      "Exposure",
+      "Contrast",
+      "Saturation",
+      "Temperature",
+      "Tint",
+      "HighlightRecovery"
+    ],
+    "split_sizes": {
+      "train": 3957,
+      "val": 495,
+      "test": 494
+    },
+    "validation": {
+      "constant": {
+        "normalized_mae": [
+          0.10535050928592682,
+          0.07553937286138535,
+          0.026339402422308922,
+          0.029778407886624336,
+          0.05754464119672775,
+          0.19462624192237854
+        ],
+        "macro_normalized_mae": 0.08152977377176285,
+        "mae": [
+          0.42140202009909306,
+          5.665454600345004,
+          2.6339393950566046,
+          714.6816947243431,
+          8.63169876846245,
+          9.731313287082946
+        ],
+        "rmse": [
+          0.5572824035758687,
+          7.0487136932282555,
+          3.997463873355559,
+          1029.7122254490068,
+          11.600129264728979,
+          13.401109602843439
+        ],
+        "temperature_mired_mae": 33.14804749172997
+      },
+      "physical_linear": {
+        "normalized_mae": [
+          0.07817420363426208,
+          0.07522592693567276,
+          0.029029754921793938,
+          0.025700103491544724,
+          0.052486054599285126,
+          0.14853012561798096
+        ],
+        "macro_normalized_mae": 0.06819101423025131,
+        "mae": [
+          0.3126968906324526,
+          5.641942531643012,
+          2.902974359505349,
+          616.8023398428252,
+          7.872909127230135,
+          7.426503016001949
+        ],
+        "rmse": [
+          0.3993826638350172,
+          6.996620075188856,
+          3.900201305203958,
+          950.0014101896406,
+          10.429991890452069,
+          10.166597180112305
+        ],
+        "temperature_mired_mae": 26.76958369890994
+      },
+      "dual": {
+        "normalized_mae": [
+          0.07534724473953247,
+          0.07706330716609955,
+          0.03158397972583771,
+          0.023592611774802208,
+          0.05131357163190842,
+          0.13776418566703796
+        ],
+        "macro_normalized_mae": 0.06611081957817078,
+        "mae": [
+          0.30138899304038574,
+          5.779750227476612,
+          3.1583989187992754,
+          566.2228381994998,
+          7.697034596102171,
+          6.888208816402987
+        ],
+        "rmse": [
+          0.38210237871281766,
+          7.19247991135224,
+          4.079351307826717,
+          775.5150859586512,
+          10.47370447591432,
+          9.541588172950602
+        ],
+        "temperature_mired_mae": 26.220316041188177
+      },
+      "semantic": {
+        "normalized_mae": [
+          0.09367873519659042,
+          0.07837375998497009,
+          0.03219287097454071,
+          0.026678593829274178,
+          0.05326750874519348,
+          0.16266588866710663
+        ],
+        "macro_normalized_mae": 0.0744762271642685,
+        "mae": [
+          0.374715001679336,
+          5.878030099821362,
+          3.219286514142754,
+          640.2863618099328,
+          7.990124738866915,
+          8.13329587718754
+        ],
+        "rmse": [
+          0.49639403652887903,
+          7.215130787363294,
+          4.167821874448752,
+          900.4804138670669,
+          10.582577901202397,
+          11.462606653972015
+        ],
+        "temperature_mired_mae": 29.96577736366805
+      }
+    },
+    "test": {
+      "constant": {
+        "normalized_mae": [
+          0.10223480314016342,
+          0.0767827257514,
+          0.026558708399534225,
+          0.032245390117168427,
+          0.05449093133211136,
+          0.20293110609054565
+        ],
+        "macro_normalized_mae": 0.08254063129425049,
+        "mae": [
+          0.40893927063210395,
+          5.758704485862821,
+          2.655870433018245,
+          773.8893649838714,
+          8.173641391794987,
+          10.146558665159548
+        ],
+        "rmse": [
+          0.5310925852836007,
+          7.322894094419979,
+          3.8792085666346607,
+          1087.349332716288,
+          11.41931766257154,
+          14.481902600515216
+        ],
+        "temperature_mired_mae": 38.1450685110391
+      },
+      "physical_linear": {
+        "normalized_mae": [
+          0.07235650718212128,
+          0.07770495861768723,
+          0.028198199346661568,
+          0.027389774098992348,
+          0.05699700489640236,
+          0.1459645926952362
+        ],
+        "macro_normalized_mae": 0.06810183078050613,
+        "mae": [
+          0.289425947716618,
+          5.827871227315495,
+          2.8198190031904042,
+          657.3544576583121,
+          8.549556027591379,
+          7.298226380364419
+        ],
+        "rmse": [
+          0.3979117477337716,
+          7.342978584574828,
+          4.867324977455405,
+          1003.3297181469845,
+          13.775896093340338,
+          9.777682232332113
+        ],
+        "temperature_mired_mae": 30.28268933624845
+      },
+      "dual": {
+        "normalized_mae": [
+          0.07033484429121017,
+          0.0798482820391655,
+          0.029583975672721863,
+          0.024666907265782356,
+          0.04969026520848274,
+          0.14855459332466125
+        ],
+        "macro_normalized_mae": 0.06711316108703613,
+        "mae": [
+          0.28133946011099314,
+          5.988620565228564,
+          2.9583974555346866,
+          592.0056891344819,
+          7.453543885478086,
+          7.42773342456269
+        ],
+        "rmse": [
+          0.3624800767119168,
+          7.524692851305933,
+          3.888141649580846,
+          796.8527135669716,
+          10.577134953190157,
+          10.251189666154369
+        ],
+        "temperature_mired_mae": 29.343325463760554
+      },
+      "semantic": {
+        "normalized_mae": [
+          0.08749762922525406,
+          0.07889536768198013,
+          0.02879622019827366,
+          0.0291037168353796,
+          0.05157690495252609,
+          0.1857362538576126
+        ],
+        "macro_normalized_mae": 0.0769343227148056,
+        "mae": [
+          0.34999054134304936,
+          5.917150351366873,
+          2.87962162590054,
+          698.488926597935,
+          7.736530119762591,
+          9.28680851998049
+        ],
+        "rmse": [
+          0.4555860653433836,
+          7.457886282093783,
+          3.8014674472186134,
+          948.607015515868,
+          10.845348986417864,
+          13.055393794583223
+        ],
+        "temperature_mired_mae": 34.78633259135657
+      }
+    },
+    "validated_parameters": [
+      "Exposure",
+      "HighlightRecovery"
+    ],
+    "experimental_parameters": [
+      "Contrast",
+      "Saturation",
+      "Temperature",
+      "Tint"
+    ],
+    "backbone_unchanged": true
+  },
+  "historical_constant_baseline": "Training median in the original trainer; new experiments use the predefined training-mean baseline. Do not conflate these results."
+}

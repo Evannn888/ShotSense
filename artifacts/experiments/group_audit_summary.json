@@ -1,0 +1,244 @@
+{
+  "photo_count": 4946,
+  "unambiguous_capture_count": 2348,
+  "candidate_count": 11,
+  "group_count": 4938,
+  "merged_pair_count": 8,
+  "rejected_pair_count": 3,
+  "historical_cross_partition_merged_pairs": 2,
+  "status": "reviewed",
+  "split_counts": {
+    "train": 3957,
+    "val": 495,
+    "test": 494
+  },
+  "limitations": "Conservative candidate screening is incomplete; timestamps without camera serial can match different cameras.",
+  "pair_review": [
+    {
+      "dhash_distance": 28,
+      "phash_distance": 34,
+      "reasons": [
+        "same_camera_capture_within_3_seconds"
+      ],
+      "left": "a0020-jmac_mg_6225.dng",
+      "right": "a1081-jmac_mg_6226.dng",
+      "decision": "merge",
+      "note": "Adjacent river/valley captures with matching source camera/time and consecutive original filenames; different framing of the same scene."
+    },
+    {
+      "dhash_distance": 0,
+      "phash_distance": 0,
+      "reasons": [
+        "visual_hash"
+      ],
+      "left": "a0160-_dsc0023.dng",
+      "right": "a4618-_dsc0023-3.dng",
+      "decision": "merge",
+      "note": "Visually identical low-angle wall/puddle frame; duplicate composition."
+    },
+    {
+      "dhash_distance": 24,
+      "phash_distance": 22,
+      "reasons": [
+        "same_camera_capture_within_3_seconds"
+      ],
+      "left": "a0165-_mg_1166.dng",
+      "right": "a2326-_mg_1167.dng",
+      "decision": "merge",
+      "note": "Same plush gorilla and room, adjacent captures; framing/exposure differs."
+    },
+    {
+      "dhash_distance": 0,
+      "phash_distance": 8,
+      "reasons": [
+        "visual_hash"
+      ],
+      "left": "a0165-_mg_1166.dng",
+      "right": "a2606-_mg_1165.dng",
+      "decision": "merge",
+      "note": "Same plush gorilla and room; near-identical composition, connected to pair 2."
+    },
+    {
+      "dhash_distance": 38,
+      "phash_distance": 36,
+      "reasons": [
+        "same_camera_capture_within_3_seconds"
+      ],
+      "left": "a0830-kme_206.dng",
+      "right": "a2888-kme_480.dng",
+      "decision": "reject",
+      "note": "Different outdoor scenes and nonadjacent source filenames; timestamp coincidence does not establish a burst."
+    },
+    {
+      "dhash_distance": 22,
+      "phash_distance": 32,
+      "reasons": [
+        "same_camera_capture_within_3_seconds"
+      ],
+      "left": "a0830-kme_206.dng",
+      "right": "a4135-kme_210.dng",
+      "decision": "reject",
+      "note": "People in a yard versus building facade; timestamp coincidence is insufficient."
+    },
+    {
+      "dhash_distance": 41,
+      "phash_distance": 34,
+      "reasons": [
+        "same_camera_capture_within_3_seconds"
+      ],
+      "left": "a1400-mb_070908_014.dng",
+      "right": "a1612-mb_070908_015.dng",
+      "decision": "merge",
+      "note": "Same boy/clothes and outdoor setting; consecutive source filenames and close capture time, changed framing."
+    },
+    {
+      "dhash_distance": 33,
+      "phash_distance": 34,
+      "reasons": [
+        "same_camera_capture_within_3_seconds"
+      ],
+      "left": "a2804-ji2e4547.dng",
+      "right": "a4175-ji2e4546.dng",
+      "decision": "merge",
+      "note": "Consecutive captures with matching source camera/time in the same grassy setting, different people; conservative session grouping."
+    },
+    {
+      "dhash_distance": 32,
+      "phash_distance": 34,
+      "reasons": [
+        "same_camera_capture_within_3_seconds"
+      ],
+      "left": "a3275-ls051026_day_2_arive82.dng",
+      "right": "a3957-ls051026_day_2_arive83.dng",
+      "decision": "merge",
+      "note": "Same red-jacket subject/vehicle setting, consecutive captures; orientation changes."
+    },
+    {
+      "dhash_distance": 41,
+      "phash_distance": 38,
+      "reasons": [
+        "same_camera_capture_within_3_seconds"
+      ],
+      "left": "a3616-kme_214.dng",
+      "right": "a4135-kme_210.dng",
+      "decision": "reject",
+      "note": "Different architecture/framing and nonadjacent source files; timestamp coincidence alone is insufficient."
+    },
+    {
+      "dhash_distance": 3,
+      "phash_distance": 4,
+      "reasons": [
+        "visual_hash"
+      ],
+      "left": "a4351-duggan_090428_8083.dng",
+      "right": "a4812-duggan_090428_8086.dng",
+      "decision": "merge",
+      "note": "Same rock/valley composition with different brightness; likely closely related captures."
+    }
+  ],
+  "groups_sha256": "3bd76a2cb439c14f75754185818c4d1c1d397f5918e3a720a70d391c88821d17",
+  "split_manifest_sha256": "a409c9fde89d6ea3117decfd2b41fd4ead115361b16589ab76cef8287c4a1a07",
+  "split_seed": 42,
+  "normalization": {
+    "source": "new training partition only",
+    "feature_width": 132,
+    "zero_variance_columns": 3,
+    "preview_sha256": "6616d72280c7e1cced53ff857d030dc7324ce93e3f1a5184ac628f04298974c5"
+  },
+  "split_camera_counts": {
+    "train": {
+      "Canon EOS 10D": 77,
+      "Canon EOS 20D": 286,
+      "Canon EOS 30D": 89,
+      "Canon EOS 40D": 260,
+      "Canon EOS 5D": 622,
+      "Canon EOS 5D Mark II": 71,
+      "Canon EOS D60": 26,
+      "Canon EOS DIGITAL REBEL": 83,
+      "Canon EOS DIGITAL REBEL XSi": 498,
+      "Canon EOS DIGITAL REBEL XT": 13,
+      "Canon EOS DIGITAL REBEL XTi": 58,
+      "Canon EOS-1D Mark II": 197,
+      "Canon EOS-1D Mark II N": 8,
+      "Canon EOS-1D Mark III": 11,
+      "Canon EOS-1Ds Mark II": 66,
+      "Canon PowerShot G10": 42,
+      "Canon PowerShot G9": 52,
+      "D-LUX 3": 71,
+      "DSLR-A900": 82,
+      "FinePix F700": 1,
+      "FinePixS2Pro": 35,
+      "M8 Digital Camera": 53,
+      "NIKON D100": 62,
+      "NIKON D200": 5,
+      "NIKON D2H": 16,
+      "NIKON D300": 28,
+      "NIKON D40X": 23,
+      "NIKON D70": 179,
+      "NIKON D700": 464,
+      "NIKON D70s": 361,
+      "NIKON D80": 118
+    },
+    "val": {
+      "Canon EOS 10D": 15,
+      "Canon EOS 20D": 43,
+      "Canon EOS 30D": 15,
+      "Canon EOS 40D": 27,
+      "Canon EOS 5D": 78,
+      "Canon EOS 5D Mark II": 7,
+      "Canon EOS D60": 3,
+      "Canon EOS DIGITAL REBEL": 8,
+      "Canon EOS DIGITAL REBEL XSi": 59,
+      "Canon EOS DIGITAL REBEL XT": 1,
+      "Canon EOS DIGITAL REBEL XTi": 7,
+      "Canon EOS-1D Mark II": 27,
+      "Canon EOS-1D Mark II N": 1,
+      "Canon EOS-1D Mark III": 3,
+      "Canon EOS-1Ds Mark II": 7,
+      "Canon PowerShot G10": 6,
+      "D-LUX 3": 8,
+      "DSLR-A900": 3,
+      "FinePixS2Pro": 2,
+      "M8 Digital Camera": 6,
+      "NIKON D100": 15,
+      "NIKON D200": 1,
+      "NIKON D2H": 3,
+      "NIKON D300": 4,
+      "NIKON D40X": 2,
+      "NIKON D70": 22,
+      "NIKON D700": 70,
+      "NIKON D70s": 43,
+      "NIKON D80": 9
+    },
+    "test": {
+      "Canon EOS 10D": 19,
+      "Canon EOS 20D": 36,
+      "Canon EOS 30D": 11,
+      "Canon EOS 40D": 27,
+      "Canon EOS 5D": 77,
+      "Canon EOS 5D Mark II": 9,
+      "Canon EOS D60": 6,
+      "Canon EOS DIGITAL REBEL": 13,
+      "Canon EOS DIGITAL REBEL XSi": 70,
+      "Canon EOS DIGITAL REBEL XT": 1,
+      "Canon EOS DIGITAL REBEL XTi": 7,
+      "Canon EOS-1D Mark II": 20,
+      "Canon EOS-1D Mark III": 1,
+      "Canon EOS-1Ds Mark II": 6,
+      "Canon PowerShot G10": 7,
+      "Canon PowerShot G9": 5,
+      "D-LUX 3": 5,
+      "DSLR-A900": 7,
+      "FinePixS2Pro": 4,
+      "M8 Digital Camera": 5,
+      "NIKON D100": 6,
+      "NIKON D2H": 1,
+      "NIKON D300": 2,
+      "NIKON D40X": 5,
+      "NIKON D70": 18,
+      "NIKON D700": 56,
+      "NIKON D70s": 52,
+      "NIKON D80": 18
+    }
+  }
+}
