@@ -75,9 +75,16 @@ def test_jpeg_page_experimental_preview_and_exports(tmp_path):
     assert at.session_state['prediction'][0]['recommended_absolute']=={}
 
 
-def test_jpeg_manual_exposure_and_unchanged_status(tmp_path):
+def test_jpeg_manual_exposure_and_unchanged_status(tmp_path,monkeypatch):
     result,source=predict_jpeg(jpeg_file(tmp_path,'.jpg'))
     result['timing']['local_worker_seconds']=0
+    import streamlit as st
+    exports={}
+    original_download=st.download_button
+    def capture_download(label,data,*args,**kwargs):
+        exports[label]=data
+        return original_download(label,data,*args,**kwargs)
+    monkeypatch.setattr(st,'download_button',capture_download)
     at=AppTest.from_file(str(ROOT/'app/streamlit_app.py')).run(timeout=30)
     at.session_state['prediction']=(result,source); at.run(timeout=30)
     assert any('No JPEG adjustments are applied' in item.value for item in at.info)
@@ -91,3 +98,13 @@ def test_jpeg_manual_exposure_and_unchanged_status(tmp_path):
     before,after,metadata=render_linear_preview(source,{'Exposure':1.,'HighlightRecovery':0})
     assert before!=after and metadata['applied_parameters']['Exposure']==1.
     assert at.session_state['prediction'][0]['recommended_absolute']=={}
+
+    payload=json.loads(exports['Download parameters JSON'])
+    assert payload['preview']['adjustment_mode']=='manual'
+    assert payload['preview']['applied_parameters']['Exposure']==1.
+    assert exports['Download approximate preview PNG']==after
+    next(item for item in at.slider if item.label=='Adjustment strength').set_value(50).run(timeout=30)
+    payload=json.loads(exports['Download parameters JSON'])
+    assert payload['preview']['applied_parameters']['Exposure']==.5
+    _,half,_=render_linear_preview(source,{'Exposure':1.,'HighlightRecovery':0},strength=.5)
+    assert exports['Download approximate preview PNG']==half

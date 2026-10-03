@@ -1,0 +1,108 @@
+{
+  "scope": "validation_only",
+  "run": "artifacts/experiments/model_vnext/control-seed42",
+  "validation_count": 495,
+  "run_frozen_sha256": "9eb164b6287cb9a04a99666391d4609f901370b78e2828ca5823ed0e2e4ede1a",
+  "brightness_thresholds_train_only": [
+    31.263660236800202,
+    39.985044359321854
+  ],
+  "strata": {
+    "dark": {
+      "count": 170,
+      "models": {
+        "dual": {
+          "p2": 0.05314110468169127,
+          "exposure_mae": 0.2786075714756461,
+          "recovery_mae": 7.145626292892677,
+          "exposure_bias": -0.036995760482900285
+        },
+        "semantic": {
+          "p2": 0.059436533329241426,
+          "exposure_mae": 0.3471347146174487,
+          "recovery_mae": 7.548122733130175,
+          "exposure_bias": -0.08720190174439374
+        },
+        "physical_linear": {
+          "p2": 0.05560147436291855,
+          "exposure_mae": 0.2965829525800312,
+          "recovery_mae": 7.413007965333321,
+          "exposure_bias": -0.03909566078115912
+        },
+        "constant": {
+          "p2": 0.07379109632486806,
+          "exposure_mae": 0.42084313227849846,
+          "recovery_mae": 9.49768011149238,
+          "exposure_bias": -0.25877551874693705
+        }
+      }
+    },
+    "middle": {
+      "count": 147,
+      "models": {
+        "dual": {
+          "p2": 0.0486472704449073,
+          "exposure_mae": 0.2695165886765435,
+          "recovery_mae": 6.360496730524666,
+          "exposure_bias": -0.011737885321078657
+        },
+        "semantic": {
+          "p2": 0.058582100873800357,
+          "exposure_mae": 0.3261175648290284,
+          "recovery_mae": 7.639950614397217,
+          "exposure_bias": 0.03402341567740148
+        },
+        "physical_linear": {
+          "p2": 0.051054944723312345,
+          "exposure_mae": 0.2951895669102669,
+          "recovery_mae": 6.521119358284133,
+          "exposure_bias": 0.01016979644290444
+        },
+        "constant": {
+          "p2": 0.07309272980304801,
+          "exposure_mae": 0.3742360602430746,
+          "recovery_mae": 9.940595207571173,
+          "exposure_bias": -0.026948389147414643
+        }
+      }
+    },
+    "bright": {
+      "count": 178,
+      "models": {
+        "dual": {
+          "p2": 0.0561814290912903,
+          "exposure_mae": 0.28373578975364316,
+          "recovery_mae": 7.68958844633752,
+          "exposure_bias": 0.0019389491167254328
+        },
+        "semantic": {
+          "p2": 0.079531882849484,
+          "exposure_mae": 0.3931595868289764,
+          "recovery_mae": 10.991881734534596,
+          "exposure_bias": 0.21693197020141178
+        },
+        "physical_linear": {
+          "p2": 0.05967105117980966,
+          "exposure_mae": 0.30061803883192745,
+          "recovery_mae": 8.176484750562839,
+          "exposure_bias": -0.0076859099267238985
+        },
+        "constant": {
+          "p2": 0.08833235033347632,
+          "exposure_mae": 0.42549968085754036,
+          "recovery_mae": 12.34772405597601,
+          "exposure_bias": 0.22406651315886233
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Descriptive post-selection analysis; it cannot establish a causal failure source.",
+    "Expert disagreement is not irreducible error or a universal aesthetic target.",
+    "Dark developed Lab statistics do not imply that every scene should be brightened."
+  ],
+  "worst_20_share_of_dual_error": 0.122128097957358,
+  "dual_beats_physical_photo_fraction": 0.5272727272727272,
+  "dual_beats_semantic_photo_fraction": 0.6121212121212121,
+  "exposure_absolute_error_vs_expert_std_correlation": 0.21443315056471435
+}
