@@ -2,6 +2,8 @@
 
 Research date: 2026-10-02. Scope: existing ShotSense evidence plus selected primary papers and author implementations, including 2024–2026 work. This is a targeted engineering review, not an exhaustive literature survey or proof that any proposed method will improve ShotSense. Runtime/model/data remain unchanged.
 
+Follow-up: [dataset recommendations](DATASET_RECOMMENDATIONS.md) describe paired rendered-image options and PPR10K's additional expert XMP supervision. XMP process-version compatibility with our legacy labels remains unaudited.
+
 ## Recommendation
 
 Prioritize a separately defined rendered-JPEG enhancement task, because the user's visible goal is a better-looking adjusted image. Retain RAW Catalog-parameter prediction as a separate capability. Before investing in a larger network, run one bounded RAW loss-alignment experiment and strengthen its regularized baselines. For the JPEG path, begin with a small controllable global curve model, then an adaptive LUT only if the curve model's failures justify it. Regional models come after evidence shows that global transformations are insufficient.

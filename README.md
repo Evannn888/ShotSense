@@ -105,3 +105,5 @@ The included production model can process your own supported DNG without retrain
 Original historical ZIP snapshots and the initial Chinese-interface screenshot are preserved locally and in earlier Git history, rather than altered and presented as original evidence. Their hashes and purpose are recorded in [snapshot provenance](artifacts/SNAPSHOT_PROVENANCE.md). Current documentation and application text use English; prior commits remain intact.
 
 The [optimization research review](OPTIMIZATION_RESEARCH.md) compares primary literature with the negative geometry/head/fine-tuning results and prioritizes a separate JPEG enhancement task, bounded RAW objective alignment and stronger regularized baselines. Proposed gains remain unverified.
+
+The [dataset shortlist](DATASET_RECOMMENDATIONS.md) identifies paired FiveK, LOL, SICE, PPR10K and DPED data, including task boundaries, source-group splitting and a bounded JPEG acquisition/evaluation protocol.
