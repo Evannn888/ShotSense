@@ -1,0 +1,15 @@
+{
+  "source_png_hashes_verified": 240,
+  "jpeg_hashes_verified": 120,
+  "scene_exclusive": true,
+  "validation_pairs": 16,
+  "validation_groups": 13,
+  "old_ids_training_only": true,
+  "eval15_not_extracted": true,
+  "production_model_unchanged": true,
+  "parent_provenance_verified": true,
+  "parameter_count": 2295,
+  "max_native_metric_replay_difference": 0.0,
+  "max_zero_strength_codes": 0,
+  "scope": "Checkpoint/metric replay, not full training reproduction or production acceptance."
+}

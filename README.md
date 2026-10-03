@@ -113,3 +113,5 @@ The [small JPEG curve experiment](artifacts/experiments/jpeg_curve/ACCEPTANCE.md
 The [bounded-shadow regression](artifacts/experiments/jpeg_shadow_guard/ACCEPTANCE.md) tests a linear dark branch/gain cap and a separate fixed median-filter baseline. It records the visibility/noise tradeoff and remaining color/detail problems without promoting the recipe.
 
 The [noise-aware native-crop training pilot](artifacts/experiments/jpeg_noise_v1/ACCEPTANCE.md) uses a new grouped development set, shared bounded brightness, fixed filtering and noise/detail/color losses. Numerical screens pass, but remaining grain, casts and dark visibility fail visual acceptance; the website still uses the existing release.
+
+The [small spatial residual pilot](artifacts/experiments/jpeg_spatial_v1/ACCEPTANCE.md) uses104 training pairs and16 new grouped development pairs over a frozen shared-curve base. Seed42 improves PSNR by3.48dB but increases dark-region variation by15.95% and retains visible grain/casts, so conditional seeds and website integration were rejected.

@@ -1,0 +1,564 @@
+{
+  "status": "reviewed",
+  "candidate_pairs": [
+    {
+      "left": "102.png",
+      "right": "104.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 4,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 2,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "128.png",
+      "right": "130.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 2,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "147.png",
+      "right": "149.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 8,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "228.png",
+      "right": "229.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 5,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 2,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "27.png",
+      "right": "28.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "328.png",
+      "right": "330.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 0,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "35.png",
+      "right": "38.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 3,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "39.png",
+      "right": "40.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 8,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "472.png",
+      "right": "473.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 6,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 7,
+          "phash_distance": 8,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "639.png",
+      "right": "642.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 4,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "650.png",
+      "right": "653.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 8,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "698.png",
+      "right": "699.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 3,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "698.png",
+      "right": "700.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 7,
+          "phash_distance": 12,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "699.png",
+      "right": "700.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 6,
+          "phash_distance": 10,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "743.png",
+      "right": "744.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 10,
+          "phash_distance": 8,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "75.png",
+      "right": "76.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 3,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 4,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "775.png",
+      "right": "776.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "781.png",
+      "right": "783.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "787.png",
+      "right": "788.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 7,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    },
+    {
+      "left": "647.png",
+      "right": "648.png",
+      "matches": {
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed reference and low-light contact sheets; same scene or conservative shared setup."
+    }
+  ],
+  "additional_groups": [
+    [
+      "102.png",
+      "104.png"
+    ],
+    [
+      "118.png",
+      "122.png",
+      "126.png",
+      "128.png",
+      "96.png"
+    ],
+    [
+      "147.png",
+      "149.png"
+    ],
+    [
+      "175.png",
+      "195.png",
+      "213.png"
+    ],
+    [
+      "221.png",
+      "222.png"
+    ],
+    [
+      "243.png",
+      "249.png"
+    ],
+    [
+      "27.png",
+      "28.png"
+    ],
+    [
+      "328.png",
+      "330.png",
+      "473.png",
+      "477.png",
+      "488.png",
+      "494.png",
+      "497.png",
+      "506.png",
+      "9.png"
+    ],
+    [
+      "39.png",
+      "40.png"
+    ],
+    [
+      "56.png",
+      "620.png"
+    ],
+    [
+      "647.png",
+      "648.png"
+    ],
+    [
+      "698.png",
+      "699.png"
+    ],
+    [
+      "723.png",
+      "724.png"
+    ],
+    [
+      "743.png",
+      "744.png",
+      "745.png"
+    ],
+    [
+      "747.png",
+      "766.png",
+      "775.png",
+      "779.png"
+    ],
+    [
+      "75.png",
+      "76.png"
+    ],
+    [
+      "787.png",
+      "788.png"
+    ],
+    [
+      "14.png",
+      "140.png"
+    ],
+    [
+      "154.png",
+      "160.png",
+      "162.png"
+    ],
+    [
+      "175.png",
+      "195.png",
+      "198.png",
+      "207.png",
+      "213.png"
+    ],
+    [
+      "470.png",
+      "472.png",
+      "480.png",
+      "473.png"
+    ],
+    [
+      "541.png",
+      "546.png",
+      "548.png",
+      "551.png"
+    ],
+    [
+      "675.png",
+      "676.png",
+      "683.png"
+    ],
+    [
+      "747.png",
+      "752.png",
+      "766.png",
+      "775.png",
+      "776.png",
+      "779.png"
+    ]
+  ],
+  "review_notes": "Reviewed all six low and all six reference contact sheets (120 pairs), all 20 hash candidates, and both uncertain alignment pairs before training. Same toys/chart setup, pink bedroom, desk, foosball and pool venue conservatively merged. Existing groups carried forward. 142 and 648 retain uncertain alignment: recognizable matching scene geometry but very low signal; no calibrated alignment claim. Grouping is conservative visual review, not guaranteed complete venue identification."
+}

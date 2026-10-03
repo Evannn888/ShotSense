@@ -1,0 +1,28 @@
+{
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "batch": 16,
+  "max_epochs": 30,
+  "patience": 6,
+  "first_seed": 42,
+  "conditional_seeds": [
+    43,
+    44
+  ],
+  "device": "cpu",
+  "protocol_sha256": "efadc0704810196913b8fe50f3eb7563568e4956ff2664570e1710074d825d53",
+  "manifest_sha256": "c6da7571e3bc59b3398dab3ab7a5cbab53697a87fdb228ee2f949a70ed65423c",
+  "review_sha256": "d0cd8a1dcd7da374f33728a792c485253e123c215735c9d0ca0492d718da75bd",
+  "split_sha256": "7ac114ab96650a2e99820cdeb9a4fba1f8e2267950155ea7ae2e6e854055e460",
+  "parent_checkpoint_sha256": "36aa2a9b7a96be704ccae2ee084b27798fcb58c4216dfa0e959bcc7764f020a0",
+  "parent_config_sha256": "6b46b55944e73a11228944bc2832e75f3ff10c37f8cfaac02bae4d9cbd88501a",
+  "production_model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+  "source_sha256": {
+    "scripts/train_spatial_candidate.py": "7693f3411b0c1fe59db54db6db6ba6cc9f0eafbea7dade1cfcbb27a6a026a667",
+    "src/jpeg_spatial_candidate.py": "2804dfd722b84b9633364215958542c1875cb58d4ec1a1684db341f959459ede",
+    "src/jpeg_noise_candidate.py": "6d6aea189321eff88cd451412270bc73e1cad4aefa8a77ca124ad3b0bfefefc8",
+    "scripts/train_noise_candidate.py": "536809320e8c753b78d6c680230c29b5d9ed99f240d0f404ee30dc7b9f88205f",
+    "src/jpeg_curve_candidate.py": "780916573b8804fa4c8a348b6d2421cde1fa269144e3566f14da5ca859d33f54",
+    "scripts/train_jpeg_curve.py": "74663e34a3b2671f7b4d4fcbea46f821258f10ded1ca6a715f058480b2b58647"
+  }
+}

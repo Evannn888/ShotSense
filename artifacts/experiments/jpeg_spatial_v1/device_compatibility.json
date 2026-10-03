@@ -1,0 +1,8 @@
+{
+  "available": true,
+  "passed": false,
+  "max_forward_difference": 5.963444709777832e-05,
+  "max_gradient_difference": 0.0069455369375646114,
+  "steps": 3,
+  "device": "cpu"
+}
