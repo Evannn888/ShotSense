@@ -1,0 +1,10 @@
+{
+  "dataset": "LOL author-linked archive",
+  "author_page": "https://daooshee.github.io/BMVC2018website/",
+  "download_url": "https://drive.google.com/file/d/157bjO1_cFuSd0HWDUuAmcHRJDVyWpOxB/view",
+  "filename": "LOLdataset.zip",
+  "bytes": 347426968,
+  "sha256": "47d85314b7927470cd48c97e5c1d6c896a56d6217c8e508d0736aff2d91aadcc",
+  "elapsed_seconds": 51.25247406959534,
+  "scope": "Only 24 deterministic training pairs will be extracted; official eval15 remains uninspected."
+}

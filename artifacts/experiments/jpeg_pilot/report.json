@@ -1,0 +1,2045 @@
+{
+  "schema_version": 1,
+  "selection_seed": 20261003,
+  "count": 24,
+  "selection": "24 matching training filenames sampled without pixels/targets; eval15 not extracted",
+  "source_archive_sha256": "47d85314b7927470cd48c97e5c1d6c896a56d6217c8e508d0736aff2d91aadcc",
+  "renderer": "linear-raw-shoulder-v3",
+  "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+  "implementation_sha256": {
+    "scripts/test_paired_jpeg_pilot.py": "06e4c77532c22d2914e1b788fb8237dd62b9711041a162e585f9952f7f882cf2",
+    "src/jpeg_inference.py": "10efa21eafec0c760fefcf81baeecf8271a1018a0551af58b06be1a1dc72aefb",
+    "src/preview.py": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62"
+  },
+  "grid": {
+    "exposures": [
+      -2.0,
+      -1.0,
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0
+    ],
+    "recoveries": [
+      0,
+      50,
+      100
+    ],
+    "target_informed": true,
+    "protect_highlights": true
+  },
+  "checks": {
+    "pairs_valid": true,
+    "zero_strength_identity": true,
+    "repeatable_render": true,
+    "eval15_not_extracted": true,
+    "trained_model": false
+  },
+  "summary": {
+    "Identity JPEG": {
+      "mse": 0.17842828621203385,
+      "psnr_db": 8.633765618402725,
+      "mean_rgb": 0.07747536787400146,
+      "new_full_channel_fraction": 0.0,
+      "better_than_identity_count": 0
+    },
+    "Experimental estimates": {
+      "mse": 0.08726393499295142,
+      "psnr_db": 12.467907126323405,
+      "mean_rgb": 0.20321384849310098,
+      "new_full_channel_fraction": 0.0,
+      "better_than_identity_count": 24
+    },
+    "Fixed +1 EV": {
+      "mse": 0.149800406189037,
+      "psnr_db": 9.832679440713067,
+      "mean_rgb": 0.11833501838235294,
+      "new_full_channel_fraction": 5.208333333333333e-06,
+      "better_than_identity_count": 24
+    },
+    "Target-informed grid": {
+      "mse": 0.04694102878255515,
+      "psnr_db": 16.62090811760285,
+      "mean_rgb": 0.2970971130628177,
+      "new_full_channel_fraction": 3.611111111111111e-05,
+      "better_than_identity_count": 24
+    }
+  },
+  "photos": [
+    {
+      "id": "118.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/118.png",
+          "path": "data/external/lol_pilot/low/118.png",
+          "sha256": "29d94d1c3de27d201caf53a60cca547c68bffaf795175ccf4ea622e364a3b194",
+          "bytes": 289961,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/118.png",
+          "path": "data/external/lol_pilot/high/118.png",
+          "sha256": "daab5af99e4636a4d8952a6cc62f7830483564610436feaa6cf07b85ffb09795",
+          "bytes": 301660,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "9848651510d3f763115a7efc1f1b8ccd5c24f9e379ec5c9f896b2ac074ab140a",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 3.751809133239353e-05,
+        "psnr_db": 44.257592637069905,
+        "mean_rgb": 0.025290996732026144,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 3.112076759338379,
+        "HighlightRecovery": 6.917378306388855
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.015087041999999995,
+        "model_forward_ms": 21.27762500000019,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.11012308400000004
+      },
+      "target_mean_rgb": 0.5560124455337692,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.3035912352941175,
+          "psnr_db": 5.17710770715774,
+          "mean_rgb": 0.025290996732026144,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.200882118992695,
+          "psnr_db": 6.970587191423018,
+          "mean_rgb": 0.12061006535947713,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.2795286015848606,
+          "psnr_db": 5.535737481533445,
+          "mean_rgb": 0.04536941176470589,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.15729516882395664,
+          "psnr_db": 8.032846161263498,
+          "mean_rgb": 0.1700547549019608,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "126.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/126.png",
+          "path": "data/external/lol_pilot/low/126.png",
+          "sha256": "d44f2f10b3922598ad4944860461ea93638975898c9919c6871d388cbc2e05e8",
+          "bytes": 296036,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/126.png",
+          "path": "data/external/lol_pilot/high/126.png",
+          "sha256": "64c537b58027559f24785a863aed740240a9cdbfbd25563bb25aa706afd6afe0",
+          "bytes": 310445,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "8b606cf2a284548f8e1eff4d4d32f5846d010a58c5b400ab826e02628ec2540a",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 3.8164979281472925e-05,
+        "psnr_db": 44.18334969046682,
+        "mean_rgb": 0.049276546840958606,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.877748489379883,
+        "HighlightRecovery": 7.820570468902588
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.013896625000000107,
+        "model_forward_ms": 19.43425000000021,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03547958299999987
+      },
+      "target_mean_rgb": 0.6459595424836602,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.3703320704002734,
+          "psnr_db": 4.314086768385451,
+          "mean_rgb": 0.049276546840958606,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.225372887222863,
+          "psnr_db": 6.47098331580703,
+          "mean_rgb": 0.17817369281045753,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.3299779539920543,
+          "psnr_db": 4.815150746052311,
+          "mean_rgb": 0.08178906318082789,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.14818952003502928,
+          "psnr_db": 8.29182508582674,
+          "mean_rgb": 0.2665140468409586,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "147.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/147.png",
+          "path": "data/external/lol_pilot/low/147.png",
+          "sha256": "0a60ebe73cdbbc01994e4d4409857b39576f1bee5cf6b032e6e356a88e26c7ce",
+          "bytes": 305962,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/147.png",
+          "path": "data/external/lol_pilot/high/147.png",
+          "sha256": "aa304b409b968166d0aefb8bce77c6dcde095870f573892a0596e102900885e5",
+          "bytes": 405179,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "db9df75108518ea12226355913880b086aca5b468104c09655705524bfa2811e",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 4.075206117305309e-05,
+        "psnr_db": 43.89850420459095,
+        "mean_rgb": 0.04802786492374728,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 3.0838186740875244,
+        "HighlightRecovery": 8.00168514251709
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.013356750000000694,
+        "model_forward_ms": 18.627292000000573,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03370958399999946
+      },
+      "target_mean_rgb": 0.5327302124183007,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.29574354220598903,
+          "psnr_db": 5.290847297597924,
+          "mean_rgb": 0.04802786492374728,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.15568614007433038,
+          "psnr_db": 8.077500486853346,
+          "mean_rgb": 0.17497077886710238,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.25964829853902344,
+          "psnr_db": 5.85614518967382,
+          "mean_rgb": 0.0763196623093682,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.1010530755051476,
+          "psnr_db": 9.954504643892598,
+          "mean_rgb": 0.24294002178649238,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "175.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/175.png",
+          "path": "data/external/lol_pilot/low/175.png",
+          "sha256": "e17b2a14a396e3533bb883d85cb3b8507c261b256b03d484d0f898efa922a829",
+          "bytes": 285560,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/175.png",
+          "path": "data/external/lol_pilot/high/175.png",
+          "sha256": "af73eefca963a14b1db1bfae49366374adf76c0c95805f5c8bbe2792d64bf96c",
+          "bytes": 334507,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "f01f19fb555c3fb3400383836e619096b659ed7914020c59e865f1b8321cd744",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 3.7465739672775444e-05,
+        "psnr_db": 44.26365688859721,
+        "mean_rgb": 0.01340557734204793,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.982795476913452,
+        "HighlightRecovery": 8.68234932422638
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.01383058299999984,
+        "model_forward_ms": 19.703457999999507,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03543854199999963
+      },
+      "target_mean_rgb": 0.4879909368191721,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.24636490093553762,
+          "psnr_db": 6.084211650782542,
+          "mean_rgb": 0.01340557734204793,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.18542735774702043,
+          "psnr_db": 7.318261901373314,
+          "mean_rgb": 0.07568022331154685,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.23285342588320734,
+          "psnr_db": 6.329173680759888,
+          "mean_rgb": 0.026083218954248366,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.1511993120594643,
+          "psnr_db": 8.204501848232926,
+          "mean_rgb": 0.11708401960784315,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 100.0
+      }
+    },
+    {
+      "id": "229.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/229.png",
+          "path": "data/external/lol_pilot/low/229.png",
+          "sha256": "d4a3f5fb3e83eac2b45940356f2e5b5f15a15ac4dc72a7bb1be7ec6c03a4a309",
+          "bytes": 310909,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/229.png",
+          "path": "data/external/lol_pilot/high/229.png",
+          "sha256": "10dc35a10910c44fdaf1a3cfb30666dbcdb5634d532be8054c9da6e57533539c",
+          "bytes": 307479,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "baa5186310df14bcefc0e33b0c654a74de5f26922a054e037363e0f96908bf97",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 4.477102823700285e-05,
+        "psnr_db": 43.490029312469225,
+        "mean_rgb": 0.13042070806100217,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.317037582397461,
+        "HighlightRecovery": 7.582265138626099
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.01312037499999974,
+        "model_forward_ms": 18.49645900000052,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03344429200000043
+      },
+      "target_mean_rgb": 0.5761907788671023,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.20641120622410186,
+          "psnr_db": 6.852667282212952,
+          "mean_rgb": 0.13042070806100217,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.07462449551454566,
+          "psnr_db": 11.271185918222342,
+          "mean_rgb": 0.3060672331154684,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.15260391155111278,
+          "psnr_db": 8.164343343805331,
+          "mean_rgb": 0.19172965141612203,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.00463553810500235,
+          "psnr_db": 23.338998445898905,
+          "mean_rgb": 0.527625697167756,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 100.0
+      }
+    },
+    {
+      "id": "251.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/251.png",
+          "path": "data/external/lol_pilot/low/251.png",
+          "sha256": "5cfd4471b4b2f79afc3ddcd4b7f5b84c1d1a70ff2b90766df772875afec79d72",
+          "bytes": 292888,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/251.png",
+          "path": "data/external/lol_pilot/high/251.png",
+          "sha256": "318df5fd535344a1efd8c324213809c57e134cfb214cb1880637155513971627",
+          "bytes": 258405,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "055472e299de068dd696211c9588e22895d2b50da978342de2842e3c477ed5f1",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 3.874926310393437e-05,
+        "psnr_db": 44.117365520722004,
+        "mean_rgb": 0.036085746187363835,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.969526529312134,
+        "HighlightRecovery": 8.832591772079468
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.013546209000001141,
+        "model_forward_ms": 20.919665999999282,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03622708299999999
+      },
+      "target_mean_rgb": 0.5292921023965141,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.2543499011704899,
+          "psnr_db": 5.945684267808837,
+          "mean_rgb": 0.036085746187363835,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.14696643713956173,
+          "psnr_db": 8.327818341589305,
+          "mean_rgb": 0.15326881263616557,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.22574691601520777,
+          "psnr_db": 6.463781739789135,
+          "mean_rgb": 0.0640451633986928,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.09643687361698489,
+          "psnr_db": 10.157568774412066,
+          "mean_rgb": 0.22470595315904138,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "328.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/328.png",
+          "path": "data/external/lol_pilot/low/328.png",
+          "sha256": "292d250161eb2fc0258b88ec0c36b5cae66b751e8b674e1b5b50b6cd56db38b7",
+          "bytes": 299152,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/328.png",
+          "path": "data/external/lol_pilot/high/328.png",
+          "sha256": "525e66659ee3bcf94d6cb3867dde127206c02c046d39d91d9845b91fa0d55ace",
+          "bytes": 299190,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "e2a05c7c67e8697f58daab48931ee76a62dbe3e4454094cd9916094cdc03d4ad",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 2.9249006792259372e-05,
+        "psnr_db": 45.338888766575145,
+        "mean_rgb": 0.2852690795206972,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 0.8412240147590637,
+        "HighlightRecovery": 18.16954016685486
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014154917000000822,
+        "model_forward_ms": 18.933750000000416,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.035327541000000906
+      },
+      "target_mean_rgb": 0.3784342156862745,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.01246764699474561,
+          "psnr_db": 19.04215502706106,
+          "mean_rgb": 0.2852690795206972,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.0033889107180998753,
+          "psnr_db": 24.699398726342416,
+          "mean_rgb": 0.3781377668845316,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.0039146463966850354,
+          "psnr_db": 24.073074609123033,
+          "mean_rgb": 0.39741977668845313,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.003914355739245589,
+          "psnr_db": 24.073397079138857,
+          "mean_rgb": 0.39741611655773423,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 1.0,
+        "HighlightRecovery": 100.0
+      }
+    },
+    {
+      "id": "330.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/330.png",
+          "path": "data/external/lol_pilot/low/330.png",
+          "sha256": "f3605026502dfb61501e70455786506657e4d046aaf70313dee0c51cc0759158",
+          "bytes": 299539,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/330.png",
+          "path": "data/external/lol_pilot/high/330.png",
+          "sha256": "525e66659ee3bcf94d6cb3867dde127206c02c046d39d91d9845b91fa0d55ace",
+          "bytes": 299190,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "792cd6e364f46d1235a069a5f9d5b6becc6e203140fbcf0ccafa2bad5621a496",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 2.9618565508992268e-05,
+        "psnr_db": 45.28435979123898,
+        "mean_rgb": 0.28597252178649235,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 0.8290872573852539,
+        "HighlightRecovery": 18.213096261024475
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014850084000000763,
+        "model_forward_ms": 18.661666999999937,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03544699999999956
+      },
+      "target_mean_rgb": 0.3784342156862745,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.012137041586569265,
+          "psnr_db": 19.158871599826476,
+          "mean_rgb": 0.28597252178649235,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.00319638164808407,
+          "psnr_db": 24.95341371485265,
+          "mean_rgb": 0.3774886383442266,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.003773468964928018,
+          "psnr_db": 24.232592175331725,
+          "mean_rgb": 0.39829177559912854,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.0037731246315519666,
+          "psnr_db": 24.232988492115837,
+          "mean_rgb": 0.3982874128540305,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 1.0,
+        "HighlightRecovery": 100.0
+      }
+    },
+    {
+      "id": "39.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/39.png",
+          "path": "data/external/lol_pilot/low/39.png",
+          "sha256": "e580f0e95e5544b8154ce84533083bcdc52ad6cd6918ab63987a9dcac3ee7b98",
+          "bytes": 338566,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/39.png",
+          "path": "data/external/lol_pilot/high/39.png",
+          "sha256": "5e9cbc7ca7a3ff3a3a0e557b1d0d0e78ee3c0378e017b842a88c25212ce00e8b",
+          "bytes": 402204,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "99486e3b13b4a8aeb942c55c1ed8f4b1f3c2de238b55ae7818a342c8d811c675",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 4.6442564825494475e-05,
+        "psnr_db": 43.33083804032494,
+        "mean_rgb": 0.10676466230936818,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.601605176925659,
+        "HighlightRecovery": 10.05447506904602
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.013757708999998286,
+        "model_forward_ms": 18.502499999998534,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03412016699999931
+      },
+      "target_mean_rgb": 0.4892473420479303,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.16284918185313346,
+          "psnr_db": 7.882144189693081,
+          "mean_rgb": 0.10676466230936818,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.044632435259942746,
+          "psnr_db": 13.503494162941024,
+          "mean_rgb": 0.28633306100217865,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.11944040518603957,
+          "psnr_db": 9.228487319929886,
+          "mean_rgb": 0.16012490196078433,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.003783417702593021,
+          "psnr_db": 24.221157084252226,
+          "mean_rgb": 0.4385099019607843,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "40.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/40.png",
+          "path": "data/external/lol_pilot/low/40.png",
+          "sha256": "1fe337bbe9136b6f9cb920eb35e74086bdc80f4aa81ffa44af837896004c770b",
+          "bytes": 342455,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/40.png",
+          "path": "data/external/lol_pilot/high/40.png",
+          "sha256": "6732ff0999434d2ce9206617c4096ffdeb9ea647871e01822a2e2bcadeca74aa",
+          "bytes": 418785,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "d994da99d537aa378cd1e6290b2593e031b5f18a28cc168d854b3c8eb376d6b8",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 4.8390618992695136e-05,
+        "psnr_db": 43.15238822541253,
+        "mean_rgb": 0.10897190087145969,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.6034433841705322,
+        "HighlightRecovery": 10.246220231056213
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014685083999999904,
+        "model_forward_ms": 18.98941700000023,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.036103166000000186
+      },
+      "target_mean_rgb": 0.5876072494553377,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.24612939049083693,
+          "psnr_db": 6.0883652377840995,
+          "mean_rgb": 0.10897190087145969,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.09491722538339951,
+          "psnr_db": 10.226549655483678,
+          "mean_rgb": 0.2909930555555556,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.19265310891110252,
+          "psnr_db": 7.1522397823134725,
+          "mean_rgb": 0.16305125272331156,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.024866781195266772,
+          "psnr_db": 16.043804270181262,
+          "mean_rgb": 0.44302133442265795,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "473.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/473.png",
+          "path": "data/external/lol_pilot/low/473.png",
+          "sha256": "276f15239c709c3f25bde7a65590943a621cbef5d2bd1043fb3e046cb73a7f08",
+          "bytes": 247350,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/473.png",
+          "path": "data/external/lol_pilot/high/473.png",
+          "sha256": "325c5d44d8c7c06ee969d2925269c67fe7d6e02edfc0e831fe152377e2afd5f0",
+          "bytes": 327659,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "a4eaa85f36d9acadbc83b01a8cbde51668133b2da2de4220a72cc12128f6cc9a",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 2.1574949805630312e-05,
+        "psnr_db": 46.660502060027014,
+        "mean_rgb": 0.03227781045751634,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 3.0656991004943848,
+        "HighlightRecovery": 10.991814732551575
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.013509833000000526,
+        "model_forward_ms": 18.353791999999203,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.033550915999999376
+      },
+      "target_mean_rgb": 0.29532873638344226,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.08159624268443759,
+          "psnr_db": 10.883298390278153,
+          "mean_rgb": 0.03227781045751634,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.028883733478576607,
+          "psnr_db": 15.39346671062663,
+          "mean_rgb": 0.1450743355119826,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.06703475821265324,
+          "psnr_db": 11.736999527358112,
+          "mean_rgb": 0.05739960784313726,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.012843340317826477,
+          "psnr_db": 18.913220095276316,
+          "mean_rgb": 0.20621502723311547,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "497.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/497.png",
+          "path": "data/external/lol_pilot/low/497.png",
+          "sha256": "5255d0334902e49040a9ad1d1e2b3d60de65b293c93c9ee0ddd098aabd72b53e",
+          "bytes": 279375,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/497.png",
+          "path": "data/external/lol_pilot/high/497.png",
+          "sha256": "8de79a48e35014adc55ad9133cec2e8c7e8fa57dc9342f5305f9583001025bef",
+          "bytes": 387231,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "74a2ef15c908e81ce2ffbf10ab26db2dd3671575796f2592903ef9df8b419bca",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 3.418155410312272e-05,
+        "psnr_db": 44.66208195475233,
+        "mean_rgb": 0.05261027233115469,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.7406294345855713,
+        "HighlightRecovery": 10.984352231025696
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014042124999999572,
+        "model_forward_ms": 18.35933399999945,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03436554199999975
+      },
+      "target_mean_rgb": 0.403889417211329,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.15993568168225908,
+          "psnr_db": 7.960546342590103,
+          "mean_rgb": 0.05261027233115469,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.07163385129650988,
+          "psnr_db": 11.448816989620097,
+          "mean_rgb": 0.1682706808278867,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.1320203318168226,
+          "psnr_db": 8.793591800374411,
+          "mean_rgb": 0.08377755991285403,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.027973137468495023,
+          "psnr_db": 15.532588204058106,
+          "mean_rgb": 0.2622178267973856,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "533.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/533.png",
+          "path": "data/external/lol_pilot/low/533.png",
+          "sha256": "b04a62a28af25c72632b0ab9549db79c0307fad452800606fad1da6c4b7cf564",
+          "bytes": 316790,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/533.png",
+          "path": "data/external/lol_pilot/high/533.png",
+          "sha256": "b42e12c335dd95e1f22f61843d8aceec7713725ce77462f45e01333d186af4bf",
+          "bytes": 352010,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "107c6dd20057b1cf2cc4cc25f142bfd560a000a2704531f9fffc33ac1cd4fc24",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 4.56180101670298e-05,
+        "psnr_db": 43.408636623370114,
+        "mean_rgb": 0.06037058823529412,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.9252967834472656,
+        "HighlightRecovery": 11.069172620773315
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.01420937500000008,
+        "model_forward_ms": 20.022833000002294,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03671541699999992
+      },
+      "target_mean_rgb": 0.670719422657952,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.4115553998034942,
+          "psnr_db": 3.8557169578700434,
+          "mean_rgb": 0.06037058823529412,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.23640664680251178,
+          "psnr_db": 6.263403170079057,
+          "mean_rgb": 0.2064388779956427,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.36335749134948103,
+          "psnr_db": 4.396658815194258,
+          "mean_rgb": 0.09633709150326798,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.15052739598017847,
+          "psnr_db": 8.2238445129777,
+          "mean_rgb": 0.3002415305010893,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "563.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/563.png",
+          "path": "data/external/lol_pilot/low/563.png",
+          "sha256": "5ffcd09fe8642a3ebecbc502877a0197067f51b9875a5ed58f229b5d060a0bd7",
+          "bytes": 394882,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/563.png",
+          "path": "data/external/lol_pilot/high/563.png",
+          "sha256": "29e0aa36549678633f0b7065272d3bff4b789ee4540556e7a957ec5bbcd2f4c7",
+          "bytes": 518503,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "1ca60816d9fb0885c3294895336d4f44d008759dff42c72d2c0c788072b08620",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 7.81945192020163e-05,
+        "psnr_db": 41.06823686374141,
+        "mean_rgb": 0.07342885076252724,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.7789387702941895,
+        "HighlightRecovery": 7.450488209724426
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014383542000000915,
+        "model_forward_ms": 19.465457999999103,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.035957792000001376
+      },
+      "target_mean_rgb": 0.36852409586056645,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.10202055664488022,
+          "psnr_db": 9.91312311199457,
+          "mean_rgb": 0.07342885076252724,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.027151651138451027,
+          "psnr_db": 15.66203755080134,
+          "mean_rgb": 0.23035468954248364,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.07646926254859243,
+          "psnr_db": 11.165130980237192,
+          "mean_rgb": 0.11568497821350762,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.00650963390149088,
+          "psnr_db": 21.864434352464237,
+          "mean_rgb": 0.35073177559912855,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 100.0
+      }
+    },
+    {
+      "id": "566.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/566.png",
+          "path": "data/external/lol_pilot/low/566.png",
+          "sha256": "5a6c7edb693228a4e12e309b278d34b149a9703b72102e1fbb10710119794f4f",
+          "bytes": 405338,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/566.png",
+          "path": "data/external/lol_pilot/high/566.png",
+          "sha256": "70f6154b1c4bec3894f3a15331f216b831c8418806028c51f78c35db4192d81b",
+          "bytes": 490137,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "d052c1dbd02ae8c77a197d64fbb7e9baceb02660b0385110c4e1bf312825671e",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 7.934303045837075e-05,
+        "psnr_db": 41.004912159337906,
+        "mean_rgb": 0.06430093137254903,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.631337881088257,
+        "HighlightRecovery": 8.779966831207275
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.015320791000000611,
+        "model_forward_ms": 25.24541699999716,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.04287112499999779
+      },
+      "target_mean_rgb": 0.34791965686274506,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.10170304293220553,
+          "psnr_db": 9.926660528894919,
+          "mean_rgb": 0.06430093137254903,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.034893343158614185,
+          "psnr_db": 14.572574184629962,
+          "mean_rgb": 0.19471014705882353,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.07808266796958431,
+          "psnr_db": 11.074453558860258,
+          "mean_rgb": 0.1018796405228758,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.009516640074330387,
+          "psnr_db": 20.215163556846655,
+          "mean_rgb": 0.31526935729847494,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 100.0
+      }
+    },
+    {
+      "id": "600.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/600.png",
+          "path": "data/external/lol_pilot/low/600.png",
+          "sha256": "03251417937761ce8ea851f3c05ff733be70c76f44551a3b090b06e162a31ebc",
+          "bytes": 307951,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/600.png",
+          "path": "data/external/lol_pilot/high/600.png",
+          "sha256": "156fa8411078b61d5596b1c133132d2c8f42b6e85dd5d59ea36080997297f8da",
+          "bytes": 232870,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "3c12fe2409e27ec7802eb713722391e0a27137391c71d55e584bd93238877e8b",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 4.379405356914009e-05,
+        "psnr_db": 43.585848547340234,
+        "mean_rgb": 0.05461979847494553,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 3.0586390495300293,
+        "HighlightRecovery": 9.760850667953491
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014901625000000251,
+        "model_forward_ms": 19.86129200000164,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03707620900000208
+      },
+      "target_mean_rgb": 0.4099276633986928,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.14775496770472898,
+          "psnr_db": 8.30457908683708,
+          "mean_rgb": 0.05461979847494553,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.0511738236362083,
+          "psnr_db": 12.909521319419676,
+          "mean_rgb": 0.2057161002178649,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.1206946493015507,
+          "psnr_db": 9.18311982846475,
+          "mean_rgb": 0.08935457516339869,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.020628150220000856,
+          "psnr_db": 16.85539714599049,
+          "mean_rgb": 0.28665098039215686,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 100.0
+      }
+    },
+    {
+      "id": "612.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/612.png",
+          "path": "data/external/lol_pilot/low/612.png",
+          "sha256": "c0cb2a2413875e53ccf162177df63bf8a74de3445df0057d0c6c4afdaea3c9d5",
+          "bytes": 310129,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/612.png",
+          "path": "data/external/lol_pilot/high/612.png",
+          "sha256": "715ba1003704101ad90af6b06dbea2952576b5bcae337e730e65812e9f6d13f2",
+          "bytes": 281127,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "87d5f7521e0d22dcd3a19673d1c07b9fade427d0cf021a7871fee45f39f52cbd",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 4.3818680849246014e-05,
+        "psnr_db": 43.5834070090851,
+        "mean_rgb": 0.06963905773420478,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 3.142404794692993,
+        "HighlightRecovery": 9.578189253807068
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014035165999999322,
+        "model_forward_ms": 19.35883300000185,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03521170899999859
+      },
+      "target_mean_rgb": 0.4195645642701525,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.13688856839249863,
+          "psnr_db": 8.63632818420813,
+          "mean_rgb": 0.06963905773420478,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.03397880174291938,
+          "psnr_db": 14.687919405232932,
+          "mean_rgb": 0.25013366013071897,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.1075603680208467,
+          "psnr_db": 9.683477204953192,
+          "mean_rgb": 0.11001706971677559,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.010093768336964416,
+          "psnr_db": 19.959466670218454,
+          "mean_rgb": 0.3356966339869281,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 100.0
+      }
+    },
+    {
+      "id": "620.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/620.png",
+          "path": "data/external/lol_pilot/low/620.png",
+          "sha256": "5bde7e00b604803835c1becc35d0bf1ea988a93833517d333739abb352507632",
+          "bytes": 340949,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/620.png",
+          "path": "data/external/lol_pilot/high/620.png",
+          "sha256": "4c44a4602959f9045518e9eb10b50fbd1258cf07dbea996439052a4ade679aa9",
+          "bytes": 371064,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "1629c0f655d710ee06f67ae8a4c3f5bb7f7ccd2d5ae9f9e58d61c3e6326c0336",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 5.412582767311719e-05,
+        "psnr_db": 42.66595449509354,
+        "mean_rgb": 0.0893493082788671,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.772825002670288,
+        "HighlightRecovery": 9.083980321884155
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.02903108299999957,
+        "model_forward_ms": 37.38420800000242,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.06869733299999936
+      },
+      "target_mean_rgb": 0.5322591067538126,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.24110559885086938,
+          "psnr_db": 6.177927045051463,
+          "mean_rgb": 0.0893493082788671,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.09031502328164381,
+          "psnr_db": 10.442400017835848,
+          "mean_rgb": 0.26130283224400874,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.1928333610149942,
+          "psnr_db": 7.14817829087944,
+          "mean_rgb": 0.13542296296296297,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.026302347409116158,
+          "psnr_db": 15.800054902428538,
+          "mean_rgb": 0.3935010403050109,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "670.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/670.png",
+          "path": "data/external/lol_pilot/low/670.png",
+          "sha256": "f787c5088f73fcfad475b9036abac1537714ed5e38e21019be5fbb1788f849a5",
+          "bytes": 339700,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/670.png",
+          "path": "data/external/lol_pilot/high/670.png",
+          "sha256": "6f23412d340c70e367369723711fd5fb0e896828fa613e6910d7795452e1b092",
+          "bytes": 531288,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "07cabb2052d98ba2129928489c00795736cae51978866858b31000cdc1999cde",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 5.9445213379469426e-05,
+        "psnr_db": 42.25883109700889,
+        "mean_rgb": 0.02878220043572985,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.6274008750915527,
+        "HighlightRecovery": 13.27422559261322
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014096542000000767,
+        "model_forward_ms": 28.300541000000123,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.04450224999999719
+      },
+      "target_mean_rgb": 0.3654587854030501,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.1425490150583109,
+          "psnr_db": 8.460357790996516,
+          "mean_rgb": 0.02878220043572985,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.08531553359818876,
+          "psnr_db": 10.68971888623848,
+          "mean_rgb": 0.10149027777777778,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.12463600074757573,
+          "psnr_db": 9.04356494853835,
+          "mean_rgb": 0.04878238562091503,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.04656199713785297,
+          "psnr_db": 13.31968400193482,
+          "mean_rgb": 0.1731734259259259,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "70.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/70.png",
+          "path": "data/external/lol_pilot/low/70.png",
+          "sha256": "db2851790011343e6ea2219b15ad495824f1d4dc86c0f8429064bd90526b9dac",
+          "bytes": 315500,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/70.png",
+          "path": "data/external/lol_pilot/high/70.png",
+          "sha256": "fad048c7f69be46ca278433356df18a58dd3e1c24ca659764fc43aff714691b9",
+          "bytes": 389187,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "002750043d47e4d91ed6e1dfc8460947739aef5926b629c348081d791c175dee",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 4.275374855824683e-05,
+        "psnr_db": 43.69025801244796,
+        "mean_rgb": 0.0676790522875817,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.8129537105560303,
+        "HighlightRecovery": 9.99317467212677
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.013697166000000038,
+        "model_forward_ms": 19.103999999998678,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.035111999999998034
+      },
+      "target_mean_rgb": 0.5438289596949891,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.256683139625785,
+          "psnr_db": 5.906026572653156,
+          "mean_rgb": 0.0676790522875817,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.1209080326156606,
+          "psnr_db": 9.175448455017357,
+          "mean_rgb": 0.21292252723311547,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.21589246729890216,
+          "psnr_db": 6.6576251036420055,
+          "mean_rgb": 0.10542623638344227,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.05370711608782947,
+          "psnr_db": 12.699681673185651,
+          "mean_rgb": 0.32141877995642704,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "724.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/724.png",
+          "path": "data/external/lol_pilot/low/724.png",
+          "sha256": "91002d92de461acd75eb659db7942a933e633bd041b041eb124d1629556ca88d",
+          "bytes": 389999,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/724.png",
+          "path": "data/external/lol_pilot/high/724.png",
+          "sha256": "3b681471f2fe12f1705dc57447021539d3cda7e75c05aa354de0439577b94116",
+          "bytes": 510379,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "ffcaf673f69b4c88c305bc66f8ef69979d0e34259d740b9c362d97589a7152dd",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 8.660570720662994e-05,
+        "psnr_db": 40.62453487582236,
+        "mean_rgb": 0.053445054466230935,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.423513412475586,
+        "HighlightRecovery": 11.51789128780365
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014007417000001965,
+        "model_forward_ms": 19.47358399999999,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03560658299999986
+      },
+      "target_mean_rgb": 0.27311817538126365,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.05451592945021148,
+          "psnr_db": 12.63476579163644,
+          "mean_rgb": 0.053445054466230935,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.015269700478448466,
+          "psnr_db": 18.16169481727654,
+          "mean_rgb": 0.158315,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.03881887353154768,
+          "psnr_db": 14.109570713724636,
+          "mean_rgb": 0.08751035947712418,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.0022671691016275795,
+          "psnr_db": 26.44516085888112,
+          "mean_rgb": 0.28072419389978215,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "747.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/747.png",
+          "path": "data/external/lol_pilot/low/747.png",
+          "sha256": "936acd1168739c5491358a15c2dab0e01fdc4e2dcaaa2f0ca1005d3b941095e1",
+          "bytes": 334273,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/747.png",
+          "path": "data/external/lol_pilot/high/747.png",
+          "sha256": "b6823d67cbf6b335f20ce3389d929d116f29bab4382b856d763e79faed6f55ff",
+          "bytes": 383204,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "85310138c71c15e30052ec9860aa88f11fa0750fa3162f8c277d13eb3b4018eb",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 5.533895083087703e-05,
+        "psnr_db": 42.56969078890043,
+        "mean_rgb": 0.04869489651416122,
+        "new_full_channel_fraction": 5.833333333333333e-05
+      },
+      "experimental_parameters": {
+        "Exposure": 2.334272861480713,
+        "HighlightRecovery": 15.413448214530945
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.013848250000002338,
+        "model_forward_ms": 18.403916000000464,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03410058400000082
+      },
+      "target_mean_rgb": 0.3509877559912854,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.09833766019479687,
+          "psnr_db": 10.072801293443874,
+          "mean_rgb": 0.04869489651416122,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.04613929725746509,
+          "psnr_db": 13.35929024455786,
+          "mean_rgb": 0.14328970043572986,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.07813055207398864,
+          "psnr_db": 11.071791069352749,
+          "mean_rgb": 0.08102155228758169,
+          "new_full_channel_fraction": 0.000125
+        },
+        "Target-informed grid": {
+          "mse": 0.008984204963902771,
+          "psnr_db": 20.465203487238277,
+          "mean_rgb": 0.26341308278867104,
+          "new_full_channel_fraction": 0.0008666666666666666
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "781.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/781.png",
+          "path": "data/external/lol_pilot/low/781.png",
+          "sha256": "05311ef6ffc6bd403b481a72d90a0bd467547e513f5817f6914de0d0d3b755c9",
+          "bytes": 399182,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/781.png",
+          "path": "data/external/lol_pilot/high/781.png",
+          "sha256": "235a4ae35fa13af06fce2fc1bef2c3a2ddd3a6dae0b2df9bb5878b10ec8994a2",
+          "bytes": 535231,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "e5d3fba9e08a25bc83390919fa2e9eb996c475f3fee6f7bf9a78325679535967",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 8.623241061130334e-05,
+        "psnr_db": 40.643294731066746,
+        "mean_rgb": 0.05985343137254902,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 2.5477538108825684,
+        "HighlightRecovery": 12.229254841804504
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.01378375000000176,
+        "model_forward_ms": 18.384250000000435,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.0344033330000002
+      },
+      "target_mean_rgb": 0.40441182461873637,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.13867958923918156,
+          "psnr_db": 8.579874533685471,
+          "mean_rgb": 0.05985343137254902,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.058367745183476476,
+          "psnr_db": 12.338270836863883,
+          "mean_rgb": 0.17734218409586058,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.11037325259515571,
+          "psnr_db": 9.571361590138203,
+          "mean_rgb": 0.09511294662309368,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.015601532679738565,
+          "psnr_db": 18.068327348727006,
+          "mean_rgb": 0.2926444553376906,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    },
+    {
+      "id": "787.png",
+      "partition": "our485 training; development pilot",
+      "source": {
+        "low": {
+          "member": "our485/low/787.png",
+          "path": "data/external/lol_pilot/low/787.png",
+          "sha256": "406e50441057d5d12f5425a37db2317682cce9cc89f37c511be53b0df013915d",
+          "bytes": 286923,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        },
+        "high": {
+          "member": "our485/high/787.png",
+          "path": "data/external/lol_pilot/high/787.png",
+          "sha256": "a68c0b933df842cc310f4c1d35908e6fa631b601043d274281cba45be2098b46",
+          "bytes": 450924,
+          "size": [
+            600,
+            400
+          ],
+          "mode": "RGB",
+          "png_bit_depth": 8,
+          "icc": "absent; assumed sRGB"
+        }
+      },
+      "jpeg_sha256": "8874fa11510c6706a2d23764b9f7cc9b702fb61a731ee9eb1f215057009407b3",
+      "jpeg_quality": 95,
+      "jpeg_subsampling": 0,
+      "jpeg_vs_png": {
+        "mse": 3.580073903199622e-05,
+        "psnr_db": 44.46108008154865,
+        "mean_rgb": 0.014871971677559914,
+        "new_full_channel_fraction": 0.0
+      },
+      "experimental_parameters": {
+        "Exposure": 3.015662670135498,
+        "HighlightRecovery": 9.155240654945374
+      },
+      "prediction_timing": {
+        "preprocess_seconds": 0.014715999999999951,
+        "model_forward_ms": 19.814082999999982,
+        "preview_source_seconds": 0.0,
+        "end_to_end_seconds": 0.03641620799999856
+      },
+      "target_mean_rgb": 0.31032604030501093,
+      "metrics": {
+        "Identity JPEG": {
+          "mse": 0.09857735966935798,
+          "psnr_db": 10.062228183215325,
+          "mean_rgb": 0.014871971677559914,
+          "new_full_channel_fraction": 0.0
+        },
+        "Experimental estimates": {
+          "mse": 0.05880286646161732,
+          "psnr_db": 12.30601502867395,
+          "mean_rgb": 0.080048022875817,
+          "new_full_channel_fraction": 0.0
+        },
+        "Fixed +1 EV": {
+          "mse": 0.08916497503097102,
+          "psnr_db": 10.498057077084004,
+          "mean_rgb": 0.028089596949891067,
+          "new_full_channel_fraction": 0.0
+        },
+        "Target-informed grid": {
+          "mse": 0.03992108968772696,
+          "psnr_db": 13.98797612702605,
+          "mean_rgb": 0.12227334422657951,
+          "new_full_channel_fraction": 0.0
+        }
+      },
+      "grid_best_parameters": {
+        "Exposure": 4.0,
+        "HighlightRecovery": 0.0
+      }
+    }
+  ],
+  "elapsed_seconds": 32.341632958,
+  "limits": "Training-only low-light diagnostic; not held-out quality, general retouching or learned JPEG enhancement acceptance. Target-informed grid is not deployable; absent ICC assumed sRGB."
+}

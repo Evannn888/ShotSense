@@ -25,6 +25,10 @@ artifacts/experiments/**/*.pt
 artifacts/experiments/**/*.npz
 artifacts/experiments/**/*.log
 
+# External dataset images remain local; commit manifests/metrics instead
+artifacts/experiments/jpeg_pilot/*-comparison.jpg
+artifacts/experiments/jpeg_pilot/overview.jpg
+
 # Keep reports, comparison JPGs and source snapshots; skip duplicate PNGs/logs
 artifacts/**/*.png
 artifacts/**/run.log

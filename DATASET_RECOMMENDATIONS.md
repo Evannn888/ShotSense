@@ -43,3 +43,5 @@ No public dataset alone establishes the user's preferred look. A small, separate
 - [ ] Implement and validate a separate JPEG enhancement experiment.
 
 Documentation-only change. Previous 47-test runtime acceptance is retained, not newly rerun. No new quality result, trained candidate or production promotion is claimed.
+
+Follow-up: the user authorized a small-batch test. The FiveK paired-release author download listings returned 404; an accessible author-linked LOL archive supplied 24 training-only pairs. See [pilot results](artifacts/experiments/jpeg_pilot/ACCEPTANCE.md) for pairing/provenance, current renderer comparisons and remaining grouping/color limitations. No new enhancement model was trained or promoted.
