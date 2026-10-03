@@ -73,3 +73,21 @@ def test_jpeg_page_experimental_preview_and_exports(tmp_path):
     assert {item.proto.label for item in at.get('download_button')}=={'Download approximate preview PNG','Download parameters JSON'}
     assert any('Temperature and tint: unavailable' in caption.value for caption in at.caption)
     assert at.session_state['prediction'][0]['recommended_absolute']=={}
+
+
+def test_jpeg_manual_exposure_and_unchanged_status(tmp_path):
+    result,source=predict_jpeg(jpeg_file(tmp_path,'.jpg'))
+    result['timing']['local_worker_seconds']=0
+    at=AppTest.from_file(str(ROOT/'app/streamlit_app.py')).run(timeout=30)
+    at.session_state['prediction']=(result,source); at.run(timeout=30)
+    assert any('No JPEG adjustments are applied' in item.value for item in at.info)
+    assert next(item for item in at.slider if item.label=='Adjustment strength').disabled
+    next(item for item in at.checkbox if item.label=='Adjust JPEG preview manually').check().run(timeout=30)
+    next(item for item in at.slider if item.label=='Manual exposure (EV)').set_value(1.0).run(timeout=30)
+    assert not at.exception and not at.error
+    assert any('Exposure 1.00 EV' in item.value for item in at.caption)
+    assert not next(item for item in at.slider if item.label=='Adjustment strength').disabled
+    from src.preview import render_linear_preview
+    before,after,metadata=render_linear_preview(source,{'Exposure':1.,'HighlightRecovery':0})
+    assert before!=after and metadata['applied_parameters']['Exposure']==1.
+    assert at.session_state['prediction'][0]['recommended_absolute']=={}

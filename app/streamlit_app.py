@@ -26,6 +26,8 @@ def job_lock():
 
 def clear_prediction():
     st.session_state.pop('prediction', None)
+    for key in ('jpeg_preview_estimates','jpeg_preview_manual','jpeg_manual_exposure','jpeg_manual_recovery'):
+        st.session_state.pop(key,None)
 
 
 def run_job(data,suffix='.dng'):
@@ -97,21 +99,36 @@ if 'prediction' in st.session_state:
     with image_column:
         applied={name:value for name,value in result['recommended_absolute'].items()
                  if name in ('Exposure','HighlightRecovery')}
-        if is_jpeg and st.checkbox('Apply experimental JPEG estimates to preview',value=False,key='jpeg_preview_estimates'):
-            applied={name:value for name,value in result['experimental_absolute'].items()
-                     if name in ('Exposure','HighlightRecovery')}
-        strength=st.slider('Adjustment strength',0,100,100,step=5,key='preview_strength')/100
-        protect=st.checkbox('Protect highlights',value=True,key='preview_protect')
+        preview_mode='model_recommendations'
+        if is_jpeg:
+            preview_mode='unchanged'
+            if st.checkbox('Apply experimental JPEG estimates to preview',value=False,key='jpeg_preview_estimates'):
+                applied={name:value for name,value in result['experimental_absolute'].items()
+                         if name in ('Exposure','HighlightRecovery')}
+                preview_mode='experimental_estimates'
+            if st.checkbox('Adjust JPEG preview manually',value=False,key='jpeg_preview_manual'):
+                applied={'Exposure':st.slider('Manual exposure (EV)',-4.0,4.0,0.0,step=0.1,key='jpeg_manual_exposure'),
+                         'HighlightRecovery':st.slider('Manual highlight compression',0,100,0,key='jpeg_manual_recovery')}
+                preview_mode='manual'
+                st.caption('Manual values replace the experimental estimates for this preview.')
+            if preview_mode=='unchanged':
+                st.info('No JPEG adjustments are applied. Enable experimental estimates or manual adjustment above to change the preview.')
+        strength=st.slider('Adjustment strength',0,100,100,step=5,key='preview_strength',disabled=is_jpeg and preview_mode=='unchanged')/100
+        protect=st.checkbox('Protect highlights',value=True,key='preview_protect',disabled=is_jpeg and preview_mode=='unchanged')
         baseline,rendered,preview_metadata=render_linear_preview(preview,applied,strength,protect)
+        preview_metadata['adjustment_mode']=preview_mode
+        unchanged=baseline==rendered
+        if not (is_jpeg and preview_mode=='unchanged') and unchanged:
+            st.info('The current settings produce no visible change.' + (' Use manual exposure to adjust brightness.' if is_jpeg else ''))
         if is_jpeg:
             preview_metadata.update(source='Linearized rendered sRGB JPEG after EXIF orientation and ICC handling',
                 source_ceiling_semantics='Rendered JPEG display ceiling; not sensor exposure. Missing detail cannot be reconstructed.',
-                semantics='Custom global tone preview on an already processed JPEG; optional experimental estimates, not RAW/Lightroom equivalence.')
+                semantics='Custom global tone preview on an already processed JPEG; optional experimental estimates or manual values, not RAW/Lightroom equivalence.')
         before,after=st.columns(2)
         with before:
             st.image(baseline, caption='Before · Decoded JPEG' if is_jpeg else 'Before · Baseline RAW development', width='stretch')
         with after:
-            st.image(rendered, caption='Approximate result · Exposure and highlight compression', width='stretch')
+            st.image(rendered, caption='Unchanged · No visible adjustment' if unchanged else 'Approximate result · Exposure and highlight compression', width='stretch')
         status='JPEG estimates apply only when enabled above.' if is_jpeg else 'Experimental parameters are excluded.'
         st.caption(f"Approximate preview ({preview_metadata['size'][0]} × {preview_metadata['size'][1]}): Original aspect ratio; only exposure and highlight compression are simulated. {status} This is not equivalent to Lightroom and cannot guarantee recovery of clipped detail.")
         effective=preview_metadata['applied_parameters']
