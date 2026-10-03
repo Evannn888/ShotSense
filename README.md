@@ -103,3 +103,5 @@ The repository includes code, pinned dependencies, the master plan/development l
 The included production model can process your own supported DNG without retraining. **Use project sample** requires a DNG under local `data/raw/dngs/`. Full data tests, training, and comparison reproduction require separately prepared data and caches. `data/` audit paths and individual PNGs in reports refer to locally retained evidence.
 
 Original historical ZIP snapshots and the initial Chinese-interface screenshot are preserved locally and in earlier Git history, rather than altered and presented as original evidence. Their hashes and purpose are recorded in [snapshot provenance](artifacts/SNAPSHOT_PROVENANCE.md). Current documentation and application text use English; prior commits remain intact.
+
+The [optimization research review](OPTIMIZATION_RESEARCH.md) compares primary literature with the negative geometry/head/fine-tuning results and prioritizes a separate JPEG enhancement task, bounded RAW objective alignment and stronger regularized baselines. Proposed gains remain unverified.
