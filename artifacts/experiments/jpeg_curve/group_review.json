@@ -1,0 +1,97 @@
+{
+  "status": "reviewed",
+  "candidate_pairs": [
+    {
+      "left": "102.png",
+      "right": "104.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 4,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 2,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "note": "Same scene and objects, with capture/exposure variations visible in input and reference sheets."
+    },
+    {
+      "left": "328.png",
+      "right": "330.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 0,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "note": "Same scene and objects, with capture/exposure variations visible in input and reference sheets."
+    },
+    {
+      "left": "39.png",
+      "right": "40.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 8,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "note": "Same scene and objects, with capture/exposure variations visible in input and reference sheets."
+    }
+  ],
+  "additional_groups": [
+    [
+      "328.png",
+      "330.png",
+      "473.png",
+      "488.png",
+      "494.png",
+      "497.png",
+      "506.png"
+    ],
+    [
+      "723.png",
+      "724.png"
+    ],
+    [
+      "118.png",
+      "122.png",
+      "126.png"
+    ],
+    [
+      "747.png",
+      "766.png",
+      "779.png"
+    ]
+  ],
+  "review_notes": "Reviewed all 48 input/reference thumbnails and all three hash candidate pairs before training. Merge matched room/toy/shelf captures. Additionally keep toy/color-chart setups together despite changed objects/crops; hedge/building views 723/724 together; refrigerator views 118/122/126 together; swimming-pool venue views 747/766/779 together conservatively. Broader scene/venue groups are precautionary, not verified capture metadata. Other scenes retain separate groups. References used only for grouping, never input features. Grouping remains incomplete; targets have been seen for group auditing, so validation is development evidence."
+}

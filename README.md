@@ -107,3 +107,5 @@ Original historical ZIP snapshots and the initial Chinese-interface screenshot a
 The [optimization research review](OPTIMIZATION_RESEARCH.md) compares primary literature with the negative geometry/head/fine-tuning results and prioritizes a separate JPEG enhancement task, bounded RAW objective alignment and stronger regularized baselines. Proposed gains remain unverified.
 
 The [dataset shortlist](DATASET_RECOMMENDATIONS.md) identifies paired FiveK, LOL, SICE, PPR10K and DPED data, including task boundaries, source-group splitting and a bounded JPEG acquisition/evaluation protocol.
+
+The [small JPEG curve experiment](artifacts/experiments/jpeg_curve/ACCEPTANCE.md) records three-seed development gains and a visual rejection caused by amplified dark-region chroma noise. The prototype is separate from the production model and is not enabled in the app.

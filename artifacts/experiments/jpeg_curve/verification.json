@@ -1,0 +1,13 @@
+{
+  "source_hashes_verified": 96,
+  "split_group_exclusive": true,
+  "previous_pilot_only_in_training": true,
+  "eval15_not_extracted": true,
+  "checkpoint_gamma_replay_all_validation": true,
+  "native_torch_numpy_max_difference": 0.0,
+  "zero_strength_exact": true,
+  "mlp_initial_identity_exact": true,
+  "production_unchanged": true,
+  "visual_gate_passed": false,
+  "decision": "Keep experimental artifacts; do not deploy. Numeric improvement does not outweigh visible chroma noise/color artifacts."
+}
