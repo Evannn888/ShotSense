@@ -37,3 +37,5 @@ venv/bin/python -m pytest -q
 ```
 
 These entry points refuse to overwrite existing evidence directories. Preserve the accepted outputs before an intentional separate reproduction. Remaining work: full image-minibatch training/early stopping and full validation-quality pilot, conditional three-seed confirmation, export/inference checks and final acceptance. No new test evaluation, JPEG accuracy acceptance or production replacement occurred. Real-browser localhost restrictions remain respected.
+
+Follow-up: the full validation experiment and conditional seed confirmations are now complete; see `PHASE_E_ACCEPTANCE.md`. This file preserves the earlier smoke result and its original cost estimate. The original smoke source at execution is preserved in Git revision `69ff898`; the later cached-tail helper extends the class and therefore has a new source hash.

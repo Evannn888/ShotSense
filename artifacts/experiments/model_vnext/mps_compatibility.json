@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "MPS compatibility and 8 cached-tail training batches; no accuracy claim",
+  "torch": "2.8.0",
+  "cpu_mps_forward_max_normalized_difference": 2.682209014892578e-07,
+  "cpu_mps_gradient_max_difference": 3.725290298461914e-08,
+  "post_update_full_image_cached_prefix_parity_max_difference": 2.980232238769531e-07,
+  "eight_batch_seconds": 0.5646074580000011,
+  "training_photos_per_second": 226.7061799952344,
+  "test_accessed": false,
+  "production_replaced": false,
+  "executed_script_sha256": "9a91fa118bff75022b156c0f56f4b74c9876474fa72ced1fe3c0abc60355fc7e",
+  "executed_script_note": "Executed as a temporary compatibility gate; the repository entry point wraps the same computation in main and detaches the reported scalar to avoid a warning.",
+  "candidate_source_sha256": "850053da384f7d80989aa0c9af6f559fe5cb05f683bc07e204d68c7ecc2992ca"
+}

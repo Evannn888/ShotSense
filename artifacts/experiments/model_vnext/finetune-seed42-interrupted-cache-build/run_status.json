@@ -1,0 +1,4 @@
+{
+  "status": "interrupted_before_training",
+  "reason": "Stopped explicitly to isolate cache-building RNG consumption before any epoch. No cache or quality metric produced."
+}

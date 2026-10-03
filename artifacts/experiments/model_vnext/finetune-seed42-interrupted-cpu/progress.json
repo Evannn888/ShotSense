@@ -1,0 +1,24 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "training_loss": 0.020724371056853524,
+      "validation_p2": 0.05251558870077133,
+      "seconds": 101.26895970900003
+    },
+    {
+      "epoch": 2,
+      "training_loss": 0.01689236789506169,
+      "validation_p2": 0.05263053998351097,
+      "seconds": 101.23075529199997
+    },
+    {
+      "epoch": 3,
+      "training_loss": 0.013884978757555327,
+      "validation_p2": 0.05336061120033264,
+      "seconds": 102.80317712500005
+    }
+  ],
+  "best_epoch": 1,
+  "best_validation_p2": 0.05251558870077133
+}

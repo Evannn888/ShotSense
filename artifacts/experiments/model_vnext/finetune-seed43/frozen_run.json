@@ -1,0 +1,9 @@
+{
+  "files": {
+    "config.json": "28a2a51f00fa3112f10c8989faffb2d22205052372fe9e01dfacb4ef4334cf92",
+    "split_manifest.json": "a409c9fde89d6ea3117decfd2b41fd4ead115361b16589ab76cef8287c4a1a07",
+    "evaluation.json": "da277fba48cda588d2e9fab04677c035bab2b00383f0070ca61bb8bb73114846",
+    "validation_predictions.npz": "2a18e1edc8b96958978de81b0779e50699644bf990b3416772c7dbd4ebea681c",
+    "best.pt": "01a5d3f641aeab3012f33f9604fe8bf8f9dad9db90d0852a8189e191adbbdc4e"
+  }
+}

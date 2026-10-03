@@ -22,3 +22,9 @@ class FineTuneCandidate(ShotSenseModel):
     def optimizer_groups(self):
         return [{'params':self.backbone.features[7].parameters(),'lr':1e-5},
                 {'params':self.head.parameters(),'lr':1e-4}]
+
+    def forward_tail(self, frozen_prefix, physical_raw):
+        features=self.backbone.features[7](frozen_prefix)
+        features=self.backbone.features[8](features)
+        semantic=self.backbone.avgpool(features).flatten(1)
+        return self.head(self.fused_features(semantic,physical_raw))

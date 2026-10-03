@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "training_count": 3957,
+  "validation_count": 495,
+  "test_image_activations_computed": false,
+  "shape": [
+    4452,
+    192,
+    7,
+    7
+  ],
+  "dtype": "float32",
+  "fingerprint": "62d1075dc6a5b5b3b9c7388ff0bece49571a1896cc66cd8384725cac81130567",
+  "sha256": "822b3d2afcb7161c21369e45a00a967f98a89165df09264b0fa4e95a8c13f2a8",
+  "build_seconds": 240.74128575,
+  "builder_rng_invariant_test_passed": true,
+  "cache_tampering_rejected_test_passed": true
+}

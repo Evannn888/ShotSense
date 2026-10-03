@@ -1,0 +1,4 @@
+{
+  "status": "interrupted_for_verified_MPS_acceleration",
+  "reason": "CPU epochs approximately 101 seconds; preserved completed progress and exact source. MPS forward/gradient/parity compatibility passed; restart from the identical parent checkpoint."
+}
