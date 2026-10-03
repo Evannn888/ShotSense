@@ -111,3 +111,5 @@ The [dataset shortlist](DATASET_RECOMMENDATIONS.md) identifies paired FiveK, LOL
 The [small JPEG curve experiment](artifacts/experiments/jpeg_curve/ACCEPTANCE.md) records three-seed development gains and a visual rejection caused by amplified dark-region chroma noise. The prototype is separate from the production model and is not enabled in the app.
 
 The [bounded-shadow regression](artifacts/experiments/jpeg_shadow_guard/ACCEPTANCE.md) tests a linear dark branch/gain cap and a separate fixed median-filter baseline. It records the visibility/noise tradeoff and remaining color/detail problems without promoting the recipe.
+
+The [noise-aware native-crop training pilot](artifacts/experiments/jpeg_noise_v1/ACCEPTANCE.md) uses a new grouped development set, shared bounded brightness, fixed filtering and noise/detail/color losses. Numerical screens pass, but remaining grain, casts and dark visibility fail visual acceptance; the website still uses the existing release.

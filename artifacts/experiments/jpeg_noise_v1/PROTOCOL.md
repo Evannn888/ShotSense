@@ -1,0 +1,27 @@
+# Noise-aware bounded low-light training pilot
+
+Fixed before extraction/training, 2026-10-02. User approved bounded-shadow retraining, noise/detail/color controls and a new scene-grouped evaluation. This remains a research pilot; passing it does not alone authorize a production quality claim.
+
+## Data
+
+Retain all 48 previously inspected `our485` pairs for training/regression. Add 32 previously unextracted matching training filenames with NumPy seed 20261006, without consulting images or targets. Review all 80 low/reference thumbnails and candidate pairs before splitting, using the existing low/reference perceptual-hash helper. Carry previous reviewed groups forward, add related-scene groups by explicit review, and force every old ID/group to training. Shuffle eligible new groups with seed 20261007 to obtain approximately 16 validation pairs, at least eight validation groups. Remaining pairs train. No `eval15` pixels are extracted/scored. All source PNG/archive/JPEG hashes, RGB/8-bit/dimensions/no-ICC checks remain required. Reference thumbnail grouping is allowed; targets are never inference inputs/features. Grouping is conservative/incomplete and validation is a new **development** set, not a final test.
+
+## Fixed pipelines
+
+Reuse the source-only 19D statistics and train-only standardization. Candidate MLP 19→32→4 predicts one bounded gamma plus three small encoded-sRGB color corrections. Gamma retains exp(tanh(logit)*log(1/0.15)) bounds. Fixed bilateral prefilter: OpenCV d=5, sigmaColor=8 (8-bit units), sigmaSpace=2, on the native RGB image before native training crops and inference. It is a fixed edge-preserving smoothing baseline, not learned denoising or recovered detail.
+
+Map maximum RGB brightness p through min(p**gamma,8*p), and multiply all three input channels by the same ratio (black remains zero). This shared brightness stage preserves input channel ratios and has bounded gain eight. Add limited per-channel correction z+a*z*(1-z), a=0.15*tanh(logit). It preserves each channel's black/white endpoints with derivative in [0.85,1.15]; curve-stage gain relative to filtered pixels is ≤9.2. Spatial filtering can mix neighboring original pixels; a per-original-pixel gain bound is not claimed. Strength zero bypasses smoothing exactly. Strength one uses the full fixed pipeline; intermediate strength blends original source and fully adjusted floats. Neutral curve parameters still apply smoothing at strength one. No RAW parameter interpretation, local semantic masks or faithful Lightroom claim.
+
+Matched comparisons on the same split/statistics/native crops: (1) previous unbounded independent-gamma architecture, raw source, RGB-MSE training; (2) learned constant shared gamma/color with the candidate prefilter/renderer/loss; (3) conditional candidate at seeds 42/43/44. Identity, fixed +1 EV/v3 and existing experimental JPEG/v3 are additional native baselines. The matched gamma control uses seed 42; three-seed confirmation applies to the proposed candidate, not a causal denoising ablation.
+
+## Training
+
+CPU, one Torch thread, AdamW lr=0.003, weight decay=0.0001, batch=16 native 96×96 crops, maximum 60 epochs/patience 10. Five fixed crops per training image (four corners and center) with shared source-image features; all variants remain in their source group. Native crops avoid hiding noise through downsampling. Precompute native prefilter once per photo, crop afterward; target is the corresponding native reference crop.
+
+Candidate/constant loss: RGB MSE +0.1 luminance-gradient L1 +0.1 chroma MSE +0.02 flat-region local-variation penalty +0.01 color-coefficient square. Use Rec.709 encoded-RGB luminance weights as a display-space proxy, not physical luminance. Flat penalty only where target local luminance range is <0.02 and original crop peak is <0.1; it is a training regularizer, not a calibrated noise estimate. Candidate/constant validation selection uses the same composite loss on five fixed native crops, including the neutral filtered pipeline at epoch zero. Identity is a separate native baseline. Gamma control selects by RGB MSE including identity epoch zero. Native full-image metrics and color/noise/crop checks are reported separately. No loss/threshold/settings grid or post-result adjustment.
+
+## Expansion screen and review
+
+Candidate three-seed mean native PSNR ≥ existing-v3 +0.5 dB and ≥ learned constant −0.5 dB. At least two seed means beat existing-v3. Mean originally-dark local median-residual proxy ≤70% of the matched unbounded gamma control; this proxy includes detail/edges, so it is insufficient alone. Mean target chroma MSE ≤110% of that control. Mean new full-channel fraction ≤0.5%. Require finite gradients, monotonic neutral brightness, bounded gain/perturbation, endpoint/identity/strength and native NumPy/Torch checks. Verify frozen selected-checkpoint replay and every source/split/statistic/checkpoint hash.
+
+Visual review: first eight sorted validation IDs fixed before predictions, full images plus fixed center crops, checking colored spikes, casts, overbrightening, shadow visibility and lost fine detail. Also check old regression ID102 separately, never include it in new validation scores. Severe recurrent artifacts or obvious detail loss fail visual acceptance regardless of numeric screens. No website integration without independent unseen-image acceptance, export/runtime/latency and UI checks; browser restrictions remain respected.

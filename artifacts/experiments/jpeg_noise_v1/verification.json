@@ -1,0 +1,14 @@
+{
+  "source_member_hashes_verified": 160,
+  "groups_exclusive": true,
+  "old_ids_training_only": true,
+  "train_only_statistics_recomputed": true,
+  "eval15_not_extracted": true,
+  "model_unchanged": true,
+  "max_parameter_replay_error": 0.0,
+  "native_numpy_torch_max_8bit_code_difference": 0,
+  "native_numpy_torch_different_code_fraction": 0.0,
+  "zero_strength_exact": true,
+  "repeatable_render": true,
+  "limit": "Checkpoint/calculation replay, not full-training replay or final quality acceptance."
+}
