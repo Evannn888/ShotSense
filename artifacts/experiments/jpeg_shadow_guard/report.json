@@ -1,0 +1,1418 @@
+{
+  "count": 16,
+  "max_gain": 8.0,
+  "frozen_checkpoint_replay": true,
+  "parent_report_sha256": "8c9cb8d24610e56e844ed0d962e6deacdc86b71ecc045db9f5c5b7b05c601797",
+  "checkpoints": {
+    "candidate-42": "1c2e0af2fa7d2e74e0cbd18fe811af7e691ebf9f44d167613d93d964ea876058",
+    "candidate-43": "50736d4ef03bef6a30638b54d34366ba946772f4f004078dc37053c58c9073a3",
+    "candidate-44": "dc17803aefd69f364564e19644eeb3adfe288ff728b10cef6231ba1cc45fff2a"
+  },
+  "source_sha256": {
+    "src/jpeg_shadow_guard.py": "9e9e356e071ade8f1f18d9350d87072a87ad0cbcfd46a7f6f145908c3b87140c",
+    "scripts/test_shadow_guard.py": "f234d88471a90f5cd3297e289cca50f24631131e6d15757772869025646801b6"
+  },
+  "summary": {
+    "original": {
+      "mse": 0.022857199716188215,
+      "psnr_db": 18.289676273930255,
+      "mean_rgb": 0.4598105749591503,
+      "new_full_channel_fraction": 8.697916666666667e-05,
+      "dark_median_residual_codes": 5.4331255734202015
+    },
+    "bounded": {
+      "mse": 0.04082705734395247,
+      "psnr_db": 16.670494868461702,
+      "mean_rgb": 0.3283203232797749,
+      "new_full_channel_fraction": 8.697916666666667e-05,
+      "dark_median_residual_codes": 5.518970548086798
+    },
+    "median-bounded": {
+      "mse": 0.04066171377328165,
+      "psnr_db": 16.721509475822316,
+      "mean_rgb": 0.3287912873320625,
+      "new_full_channel_fraction": 8.958333333333333e-05,
+      "dark_median_residual_codes": 1.4142975383568992
+    }
+  },
+  "photos": [
+    {
+      "id": "102.png",
+      "gamma": {
+        "candidate-42": [
+          0.15000009536743164,
+          0.15000022947788239,
+          0.15000012516975403
+        ],
+        "candidate-43": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "candidate-44": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ]
+      },
+      "dark_mask_fraction": 0.5676875,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.12862900984664016,
+          "psnr_db": 8.906610734374796,
+          "mean_rgb": 0.561012908496732,
+          "new_full_channel_fraction": 0.00013333333333333334,
+          "dark_median_residual_codes": 7.65930982176716
+        },
+        "candidate-42/bounded": {
+          "mse": 0.04079200055534197,
+          "psnr_db": 13.894249951281012,
+          "mean_rgb": 0.36088781590413943,
+          "new_full_channel_fraction": 0.00013333333333333334,
+          "dark_median_residual_codes": 5.024066938236267
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.04050621107266436,
+          "psnr_db": 13.92478378568864,
+          "mean_rgb": 0.36071671568627456,
+          "new_full_channel_fraction": 0.000125,
+          "dark_median_residual_codes": 1.166293564289821
+        },
+        "candidate-43/original": {
+          "mse": 0.12862900984664016,
+          "psnr_db": 8.906610734374796,
+          "mean_rgb": 0.561012908496732,
+          "new_full_channel_fraction": 0.00013333333333333334,
+          "dark_median_residual_codes": 7.65930982176716
+        },
+        "candidate-43/bounded": {
+          "mse": 0.04079200055534197,
+          "psnr_db": 13.894249951281012,
+          "mean_rgb": 0.36088781590413943,
+          "new_full_channel_fraction": 0.00013333333333333334,
+          "dark_median_residual_codes": 5.024066938236267
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.04050621107266436,
+          "psnr_db": 13.92478378568864,
+          "mean_rgb": 0.36071671568627456,
+          "new_full_channel_fraction": 0.000125,
+          "dark_median_residual_codes": 1.166293564289821
+        },
+        "candidate-44/original": {
+          "mse": 0.12862900984664016,
+          "psnr_db": 8.906610734374796,
+          "mean_rgb": 0.561012908496732,
+          "new_full_channel_fraction": 0.00013333333333333334,
+          "dark_median_residual_codes": 7.65930982176716
+        },
+        "candidate-44/bounded": {
+          "mse": 0.04079200055534197,
+          "psnr_db": 13.894249951281012,
+          "mean_rgb": 0.36088781590413943,
+          "new_full_channel_fraction": 0.00013333333333333334,
+          "dark_median_residual_codes": 5.024066938236267
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.04050621107266436,
+          "psnr_db": 13.92478378568864,
+          "mean_rgb": 0.36071671568627456,
+          "new_full_channel_fraction": 0.000125,
+          "dark_median_residual_codes": 1.166293564289821
+        }
+      }
+    },
+    {
+      "id": "104.png",
+      "gamma": {
+        "candidate-42": [
+          0.21593615412712097,
+          0.2258196473121643,
+          0.2179897129535675
+        ],
+        "candidate-43": [
+          0.2101072072982788,
+          0.2173934280872345,
+          0.2121337354183197
+        ],
+        "candidate-44": [
+          0.2192533314228058,
+          0.22807875275611877,
+          0.22245007753372192
+        ]
+      },
+      "dark_mask_fraction": 0.7119166666666666,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.026606649194754153,
+          "psnr_db": 15.750098164617487,
+          "mean_rgb": 0.28862777233115466,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 8.381671153771117
+        },
+        "candidate-42/bounded": {
+          "mse": 0.08685205978469819,
+          "psnr_db": 10.612198773605712,
+          "mean_rgb": 0.12055745098039215,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.125317023684108
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.08773446317655602,
+          "psnr_db": 10.56829776903305,
+          "mean_rgb": 0.11864511982570806,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.1234226852393772
+        },
+        "candidate-43/original": {
+          "mse": 0.025709940514332105,
+          "psnr_db": 15.898989281928921,
+          "mean_rgb": 0.2966310348583878,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 8.58360451051543
+        },
+        "candidate-43/bounded": {
+          "mse": 0.08668736543637062,
+          "psnr_db": 10.620441957315894,
+          "mean_rgb": 0.12093478213507626,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.1270747980803
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.08757647327950788,
+          "psnr_db": 10.576125479094578,
+          "mean_rgb": 0.11900423202614378,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.1246420071013303
+        },
+        "candidate-44/original": {
+          "mse": 0.027095838908112263,
+          "psnr_db": 15.670973983506526,
+          "mean_rgb": 0.28476760893246184,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 8.261354325178507
+        },
+        "candidate-44/bounded": {
+          "mse": 0.08693930725362042,
+          "psnr_db": 10.607838246596588,
+          "mean_rgb": 0.1203599128540305,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.124390339069023
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.08781833551198258,
+          "psnr_db": 10.564147986687951,
+          "mean_rgb": 0.1184568137254902,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.1228315580007022
+        }
+      }
+    },
+    {
+      "id": "140.png",
+      "gamma": {
+        "candidate-42": [
+          0.17946231365203857,
+          0.18487536907196045,
+          0.18020612001419067
+        ],
+        "candidate-43": [
+          0.1777823269367218,
+          0.18235351145267487,
+          0.17868292331695557
+        ],
+        "candidate-44": [
+          0.18085113167762756,
+          0.1860969066619873,
+          0.18227487802505493
+        ]
+      },
+      "dark_mask_fraction": 0.9627625,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.01935870633089838,
+          "psnr_db": 17.131236683150437,
+          "mean_rgb": 0.48371306644880174,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.264344933344296
+        },
+        "candidate-42/bounded": {
+          "mse": 0.11892018749199029,
+          "psnr_db": 9.247444147490322,
+          "mean_rgb": 0.2403399237472767,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.432401552823256
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.11892170293476874,
+          "psnr_db": 9.247388804133006,
+          "mean_rgb": 0.23950347494553378,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.1880064455725634
+        },
+        "candidate-43/original": {
+          "mse": 0.0189165622196591,
+          "psnr_db": 17.231577867867102,
+          "mean_rgb": 0.4869572766884532,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.290447482576903
+        },
+        "candidate-43/bounded": {
+          "mse": 0.11891373117177152,
+          "psnr_db": 9.247679937596365,
+          "mean_rgb": 0.24035393246187364,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.432423191943323
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.1189164686018198,
+          "psnr_db": 9.247579962844148,
+          "mean_rgb": 0.23951426470588236,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.188007888180568
+        },
+        "candidate-44/original": {
+          "mse": 0.019723356828570206,
+          "psnr_db": 17.05019168093708,
+          "mean_rgb": 0.4813422549019608,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.26862370868551
+        },
+        "candidate-44/bounded": {
+          "mse": 0.11892514171899694,
+          "psnr_db": 9.247263223739704,
+          "mean_rgb": 0.2403294934640523,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.4323770284871795
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.11892566536374899,
+          "psnr_db": 9.247244101162062,
+          "mean_rgb": 0.23949553921568628,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.1879992325325415
+        }
+      }
+    },
+    {
+      "id": "142.png",
+      "gamma": {
+        "candidate-42": [
+          0.16446609795093536,
+          0.16782432794570923,
+          0.16496685147285461
+        ],
+        "candidate-43": [
+          0.1640472561120987,
+          0.1669164001941681,
+          0.1646367311477661
+        ],
+        "candidate-44": [
+          0.16787077486515045,
+          0.17158770561218262,
+          0.16893582046031952
+        ]
+      },
+      "dark_mask_fraction": 0.9627916666666667,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.011524037848690678,
+          "psnr_db": 19.38395324024867,
+          "mean_rgb": 0.4781768627450981,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 3.6703221246087048
+        },
+        "candidate-42/bounded": {
+          "mse": 0.1837746522918536,
+          "psnr_db": 7.357143902781138,
+          "mean_rgb": 0.12477562636165578,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 3.3516423594581735
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.18329521090178996,
+          "psnr_db": 7.3684888204322245,
+          "mean_rgb": 0.12467105664488018,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.9910301351682752
+        },
+        "candidate-43/original": {
+          "mse": 0.011477156478277581,
+          "psnr_db": 19.401656971958886,
+          "mean_rgb": 0.47879030501089326,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 3.672364795660766
+        },
+        "candidate-43/bounded": {
+          "mse": 0.18377408302362339,
+          "psnr_db": 7.357157355693765,
+          "mean_rgb": 0.12477669389978213,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 3.3516423594581735
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.18329476893502505,
+          "psnr_db": 7.368499292280215,
+          "mean_rgb": 0.12467188453159041,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.9910301351682752
+        },
+        "candidate-44/original": {
+          "mse": 0.012507643876286905,
+          "psnr_db": 19.028244926965545,
+          "mean_rgb": 0.47037989651416123,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 3.6756682679130432
+        },
+        "candidate-44/bounded": {
+          "mse": 0.18380406390704435,
+          "psnr_db": 7.356448905946689,
+          "mean_rgb": 0.1247226688453159,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 3.3516423594581735
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.18332469968815412,
+          "psnr_db": 7.3677901776769525,
+          "mean_rgb": 0.12461801742919389,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.9910301351682752
+        }
+      }
+    },
+    {
+      "id": "221.png",
+      "gamma": {
+        "candidate-42": [
+          0.4061712622642517,
+          0.4158984124660492,
+          0.4190393090248108
+        ],
+        "candidate-43": [
+          0.3613961935043335,
+          0.37208783626556396,
+          0.3713824152946472
+        ],
+        "candidate-44": [
+          0.4069957137107849,
+          0.4145837724208832,
+          0.4142439067363739
+        ]
+      },
+      "dark_mask_fraction": 0.044304166666666665,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.003698427527873894,
+          "psnr_db": 24.319828870480087,
+          "mean_rgb": 0.3629413616557734,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.568795260039501
+        },
+        "candidate-42/bounded": {
+          "mse": 0.003669417147251058,
+          "psnr_db": 24.354029139046446,
+          "mean_rgb": 0.36132584967320264,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 7.01442051474968
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.0036866611346063455,
+          "psnr_db": 24.333667794359034,
+          "mean_rgb": 0.361887848583878,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.877456973572839
+        },
+        "candidate-43/original": {
+          "mse": 0.002850310521594258,
+          "psnr_db": 25.451078240375537,
+          "mean_rgb": 0.4045355882352941,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 6.0427286121822
+        },
+        "candidate-43/bounded": {
+          "mse": 0.002538793797257465,
+          "psnr_db": 25.95372571418482,
+          "mean_rgb": 0.40060230936819174,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 8.083889777109
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.002560191422102609,
+          "psnr_db": 25.917275618542025,
+          "mean_rgb": 0.4013316230936819,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 2.2029217216840653
+        },
+        "candidate-44/original": {
+          "mse": 0.0037142784826348836,
+          "psnr_db": 24.301255376081986,
+          "mean_rgb": 0.3645782026143791,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.618232546474812
+        },
+        "candidate-44/bounded": {
+          "mse": 0.0036735590371224742,
+          "psnr_db": 24.349129762931334,
+          "mean_rgb": 0.3628224346405229,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 7.06965735602997
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.0036899483318381826,
+          "psnr_db": 24.32979714966866,
+          "mean_rgb": 0.3634083605664488,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.8940092165898617
+        }
+      }
+    },
+    {
+      "id": "243.png",
+      "gamma": {
+        "candidate-42": [
+          0.26305273175239563,
+          0.27036410570144653,
+          0.27781692147254944
+        ],
+        "candidate-43": [
+          0.3006921410560608,
+          0.30863142013549805,
+          0.3146127462387085
+        ],
+        "candidate-44": [
+          0.26455366611480713,
+          0.27096760272979736,
+          0.27630916237831116
+        ]
+      },
+      "dark_mask_fraction": 0.20467083333333333,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.006822987355290699,
+          "psnr_db": 21.660254335761046,
+          "mean_rgb": 0.5078047058823529,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 8.536688313891547
+        },
+        "candidate-42/bounded": {
+          "mse": 0.005253517877739331,
+          "psnr_db": 22.795497854983296,
+          "mean_rgb": 0.47838028322440085,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 8.527350827548299
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.005400549596309113,
+          "psnr_db": 22.67562041195785,
+          "mean_rgb": 0.4796227941176471,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 2.068904677564925
+        },
+        "candidate-43/original": {
+          "mse": 0.009545057221581443,
+          "psnr_db": 20.20221463714256,
+          "mean_rgb": 0.46520976579520695,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 7.768490055169886
+        },
+        "candidate-43/bounded": {
+          "mse": 0.009478401106412068,
+          "psnr_db": 20.23264916799784,
+          "mean_rgb": 0.4444853540305011,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 7.922029274648318
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.009620486992182493,
+          "psnr_db": 20.16802943277733,
+          "mean_rgb": 0.44565641612200435,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.922877520137348
+        },
+        "candidate-44/original": {
+          "mse": 0.0068466231791191375,
+          "psnr_db": 21.645235739484573,
+          "mean_rgb": 0.5075049782135077,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 8.546874045723824
+        },
+        "candidate-44/bounded": {
+          "mse": 0.005276684779358366,
+          "psnr_db": 22.776388491001573,
+          "mean_rgb": 0.4780868300653595,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 8.515292169676242
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.005423570336195479,
+          "psnr_db": 22.65714723272737,
+          "mean_rgb": 0.47932860566448804,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 2.0662038639278517
+        }
+      }
+    },
+    {
+      "id": "50.png",
+      "gamma": {
+        "candidate-42": [
+          0.25163179636001587,
+          0.2628358006477356,
+          0.253964900970459
+        ],
+        "candidate-43": [
+          0.2280547171831131,
+          0.23611675202846527,
+          0.23095089197158813
+        ],
+        "candidate-44": [
+          0.24148154258728027,
+          0.2507825791835785,
+          0.24461893737316132
+        ]
+      },
+      "dark_mask_fraction": 0.626075,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.02702891481908668,
+          "psnr_db": 15.681713903924043,
+          "mean_rgb": 0.38477715686274505,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 6.302002777445016
+        },
+        "candidate-42/bounded": {
+          "mse": 0.05732342259387418,
+          "psnr_db": 12.416678871990124,
+          "mean_rgb": 0.27713452614379086,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.858421293153554
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.057151063736169856,
+          "psnr_db": 12.429756817962684,
+          "mean_rgb": 0.2772926034858388,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.6840146059888106
+        },
+        "candidate-43/original": {
+          "mse": 0.021254384147122905,
+          "psnr_db": 16.725514743421673,
+          "mean_rgb": 0.4169052995642702,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 6.707092689463013
+        },
+        "candidate-43/bounded": {
+          "mse": 0.053998325793498204,
+          "psnr_db": 12.676197051754936,
+          "mean_rgb": 0.28533468954248364,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.929101944655193
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.0538493321372122,
+          "psnr_db": 12.688196786412467,
+          "mean_rgb": 0.28531846405228756,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.7061809243656465
+        },
+        "candidate-44/original": {
+          "mse": 0.024347770686488104,
+          "psnr_db": 16.135407971959236,
+          "mean_rgb": 0.3984786492374728,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 6.457836964864876
+        },
+        "candidate-44/bounded": {
+          "mse": 0.05580195971634841,
+          "psnr_db": 12.53350548749676,
+          "mean_rgb": 0.2807455991285403,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.896289493182836
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.05563993152206416,
+          "psnr_db": 12.546134131804937,
+          "mean_rgb": 0.2808293572984749,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.6952109039119378
+        }
+      }
+    },
+    {
+      "id": "576.png",
+      "gamma": {
+        "candidate-42": [
+          0.25112664699554443,
+          0.26252079010009766,
+          0.25420019030570984
+        ],
+        "candidate-43": [
+          0.3003905713558197,
+          0.31535980105400085,
+          0.3105415105819702
+        ],
+        "candidate-44": [
+          0.29389289021492004,
+          0.30959153175354004,
+          0.3019615411758423
+        ]
+      },
+      "dark_mask_fraction": 0.8607583333333333,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.0061527223076594485,
+          "psnr_db": 22.10932685590123,
+          "mean_rgb": 0.4361917102396514,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.5073981921625956
+        },
+        "candidate-42/bounded": {
+          "mse": 0.007032241659190908,
+          "psnr_db": 21.52906213382266,
+          "mean_rgb": 0.33373403594771245,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.9499488500127471
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.006991487675680296,
+          "psnr_db": 21.55430403568303,
+          "mean_rgb": 0.3336897004357298,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.30267077157416095
+        },
+        "candidate-43/original": {
+          "mse": 0.0020876318296381723,
+          "psnr_db": 26.803460901788895,
+          "mean_rgb": 0.36965460784313725,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.4810406198668487
+        },
+        "candidate-43/bounded": {
+          "mse": 0.007151557413815201,
+          "psnr_db": 21.455993704265413,
+          "mean_rgb": 0.31990105664488017,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.7892152591545568
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.007136391836473152,
+          "psnr_db": 21.465213122549432,
+          "mean_rgb": 0.3199320588235294,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.2525050585239759
+        },
+        "candidate-44/original": {
+          "mse": 0.0020612097483873725,
+          "psnr_db": 26.858778122322946,
+          "mean_rgb": 0.3776482080610022,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.4853536771516074
+        },
+        "candidate-44/bounded": {
+          "mse": 0.007062321436199755,
+          "psnr_db": 21.5105251973937,
+          "mean_rgb": 0.3222362636165577,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.8216511280427788
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.0070442754068947835,
+          "psnr_db": 21.521636729551116,
+          "mean_rgb": 0.32225621459694986,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 0.2634821362300039
+        }
+      }
+    },
+    {
+      "id": "60.png",
+      "gamma": {
+        "candidate-42": [
+          0.2730618715286255,
+          0.28076454997062683,
+          0.2873014509677887
+        ],
+        "candidate-43": [
+          0.3058035969734192,
+          0.31419283151626587,
+          0.3184346556663513
+        ],
+        "candidate-44": [
+          0.2730368375778198,
+          0.2796538770198822,
+          0.28344693779945374
+        ]
+      },
+      "dark_mask_fraction": 0.23622083333333332,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.008687945320176,
+          "psnr_db": 20.610829210909287,
+          "mean_rgb": 0.48159245098039216,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 9.50049682794466
+        },
+        "candidate-42/bounded": {
+          "mse": 0.008759823678926911,
+          "psnr_db": 20.575046353889682,
+          "mean_rgb": 0.4507525435729848,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 10.624498027387272
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.008724961745482509,
+          "psnr_db": 20.592364685249173,
+          "mean_rgb": 0.4539269117647059,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 2.6415842049870943
+        },
+        "candidate-43/original": {
+          "mse": 0.01281258735956256,
+          "psnr_db": 18.923631604570197,
+          "mean_rgb": 0.44478822984749455,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 8.838216358280565
+        },
+        "candidate-43/bounded": {
+          "mse": 0.013826346939211422,
+          "psnr_db": 18.592925497322877,
+          "mean_rgb": 0.4228818899782135,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 9.884053880843608
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.0137452299970097,
+          "psnr_db": 18.618479887709334,
+          "mean_rgb": 0.42580772331154687,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 2.444516959765756
+        },
+        "candidate-44/original": {
+          "mse": 0.008615381818958523,
+          "psnr_db": 20.64725470602227,
+          "mean_rgb": 0.48358125272331154,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 9.548321662286352
+        },
+        "candidate-44/bounded": {
+          "mse": 0.008602350292622497,
+          "psnr_db": 20.653828767022308,
+          "mean_rgb": 0.4521219281045752,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 10.662850792866845
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.008571611623734458,
+          "psnr_db": 20.66937514892242,
+          "mean_rgb": 0.4553022385620915,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 2.651220903227324
+        }
+      }
+    },
+    {
+      "id": "604.png",
+      "gamma": {
+        "candidate-42": [
+          0.2430393099784851,
+          0.25326040387153625,
+          0.2453564703464508
+        ],
+        "candidate-43": [
+          0.23579640686511993,
+          0.24449290335178375,
+          0.23807401955127716
+        ],
+        "candidate-44": [
+          0.24075987935066223,
+          0.249837264418602,
+          0.24340611696243286
+        ]
+      },
+      "dark_mask_fraction": 0.5850125,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.011408527596223675,
+          "psnr_db": 19.42770402742005,
+          "mean_rgb": 0.478574591503268,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 2.5655339748201014
+        },
+        "candidate-42/bounded": {
+          "mse": 0.01721887951215345,
+          "psnr_db": 17.639951129010324,
+          "mean_rgb": 0.4000369989106754,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.713322839730395
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.016659559293434153,
+          "psnr_db": 17.783364914623185,
+          "mean_rgb": 0.4008645806100218,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.2125002077353524
+        },
+        "candidate-43/original": {
+          "mse": 0.011031353368362596,
+          "psnr_db": 19.573712033933504,
+          "mean_rgb": 0.4897126688453159,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 2.6002886927867164
+        },
+        "candidate-43/bounded": {
+          "mse": 0.016239062732282452,
+          "psnr_db": 17.894390404855084,
+          "mean_rgb": 0.4039443845315904,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.751769311671878
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.015673720278525354,
+          "psnr_db": 18.04827908147203,
+          "mean_rgb": 0.4047247385620915,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.2238152556094484
+        },
+        "candidate-44/original": {
+          "mse": 0.011292652334572174,
+          "psnr_db": 19.47204042221705,
+          "mean_rgb": 0.48222322984749455,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 2.5917157515627633
+        },
+        "candidate-44/bounded": {
+          "mse": 0.01692083250032038,
+          "psnr_db": 17.715782736018955,
+          "mean_rgb": 0.40135802832244005,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.7413944146492595
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.01635727609039259,
+          "psnr_db": 17.862890159094714,
+          "mean_rgb": 0.40217591503267974,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.2201994734205583
+        }
+      }
+    },
+    {
+      "id": "615.png",
+      "gamma": {
+        "candidate-42": [
+          0.2911151349544525,
+          0.3028673529624939,
+          0.2947511374950409
+        ],
+        "candidate-43": [
+          0.2898402214050293,
+          0.3002051115036011,
+          0.29322677850723267
+        ],
+        "candidate-44": [
+          0.2586440145969391,
+          0.26803669333457947,
+          0.2619876563549042
+        ]
+      },
+      "dark_mask_fraction": 0.4202458333333333,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.010257105386817036,
+          "psnr_db": 19.88975182294216,
+          "mean_rgb": 0.4097409694989107,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.472874673223676
+        },
+        "candidate-42/bounded": {
+          "mse": 0.006711942094920754,
+          "psnr_db": 21.7315179889641,
+          "mean_rgb": 0.3686336546840958,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.999679420445044
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.0063159128967491115,
+          "psnr_db": 21.995638680117583,
+          "mean_rgb": 0.3702067647058824,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.2191574376109222
+        },
+        "candidate-43/original": {
+          "mse": 0.010320831774103978,
+          "psnr_db": 19.86285300737211,
+          "mean_rgb": 0.41162660130718953,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.4850864408068025
+        },
+        "candidate-43/bounded": {
+          "mse": 0.006628327181853131,
+          "psnr_db": 21.785960624484776,
+          "mean_rgb": 0.36981302832244006,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.015718313024452
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.00623058708189158,
+          "psnr_db": 22.054710296789754,
+          "mean_rgb": 0.37140072984749456,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.2230737960915732
+        },
+        "candidate-44/original": {
+          "mse": 0.013492922422999704,
+          "psnr_db": 18.698939765900754,
+          "mean_rgb": 0.45001542483660134,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.814420792062847
+        },
+        "candidate-44/bounded": {
+          "mse": 0.005824951941560939,
+          "psnr_db": 22.3470765340941,
+          "mean_rgb": 0.3921774618736384,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.451485076525976
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.005383900978256226,
+          "psnr_db": 22.689029363383852,
+          "mean_rgb": 0.39384994553376906,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.332269141408633
+        }
+      }
+    },
+    {
+      "id": "698.png",
+      "gamma": {
+        "candidate-42": [
+          0.151235431432724,
+          0.1516820192337036,
+          0.151698499917984
+        ],
+        "candidate-43": [
+          0.15160173177719116,
+          0.15232481062412262,
+          0.15239764750003815
+        ],
+        "candidate-44": [
+          0.1504516303539276,
+          0.15071040391921997,
+          0.1506420075893402
+        ]
+      },
+      "dark_mask_fraction": 0.9573125,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.028501174548250678,
+          "psnr_db": 15.451372421208543,
+          "mean_rgb": 0.5041549891067538,
+          "new_full_channel_fraction": 0.0002458333333333333,
+          "dark_median_residual_codes": 6.914520539995503
+        },
+        "candidate-42/bounded": {
+          "mse": 0.04559116307830322,
+          "psnr_db": 13.411193283497813,
+          "mean_rgb": 0.18914503812636166,
+          "new_full_channel_fraction": 0.0002458333333333333,
+          "dark_median_residual_codes": 4.564235816413135
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.04529073157759835,
+          "psnr_db": 13.43990664136032,
+          "mean_rgb": 0.1881965522875817,
+          "new_full_channel_fraction": 0.00022083333333333333,
+          "dark_median_residual_codes": 1.2365287661494488
+        },
+        "candidate-43/original": {
+          "mse": 0.02825407905079244,
+          "psnr_db": 15.489188440793138,
+          "mean_rgb": 0.5031906590413944,
+          "new_full_channel_fraction": 0.0002458333333333333,
+          "dark_median_residual_codes": 6.900433070009358
+        },
+        "candidate-43/bounded": {
+          "mse": 0.04559144796872997,
+          "psnr_db": 13.411166145354068,
+          "mean_rgb": 0.18914345860566448,
+          "new_full_channel_fraction": 0.0002458333333333333,
+          "dark_median_residual_codes": 4.564235816413135
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.0452910020504934,
+          "psnr_db": 13.439880705692913,
+          "mean_rgb": 0.18819513071895425,
+          "new_full_channel_fraction": 0.00022083333333333333,
+          "dark_median_residual_codes": 1.2365287661494488
+        },
+        "candidate-44/original": {
+          "mse": 0.029185808492460164,
+          "psnr_db": 15.348282715520147,
+          "mean_rgb": 0.506299825708061,
+          "new_full_channel_fraction": 0.0002458333333333333,
+          "dark_median_residual_codes": 6.937430451277811
+        },
+        "candidate-44/bounded": {
+          "mse": 0.045590512537912777,
+          "psnr_db": 13.41125525342761,
+          "mean_rgb": 0.1891499019607843,
+          "new_full_channel_fraction": 0.0002458333333333333,
+          "dark_median_residual_codes": 4.564235816413135
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.045290078602247,
+          "psnr_db": 13.439969255857001,
+          "mean_rgb": 0.188200348583878,
+          "new_full_channel_fraction": 0.00022083333333333333,
+          "dark_median_residual_codes": 1.2365287661494488
+        }
+      }
+    },
+    {
+      "id": "76.png",
+      "gamma": {
+        "candidate-42": [
+          0.259105920791626,
+          0.26979944109916687,
+          0.2759852707386017
+        ],
+        "candidate-43": [
+          0.22005312144756317,
+          0.22620300948619843,
+          0.23106104135513306
+        ],
+        "candidate-44": [
+          0.263241171836853,
+          0.27011486887931824,
+          0.27700239419937134
+        ]
+      },
+      "dark_mask_fraction": 0.6322583333333334,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.013458561600239222,
+          "psnr_db": 18.71001353370577,
+          "mean_rgb": 0.44998786492374726,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.01951558127172
+        },
+        "candidate-42/bounded": {
+          "mse": 0.01853326530394292,
+          "psnr_db": 17.32048057283815,
+          "mean_rgb": 0.37279979302832245,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.567562046104572
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.018187470246486395,
+          "psnr_db": 17.402277041468473,
+          "mean_rgb": 0.37362178104575167,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.3800837386265281
+        },
+        "candidate-43/original": {
+          "mse": 0.01543964005297108,
+          "psnr_db": 18.11362828665478,
+          "mean_rgb": 0.5059023583877995,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.3104831446358505
+        },
+        "candidate-43/bounded": {
+          "mse": 0.015279649985048485,
+          "psnr_db": 18.15886594144038,
+          "mean_rgb": 0.3883948039215686,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.828364372860954
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.014859648340381905,
+          "psnr_db": 18.279914682092773,
+          "mean_rgb": 0.3888355501089325,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.4513340626414133
+        },
+        "candidate-44/original": {
+          "mse": 0.01354478397197659,
+          "psnr_db": 18.682279172108554,
+          "mean_rgb": 0.44770185729847495,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.0146630464868
+        },
+        "candidate-44/bounded": {
+          "mse": 0.01871764218890171,
+          "psnr_db": 17.277488590616382,
+          "mean_rgb": 0.3719813671023965,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.548441872828001
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.018376281686530823,
+          "psnr_db": 17.35742360544401,
+          "mean_rgb": 0.37281924291939,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.3750400899772859
+        }
+      }
+    },
+    {
+      "id": "771.png",
+      "gamma": {
+        "candidate-42": [
+          0.2920825779438019,
+          0.3044085204601288,
+          0.29535168409347534
+        ],
+        "candidate-43": [
+          0.2797938883304596,
+          0.29060283303260803,
+          0.2831578254699707
+        ],
+        "candidate-44": [
+          0.26879948377609253,
+          0.2793038785457611,
+          0.2724885046482086
+        ]
+      },
+      "dark_mask_fraction": 0.38634583333333333,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.01603280080310992,
+          "psnr_db": 17.949906032176603,
+          "mean_rgb": 0.4153944117647059,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.357771714317555
+        },
+        "candidate-42/bounded": {
+          "mse": 0.01044622783971976,
+          "psnr_db": 19.810405061216592,
+          "mean_rgb": 0.36773227124183006,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 7.660131071399041
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.009845501281558375,
+          "psnr_db": 20.067621669537537,
+          "mean_rgb": 0.3699090032679739,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.7986547746154318
+        },
+        "candidate-43/original": {
+          "mse": 0.01972916863172284,
+          "psnr_db": 17.048912151158994,
+          "mean_rgb": 0.4306202450980392,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.4385068070130025
+        },
+        "candidate-43/bounded": {
+          "mse": 0.012045511726259131,
+          "psnr_db": 19.19174745257183,
+          "mean_rgb": 0.37533788671023965,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 7.83689052338686
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.011375888931607498,
+          "psnr_db": 19.440146568240007,
+          "mean_rgb": 0.3774981045751634,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.8395975108656963
+        },
+        "candidate-44/original": {
+          "mse": 0.023532376543209874,
+          "psnr_db": 16.283342110524856,
+          "mean_rgb": 0.4445047440087146,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.580402561033042
+        },
+        "candidate-44/bounded": {
+          "mse": 0.01359033158187022,
+          "psnr_db": 18.66769947062959,
+          "mean_rgb": 0.38185437908496733,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 7.991666936286934
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.012847147037464224,
+          "psnr_db": 18.911933052860917,
+          "mean_rgb": 0.3839591721132898,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.8749824746826569
+        }
+      }
+    },
+    {
+      "id": "773.png",
+      "gamma": {
+        "candidate-42": [
+          0.19459787011146545,
+          0.20171894133090973,
+          0.19601432979106903
+        ],
+        "candidate-43": [
+          0.2168448269367218,
+          0.22573933005332947,
+          0.22026708722114563
+        ],
+        "candidate-44": [
+          0.2232571244239807,
+          0.23390065133571625,
+          0.2270617038011551
+        ]
+      },
+      "dark_mask_fraction": 0.8831875,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.015461767909778287,
+          "psnr_db": 18.107408500318915,
+          "mean_rgb": 0.4448870043572985,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.621451654754322
+        },
+        "candidate-42/bounded": {
+          "mse": 0.030693376884958788,
+          "psnr_db": 15.129553278658289,
+          "mean_rgb": 0.21488197712418303,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.26602662389231
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.03042776594472213,
+          "psnr_db": 15.167299330672941,
+          "mean_rgb": 0.21421942265795207,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.1438146234834368
+        },
+        "candidate-43/original": {
+          "mse": 0.01014015671322995,
+          "psnr_db": 19.939553330534633,
+          "mean_rgb": 0.40828927559912853,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.292881686441945
+        },
+        "candidate-43/bounded": {
+          "mse": 0.031049448374556792,
+          "psnr_db": 15.07946111107824,
+          "mean_rgb": 0.21277502178649238,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.263936656208965
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.030785116280063227,
+          "psnr_db": 15.116592016731348,
+          "mean_rgb": 0.21218434640522876,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.1432563552158768
+        },
+        "candidate-44/original": {
+          "mse": 0.009099131274296214,
+          "psnr_db": 20.410000693040843,
+          "mean_rgb": 0.3973345424836601,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 5.2077402715857195
+        },
+        "candidate-44/bounded": {
+          "mse": 0.031194601841172183,
+          "psnr_db": 15.059205532067345,
+          "mean_rgb": 0.21204168300653597,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 4.262471005433287
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.030930489683455097,
+          "psnr_db": 15.096132043052926,
+          "mean_rgb": 0.21147796296296295,
+          "new_full_channel_fraction": 0.0,
+          "dark_median_residual_codes": 1.1427955873218063
+        }
+      }
+    },
+    {
+      "id": "83.png",
+      "gamma": {
+        "candidate-42": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "candidate-43": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "candidate-44": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ]
+      },
+      "dark_mask_fraction": 0.23471666666666666,
+      "metrics": {
+        "candidate-42/original": {
+          "mse": 0.033876529945747365,
+          "psnr_db": 14.70101081889008,
+          "mean_rgb": 0.6840431209150326,
+          "new_full_channel_fraction": 0.0010125,
+          "dark_median_residual_codes": 3.569469099860352
+        },
+        "candidate-42/bounded": {
+          "mse": 0.01047208674014268,
+          "psnr_db": 19.799667691875037,
+          "mean_rgb": 0.5826049509803922,
+          "new_full_channel_fraction": 0.0010125,
+          "dark_median_residual_codes": 6.323078652749177
+        },
+        "candidate-42/median-bounded": {
+          "mse": 0.010357355910120037,
+          "psnr_db": 19.847510998230597,
+          "mean_rgb": 0.5844403431372549,
+          "new_full_channel_fraction": 0.0010875,
+          "dark_median_residual_codes": 1.5051598854410757
+        },
+        "candidate-43/original": {
+          "mse": 0.033876529945747365,
+          "psnr_db": 14.70101081889008,
+          "mean_rgb": 0.6840431209150326,
+          "new_full_channel_fraction": 0.0010125,
+          "dark_median_residual_codes": 3.569469099860352
+        },
+        "candidate-43/bounded": {
+          "mse": 0.01047208674014268,
+          "psnr_db": 19.799667691875037,
+          "mean_rgb": 0.5826049509803922,
+          "new_full_channel_fraction": 0.0010125,
+          "dark_median_residual_codes": 6.323078652749177
+        },
+        "candidate-43/median-bounded": {
+          "mse": 0.010357355910120037,
+          "psnr_db": 19.847510998230597,
+          "mean_rgb": 0.5844403431372549,
+          "new_full_channel_fraction": 0.0010875,
+          "dark_median_residual_codes": 1.5051598854410757
+        },
+        "candidate-44/original": {
+          "mse": 0.033876529945747365,
+          "psnr_db": 14.70101081889008,
+          "mean_rgb": 0.6840431209150326,
+          "new_full_channel_fraction": 0.0010125,
+          "dark_median_residual_codes": 3.569469099860352
+        },
+        "candidate-44/bounded": {
+          "mse": 0.01047208674014268,
+          "psnr_db": 19.799667691875037,
+          "mean_rgb": 0.5826049509803922,
+          "new_full_channel_fraction": 0.0010125,
+          "dark_median_residual_codes": 6.323078652749177
+        },
+        "candidate-44/median-bounded": {
+          "mse": 0.010357355910120037,
+          "psnr_db": 19.847510998230597,
+          "mean_rgb": 0.5844403431372549,
+          "new_full_channel_fraction": 0.0010875,
+          "dark_median_residual_codes": 1.5051598854410757
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 3.228812583,
+  "scope": "Previously inspected development regression; no retraining, official test access or release acceptance."
+}

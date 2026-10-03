@@ -109,3 +109,5 @@ The [optimization research review](OPTIMIZATION_RESEARCH.md) compares primary li
 The [dataset shortlist](DATASET_RECOMMENDATIONS.md) identifies paired FiveK, LOL, SICE, PPR10K and DPED data, including task boundaries, source-group splitting and a bounded JPEG acquisition/evaluation protocol.
 
 The [small JPEG curve experiment](artifacts/experiments/jpeg_curve/ACCEPTANCE.md) records three-seed development gains and a visual rejection caused by amplified dark-region chroma noise. The prototype is separate from the production model and is not enabled in the app.
+
+The [bounded-shadow regression](artifacts/experiments/jpeg_shadow_guard/ACCEPTANCE.md) tests a linear dark branch/gain cap and a separate fixed median-filter baseline. It records the visibility/noise tradeoff and remaining color/detail problems without promoting the recipe.

@@ -1,0 +1,11 @@
+# Bounded-shadow repair diagnostic
+
+Fixed before evaluation, 2026-10-02. Use only the already inspected 16 development-validation pairs and frozen three-seed gamma checkpoints from `jpeg_curve`; no new data or test images, no retraining or production promotion. This is a targeted failure regression, not independent quality acceptance.
+
+For each channel, replace `x**gamma` with `min(x**gamma, 8*x)` in encoded sRGB. Keep the original gamma bounds, source-only features/checkpoints and strength blend. Both branches are monotonic and meet continuously, black stays black and white stays white. The dark branch is linear and gain is capped at eight. With gamma ≤6.667, the float slope is at most eight throughout the curve; for the former gamma-0.15 case, one encoded input level maps to at most eight instead of 111. This trades extreme-dark visibility for reduced amplification and cannot recover lost signal.
+
+Evaluate all three frozen checkpoints. Add a clearly separated fixed 3×3 median-input + bounded-curve baseline, using the same gamma predicted from the original source. This is a noise-suppression diagnostic, not a trained denoiser; it may erase details. The median option is not included in exact identity behavior of the plain guard, and strength-zero/no-change exports must bypass any smoothing in a later application.
+
+Record native paired PSNR/MSE, brightness and new full-channel pixels for original gamma, bounded gamma and median+bounded gamma. Report mean absolute residual from a 3×3 channel median inside originally dark pixels (source max 1–16/255), using the same mask for all outputs. That proxy mixes noise, texture and edges and is not a calibrated noise/quality score. Inspect the first eight fixed development IDs and a fixed crop of room view 102. Do not choose gain/filter settings based on these results.
+
+Verify monotonicity, endpoints, strength-zero identity, invalid inputs, continuous join, bounded float slope, one-code amplification and deterministic native predictions. Save source/checkpoint/model/data hashes and parameter replay. Reuse source data and prior metrics without modifying the historical gamma experiment. Any acceptable visual improvement here still needs a new fixed training/evaluation protocol and fresh scene-exclusive validation before release.
