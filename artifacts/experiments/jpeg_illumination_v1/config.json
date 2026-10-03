@@ -1,0 +1,30 @@
+{
+  "device": "cpu",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "batch": 16,
+  "max_epochs": 30,
+  "patience": 6,
+  "denoiser": {
+    "h": 7,
+    "hColor": 10,
+    "templateWindowSize": 7,
+    "searchWindowSize": 21
+  },
+  "protocol_sha256": "ed59630d417e64b7a7ce503e5f7c923e4950c4c8c5e639538aa59b9362c2ada5",
+  "manifest_sha256": "73174a870976f3b04d969d92c34bac28ddcc512e775d1c4dbfa11b14d5454a30",
+  "review_sha256": "e3b56c0e6e46d29ddcdfa478ec8fb91fe8af4027974071f9565e642fd1adb04a",
+  "split_sha256": "5f30fefd647a0e5f7f714bbfce411f69f34d77a8ce145314e8c508c9e4a8b4fd",
+  "parent_config_sha256": "6b46b55944e73a11228944bc2832e75f3ff10c37f8cfaac02bae4d9cbd88501a",
+  "parent_checkpoint_sha256": "36aa2a9b7a96be704ccae2ee084b27798fcb58c4216dfa0e959bcc7764f020a0",
+  "production_model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+  "source_sha256": {
+    "scripts/train_illumination_candidate.py": "cf0b3d3729301c13cddc7e38121b6b6b5cf024a69eb5046132befce5f9b64520",
+    "src/jpeg_illumination_candidate.py": "f63573862add8f8ff30140b20a0b56a724302f09a2faee0eaa3f4dca5ff28054",
+    "scripts/train_spatial_candidate.py": "7693f3411b0c1fe59db54db6db6ba6cc9f0eafbea7dade1cfcbb27a6a026a667",
+    "src/jpeg_noise_candidate.py": "6d6aea189321eff88cd451412270bc73e1cad4aefa8a77ca124ad3b0bfefefc8",
+    "scripts/train_noise_candidate.py": "536809320e8c753b78d6c680230c29b5d9ed99f240d0f404ee30dc7b9f88205f",
+    "src/jpeg_curve_candidate.py": "780916573b8804fa4c8a348b6d2421cde1fa269144e3566f14da5ca859d33f54",
+    "scripts/train_jpeg_curve.py": "74663e34a3b2671f7b4d4fcbea46f821258f10ded1ca6a715f058480b2b58647"
+  }
+}

@@ -1,0 +1,1153 @@
+{
+  "status": "reviewed",
+  "candidate_pairs": [
+    {
+      "left": "102.png",
+      "right": "103.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 5,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "102.png",
+      "right": "104.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 4,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 2,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "103.png",
+      "right": "104.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "112.png",
+      "right": "113.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 2,
+          "phash_distance": 8,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 2,
+          "phash_distance": 6,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "118.png",
+      "right": "120.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 8,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "128.png",
+      "right": "130.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 2,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "14.png",
+      "right": "15.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 5,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "147.png",
+      "right": "149.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 8,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "172.png",
+      "right": "173.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 9,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 2,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "207.png",
+      "right": "209.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 8,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "228.png",
+      "right": "229.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 5,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 2,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "236.png",
+      "right": "238.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 3,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 3,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "248.png",
+      "right": "249.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 4,
+          "phash_distance": 12,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "27.png",
+      "right": "28.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "328.png",
+      "right": "330.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 0,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "35.png",
+      "right": "36.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "35.png",
+      "right": "38.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 3,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "36.png",
+      "right": "38.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 2,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 2,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "39.png",
+      "right": "40.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 8,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "43.png",
+      "right": "44.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "472.png",
+      "right": "473.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 6,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 7,
+          "phash_distance": 8,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "472.png",
+      "right": "475.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 7,
+          "phash_distance": 12,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "473.png",
+      "right": "475.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 7,
+          "phash_distance": 10,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "639.png",
+      "right": "642.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 4,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "650.png",
+      "right": "653.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 8,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "684.png",
+      "right": "685.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "698.png",
+      "right": "699.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 3,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "698.png",
+      "right": "700.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 7,
+          "phash_distance": 12,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "698.png",
+      "right": "701.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 5,
+          "phash_distance": 12,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "699.png",
+      "right": "700.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 6,
+          "phash_distance": 10,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "699.png",
+      "right": "701.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 4,
+          "phash_distance": 10,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "700.png",
+      "right": "701.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 2,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "743.png",
+      "right": "744.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 10,
+          "phash_distance": 8,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "75.png",
+      "right": "76.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 3,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 4,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "757.png",
+      "right": "758.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 4,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "775.png",
+      "right": "776.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "781.png",
+      "right": "783.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 4,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "781.png",
+      "right": "785.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 8,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "781.png",
+      "right": "786.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 9,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "783.png",
+      "right": "785.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 7,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "783.png",
+      "right": "786.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 8,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "785.png",
+      "right": "786.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 1,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "787.png",
+      "right": "788.png",
+      "matches": {
+        "low": {
+          "dhash_distance": 7,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        },
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 0,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "260.png",
+      "right": "261.png",
+      "matches": {
+        "high": {
+          "dhash_distance": 0,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    },
+    {
+      "left": "647.png",
+      "right": "648.png",
+      "matches": {
+        "high": {
+          "dhash_distance": 1,
+          "phash_distance": 2,
+          "reasons": [
+            "visual_hash"
+          ]
+        }
+      },
+      "decision": "merge",
+      "review_note": "Reviewed low/reference scene sheets and hash-pair reference crops: repeated scene or conservative shared setup."
+    }
+  ],
+  "additional_groups": [
+    [
+      "102.png",
+      "104.png"
+    ],
+    [
+      "118.png",
+      "122.png",
+      "126.png",
+      "128.png",
+      "130.png",
+      "96.png"
+    ],
+    [
+      "14.png",
+      "140.png"
+    ],
+    [
+      "147.png",
+      "149.png"
+    ],
+    [
+      "154.png",
+      "160.png",
+      "162.png"
+    ],
+    [
+      "175.png",
+      "195.png",
+      "198.png",
+      "207.png",
+      "213.png"
+    ],
+    [
+      "221.png",
+      "222.png"
+    ],
+    [
+      "228.png",
+      "229.png"
+    ],
+    [
+      "243.png",
+      "249.png"
+    ],
+    [
+      "27.png",
+      "28.png"
+    ],
+    [
+      "328.png",
+      "330.png",
+      "470.png",
+      "472.png",
+      "473.png",
+      "477.png",
+      "480.png",
+      "488.png",
+      "494.png",
+      "497.png",
+      "506.png",
+      "9.png"
+    ],
+    [
+      "35.png",
+      "38.png"
+    ],
+    [
+      "39.png",
+      "40.png"
+    ],
+    [
+      "541.png",
+      "546.png",
+      "548.png",
+      "551.png"
+    ],
+    [
+      "56.png",
+      "620.png"
+    ],
+    [
+      "639.png",
+      "642.png"
+    ],
+    [
+      "647.png",
+      "648.png"
+    ],
+    [
+      "650.png",
+      "653.png"
+    ],
+    [
+      "675.png",
+      "676.png",
+      "683.png"
+    ],
+    [
+      "698.png",
+      "699.png",
+      "700.png"
+    ],
+    [
+      "723.png",
+      "724.png"
+    ],
+    [
+      "743.png",
+      "744.png",
+      "745.png"
+    ],
+    [
+      "747.png",
+      "752.png",
+      "766.png",
+      "775.png",
+      "776.png",
+      "779.png"
+    ],
+    [
+      "75.png",
+      "76.png"
+    ],
+    [
+      "781.png",
+      "783.png"
+    ],
+    [
+      "787.png",
+      "788.png"
+    ],
+    [
+      "147.png",
+      "149.png",
+      "145.png",
+      "152.png"
+    ],
+    [
+      "175.png",
+      "189.png",
+      "198.png",
+      "207.png",
+      "209.png",
+      "212.png",
+      "213.png"
+    ],
+    [
+      "58.png",
+      "246.png"
+    ],
+    [
+      "464.png",
+      "475.png",
+      "489.png",
+      "490.png",
+      "501.png",
+      "502.png",
+      "508.png",
+      "512.png",
+      "514.png",
+      "522.png",
+      "328.png",
+      "330.png",
+      "473.png"
+    ],
+    [
+      "56.png",
+      "620.png",
+      "606.png",
+      "609.png",
+      "624.png",
+      "260.png",
+      "261.png"
+    ],
+    [
+      "680.png",
+      "684.png",
+      "685.png"
+    ],
+    [
+      "98.png",
+      "99.png"
+    ]
+  ],
+  "review_notes": "Before training reviewed all nine low and reference contact pages (168 pairs), all45 hash candidates in five reference contact pages, and carried prior groups. Conservatively grouped new toy/chart setups, pink bedroom, closet, matching sofa, bookshelves, retail toy shelves and kitchen dish views with old scenes. New book views260/261 share scene and possible old bookshelf venue; merged conservatively. Uncertain142/648 remain old training-only with matching recognizable geometry but no precise alignment claim. Shared venues may still be missed; original low light PNGs assumed encoded sRGB, not calibrated radiometric measurements."
+}

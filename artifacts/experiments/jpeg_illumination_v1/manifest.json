@@ -1,0 +1,4207 @@
+{
+  "photos": [
+    {
+      "id": "102.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/102.png",
+          "sha256": "69672488074943067be8de90f3d97cf881b3fef2ed71e2923cceb1a685367edc"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/102.png",
+          "sha256": "6110542d3a51b462241338fb34d900a6883c51ac03841b1480fe1dff9f145a70"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/102.jpg",
+      "jpeg_sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10548076270476159,
+          0.14583627840470292
+        ],
+        "response": 0.744883844146022,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "103.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/103.png",
+          "sha256": "36dcf55479a2c7626187a75cc51d77676f51a40f6f2f4e88dad80b40fe8a8c2e"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/103.png",
+          "sha256": "d414a743283723fc5b62fd1d8871c1c3040f2cf44db2aed1d176e1b070a25175"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/103.jpg",
+      "jpeg_sha256": "0b364d04e7e022b6aee52ed4e818499028b3f480d5d1e9d49a32f6b86b882489",
+      "alignment": {
+        "native_shift_xy": [
+          0.11255868881882236,
+          0.3377852836502093
+        ],
+        "response": 0.5195219035501834,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "104.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/104.png",
+          "sha256": "13e6483b85261a0c29f4d208f394c2378da2d561b9d59514a6b9985e55a9b485"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/104.png",
+          "sha256": "28fdcc5af2b546f7fdaf53309dfa0f92f7876127ccb424bdd5de0e80907be902"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/104.jpg",
+      "jpeg_sha256": "4335c393e2f38c1b188f9f8a1ee18b12e082bdc356c2d30178ec721024e27caa",
+      "alignment": {
+        "native_shift_xy": [
+          0.23794895896450896,
+          0.3236293495391873
+        ],
+        "response": 0.47190504096172475,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "112.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/112.png",
+          "sha256": "6cb56386d700c7eeecbcb024788336a90e136abc0e054f7ed114da51557337f9"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/112.png",
+          "sha256": "d8cb5d72250eaee42fe024db5517f4c0caff1f5b22d24e2af3409d4ac523de50"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/112.jpg",
+      "jpeg_sha256": "3aa01fb8762b9a5e55d712caaea63f9d86e88c2898883df722ce6bf0963c69db",
+      "alignment": {
+        "native_shift_xy": [
+          0.13876665653388187,
+          -0.003543135058121649
+        ],
+        "response": 0.9580615995106874,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "113.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/113.png",
+          "sha256": "8268d35cab505664c4896dc2dc5b0e3d5642b9f426181d32d8164f0911545fb6"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/113.png",
+          "sha256": "5194abaefac6b136180294f91cf30addc633edde11f11fdf6e263c453addb51b"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/113.jpg",
+      "jpeg_sha256": "b739525767492c7a1b3c64554f77b4b08c94522f44579f8b2704d6b66b5822a5",
+      "alignment": {
+        "native_shift_xy": [
+          -0.03816853643924034,
+          -0.35214064006981793
+        ],
+        "response": 0.5921910536509973,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "118.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/118.png",
+          "sha256": "29d94d1c3de27d201caf53a60cca547c68bffaf795175ccf4ea622e364a3b194"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/118.png",
+          "sha256": "daab5af99e4636a4d8952a6cc62f7830483564610436feaa6cf07b85ffb09795"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/118.jpg",
+      "jpeg_sha256": "9848651510d3f763115a7efc1f1b8ccd5c24f9e379ec5c9f896b2ac074ab140a",
+      "alignment": {
+        "native_shift_xy": [
+          -0.33243142292223027,
+          0.042815077868434415
+        ],
+        "response": 0.6070307906027194,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "120.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/120.png",
+          "sha256": "d5a9b66c23c1d72eb967f8680e88ba114660ee8f5429260f4ce25881bc0ab815"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/120.png",
+          "sha256": "5476e7562f1c98dadb2cfd4a7ea05ca23871111d9b93719774485b13665e4dea"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/120.jpg",
+      "jpeg_sha256": "9981c42c2745882b49aebe9f02ad8d3a07c3abf5fcba31b1c2c9208138c79b86",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10663228263627644,
+          0.07452975490064517
+        ],
+        "response": 0.7820939365360472,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "122.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/122.png",
+          "sha256": "6ce68d53a94897246b40827adfdce4f01a0c1f2c012ffd09150e40ff6f4d33d8"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/122.png",
+          "sha256": "5151d469f03a8daa145f348d4da96b02a663592ff08fa109c4a163d5692cfbbb"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/122.jpg",
+      "jpeg_sha256": "7888862b35ccfa1d9dd887bff3ff64d6776393fa4be30a096160b9da7c28dcfe",
+      "alignment": {
+        "native_shift_xy": [
+          0.1449365188674001,
+          0.08892015166168221
+        ],
+        "response": 0.6408267767341048,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "126.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/126.png",
+          "sha256": "d44f2f10b3922598ad4944860461ea93638975898c9919c6871d388cbc2e05e8"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/126.png",
+          "sha256": "64c537b58027559f24785a863aed740240a9cdbfbd25563bb25aa706afd6afe0"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/126.jpg",
+      "jpeg_sha256": "8b606cf2a284548f8e1eff4d4d32f5846d010a58c5b400ab826e02628ec2540a",
+      "alignment": {
+        "native_shift_xy": [
+          0.023128593103010076,
+          -0.12887407749157198
+        ],
+        "response": 0.7290611624717712,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "128.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/128.png",
+          "sha256": "76e76fcb05492e75c00899c9a052746eb09fd70fa4efaf9828555aa383bd1f98"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/128.png",
+          "sha256": "214ad3da6e52fc7aa542ec5107d8950a51ba7943ad27a656ddee93d24150a9f2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/128.jpg",
+      "jpeg_sha256": "07de4cc5bb2c3e9d1ec5ee0885853287a47f0d62c01e76c27af744e2c5d75ae3",
+      "alignment": {
+        "native_shift_xy": [
+          0.07936344521302985,
+          0.08370575143564984
+        ],
+        "response": 0.811630826526218,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "130.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/130.png",
+          "sha256": "160a897f2ad4688a9baa1314ec8f45dab4d0c50cbecfce586ad8b635e8962c44"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/130.png",
+          "sha256": "c2de2e529fe6c887096b5cdb1bf1a4f77ff76db9ea5278984452ffa8003774c1"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/130.jpg",
+      "jpeg_sha256": "1cafaa7365a9b7379bbc632dc8839079c9eee508d25dd4152f4081afe41e163a",
+      "alignment": {
+        "native_shift_xy": [
+          0.08428262702377509,
+          -0.0019550419318115075
+        ],
+        "response": 0.917087412653146,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "132.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/132.png",
+          "sha256": "f5adcd69a052cfc9768ff7c233855dce36f4750c622e6707e6d2347630db302a"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/132.png",
+          "sha256": "0638fb7d23eb6cda297800c7c43a0bb000e83fe82400b65ec5f18ed2c800a684"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/132.jpg",
+      "jpeg_sha256": "61c583f390650efb75043a7e3834bbd3901b84a9e50cb46bd67529513cd3a297",
+      "alignment": {
+        "native_shift_xy": [
+          -0.04063533505288319,
+          0.01340509841295301
+        ],
+        "response": 0.9335202565347707,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "14.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/14.png",
+          "sha256": "3cc7df88a192dee5a382aacd134e4cd8534e6456c5e265af4f8da30e1bc428c9"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/14.png",
+          "sha256": "dfc4910d32be30ee7eabdff58d3fd4a193360b40d5cd567e636f7a6c773de960"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/14.jpg",
+      "jpeg_sha256": "e142d94a9719415af043a6899f7ab5babe87cfc653d9da9969fa276453b1e5ab",
+      "alignment": {
+        "native_shift_xy": [
+          -0.00849191909590985,
+          0.055096142555024485
+        ],
+        "response": 0.9092909845489042,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "140.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/140.png",
+          "sha256": "5798ba2b45c602fa6b22315475170a4e038c68de7115328a14b4be2aabe2444d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/140.png",
+          "sha256": "abea1bb055726b29f3ca0ace5298fb1acac3b24549d332870c5c2ce92ee92644"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/140.jpg",
+      "jpeg_sha256": "83a55dc033af4c63716e937b9d3c83b8596224630b8dc98752e6764233e3b36c",
+      "alignment": {
+        "native_shift_xy": [
+          -0.42296167374026084,
+          -0.27551730924955997
+        ],
+        "response": 0.4540818490363933,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "142.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/142.png",
+          "sha256": "d6f0cd9059e4c35e7bd8e8b5a89330aabcf4748684fbf011cd82b01683f2315c"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/142.png",
+          "sha256": "43697dc1d0893d79c13eb106184585013c12526487e3c6459b8f2cde02810143"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/142.jpg",
+      "jpeg_sha256": "ba9aa39c9ae14e9b763f5205eae064d7d8e0a8d06f0c2665f31e068f127e0c78",
+      "alignment": {
+        "native_shift_xy": [
+          -1.4699705389209683,
+          -0.3318933507048616
+        ],
+        "response": 0.11503343681494395,
+        "status": "uncertain",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "145.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/145.png",
+          "sha256": "1f4fe9a962020ec1138dd1e8cd21ab0c54b5b6a09b7e1f158afe92bab5d11720"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/145.png",
+          "sha256": "65a55ea1acf488f6019cf4ad631dcdc687acf97e6e214a2e3a378e6be8a537fc"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/145.jpg",
+      "jpeg_sha256": "6a242cf70061714ed2b07ce1fb5eb5cc00da4cb1ae68b029fbf4849c44a24dce",
+      "alignment": {
+        "native_shift_xy": [
+          -0.05281340171517712,
+          0.12582384930780677
+        ],
+        "response": 0.9587999281507952,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "147.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/147.png",
+          "sha256": "0a60ebe73cdbbc01994e4d4409857b39576f1bee5cf6b032e6e356a88e26c7ce"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/147.png",
+          "sha256": "aa304b409b968166d0aefb8bce77c6dcde095870f573892a0596e102900885e5"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/147.jpg",
+      "jpeg_sha256": "db9df75108518ea12226355913880b086aca5b468104c09655705524bfa2811e",
+      "alignment": {
+        "native_shift_xy": [
+          0.004321394775832488,
+          0.15701960863419906
+        ],
+        "response": 0.7930209121218434,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "149.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/149.png",
+          "sha256": "ed6c28fa1f82d478666d4e1f1cd32fa80124e69d67884aad376e54129b2f0d9d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/149.png",
+          "sha256": "e970d620f14f001bc9a1b886b0d008bad948f758c5eaeb63a779f88da6615302"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/149.jpg",
+      "jpeg_sha256": "e349b707b4649ef80e2f290f7e39170eed32399bb229e0c5fc56e9c7d5d98c29",
+      "alignment": {
+        "native_shift_xy": [
+          0.04558229628084831,
+          0.0716468208148946
+        ],
+        "response": 0.650096176399125,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "15.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/15.png",
+          "sha256": "a9840f6f456893abcb32f83a146efa2a4872a7617793998bdef919bb21e3b083"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/15.png",
+          "sha256": "a0365ed49ae05b36610db81d143505128435a8cd9227ac53327056f878e8a522"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/15.jpg",
+      "jpeg_sha256": "26de0e5606945434a24ee8c6ed5fc8c83f6afe2de7f114ece079edf454cfc133",
+      "alignment": {
+        "native_shift_xy": [
+          0.09133434076732172,
+          0.18675262233740497
+        ],
+        "response": 0.7323420693476995,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "152.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/152.png",
+          "sha256": "6b07059356e7f303980ff133980dd3005d7656c0d05c023f60794142d4d078ac"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/152.png",
+          "sha256": "23f1fc6e8a50009463c1b2ebbe3365df50eae637a508ceb7a7c11b979c0718c9"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/152.jpg",
+      "jpeg_sha256": "749383040ea43a3235139ddbea7a3d26a1816e4279fc6e4962bf576689e0df59",
+      "alignment": {
+        "native_shift_xy": [
+          0.03749611243566875,
+          -0.02142877517435693
+        ],
+        "response": 0.7966953112571328,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "154.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/154.png",
+          "sha256": "1f4da1e8e877d05dee1634091d4def2d159303dc3c0ae7cbb6ca045c92aab5fb"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/154.png",
+          "sha256": "60288f9b288347fe1e731f3ec7a3c78e58c01e411ca456104e908f9047989279"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/154.jpg",
+      "jpeg_sha256": "32f871cf240e2e860a6e347290d6453965f8586ba8995364596ad5042e87f2d2",
+      "alignment": {
+        "native_shift_xy": [
+          -0.4626241431079059,
+          0.19135951577725407
+        ],
+        "response": 0.7267589591167591,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "160.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/160.png",
+          "sha256": "7981b26f6afe3ee73eb6fcade494a26999b65c96f206995b1f5d76cc838614da"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/160.png",
+          "sha256": "d0da7424d85cc78b78332834e6f4f2e4531c9dc52ffa2ef95d1aa8e4186c3605"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/160.jpg",
+      "jpeg_sha256": "161187c5a63620b7980c47fc855825a6495d339c021dd17ee72464d536a54492",
+      "alignment": {
+        "native_shift_xy": [
+          0.01473056724332622,
+          -0.12836781042159906
+        ],
+        "response": 0.7300158218101219,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "162.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/162.png",
+          "sha256": "27bcdfb90fecd7c21e46ad9c07fd6aca0a828cc4146c6699b8e4da2d935a95fd"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/162.png",
+          "sha256": "e6e3b78ce745668b52d13e4ce78be9478281a74d8db49b1980ef7d3ddd4cab8f"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/162.jpg",
+      "jpeg_sha256": "b7a382199b80246fe0237f34c02eb4c1b349adedd56b6f19c2d0486fed84a8ec",
+      "alignment": {
+        "native_shift_xy": [
+          -0.04042628090267897,
+          0.1069232242781748
+        ],
+        "response": 0.7904072248273426,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "172.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/172.png",
+          "sha256": "f1902e6342fa6f261d6d08ac76f6100da0d4f3cfb2b4ab5daab0d5178b8d88ca"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/172.png",
+          "sha256": "9c4880bf25c73989122a5a73d0ea7edb61190b0fcf2c104b3f692275c18807de"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/172.jpg",
+      "jpeg_sha256": "ebf2d2de4e812ca77b996beeb5bdf2c5fc63abcf6e2c2c467440b278edb9eaa4",
+      "alignment": {
+        "native_shift_xy": [
+          0.17409572295917997,
+          0.04189020834338919
+        ],
+        "response": 0.6522306523941181,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "173.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/173.png",
+          "sha256": "d6fe6f0d8ba3898f66579ad29edb49192b13a11966c061dabae1bf2f3555cf11"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/173.png",
+          "sha256": "b9f2aea8be923ccdf05b4836ee6b788ce4d6696c950b31101a857e38ccb0062a"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/173.jpg",
+      "jpeg_sha256": "46da8838b14bca828a839f9c101c10a157c8b68cdd25896b74ae047b2a378aa4",
+      "alignment": {
+        "native_shift_xy": [
+          0.1513385874377704,
+          -0.024235293914003364
+        ],
+        "response": 0.7706196810360308,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "175.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/175.png",
+          "sha256": "e17b2a14a396e3533bb883d85cb3b8507c261b256b03d484d0f898efa922a829"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/175.png",
+          "sha256": "af73eefca963a14b1db1bfae49366374adf76c0c95805f5c8bbe2792d64bf96c"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/175.jpg",
+      "jpeg_sha256": "f01f19fb555c3fb3400383836e619096b659ed7914020c59e865f1b8321cd744",
+      "alignment": {
+        "native_shift_xy": [
+          0.34180154431457055,
+          0.21091144560092978
+        ],
+        "response": 0.47780388670938984,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "18.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/18.png",
+          "sha256": "c662866c39df1193a44f13dec930b656655f0c96d0fe7784cb900df6b25d734e"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/18.png",
+          "sha256": "7fd64d76b00c289e7234de5d76c43414f8389edffa206359d06bc032c8e5ec3a"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/18.jpg",
+      "jpeg_sha256": "59982c6d09778fabf26f9dcb34cb95af5b6fe5f456d22dd4d5c51b7887a3b81c",
+      "alignment": {
+        "native_shift_xy": [
+          -0.0724505634690864,
+          0.024364789477209214
+        ],
+        "response": 0.8312839378913244,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "189.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/189.png",
+          "sha256": "032f3ecf5be950c1823b3dafef55f6ff5b8b585ede5d49609e4ae602c6a9e058"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/189.png",
+          "sha256": "7c792e5a320b25bcd2a067abbfbe50e95dcbf72e0d19806875aa79cb08cb2767"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/189.jpg",
+      "jpeg_sha256": "2002ffacd0931062bc87a37bb6318eb9650a3ac79092db861fa3af77af6f6041",
+      "alignment": {
+        "native_shift_xy": [
+          0.06266159648376401,
+          0.01998315071648271
+        ],
+        "response": 0.9248283491090492,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "195.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/195.png",
+          "sha256": "782ead58f21dede7241670fd3459227ef1534e179f4db1f5c6a4771948409ae4"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/195.png",
+          "sha256": "9f56b48bc3b30c723d25058e3102e9967de63e94b7ace49a6de1ddf396586ed9"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/195.jpg",
+      "jpeg_sha256": "b5e169c242fc8919a9089dc1b3a7df039361ed33c611b8bfd4228f7d592515e0",
+      "alignment": {
+        "native_shift_xy": [
+          -0.006437762729891716,
+          -0.03803924418718907
+        ],
+        "response": 0.4663609496973179,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "198.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/198.png",
+          "sha256": "412f00516d078e2b6c6f276472dcf332308e630f4fab6d9b79ee7cf09ff32213"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/198.png",
+          "sha256": "0e0f81c1627919a605bac0f9c70a2b9740a914261da546cf458154f98d515fd3"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/198.jpg",
+      "jpeg_sha256": "54646857df2dd88edbb170860fde9461e6bc58b2ff56b555599db2a211459238",
+      "alignment": {
+        "native_shift_xy": [
+          0.07854081887696651,
+          -0.217615882074762
+        ],
+        "response": 0.9283473670482636,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "207.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/207.png",
+          "sha256": "36d90a389f098172ff2962ccffec1ef843e363cec445c15ae9e4e6e07daec73f"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/207.png",
+          "sha256": "f85b9df1bcc9beea97bb1b26a2152a53903748a44837c0bd135d6f5ddaec6888"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/207.jpg",
+      "jpeg_sha256": "a20a60fb7b68ef216b13af2d2cb83737a44ce49f9e335a2d86fed4d67c75ee29",
+      "alignment": {
+        "native_shift_xy": [
+          0.25118279216078676,
+          0.039783438798970394
+        ],
+        "response": 0.8172524249112164,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "209.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/209.png",
+          "sha256": "41b554bd8bc7b48b588376bb894cab87c1fc376b33ca04b09eba7aa4fcb386a0"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/209.png",
+          "sha256": "9c8326234470b9035436b060d88e4905f65cb4e628cf4c78d1faab4e0f5b9703"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/209.jpg",
+      "jpeg_sha256": "b1ebe46e1e45bf2b4db51c0f7b7a8b282d01dbbcc33798afb1b3225bacd7f371",
+      "alignment": {
+        "native_shift_xy": [
+          0.09886376647605388,
+          0.026103931329819474
+        ],
+        "response": 0.9568788238145687,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "212.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/212.png",
+          "sha256": "56ddcb5838c873f1eeee13b8233e2ce5cde54c3f2a44b83555f2db5df2d0cea2"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/212.png",
+          "sha256": "00166d6e56c6e6f0d33f829a32ecd9afc836a607e2627345efc53163a2543250"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/212.jpg",
+      "jpeg_sha256": "89d3102e874cc6247626a141e319418b53dcb12036c58fdad0b9ab3164eb32c6",
+      "alignment": {
+        "native_shift_xy": [
+          0.026717543619412254,
+          -0.03194083008750681
+        ],
+        "response": 0.8311230509369462,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "213.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/213.png",
+          "sha256": "3c388a2455af633ff8bad6dcbaef77cb82320c52a9984d38dddf75e9e47e0bc1"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/213.png",
+          "sha256": "0a8f322247229357c90fabd2935a873c98b315ff779670267d5b0e8cbf562462"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/213.jpg",
+      "jpeg_sha256": "57286e7b78d67a12545c10cf36b3e1a79a72a10c783ea34a43032b0bc621bc07",
+      "alignment": {
+        "native_shift_xy": [
+          0.15195979857805852,
+          0.24272143299378435
+        ],
+        "response": 0.7649579867168709,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "221.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/221.png",
+          "sha256": "74a0f3aa5921fa100df84f0e6fcb8a4c491af8d369ce85549fd82dae0e41d94d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/221.png",
+          "sha256": "39aff5f70adcb746b5bbf8bf0dcedeb2d3f5a46862096ce751aa53989f090658"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/221.jpg",
+      "jpeg_sha256": "f8f89aa8a9df6f241a72d26a1037b6608c6713bacf27ce7c6e952b13cdd6e416",
+      "alignment": {
+        "native_shift_xy": [
+          -0.028547996958394606,
+          0.07787373598199032
+        ],
+        "response": 0.770141374512955,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "222.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/222.png",
+          "sha256": "e3f871853804cb1da694f97bb3a77fc569a5d56170f856da3bdc03a00d2d1012"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/222.png",
+          "sha256": "02a3a363100bb45e8afd20a376ba9bbecc94d72cf256a2385586697734c733f4"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/222.jpg",
+      "jpeg_sha256": "208528f7b3ed5caf731b8ebf496b6cdad961a73e52b8fc956e70a052c392cb3c",
+      "alignment": {
+        "native_shift_xy": [
+          0.0005559335943061683,
+          0.03965384949413675
+        ],
+        "response": 0.7896987791414614,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "228.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/228.png",
+          "sha256": "9daccd2db412271405ca14adf0d5d8ce4d3d231dd1853b6917e9c95844734c20"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/228.png",
+          "sha256": "1249d010e23638af8ef194b01ad82717804d139789ac862c93efa7b05c0113cb"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/228.jpg",
+      "jpeg_sha256": "581870a15ee2915f5d92ecb9396753bc7983170593871c89847d1464be47ad52",
+      "alignment": {
+        "native_shift_xy": [
+          -0.11635160933051836,
+          0.09155894349794913
+        ],
+        "response": 0.9042744738084298,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "229.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/229.png",
+          "sha256": "d4a3f5fb3e83eac2b45940356f2e5b5f15a15ac4dc72a7bb1be7ec6c03a4a309"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/229.png",
+          "sha256": "10dc35a10910c44fdaf1a3cfb30666dbcdb5634d532be8054c9da6e57533539c"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/229.jpg",
+      "jpeg_sha256": "baa5186310df14bcefc0e33b0c654a74de5f26922a054e037363e0f96908bf97",
+      "alignment": {
+        "native_shift_xy": [
+          -0.07549343713087353,
+          0.18624906520602558
+        ],
+        "response": 0.9172069255400587,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "236.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/236.png",
+          "sha256": "ecf77ec858b485890fd6da38a72b5fea48ef9cd5ce280b350b039eb891ba5458"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/236.png",
+          "sha256": "36a678e8538de4013e79d1bf1225c29eca9ba4128d59c5616de73cc2392fb3e4"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/236.jpg",
+      "jpeg_sha256": "c34e3194817875cb72483a636df9ddd2aa9485292b94943ede8c8bdd3b25ca4d",
+      "alignment": {
+        "native_shift_xy": [
+          0.08713478600029134,
+          0.08105577553922494
+        ],
+        "response": 0.57170371402193,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "238.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/238.png",
+          "sha256": "c95ffb686ca1fb0f0f9283b04f42f9f8acc6b77d02577b54ef1caaff4d6c0882"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/238.png",
+          "sha256": "529725b70d80a48757736aaab6628ae3a60a3cfd37d15dc47b78c90c08ce5268"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/238.jpg",
+      "jpeg_sha256": "d8ef63cf15bff43392b35febd70c994bd4e302b95aa07c9ce684b02f45d2d8c1",
+      "alignment": {
+        "native_shift_xy": [
+          -0.13562901145034445,
+          -0.016731629377133572
+        ],
+        "response": 0.4325310776631037,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "243.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/243.png",
+          "sha256": "6d05c186ac49f24abbd40286485016a61a287c30ab1fdd0ce2abcd58eed385da"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/243.png",
+          "sha256": "87093869ff75ca171045acc671fa447d2106adde1f53a51fb5bb54cbf768884f"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/243.jpg",
+      "jpeg_sha256": "a681158301979b8b7fe50029db8871ba2a635f73c6ca5a5ec54bc8012339b40f",
+      "alignment": {
+        "native_shift_xy": [
+          -0.16486071531913282,
+          0.025533966536217534
+        ],
+        "response": 0.8261468684231793,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "246.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/246.png",
+          "sha256": "7fa0846edf410ad8ade4232f464963112a49aa82d2d5367598914f4cf23707de"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/246.png",
+          "sha256": "1e9f0f23f53c30cd2f9442da0f0ca0644d5c3f3b273a0627384495bb67be4799"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/246.jpg",
+      "jpeg_sha256": "4d6a55e6aa1f94dbf4e80ddc909ffa359c1af32f51ebdd76c7f4a1c18cc24bc9",
+      "alignment": {
+        "native_shift_xy": [
+          0.07745669602510219,
+          0.1280560681143239
+        ],
+        "response": 0.8824136489795313,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "248.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/248.png",
+          "sha256": "277e810e5ba33f0a848e51b2eab087430aa5cff253aa67288ffc361fc4e84d04"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/248.png",
+          "sha256": "5f6ca61a5b8a08b7449d3f41a2ebb80ff9353553d571e4602d32cc5dbc08c8b3"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/248.jpg",
+      "jpeg_sha256": "c2e251804d0b431eb90548c0da2d7c43a2c8862dcb73d01cbf84e39ae24ed4a2",
+      "alignment": {
+        "native_shift_xy": [
+          -0.316196125888375,
+          -0.48070544346252575
+        ],
+        "response": 0.5395799185390826,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "249.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/249.png",
+          "sha256": "317694131602d620e7a98b4776707cea96ca2e91aaf0cb624001bce4e68a7926"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/249.png",
+          "sha256": "7951d2a4e5dfb839a74993aa2c47cb3af0ba9595c56c38b358a2cac65c932837"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/249.jpg",
+      "jpeg_sha256": "883cc9e6e73a8318db8ea479d3f4633826e602cf944a656772bb55aec113cebd",
+      "alignment": {
+        "native_shift_xy": [
+          -1.1221613684762843,
+          0.11388887248465096
+        ],
+        "response": 0.4095898904182293,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "251.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/251.png",
+          "sha256": "5cfd4471b4b2f79afc3ddcd4b7f5b84c1d1a70ff2b90766df772875afec79d72"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/251.png",
+          "sha256": "318df5fd535344a1efd8c324213809c57e134cfb214cb1880637155513971627"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/251.jpg",
+      "jpeg_sha256": "055472e299de068dd696211c9588e22895d2b50da978342de2842e3c477ed5f1",
+      "alignment": {
+        "native_shift_xy": [
+          0.00771644709148589,
+          0.14370116043219916
+        ],
+        "response": 0.7622679012793082,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "254.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/254.png",
+          "sha256": "28faf764eec6ebacb13be1934e4b9812dfea319a1c7b30cdd7d9968ff0abff89"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/254.png",
+          "sha256": "1c65fbe34d4823e161d9025c106d9c812288b18956d8dd12ce18310a03bcc93a"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/254.jpg",
+      "jpeg_sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45",
+      "alignment": {
+        "native_shift_xy": [
+          0.02089528748065561,
+          -0.17659911198301792
+        ],
+        "response": 0.975052334147471,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "260.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/260.png",
+          "sha256": "8daab4b19b6cc6d7324536e140e931acace2f51df0a3b9ba39c8c93dc6a82ed2"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/260.png",
+          "sha256": "dcd3ebe8fb224440af956be67ec8050bfb791d9743aae00b6002461caa1eac72"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/260.jpg",
+      "jpeg_sha256": "e143e2f7956b7836d42d8bd79f024094436c61f4ba5088b03eece2414b75d5f0",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10745134659794431,
+          -0.04145818139991597
+        ],
+        "response": 0.6559793601985331,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "261.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/261.png",
+          "sha256": "d6cd242a047ebb79c12313c977cea4d1e7e4f6a74ccd22f45107f173136fa483"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/261.png",
+          "sha256": "6036c46a65a6e71b9bd1d2b8d1520e7e88727a3bdb66b058c3d9a463b3e6c160"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/261.jpg",
+      "jpeg_sha256": "917a1fb152c8e948b7793b8fef7ff15211059dfdaaf27d86d6a54678e92660d9",
+      "alignment": {
+        "native_shift_xy": [
+          -0.04106923404354035,
+          -0.022156441107892277
+        ],
+        "response": 0.42135037073382625,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "267.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/267.png",
+          "sha256": "e5d5ab0d0e84c8a56fa307f088864975a763ce27a6c90aa30465c57ebeae9166"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/267.png",
+          "sha256": "1cf30ccf7d063eee5947710dcee36b47aa579befb1b3049011ce0ef39be97251"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/267.jpg",
+      "jpeg_sha256": "46da54ff5246b672c9ca6dfe8adf5e69979c4be7c02b617826a58989141738b6",
+      "alignment": {
+        "native_shift_xy": [
+          0.23142138093120934,
+          -0.02255864761705695
+        ],
+        "response": 0.6842777615344083,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "27.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/27.png",
+          "sha256": "6aeb6c02cdb7a59baf16f772cc2550b0c8d54e56625b6fffe73f772add2c86e3"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/27.png",
+          "sha256": "51eda43d26356684c514ee8bd9aeab19031eae84cdb23d11043633d9798a53d3"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/27.jpg",
+      "jpeg_sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3",
+      "alignment": {
+        "native_shift_xy": [
+          0.05884804889154438,
+          0.2251463442935453
+        ],
+        "response": 0.42041713534681885,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "28.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/28.png",
+          "sha256": "4d19aeb8fc79a923efc7db5a80aab536b1f1067d057db45b8a4c30443d482e87"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/28.png",
+          "sha256": "c21084eb4c88b8e971ecc93717a6e082c434ed56d5174131e5b9df867d418f66"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/28.jpg",
+      "jpeg_sha256": "544a5cfd22be529ce52ce69200bee009218fa2155df6d02e93e690b728fd2a2f",
+      "alignment": {
+        "native_shift_xy": [
+          0.31832478627286775,
+          0.34644143993711296
+        ],
+        "response": 0.394062023030387,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "328.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/328.png",
+          "sha256": "292d250161eb2fc0258b88ec0c36b5cae66b751e8b674e1b5b50b6cd56db38b7"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/328.png",
+          "sha256": "525e66659ee3bcf94d6cb3867dde127206c02c046d39d91d9845b91fa0d55ace"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/328.jpg",
+      "jpeg_sha256": "e2a05c7c67e8697f58daab48931ee76a62dbe3e4454094cd9916094cdc03d4ad",
+      "alignment": {
+        "native_shift_xy": [
+          0.24476603825496213,
+          -0.8540708099974381
+        ],
+        "response": 0.880858486228519,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "33.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/33.png",
+          "sha256": "61ed93b774773deef9cd1257b193b01bed797e91e34fc529e864af62dd7a335c"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/33.png",
+          "sha256": "28948c935836a206c54abbcb1e9b4d61f6fb45815fac80db006f3727107c18f0"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/33.jpg",
+      "jpeg_sha256": "964e4c76e0fc76f5c869dac6bb3eb94e05fc73d251ff8ddb235041f9f521ab21",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10505079315471733,
+          0.04567875103969499
+        ],
+        "response": 0.7085123190173397,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "330.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/330.png",
+          "sha256": "f3605026502dfb61501e70455786506657e4d046aaf70313dee0c51cc0759158"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/330.png",
+          "sha256": "525e66659ee3bcf94d6cb3867dde127206c02c046d39d91d9845b91fa0d55ace"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/330.jpg",
+      "jpeg_sha256": "792cd6e364f46d1235a069a5f9d5b6becc6e203140fbcf0ccafa2bad5621a496",
+      "alignment": {
+        "native_shift_xy": [
+          0.06947606453557853,
+          -0.3419792228367591
+        ],
+        "response": 0.9276320202483072,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "35.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/35.png",
+          "sha256": "3b05613525648046fd6954b6417fc7917f61bc8a908b5329f22710f54ed87a40"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/35.png",
+          "sha256": "e94e312d31a57dc0724c6d647c9f73b9d25eb1ffe3f9e3705223cca517b75a4c"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/35.jpg",
+      "jpeg_sha256": "1d5fcc19739495f8d8f3af7e59b832c524b588e49322064001e3efb155be055e",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10599004966392656,
+          -0.1501599914023899
+        ],
+        "response": 0.6650646790310188,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "36.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/36.png",
+          "sha256": "780f51d67ca788ed27d264b99e98e3118b279dd641ba3bef224e70b25ccc286d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/36.png",
+          "sha256": "f970c21b9a6da80cae54a54a3ef7a0e5073d053babeeffca476a635b33c8b024"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/36.jpg",
+      "jpeg_sha256": "c7218ac0b496d120f5322d93c88b90f9e3b35ac5cdb0d88eaa472d5afe276490",
+      "alignment": {
+        "native_shift_xy": [
+          0.057567485731393475,
+          -0.21195894800595916
+        ],
+        "response": 0.6637215635290852,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "38.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/38.png",
+          "sha256": "53f181730e433ade902c650c251cd5eb591dba1891b0e7f7a4d040c17706ce76"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/38.png",
+          "sha256": "c5c7c30afbb71c0e9e4857fb1a049992bae9ad7ea445d3357ea37ac8674820ba"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/38.jpg",
+      "jpeg_sha256": "5a3b2c953a5a4aba9f29baca90990b7ad884e76b3871726eeea1a36b252164da",
+      "alignment": {
+        "native_shift_xy": [
+          -0.00266821847640486,
+          -0.2959603239414488
+        ],
+        "response": 0.4916685806380378,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "39.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/39.png",
+          "sha256": "e580f0e95e5544b8154ce84533083bcdc52ad6cd6918ab63987a9dcac3ee7b98"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/39.png",
+          "sha256": "5e9cbc7ca7a3ff3a3a0e557b1d0d0e78ee3c0378e017b842a88c25212ce00e8b"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/39.jpg",
+      "jpeg_sha256": "99486e3b13b4a8aeb942c55c1ed8f4b1f3c2de238b55ae7818a342c8d811c675",
+      "alignment": {
+        "native_shift_xy": [
+          -0.11677610475492983,
+          -0.12756570554193658
+        ],
+        "response": 0.9159843769890291,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "40.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/40.png",
+          "sha256": "1fe337bbe9136b6f9cb920eb35e74086bdc80f4aa81ffa44af837896004c770b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/40.png",
+          "sha256": "6732ff0999434d2ce9206617c4096ffdeb9ea647871e01822a2e2bcadeca74aa"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/40.jpg",
+      "jpeg_sha256": "d994da99d537aa378cd1e6290b2593e031b5f18a28cc168d854b3c8eb376d6b8",
+      "alignment": {
+        "native_shift_xy": [
+          -0.02972004465174649,
+          -0.11543831127498905
+        ],
+        "response": 0.822526929223979,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "43.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/43.png",
+          "sha256": "4a5927d193662535ee6967eb15f85c827535d74121a089dce3c5531b4f2be56d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/43.png",
+          "sha256": "f65b7ae38591ee83239a2b54388b656c9776c95709485e7c54ec1958b9840ea8"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/43.jpg",
+      "jpeg_sha256": "659945e685c9e6f3889a44c4fb123bf8318291670aff52cebf05752bb8c4d569",
+      "alignment": {
+        "native_shift_xy": [
+          -0.031679781427644826,
+          0.08239427622068973
+        ],
+        "response": 0.8910453625299313,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "44.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/44.png",
+          "sha256": "1413f82701960d804d2215852004cada1f91964c8553c9316e2a6622cc5ed6aa"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/44.png",
+          "sha256": "db37b166971eb0abaaf1c40adf58de15a88e1c6d072ede9585e8df9243f88e92"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/44.jpg",
+      "jpeg_sha256": "fbbf4483a4c48e570a8c5e059464302c7ba90b9dd33e80b0debdcb6432964a74",
+      "alignment": {
+        "native_shift_xy": [
+          0.015687807270676757,
+          0.013178919843319647
+        ],
+        "response": 0.9138620048209473,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "464.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/464.png",
+          "sha256": "7fe6335fddcc61a72456c26e7976e9c86eef9da1003faa003a1ccc96164bd401"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/464.png",
+          "sha256": "c4bb0fb2a9e2720038692db49fc1ccbdde0298a7055fe82863b15d7ca01dd762"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/464.jpg",
+      "jpeg_sha256": "e1050d76d3f404f1b357f12c422e6312d4dff14e3ba0523731584c3a78e776d0",
+      "alignment": {
+        "native_shift_xy": [
+          0.001272363919877506,
+          0.06024365653912511
+        ],
+        "response": 0.9387131764932916,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "470.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/470.png",
+          "sha256": "62fa451a01041dd322eb5738e9352c951475082b32b3e504c97f0da7fb58205b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/470.png",
+          "sha256": "804386bfd40ba238d20012f3e458602caa394b41c9d4b44b2b7b6100a2fe389b"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/470.jpg",
+      "jpeg_sha256": "bd7ed129a88022851cc83e861bb988ec6c00a31002c43b158c567d909805b754",
+      "alignment": {
+        "native_shift_xy": [
+          0.1977118184645832,
+          -0.08794906321821117
+        ],
+        "response": 0.7815655955561885,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "472.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/472.png",
+          "sha256": "45bb7f0094945b8133941e417c17e45503fcafcc590094baba404a9ba3ed6330"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/472.png",
+          "sha256": "02946228d6977bad65a6b3fe2e0e576260a43ef9bf5a534e1e245d6ed5dd48fb"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/472.jpg",
+      "jpeg_sha256": "0f0dfe5aa785ecc07895d3c95acc5b3ba7353d8704e3879990eae9427b962d1d",
+      "alignment": {
+        "native_shift_xy": [
+          0.08437010111036258,
+          -0.2506655439860417
+        ],
+        "response": 0.8155237155931967,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "473.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/473.png",
+          "sha256": "276f15239c709c3f25bde7a65590943a621cbef5d2bd1043fb3e046cb73a7f08"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/473.png",
+          "sha256": "325c5d44d8c7c06ee969d2925269c67fe7d6e02edfc0e831fe152377e2afd5f0"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/473.jpg",
+      "jpeg_sha256": "a4eaa85f36d9acadbc83b01a8cbde51668133b2da2de4220a72cc12128f6cc9a",
+      "alignment": {
+        "native_shift_xy": [
+          0.027062747982160573,
+          -0.16095922768566417
+        ],
+        "response": 0.8984275901759112,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "475.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/475.png",
+          "sha256": "0452946ae908250e498d38e0914aab52894653767bf030a625bbba1fce0cdb2c"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/475.png",
+          "sha256": "bac837a9a56a079a37aeae5edabcf281b1a6d44f5aa5a29397c23033c809b478"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/475.jpg",
+      "jpeg_sha256": "525947d6ba34a71d5c6ce8e813ff0c2ad6ccab8de9190c2e3798c62bcb1df6e9",
+      "alignment": {
+        "native_shift_xy": [
+          0.0371082053243299,
+          0.053591999754338815
+        ],
+        "response": 0.8573357843690448,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "477.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/477.png",
+          "sha256": "999a01f55ea87fb2637a7458f834490d8a528d15919485084c64003800e5f797"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/477.png",
+          "sha256": "5267aeaba6ca3f831db49944093357bfdcb2e4e632844fad1c763e982877bbed"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/477.jpg",
+      "jpeg_sha256": "71bf5ab327cd94fb52a51bd84ceaff03fa42f3780b2dde2313db85e88bbc082b",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10584102595849743,
+          -0.12764181378023487
+        ],
+        "response": 0.7608290230786359,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "48.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/48.png",
+          "sha256": "edaa0cc53af9fac442f69b43626cebda203237afcc4bb4d5dcfb11386142207b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/48.png",
+          "sha256": "21e97353a363ab54154bce1c60fb9615def372948b80a1366d470ee567069a0d"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/48.jpg",
+      "jpeg_sha256": "d25ab401c955ac2485e5fe4e1f111ced44417fb5ea3f9839342dfaa627f626a5",
+      "alignment": {
+        "native_shift_xy": [
+          -0.023512208766458542,
+          0.048546726591860434
+        ],
+        "response": 0.8560837842799999,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "480.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/480.png",
+          "sha256": "9e7cf71c84d619ac5398f662f0bd7beb1f20e2e872591795c6fc0e6d64ffecad"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/480.png",
+          "sha256": "aa44972ac975f6f4a430069a6b62eebb699a5e575b0ed9733689408d8bb82024"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/480.jpg",
+      "jpeg_sha256": "c0e55e1b3a5d36c9923254ec9096a62c80e8c0e70d5adac41432c28d1f9ca531",
+      "alignment": {
+        "native_shift_xy": [
+          -0.32637440750745483,
+          -0.12930025447317028
+        ],
+        "response": 0.8082215715475657,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "488.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/488.png",
+          "sha256": "12414ebc1da8d0af81536b88eafb936f87e5956de334621f1d4f82ea9cc5783e"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/488.png",
+          "sha256": "889ef1cd2d0819b2d173066541cdf993d197036e2de94faef2a3ff1e3694bb33"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/488.jpg",
+      "jpeg_sha256": "d4a90fc79ea68f02af693371397d466a955884c384cd8b7dc800ee2f95611505",
+      "alignment": {
+        "native_shift_xy": [
+          -0.35677244409827225,
+          -0.30651636247121417
+        ],
+        "response": 0.7692716213288131,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "489.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/489.png",
+          "sha256": "bbcaef5428c658b41ce8f164ce99e42b6457d08f165ea64ee32e8b335e2402b0"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/489.png",
+          "sha256": "a116bdcc768d8f9c2e428d42d1a1dc9d39f144d47e96219bb17192933f0a76b3"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/489.jpg",
+      "jpeg_sha256": "1191cf87fac4d0f721febba955410558c13d3ea2135bdfcc4404418a86aa7f2a",
+      "alignment": {
+        "native_shift_xy": [
+          -0.4887765789837317,
+          -0.41823495081178663
+        ],
+        "response": 0.6190811701394894,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "490.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/490.png",
+          "sha256": "464e31c3dd3aec0fd968c48ad29ca90e878c12b101c71fb522c4fc575a583dbe"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/490.png",
+          "sha256": "950fb355325c9d8fe77ccb4fd2abe9e19e3e9cfcc8ea9630a2063a3b4b3e6538"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/490.jpg",
+      "jpeg_sha256": "4edea937a57880f5e8f3680b35ef577e90c64933b09d13b2e47eeccf6134c21a",
+      "alignment": {
+        "native_shift_xy": [
+          -0.09180126840483638,
+          -0.6574526518615809
+        ],
+        "response": 0.6685679922501246,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "494.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/494.png",
+          "sha256": "f4d82212cb64fc4d2d833a30db4f2688b75c6f513049d0cdafb62b92807907c4"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/494.png",
+          "sha256": "dd6166073ad485c177298ed31eb761326aa11e6addd2f50a20525ece9b8482bf"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/494.jpg",
+      "jpeg_sha256": "9cd07e283ca289504f5d215c7849fb1bcfd3fbf7192a2a16392c17cb385ecd17",
+      "alignment": {
+        "native_shift_xy": [
+          0.24857396737823834,
+          -1.390740800002801
+        ],
+        "response": 0.7069111104364748,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "497.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/497.png",
+          "sha256": "5255d0334902e49040a9ad1d1e2b3d60de65b293c93c9ee0ddd098aabd72b53e"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/497.png",
+          "sha256": "8de79a48e35014adc55ad9133cec2e8c7e8fa57dc9342f5305f9583001025bef"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/497.jpg",
+      "jpeg_sha256": "74a2ef15c908e81ce2ffbf10ab26db2dd3671575796f2592903ef9df8b419bca",
+      "alignment": {
+        "native_shift_xy": [
+          -0.09565279869745424,
+          -0.18960174657167705
+        ],
+        "response": 0.7868377577375483,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "50.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/50.png",
+          "sha256": "880c4a81ab5b38afe45391d927daaed0db39c3c3ff7f7cad23d7dfbf71414ec2"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/50.png",
+          "sha256": "7c99f57cbb0e1eddc85f71df5db22581c01681413348da0f8983a8a922577796"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/50.jpg",
+      "jpeg_sha256": "166d31da982cc40025f192bffc78ee3143f164f7ef8b6bc9e19b08c8a8a6fa0c",
+      "alignment": {
+        "native_shift_xy": [
+          0.0476701267943902,
+          0.17776477979934313
+        ],
+        "response": 0.6836311575715188,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "501.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/501.png",
+          "sha256": "9cb1ddd7370da55a4e22b5ee9665ab99b57335cbec4066cf56b36d8372d52f21"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/501.png",
+          "sha256": "c188e1c7a2d394426f8a863ab4e1eae5273fd727e2d750bc934005ff0087d9c5"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/501.jpg",
+      "jpeg_sha256": "87bb1e738a12ec7ac0b34e704d49cdc7b5ee40745abde74f60ca195e6689039e",
+      "alignment": {
+        "native_shift_xy": [
+          0.07239033229287983,
+          -0.23883346597838084
+        ],
+        "response": 0.8261229307563217,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "502.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/502.png",
+          "sha256": "1bb915d97e90a698ec353ed383f97978f39017713e75069219184c6527becfcb"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/502.png",
+          "sha256": "77c290951c1fe5866874cf4fe69dc515fc239f08796d76af1dc652ba6df02fd0"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/502.jpg",
+      "jpeg_sha256": "47ca4d26736755fcdec830c5a2a1b2e051dcbbd23ba81bf81fb4af77afdd24c1",
+      "alignment": {
+        "native_shift_xy": [
+          0.09726427004347116,
+          0.14350714559909328
+        ],
+        "response": 0.7136892388816233,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "506.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/506.png",
+          "sha256": "ae43b937ebe12c92eb2f30b8b25c06957ed97075f3de38ef31d2746097540786"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/506.png",
+          "sha256": "82877649ba3b8ecd1dd02717e6a292395f66117b264f271be245192260dbfc6a"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/506.jpg",
+      "jpeg_sha256": "b9386c92049cb73bbb28dba2a8810633436deeab24074f69a829d15502aa2f02",
+      "alignment": {
+        "native_shift_xy": [
+          -0.31232352889020376,
+          -0.13701366757647548
+        ],
+        "response": 0.6488583213201276,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "508.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/508.png",
+          "sha256": "93510aba50e2945f9b1f45967017edd542b4fe480e3fec19d6dcbc1b4dace132"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/508.png",
+          "sha256": "97059a2d092bdaa2417a0b06a36adf111931b459f50af4c306ffb1ab422d0b4f"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/508.jpg",
+      "jpeg_sha256": "b64650af62835dadd9a36fd29bb601c1244b9af4e04c65290a6892136dabf59e",
+      "alignment": {
+        "native_shift_xy": [
+          0.18189830297817622,
+          -0.35865933176505216
+        ],
+        "response": 0.7225710584057702,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "512.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/512.png",
+          "sha256": "a6d78b87c25bbd991b5776bb0712f97e48586ad5434cd1dde3c5e31cac056eef"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/512.png",
+          "sha256": "a4873027850b20a66fb19f3b07aebd29ece0077f5adfd019f8f73c165db408c8"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/512.jpg",
+      "jpeg_sha256": "385e6a716ed7c838a631d729e72dc2f9e3380870637a6e5e08a1bd21fefbad48",
+      "alignment": {
+        "native_shift_xy": [
+          0.027390197463397215,
+          -1.1559109162862402
+        ],
+        "response": 0.7243468668725755,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "514.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/514.png",
+          "sha256": "f3afc38a8a69220f813cffb03661d3da20eda996ff6ac18bb3968168e78ef861"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/514.png",
+          "sha256": "1eb087a51efc5c84e103bf8ef16da8a4519cf3bae6380faf62d4b55202f18499"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/514.jpg",
+      "jpeg_sha256": "0aca8c9e942fa3efa6929a550ec3320975964f75ca20ed3a73010540abd73d04",
+      "alignment": {
+        "native_shift_xy": [
+          0.16276647006309375,
+          -0.4034999176278564
+        ],
+        "response": 0.7426106381195563,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "522.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/522.png",
+          "sha256": "0664ea04fbf53eb025b2332c6305fe5de3ef9e4a2712f315e2a2a74cbe5e9572"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/522.png",
+          "sha256": "39df95457094588bd02ec64e9bc0f84646a91351e697bc0a750623c533aa47e5"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/522.jpg",
+      "jpeg_sha256": "863ae3a99613a318e9e5df70d58ca8be1e9d6afd63e583da3e67f1aeb06e9f53",
+      "alignment": {
+        "native_shift_xy": [
+          -0.14272182373153086,
+          -0.10248267949275025
+        ],
+        "response": 0.7507069214626595,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "524.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/524.png",
+          "sha256": "d891e08a2bf404a55470b2595abc48e246bbbe2ec3305cc0e12e42541ec4b8ac"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/524.png",
+          "sha256": "03ce47a13f59f415b7113c8e94452e0502ea2ccaaf2961e4157fd20cd2f39959"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/524.jpg",
+      "jpeg_sha256": "e10129a75e1df4bd82cff48920f95f0798f1c0c3b37ad0c1157a73bde3a2924a",
+      "alignment": {
+        "native_shift_xy": [
+          0.125922588706171,
+          -0.4232619074780519
+        ],
+        "response": 0.8133231608955949,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "529.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/529.png",
+          "sha256": "c64674a03a4a550ccb4fd83acdc6f1b29fe2eca60681a3ee06d2bb24211f3a26"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/529.png",
+          "sha256": "123277f96fa029acbd8a6e5fefd4bd858b9a6d578319a07475a24a037be5289b"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/529.jpg",
+      "jpeg_sha256": "7799836bb9a7acc5ed672a6bef67e5050a11da37d0a7c05595a5b9402eba5eb7",
+      "alignment": {
+        "native_shift_xy": [
+          0.1142616900066784,
+          -0.050213088733173095
+        ],
+        "response": 0.8943287528223461,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "533.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/533.png",
+          "sha256": "b04a62a28af25c72632b0ab9549db79c0307fad452800606fad1da6c4b7cf564"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/533.png",
+          "sha256": "b42e12c335dd95e1f22f61843d8aceec7713725ce77462f45e01333d186af4bf"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/533.jpg",
+      "jpeg_sha256": "107c6dd20057b1cf2cc4cc25f142bfd560a000a2704531f9fffc33ac1cd4fc24",
+      "alignment": {
+        "native_shift_xy": [
+          -0.028693285542171765,
+          0.029084264161491902
+        ],
+        "response": 0.7724688505684888,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "541.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/541.png",
+          "sha256": "adce73e19ca63a5ba491d85af5e2f2aac74692a9a3406de88094795938cc40fd"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/541.png",
+          "sha256": "5af2053ac74ffbff80c78a3f4a921f2c61ffbf1f5058b3a1becbcf1ab27a58e7"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/541.jpg",
+      "jpeg_sha256": "3e1020886497ad051907e791c41eacdfeaf1bc78f9748e7016b44be89ac97f34",
+      "alignment": {
+        "native_shift_xy": [
+          -0.1727334356608523,
+          0.09105975441473291
+        ],
+        "response": 0.9278112563822004,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "546.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/546.png",
+          "sha256": "4146a7471deec9cfdbed5cf6ba6241852b33546f09308833378fe69e906a01e6"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/546.png",
+          "sha256": "8bf988e8bbe245dc237701d950c56c4d46b2b05124fd95b42e070d32b6744ec9"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/546.jpg",
+      "jpeg_sha256": "3bdfc6ba5a2a3fcc6f5ac60ff63cf8b99e708d17a3774eb0553a4c636698c309",
+      "alignment": {
+        "native_shift_xy": [
+          -0.08480425046320406,
+          0.008894790219358129
+        ],
+        "response": 0.9279121937575163,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "548.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/548.png",
+          "sha256": "2bf4c5a6d40b5976a13b1adeff95b4d4aa0a45e9d0bf9b44edd026fd64bbc658"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/548.png",
+          "sha256": "36f914998ae57dd48d88ee83292af24d0de13700b2a450ee731d3ca5706a60cd"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/548.jpg",
+      "jpeg_sha256": "35986342b79a3f5467fc84fe81ef12c139f9b4679db227d6ba26d62e292a6273",
+      "alignment": {
+        "native_shift_xy": [
+          -0.1423891656686216,
+          0.021608054688524447
+        ],
+        "response": 0.8042358098206697,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "551.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/551.png",
+          "sha256": "95ca23e00d772ed01b4b9f3b7d56285885dc3997063bc504d3419957400bba2f"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/551.png",
+          "sha256": "930ebfbc997d595a6e7f6f58e7aa0bf887e8704c67739c42e24e03f66caf7bbe"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/551.jpg",
+      "jpeg_sha256": "6aa243f24bfe3cfaed154e44e1cd4e0ad397454af32fb51b1f0ab683bd0ca7cd",
+      "alignment": {
+        "native_shift_xy": [
+          -0.22771975730689675,
+          -0.13669732997811934
+        ],
+        "response": 0.8456570911186713,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "559.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/559.png",
+          "sha256": "e4b3758c16806b9a44fee70a70dac304e583de00763190299b149fef3df022dc"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/559.png",
+          "sha256": "906d3db9fe18094f6ba262113cda39f11fcdec817a19b9c5d6cfe5f167fc5914"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/559.jpg",
+      "jpeg_sha256": "8d37049c4667a0ac677533f559eb3dae06059db5b28fe22439915a1e4b9b680f",
+      "alignment": {
+        "native_shift_xy": [
+          0.3119580472771233,
+          0.09373242282926242
+        ],
+        "response": 0.9480649612568043,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "56.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/56.png",
+          "sha256": "e65206328a8385aa7e2aae71b1d77ba9a3226cf50d96da58421ec197424f14d3"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/56.png",
+          "sha256": "13e767976d423a220cdef8663261be2eb2a31b95518e4b55535bd3e437e592e6"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/56.jpg",
+      "jpeg_sha256": "a62229abeef78b0546b9b41c787b162b9050a5d1fd1cc284407d65b2c278ece4",
+      "alignment": {
+        "native_shift_xy": [
+          -0.16160925834096673,
+          0.031801270463303055
+        ],
+        "response": 0.7735417534907659,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "563.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/563.png",
+          "sha256": "5ffcd09fe8642a3ebecbc502877a0197067f51b9875a5ed58f229b5d060a0bd7"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/563.png",
+          "sha256": "29e0aa36549678633f0b7065272d3bff4b789ee4540556e7a957ec5bbcd2f4c7"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/563.jpg",
+      "jpeg_sha256": "1ca60816d9fb0885c3294895336d4f44d008759dff42c72d2c0c788072b08620",
+      "alignment": {
+        "native_shift_xy": [
+          -0.20766645645124981,
+          0.12538229092829312
+        ],
+        "response": 0.90629645563938,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "565.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/565.png",
+          "sha256": "6167c8264188391a2fe84e61641393da654db7dc2c5c5df391311a68fc44ab1b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/565.png",
+          "sha256": "bea287381f596006a6549d64326765e8c053c11d4540b334451ca0e7c808e417"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/565.jpg",
+      "jpeg_sha256": "cfd82849833bbe429fe91039f18e6051929fa8ac3fa81282607eb91c164e94b0",
+      "alignment": {
+        "native_shift_xy": [
+          0.24878159942264944,
+          -0.06115170110130741
+        ],
+        "response": 0.9004390918546252,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "566.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/566.png",
+          "sha256": "5a6c7edb693228a4e12e309b278d34b149a9703b72102e1fbb10710119794f4f"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/566.png",
+          "sha256": "70f6154b1c4bec3894f3a15331f216b831c8418806028c51f78c35db4192d81b"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/566.jpg",
+      "jpeg_sha256": "d052c1dbd02ae8c77a197d64fbb7e9baceb02660b0385110c4e1bf312825671e",
+      "alignment": {
+        "native_shift_xy": [
+          -1.0406650834537423,
+          0.1118151015391522
+        ],
+        "response": 0.9127518287411442,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "576.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/576.png",
+          "sha256": "1b764c2578b7e20ad2366b67e3fa27c5c8a9fb96222059316d765bc06d1e18b1"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/576.png",
+          "sha256": "319ce4de926b925704beae2b82a4b5bd12c837890f1572e4a981a5a588ad3068"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/576.jpg",
+      "jpeg_sha256": "625126516e82e6be51e5cee2467ff0c1f899abd8d4de3c90bbd4270481fec872",
+      "alignment": {
+        "native_shift_xy": [
+          0.021776647987152842,
+          0.9380656833096079
+        ],
+        "response": 0.6204697847366333,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "58.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/58.png",
+          "sha256": "961e818444c64325de8979c97acf028f54c79e7db8775abec0223a849fc399af"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/58.png",
+          "sha256": "6283439494658926a12997b70bf9d20c57e99ae1c4911199d0ed92a22ec4a682"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/58.jpg",
+      "jpeg_sha256": "ecacc24506168491926c10389e091130d6bd7dfbd7fcd156551deda49f289e8b",
+      "alignment": {
+        "native_shift_xy": [
+          -0.08816217112302738,
+          -0.0435411326534485
+        ],
+        "response": 0.8598075946448026,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "583.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/583.png",
+          "sha256": "0e1f3f993d2fedb83b1aafe43f2375b80562543907a90f89a0d8c002d932b65f"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/583.png",
+          "sha256": "42430c630ba466117a30e55d18721ba541fe2ce40dd7d3e98490158ed895129f"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/583.jpg",
+      "jpeg_sha256": "59b9a5abaaf01f87df545a162a53740a938f2345d8b4e4fd0906c40c007286f4",
+      "alignment": {
+        "native_shift_xy": [
+          -0.07792643652546616,
+          0.08597067697844629
+        ],
+        "response": 0.8552760988473892,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "594.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/594.png",
+          "sha256": "beea0d5aa720e463c867c26100aa2ec2f691adf29e5558afceacdc3d10bf528d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/594.png",
+          "sha256": "63904e03a0e3a9c9735c2393e047f5f4009401ff8d8d241e4012c8ec887c93a2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/594.jpg",
+      "jpeg_sha256": "84bbad03e9851602b7ec4054b65f5e412e5feca8f7076aef8733ac6c4ff70671",
+      "alignment": {
+        "native_shift_xy": [
+          0.14292621096112512,
+          -0.018977952426011413
+        ],
+        "response": 0.6229964613914489,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "6.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/6.png",
+          "sha256": "6a78b5a9c1ba8b5a7b8de0a7b8ff1662ac45ebdaaea44d243e6d56e36b88ea7b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/6.png",
+          "sha256": "bd81e4f9bdfde7ab0c48cde59d10b8568977acc2789bf469e6114948cbe6c316"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/6.jpg",
+      "jpeg_sha256": "d54d46e822b3b91b29ebca555eb131ed4162bba80373317d0d37fbcf622c42c8",
+      "alignment": {
+        "native_shift_xy": [
+          -0.08242168317504905,
+          0.14582557014407804
+        ],
+        "response": 0.8848051527584041,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "60.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/60.png",
+          "sha256": "d5976f8f40d7bd17c6c5f73a79b457f57b714a499b893a6b8954c0e9da1c043a"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/60.png",
+          "sha256": "59b527f01afe6272b53489c91fc637f85c2d423ea60f7b94d6cf8c87e3e38c42"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/60.jpg",
+      "jpeg_sha256": "4ec925d9c2195d8f41226ddbb2dfd6c40deec043ddebb88d0b92b5820c3dd983",
+      "alignment": {
+        "native_shift_xy": [
+          -0.112979793049508,
+          0.1084354108182417
+        ],
+        "response": 0.8859836662809054,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "600.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/600.png",
+          "sha256": "03251417937761ce8ea851f3c05ff733be70c76f44551a3b090b06e162a31ebc"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/600.png",
+          "sha256": "156fa8411078b61d5596b1c133132d2c8f42b6e85dd5d59ea36080997297f8da"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/600.jpg",
+      "jpeg_sha256": "3c12fe2409e27ec7802eb713722391e0a27137391c71d55e584bd93238877e8b",
+      "alignment": {
+        "native_shift_xy": [
+          0.005212378046142163,
+          0.0534287904139763
+        ],
+        "response": 0.8884830483683833,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "604.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/604.png",
+          "sha256": "3ec9cf59b130412527a0903d9c3019b7f98b6ca4db19471ef99d8f54568afc6b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/604.png",
+          "sha256": "23c3c5f3ac87ac6a92e3a44a3c64bbed57b6a320dcd7184b759669991390ae9e"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/604.jpg",
+      "jpeg_sha256": "abcf46b8ccf4ce065339b1a179088d2e92188ee750641e9f25b7bf3ac79294d5",
+      "alignment": {
+        "native_shift_xy": [
+          0.08602267286292431,
+          -0.19364015493371411
+        ],
+        "response": 0.8897464261562736,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "606.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/606.png",
+          "sha256": "b4fb58cac22567d8d6927061b452f26939ed6b3ef1ee89eac16c91a82fc61e27"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/606.png",
+          "sha256": "068913e02bf3a14b06f058a26aeb01c82ab46d51fcd3851b8cb3ca2364cf4254"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/606.jpg",
+      "jpeg_sha256": "e875901f785f0a0591770879e9f42febe9abdc07defa104937d34a73b96b92fd",
+      "alignment": {
+        "native_shift_xy": [
+          0.09161586096663399,
+          -0.06460789166094827
+        ],
+        "response": 0.8730727099710041,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "609.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/609.png",
+          "sha256": "b746e492a348e489a2679b5f230580fffb56b084b521e1950140255d48864b85"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/609.png",
+          "sha256": "d768f1deda0e57cbf754dbc582f02d399f4b81e8813d1b19aa3ec2bb04e3d412"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/609.jpg",
+      "jpeg_sha256": "bbd561016380167db98217e42e11eed30c1bdc0c98bef333ddb7bc9ae0434d7f",
+      "alignment": {
+        "native_shift_xy": [
+          -0.024797767630726497,
+          -0.10171475399009644
+        ],
+        "response": 0.8678252247196657,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "610.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/610.png",
+          "sha256": "0d004706b495bf2f332730d95aabe4292e4489cc796a69212d036278f23e0d1d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/610.png",
+          "sha256": "7680d57d28bcfe532babb3ae499d3e16e81ab4e1a868807a61365f04fffa0bd3"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/610.jpg",
+      "jpeg_sha256": "256e4e0cb7e8c418a808c0f9112f1cd7fa13babb0cbe7f52e21c7a6804ec3b17",
+      "alignment": {
+        "native_shift_xy": [
+          -0.2462658719263544,
+          0.2721066430735952
+        ],
+        "response": 0.878134028116862,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "612.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/612.png",
+          "sha256": "c0cb2a2413875e53ccf162177df63bf8a74de3445df0057d0c6c4afdaea3c9d5"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/612.png",
+          "sha256": "715ba1003704101ad90af6b06dbea2952576b5bcae337e730e65812e9f6d13f2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/612.jpg",
+      "jpeg_sha256": "87d5f7521e0d22dcd3a19673d1c07b9fade427d0cf021a7871fee45f39f52cbd",
+      "alignment": {
+        "native_shift_xy": [
+          0.11474893656801655,
+          0.1112470833844803
+        ],
+        "response": 0.9234349111715953,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "615.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/615.png",
+          "sha256": "37cb7c91487bf12b86ea612a9abf67444a5efcf11d3cc4d1d8707c9af21eb0c1"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/615.png",
+          "sha256": "da7633e6503e3df724e78a6b503edc1405510fea7061395783632d5bf57ac659"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/615.jpg",
+      "jpeg_sha256": "28448c5fa02fc421e4575d0a10aca4708a7b9546c2397faaa2822afd858c714d",
+      "alignment": {
+        "native_shift_xy": [
+          -0.2002610638489699,
+          -0.0006793046367015165
+        ],
+        "response": 0.8483491453859541,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "620.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/620.png",
+          "sha256": "5bde7e00b604803835c1becc35d0bf1ea988a93833517d333739abb352507632"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/620.png",
+          "sha256": "4c44a4602959f9045518e9eb10b50fbd1258cf07dbea996439052a4ade679aa9"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/620.jpg",
+      "jpeg_sha256": "1629c0f655d710ee06f67ae8a4c3f5bb7f7ccd2d5ae9f9e58d61c3e6326c0336",
+      "alignment": {
+        "native_shift_xy": [
+          -0.06283450909945643,
+          -0.07534528795453355
+        ],
+        "response": 0.8868507431613074,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "624.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/624.png",
+          "sha256": "2531d6ebd2cfc095d9e5249a348040c859380b23e0519e72968453c04cf177ec"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/624.png",
+          "sha256": "bf7d4a03e6cfbf5c88578ca462750d46ad2f2f564e4526b2338383492d00c165"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/624.jpg",
+      "jpeg_sha256": "6159344620e34ca66ea91bf1d46db37ea114006547b873105a14a5dd4e49c4b8",
+      "alignment": {
+        "native_shift_xy": [
+          -0.0351893563354011,
+          -0.12078984459142461
+        ],
+        "response": 0.8873119391225003,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "628.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/628.png",
+          "sha256": "c71c726a5ad41f2b8de1b4275f6e9a5698a65cbb9cbeb2bfdbb0f43f528f2c8d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/628.png",
+          "sha256": "142da85f2c2073f44156ab3a64cedd4033e76553cb331817afadb583407d515c"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/628.jpg",
+      "jpeg_sha256": "97c83de8cee37eff27fbb25a4fc67936e6c362225cb1d60811140a5bffd80176",
+      "alignment": {
+        "native_shift_xy": [
+          -0.17671988376234182,
+          0.14979598265306038
+        ],
+        "response": 0.8872911745751345,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "63.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/63.png",
+          "sha256": "a31fa5d967907bd44a4c5df2bd8d7109a6d0a5e488b0a81ed4d0313668081979"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/63.png",
+          "sha256": "7d7b727a50f1412917959c270d52e246714dcb1349249d06f74f64d2ab29515a"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/63.jpg",
+      "jpeg_sha256": "62971f2ef17bdc367c909d665546e527871d55074d2b9ebd8a1c77704db8cd9d",
+      "alignment": {
+        "native_shift_xy": [
+          -0.09643804953114454,
+          -0.1227894215487435
+        ],
+        "response": 0.6400298578319726,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "639.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/639.png",
+          "sha256": "b78b1a683bb7a829936f084c31999a709afa8a9772ea52650ce94ab279762b2e"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/639.png",
+          "sha256": "5b285e72bdbc3311fd7582f2a5bc8c9bdfd360f562897e848d0336515708eb6b"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/639.jpg",
+      "jpeg_sha256": "08d6cdc034df529fd6c2dc6e62bedc3db66ae7da909d0f8a60046069ba59f12e",
+      "alignment": {
+        "native_shift_xy": [
+          -0.13007803606129187,
+          0.6491693756622308
+        ],
+        "response": 0.7425974083167536,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "642.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/642.png",
+          "sha256": "13150b822f1391a94d188ae321f0f4ec0cf182b876e5636622449da29e58e6d7"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/642.png",
+          "sha256": "2ac35bfa7de609f580454ee6c7bc9d27a73abb4bd597264831b6e41a93ccef70"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/642.jpg",
+      "jpeg_sha256": "b079b652c2a7d61d06a2b9286b909bef27112a104f728ec821aa05aa9c79b9f2",
+      "alignment": {
+        "native_shift_xy": [
+          0.051766328441225085,
+          0.2612764519291666
+        ],
+        "response": 0.9119370495831525,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "647.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/647.png",
+          "sha256": "df03f0b589af1e128a4644374233dc2d551a59cfe9f922338afacb8aac8fda16"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/647.png",
+          "sha256": "8dc6dc525f6d3287b21ccd1fe0f2ed80c4fe82570015dc1110064e6a482d7aa2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/647.jpg",
+      "jpeg_sha256": "0bc56b41cec11ceefc72d20cba913956e1228302b164d634d059a6394aceb00f",
+      "alignment": {
+        "native_shift_xy": [
+          -0.490670794358099,
+          -0.028478851462185872
+        ],
+        "response": 0.7795380259001696,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "648.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/648.png",
+          "sha256": "66f433b787bf8124fc4d36676d9b4e7b3ab1b7c4cee790dc9d9f9ea13084857e"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/648.png",
+          "sha256": "da658be31fdddbe8c3ef87a837c663bb4252c020173fc7897f9028c3e2d95df5"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/648.jpg",
+      "jpeg_sha256": "daec0b83fdd16228363b4edd5aab4ed9acbe40d21ec951048469072dabb05943",
+      "alignment": {
+        "native_shift_xy": [
+          -54.5939529364288,
+          25.773402444380853
+        ],
+        "response": 0.08421256321447868,
+        "status": "uncertain",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "650.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/650.png",
+          "sha256": "bd74d6c07c01673c4dd8ea6b098900a4a4331abe8f6c07ffcd470ced1efac1b2"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/650.png",
+          "sha256": "579a7abdf6744132e9cb52a197a4292fb9df9716876438eb88e9e29a113db236"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/650.jpg",
+      "jpeg_sha256": "32e8ad8e1d16e91c2cf4d8c7db94d588def289160816c472a1effe792d267629",
+      "alignment": {
+        "native_shift_xy": [
+          -0.003946656573710072,
+          -0.05705816252964624
+        ],
+        "response": 0.9208575665122933,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "653.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/653.png",
+          "sha256": "983568ea70decd8cd0a6300c4d5ab3c0a63651d046b9db34929368cb6fafbb05"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/653.png",
+          "sha256": "d1a06c3871bd344e23ec1bf4a006f80637fe3651759787658e8285c8708a1ec1"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/653.jpg",
+      "jpeg_sha256": "f7f3df417651f71caa27d949047b74bcb4f8382c075cb2e42f9ddb5390fbaa34",
+      "alignment": {
+        "native_shift_xy": [
+          0.029115774646353287,
+          -0.0073981960403468605
+        ],
+        "response": 0.7703649912443425,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "658.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/658.png",
+          "sha256": "1243a1d2cfa346b1492fd9a046bc4967c6cffbad9e1943a415c1bbd3c174e35c"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/658.png",
+          "sha256": "ed56857fd396d02d2e91b70e2626aa37e3dd530c68e7d236d7d62877d480c7b7"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/658.jpg",
+      "jpeg_sha256": "c7577f4a746ad8ff779af93fdd938f9431daf098e3f0692e26ad5163de58b8ac",
+      "alignment": {
+        "native_shift_xy": [
+          -0.16865577925333497,
+          -0.1572575900787232
+        ],
+        "response": 0.9430919084284041,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "670.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/670.png",
+          "sha256": "f787c5088f73fcfad475b9036abac1537714ed5e38e21019be5fbb1788f849a5"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/670.png",
+          "sha256": "6f23412d340c70e367369723711fd5fb0e896828fa613e6910d7795452e1b092"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/670.jpg",
+      "jpeg_sha256": "07cabb2052d98ba2129928489c00795736cae51978866858b31000cdc1999cde",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10900473336169725,
+          0.32286263540044935
+        ],
+        "response": 0.7707436343034109,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "675.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/675.png",
+          "sha256": "8adacb8c41a78fe49dc5054b41b0a3faaaccbb20682d43f1d531b3ab9a543942"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/675.png",
+          "sha256": "7876a01a4813fd2fe313d5398a20c59bdaa111f295e6bcbfef0b77bf4de1e4ab"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/675.jpg",
+      "jpeg_sha256": "c235c182a417b4d378d2089b5304e98165da5d6dd8e84f312a3949add8c9f731",
+      "alignment": {
+        "native_shift_xy": [
+          0.0791703246296116,
+          0.10328867727566582
+        ],
+        "response": 0.7500231398752442,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "676.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/676.png",
+          "sha256": "9dad0cee0bfa954e0fce7915aa8b57b631fe1e637fe443d0e1ddabb6e8c41648"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/676.png",
+          "sha256": "c1f9641c38a0055c3f0dfb5436065cee215bfa95e2293704c4221ac7eba6bd2f"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/676.jpg",
+      "jpeg_sha256": "7f061e62ef34e2034988fd34a48b1b6d940e025225ff03adda266e0de9f575a9",
+      "alignment": {
+        "native_shift_xy": [
+          0.03769675093822755,
+          -0.07458221754354177
+        ],
+        "response": 0.7075591312514411,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "680.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/680.png",
+          "sha256": "536a0b09a3f2bc78ab73c01d340c2e16d479cd95b6af5e4f876a2f270ee429f9"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/680.png",
+          "sha256": "69e4cf787eadb336c8de38de4475cefca5b19caf809ce4729a106f5837aca9d9"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/680.jpg",
+      "jpeg_sha256": "ef257f24c4997186648dd18d2b78c8470e915f9d78583a44c9a355153e376080",
+      "alignment": {
+        "native_shift_xy": [
+          -0.02250000481668124,
+          0.03932719696305931
+        ],
+        "response": 0.8372664130948207,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "683.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/683.png",
+          "sha256": "8354677f5885949804c4c66272586dc4c6e25b8fddc14c5c9c9f82c3897acb91"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/683.png",
+          "sha256": "4f2bf6f39ab2550102e4dacbc488b19c761b3b30299191c42af26e9e4c2957b2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/683.jpg",
+      "jpeg_sha256": "ed91f92d791b81aee85a0153156388a3d33cb53fe1ccd5d6db961b32da953a6f",
+      "alignment": {
+        "native_shift_xy": [
+          0.16645726315093867,
+          0.1553173947731601
+        ],
+        "response": 0.8863679276572334,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "684.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/684.png",
+          "sha256": "709cf84f1548094aba5162757c8111468a8332bcd6c174b3ab844afb60496458"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/684.png",
+          "sha256": "ce6b214093ca9116a53b9c312d35d08c9f81bd09606dcfc23a7fd8c732dc4116"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/684.jpg",
+      "jpeg_sha256": "88f88cc2de910cd1d3cb9e9fa18640c63a9d303d4ec975e002ae3427c3baafa0",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10805000962797351,
+          0.1204115372370218
+        ],
+        "response": 0.855042095096023,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "685.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/685.png",
+          "sha256": "f5fbdf7fca5360aed8fbfcec6ac30d2ea6f26c824c63b381ecc34973e1fdcc20"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/685.png",
+          "sha256": "ce6b214093ca9116a53b9c312d35d08c9f81bd09606dcfc23a7fd8c732dc4116"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/685.jpg",
+      "jpeg_sha256": "d3f5eb3fbe4c229bb14d20b9b1a61193885ef4ca11df8c5975cf750f82e5eab3",
+      "alignment": {
+        "native_shift_xy": [
+          -0.24310531901640786,
+          0.26717713784214503
+        ],
+        "response": 0.8346556577417585,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "690.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/690.png",
+          "sha256": "7f8cdf2ca55801031f23829161ca96a381f3134dbda0da9dcdaa3815c870dacb"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/690.png",
+          "sha256": "3dab551c2b0844cfe00887cd8d66474a9cb05f5bf05061b5ae8fa4f52c0c2614"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/690.jpg",
+      "jpeg_sha256": "01dd06a28363b76adab7117c32ae3fcbe66b968cc464e40809018627f933e265",
+      "alignment": {
+        "native_shift_xy": [
+          0.05982864820673228,
+          0.31600157337616785
+        ],
+        "response": 0.6576111654440562,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "698.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/698.png",
+          "sha256": "cf25b7f8b12064e45e502ef8ff9e6998f4d8150a1dde9f842ef5db618080d6bc"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/698.png",
+          "sha256": "4b5b22ab4e87e48732d82dc523f531080d927e44ece3d00d65007cc0c17f5010"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/698.jpg",
+      "jpeg_sha256": "b8343eb5091cd4717ec0b654acf76033642f07fd304ab5e3e75fcea7a14deb1b",
+      "alignment": {
+        "native_shift_xy": [
+          -0.2505701022829143,
+          0.36963709202819217
+        ],
+        "response": 0.36179239838211624,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "699.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/699.png",
+          "sha256": "67d808818f68b9d28de54f0659e7062ae420b763b1e2616304a4efff9f20c53b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/699.png",
+          "sha256": "4b5b22ab4e87e48732d82dc523f531080d927e44ece3d00d65007cc0c17f5010"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/699.jpg",
+      "jpeg_sha256": "368e0d08c36b91546a06e05d27ebd8a3c7e9dd52b3ea5fdafae0996e67d1724e",
+      "alignment": {
+        "native_shift_xy": [
+          -0.6375056525109457,
+          0.3829898607777693
+        ],
+        "response": 0.359223543714594,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "70.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/70.png",
+          "sha256": "db2851790011343e6ea2219b15ad495824f1d4dc86c0f8429064bd90526b9dac"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/70.png",
+          "sha256": "fad048c7f69be46ca278433356df18a58dd3e1c24ca659764fc43aff714691b9"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/70.jpg",
+      "jpeg_sha256": "002750043d47e4d91ed6e1dfc8460947739aef5926b629c348081d791c175dee",
+      "alignment": {
+        "native_shift_xy": [
+          0.10306239361620229,
+          0.03724835075979982
+        ],
+        "response": 0.8869653408174162,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "700.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/700.png",
+          "sha256": "752d49c6ebe1541b435cf83aae992da0df8d6e1a36798bd2d2b388952ecc895d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/700.png",
+          "sha256": "4b5b22ab4e87e48732d82dc523f531080d927e44ece3d00d65007cc0c17f5010"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/700.jpg",
+      "jpeg_sha256": "cfeb259b0a38f0295989bdbccd072eecae3e44ceec5ac51c7a359bdc0aeba632",
+      "alignment": {
+        "native_shift_xy": [
+          -0.27906761102711286,
+          1.8848538814148608
+        ],
+        "response": 0.6562859944171375,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "701.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/701.png",
+          "sha256": "f22a51ff37a2fce8dc2cf2cf1ee6875b324c74a2db82799e43386ed173957350"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/701.png",
+          "sha256": "4b5b22ab4e87e48732d82dc523f531080d927e44ece3d00d65007cc0c17f5010"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/701.jpg",
+      "jpeg_sha256": "9ecc4a564b660c46116c475bdcf74e59533c0694252698dd3839d68284fbc61e",
+      "alignment": {
+        "native_shift_xy": [
+          -0.08881366383544531,
+          1.9724327273672415
+        ],
+        "response": 0.6584381777931143,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "711.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/711.png",
+          "sha256": "b0af6666535439741b13363ca35bb65584a5ff7df39f5d33db0c77f30a9b1828"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/711.png",
+          "sha256": "294ba99d96e0ccfd987c52012a44b8edcedd7df5413ff738708400fe8244abeb"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/711.jpg",
+      "jpeg_sha256": "2611e49e53635d4713ef77ccdd780c80d39f1533d7f7156d429c4fc97ff1f5ca",
+      "alignment": {
+        "native_shift_xy": [
+          0.1786929188796016,
+          -0.1049942148489702
+        ],
+        "response": 0.854637413913453,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "723.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/723.png",
+          "sha256": "d8dfa980763a2b108388f7c979a567b858ad9ab7dc8a7c13ccd8997f0087a77f"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/723.png",
+          "sha256": "a9154599141fb2921e1026b1200967cd969673155d44b8989ae55f5a7a4ccb0f"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/723.jpg",
+      "jpeg_sha256": "cfc46cc000a7e1529540ff1dfa0b83b2eb5ea7f64f416cb2cafd72f1eaa74c7f",
+      "alignment": {
+        "native_shift_xy": [
+          -0.0033306270202082544,
+          0.017377507809044346
+        ],
+        "response": 0.9591966807842255,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "724.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/724.png",
+          "sha256": "91002d92de461acd75eb659db7942a933e633bd041b041eb124d1629556ca88d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/724.png",
+          "sha256": "3b681471f2fe12f1705dc57447021539d3cda7e75c05aa354de0439577b94116"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/724.jpg",
+      "jpeg_sha256": "ffcaf673f69b4c88c305bc66f8ef69979d0e34259d740b9c362d97589a7152dd",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10148304477286985,
+          0.07923497021121939
+        ],
+        "response": 0.9345988949139913,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "730.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/730.png",
+          "sha256": "7b57a6ecf87b9b77347c5c42b1d67908a54899dbbff84b892d75e15c822e1ab9"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/730.png",
+          "sha256": "f5c93837f645cf1ef1c427a89bd56e29e8945c2bb775e8ddc9cf70843214fada"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/730.jpg",
+      "jpeg_sha256": "df4e7365f5e015fb051a1faaf3b55c93b8ca06f69ed238704ec4b4dbaf06e8d0",
+      "alignment": {
+        "native_shift_xy": [
+          0.07961022273107687,
+          -0.09673398542592082
+        ],
+        "response": 0.888949244055483,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "732.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/732.png",
+          "sha256": "0a3e15d1dff0efb82a40ac8233b99344506c9bee014ca40766a4f0d0efeef764"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/732.png",
+          "sha256": "288ebce911552a6f064ac6934a77bb37832920dbfeeea0b40eac3f5ab8976ed3"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/732.jpg",
+      "jpeg_sha256": "0d2157083b019e2eeda4291703adca0c15f16dc725f9a4996ef359c1c394ab64",
+      "alignment": {
+        "native_shift_xy": [
+          0.14476037286017984,
+          -0.05951010694006165
+        ],
+        "response": 0.9574946404055312,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "735.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/735.png",
+          "sha256": "971e4d7c4b982224505487e49bad8bbf54f52fce457d9dcac52494755efd91cd"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/735.png",
+          "sha256": "5d7c240bf85bc33a206c50bda77bd543bc2f8e9360983b03b39c6215e4e64232"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/735.jpg",
+      "jpeg_sha256": "19e082ebeb271e0a9a75175fc8f30d2c1ae0ccbccb304da742d4582900932fc9",
+      "alignment": {
+        "native_shift_xy": [
+          0.15602050628707786,
+          -0.18385667109576787
+        ],
+        "response": 0.9525946687769007,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "737.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/737.png",
+          "sha256": "ab7a033cfad7a2aac0810589639e5c98eb6b271e19c96ba8d7c6e3f0ca9f9ba2"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/737.png",
+          "sha256": "eb68282deda183234344619d956254a1f3a82c5ff47ba287c95e5619598bd4fd"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/737.jpg",
+      "jpeg_sha256": "f21b0091ddc794116184aa5e7c254de6f0f141be1e924590ca0fe1917a43212a",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10203246318486237,
+          -0.1325314429028701
+        ],
+        "response": 0.9225302986524723,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "743.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/743.png",
+          "sha256": "bcda3a0afc450e7aad0813098108dda25314d71e901a99c7078b895f081cd9a1"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/743.png",
+          "sha256": "a820dc361d283a7856d7af7061b852bcc3a77379027742afce29fa6fcb28e02f"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/743.jpg",
+      "jpeg_sha256": "95af1b5bce17139db726315c49f7ec6acf407a24e898a4d2a7d63fdc90ee1b10",
+      "alignment": {
+        "native_shift_xy": [
+          -0.038888049518597256,
+          -0.17252043926851535
+        ],
+        "response": 0.667327219247818,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "744.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/744.png",
+          "sha256": "c95f7bbb8eedbb249868d3e1ab3755dd6622fb97d39b8a1bfad3d9ed8233942f"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/744.png",
+          "sha256": "a820dc361d283a7856d7af7061b852bcc3a77379027742afce29fa6fcb28e02f"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/744.jpg",
+      "jpeg_sha256": "d652000603900ab46bc4b1b2af3289e3b475488df972ca63ccc7913ee7effd4e",
+      "alignment": {
+        "native_shift_xy": [
+          0.04220046212653372,
+          -0.2291529725495156
+        ],
+        "response": 0.5543467722005314,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "745.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/745.png",
+          "sha256": "f7a39764d02391e82bbe318befa58934be62d8695159e0e23e55f6519c971c86"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/745.png",
+          "sha256": "db4c57dcfa0571ab70e49006ecde993170a9b2dbf63bcc9aceb7c627b42947e3"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/745.jpg",
+      "jpeg_sha256": "9bdd59cadfc2f671f02bffe7bf011b06109ca7b4d08e2672885a19a11c3e9e69",
+      "alignment": {
+        "native_shift_xy": [
+          0.010154830370456835,
+          0.13469935112327747
+        ],
+        "response": 0.7164859502403824,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "747.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/747.png",
+          "sha256": "936acd1168739c5491358a15c2dab0e01fdc4e2dcaaa2f0ca1005d3b941095e1"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/747.png",
+          "sha256": "b6823d67cbf6b335f20ce3389d929d116f29bab4382b856d763e79faed6f55ff"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/747.jpg",
+      "jpeg_sha256": "85310138c71c15e30052ec9860aa88f11fa0750fa3162f8c277d13eb3b4018eb",
+      "alignment": {
+        "native_shift_xy": [
+          -0.18521327709455804,
+          0.14940932428213927
+        ],
+        "response": 0.6831971479786767,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "75.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/75.png",
+          "sha256": "2c1e4773340181275a0412c2a7e5f28dd600ecae8a43dc97866f46779bacef22"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/75.png",
+          "sha256": "9e0bea42a8ab891e830e6efe777a22cf44172c06d38448a7617ec28f6b659523"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/75.jpg",
+      "jpeg_sha256": "a3f42fc4d7e308fdbc4e368302f9b632fb2dd2e178a50a2c36d4a295eb8589bf",
+      "alignment": {
+        "native_shift_xy": [
+          0.15153547497828157,
+          0.2510151354117962
+        ],
+        "response": 0.6671916485936553,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "752.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/752.png",
+          "sha256": "e4ed9e34676630d0e6c4a98014273165a6ffe3ac3685ae30cb78e0fb8d58e419"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/752.png",
+          "sha256": "95347b859dd1c214270ab771d22fe0314281320d1b964ed3d42870c0622d967b"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/752.jpg",
+      "jpeg_sha256": "50d770896fc1a32464d53a8bdb951962b744bd788cdaa36d65ff65a78fd26139",
+      "alignment": {
+        "native_shift_xy": [
+          -0.07350880821681116,
+          0.09707438063729867
+        ],
+        "response": 0.887604760185436,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "757.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/757.png",
+          "sha256": "df52ffdfcc209c2f53397f007638796a3173dfe051a844e6cbe541c9f140b1c3"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/757.png",
+          "sha256": "86803bb1a3c2561fbc6be9d4e7cacafd21ccfed774287212506f07cad098d2d6"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/757.jpg",
+      "jpeg_sha256": "875adac2aed986e9aee403be110185539757fd3ce3219e3e1fd62f7b6bd6ff8b",
+      "alignment": {
+        "native_shift_xy": [
+          -0.05761812590435511,
+          0.0028576282421699517
+        ],
+        "response": 0.647041265749269,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "758.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/758.png",
+          "sha256": "f74f4c71ed6c94f602030990586642e981ff7955471db42a05715f5aa869e2b3"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/758.png",
+          "sha256": "86803bb1a3c2561fbc6be9d4e7cacafd21ccfed774287212506f07cad098d2d6"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/758.jpg",
+      "jpeg_sha256": "3fd686333df6d9a070a77af166c3a369c04c31978372b21e46ff0c2a43ec3746",
+      "alignment": {
+        "native_shift_xy": [
+          -0.0901001059963491,
+          -0.038874718157142496
+        ],
+        "response": 0.6477751774920357,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "76.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/76.png",
+          "sha256": "a4e73744b083279c70036b0af24d0c3884f84cb8ac54568e800d6331c3c14e0b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/76.png",
+          "sha256": "7cfb0ca49bf4d38e0f63436a50cac1eb9e4c4d6525724e4144290c7345481b3c"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/76.jpg",
+      "jpeg_sha256": "8705c0315b352daef0f5d79398a662e465d11d23a835c67dcf16c8a43bc40068",
+      "alignment": {
+        "native_shift_xy": [
+          0.037747831121937026,
+          0.07840993823536202
+        ],
+        "response": 0.820343521375347,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "760.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/760.png",
+          "sha256": "ac26a4f786b5b4f37f14d37708bff6a6bbd5bb94a8cf5ec0d5ff9563db9f1e1d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/760.png",
+          "sha256": "105e7f4406f65d26940d2247a83d4416eca9a7af55d6e84218790cac06884917"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/760.jpg",
+      "jpeg_sha256": "ba4f9445a388640e8fe60e74f61b476c833c2097cf1faa1aacc41c4b995be0b4",
+      "alignment": {
+        "native_shift_xy": [
+          -0.12403242361058275,
+          0.1793418989869089
+        ],
+        "response": 0.7776078880937011,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "766.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/766.png",
+          "sha256": "6777b0faf076fa40c7d9f38164b1b57092b247f4c50510160cb91aa16806889b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/766.png",
+          "sha256": "59ad4d62f98fdfb7a41d89e045e013d042f8d7f1fef284c03b1d49e523b5d00f"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/766.jpg",
+      "jpeg_sha256": "29599acc0b89f208ed01e66bc8afcd3a9528c067f644145660d180fe66899463",
+      "alignment": {
+        "native_shift_xy": [
+          -0.04829930562982199,
+          -0.0050653215229967685
+        ],
+        "response": 0.8792999994975549,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "771.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/771.png",
+          "sha256": "a65a178257d2f2158e4b856b5418edee2c8a920ca24cb803180441fab54cc551"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/771.png",
+          "sha256": "521b4ecab161809673af9fde458f06421ed22cc112e85df5200eaf8da75eb7c1"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/771.jpg",
+      "jpeg_sha256": "f209b7fdcfa23ec65d95e1ba92ba04ef470985cb7a79b0914939a4019c411d36",
+      "alignment": {
+        "native_shift_xy": [
+          -0.7985654481279525,
+          0.11638447132860108
+        ],
+        "response": 0.8680089411912141,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "773.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/773.png",
+          "sha256": "f9f758791d32f88554de9510389e831ae28824604addfdf1c5efb40804830d7d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/773.png",
+          "sha256": "7afd729ade1e139d2be7a0d5b440354924bee580dc473f148d38664eab14b1e2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/773.jpg",
+      "jpeg_sha256": "306cc93f670693b001b2b32587d0e93bd6a4edfebc26765ab0238733f54a2729",
+      "alignment": {
+        "native_shift_xy": [
+          -0.032387999243663756,
+          0.40796506023284884
+        ],
+        "response": 0.46749281110586943,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "775.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/775.png",
+          "sha256": "0e25810cea9d2bf812463d6bd3ddff7ab6bc32355ee8c143e3f9df38385292c8"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/775.png",
+          "sha256": "2290e87526a103f2c51dc390557762da8eed35e2a43660043a69b1308a0be635"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/775.jpg",
+      "jpeg_sha256": "b7609e2f5bd1c42fb4a2a8f3faa01684f96f9fba00f0d2836edfd642be946d6b",
+      "alignment": {
+        "native_shift_xy": [
+          0.09575788146191755,
+          -0.04076920376326676
+        ],
+        "response": 0.8112386955155266,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "776.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/776.png",
+          "sha256": "07fd511fbd148cb07dd20a94b03ca14e558cc7e3fb32e130515474fd0525621b"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/776.png",
+          "sha256": "2290e87526a103f2c51dc390557762da8eed35e2a43660043a69b1308a0be635"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/776.jpg",
+      "jpeg_sha256": "c6ef9b621126e64ac61fce23589262c1475dc7a399fbb648d87a94ceff710bf4",
+      "alignment": {
+        "native_shift_xy": [
+          0.15666699858709165,
+          -0.33676046897167744
+        ],
+        "response": 0.8065449568960402,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "779.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/779.png",
+          "sha256": "f593a0f7fd0dac7713f6596c4fab6495e766710ac51d7d684ce1c475ac52efb3"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/779.png",
+          "sha256": "1734099845cc65c94ba9634dc2f4a14ec2eb778f06274cdc6ea3365e361893d7"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/779.jpg",
+      "jpeg_sha256": "a4bf1f6407e2c9cd8a31bdd8780e075f4b57f2ac616d941752fe6d2ff597d08f",
+      "alignment": {
+        "native_shift_xy": [
+          0.006769162806659068,
+          0.04519961251369331
+        ],
+        "response": 0.9023414343595505,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "781.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/781.png",
+          "sha256": "05311ef6ffc6bd403b481a72d90a0bd467547e513f5817f6914de0d0d3b755c9"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/781.png",
+          "sha256": "235a4ae35fa13af06fce2fc1bef2c3a2ddd3a6dae0b2df9bb5878b10ec8994a2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/781.jpg",
+      "jpeg_sha256": "e5d3fba9e08a25bc83390919fa2e9eb996c475f3fee6f7bf9a78325679535967",
+      "alignment": {
+        "native_shift_xy": [
+          0.04975606554108225,
+          0.07979581721941464
+        ],
+        "response": 0.8936768308281898,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "783.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/783.png",
+          "sha256": "40bb08b5533904b5acf3a7edfc621fc351f9162ce4f433b304d9b0bda8a99fe6"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/783.png",
+          "sha256": "235a4ae35fa13af06fce2fc1bef2c3a2ddd3a6dae0b2df9bb5878b10ec8994a2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/783.jpg",
+      "jpeg_sha256": "55c585a3a90d68700a906899822c35940d55a5f5fe3602d16480b7fddcb9c2ed",
+      "alignment": {
+        "native_shift_xy": [
+          -0.033668043610433074,
+          0.00016148817469918697
+        ],
+        "response": 0.9029985728087249,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "785.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/785.png",
+          "sha256": "14a1948289a813de7ab8ff04064bea4fe473ab2144608ea430b2979eac9c55f1"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/785.png",
+          "sha256": "235a4ae35fa13af06fce2fc1bef2c3a2ddd3a6dae0b2df9bb5878b10ec8994a2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/785.jpg",
+      "jpeg_sha256": "5585d374063ef81846d46f79d4b3d4c48cecec5f67427faf11da2a4e8101f8e9",
+      "alignment": {
+        "native_shift_xy": [
+          -0.011890768808680008,
+          -0.18641942706744352
+        ],
+        "response": 0.7906346241633098,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "786.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/786.png",
+          "sha256": "dcfb551261a56cb581e72d6485230bcf9bbdc64d59a15ee8aba348815f5bf797"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/786.png",
+          "sha256": "235a4ae35fa13af06fce2fc1bef2c3a2ddd3a6dae0b2df9bb5878b10ec8994a2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/786.jpg",
+      "jpeg_sha256": "f72b2dc15c97a82036ce988a8f6330b42bb5666e0cb1ed2c92ade2129d2e97ad",
+      "alignment": {
+        "native_shift_xy": [
+          -0.039653779320776295,
+          -0.11494140709742418
+        ],
+        "response": 0.8067141680667798,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "787.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/787.png",
+          "sha256": "406e50441057d5d12f5425a37db2317682cce9cc89f37c511be53b0df013915d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/787.png",
+          "sha256": "a68c0b933df842cc310f4c1d35908e6fa631b601043d274281cba45be2098b46"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/787.jpg",
+      "jpeg_sha256": "8874fa11510c6706a2d23764b9f7cc9b702fb61a731ee9eb1f215057009407b3",
+      "alignment": {
+        "native_shift_xy": [
+          0.1815250258259482,
+          0.12406510529737957
+        ],
+        "response": 0.7736623918568647,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "788.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/788.png",
+          "sha256": "ef2312ac69afcff788f9eb92afcda7c9a3f568e76514f3e3c7971e3b6216a455"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/788.png",
+          "sha256": "a68c0b933df842cc310f4c1d35908e6fa631b601043d274281cba45be2098b46"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/788.jpg",
+      "jpeg_sha256": "812be4c5bea8d44c519def33027731ef4d71fd8056fadcae59bc2fe08779de6e",
+      "alignment": {
+        "native_shift_xy": [
+          0.09304753602247473,
+          0.11477950775301338
+        ],
+        "response": 0.7652029793571543,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "81.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/81.png",
+          "sha256": "e86bfa01c54dbf11ff064ee9c21dacc9ab8f88b7fa831ae862cdc4ffbaeb8705"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/81.png",
+          "sha256": "bd04392edd28108bff0c326c57eddac82a5e77435d2ea6037c4168114787edba"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/81.jpg",
+      "jpeg_sha256": "d4c7f2313a1317b895409f127169ec7a7c7925580349316c7c7dca89856d9da7",
+      "alignment": {
+        "native_shift_xy": [
+          0.8349354698061795,
+          -0.3862355039005916
+        ],
+        "response": 0.2243228201512937,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "83.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/83.png",
+          "sha256": "a8ce618654ad3ff2f7521114e4f0e4802ad83cb5a2e69565282df69bc6ccc6e9"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/83.png",
+          "sha256": "f42bf21beb71ab001690dba0f8b880a3bcf6965d6995e11d1cbf5d2ac8263143"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/83.jpg",
+      "jpeg_sha256": "2b6be5ab0f31519f96b6907526fe9067f33827e33015b2f02690baf66f5d127f",
+      "alignment": {
+        "native_shift_xy": [
+          -0.15661876539093456,
+          0.20009090068101365
+        ],
+        "response": 0.7021685041763165,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "89.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/89.png",
+          "sha256": "68e1eb978d59c20e3dcbd39913f7e982fdaefabdab70a3b65e2ec5d71cd3b921"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/89.png",
+          "sha256": "3dfec4a2f82b002190e808dda1ac410912e9407ccedb3a3f89acb7fc74adb327"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/89.jpg",
+      "jpeg_sha256": "fe1cf304328d0ddb8d479877bd9020d695a941391d429d39142e5a064ba02aec",
+      "alignment": {
+        "native_shift_xy": [
+          -0.11370844215546683,
+          0.40357221884582906
+        ],
+        "response": 0.6704451216591729,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "9.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/9.png",
+          "sha256": "73f87248aabac06d66b80ea4219bd548791f0009debd13bc4182fe8af65727cd"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/9.png",
+          "sha256": "0f533a7d2aa167b59570a3e6cfc873f96f940dbad2aee919a9fd096589bfe040"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/9.jpg",
+      "jpeg_sha256": "9dd0667cf73f775067c8b3331f44dfac46819f7e3a06769ba4e3d8650a23a21c",
+      "alignment": {
+        "native_shift_xy": [
+          -0.12221979885650214,
+          0.626579688525073
+        ],
+        "response": 0.8803407512329243,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "93.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/93.png",
+          "sha256": "a239569eaf74d7dc836f4d121cf34661965998259dfa0be148036cb94dfb184a"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/93.png",
+          "sha256": "69a2a2e17f8221daae3619ddedd49e4d9223cd03bd6558ff50cf2c572844e9f2"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/93.jpg",
+      "jpeg_sha256": "83f0d2fca667457f27eb7ac2a37cd4a7bcbeede499a1f21ca2ba61ce844000db",
+      "alignment": {
+        "native_shift_xy": [
+          -0.3897544498468797,
+          0.13191860731347482
+        ],
+        "response": 0.6653380540785966,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "96.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/96.png",
+          "sha256": "94e1b27ac34e4a003a3fbc10b5acca7c7164555c362d045c57726c8332483a26"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/96.png",
+          "sha256": "331a28d5418f28c7056da094d02b09d56559c7928bdc33957011d1896db07771"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/96.jpg",
+      "jpeg_sha256": "3fdb963174c43b217088433428b17f288511c21dba51dfa5fdb2df70ce1fbc95",
+      "alignment": {
+        "native_shift_xy": [
+          -0.10878777060129963,
+          -0.12082623382960733
+        ],
+        "response": 0.8252416119531348,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "98.png",
+      "previously_inspected": true,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/98.png",
+          "sha256": "701084c1b83abcc50d9f2eb32a23280714dfaefff9c6af0e0211a5bf93796098"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/98.png",
+          "sha256": "ab8644b7a4741601e71eec226742893ac93f28d149d732b75af31e7e34cceec9"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/98.jpg",
+      "jpeg_sha256": "a0753384df8152d4aa9bf4a11652af0da0f189ad50dda27081b74b9d13623253",
+      "alignment": {
+        "native_shift_xy": [
+          -0.009082773529769383,
+          0.15154268682990413
+        ],
+        "response": 0.7733059266651118,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    },
+    {
+      "id": "99.png",
+      "previously_inspected": false,
+      "sources": {
+        "low": {
+          "path": "data/external/lol_pilot/low/99.png",
+          "sha256": "41e6031ac6cc9e89939b664a44d74293077037a98f8c84a1a03a6f04faaa4c2d"
+        },
+        "high": {
+          "path": "data/external/lol_pilot/high/99.png",
+          "sha256": "ece7ade3cebc65069c9277d64e737c75664635e094fc9f46499363f5983f8c2d"
+        }
+      },
+      "jpeg_path": "data/external/lol_pilot/99.jpg",
+      "jpeg_sha256": "59cc564ceb61f83c373cece63d2cc9449350ce17fbb78bc92ec1be003397c3f7",
+      "alignment": {
+        "native_shift_xy": [
+          -0.011298717836432104,
+          -0.3590751676547477
+        ],
+        "response": 0.8858348007555361,
+        "status": "screen_pass",
+        "limit": "Exposure/noise-dependent edge screen; no calibrated registration claim."
+      }
+    }
+  ],
+  "selection_seed": 20261010,
+  "source_archive_sha256": "47d85314b7927470cd48c97e5c1d6c896a56d6217c8e508d0736aff2d91aadcc",
+  "prior_manifest_sha256": "c6da7571e3bc59b3398dab3ab7a5cbab53697a87fdb228ee2f949a70ed65423c"
+}

@@ -1,0 +1,18 @@
+{
+  "source_png_hashes_verified": 336,
+  "jpeg_hashes_verified": 168,
+  "scene_exclusive": true,
+  "validation_pairs": 14,
+  "validation_groups": 12,
+  "old_ids_training_only": true,
+  "eval15_not_extracted": true,
+  "production_model_unchanged": true,
+  "parent_provenance_verified": true,
+  "spatial_parameter_count": 881,
+  "global_parameter_count": 1,
+  "max_native_metric_replay_difference": 0.0,
+  "max_zero_strength_codes": 0,
+  "max_initial_identity_codes": 0,
+  "verification_source_sha256": "3c8bc7d0937f5cfbc1cabaf1235e13ea86eab2cc2cc2c54c92d121e25d1d6e67",
+  "scope": "Provenance and checkpoint calculation replay, not complete retraining or independent final acceptance."
+}

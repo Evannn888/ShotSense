@@ -44,3 +44,4 @@ artifacts/model/source_snapshot.zip
 artifacts/preview_v2/source_snapshot.zip
 artifacts/preview_v3/source_snapshot.zip
 artifacts/model/app-preview.jpg
+artifacts/experiments/jpeg_illumination_v1/*.jpg
