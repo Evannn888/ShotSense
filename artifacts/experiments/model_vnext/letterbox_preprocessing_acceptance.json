@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "input_count": 4946,
+  "success_count": 4946,
+  "failed_count": 0,
+  "cached_count": 0,
+  "workers": 6,
+  "elapsed_seconds": 1173.512395375,
+  "physical_features_exactly_equal": true,
+  "config_hash": "8c6101723c21ebe025f6badc26c0feac8725a485392c9fa48043101161cd39e6",
+  "metadata_sha256": "d4f3de78b9636b2788344e2157a841afb3ea51968615fd6bacb551c81af3b5be",
+  "source_manifest_sha256": "2e756527fc55b7627b539cfe1ace0e881c5c919b07fde988530b8f52d29b75b2",
+  "geometry": {
+    "version": "letterbox-imagenet-mean-v1",
+    "size": [
+      224,
+      224
+    ],
+    "padding_rgb": [
+      124,
+      116,
+      104
+    ],
+    "alignment": "center; odd remainder bottom/right",
+    "interpolation": "cv2.INTER_AREA",
+    "rounding": "nearest integer, minimum one pixel"
+  },
+  "input_builder_revision": "8a219a6",
+  "note": "All physical vectors matched the control exactly. Original data/cache unchanged. /usr/bin/time resource observations are not aggregate process-tree peak RSS.",
+  "candidate_cache_size_bytes": 87070501
+}

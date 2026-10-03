@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "phase": "C",
+  "decision": "retain_stretch_control; letterbox did not improve primary validation score",
+  "candidate_run": "letterbox-seed42",
+  "control_run": "control-seed42",
+  "model_seed": 42,
+  "split_seed": 42,
+  "comparison_scope": "validation_only",
+  "control_validation": {
+    "constant": {
+      "normalized_mae": [
+        0.10216916352510452,
+        0.07504354417324066,
+        0.02739960141479969,
+        0.03275277838110924,
+        0.05552950128912926,
+        0.21308164298534393
+      ],
+      "macro_normalized_mae": 0.08432935923337936,
+      "p2": 0.07881268858909607,
+      "mae": [
+        0.40867672027417956,
+        5.628265718520252,
+        2.739956773996278,
+        786.0664974559437,
+        8.329425779361234,
+        10.65407681579918
+      ],
+      "rmse": [
+        0.529701790264722,
+        7.181177342573906,
+        3.6781693347143887,
+        1202.7943478752231,
+        11.206620179987867,
+        13.780263654043832
+      ],
+      "temperature_mired_mae": 35.697997789206205
+    },
+    "physical_linear": {
+      "normalized_mae": [
+        0.0744050070643425,
+        0.07729984074831009,
+        0.026555007323622704,
+        0.025848686695098877,
+        0.056439563632011414,
+        0.14845378696918488
+      ],
+      "macro_normalized_mae": 0.06816697865724564,
+      "p2": 0.055714696645736694,
+      "mae": [
+        0.2976201599727225,
+        5.7974848290199805,
+        2.6555003009788276,
+        620.3681396715568,
+        8.465936762012545,
+        7.422687293999274
+      ],
+      "rmse": [
+        0.38004774796306345,
+        7.389598139944041,
+        3.6314722046125265,
+        968.6425331304131,
+        11.566334557553695,
+        10.447783767828904
+      ],
+      "temperature_mired_mae": 27.259765347113284
+    },
+    "dual": {
+      "normalized_mae": [
+        0.06943797320127487,
+        0.07810789346694946,
+        0.027960648760199547,
+        0.025723624974489212,
+        0.05281514301896095,
+        0.1421615034341812
+      ],
+      "macro_normalized_mae": 0.06603445112705231,
+      "p2": 0.052899863570928574,
+      "mae": [
+        0.2777519116413337,
+        5.8580908979021125,
+        2.7960639334262605,
+        617.366886138916,
+        7.922267035738707,
+        7.108073258640791
+      ],
+      "rmse": [
+        0.3668687220734883,
+        7.516379513906149,
+        3.8244996373169062,
+        934.0050372884222,
+        10.752436091565972,
+        9.459870282420315
+      ],
+      "temperature_mired_mae": 27.639190066756726
+    },
+    "semantic": {
+      "normalized_mae": [
+        0.08936087787151337,
+        0.07584676891565323,
+        0.02666640095412731,
+        0.02957971766591072,
+        0.0508362241089344,
+        0.1762751191854477
+      ],
+      "macro_normalized_mae": 0.07476086169481277,
+      "p2": 0.06640899181365967,
+      "mae": [
+        0.3574436161018005,
+        5.688509774380222,
+        2.6666400487231314,
+        709.9134098399769,
+        7.625435044333382,
+        8.813754671695406
+      ],
+      "rmse": [
+        0.4562627618991666,
+        7.212718332830165,
+        3.5865179222208994,
+        1095.386457343604,
+        10.326340551264646,
+        12.601139653569268
+      ],
+      "temperature_mired_mae": 32.45353666538079
+    }
+  },
+  "candidate_validation": {
+    "constant": {
+      "normalized_mae": [
+        0.10216916352510452,
+        0.07504354417324066,
+        0.02739960141479969,
+        0.03275277838110924,
+        0.05552950128912926,
+        0.21308164298534393
+      ],
+      "macro_normalized_mae": 0.08432935923337936,
+      "p2": 0.07881268858909607,
+      "mae": [
+        0.40867672027417956,
+        5.628265718520252,
+        2.739956773996278,
+        786.0664974559437,
+        8.329425779361234,
+        10.65407681579918
+      ],
+      "rmse": [
+        0.529701790264722,
+        7.181177342573906,
+        3.6781693347143887,
+        1202.7943478752231,
+        11.206620179987867,
+        13.780263654043832
+      ],
+      "temperature_mired_mae": 35.697997789206205
+    },
+    "physical_linear": {
+      "normalized_mae": [
+        0.0744050070643425,
+        0.07729984074831009,
+        0.026555007323622704,
+        0.025848686695098877,
+        0.056439563632011414,
+        0.14845378696918488
+      ],
+      "macro_normalized_mae": 0.06816697865724564,
+      "p2": 0.055714696645736694,
+      "mae": [
+        0.2976201599727225,
+        5.7974848290199805,
+        2.6555003009788276,
+        620.3681396715568,
+        8.465936762012545,
+        7.422687293999274
+      ],
+      "rmse": [
+        0.38004774796306345,
+        7.389598139944041,
+        3.6314722046125265,
+        968.6425331304131,
+        11.566334557553695,
+        10.447783767828904
+      ],
+      "temperature_mired_mae": 27.259765347113284
+    },
+    "dual": {
+      "normalized_mae": [
+        0.0705602690577507,
+        0.07994957268238068,
+        0.02929425798356533,
+        0.026177862659096718,
+        0.051468197256326675,
+        0.14123299717903137
+      ],
+      "macro_normalized_mae": 0.0664471760392189,
+      "p2": 0.052948299795389175,
+      "mae": [
+        0.2822411685495289,
+        5.996213681981757,
+        2.92942625463404,
+        628.2683574792111,
+        7.720232822722954,
+        7.0616452053490315
+      ],
+      "rmse": [
+        0.3632997601573417,
+        7.700433332738115,
+        3.93384696153186,
+        951.3229835124357,
+        10.413498161226114,
+        9.513691590474256
+      ],
+      "temperature_mired_mae": 28.237300511198647
+    },
+    "semantic": {
+      "normalized_mae": [
+        0.08729862421751022,
+        0.07827091962099075,
+        0.027444394305348396,
+        0.029465455561876297,
+        0.052417654544115067,
+        0.17214354872703552
+      ],
+      "macro_normalized_mae": 0.07450677454471588,
+      "p2": 0.06486055254936218,
+      "mae": [
+        0.3491947272839495,
+        5.870321327114873,
+        2.7444390122157833,
+        707.1708563602332,
+        7.862646781360871,
+        8.607176333910438
+      ],
+      "rmse": [
+        0.4455980110594817,
+        7.30781307557624,
+        3.6534122529467234,
+        1086.632831010054,
+        10.440983207705582,
+        12.103990751952463
+      ],
+      "temperature_mired_mae": 32.17108866079157
+    }
+  },
+  "uncertainty": {
+    "method": "Paired bootstrap over validation photo groups; photo-weighted P2; one model seed only",
+    "seed": 20261002,
+    "resamples": 10000,
+    "validation_photo_count": 495,
+    "validation_group_count": 495,
+    "relative_improvement_estimate": -0.0009156209712273267,
+    "relative_improvement_95_percent_interval": [
+      -0.026523199691176242,
+      0.024183339153744793
+    ],
+    "candidate_minus_control_p2_95_percent_interval": [
+      -0.0013001107653094965,
+      0.0013844818925729603
+    ]
+  },
+  "delivered_field_relative_changes": {
+    "Exposure": 0.01616282992137341,
+    "HighlightRecovery": -0.006531735338450528
+  },
+  "matched_split_sha256": "a31fe9a64160082319496da6858edb48a5a9b4a9a926eb553904a42408f4c1a0",
+  "constant_and_physical_baselines_exactly_identical": true,
+  "training": {
+    "training": {
+      "epochs_run": 23,
+      "best_val_p2": 0.052948303520679474,
+      "elapsed_seconds": 2.7406207920000156
+    },
+    "semantic_training": {
+      "epochs_run": 22,
+      "best_val_p2": 0.06486055254936218,
+      "elapsed_seconds": 2.274054458999956
+    }
+  },
+  "process_resources": {
+    "wall_seconds": 288.91,
+    "peak_rss_bytes": 1693204480,
+    "measurement": "macOS /usr/bin/time -l for candidate training including input validation and fresh embeddings"
+  },
+  "artifact_sha256": {
+    "config.json": "18d5cd49f7f3ce1b708a0eac76b11a163c188489c3b02f7e493d7f1e22b34d85",
+    "evaluation.json": "79e74297c9ad087e920c4e6680ea75978a220686e35f35d34a938a2a28250a64",
+    "best.pt": "91cd9558d3185365408e13aa82add507f3ba23db53d4195eeeea7cd03fc0ebef",
+    "controls.pt": "5cbd7bbe0f7d6c9672aa0d9720a53036a0a237acac62eb97c01618198d30de81",
+    "split_manifest.json": "697f284bc2ccea31fb272c720fc9e55caec2ecd7b26d606ea0e1b5d838b2fd18",
+    "frozen_run.json": "38212d5fb4b725e5847c0ac2ae23f162227b9281ec0f7825f9b09c140010d258",
+    "reproduction.json": "4b75c12164a36d962123de03962fbd77bcf897e8c6de3009b181e7d72bac3047"
+  },
+  "three_seed_confirmation": "not_triggered; no primary-score improvement on seed-42 screen",
+  "test_accessed": false,
+  "production_replaced": false,
+  "limitations": [
+    "One model seed; no claim of a population-level regression or improvement.",
+    "FiveK grouping remains incomplete and data were previously inspected.",
+    "JPEG workflow support does not validate JPEG accuracy."
+  ],
+  "reproduction": {
+    "status": "passed",
+    "initialization": "Official ImageNet weights; no ShotSense checkpoint loaded",
+    "evaluation_scope": "validation_only",
+    "seed": 42,
+    "validation_max_absolute_normalized_difference": {
+      "dual": 0.0,
+      "semantic": 0.0
+    },
+    "training_histories_identical": true,
+    "frozen_run_sha256": "38212d5fb4b725e5847c0ac2ae23f162227b9281ec0f7825f9b09c140010d258",
+    "replay_elapsed_seconds": {
+      "dual": 2.0136030419999997,
+      "semantic": 2.258851583
+    }
+  }
+}

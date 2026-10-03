@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "initialization": "Official ImageNet weights; no ShotSense checkpoint loaded",
+  "evaluation_scope": "validation_only",
+  "seed": 42,
+  "validation_max_absolute_normalized_difference": {
+    "dual": 0.0,
+    "semantic": 0.0
+  },
+  "training_histories_identical": true,
+  "frozen_run_sha256": "38212d5fb4b725e5847c0ac2ae23f162227b9281ec0f7825f9b09c140010d258",
+  "replay_elapsed_seconds": {
+    "dual": 2.0136030419999997,
+    "semantic": 2.258851583
+  }
+}

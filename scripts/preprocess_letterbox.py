@@ -11,7 +11,6 @@ import cv2
 import numpy as np
 
 from src.preprocess import ROOT, atomic_bytes, atomic_npz, read_cached, sha256_file, source_signature
-from src.dataset import ShotSenseDataset
 from src.semantic_candidate import SEMANTIC_GEOMETRY, extract_candidate_inputs
 from src.color_pipeline import PIPELINE_CONFIG
 
@@ -48,6 +47,8 @@ def run(metadata_path, raw_dir, output_dir, workers=1, limit=None):
 
 
 def build(metadata_path,raw_dir,output_dir,workers,limit):
+    # Spawned image workers do not need the training framework.
+    from src.dataset import ShotSenseDataset
     dataset=ShotSenseDataset(metadata_path)
     if dataset.scope!='full': raise ValueError('Candidate requires complete audited original data')
     original_manifest=json.loads((Path(metadata_path).parent/'manifest.json').read_text())
