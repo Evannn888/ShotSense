@@ -1,6 +1,6 @@
 # ShotSense
 
-A local research prototype that recommends photo adjustment parameters from unedited DNG files with valid camera white balance information. ShotSense combines EfficientNet-B0 semantic features with 132-dimensional linear Lab statistics to predict the arithmetic mean of five FiveK experts' parameters.
+A local research prototype that recommends photo adjustment parameters from unedited DNG files with valid camera white balance information, with an additional experimental JPG/JPEG input path. ShotSense combines EfficientNet-B0 semantic features with 132-dimensional linear Lab statistics to predict the arithmetic mean of five FiveK experts' parameters.
 
 Recommendations are absolute values for legacy Camera Raw **PV2003**. `HighlightRecovery` is not modern `Highlights`. Only exposure and highlight recovery passed the recommendation gate; contrast, saturation, temperature, and tint remain experimental.
 
@@ -12,9 +12,11 @@ From the project root:
 venv/bin/python -m streamlit run app/streamlit_app.py
 ```
 
-Open http://127.0.0.1:8501/, upload an unedited DNG, or select **Use project sample**. Review parameters and download JSON. Inputs are limited to 128 MB and 40 megapixels, with a 60-second timeout. The app processes one RAW job at a time locally.
+Open http://127.0.0.1:8501/, upload an unedited DNG or JPG/JPEG, or select **Use project sample**. Review parameters and download JSON. Inputs are limited to 128 MB and 40 megapixels, with a 60-second timeout. The app processes one image job at a time locally.
 
-The page shows baseline RAW development and an approximate adjusted preview side by side, preserving the original aspect ratio with a maximum edge of 1600 pixels. Highlight protection is enabled by default. Adjustment strength ranges from 0–100%; applied values and clipping diagnostics appear on the page and in JSON. PNG downloads reflect the current settings. Only validated exposure and highlight compression are simulated. This custom preview is not equivalent to Lightroom and cannot guarantee recovery of clipped detail.
+**JPEG support is experimental.** The model was trained on DNGs; an already processed JPEG has a different input distribution. All JPEG estimates appear under experimental outputs, Temperature/Tint are unavailable, and `recommended_absolute` is empty. EXIF orientation is applied; embedded ICC profiles are converted to sRGB, with sRGB assumed when no profile is present. CMYK JPEGs require a valid ICC profile. Physical features come from linearized display sRGB, which does not undo camera/software processing. Clipped detail cannot be recovered. The baseline JPEG preview appears immediately after processing; **Apply experimental JPEG estimates to preview** is off by default. PNG/JSON downloads record the selected preview settings. See [JPEG acceptance](artifacts/jpeg/ACCEPTANCE.md).
+
+For DNG inputs, the page shows baseline RAW development and an approximate adjusted preview side by side, preserving the original aspect ratio with a maximum edge of 1600 pixels. Highlight protection is enabled by default. Adjustment strength ranges from 0–100%; applied values and clipping diagnostics appear on the page and in JSON. PNG downloads reflect the current settings. Only validated exposure and highlight compression are simulated. This custom preview is not equivalent to Lightroom and cannot guarantee recovery of clipped detail.
 
 ## Environment and reproduction
 
@@ -58,6 +60,12 @@ Caches are identified by processing-code, dependency, label, and configuration h
 
 ```sh
 venv/bin/python -m src.inference path/to/input.dng --output result.json --preview input.jpg
+```
+
+For experimental JPEG estimates:
+
+```sh
+venv/bin/python -m src.jpeg_inference path/to/input.jpeg --output result.json --preview-source preview.npz
 ```
 
 JSON separates `recommended_absolute` and `experimental_absolute`, with units, legacy process semantics, model/data versions, and timing. No Delta is returned without a baseline using the same parameter version. ONNX inference does not import torch/torchvision; it still requires NumPy, ONNX Runtime, rawpy, colour-science, OpenCV, and Pillow.

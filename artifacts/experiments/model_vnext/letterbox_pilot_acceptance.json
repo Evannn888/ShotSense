@@ -1,0 +1,144 @@
+{
+  "status": "complete",
+  "input_count": 20,
+  "success_count": 20,
+  "failed_count": 0,
+  "cached_count": 0,
+  "elapsed_seconds": 16.912283917,
+  "physical_features_exactly_equal": true,
+  "config_hash": "8c6101723c21ebe025f6badc26c0feac8725a485392c9fa48043101161cd39e6",
+  "config": {
+    "implementation_sha256": {
+      "color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+      "parameters.py": "6a9b1107c04894556069c40019de2660cea7aaaf95ce55eddd2066342cc8439d",
+      "preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6",
+      "semantic_candidate.py": "d09d72c6f4cb1a4f82fc865f2e2116a965c9dca30787497b318a75d059cdeb84"
+    },
+    "interpolation": "cv2.INTER_AREA",
+    "jpeg_quality": 95,
+    "labels_sha256": "86a02d54e75a09c190536349ac3b722b61c00812e59d5e3a4e9bbcb318eb5036",
+    "numpy": "1.26.4",
+    "opencv": "4.11.0",
+    "parameters": [
+      "Exposure",
+      "Contrast",
+      "Saturation",
+      "Temperature",
+      "Tint",
+      "HighlightRecovery"
+    ],
+    "physical_dimensions": 132,
+    "pipeline": {
+      "apply_cctf_decoding": false,
+      "chromatic_adaptation_transform": null,
+      "common_raw_params": {
+        "adjust_maximum_thr": 0.0,
+        "auto_bright_thr": 0.01,
+        "bad_pixels_path": null,
+        "bright": 1.0,
+        "chromatic_aberration": [
+          1.0,
+          1.0
+        ],
+        "dcb_enhance": false,
+        "dcb_iterations": 0,
+        "demosaic_algorithm": "AHD",
+        "exp_preserve_highlights": 0.0,
+        "exp_shift": null,
+        "fbdd_noise_reduction": "Off",
+        "four_color_rgb": false,
+        "half_size": false,
+        "highlight_mode": "Clip",
+        "median_filter_passes": 0,
+        "no_auto_bright": true,
+        "no_auto_scale": false,
+        "noise_thr": null,
+        "use_auto_wb": false,
+        "use_camera_wb": true,
+        "user_black": null,
+        "user_cblack": null,
+        "user_flip": null,
+        "user_sat": null,
+        "user_wb": null
+      },
+      "dependencies": {
+        "colour-science": "0.4.4",
+        "libraw": [
+          0,
+          22,
+          1
+        ],
+        "numpy": "1.26.4",
+        "rawpy": "0.27.0"
+      },
+      "lab_illuminant_xy": [
+        0.3457,
+        0.3585
+      ],
+      "matrix_source_libraw": "0.22.1",
+      "missing_camera_wb": "reject",
+      "outputs": {
+        "prophoto16": {
+          "gamma": [
+            1.0,
+            1.0
+          ],
+          "output_bps": 16,
+          "output_color": "ProPhoto"
+        },
+        "srgb8": {
+          "gamma": [
+            2.4,
+            12.92
+          ],
+          "output_bps": 8,
+          "output_color": "sRGB"
+        }
+      },
+      "prophoto_to_xyz_d50": [
+        [
+          0.7977404241168965,
+          0.13517615785022608,
+          0.03130657220840635
+        ],
+        [
+          0.2880713012147518,
+          0.7118663544053732,
+          6.47849258548094e-05
+        ],
+        [
+          3.917905568725097e-06,
+          2.425260324700474e-05,
+          0.8250216544760873
+        ]
+      ],
+      "version": "linear-libraw-d50-v1"
+    },
+    "python": "3.9.8",
+    "schema_version": 1,
+    "size": [
+      224,
+      224
+    ],
+    "semantic_geometry": {
+      "version": "letterbox-imagenet-mean-v1",
+      "size": [
+        224,
+        224
+      ],
+      "padding_rgb": [
+        124,
+        116,
+        104
+      ],
+      "alignment": "center; odd remainder bottom/right",
+      "interpolation": "cv2.INTER_AREA",
+      "rounding": "nearest integer, minimum one pixel"
+    },
+    "source_metadata_sha256": "bbf36e2a2278f5f7c38973b30cb7b66c475c3b4807c7b5be94b98e967fe4c5e8"
+  },
+  "metadata_sha256": "29f826a6cb61ef9956f4343e405fed0f6df0ee8a19905958ec463a048abab5c1",
+  "stage": "candidate_input_pilot; full comparison pending",
+  "parity_checks": "Real RAW physical equality, cached/helper/inference-router semantic inputs exactly equal; no candidate ONNX model yet.",
+  "cache_rejection_checks": "Changed JPEG hash and unsupported geometry rejected before training."
+}

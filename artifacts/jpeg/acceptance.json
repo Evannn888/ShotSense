@@ -1,0 +1,68 @@
+{
+  "status": "workflow_verified; accuracy_not_validated",
+  "fixture": "Synthetic 90x50 RGB JPEG with EXIF orientation 6 and sRGB ICC; no personal photo",
+  "oriented_preview_shape": [
+    90,
+    50,
+    3
+  ],
+  "default_preview_is_identity": true,
+  "result": {
+    "schema_version": 1,
+    "input_format": "JPEG",
+    "input_status": "experimental_rendered_input",
+    "jpeg_processing_version": "rendered-jpeg-srgb-v1",
+    "jpeg_processing_sha256": "10efa21eafec0c760fefcf81baeecf8271a1018a0551af58b06be1a1dc72aefb",
+    "recommended_absolute": {},
+    "experimental_absolute": {
+      "Exposure": 1.038240909576416,
+      "Contrast": 12.509254366159439,
+      "Saturation": -1.403521653264761,
+      "HighlightRecovery": 6.125816702842712
+    },
+    "unavailable_parameters": [
+      "Temperature",
+      "Tint"
+    ],
+    "units": {
+      "Exposure": "EV",
+      "Contrast": "slider",
+      "Saturation": "slider",
+      "Temperature": "K",
+      "Tint": "slider",
+      "HighlightRecovery": "slider"
+    },
+    "parameter_semantics": "Experimental legacy PV2003 model outputs from an already rendered JPEG; not validated RAW settings or adjustment deltas.",
+    "warnings": [
+      "The model was trained on unedited DNGs; JPEG estimates have not been validated.",
+      "JPEG camera/software processing cannot be undone; clipped detail cannot be recovered.",
+      "Absolute Temperature/Tint are unavailable for rendered JPEG input."
+    ],
+    "jpeg_color": {
+      "embedded_icc_converted_to_srgb": true,
+      "without_icc": "assumed sRGB",
+      "exif_orientation_applied": true
+    },
+    "input_size": [
+      50,
+      90
+    ],
+    "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+    "data_version": "8939e047cd68e3d20491f5449daf7433b51a7236f7594d1bc17ceedb8e2d3326",
+    "timing": {
+      "preprocess_seconds": 0.010788291999999977,
+      "model_forward_ms": 50.39962500000006,
+      "preview_source_seconds": 0.0,
+      "end_to_end_seconds": 0.13718141700000008
+    }
+  },
+  "tests": [
+    "Both .jpg/.jpeg worker paths",
+    "EXIF orientation and ICC handling",
+    "No Temperature/Tint or validated JPEG fields",
+    "Torch/network-disabled inference",
+    "Malformed/mislabeled/CMYK-without-ICC rejection",
+    "English page and opt-in preview/PNG/JSON downloads"
+  ],
+  "real_browser_acceptance": "Not performed; saved localhost browser permission remains unavailable."
+}

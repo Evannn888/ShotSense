@@ -34,6 +34,12 @@ def load_bundle(bundle_dir):
     # Offline and online must share processing code/dependencies, not label availability.
     from src.color_pipeline import PIPELINE_CONFIG
     trained=config['pipeline_config']
+    if 'semantic_geometry' in trained:
+        from src.semantic_candidate import SEMANTIC_GEOMETRY
+        if trained['semantic_geometry']!=SEMANTIC_GEOMETRY:
+            raise ValueError('Unsupported semantic geometry contract')
+        if trained['implementation_sha256'].get('semantic_candidate.py')!=sha256_file(ROOT/'src/semantic_candidate.py'):
+            raise ValueError('Candidate semantic implementation differs from training')
     if trained['pipeline']!=json.loads(json.dumps(PIPELINE_CONFIG)):
         raise ValueError('RAW processing dependency/configuration differs from training')
     if trained['opencv']!=cv2.__version__ or trained['numpy']!=np.__version__:
@@ -70,7 +76,11 @@ def predict_dng(dng_path,bundle_dir=ROOT/'artifacts/model'):
             raise ValueError('DNG pixel count exceeds the 40 megapixel limit')
     session,config=load_bundle(bundle_dir)
     preprocessing_started=time.perf_counter()
-    physical,jpeg,outside=extract_inputs(dng_path)
+    if 'semantic_geometry' in config['pipeline_config']:
+        from src.semantic_candidate import extract_candidate_inputs
+        physical,jpeg,outside=extract_candidate_inputs(dng_path)
+    else:
+        physical,jpeg,outside=extract_inputs(dng_path)
     image=decode_semantic_image(io.BytesIO(jpeg))
     preprocess_seconds=time.perf_counter()-preprocessing_started
     inference_started=time.perf_counter()
