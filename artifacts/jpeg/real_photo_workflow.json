@@ -1,0 +1,57 @@
+{
+  "scope": "JPEG workflow; no JPEG prediction accuracy or full-resolution claim",
+  "photos": [
+    {
+      "photo": "a0001-jmac_dsc1459.dng",
+      "split": "train",
+      "source": "Existing 224x224 unedited RAW semantic JPEG cache; workflow smoke only",
+      "experimental_parameters": {
+        "Exposure": 0.8034998774528503,
+        "HighlightRecovery": 10.328209400177002
+      },
+      "baseline_exact_decoded_rgb": true,
+      "zero_strength_exact_identity": true,
+      "new_full_channel_fraction": 0.0,
+      "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f"
+    },
+    {
+      "photo": "a0522-kme_253.dng",
+      "split": "train",
+      "source": "Existing 224x224 unedited RAW semantic JPEG cache; workflow smoke only",
+      "experimental_parameters": {
+        "Exposure": 1.3153451681137085,
+        "HighlightRecovery": 9.648573398590088
+      },
+      "baseline_exact_decoded_rgb": true,
+      "zero_strength_exact_identity": true,
+      "new_full_channel_fraction": 0.0,
+      "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f"
+    },
+    {
+      "photo": "a1808-_dsc2496.dng",
+      "split": "train",
+      "source": "Existing 224x224 unedited RAW semantic JPEG cache; workflow smoke only",
+      "experimental_parameters": {
+        "Exposure": 0.8944745659828186,
+        "HighlightRecovery": 28.617003560066223
+      },
+      "baseline_exact_decoded_rgb": true,
+      "zero_strength_exact_identity": true,
+      "new_full_channel_fraction": 0.0,
+      "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f"
+    },
+    {
+      "photo": "a3561-img_4952.dng",
+      "split": "train",
+      "source": "Existing 224x224 unedited RAW semantic JPEG cache; workflow smoke only",
+      "experimental_parameters": {
+        "Exposure": 0.5413282513618469,
+        "HighlightRecovery": 24.010905623435974
+      },
+      "baseline_exact_decoded_rgb": true,
+      "zero_strength_exact_identity": true,
+      "new_full_channel_fraction": 0.0,
+      "model_sha256": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f"
+    }
+  ]
+}

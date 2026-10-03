@@ -108,13 +108,15 @@ Use the geometry selected in Phase C. Keep the 512 → 128 head, six targets, Sm
 | H3 | 0.0003 | 0.01 | 42 |
 | H4 | 0.0003 | 0.001 | 42 |
 
-- [ ] Reuse an identical existing run where its complete configuration matches a screening row.
-- [ ] Keep batch size 128, maximum 120 epochs, and early-stopping patience 20 for this comparison. Define the validation checkpoint score before running the grid.
-- [ ] Screen the four configurations using validation only. Confirm the winner with seeds 42, 43, and 44 against the matched control using the same three seeds.
-- [ ] Report the mean and spread across seeds. Do not select a deployment seed because it happened to score best on the test set.
-- [ ] Stop this search after the predefined grid. Head width, dropout, loss weighting, and target encoding are later experiments only if recorded evidence identifies a specific problem.
+- [x] Reuse an identical existing run where its complete configuration matches a screening row.
+- [x] Keep batch size 128, maximum 120 epochs, and early-stopping patience 20 for this comparison. Define the validation checkpoint score before running the grid.
+- [x] Screen the four configurations using validation only. Confirm the winner with seeds 42, 43, and 44 against the matched control using the same three seeds.
+- [x] Report the mean and spread across seeds. Do not select a deployment seed because it happened to score best on the test set.
+- [x] Stop this search after the predefined grid. Head width, dropout, loss weighting, and target encoding are later experiments only if recorded evidence identifies a specific problem.
 
 **Exit gate:** a repeatable improvement over the matched control. If results are inconclusive, retain the simpler control and proceed only if the failure analysis supports fine-tuning.
+
+Phase D completed: H1 remained best on seed 42 (P2 0.052900; H2 0.053309, H3 0.053130, H4 0.053063). Reused the original H1 seed-42 run and trained matched H1 seeds 43/44. H1 three-seed P2 mean/sample SD is 0.052239/0.000626. Because the selected candidate is the control itself, relative improvement and its paired bootstrap interval are exactly zero by identity; these are not independent equivalence evidence. No alternative passes the improvement gate. Retain control; do not expand the search or automatically start backbone fine-tuning. See `artifacts/experiments/model_vnext/PHASE_D_ACCEPTANCE.md`.
 
 ## 7. Phase E — Test partial backbone fine-tuning
 
@@ -251,3 +253,5 @@ A session is a rough development unit, not a promised completion date. Log elaps
 - **2026-10-02 — Phase B:** Clarified that each run requires its own input-preprocessing acceptance; the existing stretch pipeline is verified for controls. Added train-derived Lab-lightness strata and per-stratum reports for all four baselines. Trained seed-42 grouped controls from official ImageNet initialization and replayed the two heads with identical histories/predictions. Recorded full validation metrics, observed runtime/memory, hashes, and ledger. Thirty tests passed; test metrics, candidate geometry, three-seed confirmation, and production replacement remain pending.
 
 - **2026-10-02 — Phase C and JPEG:** Completed geometry input acceptance, all 4946-photo preprocessing, matched seed-42 training, exact head replay, and paired group bootstrap. Letterbox did not improve the primary dual score; retained stretch control without three-seed confirmation or test access. Added experimental JPG/JPEG workflow independently; it does not validate JPEG prediction accuracy.
+
+Phase D execution amendment (before implementation): reuse the Phase B seed-42 control as H1 after checking its full configuration, frozen artifacts and source hashes. Add one experiment entry point that copies the verified control embedding cache into each new run; the existing trainer still checks the cache fingerprint and owns training/evaluation. Do not change the native trainer or input pipeline. Select the lowest seed-42 dual validation P2 from the predefined four rows (ties retain H1), then compare that configuration with H1 at seeds 42/43/44 on the unchanged split. Reuse identical runs rather than train them twice. Report paired photo-group bootstrap of the mean across seeds, field protection and all predefined gates; no test access, export or production promotion in this phase. Stop after this grid and confirmation regardless of outcome.

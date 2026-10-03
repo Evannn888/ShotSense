@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-10-03T01:28:40.751055+00:00",
+  "status": "complete",
+  "requested_config": {
+    "metadata": "/Users/evanchen/CS Projects/ShotSense/data/processed/metadata.npz",
+    "epochs": 120,
+    "seed": 43,
+    "batch_size": 128,
+    "pilot": false,
+    "split_seed": 42,
+    "split_path": "/Users/evanchen/CS Projects/ShotSense/data/processed/model_vnext/splits.json",
+    "groups_path": "/Users/evanchen/CS Projects/ShotSense/data/processed/model_vnext/groups.json",
+    "learning_rate": 0.001,
+    "weight_decay": 0.01
+  },
+  "finished_utc": "2026-10-03T01:28:47.092065+00:00"
+}

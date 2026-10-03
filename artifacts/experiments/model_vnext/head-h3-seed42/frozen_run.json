@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "files": {
+    "best.pt": "7100fffe402a283a0f894d96f37d30a26ba4f1de5d58db8833d7db07cca37899",
+    "controls.pt": "953c29940a609ef1e782858dbb6cbf24582da05626d0a4720ad15bd60456029c",
+    "config.json": "c85d2bc0ea529f6deafcf9ebca5e73692aa0578fa7a971e0355a9ba049f58dc6",
+    "split_manifest.json": "a409c9fde89d6ea3117decfd2b41fd4ead115361b16589ab76cef8287c4a1a07",
+    "evaluation.json": "2fed66ed47b810dd683b2f636f1d5346fd7e5f9e23b25bbc829bf13d9cc42eee",
+    "validation_predictions.npz": "40bb4e872b55fcafc54f70ac4d1066969d8b8982fd82d3bc7b40b8a7e44e1c98"
+  },
+  "note": "Final evaluation is explicit; validation does not grant promotion."
+}

@@ -1,0 +1,33 @@
+{
+  "seed": 42,
+  "split_seed": 42,
+  "epochs": 120,
+  "patience": 20,
+  "learning_rate": 0.001,
+  "weight_decay": 0.001,
+  "batch_size": 128,
+  "protocol": "validation-only-v1",
+  "checkpoint_selection": "validation_p2",
+  "split_manifest_sha256": "a409c9fde89d6ea3117decfd2b41fd4ead115361b16589ab76cef8287c4a1a07",
+  "groups_sha256": "3bd76a2cb439c14f75754185818c4d1c1d397f5918e3a720a70d391c88821d17",
+  "device": "cpu",
+  "threads": 4,
+  "loss": "smooth_l1, beta=0.1, equal parameter weights",
+  "weights": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+  "metadata_sha256": "bbf36e2a2278f5f7c38973b30cb7b66c475c3b4807c7b5be94b98e967fe4c5e8",
+  "config_hash": "8939e047cd68e3d20491f5449daf7433b51a7236f7594d1bc17ceedb8e2d3326",
+  "pilot": false,
+  "decoder_sha256": "5f03aed72ea74d0e0ec6e62f3d651f1091a6ed9812de98f60698bdf1ef18bd4e",
+  "pillow": "11.3.0",
+  "torch": "2.8.0",
+  "torchvision": "0.23.0",
+  "weights_sha256": "7f5810bc96def8f7552d5b7e68d53c4786f81167d28291b21c0d90e1fca14934",
+  "split_sha256": "a31fe9a64160082319496da6858edb48a5a9b4a9a926eb553904a42408f4c1a0",
+  "implementation_sha256": {
+    "train.py": "7b5c469b82da7cb70e9e0637a044977d1c97b0c700769e1ea5c86eeeffeb545b",
+    "model.py": "eaa72f62b16faa982db71031c615d17dabcd493a2cbf9a9976a720d9aa144a4a",
+    "dataset.py": "92a9d1c941fc067a1f096db4cb51e5b3ca15391b31d09bd71ffa37952bfab0ed",
+    "evaluation.py": "5aab6b60569274b96cc85ce086d7d19cd5572aeba04b9458708fcd8ab5b5f3f3"
+  },
+  "semantic_features_sha256": "7fed74738da27d7d76b42609e7cf1ff58ac6a49714a1d3b4d9ec3303427033ec"
+}

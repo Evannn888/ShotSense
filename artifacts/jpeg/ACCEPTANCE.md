@@ -17,3 +17,5 @@ The complete suite passed 40 checks at this input-support/candidate-pilot milest
 Real-browser localhost acceptance remains unavailable under saved browser permissions. Backend and Streamlit AppTest checks passed without bypassing that restriction. The production model checkpoint/ONNX and core RAW/color/JPEG-decoder modules remain unchanged. The inference router gained explicit candidate-geometry support, and the page gained JPEG upload controls; no candidate model was promoted.
 
 Future accuracy acceptance needs a separately defined rendered-image task/dataset and evaluation protocol. The RAW model's historical accuracy numbers do not apply to JPEG uploads.
+
+Follow-up verification: four actual training-photo semantic JPEGs passed exact decoded-baseline and zero-strength identity checks, with no new full-channel pixels in the opt-in preview. See `real_photo_workflow.json` and `real-photo-workflow-review.jpg`. These 224×224 inputs are workflow smoke fixtures, not full-resolution or JPEG prediction accuracy acceptance.
