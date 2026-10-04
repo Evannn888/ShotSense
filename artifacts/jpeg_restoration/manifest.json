@@ -1,0 +1,24 @@
+{
+  "source_revision": "eb43d7d91e9a336c66856824ff9e4603ae41f408",
+  "weights_revision": "51481ef2546f870060c43eb6d6525399f5b3d2d3",
+  "model": "Fediory/HVI-CIDNet-Generalization",
+  "license": "MIT",
+  "weights_sha256": "2291407125e809cc9c0614cc2d010d21d309a66eb3da33e1ee2386a68fa05894",
+  "architecture": {
+    "channels": [
+      36,
+      36,
+      72,
+      144
+    ],
+    "heads": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "norm": false
+  },
+  "source_url": "https://github.com/Fediory/HVI-CIDNet",
+  "weights_url": "https://huggingface.co/Fediory/HVI-CIDNet-Generalization"
+}

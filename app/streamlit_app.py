@@ -1,4 +1,4 @@
-"""Local DNG recommendations and experimental JPEG estimates in bounded workers."""
+"""Local RAW recommendations, JPEG enhancement, and experimental estimates in bounded workers."""
 import json
 import os
 from pathlib import Path
@@ -26,11 +26,11 @@ def job_lock():
 
 def clear_prediction():
     st.session_state.pop('prediction', None)
-    for key in ('jpeg_preview_estimates','jpeg_preview_manual','jpeg_manual_exposure','jpeg_manual_recovery'):
+    for key in ('jpeg_preview_estimates','jpeg_preview_manual','jpeg_manual_exposure','jpeg_manual_recovery','restoration_strength'):
         st.session_state.pop(key,None)
 
 
-def run_job(data,suffix='.dng'):
+def run_job(data,suffix='.dng',enhance=False):
     started=time.perf_counter()
     if not 0 < len(data) <= 128 * 1024 * 1024:
         raise ValueError('The file must be nonempty and no larger than 128 MB.')
@@ -41,9 +41,11 @@ def run_job(data,suffix='.dng'):
         source, result, preview = [folder / name for name in ('input'+suffix,'result.json','preview-source.npz')]
         source.write_bytes(data)
         env = dict(os.environ, OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1')
-        module='src.inference' if suffix=='.dng' else 'src.jpeg_inference'
+        restoration = enhance and suffix != '.dng'
+        module='src.inference' if suffix=='.dng' else ('src.jpeg_restoration' if restoration else 'src.jpeg_inference')
+        bundle=ROOT/'artifacts/jpeg_restoration' if restoration else BUNDLE
         process = subprocess.run([sys.executable, '-m', module, str(source),
-                                  '--bundle', str(BUNDLE), '--output', str(result), '--preview-source', str(preview)],
+                                  '--bundle', str(bundle), '--output', str(result), '--preview-source', str(preview)],
                                  cwd=ROOT, env=env, capture_output=True, text=True, timeout=60)
         if process.returncode:
             detail = process.stderr.strip().splitlines()[-1] if process.stderr.strip() else 'Unable to decode the image.'
@@ -55,31 +57,35 @@ def run_job(data,suffix='.dng'):
         payload=json.loads(result.read_text())
         payload['timing']['local_worker_seconds']=time.perf_counter()-started
         with np.load(preview,allow_pickle=False) as cached:
-            linear=validate_source(cached['linear_rgb'].copy())
+            linear=({name:cached[name].copy() for name in ('original','restored')} if restoration
+                    else validate_source(cached['linear_rgb'].copy()))
         return payload, linear
 
 
 st.set_page_config(page_title='ShotSense · Photo adjustment recommendations', page_icon='📷', layout='wide')
 st.title('ShotSense')
 st.caption('Preview version: ' + VERSION + ' · High-resolution preview with original aspect ratio')
-st.write('Upload an unedited DNG for parameter recommendations, or a JPG/JPEG for experimental estimates.')
+st.write('Upload an unedited DNG for parameter recommendations, or a JPG/JPEG for local low-light enhancement.')
 st.info('Research prototype · Recommendations are absolute values for legacy Camera Raw PV2003. Highlight recovery cannot be mapped directly to modern Highlights. Parameters that have not passed validation are listed separately as experimental outputs.')
 
 if not (BUNDLE / 'model.json').exists():
     st.warning('The model bundle is unavailable. Restore the verified artifacts/model bundle or follow the training and acceptance instructions in README.md.')
-    st.stop()
+
+jpeg_workflow = st.radio('JPEG workflow', ['AI low-light enhancement (experimental)', 'Legacy parameter estimates'],
+                         key='jpeg_workflow', on_change=clear_prediction,
+                         help='Select a workflow, then Process image. AI enhancement produces an image; legacy estimates use the RAW-trained model.')
 
 upload = st.file_uploader('Upload a DNG, JPG or JPEG', type=['dng','jpg','jpeg'], on_change=clear_prediction,
-                          help='Maximum 128 MB and 40 megapixels. JPEG estimates are experimental. Processed locally; not uploaded to a remote server.')
+                          help='Maximum 128 MB and 40 megapixels. JPEG enhancement and estimates are experimental. Processed locally; not uploaded to a remote server.')
 left, right = st.columns(2)
-analyze = left.button('Generate recommendations', type='primary', disabled=upload is None)
+analyze = left.button('Process image', type='primary', disabled=upload is None)
 sample = right.button('Use project sample')
 if analyze or sample:
     clear_prediction()
     try:
-        with st.spinner('Reading the image, extracting features, and running inference…'):
+        with st.spinner('Processing the image locally…'):
             data = upload.getvalue() if analyze else next(iter(sorted((ROOT / 'data/raw/dngs').glob('*.dng')))).read_bytes()
-            st.session_state.prediction = run_job(data,Path(upload.name).suffix if analyze else '.dng')
+            st.session_state.prediction = run_job(data,Path(upload.name).suffix if analyze else '.dng',enhance=jpeg_workflow.startswith('AI'))
             st.session_state.prediction[0]['input_name']=upload.name if analyze else 'Project sample'
     except subprocess.TimeoutExpired:
         st.error('Processing exceeded 60 seconds and was stopped. Please use a smaller image.')
@@ -88,6 +94,28 @@ if analyze or sample:
 
 if 'prediction' in st.session_state:
     result, preview = st.session_state.prediction
+    if result.get('input_status') == 'experimental_restoration':
+        from src.jpeg_restoration import render_restoration
+        st.subheader('JPEG low-light enhancement · First experimental version')
+        st.caption('Current result: ' + result.get('input_name', 'JPEG'))
+        st.warning('Designed for low-light photos. Color shifts and loss of fine detail remain possible. Reduce strength if the result looks too bright. This model does not produce Lightroom parameters.')
+        strength = st.slider('Enhancement strength', 0, 100, 100, step=5, key='restoration_strength') / 100
+        baseline, rendered, metadata = render_restoration(preview, strength)
+        before, after = st.columns(2)
+        with before:
+            st.image(baseline, caption='Before · Decoded JPEG', width='stretch')
+        with after:
+            st.image(rendered, caption='After · HVI-CIDNet enhancement', width='stretch')
+        st.caption(f"Applied strength {strength:.0%} · Output {metadata['size'][0]} × {metadata['size'][1]} · Changed pixels {metadata['changed_pixel_fraction']:.1%}")
+        st.caption('Aspect ratio preserved; output limited to 960 pixels per edge. Processing stays on this computer. Clipped detail cannot be guaranteed to recover.')
+        st.download_button('Download enhanced PNG', rendered, file_name='shotsense-enhanced.png', mime='image/png')
+        payload = dict(result, preview=metadata)
+        st.download_button('Download enhancement JSON', json.dumps(payload, indent=2, allow_nan=False),
+                           file_name='shotsense-enhancement.json', mime='application/json')
+        with st.expander('Model and processing details'):
+            st.json(payload)
+        st.caption(f"Local job {result['timing']['local_worker_seconds']:.2f} s · Model {result['timing']['model_forward_ms'] / 1000:.2f} s · Version {result['restoration']['version']}")
+        st.stop()
     is_jpeg=result.get('input_format')=='JPEG'
     if is_jpeg:
         st.warning('JPEG estimates are experimental: the model was trained on unedited RAW files. Temperature and tint are unavailable; clipped detail cannot be recovered.')

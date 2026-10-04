@@ -1,0 +1,102 @@
+{
+  "scope": "Diagnostic previously inspected LOL examples; pretrained overlap unknown. No eval15 access or unseen benchmark.",
+  "cases": [
+    {
+      "id": "27",
+      "timing": {
+        "model_forward_ms": 1807.936084,
+        "end_to_end_seconds": 1.8504444589999998
+      },
+      "script_seconds": 3.230745084,
+      "changed_pixel_fraction": 0.9999958333333333,
+      "source_mean": 0.015732401960784313,
+      "output_mean": 0.16621962189674377
+    },
+    {
+      "id": "102",
+      "timing": {
+        "model_forward_ms": 1734.044917,
+        "end_to_end_seconds": 1.7608143330000003
+      },
+      "script_seconds": 1.8131657920000004,
+      "changed_pixel_fraction": 1.0,
+      "source_mean": 0.06965605664488017,
+      "output_mean": 0.3596232533454895
+    },
+    {
+      "id": "113",
+      "timing": {
+        "model_forward_ms": 1585.583542,
+        "end_to_end_seconds": 1.6112237499999997
+      },
+      "script_seconds": 1.662735166,
+      "changed_pixel_fraction": 1.0,
+      "source_mean": 0.021730321350762527,
+      "output_mean": 0.45573028922080994
+    },
+    {
+      "id": "254",
+      "timing": {
+        "model_forward_ms": 1565.2900829999999,
+        "end_to_end_seconds": 1.5924885420000008
+      },
+      "script_seconds": 1.645714625000001,
+      "changed_pixel_fraction": 1.0,
+      "source_mean": 0.2208208605664488,
+      "output_mean": 0.3876279890537262
+    },
+    {
+      "id": "565",
+      "timing": {
+        "model_forward_ms": 1598.0941249999994,
+        "end_to_end_seconds": 1.6261039999999998
+      },
+      "script_seconds": 1.67404275,
+      "changed_pixel_fraction": 1.0,
+      "source_mean": 0.07136406862745097,
+      "output_mean": 0.2691742777824402
+    },
+    {
+      "id": "6",
+      "timing": {
+        "model_forward_ms": 1528.872959000001,
+        "end_to_end_seconds": 1.554906333
+      },
+      "script_seconds": 1.6094227089999986,
+      "changed_pixel_fraction": 0.9999958333333333,
+      "source_mean": 0.07659640522875817,
+      "output_mean": 0.5130807161331177
+    },
+    {
+      "id": "synthetic-daylight-1440x960",
+      "output_size": [
+        960,
+        640
+      ],
+      "timing": {
+        "model_forward_ms": 4433.731583000002,
+        "end_to_end_seconds": 4.469428625000001
+      },
+      "mean_absolute_change_srgb": 0.22737395057520135,
+      "strength_zero_exact": true
+    }
+  ],
+  "bounded_worker": {
+    "input": "synthetic-daylight-1440x960",
+    "output_size": [
+      960,
+      640
+    ],
+    "wall_seconds": 6.64,
+    "maximum_resident_bytes": 1619116032,
+    "peak_memory_footprint_bytes": 1589582976,
+    "method": "macOS /usr/bin/time -l isolated CLI; includes interpreter/import/decode/model/cache writing",
+    "worker_timeout_seconds": 60
+  },
+  "automated_checks": {
+    "passed": 53,
+    "seconds": 25.83,
+    "pip_check": "passed",
+    "warning": "Existing optional colour-science Matplotlib warning"
+  }
+}
