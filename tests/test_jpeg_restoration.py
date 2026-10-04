@@ -69,12 +69,35 @@ runpy.run_module('src.jpeg_restoration',run_name='__main__')
     at = AppTest.from_file(str(ROOT / 'app/streamlit_app.py')).run(timeout=30)
     at.session_state['prediction'] = (worker_result, worker_source)
     at.run(timeout=30)
-    assert not at.exception and not at.error and len(at.get('imgs')) == 2
-    assert exports['Download enhanced PNG'] == after
-    for percent in (50, 0, 100):
-        next(s for s in at.slider if s.label == 'Enhancement strength').set_value(percent).run(timeout=30)
-        assert not at.exception and not at.error
-        _, expected, meta = render_restoration(source, percent / 100)
-        assert exports['Download enhanced PNG'] == expected
-        payload = json.loads(exports['Download enhancement JSON'])
-        assert payload['preview'] == meta and payload['restoration'] == result['restoration']
+    assert not at.exception and not at.error and len(at.get('imgs')) == 1
+    assert exports['Download original preview PNG'] == before
+    assert 'Download enhanced PNG' not in exports
+    assert not at.slider
+    assert any('withdrawn' in warning.value for warning in at.warning)
+    assert 'AI low-light enhancement (experimental)' not in at.radio[0].options
+
+    # New default manual workflow must start exactly unchanged and export its real settings.
+    from src.jpeg_inference import predict_jpeg
+    from src.preview import render_linear_preview, apply_tone
+    result, linear = predict_jpeg(path)
+    result['jpeg_workflow'] = 'manual'
+    result['timing']['local_worker_seconds'] = 0
+    at.session_state['prediction'] = (result, linear)
+    at.run(timeout=30)
+    assert not at.exception and not at.error
+    baseline, unchanged, _ = render_linear_preview(linear, {'Exposure':0, 'HighlightRecovery':0})
+    assert baseline == unchanged == exports['Download approximate preview PNG']
+    assert not any(c.label == 'Apply experimental JPEG estimates to preview' for c in at.checkbox)
+    next(s for s in at.slider if s.label == 'Manual exposure (EV)').set_value(1.0).run(timeout=30)
+    _, adjusted, expected = render_linear_preview(linear, {'Exposure':1., 'HighlightRecovery':0})
+    assert exports['Download approximate preview PNG'] == adjusted
+    payload = json.loads(exports['Download parameters JSON'])
+    assert payload['preview']['adjustment_mode'] == 'manual'
+    assert payload['preview']['applied_parameters'] == expected['applied_parameters']
+    # Shared linear RGB gain preserves channel ratios, including dark eye-like pixels;
+    # neutral black must remain black rather than receiving colored network offsets.
+    pixels = np.array([[[.004,.003,.002],[.1,.09,.07],[0,0,0],[.7,.65,.6]]], dtype=np.float32)
+    adjusted, _ = apply_tone(pixels, {'Exposure':1., 'HighlightRecovery':0})
+    np.testing.assert_allclose(adjusted[0,:2] / pixels[0,:2], np.full((2,3),2.), rtol=1e-6)
+    np.testing.assert_array_equal(adjusted[0,2], [0,0,0])
+    assert np.isfinite(adjusted).all() and adjusted.max() <= 1

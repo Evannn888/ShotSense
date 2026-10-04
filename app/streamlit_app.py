@@ -65,15 +65,16 @@ def run_job(data,suffix='.dng',enhance=False):
 st.set_page_config(page_title='ShotSense · Photo adjustment recommendations', page_icon='📷', layout='wide')
 st.title('ShotSense')
 st.caption('Preview version: ' + VERSION + ' · High-resolution preview with original aspect ratio')
-st.write('Upload an unedited DNG for parameter recommendations, or a JPG/JPEG for local low-light enhancement.')
+st.write('Upload an unedited DNG for parameter recommendations, or a JPG/JPEG for manual exposure adjustment.')
 st.info('Research prototype · Recommendations are absolute values for legacy Camera Raw PV2003. Highlight recovery cannot be mapped directly to modern Highlights. Parameters that have not passed validation are listed separately as experimental outputs.')
 
 if not (BUNDLE / 'model.json').exists():
     st.warning('The model bundle is unavailable. Restore the verified artifacts/model bundle or follow the training and acceptance instructions in README.md.')
 
-jpeg_workflow = st.radio('JPEG workflow', ['AI low-light enhancement (experimental)', 'Legacy parameter estimates'],
-                         key='jpeg_workflow', on_change=clear_prediction,
-                         help='Select a workflow, then Process image. AI enhancement produces an image; legacy estimates use the RAW-trained model.')
+jpeg_workflow = st.radio('JPEG workflow', ['Manual exposure (recommended)', 'Legacy parameter estimates'],
+                         key='jpeg_workflow_v2', on_change=clear_prediction,
+                         help='Manual exposure starts unchanged. Adjust brightness after processing the image.')
+st.caption('AI low-light enhancement has been withdrawn after real-photo color failures. JPEG processing now starts with the original image.')
 
 upload = st.file_uploader('Upload a DNG, JPG or JPEG', type=['dng','jpg','jpeg'], on_change=clear_prediction,
                           help='Maximum 128 MB and 40 megapixels. JPEG enhancement and estimates are experimental. Processed locally; not uploaded to a remote server.')
@@ -85,8 +86,9 @@ if analyze or sample:
     try:
         with st.spinner('Processing the image locally…'):
             data = upload.getvalue() if analyze else next(iter(sorted((ROOT / 'data/raw/dngs').glob('*.dng')))).read_bytes()
-            st.session_state.prediction = run_job(data,Path(upload.name).suffix if analyze else '.dng',enhance=jpeg_workflow.startswith('AI'))
+            st.session_state.prediction = run_job(data,Path(upload.name).suffix if analyze else '.dng')
             st.session_state.prediction[0]['input_name']=upload.name if analyze else 'Project sample'
+            st.session_state.prediction[0]['jpeg_workflow']='manual' if jpeg_workflow.startswith('Manual') else 'legacy'
     except subprocess.TimeoutExpired:
         st.error('Processing exceeded 60 seconds and was stopped. Please use a smaller image.')
     except (ValueError, OSError, StopIteration) as error:
@@ -96,25 +98,10 @@ if 'prediction' in st.session_state:
     result, preview = st.session_state.prediction
     if result.get('input_status') == 'experimental_restoration':
         from src.jpeg_restoration import render_restoration
-        st.subheader('JPEG low-light enhancement · First experimental version')
-        st.caption('Current result: ' + result.get('input_name', 'JPEG'))
-        st.warning('Designed for low-light photos. Color shifts and loss of fine detail remain possible. Reduce strength if the result looks too bright. This model does not produce Lightroom parameters.')
-        strength = st.slider('Enhancement strength', 0, 100, 100, step=5, key='restoration_strength') / 100
-        baseline, rendered, metadata = render_restoration(preview, strength)
-        before, after = st.columns(2)
-        with before:
-            st.image(baseline, caption='Before · Decoded JPEG', width='stretch')
-        with after:
-            st.image(rendered, caption='After · HVI-CIDNet enhancement', width='stretch')
-        st.caption(f"Applied strength {strength:.0%} · Output {metadata['size'][0]} × {metadata['size'][1]} · Changed pixels {metadata['changed_pixel_fraction']:.1%}")
-        st.caption('Aspect ratio preserved; output limited to 960 pixels per edge. Processing stays on this computer. Clipped detail cannot be guaranteed to recover.')
-        st.download_button('Download enhanced PNG', rendered, file_name='shotsense-enhanced.png', mime='image/png')
-        payload = dict(result, preview=metadata)
-        st.download_button('Download enhancement JSON', json.dumps(payload, indent=2, allow_nan=False),
-                           file_name='shotsense-enhancement.json', mime='application/json')
-        with st.expander('Model and processing details'):
-            st.json(payload)
-        st.caption(f"Local job {result['timing']['local_worker_seconds']:.2f} s · Model {result['timing']['model_forward_ms'] / 1000:.2f} s · Version {result['restoration']['version']}")
+        st.warning('This AI result has been withdrawn because it can severely alter colors and brightness. Only the preserved input preview is shown. Process the image again to use manual exposure.')
+        baseline, _, _ = render_restoration(preview, 0)
+        st.image(baseline, caption='Preserved input preview · AI enhancement not applied', width='stretch')
+        st.download_button('Download original preview PNG', baseline, file_name='shotsense-original-preview.png', mime='image/png')
         st.stop()
     is_jpeg=result.get('input_format')=='JPEG'
     if is_jpeg:
@@ -129,12 +116,13 @@ if 'prediction' in st.session_state:
                  if name in ('Exposure','HighlightRecovery')}
         preview_mode='model_recommendations'
         if is_jpeg:
+            conservative=result.get('jpeg_workflow')=='manual'
             preview_mode='unchanged'
-            if st.checkbox('Apply experimental JPEG estimates to preview',value=False,key='jpeg_preview_estimates'):
+            if not conservative and st.checkbox('Apply experimental JPEG estimates to preview',value=False,key='jpeg_preview_estimates'):
                 applied={name:value for name,value in result['experimental_absolute'].items()
                          if name in ('Exposure','HighlightRecovery')}
                 preview_mode='experimental_estimates'
-            if st.checkbox('Adjust JPEG preview manually',value=False,key='jpeg_preview_manual'):
+            if st.checkbox('Adjust JPEG preview manually',value=conservative,key='jpeg_preview_manual'):
                 applied={'Exposure':st.slider('Manual exposure (EV)',-4.0,4.0,0.0,step=0.1,key='jpeg_manual_exposure'),
                          'HighlightRecovery':st.slider('Manual highlight compression',0,100,0,key='jpeg_manual_recovery')}
                 preview_mode='manual'
@@ -176,7 +164,7 @@ if 'prediction' in st.session_state:
             st.caption('These parameters outperform the training-median baseline on the fixed validation set. Acceptable error for practical use has not been calibrated.')
         else:
             st.warning('No parameters are validated for JPEG input. Estimates appear below.' if is_jpeg else 'No parameters have passed validation for this model. All outputs are experimental.')
-        with st.expander('Experimental outputs',expanded=is_jpeg):
+        with st.expander('Experimental outputs',expanded=is_jpeg and result.get('jpeg_workflow')!='manual'):
             for name, value in result['experimental_absolute'].items():
                 st.write(f"{LABELS[name]}: {value:.2f} {result['units'][name]}")
             if is_jpeg: st.caption('Temperature and tint: unavailable for JPEG input.')

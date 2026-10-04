@@ -1,4 +1,8 @@
-# First experimental JPEG enhancement version
+# Withdrawn experimental JPEG enhancement version
+
+**Withdrawn from the website on2026-10-04 after a user-photo failure.** Screenshots show excessive brightness, colored artifacts and an eye shifted from dark to red/purple. Functional acceptance was insufficient to justify making this model the default. New JPEG processing defaults to manual exposure at0EV; cached AI results show only their preserved input preview. Research backend/weights remain available, without quality acceptance. The supplied screenshots are not the original source JPEG, so exact original-file model inference has not been reproduced.
+
+The sections below preserve the original delivery evidence and limitations.
 
 Delivered 2026-10-04. **Functional acceptance passed. Independent image-quality/generalization acceptance has not passed.** This is a usable local low-light prototype; the previous RAW recommendation release remains separate.
 

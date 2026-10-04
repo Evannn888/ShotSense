@@ -1,6 +1,6 @@
 # ShotSense
 
-A local research prototype that recommends photo adjustment parameters from unedited DNG files with valid camera white balance information, with local, experimental HVI-CIDNet low-light enhancement for JPG/JPEG files. ShotSense combines EfficientNet-B0 semantic features with 132-dimensional linear Lab statistics to predict the arithmetic mean of five FiveK experts' parameters.
+A local research prototype that recommends photo adjustment parameters from unedited DNG files with valid camera white balance information, with manual exposure controls and experimental parameter estimates for JPG/JPEG files. ShotSense combines EfficientNet-B0 semantic features with 132-dimensional linear Lab statistics to predict the arithmetic mean of five FiveK experts' parameters.
 
 Recommendations are absolute values for legacy Camera Raw **PV2003**. `HighlightRecovery` is not modern `Highlights`. Only exposure and highlight recovery passed the recommendation gate; contrast, saturation, temperature, and tint remain experimental.
 
@@ -14,13 +14,9 @@ venv/bin/python -m streamlit run app/streamlit_app.py
 
 Open http://127.0.0.1:8501/, upload an unedited DNG or JPG/JPEG, or select **Use project sample**. Review parameters and download JSON. Inputs are limited to 128 MB and 40 megapixels, with a 60-second timeout. The app processes one image job at a time locally.
 
-**First JPEG enhancement version:** prepare the pinned author checkpoint once:
+**JPEG default: manual exposure.** Select **Manual exposure (recommended)**, upload JPG/JPEG, then click **Process image**. The preview starts unchanged at0EV. Use **Manual exposure (EV)** and highlight protection to adjust brightness, compare before/after, and download matching PNG/JSON. The shared linear RGB tone gain does not add model-generated color offsets; it is a manual preview, not automatic learned enhancement or a denoising solution. The maximum preview edge is1600px.
 
-```sh
-venv/bin/python scripts/prepare_jpeg_restoration.py
-```
-
-Choose **AI low-light enhancement (experimental)**, upload JPG/JPEG, and click **Process image**. Compare before/after, adjust **Enhancement strength**, and download the enhanced PNG plus matching enhancement JSON. The frozen [HVI-CIDNet author model](https://huggingface.co/Fediory/HVI-CIDNet-Generalization) runs locally on CPU without network access during processing. EXIF orientation and ICC conversion are applied. Output preserves aspect ratio with a maximum edge of **960 pixels**; strength zero returns exactly the decoded/resized original pixels. Enhancement JSON records model/checkpoint versions, input/output hashes and the selected strength. This mode generates pixels, not Lightroom parameters. Noise, color casts and lost detail remain possible, especially in extreme darkness; it can over-brighten normal daylight photos. Known diagnostic images cannot establish generalization because pretrained overlap is unknown. See [first-version verification and limits](artifacts/jpeg_restoration/ACCEPTANCE.md).
+**AI enhancement withdrawn (2026-10-04):** a real user photo showed severe over-brightening, color artifacts and a red/purple eye. HVI-CIDNet is no longer available in the website workflow. Previously cached AI results show only their preserved input preview; processing again uses the chosen manual/legacy workflow. Original uploaded files are never overwritten. Historical sources/checkpoints and diagnostic records remain available for research, but passing functional tests did not establish acceptable photo quality. See [failure and withdrawal record](artifacts/jpeg_restoration/ACCEPTANCE.md).
 
 The **Legacy parameter estimates** workflow retains the earlier JPEG estimates and manual exposure controls. **JPEG support is experimental.** The model was trained on DNGs; an already processed JPEG has a different input distribution. All JPEG estimates appear under experimental outputs, Temperature/Tint are unavailable, and `recommended_absolute` is empty. EXIF orientation is applied; embedded ICC profiles are converted to sRGB, with sRGB assumed when no profile is present. CMYK JPEGs require a valid ICC profile. Physical features come from linearized display sRGB, which does not undo camera/software processing. Clipped detail cannot be recovered. The baseline JPEG preview appears immediately after processing; **Apply experimental JPEG estimates to preview** is off by default. The page explicitly marks an unchanged preview and disables strength until adjustments are enabled. **Adjust JPEG preview manually** provides exposure and highlight compression controls; manual values replace model estimates for the preview. PNG/JSON downloads record the selected mode and applied settings. See [JPEG acceptance](artifacts/jpeg/ACCEPTANCE.md).
 
@@ -70,7 +66,7 @@ Caches are identified by processing-code, dependency, label, and configuration h
 venv/bin/python -m src.inference path/to/input.dng --output result.json --preview input.jpg
 ```
 
-For direct JPEG enhancement (after checkpoint preparation):
+For the withdrawn HVI research backend only (not recommended for photo editing), prepare pinned weights with `venv/bin/python scripts/prepare_jpeg_restoration.py`, then:
 
 ```sh
 venv/bin/python -m src.jpeg_restoration path/to/input.jpeg --output enhancement.json --preview-source restoration.npz
