@@ -8,7 +8,7 @@ Delivered 2026-10-04. **Functional acceptance passed. Independent image-quality/
 - Source: [official HVI-CIDNet repository](https://github.com/Fediory/HVI-CIDNet), revision `eb43d7d91e9a336c66856824ff9e4603ae41f408`.
 - Weights revision: `51481ef2546f870060c43eb6d6525399f5b3d2d3`.
 - Weights SHA256: `2291407125e809cc9c0614cc2d010d21d309a66eb3da33e1ee2386a68fa05894`.
-- License and modifications: `src/vendor/hvi/LICENSE` and `NOTICE.md`. Architecture defaults match the model configuration. Package-relative imports, removed optional hub download mixin, and equivalent native Torch reshapes are the only upstream inference changes.
+- License and modifications: `src/vendor/hvi/LICENSE` and `NOTICE.md`. Architecture defaults match the model configuration. Package-relative imports, removed optional hub download mixin, and equivalent native Torch reshapes are the only upstream inference changes, alongside whitespace normalization.
 - New runtime dependency: Safetensors0.6.2; existing Torch/OpenCV/Pillow reused. No training framework, hosted-photo API or einops/huggingface_hub dependency.
 
 Prepare with `venv/bin/python scripts/prepare_jpeg_restoration.py`; the download is revision-pinned, checked before atomic installation and skipped for an existing matching file. Large weights remain local. Photo inference does not download or access the network. `manifest.json` records exact identity and architecture.

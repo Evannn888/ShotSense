@@ -38,7 +38,7 @@ class CAB(nn.Module):
 
         out = self.project_out(out)
         return out
-    
+
 
 # Intensity Enhancement Layer
 class IEL(nn.Module):
@@ -48,11 +48,11 @@ class IEL(nn.Module):
         hidden_features = int(dim*ffn_expansion_factor)
 
         self.project_in = nn.Conv2d(dim, hidden_features*2, kernel_size=1, bias=bias)
-        
+
         self.dwconv = nn.Conv2d(hidden_features*2, hidden_features*2, kernel_size=3, stride=1, padding=1, groups=hidden_features*2, bias=bias)
         self.dwconv1 = nn.Conv2d(hidden_features, hidden_features, kernel_size=3, stride=1, padding=1, groups=hidden_features, bias=bias)
         self.dwconv2 = nn.Conv2d(hidden_features, hidden_features, kernel_size=3, stride=1, padding=1, groups=hidden_features, bias=bias)
-       
+
         self.project_out = nn.Conv2d(hidden_features, dim, kernel_size=1, bias=bias)
 
         self.Tanh = nn.Tanh()
@@ -64,8 +64,8 @@ class IEL(nn.Module):
         x = x1 * x2
         x = self.project_out(x)
         return x
-  
-  
+
+
 # Lightweight Cross Attention
 class HV_LCA(nn.Module):
     def __init__(self, dim,num_heads, bias=False):
@@ -73,20 +73,20 @@ class HV_LCA(nn.Module):
         self.gdfn = IEL(dim) # IEL and CDL have same structure
         self.norm = LayerNorm(dim)
         self.ffn = CAB(dim, num_heads, bias)
-        
+
     def forward(self, x, y):
         x = x + self.ffn(self.norm(x),self.norm(y))
         x = self.gdfn(self.norm(x))
         return x
-    
+
 class I_LCA(nn.Module):
     def __init__(self, dim,num_heads, bias=False):
         super(I_LCA, self).__init__()
         self.norm = LayerNorm(dim)
         self.gdfn = IEL(dim)
         self.ffn = CAB(dim, num_heads, bias=bias)
-        
+
     def forward(self, x, y):
         x = x + self.ffn(self.norm(x),self.norm(y))
-        x = x + self.gdfn(self.norm(x)) 
+        x = x + self.gdfn(self.norm(x))
         return x

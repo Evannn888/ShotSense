@@ -3,9 +3,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class LayerNorm(nn.Module):
-    r""" LayerNorm that supports two data formats: channels_last (default) or channels_first. 
-    The ordering of the dimensions in the inputs. channels_last corresponds to inputs with 
-    shape (batch_size, height, width, channels) while channels_first corresponds to inputs 
+    r""" LayerNorm that supports two data formats: channels_last (default) or channels_first.
+    The ordering of the dimensions in the inputs. channels_last corresponds to inputs with
+    shape (batch_size, height, width, channels) while channels_first corresponds to inputs
     with shape (batch_size, channels, height, width).
     """
     def __init__(self, normalized_shape, eps=1e-6, data_format="channels_first"):
@@ -15,9 +15,9 @@ class LayerNorm(nn.Module):
         self.eps = eps
         self.data_format = data_format
         if self.data_format not in ["channels_last", "channels_first"]:
-            raise NotImplementedError 
+            raise NotImplementedError
         self.normalized_shape = (normalized_shape, )
-    
+
     def forward(self, x):
         if self.data_format == "channels_last":
             return F.layer_norm(x, self.normalized_shape, self.weight, self.bias, self.eps)
@@ -58,7 +58,7 @@ class NormUpsample(nn.Module):
             nn.Conv2d(in_ch,out_ch,kernel_size=3,stride=1, padding=1, bias=False),
             nn.UpsamplingBilinear2d(scale_factor=scale))
         self.up = nn.Conv2d(out_ch*2,out_ch,kernel_size=1,stride=1, padding=0, bias=False)
-            
+
     def forward(self, x,y):
         x = self.up_scale(x)
         x = torch.cat([x, y],dim=1)
@@ -68,4 +68,3 @@ class NormUpsample(nn.Module):
             return self.norm(x)
         else:
             return x
- 
