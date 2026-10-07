@@ -1,0 +1,15 @@
+[Version]
+AppVersion=5.11
+Version=351
+[Exposure]
+Compensation=0
+[ToneEqualizer]
+Enabled=true
+Band0=0
+Band1=40
+Band2=20
+Band3=0
+Band4=0
+Band5=0
+Regularization=2
+Pivot=0

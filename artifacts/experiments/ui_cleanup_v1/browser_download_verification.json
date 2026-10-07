@@ -1,0 +1,15 @@
+{
+  "user_input_path": "/Users/evanchen/Downloads/images (2).jpeg",
+  "source_sha256": "e4172d7c619478e0272159d3c5b81450e527bb0a39139db690676ba19c4cf4fe",
+  "actual_browser_download_path": "/Users/evanchen/Downloads/shotsense-natural-color-s100-678x452-da7fcbc5.png",
+  "png_sha256": "da7fcbc53bf74dcbc9147821694a2d107ea0ed07d1b8f66770b31fa8089a9336",
+  "format": "PNG",
+  "size": [
+    678,
+    452
+  ],
+  "exact_current_worker_and_render_pixels": true,
+  "after_prepare_png_visible_without_reopening": true,
+  "scene_beta_default_off": true,
+  "scope": "Actual IAB upload/PNG download plus offline pixel contract; no new image-quality claim."
+}

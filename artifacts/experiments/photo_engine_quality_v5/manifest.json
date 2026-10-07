@@ -1,0 +1,61 @@
+{
+  "scope": "Three actual small user JPEGs plus previously inspected portrait/synthetic regressions; source-only no reference target",
+  "engine": {
+    "engine": "RawTherapee",
+    "version": "5.11",
+    "pp3_version": 351,
+    "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+    "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+    "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+    "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+    "platform": "macOS universal, minimum 12.3",
+    "license": "GPL-3.0-or-later; separate unmodified application",
+    "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+  },
+  "profiles": {
+    "shadows-before.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305",
+    "candidate-shadows.pp3": "3a9f1182bb8f7b5fba3590b22a48c02656b543018ae5a9178be393a86dd1a355"
+  },
+  "inputs": [
+    {
+      "id": "lake",
+      "path": "data/user_photo_diagnostics/quality-v5/lake.jpg",
+      "sha256": "d7cde605f1628f23c859522423ae18f16e00155eb010f4f6f37f004988f74bf6"
+    },
+    {
+      "id": "dusk",
+      "path": "data/user_photo_diagnostics/quality-v5/dusk.jpg",
+      "sha256": "8967e82a836a949cc75d96ef58b4f5bdf2bf18a98b907f3132f2a5c5c72e590a"
+    },
+    {
+      "id": "rocks",
+      "path": "data/user_photo_diagnostics/quality-v5/rocks.jpg",
+      "sha256": "aa97e23ecb2409bd9ac107f04205448def522f425423e0ab3bd76bedb89a0674"
+    },
+    {
+      "id": "a2132-IMG_4947.dng",
+      "path": "data/raw/dngs/a2132-IMG_4947.dng",
+      "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+    },
+    {
+      "id": "synthetic-black",
+      "path": "data/user_photo_diagnostics/shadow-v2/black.jpg",
+      "sha256": "d3a30c16739a45dd6b1bbde9424f567ab9c0f5bc9216e838e8ac36932cff5ad7"
+    },
+    {
+      "id": "synthetic-gray-ramp",
+      "path": "data/user_photo_diagnostics/shadow-v2/gray-ramp.jpg",
+      "sha256": "45db18524894828b11ded1332e9df3539dcec8ecb856f37c7d690c76572d193b"
+    },
+    {
+      "id": "synthetic-shadow-sky-step",
+      "path": "data/user_photo_diagnostics/shadow-v2/shadow-sky-step.jpg",
+      "sha256": "2c42c153bc7811eb1227868acdc09a197ce95d163302bdc915fbc8f64302a99a"
+    },
+    {
+      "id": "synthetic-dark-grain",
+      "path": "data/user_photo_diagnostics/quality-v5/dark-grain.jpg",
+      "sha256": "b2f562cfc552268bd9a1925cbd12de4f6a24531bf3023717a764e3442a0e9568"
+    }
+  ]
+}

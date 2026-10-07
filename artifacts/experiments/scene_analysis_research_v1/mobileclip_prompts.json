@@ -1,0 +1,22 @@
+{
+  "scope": "Fixed before inference; rankings within these lists are diagnostic similarities, not calibrated probabilities or artistic intent.",
+  "subject": {
+    "people": ["a portrait photograph of a person", "a photograph of people"],
+    "natural_landscape": ["a landscape photograph of nature", "a photograph of mountains, trees, water or countryside"],
+    "indoor_room": ["a photograph of a room inside a building", "a photograph of an indoor living room or kitchen"],
+    "urban_architecture": ["a photograph of buildings or a city street", "an architectural photograph of a building"],
+    "animal_pet": ["a photograph of an animal", "a photograph of a pet dog or cat"],
+    "food": ["a photograph of food", "a photograph of a meal"],
+    "object_still_life": ["a close-up photograph of an object", "a still life photograph of everyday objects"],
+    "document_graphic": ["an image of a document, screenshot or graphic", "a photograph of a printed page"]
+  },
+  "lighting": {
+    "daylight": ["a photograph taken outdoors in daylight", "a photograph taken outdoors on a sunny day"],
+    "overcast": ["a photograph taken outdoors under an overcast sky", "a photograph taken outdoors on a cloudy day"],
+    "sunset_sunrise": ["a photograph of a sunset or sunrise", "a photograph of a warm sky at dusk or dawn"],
+    "night": ["a photograph taken outdoors at night", "a photograph of a night scene after dark"],
+    "indoor_artificial": ["a photograph taken indoors under artificial lighting", "a photograph of an interior lit by lamps"],
+    "indoor_natural": ["a photograph taken indoors in natural window light", "a photograph of an interior lit by daylight"],
+    "underexposed_daylight": ["an underexposed photograph taken during the daytime", "a daytime photograph that is much too dark"]
+  }
+}

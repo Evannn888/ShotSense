@@ -1,0 +1,33 @@
+{
+  "scope": "Synthetic display transfer reproduction, not original user photo/download acceptance",
+  "streamlit_version": "1.50.0",
+  "source_sha256": "dcab7cb23b1056355abf376ba716582e8c8bd93de129005a8ccbf6d7a527f6fd",
+  "input_png": {
+    "format": "PNG",
+    "size": [
+      1800,
+      65
+    ],
+    "bytes": 593,
+    "sha256": "f21f53798fa91d146259e15e5f4285b343122a03f38f2d11f816ef6975eb34a9"
+  },
+  "old_image_payload": {
+    "format": "JPEG",
+    "size": [
+      1460,
+      52
+    ],
+    "bytes": 17764,
+    "sha256": "70edf1f4c3ae8cf8996752a6c5363e5e166a150a29df544658d2276f59f63600"
+  },
+  "new_image_payload": {
+    "format": "PNG",
+    "size": [
+      1800,
+      65
+    ],
+    "bytes": 593,
+    "sha256": "f21f53798fa91d146259e15e5f4285b343122a03f38f2d11f816ef6975eb34a9"
+  },
+  "new_data_url_byte_identity": true
+}

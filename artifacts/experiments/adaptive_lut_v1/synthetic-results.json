@@ -1,0 +1,1810 @@
+[
+  {
+    "name": "Neutral ramp",
+    "lut": {
+      "version": "image-adaptive-3dlut-paired-srgb-v1",
+      "engine": "Image-Adaptive-3DLUT",
+      "model": {
+        "author_repository": "https://github.com/HuiZeng/Image-Adaptive-3DLUT",
+        "revision": "b491f6df64a588864739a157db271e5c848e1805",
+        "variant": "paired-sRGB",
+        "repository_license": "Apache-2.0",
+        "files": {
+          "pretrained_models/sRGB/classifier.pth": {
+            "bytes": 1083261,
+            "git_blob": "439f2ada316f45d1d28dd86a161790aa3b4e334b",
+            "sha256": "bae9865395625ecae58cfe86147e521093bb1e29e7b2544e02adb238b8035021",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/classifier.pth"
+          },
+          "pretrained_models/sRGB/LUTs.pth": {
+            "bytes": 1294452,
+            "git_blob": "0830dceee2256ea5d0965c029945c329fac82a26",
+            "sha256": "c1bb2bc4b7239c1a7e96159f5923123ba796b1fceb0b8c3132b423ea825b821a",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/LUTs.pth"
+          },
+          "models.py": {
+            "bytes": 12014,
+            "git_blob": "8fbc2de9c12a474de774880a524198d54fb25fb7",
+            "sha256": "3f39c49aebd2b85787638bc9d402d21d5d664b844edd5fb8d5e4ce1fdb1d9f3f",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models.py"
+          },
+          "models_x.py": {
+            "bytes": 8474,
+            "git_blob": "fb3c44475ec62682a062d84ed89601f6a4458a0e",
+            "sha256": "5553ed2306152ecb31a51951f20388de65b96898ddeb4b9d03dc52bf3aa7ad9e",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models_x.py"
+          },
+          "demo_eval.py": {
+            "bytes": 2793,
+            "git_blob": "f6dd73969940e4eb6a21f3f9ef587289bba712df",
+            "sha256": "6d41a39d39041a098cccef085571816935955f9bba42810d4059e3d01dce5bcd",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/demo_eval.py"
+          },
+          "trilinear_cpp/src/trilinear.cpp": {
+            "bytes": 7615,
+            "git_blob": "b4d75b04c36b97559d7421b2ff2df98ee16405a2",
+            "sha256": "5b2b132b625b4bb1ba802213831dcb02e6d4c70b0fffad99f6d3b045da988185",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/trilinear_cpp/src/trilinear.cpp"
+          },
+          "LICENSE": {
+            "bytes": 11357,
+            "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/LICENSE"
+          },
+          "README.md": {
+            "bytes": 5488,
+            "git_blob": "eae43b086353d920e83042098dbefad24a642267",
+            "sha256": "45cd2cc7d86bd7f45649308b508fd1e42b5061e15d89d0ca9980e72656dd8956",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/README.md"
+          }
+        },
+        "semantics": "Frozen external color/tone model, not validated Adobe parameters or a personal-photo preference model."
+      },
+      "weights": [
+        1.2961877584457397,
+        0.41304951906204224,
+        -1.2196706533432007
+      ],
+      "lut_sha256": "99c0acaaf0e0fd5842a4d77da8e896b3cfc135f6bdc7e5efb14a323544b645b9",
+      "size": [
+        256,
+        256
+      ],
+      "device": "cpu",
+      "row_chunk": 128,
+      "new_full_channel_fraction": 0.0,
+      "new_black_pixel_fraction": 0.09375,
+      "float_below_zero_pixel_fraction": 0.1015625,
+      "float_above_one_pixel_fraction": 0.0,
+      "input_pixels_sha256": "fb5f204ed84efa48484d193e260fcb573938c9153d852300b8f0cdf58cc2b85b",
+      "output_pixels_sha256": "a72a444309575895425801807e41fccdbad79b1a6d1fabc07ef3c19ec967ffa7",
+      "predictor_seconds": 0.010463624999999865,
+      "table_seconds": 0.014025750000000059,
+      "seconds": 0.024489874999999994,
+      "quality_status": "isolated experimental pilot; personal-photo preference pending",
+      "semantics": "Learned global sRGB color/tone transform of original pixels; not camera Kelvin, semantic region edits, denoising or reconstructed detail."
+    },
+    "half_export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 0.5,
+      "blend_space": "display sRGB",
+      "size": [
+        256,
+        256
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.984375,
+      "output_png_sha256": "042e86b7eae8826f2fa35eda86a97b7dca86c15f48eaa99c38cb6e0cecc70730",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "full_export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 1.0,
+      "blend_space": "display sRGB",
+      "size": [
+        256,
+        256
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.99609375,
+      "output_png_sha256": "eea3c9e40d7d10c6894c1e41f10c5d22189e2d4c1d0fe15f67f4b6141aead3ae",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "gray_ramp_channels": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        3,
+        4,
+        4
+      ],
+      [
+        5,
+        5,
+        5
+      ],
+      [
+        6,
+        6,
+        6
+      ],
+      [
+        7,
+        7,
+        7
+      ],
+      [
+        9,
+        8,
+        9
+      ],
+      [
+        10,
+        9,
+        10
+      ],
+      [
+        11,
+        11,
+        11
+      ],
+      [
+        12,
+        12,
+        13
+      ],
+      [
+        14,
+        13,
+        14
+      ],
+      [
+        15,
+        15,
+        16
+      ],
+      [
+        17,
+        16,
+        17
+      ],
+      [
+        19,
+        17,
+        19
+      ],
+      [
+        20,
+        19,
+        20
+      ],
+      [
+        21,
+        21,
+        22
+      ],
+      [
+        22,
+        22,
+        23
+      ],
+      [
+        24,
+        24,
+        24
+      ],
+      [
+        25,
+        25,
+        26
+      ],
+      [
+        27,
+        26,
+        27
+      ],
+      [
+        28,
+        28,
+        29
+      ],
+      [
+        30,
+        29,
+        30
+      ],
+      [
+        32,
+        30,
+        32
+      ],
+      [
+        33,
+        32,
+        33
+      ],
+      [
+        34,
+        33,
+        34
+      ],
+      [
+        36,
+        35,
+        36
+      ],
+      [
+        37,
+        37,
+        37
+      ],
+      [
+        39,
+        38,
+        39
+      ],
+      [
+        41,
+        40,
+        40
+      ],
+      [
+        43,
+        42,
+        42
+      ],
+      [
+        45,
+        44,
+        44
+      ],
+      [
+        45,
+        45,
+        45
+      ],
+      [
+        46,
+        46,
+        47
+      ],
+      [
+        48,
+        48,
+        48
+      ],
+      [
+        49,
+        50,
+        50
+      ],
+      [
+        51,
+        51,
+        51
+      ],
+      [
+        53,
+        53,
+        53
+      ],
+      [
+        55,
+        55,
+        55
+      ],
+      [
+        57,
+        57,
+        57
+      ],
+      [
+        58,
+        58,
+        58
+      ],
+      [
+        59,
+        60,
+        59
+      ],
+      [
+        60,
+        61,
+        61
+      ],
+      [
+        62,
+        63,
+        63
+      ],
+      [
+        64,
+        65,
+        64
+      ],
+      [
+        66,
+        66,
+        66
+      ],
+      [
+        68,
+        69,
+        68
+      ],
+      [
+        69,
+        70,
+        70
+      ],
+      [
+        70,
+        72,
+        71
+      ],
+      [
+        72,
+        73,
+        73
+      ],
+      [
+        73,
+        75,
+        74
+      ],
+      [
+        74,
+        76,
+        75
+      ],
+      [
+        76,
+        77,
+        77
+      ],
+      [
+        78,
+        79,
+        78
+      ],
+      [
+        79,
+        81,
+        80
+      ],
+      [
+        81,
+        82,
+        82
+      ],
+      [
+        82,
+        83,
+        83
+      ],
+      [
+        83,
+        84,
+        84
+      ],
+      [
+        84,
+        85,
+        85
+      ],
+      [
+        85,
+        87,
+        86
+      ],
+      [
+        86,
+        88,
+        87
+      ],
+      [
+        88,
+        89,
+        89
+      ],
+      [
+        89,
+        90,
+        90
+      ],
+      [
+        91,
+        92,
+        91
+      ],
+      [
+        92,
+        93,
+        93
+      ],
+      [
+        93,
+        94,
+        94
+      ],
+      [
+        94,
+        96,
+        95
+      ],
+      [
+        96,
+        97,
+        96
+      ],
+      [
+        97,
+        99,
+        98
+      ],
+      [
+        98,
+        100,
+        99
+      ],
+      [
+        100,
+        101,
+        101
+      ],
+      [
+        101,
+        103,
+        102
+      ],
+      [
+        102,
+        104,
+        103
+      ],
+      [
+        103,
+        105,
+        104
+      ],
+      [
+        104,
+        106,
+        105
+      ],
+      [
+        105,
+        108,
+        107
+      ],
+      [
+        107,
+        109,
+        108
+      ],
+      [
+        108,
+        110,
+        109
+      ],
+      [
+        109,
+        111,
+        110
+      ],
+      [
+        110,
+        112,
+        111
+      ],
+      [
+        111,
+        113,
+        112
+      ],
+      [
+        111,
+        114,
+        113
+      ],
+      [
+        112,
+        114,
+        113
+      ],
+      [
+        113,
+        115,
+        114
+      ],
+      [
+        114,
+        116,
+        115
+      ],
+      [
+        115,
+        117,
+        116
+      ],
+      [
+        116,
+        117,
+        117
+      ],
+      [
+        117,
+        118,
+        118
+      ],
+      [
+        118,
+        119,
+        119
+      ],
+      [
+        119,
+        121,
+        120
+      ],
+      [
+        120,
+        122,
+        121
+      ],
+      [
+        121,
+        123,
+        122
+      ],
+      [
+        122,
+        124,
+        123
+      ],
+      [
+        123,
+        125,
+        124
+      ],
+      [
+        124,
+        126,
+        125
+      ],
+      [
+        125,
+        127,
+        126
+      ],
+      [
+        126,
+        128,
+        127
+      ],
+      [
+        127,
+        129,
+        128
+      ],
+      [
+        128,
+        130,
+        129
+      ],
+      [
+        129,
+        131,
+        130
+      ],
+      [
+        130,
+        133,
+        131
+      ],
+      [
+        132,
+        134,
+        132
+      ],
+      [
+        133,
+        135,
+        133
+      ],
+      [
+        134,
+        136,
+        134
+      ],
+      [
+        134,
+        136,
+        135
+      ],
+      [
+        135,
+        137,
+        135
+      ],
+      [
+        135,
+        137,
+        136
+      ],
+      [
+        136,
+        138,
+        137
+      ],
+      [
+        137,
+        139,
+        138
+      ],
+      [
+        137,
+        139,
+        138
+      ],
+      [
+        138,
+        140,
+        139
+      ],
+      [
+        139,
+        141,
+        140
+      ],
+      [
+        140,
+        142,
+        141
+      ],
+      [
+        141,
+        142,
+        142
+      ],
+      [
+        142,
+        143,
+        142
+      ],
+      [
+        142,
+        144,
+        143
+      ],
+      [
+        143,
+        145,
+        144
+      ],
+      [
+        144,
+        146,
+        145
+      ],
+      [
+        144,
+        146,
+        146
+      ],
+      [
+        145,
+        147,
+        146
+      ],
+      [
+        146,
+        148,
+        147
+      ],
+      [
+        147,
+        149,
+        148
+      ],
+      [
+        148,
+        150,
+        149
+      ],
+      [
+        149,
+        151,
+        150
+      ],
+      [
+        150,
+        152,
+        150
+      ],
+      [
+        151,
+        152,
+        151
+      ],
+      [
+        151,
+        153,
+        152
+      ],
+      [
+        152,
+        154,
+        153
+      ],
+      [
+        153,
+        155,
+        153
+      ],
+      [
+        153,
+        155,
+        154
+      ],
+      [
+        154,
+        156,
+        155
+      ],
+      [
+        155,
+        156,
+        155
+      ],
+      [
+        156,
+        157,
+        156
+      ],
+      [
+        156,
+        158,
+        157
+      ],
+      [
+        157,
+        158,
+        157
+      ],
+      [
+        157,
+        159,
+        158
+      ],
+      [
+        158,
+        160,
+        159
+      ],
+      [
+        159,
+        160,
+        159
+      ],
+      [
+        159,
+        161,
+        160
+      ],
+      [
+        160,
+        162,
+        161
+      ],
+      [
+        161,
+        162,
+        161
+      ],
+      [
+        161,
+        163,
+        162
+      ],
+      [
+        162,
+        163,
+        162
+      ],
+      [
+        162,
+        164,
+        163
+      ],
+      [
+        163,
+        165,
+        164
+      ],
+      [
+        164,
+        165,
+        165
+      ],
+      [
+        165,
+        166,
+        165
+      ],
+      [
+        165,
+        166,
+        166
+      ],
+      [
+        166,
+        167,
+        167
+      ],
+      [
+        166,
+        167,
+        167
+      ],
+      [
+        167,
+        168,
+        168
+      ],
+      [
+        168,
+        169,
+        168
+      ],
+      [
+        168,
+        169,
+        169
+      ],
+      [
+        169,
+        170,
+        169
+      ],
+      [
+        169,
+        170,
+        170
+      ],
+      [
+        169,
+        171,
+        170
+      ],
+      [
+        170,
+        171,
+        171
+      ],
+      [
+        171,
+        172,
+        172
+      ],
+      [
+        171,
+        172,
+        172
+      ],
+      [
+        172,
+        173,
+        173
+      ],
+      [
+        173,
+        174,
+        173
+      ],
+      [
+        173,
+        175,
+        174
+      ],
+      [
+        174,
+        175,
+        175
+      ],
+      [
+        175,
+        176,
+        175
+      ],
+      [
+        176,
+        176,
+        176
+      ],
+      [
+        176,
+        177,
+        177
+      ],
+      [
+        177,
+        177,
+        178
+      ],
+      [
+        178,
+        178,
+        178
+      ],
+      [
+        179,
+        179,
+        179
+      ],
+      [
+        179,
+        180,
+        180
+      ],
+      [
+        180,
+        181,
+        180
+      ],
+      [
+        181,
+        182,
+        181
+      ],
+      [
+        182,
+        183,
+        182
+      ],
+      [
+        183,
+        183,
+        183
+      ],
+      [
+        184,
+        184,
+        183
+      ],
+      [
+        184,
+        185,
+        184
+      ],
+      [
+        185,
+        186,
+        185
+      ],
+      [
+        186,
+        187,
+        186
+      ],
+      [
+        187,
+        188,
+        187
+      ],
+      [
+        189,
+        190,
+        189
+      ],
+      [
+        190,
+        192,
+        190
+      ],
+      [
+        192,
+        194,
+        192
+      ],
+      [
+        193,
+        197,
+        195
+      ],
+      [
+        194,
+        196,
+        195
+      ],
+      [
+        193,
+        196,
+        194
+      ],
+      [
+        194,
+        195,
+        194
+      ],
+      [
+        194,
+        195,
+        194
+      ],
+      [
+        194,
+        196,
+        195
+      ],
+      [
+        195,
+        197,
+        196
+      ],
+      [
+        197,
+        198,
+        198
+      ],
+      [
+        198,
+        201,
+        200
+      ],
+      [
+        199,
+        201,
+        200
+      ],
+      [
+        199,
+        201,
+        200
+      ],
+      [
+        200,
+        201,
+        200
+      ],
+      [
+        201,
+        202,
+        201
+      ],
+      [
+        202,
+        203,
+        202
+      ],
+      [
+        203,
+        205,
+        204
+      ],
+      [
+        205,
+        207,
+        206
+      ],
+      [
+        207,
+        211,
+        208
+      ],
+      [
+        206,
+        210,
+        207
+      ],
+      [
+        205,
+        208,
+        206
+      ],
+      [
+        205,
+        207,
+        206
+      ],
+      [
+        205,
+        207,
+        206
+      ],
+      [
+        206,
+        207,
+        207
+      ],
+      [
+        207,
+        208,
+        207
+      ],
+      [
+        208,
+        210,
+        209
+      ],
+      [
+        210,
+        213,
+        210
+      ],
+      [
+        210,
+        212,
+        210
+      ],
+      [
+        210,
+        211,
+        210
+      ],
+      [
+        210,
+        211,
+        210
+      ],
+      [
+        211,
+        211,
+        211
+      ],
+      [
+        212,
+        212,
+        212
+      ],
+      [
+        213,
+        214,
+        213
+      ],
+      [
+        215,
+        216,
+        214
+      ],
+      [
+        216,
+        219,
+        216
+      ],
+      [
+        215,
+        217,
+        215
+      ],
+      [
+        214,
+        215,
+        214
+      ],
+      [
+        213,
+        214,
+        213
+      ],
+      [
+        213,
+        214,
+        213
+      ],
+      [
+        213,
+        214,
+        214
+      ],
+      [
+        214,
+        215,
+        214
+      ],
+      [
+        215,
+        217,
+        216
+      ],
+      [
+        217,
+        220,
+        218
+      ],
+      [
+        215,
+        218,
+        216
+      ],
+      [
+        214,
+        215,
+        215
+      ],
+      [
+        213,
+        214,
+        214
+      ],
+      [
+        213,
+        213,
+        214
+      ],
+      [
+        213,
+        214,
+        214
+      ],
+      [
+        215,
+        215,
+        216
+      ],
+      [
+        217,
+        217,
+        218
+      ],
+      [
+        219,
+        220,
+        220
+      ]
+    ],
+    "decreasing_channel_steps": [
+      9,
+      14,
+      9
+    ],
+    "maximum_neutral_channel_spread": 4
+  },
+  {
+    "name": "Color / skin-tone patches",
+    "lut": {
+      "version": "image-adaptive-3dlut-paired-srgb-v1",
+      "engine": "Image-Adaptive-3DLUT",
+      "model": {
+        "author_repository": "https://github.com/HuiZeng/Image-Adaptive-3DLUT",
+        "revision": "b491f6df64a588864739a157db271e5c848e1805",
+        "variant": "paired-sRGB",
+        "repository_license": "Apache-2.0",
+        "files": {
+          "pretrained_models/sRGB/classifier.pth": {
+            "bytes": 1083261,
+            "git_blob": "439f2ada316f45d1d28dd86a161790aa3b4e334b",
+            "sha256": "bae9865395625ecae58cfe86147e521093bb1e29e7b2544e02adb238b8035021",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/classifier.pth"
+          },
+          "pretrained_models/sRGB/LUTs.pth": {
+            "bytes": 1294452,
+            "git_blob": "0830dceee2256ea5d0965c029945c329fac82a26",
+            "sha256": "c1bb2bc4b7239c1a7e96159f5923123ba796b1fceb0b8c3132b423ea825b821a",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/LUTs.pth"
+          },
+          "models.py": {
+            "bytes": 12014,
+            "git_blob": "8fbc2de9c12a474de774880a524198d54fb25fb7",
+            "sha256": "3f39c49aebd2b85787638bc9d402d21d5d664b844edd5fb8d5e4ce1fdb1d9f3f",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models.py"
+          },
+          "models_x.py": {
+            "bytes": 8474,
+            "git_blob": "fb3c44475ec62682a062d84ed89601f6a4458a0e",
+            "sha256": "5553ed2306152ecb31a51951f20388de65b96898ddeb4b9d03dc52bf3aa7ad9e",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models_x.py"
+          },
+          "demo_eval.py": {
+            "bytes": 2793,
+            "git_blob": "f6dd73969940e4eb6a21f3f9ef587289bba712df",
+            "sha256": "6d41a39d39041a098cccef085571816935955f9bba42810d4059e3d01dce5bcd",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/demo_eval.py"
+          },
+          "trilinear_cpp/src/trilinear.cpp": {
+            "bytes": 7615,
+            "git_blob": "b4d75b04c36b97559d7421b2ff2df98ee16405a2",
+            "sha256": "5b2b132b625b4bb1ba802213831dcb02e6d4c70b0fffad99f6d3b045da988185",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/trilinear_cpp/src/trilinear.cpp"
+          },
+          "LICENSE": {
+            "bytes": 11357,
+            "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/LICENSE"
+          },
+          "README.md": {
+            "bytes": 5488,
+            "git_blob": "eae43b086353d920e83042098dbefad24a642267",
+            "sha256": "45cd2cc7d86bd7f45649308b508fd1e42b5061e15d89d0ca9980e72656dd8956",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/README.md"
+          }
+        },
+        "semantics": "Frozen external color/tone model, not validated Adobe parameters or a personal-photo preference model."
+      },
+      "weights": [
+        1.3761814832687378,
+        0.034227173775434494,
+        -0.9434611201286316
+      ],
+      "lut_sha256": "4548d2671338580b872d9304b4fe69537bf02b2b634f4b967d5b477bb4352a56",
+      "size": [
+        256,
+        256
+      ],
+      "device": "cpu",
+      "row_chunk": 128,
+      "new_full_channel_fraction": 0.0,
+      "new_black_pixel_fraction": 0.0,
+      "float_below_zero_pixel_fraction": 0.0625,
+      "float_above_one_pixel_fraction": 0.0,
+      "input_pixels_sha256": "b08e59446b329ded70a1af74585d99ed49b39a3a7edb9032ee9aca9d8c70dc7c",
+      "output_pixels_sha256": "c4df3c39fb32b6f61e4ce465d9e50e608a53e9fb179c65f46bcfbd668d9ce4a1",
+      "predictor_seconds": 0.008945957999999976,
+      "table_seconds": 0.005837500000000162,
+      "seconds": 0.014783875000000002,
+      "quality_status": "isolated experimental pilot; personal-photo preference pending",
+      "semantics": "Learned global sRGB color/tone transform of original pixels; not camera Kelvin, semantic region edits, denoising or reconstructed detail."
+    },
+    "half_export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 0.5,
+      "blend_space": "display sRGB",
+      "size": [
+        256,
+        256
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.875,
+      "output_png_sha256": "b5be5c98f085e843dfcecb2d6be30a93048b4b11194c590ad8cba688a5461bd6",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "full_export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 1.0,
+      "blend_space": "display sRGB",
+      "size": [
+        256,
+        256
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.9375,
+      "output_png_sha256": "f23f30244723d237deaedd55d8c4fc4d4e14e6dad219bb753811d1970c5ef532",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "input_patches": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        32,
+        32,
+        32
+      ],
+      [
+        192,
+        144,
+        112
+      ],
+      [
+        230,
+        195,
+        170
+      ],
+      [
+        138,
+        97,
+        78
+      ],
+      [
+        90,
+        120,
+        80
+      ],
+      [
+        70,
+        115,
+        150
+      ],
+      [
+        180,
+        155,
+        90
+      ],
+      [
+        180,
+        185,
+        190
+      ],
+      [
+        220,
+        220,
+        210
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        30,
+        45,
+        50
+      ]
+    ],
+    "output_patches": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        233,
+        234
+      ],
+      [
+        145,
+        145,
+        145
+      ],
+      [
+        11,
+        12,
+        12
+      ],
+      [
+        193,
+        153,
+        118
+      ],
+      [
+        210,
+        187,
+        170
+      ],
+      [
+        159,
+        109,
+        77
+      ],
+      [
+        96,
+        138,
+        77
+      ],
+      [
+        47,
+        124,
+        166
+      ],
+      [
+        185,
+        163,
+        83
+      ],
+      [
+        181,
+        185,
+        189
+      ],
+      [
+        210,
+        208,
+        207
+      ],
+      [
+        214,
+        7,
+        0
+      ],
+      [
+        24,
+        236,
+        19
+      ],
+      [
+        31,
+        22,
+        208
+      ],
+      [
+        1,
+        33,
+        44
+      ]
+    ]
+  },
+  {
+    "name": "Edge / subtle grain",
+    "lut": {
+      "version": "image-adaptive-3dlut-paired-srgb-v1",
+      "engine": "Image-Adaptive-3DLUT",
+      "model": {
+        "author_repository": "https://github.com/HuiZeng/Image-Adaptive-3DLUT",
+        "revision": "b491f6df64a588864739a157db271e5c848e1805",
+        "variant": "paired-sRGB",
+        "repository_license": "Apache-2.0",
+        "files": {
+          "pretrained_models/sRGB/classifier.pth": {
+            "bytes": 1083261,
+            "git_blob": "439f2ada316f45d1d28dd86a161790aa3b4e334b",
+            "sha256": "bae9865395625ecae58cfe86147e521093bb1e29e7b2544e02adb238b8035021",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/classifier.pth"
+          },
+          "pretrained_models/sRGB/LUTs.pth": {
+            "bytes": 1294452,
+            "git_blob": "0830dceee2256ea5d0965c029945c329fac82a26",
+            "sha256": "c1bb2bc4b7239c1a7e96159f5923123ba796b1fceb0b8c3132b423ea825b821a",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/LUTs.pth"
+          },
+          "models.py": {
+            "bytes": 12014,
+            "git_blob": "8fbc2de9c12a474de774880a524198d54fb25fb7",
+            "sha256": "3f39c49aebd2b85787638bc9d402d21d5d664b844edd5fb8d5e4ce1fdb1d9f3f",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models.py"
+          },
+          "models_x.py": {
+            "bytes": 8474,
+            "git_blob": "fb3c44475ec62682a062d84ed89601f6a4458a0e",
+            "sha256": "5553ed2306152ecb31a51951f20388de65b96898ddeb4b9d03dc52bf3aa7ad9e",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models_x.py"
+          },
+          "demo_eval.py": {
+            "bytes": 2793,
+            "git_blob": "f6dd73969940e4eb6a21f3f9ef587289bba712df",
+            "sha256": "6d41a39d39041a098cccef085571816935955f9bba42810d4059e3d01dce5bcd",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/demo_eval.py"
+          },
+          "trilinear_cpp/src/trilinear.cpp": {
+            "bytes": 7615,
+            "git_blob": "b4d75b04c36b97559d7421b2ff2df98ee16405a2",
+            "sha256": "5b2b132b625b4bb1ba802213831dcb02e6d4c70b0fffad99f6d3b045da988185",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/trilinear_cpp/src/trilinear.cpp"
+          },
+          "LICENSE": {
+            "bytes": 11357,
+            "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/LICENSE"
+          },
+          "README.md": {
+            "bytes": 5488,
+            "git_blob": "eae43b086353d920e83042098dbefad24a642267",
+            "sha256": "45cd2cc7d86bd7f45649308b508fd1e42b5061e15d89d0ca9980e72656dd8956",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/README.md"
+          }
+        },
+        "semantics": "Frozen external color/tone model, not validated Adobe parameters or a personal-photo preference model."
+      },
+      "weights": [
+        1.9156581163406372,
+        -0.0335984006524086,
+        -1.1373385190963745
+      ],
+      "lut_sha256": "9a96256ea41b42e3b3a469e452f9dd91c6de8898bebc25824fbc23877c49065b",
+      "size": [
+        256,
+        256
+      ],
+      "device": "cpu",
+      "row_chunk": 128,
+      "new_full_channel_fraction": 0.5,
+      "new_black_pixel_fraction": 0.0,
+      "float_below_zero_pixel_fraction": 0.0,
+      "float_above_one_pixel_fraction": 0.5,
+      "input_pixels_sha256": "37edbafcac8979976024eef1803c45e9057bb2e22e53924951f8439ad23fb5ef",
+      "output_pixels_sha256": "bab0d9a6b39e69d72e56ae9707a7c4c7edfc38c801ba7bcefc273dcd95f0705e",
+      "predictor_seconds": 0.006694666000000016,
+      "table_seconds": 0.005665583999999946,
+      "seconds": 0.012360624999999903,
+      "quality_status": "isolated experimental pilot; personal-photo preference pending",
+      "semantics": "Learned global sRGB color/tone transform of original pixels; not camera Kelvin, semantic region edits, denoising or reconstructed detail."
+    },
+    "half_export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 0.5,
+      "blend_space": "display sRGB",
+      "size": [
+        256,
+        256
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 1.0,
+      "output_png_sha256": "61eb7ec6ec7b6e335ce397c3d52f6f3b7aed71a93e75589c994881f01a24371b",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "full_export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 1.0,
+      "blend_space": "display sRGB",
+      "size": [
+        256,
+        256
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 1.0,
+      "output_png_sha256": "8ebb254e1104822c3bf2c1421f105af0ff8d9738982d500ec7fbd11d49b9cbb5",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "grain_std_channels": {
+      "original": [
+        1.9978978030362997,
+        1.9978978030362997,
+        1.9978978030362997
+      ],
+      "half": [
+        3.2351418555073344,
+        3.2261123496953847,
+        3.6523264487884934
+      ],
+      "full": [
+        4.580397229008633,
+        4.788505569249665,
+        4.862776797509539
+      ]
+    }
+  }
+]

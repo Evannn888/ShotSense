@@ -1,0 +1,426 @@
+{
+  "scope": "Opt-in native relative color/local contrast editing and bounded10-source diagnostic comparison; no universal automatic-quality/default acceptance.",
+  "processing_version": "rawtherapee-recipes-v5",
+  "fine_tuning_version": "rawtherapee-fine-tuning-v1",
+  "control_limits": {
+    "warmth": [
+      -20,
+      20
+    ],
+    "tint": [
+      -20,
+      20
+    ],
+    "vibrance": [
+      -20,
+      20
+    ],
+    "local_contrast": [
+      0,
+      20
+    ]
+  },
+  "defaults": {
+    "warmth": 0,
+    "tint": 0,
+    "vibrance": 0,
+    "local_contrast": 0
+  },
+  "full_suite": {
+    "path": "data/user_photo_diagnostics/finetune-v7/full-tests.xml",
+    "sha256": "686bd6b2a02214216f00598a6595f1bd0057249b0ecd44e0c0a763cd2b95bef5",
+    "passed": 69,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 80.66
+  },
+  "focused_final": {
+    "path": "data/user_photo_diagnostics/finetune-v7/focused-final.xml",
+    "sha256": "21bd491d9f28bc548c518245b2662e4f92e64f8c2de4ca0bfd6582c2286faa88",
+    "passed": 3,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 7.384
+  },
+  "initial_focused": {
+    "path": "data/user_photo_diagnostics/finetune-v7/focused-tests.xml",
+    "sha256": "fcd81abae87ffd628c65e4f37ef691bb5a5d1f46c614c29406cbc0cb08d6b522",
+    "passed": 4,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 6.321
+  },
+  "initial_full_suite_retained": {
+    "path": "data/user_photo_diagnostics/finetune-v7/full-tests-initial.xml",
+    "sha256": "fbf4ff15f5c4ae7d10fd680d163dd4307f51500160672f0289f5a4849df40ae2",
+    "passed": 68,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 82.345
+  },
+  "actual_worker_reports": {
+    "ahmet-natural": {
+      "path": "data/user_photo_diagnostics/finetune-v7/worker-ahmet-natural/report.json",
+      "sha256": "f6a119c7b85c676c951908453d5c4c1bf9dfa3cb2c37188dc9f81af14027c31c",
+      "report": {
+        "input": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+        "input_sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3",
+        "settings": {
+          "vibrance": -4,
+          "local_contrast": 6
+        },
+        "memory_semantics": "250ms sampled process-tree RSS sum including sampling command; shared pages may count twice, short peaks may be missed. macOS rusage high-water bytes are separately recorded.",
+        "worker_call_seconds": 29.821427958,
+        "status": "passed",
+        "fine_tuning": {
+          "version": "rawtherapee-fine-tuning-v1",
+          "settings": {
+            "warmth": 0,
+            "tint": 0,
+            "vibrance": -4,
+            "local_contrast": 6
+          },
+          "input_pixels_sha256": "00663e9b3f0fee6406d568292636757bdd500d6e70d5e2d897e8e62e133095eb",
+          "size": [
+            8192,
+            6144
+          ],
+          "engine_applied": true,
+          "semantics": "Relative sRGB edits of the fixed recipe result; not original camera Kelvin, RAW labels, recovered detail or semantic region masks.",
+          "engine": {
+            "engine": "RawTherapee",
+            "version": "5.11",
+            "pp3_version": 351,
+            "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+            "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+            "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+            "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+            "platform": "macOS universal, minimum 12.3",
+            "license": "GPL-3.0-or-later; separate unmodified application",
+            "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+          },
+          "profile_sha256": "86935f7101231d48cfb1ca728ea2a2e9db8dbc1a7314152d186c2c0eb1bd4b55",
+          "neutral_profile_sha256": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+          "output_pixels_sha256": "37c600989197a048d9a24bf850653e935b04cdf360110727cc0b98fdff3358bd",
+          "new_full_channel_fraction": 2.5033950805664062e-06,
+          "seconds": 24.751378415999998,
+          "local_worker_seconds": 29.741825207999998
+        },
+        "export": {
+          "renderer_version": "rawtherapee-recipes-v5",
+          "strength": 1.0,
+          "blend_space": "display sRGB",
+          "size": [
+            8192,
+            6144
+          ],
+          "full_resolution": true,
+          "changed_pixel_fraction": 1.0,
+          "output_png_sha256": "489d30d24a1b94b501dfdd1471da110b65cfab45a9e5244f1c73e691ced29d57",
+          "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+        },
+        "source_preserved": true,
+        "matches_frozen_native_candidate": true,
+        "zero_strength_identity": true,
+        "total_seconds": 46.242291333,
+        "rss": {
+          "tree_peak_bytes": 1858764800,
+          "root_peak_bytes": 1857142784,
+          "samples": 169
+        },
+        "root_high_water_bytes": 2055585792,
+        "children_high_water_bytes": 1364410368
+      },
+      "output_png": {
+        "path": "data/user_photo_diagnostics/finetune-v7/worker-ahmet-natural/result.png",
+        "sha256": "489d30d24a1b94b501dfdd1471da110b65cfab45a9e5244f1c73e691ced29d57"
+      }
+    },
+    "martin-natural": {
+      "path": "data/user_photo_diagnostics/finetune-v7/worker-martin-natural/report.json",
+      "sha256": "065183cccbabbfdbc0c22859f11991b79610d182968801d304e81cfa91376c6f",
+      "report": {
+        "input": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+        "input_sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d",
+        "settings": {
+          "vibrance": -4,
+          "local_contrast": 6
+        },
+        "memory_semantics": "250ms sampled process-tree RSS sum including sampling command; shared pages may count twice, short peaks may be missed. macOS rusage high-water bytes are separately recorded.",
+        "worker_call_seconds": 25.840714875,
+        "status": "passed",
+        "fine_tuning": {
+          "version": "rawtherapee-fine-tuning-v1",
+          "settings": {
+            "warmth": 0,
+            "tint": 0,
+            "vibrance": -4,
+            "local_contrast": 6
+          },
+          "input_pixels_sha256": "a06ba922c62a19007ea64b8a9a32c48e68725dd214c2b40ced3b3c629bdb05f1",
+          "size": [
+            8688,
+            5712
+          ],
+          "engine_applied": true,
+          "semantics": "Relative sRGB edits of the fixed recipe result; not original camera Kelvin, RAW labels, recovered detail or semantic region masks.",
+          "engine": {
+            "engine": "RawTherapee",
+            "version": "5.11",
+            "pp3_version": 351,
+            "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+            "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+            "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+            "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+            "platform": "macOS universal, minimum 12.3",
+            "license": "GPL-3.0-or-later; separate unmodified application",
+            "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+          },
+          "profile_sha256": "86935f7101231d48cfb1ca728ea2a2e9db8dbc1a7314152d186c2c0eb1bd4b55",
+          "neutral_profile_sha256": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+          "output_pixels_sha256": "5e68e55073ef693a694f80d05722cb0795335424869e014a43b05a29db4d5086",
+          "new_full_channel_fraction": 6.85529736756581e-05,
+          "seconds": 22.543428375,
+          "local_worker_seconds": 25.775029375000003
+        },
+        "export": {
+          "renderer_version": "rawtherapee-recipes-v5",
+          "strength": 1.0,
+          "blend_space": "display sRGB",
+          "size": [
+            8688,
+            5712
+          ],
+          "full_resolution": true,
+          "changed_pixel_fraction": 0.9982528664089946,
+          "output_png_sha256": "f9acf6428950f5976dac416e217f1253375b7a4ce1ee33d1677cdabe473dbb82",
+          "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+        },
+        "source_preserved": true,
+        "matches_frozen_native_candidate": true,
+        "zero_strength_identity": true,
+        "total_seconds": 37.687433125,
+        "rss": {
+          "tree_peak_bytes": 1811644416,
+          "root_peak_bytes": 1771044864,
+          "samples": 138
+        },
+        "root_high_water_bytes": 1911242752,
+        "children_high_water_bytes": 1360461824
+      },
+      "output_png": {
+        "path": "data/user_photo_diagnostics/finetune-v7/worker-martin-natural/result.png",
+        "sha256": "f9acf6428950f5976dac416e217f1253375b7a4ce1ee33d1677cdabe473dbb82"
+      }
+    }
+  },
+  "isolated_actual50MP_app": {
+    "path": "data/user_photo_diagnostics/finetune-v7/app-report.json",
+    "sha256": "ff7fa5ed294d66a4d51a19bf128d56eb6d4c1898499892772b7dc4c97283be0b",
+    "report": {
+      "scope": "Isolated AppTest of actual50MP fine form/export/save, not the live browser.",
+      "status": "passed",
+      "form_actual_50MP_worker": true,
+      "display_png_json_match": true,
+      "private_save_matches": true,
+      "no_actual_downloads_write": true,
+      "size": [
+        8192,
+        6144
+      ],
+      "output_png_sha256": "489d30d24a1b94b501dfdd1471da110b65cfab45a9e5244f1c73e691ced29d57",
+      "fine_settings": {
+        "warmth": 0,
+        "tint": 0,
+        "vibrance": -4,
+        "local_contrast": 6
+      },
+      "seconds": 67.82339675
+    }
+  },
+  "preservation": {
+    "core_unchanged_against_HEAD": {
+      "src/inference.py": "ba8d6b7c50209f4e50737dc3af8d37d4577f6ce79a5ae13915f64ac4286e8873",
+      "src/preview.py": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62",
+      "src/color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+      "src/preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6",
+      "src/extract_labels.py": "d8c9b2b2a261f41329437284de9874afa87b062c9d9b02ad51380eed548e4dde",
+      "artifacts/model/model.onnx": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+      "artifacts/model/model.json": "0e8f81c12684ce3ae2b993dbb097883df1576786c830235da2cfb4e6003b01b2"
+    },
+    "profiles_unchanged_since_v5": {
+      "artifacts/photo_engine/neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+      "artifacts/photo_engine/natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b",
+      "artifacts/photo_engine/chroma.pp3": "9828481c3d842fa443415f3f0f3c2626889133e5819abd0fbf6c3fa448faff0a",
+      "artifacts/photo_engine/shadows.pp3": "3a9f1182bb8f7b5fba3590b22a48c02656b543018ae5a9178be393a86dd1a355"
+    },
+    "jpeg_decoder_unchanged_this_change": "969f6ef4ae05542f90f1477dc100623e30460e8c2bd4f732b81936acbf55f5f7",
+    "original_engine_functions_unchanged": [
+      "engine_identity",
+      "select_recipe",
+      "process_photo",
+      "render_photo"
+    ],
+    "source_inputs_preserved": [
+      {
+        "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+        "path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+        "bytes": 10823098,
+        "header_size": [
+          8192,
+          6144
+        ],
+        "sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3"
+      },
+      {
+        "id": "martin-bennie-MhYU5K4A93I-unsplash",
+        "path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+        "bytes": 2779239,
+        "header_size": [
+          8688,
+          5712
+        ],
+        "sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d"
+      },
+      {
+        "id": "nir-himi-1P1yaGS_Gek-unsplash",
+        "path": "/Users/evanchen/Downloads/nir-himi-1P1yaGS_Gek-unsplash.jpg",
+        "bytes": 1333473,
+        "header_size": [
+          2809,
+          4213
+        ],
+        "sha256": "649d9b8d4763487d787574812486cd62a381c6c25e92337223bafb59a1f3f5ee"
+      },
+      {
+        "id": "a0113-IMG_1129",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0113-IMG_1129.dng",
+        "bytes": 13563322,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5"
+      },
+      {
+        "id": "a0575-kme_040",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0575-kme_040.dng",
+        "bytes": 12118860,
+        "header_size": [
+          3944,
+          2622
+        ],
+        "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+      },
+      {
+        "id": "a0715-060812_182920__MG_6255",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+        "bytes": 11679930,
+        "header_size": [
+          4476,
+          2954
+        ],
+        "sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef"
+      },
+      {
+        "id": "a2049-IMG_1585",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2049-IMG_1585.dng",
+        "bytes": 14388136,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "288159dc4f30ded26db0f059d40c8ff85c9f59128cc8f3009c0862eb2b7ec22c"
+      },
+      {
+        "id": "a2132-IMG_4947",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2132-IMG_4947.dng",
+        "bytes": 12665412,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+      },
+      {
+        "id": "a2270-_DSC0033",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2270-_DSC0033.dng",
+        "bytes": 3760142,
+        "header_size": [
+          3040,
+          2014
+        ],
+        "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+      },
+      {
+        "id": "a3246-kme_445",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a3246-kme_445.dng",
+        "bytes": 6749044,
+        "header_size": [
+          3596,
+          2360
+        ],
+        "sha256": "ff04a6274a462690707ec2dffd5644a10dc9342f7b8e089170d5b65044361442"
+      }
+    ],
+    "engine": {
+      "engine": "RawTherapee",
+      "version": "5.11",
+      "pp3_version": 351,
+      "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+      "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+      "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+      "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+      "platform": "macOS universal, minimum 12.3",
+      "license": "GPL-3.0-or-later; separate unmodified application",
+      "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+    }
+  },
+  "fixed_scene_comparison": {
+    "path": "data/user_photo_diagnostics/finetune-v7/report.json",
+    "sha256": "eefcaecf4750558596538063847b77c5c11ec93f6ef4873047d42ed182d8532f"
+  },
+  "native_endpoints": {
+    "path": "data/user_photo_diagnostics/finetune-v7/endpoint-report.json",
+    "sha256": "108be23dd06a2aa2e0804fd601caa4d18618eb36fdf305dfc27a2f15489a06ca"
+  },
+  "neutral_chart_signs": {
+    "path": "artifacts/experiments/photo_engine_finetune_v7/chart-signs.json",
+    "sha256": "3c5d48f15149351c5f78368099c2082f4f9c2555941b668564696c19f9ad6472"
+  },
+  "server": {
+    "old_pid": 43253,
+    "current_pid": 45405,
+    "health": "ok",
+    "url": "http://127.0.0.1:8501/",
+    "restart": "Graceful replacement after final69-test regression pass.",
+    "live_browser": "Current client delivery/visual acceptance not independently verified."
+  },
+  "quality_limits": "Mild+4vibrance/+6local contrast adds0.441% full-channel pixels on alpine/cloud case; no automatic promotion. Manual controls warn above0.1%. Existing softness/grain/compression/clipping and native-control endpoint risks remain. User preference/live-browser delivery acceptance is separate.",
+  "source_sha256": {
+    "artifacts/experiments/photo_engine_finetune_v7/ACCEPTANCE.md": "52be8b507684cd9f577cd8fd2d165778557f27cdcc27a174e0dd94edd052b488",
+    "artifacts/experiments/photo_engine_finetune_v7/INITIAL_FAILURES.md": "4d0c3cbf77449b98222449d54d341c1585392fc44da108887d5518cdfbcaa4bb",
+    "artifacts/experiments/photo_engine_finetune_v7/PROTOCOL.md": "a28734c21c309c14804ed0f132d9772727e5fbf62d470f271c2b5f2fad18818f",
+    "artifacts/experiments/photo_engine_finetune_v7/chart-signs.json": "3c5d48f15149351c5f78368099c2082f4f9c2555941b668564696c19f9ad6472",
+    "artifacts/experiments/photo_engine_finetune_v7/compare.py": "90c64f5feb46bd941852d4593244afefa2d161318ac981fba8fe00767b1f233d",
+    "artifacts/experiments/photo_engine_finetune_v7/inputs.json": "f9c5d17ee5c215c0ec4ac1e40bd4548241fbedeb4e0cc94aa50e3bdf93f77283",
+    "artifacts/experiments/photo_engine_finetune_v7/photo_engine-before.py": "619111f8f6b0b6abcf966519c7b6c27ba44fdd837303a213337a7de374364aa7",
+    "artifacts/experiments/photo_engine_finetune_v7/streamlit_app-before.py": "73bbc6bfb01ebc76aabd7eda2304a19b3f6df3d47a8c137822f5663b33260f49",
+    "artifacts/experiments/photo_engine_finetune_v7/tests-before.py": "6da832c7a0640af34986b735dcdeed3777f7bd7ca084d0e4d71c079e2741def2",
+    "artifacts/experiments/photo_engine_finetune_v7/verify_app.py": "af13b2830dbafea05959d1617a978975885dc550b0583bb943b571bc864708a1",
+    "artifacts/experiments/photo_engine_finetune_v7/verify_worker.py": "baa543fcab2f623070f84bc67ec6453cb1843059eb4cc510055101219595ab77"
+  },
+  "current_code_sha256": {
+    "app/streamlit_app.py": "b1965a4047a39469cc305e3c555137bcf0938af6da0a536338e77b71ca57318b",
+    "src/photo_engine.py": "ac2f2186bd8a4651320322537f56e03323adf94c3def5193d11ed5deda2f95d7",
+    "src/jpeg_inference.py": "969f6ef4ae05542f90f1477dc100623e30460e8c2bd4f732b81936acbf55f5f7",
+    "tests/test_photo_engine.py": "441ab98c10cd4067354388e935c6dce75c175bb1d0ac4be072f06975b27b33e1",
+    "tests/test_photo_fine_tuning.py": "080dce1f7d0b9c0ef04a0ceb2432e59bdd67c8684426a894044d7ff48e04ce91",
+    "README.md": "b5bf22d72c29da7b7569dcb7df470767c65d3a63aa96f90b332a5e4ef7a81e83",
+    "SHOTSENSE_MASTER_PLAN.md": "342aedad5d6da5031cf13add174da2d98445a55446310c12b4586160511ab255"
+  }
+}

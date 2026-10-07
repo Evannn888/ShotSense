@@ -1,0 +1,7 @@
+{
+  "prior_fixture": "a4133-dgw_020.dng",
+  "reason": "Frozen WBv2 warm-only candidate does not pass actual bounded evidence; preserved in audit, not a positive route anymore. Initial functional assertion failure retained.",
+  "positive_fixture": "a3442-mb_060909_003.dng",
+  "photographic_rules_unchanged": true,
+  "new_test": "Synthetic warm tint-only pipeline and actual bounded preview evidence parity; not photographic validation."
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Unchanged result explanations and same-input explicit-gentle control only; no personal-photo improvement acceptance.",
+  "source_sha256": {
+    "app/streamlit_app.py": "2de4ae74c8a68daccde023267fd47a2e68b9d8d220817ba7562a16ce5c80d014",
+    "tests/test_photo_engine.py": "effcc051e6aa148d5ddf4ae0267163bd1a330fe65efdfbb4f11e5ec60ba952ea",
+    "src/photo_engine.py": "1de69fcd12d1b6c4b3132d62adcef0f377fd08184f80c903b2577362996c8eaa",
+    "artifacts/photo_engine/neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+    "artifacts/photo_engine/natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b",
+    "artifacts/photo_engine/chroma.pp3": "9828481c3d842fa443415f3f0f3c2626889133e5819abd0fbf6c3fa448faff0a"
+  },
+  "checks": {
+    "full_suite": {
+      "passed": 60,
+      "failures": 0,
+      "skipped": 0,
+      "elapsed_seconds": 62.088
+    },
+    "focused_real_worker_app_test": "passed",
+    "unchanged_core": "photo engine, PP3 recipes and auto clipping guard match original pilot hashes",
+    "original_pilot_source_snapshots": "app_before.py/tests_before.py hashes match original59-test verification",
+    "server_health": "ok, port8501",
+    "real_browser": "Current read attempts failed at CDP focus commands; no UI action or current-view proof claimed",
+    "photographic_quality": "not newly evaluated; prior finite diagnostic and personal-photo limitations remain"
+  }
+}

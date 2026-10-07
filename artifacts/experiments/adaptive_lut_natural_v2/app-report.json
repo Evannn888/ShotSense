@@ -1,0 +1,14 @@
+{
+  "scope": "Actual50MPworker result in isolated AppTest; real JPEG button/worker route covered by functional regression. Live-browser delivery remains unverified.",
+  "status": "passed",
+  "display_download_local_save_exact": true,
+  "matching_json": true,
+  "original_size_native_crop_exact": true,
+  "no_actual_downloads_write": true,
+  "size": [
+    8192,
+    6144
+  ],
+  "png_bytes": 75042227,
+  "seconds": 28.491817124999997
+}

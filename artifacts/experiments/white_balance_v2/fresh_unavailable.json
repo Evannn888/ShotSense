@@ -1,0 +1,9 @@
+[
+  {
+    "id": "green_landscape",
+    "title": "Rocky landscape with green trees and cloudy sky.jpg",
+    "error": "HTTP Error 429: Too many requests (f061ab2)",
+    "http_status": 429,
+    "retry_after": "1"
+  }
+]

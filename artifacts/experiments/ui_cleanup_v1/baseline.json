@@ -1,0 +1,19 @@
+{
+  "sha256": {
+    "app/streamlit_app.py": "63d5dc10901c7c329282e1225410e8c3fa800f543d0bc596c8eacecf9e27ef4e",
+    "src/lut_natural.py": "0b6d116d4c5f445a5de36644c3ca821a3ac9a23fedc6f59296769c6c7b5f167a",
+    "src/white_balance.py": "81c67f60f1382a4e4e9bc3f85e4aaafd1062b886f845cdaeb2acdf3fe93005cb",
+    "src/scene_policy.py": "89cb9750c864947242ebaf0d074ed6995ad07e84ed81c112c2853f3cfcb100fb",
+    "src/photo_engine.py": "ac2f2186bd8a4651320322537f56e03323adf94c3def5193d11ed5deda2f95d7",
+    "src/jpeg_inference.py": "969f6ef4ae05542f90f1477dc100623e30460e8c2bd4f732b81936acbf55f5f7",
+    "src/inference.py": "ba8d6b7c50209f4e50737dc3af8d37d4577f6ce79a5ae13915f64ac4286e8873",
+    "src/preview.py": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62",
+    "requirements.lock.txt": "2e25fa64419b03f08af92f9f58b2330b3d9e8811b05a0d81b901433b645e55b0",
+    "artifacts/model/model.onnx": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+    "artifacts/model/model.json": "0e8f81c12684ce3ae2b993dbb097883df1576786c830235da2cfb4e6003b01b2"
+  },
+  "approved_changes": [
+    "app/streamlit_app.py"
+  ],
+  "scope": "UI only; preserve current defaults, workers, export pixels and research decisions."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+    "shape": [
+      6144,
+      8192,
+      3
+    ],
+    "resize_max_abs": 5.960464477539063e-08,
+    "weights_max_abs": 1.7881393432617188e-07,
+    "input_pixels_sha256": "a11dbba98ab50c03463b4c9cbd15364a1cc13da8d04958e6a7e990e04434b6bb",
+    "semantics": "Large full-float input is used only for author-resize reference verification; isolated production trial uses bounded sampling."
+  },
+  {
+    "id": "martin-bennie-MhYU5K4A93I-unsplash",
+    "shape": [
+      5712,
+      8688,
+      3
+    ],
+    "resize_max_abs": 1.1920928955078125e-07,
+    "weights_max_abs": 1.1920928955078125e-07,
+    "input_pixels_sha256": "f3dbe37f4a769b2fa6ccb809230d2753703f1c5a43599c0d12d90e5e07dacfd9",
+    "semantics": "Large full-float input is used only for author-resize reference verification; isolated production trial uses bounded sampling."
+  }
+]

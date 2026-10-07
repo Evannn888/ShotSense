@@ -1,0 +1,9 @@
+{
+  "status": "initial compiler process timed out after 60 seconds",
+  "stage": "swiftc -O, before classification or face inference",
+  "cause": "not established; initial mixed-type dictionary expressions were simplified before retry",
+  "retained_source": ["vision_probe-initial.swift", "run_probe-initial.py"],
+  "retained_log": "data/user_photo_diagnostics/scene-analysis-research-v1.log",
+  "cleanup": "termination was attempted for task-owned orphan Swift frontend PID54577; it had already exited",
+  "retry": "explicit dictionary assignments; compiler timeout180s; partial frozen inputs retained and checked"
+}

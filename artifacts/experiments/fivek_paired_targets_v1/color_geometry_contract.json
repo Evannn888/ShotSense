@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "intent": "relative colorimetric",
+  "intent_value": 1,
+  "flags": 256,
+  "destination_icc_sha256": "fc2029b72151a059d3332fecc8ea12838b4289069fc6fe51a865c9be1aacfe74",
+  "black_point_compensation": false,
+  "optimizer": false,
+  "library_sha256": "f99d572bb2e82b53e330b9d6403d745122a6a4efc24e818b519ef5acd271007c",
+  "library_version": 2170,
+  "source_recipe": {
+    "demosaic_algorithm": "AHD",
+    "half_size": false,
+    "four_color_rgb": false,
+    "dcb_iterations": 0,
+    "dcb_enhance": false,
+    "fbdd_noise_reduction": "Off",
+    "noise_thr": null,
+    "median_filter_passes": 0,
+    "use_camera_wb": true,
+    "use_auto_wb": false,
+    "user_wb": null,
+    "user_flip": null,
+    "user_black": null,
+    "user_cblack": null,
+    "user_sat": null,
+    "no_auto_bright": true,
+    "auto_bright_thr": 0.01,
+    "adjust_maximum_thr": 0.0,
+    "bright": 1.0,
+    "highlight_mode": "Clip",
+    "exp_shift": null,
+    "exp_preserve_highlights": 0.0,
+    "no_auto_scale": false,
+    "chromatic_aberration": [
+      1.0,
+      1.0
+    ],
+    "bad_pixels_path": null
+  },
+  "source_output": {
+    "output_color": "sRGB",
+    "output_bps": 8,
+    "gamma": [
+      2.4,
+      12.92
+    ]
+  },
+  "analysis_max_edge": 960,
+  "geometry_gate": {
+    "aspect_difference_max": 0.005,
+    "minimum_inliers": 25,
+    "minimum_inlier_ratio": 0.4,
+    "corner_displacement_max_pixels": 3,
+    "median_identity_error_max_pixels": 2
+  },
+  "geometry_limits": "Resized-view feature diagnostic; not native subpixel alignment proof or independent quality."
+}

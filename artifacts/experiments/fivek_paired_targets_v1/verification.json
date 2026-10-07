@@ -1,0 +1,63 @@
+{
+  "acquired": 100,
+  "audited": 100,
+  "source_only_crop_audited": 100,
+  "original_target_bytes": 5366452370,
+  "geometry_counts": {
+    "provisionally_aligned": 25,
+    "quarantined": 75
+  },
+  "split_geometry_counts": {
+    "train": {
+      "provisionally_aligned": 18,
+      "quarantined": 62
+    },
+    "val": {
+      "quarantined": 13,
+      "provisionally_aligned": 7
+    }
+  },
+  "icc_descriptions": {
+    "ProPhoto RGB": 100
+  },
+  "icc_hashes": {
+    "0a8ef7d1d958d98225b3b71d93d9e8e3cecd9c302e014973d025d2a977ecf27c": 100
+  },
+  "native_size_equal_count": 1,
+  "default_crop_geometry_counts": {
+    "provisionally_aligned": 99,
+    "quarantined": 1
+  },
+  "default_crop_native_size_match_count": 99,
+  "default_crop_split_geometry_counts": {
+    "train": {
+      "provisionally_aligned": 79,
+      "quarantined": 1
+    },
+    "val": {
+      "provisionally_aligned": 20
+    }
+  },
+  "protected_identity_count": 19,
+  "originals_and_derived_hashes_match": true,
+  "checks": {
+    "srgb16_identity_max_error_codes": 0,
+    "prophoto_neutral_max_channel_spread_codes": 2,
+    "neutral_ramp_monotone": true,
+    "pillow8_parity_max_error_codes": 1,
+    "identity_geometry_passed": true,
+    "cropped_geometry_rejected": true
+  },
+  "application_health": {
+    "status": 200,
+    "body": "ok"
+  },
+  "diff_check_passed": true,
+  "trained_model": false,
+  "controller_integrated": false,
+  "test_pixels_read": false,
+  "native_pixel_alignment_accepted": false,
+  "independent_photo_quality_accepted": false,
+  "whole_suite_rerun": false,
+  "limitations": "Provisional resized-view geometry only; reviewed grouping is incomplete, pretrained FiveK overlap exists, RAW developer differs from Adobe and phone JPEGs. No training or automatic-quality claim."
+}

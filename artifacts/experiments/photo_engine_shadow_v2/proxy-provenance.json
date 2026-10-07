@@ -1,0 +1,42 @@
+{
+  "scope": "Screenshot-derived, color-managed proxy; original JPEG unavailable. Not original-resolution personal-photo acceptance.",
+  "screenshot_size": [
+    1250,
+    562
+  ],
+  "screenshot_sha256": "4e2573e8b8ce6d3d6d164b9f2147def87b9032259562bf2d5834a2e6b1f9ee2e",
+  "display_profile_name": "Display",
+  "display_profile_sha256": "9a0ba8071914d34f73ab80b52f5a08d4ab44b9ed7f8d380ceb1356ee584c0d4d",
+  "crop_box": [
+    8,
+    50,
+    588,
+    510
+  ],
+  "proxy_size": [
+    580,
+    460
+  ],
+  "proxy_file": "data/user_photo_diagnostics/shadow-v2/screenshot-left-proxy.png",
+  "proxy_sha256": "6d322c365c54d0c2cd05649d2c1c2ff7ad5c8ff3cf11665f271534b59382bdfb",
+  "regions_normalized_xyxy": {
+    "sky": [
+      0.02,
+      0.02,
+      0.55,
+      0.26
+    ],
+    "foreground": [
+      0.08,
+      0.55,
+      0.94,
+      0.94
+    ],
+    "silhouette": [
+      0.64,
+      0.16,
+      0.81,
+      0.4
+    ]
+  }
+}

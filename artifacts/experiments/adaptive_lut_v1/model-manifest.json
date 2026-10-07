@@ -1,0 +1,57 @@
+{
+  "author_repository": "https://github.com/HuiZeng/Image-Adaptive-3DLUT",
+  "revision": "b491f6df64a588864739a157db271e5c848e1805",
+  "variant": "paired-sRGB",
+  "repository_license": "Apache-2.0",
+  "files": {
+    "pretrained_models/sRGB/classifier.pth": {
+      "bytes": 1083261,
+      "git_blob": "439f2ada316f45d1d28dd86a161790aa3b4e334b",
+      "sha256": "bae9865395625ecae58cfe86147e521093bb1e29e7b2544e02adb238b8035021",
+      "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/classifier.pth"
+    },
+    "pretrained_models/sRGB/LUTs.pth": {
+      "bytes": 1294452,
+      "git_blob": "0830dceee2256ea5d0965c029945c329fac82a26",
+      "sha256": "c1bb2bc4b7239c1a7e96159f5923123ba796b1fceb0b8c3132b423ea825b821a",
+      "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/LUTs.pth"
+    },
+    "models.py": {
+      "bytes": 12014,
+      "git_blob": "8fbc2de9c12a474de774880a524198d54fb25fb7",
+      "sha256": "3f39c49aebd2b85787638bc9d402d21d5d664b844edd5fb8d5e4ce1fdb1d9f3f",
+      "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models.py"
+    },
+    "models_x.py": {
+      "bytes": 8474,
+      "git_blob": "fb3c44475ec62682a062d84ed89601f6a4458a0e",
+      "sha256": "5553ed2306152ecb31a51951f20388de65b96898ddeb4b9d03dc52bf3aa7ad9e",
+      "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models_x.py"
+    },
+    "demo_eval.py": {
+      "bytes": 2793,
+      "git_blob": "f6dd73969940e4eb6a21f3f9ef587289bba712df",
+      "sha256": "6d41a39d39041a098cccef085571816935955f9bba42810d4059e3d01dce5bcd",
+      "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/demo_eval.py"
+    },
+    "trilinear_cpp/src/trilinear.cpp": {
+      "bytes": 7615,
+      "git_blob": "b4d75b04c36b97559d7421b2ff2df98ee16405a2",
+      "sha256": "5b2b132b625b4bb1ba802213831dcb02e6d4c70b0fffad99f6d3b045da988185",
+      "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/trilinear_cpp/src/trilinear.cpp"
+    },
+    "LICENSE": {
+      "bytes": 11357,
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/LICENSE"
+    },
+    "README.md": {
+      "bytes": 5488,
+      "git_blob": "eae43b086353d920e83042098dbefad24a642267",
+      "sha256": "45cd2cc7d86bd7f45649308b508fd1e42b5061e15d89d0ca9980e72656dd8956",
+      "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/README.md"
+    }
+  },
+  "semantics": "Frozen external color/tone model, not validated Adobe parameters or a personal-photo preference model."
+}

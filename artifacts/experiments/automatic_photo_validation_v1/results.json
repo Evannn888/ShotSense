@@ -1,0 +1,888 @@
+{
+  "scope": "Actual default upload-driven AppTest on17 previously inspected diagnostic sources; no independent preference acceptance.",
+  "cases": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "source": {
+        "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+        "path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+        "bytes": 10823098,
+        "header_size": [
+          8192,
+          6144
+        ],
+        "sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3"
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 46.557574667,
+      "prepare_page_seconds": 8.645595667000002,
+      "status": "passed",
+      "size": [
+        8192,
+        6144
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 34.876408875,
+      "shadow_strength": 0.6,
+      "native_png_bytes": 76068131,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 60.81813049316406,
+          "q10": 22.633798599243164,
+          "q30": 40.49300003051758,
+          "q90": 102.67538299560549,
+          "sample_size": [
+            512,
+            512
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 74.6963882446289,
+          "q10": 39.0614013671875,
+          "q30": 58.89860153198242,
+          "q90": 108.91719818115234,
+          "sample_size": [
+            512,
+            512
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "source": {
+        "id": "martin-bennie-MhYU5K4A93I-unsplash",
+        "path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+        "bytes": 2779239,
+        "header_size": [
+          8688,
+          5712
+        ],
+        "sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d"
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 33.433526916999995,
+      "prepare_page_seconds": 5.725984208,
+      "status": "passed",
+      "size": [
+        8688,
+        5712
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 26.78841016599999,
+      "shadow_strength": 0.6,
+      "native_png_bytes": 33260074,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 89.33218383789062,
+          "q10": 15.225800514221191,
+          "q30": 38.962799072265625,
+          "q90": 174.677001953125,
+          "sample_size": [
+            512,
+            476
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 98.56039428710938,
+          "q10": 29.558401107788086,
+          "q30": 57.626399993896484,
+          "q90": 176.7181503295898,
+          "sample_size": [
+            512,
+            476
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "source": {
+        "id": "nir-himi-1P1yaGS_Gek-unsplash",
+        "path": "/Users/evanchen/Downloads/nir-himi-1P1yaGS_Gek-unsplash.jpg",
+        "bytes": 1333473,
+        "header_size": [
+          2809,
+          4213
+        ],
+        "sha256": "649d9b8d4763487d787574812486cd62a381c6c25e92337223bafb59a1f3f5ee"
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 10.808876916000003,
+      "prepare_page_seconds": 1.5410253750000038,
+      "status": "passed",
+      "size": [
+        2809,
+        4213
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 9.101692916000005,
+      "shadow_strength": 0.75,
+      "native_png_bytes": 9571363,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 126.63908386230469,
+          "q10": 11.73080062866211,
+          "q30": 26.15999984741211,
+          "q90": 232.0,
+          "sample_size": [
+            469,
+            469
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 135.69586181640625,
+          "q10": 26.746400833129883,
+          "q30": 48.24259948730469,
+          "q90": 232.0,
+          "sample_size": [
+            469,
+            469
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "source": {
+        "id": "a0113-IMG_1129",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0113-IMG_1129.dng",
+        "bytes": 13563322,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5"
+      },
+      "backend_expected": "conservative-native-raw",
+      "upload_to_page_seconds": 9.033587292000007,
+      "prepare_page_seconds": 1.8857775840000102,
+      "status": "passed",
+      "size": [
+        4282,
+        2848
+      ],
+      "selected_recipe": "unchanged",
+      "worker_seconds": 6.957477874999995,
+      "shadow_strength": null,
+      "native_png_bytes": 15723813,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 122.28602600097656,
+          "q10": 37.5735969543457,
+          "q30": 57.2507022857666,
+          "q90": 255.0,
+          "sample_size": [
+            476,
+            475
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 122.28602600097656,
+          "q10": 37.5735969543457,
+          "q30": 57.2507022857666,
+          "q90": 255.0,
+          "sample_size": [
+            476,
+            475
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "a0575-kme_040",
+      "source": {
+        "id": "a0575-kme_040",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0575-kme_040.dng",
+        "bytes": 12118860,
+        "header_size": [
+          3944,
+          2622
+        ],
+        "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+      },
+      "backend_expected": "conservative-native-raw",
+      "upload_to_page_seconds": 11.214377499999983,
+      "prepare_page_seconds": 1.9915204170000038,
+      "status": "passed",
+      "size": [
+        3900,
+        2594
+      ],
+      "selected_recipe": "natural",
+      "worker_seconds": 9.042251625000006,
+      "shadow_strength": null,
+      "native_png_bytes": 12744401,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.000176047288614752,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 99.26136016845703,
+          "q10": 39.4123992919922,
+          "q30": 63.79901809692382,
+          "q90": 178.98587341308595,
+          "sample_size": [
+            488,
+            433
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 109.6737289428711,
+          "q10": 45.08940124511719,
+          "q30": 72.0802001953125,
+          "q90": 193.30684356689454,
+          "sample_size": [
+            488,
+            433
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "source": {
+        "id": "a0715-060812_182920__MG_6255",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+        "bytes": 11679930,
+        "header_size": [
+          4476,
+          2954
+        ],
+        "sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef"
+      },
+      "backend_expected": "conservative-native-raw",
+      "upload_to_page_seconds": 13.758743667000005,
+      "prepare_page_seconds": 2.0287691249999966,
+      "status": "passed",
+      "size": [
+        4378,
+        2912
+      ],
+      "selected_recipe": "natural",
+      "worker_seconds": 11.52541174999999,
+      "shadow_strength": null,
+      "native_png_bytes": 21939849,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0009035405549224645,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 72.54891967773438,
+          "q10": 13.777000427246094,
+          "q30": 28.06420135498047,
+          "q90": 133.41900634765625,
+          "sample_size": [
+            487,
+            486
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 81.59393310546875,
+          "q10": 16.641799926757812,
+          "q30": 32.498600006103516,
+          "q90": 149.09658203125,
+          "sample_size": [
+            487,
+            486
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "source": {
+        "id": "a2049-IMG_1585",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2049-IMG_1585.dng",
+        "bytes": 14388136,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "288159dc4f30ded26db0f059d40c8ff85c9f59128cc8f3009c0862eb2b7ec22c"
+      },
+      "backend_expected": "conservative-native-raw",
+      "upload_to_page_seconds": 13.377701958000017,
+      "prepare_page_seconds": 2.2976886250000064,
+      "status": "passed",
+      "size": [
+        4282,
+        2848
+      ],
+      "selected_recipe": "natural",
+      "worker_seconds": 10.834247625000017,
+      "shadow_strength": null,
+      "native_png_bytes": 16793138,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 6.067993009672053e-06,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 123.46156311035156,
+          "q10": 59.49580001831055,
+          "q30": 90.1118782043457,
+          "q90": 194.28359985351562,
+          "sample_size": [
+            476,
+            475
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 135.39727783203125,
+          "q10": 67.34167709350587,
+          "q30": 101.18940734863281,
+          "q90": 206.42520141601562,
+          "sample_size": [
+            476,
+            475
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "source": {
+        "id": "a2132-IMG_4947",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2132-IMG_4947.dng",
+        "bytes": 12665412,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+      },
+      "backend_expected": "conservative-native-raw",
+      "upload_to_page_seconds": 13.952078541999981,
+      "prepare_page_seconds": 2.748597540999981,
+      "status": "passed",
+      "size": [
+        2848,
+        4282
+      ],
+      "selected_recipe": "natural",
+      "worker_seconds": 11.310786042000018,
+      "shadow_strength": null,
+      "native_png_bytes": 15671158,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0003956495442117251,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 100.58297729492188,
+          "q10": 39.361000061035156,
+          "q30": 69.12896347045898,
+          "q90": 161.218994140625,
+          "sample_size": [
+            475,
+            476
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 111.69869995117188,
+          "q10": 45.05655860900879,
+          "q30": 77.96003646850586,
+          "q90": 178.52719116210938,
+          "sample_size": [
+            475,
+            476
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "source": {
+        "id": "a2270-_DSC0033",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2270-_DSC0033.dng",
+        "bytes": 3760142,
+        "header_size": [
+          3040,
+          2014
+        ],
+        "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+      },
+      "backend_expected": "conservative-native-raw",
+      "upload_to_page_seconds": 8.686834291999986,
+      "prepare_page_seconds": 1.3179882500000133,
+      "status": "passed",
+      "size": [
+        2006,
+        3032
+      ],
+      "selected_recipe": "natural",
+      "worker_seconds": 7.251400915999994,
+      "shadow_strength": null,
+      "native_png_bytes": 6816929,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.000410707192406948,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 102.66687774658203,
+          "q10": 27.262399673461914,
+          "q30": 106.20819854736328,
+          "q90": 136.2209930419922,
+          "sample_size": [
+            502,
+            506
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 114.74949645996094,
+          "q10": 31.696800231933594,
+          "q30": 119.05979919433594,
+          "q90": 151.6684112548828,
+          "sample_size": [
+            502,
+            506
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "a3246-kme_445",
+      "source": {
+        "id": "a3246-kme_445",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a3246-kme_445.dng",
+        "bytes": 6749044,
+        "header_size": [
+          3596,
+          2360
+        ],
+        "sha256": "ff04a6274a462690707ec2dffd5644a10dc9342f7b8e089170d5b65044361442"
+      },
+      "backend_expected": "conservative-native-raw",
+      "upload_to_page_seconds": 7.147130875000016,
+      "prepare_page_seconds": 1.6459080409999842,
+      "status": "passed",
+      "size": [
+        3514,
+        2340
+      ],
+      "selected_recipe": "unchanged",
+      "worker_seconds": 5.389882374999985,
+      "shadow_strength": null,
+      "native_png_bytes": 9670732,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 95.70951080322266,
+          "q10": 24.199399948120117,
+          "q30": 31.91860008239746,
+          "q90": 232.17819213867188,
+          "sample_size": [
+            502,
+            468
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 95.70951080322266,
+          "q10": 24.199399948120117,
+          "q30": 31.91860008239746,
+          "q90": 232.17819213867188,
+          "sample_size": [
+            502,
+            468
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "user-cloudy-trees",
+      "source": {
+        "id": "user-cloudy-trees",
+        "path": "/Users/evanchen/Downloads/images (2).jpeg",
+        "bytes": 25833,
+        "sha256": "e4172d7c619478e0272159d3c5b81450e527bb0a39139db690676ba19c4cf4fe",
+        "header_size": [
+          678,
+          452
+        ]
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 2.020656416999998,
+      "prepare_page_seconds": 0.07768912500000624,
+      "status": "passed",
+      "size": [
+        678,
+        452
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 1.932450249999988,
+      "shadow_strength": 0.5,
+      "native_png_bytes": 323148,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 76.02662658691406,
+          "q10": 18.691200256347656,
+          "q30": 50.85559844970703,
+          "q90": 127.05500030517578,
+          "sample_size": [
+            339,
+            452
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 84.43946838378906,
+          "q10": 30.837200164794922,
+          "q30": 65.62519836425781,
+          "q90": 130.0550079345703,
+          "sample_size": [
+            339,
+            452
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "LOL-27",
+      "source": {
+        "id": "LOL-27",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/27.jpg",
+        "bytes": 38327,
+        "sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3",
+        "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 1.7945427499999766,
+      "prepare_page_seconds": 0.0773595420000106,
+      "status": "passed",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 1.6531594579999762,
+      "shadow_strength": 0.6,
+      "native_png_bytes": 208288,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 4.346441745758057,
+          "q10": 0.9277999997138977,
+          "q30": 1.8555999994277954,
+          "q90": 8.502599716186523,
+          "sample_size": [
+            300,
+            400
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 6.754522323608398,
+          "q10": 0.9277999997138977,
+          "q30": 1.8555999994277954,
+          "q90": 17.005199432373047,
+          "sample_size": [
+            300,
+            400
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "LOL-102",
+      "source": {
+        "id": "LOL-102",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/102.jpg",
+        "bytes": 57700,
+        "sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c",
+        "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 1.6979015000000004,
+      "prepare_page_seconds": 0.08136833300000035,
+      "status": "passed",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 1.6117394169999955,
+      "shadow_strength": 0.75,
+      "native_png_bytes": 282444,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 18.16925048828125,
+          "q10": 1.0,
+          "q30": 2.855600118637085,
+          "q90": 35.923797607421875,
+          "sample_size": [
+            300,
+            400
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 28.82522964477539,
+          "q10": 1.0,
+          "q30": 2.855600118637085,
+          "q90": 59.003997802734375,
+          "sample_size": [
+            300,
+            400
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "LOL-113",
+      "source": {
+        "id": "LOL-113",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/113.jpg",
+        "bytes": 43559,
+        "sha256": "b739525767492c7a1b3c64554f77b4b08c94522f44579f8b2704d6b66b5822a5",
+        "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 1.7554559579999989,
+      "prepare_page_seconds": 0.07963045800002533,
+      "status": "passed",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 1.6693595419999951,
+      "shadow_strength": 0.75,
+      "native_png_bytes": 252268,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 6.076158046722412,
+          "q10": 1.1403999328613281,
+          "q30": 3.3582000732421875,
+          "q90": 9.855600357055664,
+          "sample_size": [
+            300,
+            400
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 11.585763931274414,
+          "q10": 1.1403999328613281,
+          "q30": 3.3582000732421875,
+          "q90": 21.711200714111328,
+          "sample_size": [
+            300,
+            400
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "LOL-254",
+      "source": {
+        "id": "LOL-254",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/254.jpg",
+        "bytes": 65665,
+        "sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45",
+        "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 1.701356292000014,
+      "prepare_page_seconds": 0.07785679099998788,
+      "status": "passed",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 1.6172034170000131,
+      "shadow_strength": 0.65,
+      "native_png_bytes": 285441,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 56.22230529785156,
+          "q10": 29.855600357055664,
+          "q30": 36.931800842285156,
+          "q90": 89.0,
+          "sample_size": [
+            300,
+            400
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 72.54002380371094,
+          "q10": 49.652198791503906,
+          "q30": 56.79140090942383,
+          "q90": 98.70999908447266,
+          "sample_size": [
+            300,
+            400
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "LOL-565",
+      "source": {
+        "id": "LOL-565",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/565.jpg",
+        "bytes": 98195,
+        "sha256": "cfd82849833bbe429fe91039f18e6051929fa8ac3fa81282607eb91c164e94b0",
+        "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 1.6611436659999868,
+      "prepare_page_seconds": 0.07219241699999657,
+      "status": "passed",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 1.5817061250000108,
+      "shadow_strength": 0.75,
+      "native_png_bytes": 446211,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 19.02521514892578,
+          "q10": 7.213799953460693,
+          "q30": 11.855600357055664,
+          "q90": 36.27560043334961,
+          "sample_size": [
+            300,
+            400
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 35.75185012817383,
+          "q10": 14.71239948272705,
+          "q30": 27.007600784301758,
+          "q90": 59.782203674316406,
+          "sample_size": [
+            300,
+            400
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    },
+    {
+      "id": "LOL-6",
+      "source": {
+        "id": "LOL-6",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/6.jpg",
+        "bytes": 83415,
+        "sha256": "d54d46e822b3b91b29ebca555eb131ed4162bba80373317d0d37fbcf622c42c8",
+        "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+      },
+      "backend_expected": "protected-natural-color",
+      "upload_to_page_seconds": 1.6544859999999915,
+      "prepare_page_seconds": 0.07827000000000339,
+      "status": "passed",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "natural-color",
+      "worker_seconds": 1.5704789170000026,
+      "shadow_strength": 0.75,
+      "native_png_bytes": 368428,
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "sampled_luminance": {
+        "original": {
+          "display_luma_mean_codes": 19.879697799682617,
+          "q10": 7.4842000007629395,
+          "q30": 13.774200439453125,
+          "q90": 36.98400115966797,
+          "sample_size": [
+            300,
+            400
+          ]
+        },
+        "adjusted": {
+          "display_luma_mean_codes": 37.15205764770508,
+          "q10": 15.755799293518066,
+          "q30": 30.392000198364258,
+          "q90": 60.21659851074219,
+          "sample_size": [
+            300,
+            400
+          ]
+        }
+      },
+      "source_preserved": true,
+      "default_setting_used": true,
+      "actual_worker_calls": 1,
+      "display_download_json_native_pixels_exact": true
+    }
+  ]
+}

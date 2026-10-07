@@ -1,0 +1,108 @@
+{
+  "status": "small_recognition_diagnostic_complete_not_edit_quality_acceptance",
+  "counts": {
+    "public_photos": 8,
+    "verified_original_downloads": 4,
+    "published_preview_downloads": 4,
+    "synthetic_controls": 2,
+    "mobileclip_view_passes": 40,
+    "native_image_passes": 20
+  },
+  "application_dependency_preserved": {
+    "app/streamlit_app.py": true,
+    "src/lut_natural.py": true,
+    "src/photo_engine.py": true,
+    "src/adaptive_lut.py": true,
+    "src/jpeg_inference.py": true,
+    "requirements.lock.txt": true,
+    "tests/test_automatic_photo.py": true
+  },
+  "input_thumbnails_preserved": {
+    "day_portrait": true,
+    "shadow_portrait": true,
+    "city_night": true,
+    "milky_way": true,
+    "sunset_silhouette": true,
+    "kitchen": true,
+    "backlit_landscape": true,
+    "dog": true,
+    "day_portrait_dark_control": true,
+    "backlit_landscape_dark_control": true
+  },
+  "downloaded_files_preserved": {
+    "day_portrait": true,
+    "shadow_portrait": true,
+    "city_night": true,
+    "milky_way": true,
+    "sunset_silhouette": true,
+    "kitchen": true,
+    "backlit_landscape": true,
+    "dog": true
+  },
+  "original_commons_sha1_verified": {
+    "day_portrait": true,
+    "shadow_portrait": true,
+    "city_night": true,
+    "milky_way": true
+  },
+  "dark_controls_exact_pixel_replay": {
+    "day_portrait_dark_control": true,
+    "backlit_landscape_dark_control": true
+  },
+  "previous_sources_and_thumbnails_preserved": {
+    "ahmet-yuksek-7lK0bpUj8AA-unsplash": true,
+    "martin-bennie-MhYU5K4A93I-unsplash": true,
+    "nir-himi-1P1yaGS_Gek-unsplash": true,
+    "a0113-IMG_1129": true,
+    "a0575-kme_040": true,
+    "a0715-060812_182920__MG_6255": true,
+    "a2049-IMG_1585": true,
+    "a2132-IMG_4947": true,
+    "a2270-_DSC0033": true,
+    "a3246-kme_445": true,
+    "user-cloudy-trees": true,
+    "LOL-27": true,
+    "LOL-102": true,
+    "LOL-113": true,
+    "LOL-254": true,
+    "LOL-565": true,
+    "LOL-6": true
+  },
+  "preserved_raw_model_core_matches_HEAD": {
+    "src/inference.py": true,
+    "src/preview.py": true,
+    "src/color_pipeline.py": true,
+    "src/preprocess.py": true,
+    "src/extract_labels.py": true,
+    "artifacts/model/model.onnx": true,
+    "artifacts/model/model.json": true
+  },
+  "model_text_prompts_helper_preserved": true,
+  "label_and_input_manifests_preserved": true,
+  "stock_preprocessing_pixel_parity": true,
+  "finite_outputs_and_embedding_score_replay": true,
+  "mobileclip_repeat_max_cosine_difference": 0.0,
+  "native_repeat_max_classification_difference": 0.0,
+  "native_classification_revision": 2,
+  "face_revision": 3,
+  "pip_check": "No broken requirements found.",
+  "git_diff_check": true,
+  "local_service_health": {
+    "http_status": 200,
+    "body": "ok"
+  },
+  "application_changed": false,
+  "production_weights_changed": false,
+  "sharpening": false,
+  "independent_scene_accuracy_passed": false,
+  "new_edit_quality_passed": false,
+  "source_record_files": {
+    "PROTOCOL.md": "849149a497a1fa6202d40d779439dceb03b597ec4b468315b2c96e75ee835e56",
+    "inputs.json": "13464947ea8375a3fc35cb25a0011f3c0a9da89733d6d47d2358ad612bfe5f26",
+    "expected_labels.json": "45fdef406e4381d20449a379c91509d6634e29ac506a54f90dc59fe074e3a941",
+    "results.json": "8ac64cd8f6b86d37667d16a8caa37317934497d95a24300757902717085a7f26",
+    "vision_results.json": "aae83b4df638de1402f37d47e024ac0130e3ae308b439a176b1aa56f48f3d79d",
+    "summary.json": "708287fd807d7282285806aebc2351675a403b0bf68dbba652d7d26dd23dfd1e",
+    "REPORT.zh-CN.md": "8d82a4688f374e46767cca5c05486aa2bd95142dcc6caae572c07e318a31a1ad"
+  }
+}

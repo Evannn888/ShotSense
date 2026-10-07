@@ -1,0 +1,69 @@
+{
+  "scope": "Four preidentified source-only headers; no alignment changes or expert parameters used.",
+  "photos": [
+    {
+      "source_id": "a0784-_mg_7693.dng",
+      "format": "TIFF",
+      "header_size": [
+        256,
+        171
+      ],
+      "tags": {
+        "256": "256",
+        "257": "171",
+        "274": "1",
+        "50719": "None",
+        "50720": "None",
+        "50829": "None"
+      }
+    },
+    {
+      "source_id": "a0341-dgw_002.dng",
+      "format": "TIFF",
+      "header_size": [
+        256,
+        170
+      ],
+      "tags": {
+        "256": "256",
+        "257": "170",
+        "274": "1",
+        "50719": "None",
+        "50720": "None",
+        "50829": "None"
+      }
+    },
+    {
+      "source_id": "a0986-ja_pe-81.dng",
+      "format": "TIFF",
+      "header_size": [
+        170,
+        256
+      ],
+      "tags": {
+        "256": "256",
+        "257": "170",
+        "274": "8",
+        "50719": "None",
+        "50720": "None",
+        "50829": "None"
+      }
+    },
+    {
+      "source_id": "a1715-lsyd4o0733.dng",
+      "format": "TIFF",
+      "header_size": [
+        256,
+        171
+      ],
+      "tags": {
+        "256": "256",
+        "257": "171",
+        "274": "1",
+        "50719": "None",
+        "50720": "None",
+        "50829": "None"
+      }
+    }
+  ]
+}

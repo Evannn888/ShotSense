@@ -1,0 +1,37 @@
+{
+  "local_supported_count": 4946,
+  "matching_public_annotation_count": 4946,
+  "join_rule": "Full source filename including .dng, Unicode casefold; all5000public keys unique. No numeric-ID-only or fuzzy joins.",
+  "split_match_counts": {
+    "train": 3957,
+    "val": 495,
+    "test": 494
+  },
+  "supported_annotation_counts": {
+    "subject": {
+      "man-made object": 1857,
+      "person(s)": 1332,
+      "unknown": 362,
+      "nature": 1064,
+      "animal(s)": 296,
+      "abstract": 35
+    },
+    "light": {
+      "sun or sky": 3359,
+      "artificial": 761,
+      "mixed": 826
+    },
+    "location": {
+      "outdoors": 3546,
+      "indoors": 1051,
+      "unknown": 349
+    },
+    "time": {
+      "day": 3256,
+      "unknown": 1358,
+      "dawn or dusk": 203,
+      "night": 129
+    }
+  },
+  "scope": "Source-ID metadata intersection only; no split or pixel access changed."
+}

@@ -1,0 +1,268 @@
+[
+  {
+    "id": "day_portrait",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/day_portrait.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/day_portrait.png",
+    "title": "Man in denim jacket posing (Unsplash).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Man_in_denim_jacket_posing_(Unsplash).jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Man_in_denim_jacket_posing_%28Unsplash%29.jpg",
+    "downloaded_sha256": "8d1d777dc2bd5bdb49f87ba062e0151f9148678ab383f27a90550786230133b8",
+    "thumbnail_sha256": "f975d635f1f8acdd4ce0db2af05d2ab011d1352ac5dc9b933b9123683301d2e1",
+    "downloaded_asset_type": "commons_original",
+    "original_sha1_verified": true,
+    "commons_original_sha1": "bea2acece268494a3dcd3d561ce74d0ecf7e721a",
+    "downloaded_bytes": 909993,
+    "commons_original_size": [
+      5472,
+      3648
+    ],
+    "decoded_size": [
+      5472,
+      3648
+    ],
+    "embedded_icc_converted": true,
+    "author": "Brooke Cagle brookecagle",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "commons_page_revision": {
+      "revid": 768070777,
+      "parentid": 707372405,
+      "timestamp": "2023-05-28T19:33:26Z"
+    }
+  },
+  {
+    "id": "shadow_portrait",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/shadow_portrait.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/shadow_portrait.png",
+    "title": "Shadowed Portrait (Unsplash).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Shadowed_Portrait_(Unsplash).jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Shadowed_Portrait_%28Unsplash%29.jpg",
+    "downloaded_sha256": "cadb489a4f18f1cf259c7d66a621e1b97cb474071987189ebe3dc68e7d292b1d",
+    "thumbnail_sha256": "f5a91ca6b7de78849be4e1d5005f4d05e610db1cd4a823c9b043674bbbbe1b06",
+    "downloaded_asset_type": "commons_original",
+    "original_sha1_verified": true,
+    "commons_original_sha1": "46866d8022ba4fe34705f9d9f750b9d68290960c",
+    "downloaded_bytes": 676889,
+    "commons_original_size": [
+      5686,
+      3660
+    ],
+    "decoded_size": [
+      5686,
+      3660
+    ],
+    "embedded_icc_converted": false,
+    "author": "WillSpirit SBLN willspirit",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "commons_page_revision": {
+      "revid": 1084397485,
+      "parentid": 1042997569,
+      "timestamp": "2025-09-12T03:37:29Z"
+    }
+  },
+  {
+    "id": "city_night",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/city_night.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/city_night.png",
+    "title": "The New York City Skyline at night.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_New_York_City_Skyline_at_night.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/The_New_York_City_Skyline_at_night.jpg",
+    "downloaded_sha256": "8098d095dcfa96c70b1a2f5680e0e970caf1f29478ffdd0917420ca12c566483",
+    "thumbnail_sha256": "491c11448e2f5add73001d5bb38400efbcba162b3193f0a61fb5928b6cff3f23",
+    "downloaded_asset_type": "commons_original",
+    "original_sha1_verified": true,
+    "commons_original_sha1": "6c7257abe6460ba3b219c14400e7c086e2b7606d",
+    "downloaded_bytes": 19830060,
+    "commons_original_size": [
+      5880,
+      3868
+    ],
+    "decoded_size": [
+      5880,
+      3868
+    ],
+    "embedded_icc_converted": true,
+    "author": "Bruce Emmerling",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_page_revision": {
+      "revid": 1052270895,
+      "parentid": 946499956,
+      "timestamp": "2025-07-04T16:39:38Z"
+    }
+  },
+  {
+    "id": "milky_way",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/milky_way.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/milky_way.png",
+    "title": "Milky Way 3.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Milky_Way_3.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Milky_Way_3.jpg",
+    "downloaded_sha256": "1053088d24cac5e3514e518ca162b35e771c644796a018564792803641f76b4a",
+    "thumbnail_sha256": "bc3c08bd90c3b49b98c2095eaffc11608a089b038d437988e01415dbad5a1855",
+    "downloaded_asset_type": "commons_original",
+    "original_sha1_verified": true,
+    "commons_original_sha1": "28c5fbeb83fd7a44d99361f56143159e70cf593c",
+    "downloaded_bytes": 4321547,
+    "commons_original_size": [
+      4928,
+      3264
+    ],
+    "decoded_size": [
+      4928,
+      3264
+    ],
+    "embedded_icc_converted": true,
+    "author": "Dennis",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "commons_page_revision": {
+      "revid": 1028444402,
+      "parentid": 923342226,
+      "timestamp": "2025-05-05T17:08:36Z"
+    }
+  },
+  {
+    "id": "sunset_silhouette",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/sunset_silhouette.preview.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/sunset_silhouette.png",
+    "title": "Joshua tree silhouette at sunset (50330255608).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Joshua_tree_silhouette_at_sunset_(50330255608).jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Joshua_tree_silhouette_at_sunset_%2850330255608%29.jpg/960px-Joshua_tree_silhouette_at_sunset_%2850330255608%29.jpg",
+    "downloaded_sha256": "ee7c58d47f7c73944d63719f940c7d287313ab491f34cf7c2278cddac8177f7d",
+    "thumbnail_sha256": "5fce8beb758d69635383ca591c21c41c00234242cbd36c79359770524d01cb7a",
+    "downloaded_asset_type": "commons_960px_preview",
+    "original_sha1_verified": false,
+    "commons_original_sha1": "6a3888326124e367487a7443797dc8fe89bd3b9b",
+    "downloaded_bytes": 64813,
+    "commons_original_size": [
+      7944,
+      5296
+    ],
+    "decoded_size": [
+      960,
+      640
+    ],
+    "embedded_icc_converted": true,
+    "author": "Joshua Tree National Park",
+    "license": "Public domain",
+    "license_url": "",
+    "commons_page_revision": {
+      "revid": 1006277095,
+      "parentid": 887889672,
+      "timestamp": "2025-03-06T20:54:41Z"
+    }
+  },
+  {
+    "id": "kitchen",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/kitchen.preview.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/kitchen.png",
+    "title": "The Scratch Kitchen Interior.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Scratch_Kitchen_Interior.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/The_Scratch_Kitchen_Interior.jpg/960px-The_Scratch_Kitchen_Interior.jpg",
+    "downloaded_sha256": "91c7e3fbd3430e4a0bfb6c2c1dad45a9927f60b1997867d3b45362ec12bdd45b",
+    "thumbnail_sha256": "d67fa0c6b8ce231aec34cc62d9d428ccb497351047459971cc3f8e31a46ea89e",
+    "downloaded_asset_type": "commons_960px_preview",
+    "original_sha1_verified": false,
+    "commons_original_sha1": "ff27b7d332f8b447c103c112be8d544c3534cbfd",
+    "downloaded_bytes": 134423,
+    "commons_original_size": [
+      4080,
+      3072
+    ],
+    "decoded_size": [
+      960,
+      723
+    ],
+    "embedded_icc_converted": true,
+    "author": "Xanadu73",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "commons_page_revision": {
+      "revid": 1260166124,
+      "parentid": 1247152969,
+      "timestamp": "2026-08-12T11:54:44Z"
+    }
+  },
+  {
+    "id": "backlit_landscape",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/backlit_landscape.preview.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/backlit_landscape.png",
+    "title": "Crepuscular rays in ggp 2.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Crepuscular_rays_in_ggp_2.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Crepuscular_rays_in_ggp_2.jpg/960px-Crepuscular_rays_in_ggp_2.jpg",
+    "downloaded_sha256": "2fb2d4cbaf81e16af2c099d14ea2ac01b374e5985695f6df7310fd23a33a80bb",
+    "thumbnail_sha256": "e6872767675d61eaba29e5d9122c64a553718e03122a50981c529193afa7b1a3",
+    "downloaded_asset_type": "commons_960px_preview",
+    "original_sha1_verified": false,
+    "commons_original_sha1": "3343295de69483d0c110fc3714c93c9756061c87",
+    "downloaded_bytes": 201487,
+    "commons_original_size": [
+      2400,
+      1600
+    ],
+    "decoded_size": [
+      960,
+      640
+    ],
+    "embedded_icc_converted": true,
+    "author": "Brocken Inaglory",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_page_revision": {
+      "revid": 1250981068,
+      "parentid": 1250980992,
+      "timestamp": "2026-07-23T15:59:33Z"
+    }
+  },
+  {
+    "id": "dog",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/dog.preview.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/dog.png",
+    "title": "Labrador pup.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Labrador_pup.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Labrador_pup.jpg/960px-Labrador_pup.jpg",
+    "downloaded_sha256": "c7c26510301f511a4e1298bbe51342b83d33c684e4476ba005217e960f66891a",
+    "thumbnail_sha256": "190a1ca6c61fbd87e59de26c7f77e3721d9943cdbc627dd3cf503e2d2df4f1de",
+    "downloaded_asset_type": "commons_960px_preview",
+    "original_sha1_verified": false,
+    "commons_original_sha1": "ee2f5f1bc14a50402d9b23512ad5350ce1fbe3e5",
+    "downloaded_bytes": 313184,
+    "commons_original_size": [
+      1142,
+      1650
+    ],
+    "decoded_size": [
+      960,
+      1387
+    ],
+    "embedded_icc_converted": false,
+    "author": "Bobjack tom andy",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_page_revision": {
+      "revid": 1256272037,
+      "parentid": 1199448772,
+      "timestamp": "2026-08-04T01:53:03Z"
+    }
+  },
+  {
+    "id": "day_portrait_dark_control",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/day_portrait_dark_control.png",
+    "parent_id": "day_portrait",
+    "parent_thumbnail_sha256": "f975d635f1f8acdd4ce0db2af05d2ab011d1352ac5dc9b933b9123683301d2e1",
+    "thumbnail_sha256": "a007b4b939020b6e0a72cd3893f6e868353d64d9652ba8434cd722ecc1ddc4a0",
+    "synthetic": true,
+    "transform": "sRGB to linear display RGB, multiply by 1/8, sRGB to rounded uint8"
+  },
+  {
+    "id": "backlit_landscape_dark_control",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/backlit_landscape_dark_control.png",
+    "parent_id": "backlit_landscape",
+    "parent_thumbnail_sha256": "e6872767675d61eaba29e5d9122c64a553718e03122a50981c529193afa7b1a3",
+    "thumbnail_sha256": "54bd8639bb3bb5da589fc460cd88f7212515fe49698e0dbce7be18ecf3f8bbda",
+    "synthetic": true,
+    "transform": "sRGB to linear display RGB, multiply by 1/8, sRGB to rounded uint8"
+  }
+]

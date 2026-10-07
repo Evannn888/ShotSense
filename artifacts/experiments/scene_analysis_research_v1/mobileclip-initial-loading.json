@@ -1,0 +1,8 @@
+{
+  "status": "strict loading rejected unconverted author-format state dictionary before inference",
+  "action": "reuse OpenCLIP3.3.0 convert_state_dict, then retain strict loading and weights_only=True",
+  "retained_source": "mobileclip_probe-initial.py",
+  "retained_log": "data/user_photo_diagnostics/scene-analysis-research-v1-mobileclip.log",
+  "model_and_prompt_change": false,
+  "new_custom_key_mapping": false
+}

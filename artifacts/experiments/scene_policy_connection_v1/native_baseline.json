@@ -1,0 +1,14 @@
+{
+  "id": "day_portrait",
+  "source_sha256": "8d1d777dc2bd5bdb49f87ba062e0151f9148678ab383f27a90550786230133b8",
+  "source_size": [
+    5472,
+    3648
+  ],
+  "worker_contract": "Existing JPEG CLI plus --scene-aware;60s bound; exact native PNG/zero-strength check only, not preference or latency acceptance.",
+  "source_sha256s": {
+    "artifacts/experiments/scene_policy_connection_v1/native_probe.py": "66aafa5fa75cd95a716f1b3113c80a57206a4e66dc976786b76eda25d216d143",
+    "src/scene_policy.py": "b3dcbe31416834b2039add66f827650fa0319d7081581ee0b2a88095d7150d26",
+    "src/lut_natural.py": "9997637c8cd99862c93ce11c947f2828a1d15a8771edca71ce7b41c3edb367fb"
+  }
+}

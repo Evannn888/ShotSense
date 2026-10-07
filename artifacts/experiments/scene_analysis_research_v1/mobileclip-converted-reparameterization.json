@@ -1,0 +1,7 @@
+{
+  "status": "converted author checkpoint loaded strictly and first forward succeeded; reparameterization inside inference_mode produced tensors without version counters",
+  "action": "construct reparameterized weights under no_grad rather than inference_mode, retain before/after embedding parity check",
+  "retained_source": "mobileclip_probe-converted.py",
+  "retained_log": "data/user_photo_diagnostics/scene-analysis-research-v1-mobileclip-retry.log",
+  "model_and_prompt_change": false
+}

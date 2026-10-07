@@ -1,0 +1,84 @@
+[
+  {
+    "settings": {},
+    "means": [
+      128.0,
+      128.0,
+      128.0
+    ],
+    "engine_applied": false,
+    "seconds": 0.000169209000000059
+  },
+  {
+    "settings": {
+      "warmth": 10
+    },
+    "means": [
+      133.0,
+      127.0,
+      119.0
+    ],
+    "engine_applied": true,
+    "seconds": 0.23710937499999996
+  },
+  {
+    "settings": {
+      "warmth": -10
+    },
+    "means": [
+      123.0,
+      129.0,
+      138.0
+    ],
+    "engine_applied": true,
+    "seconds": 0.12179679200000004
+  },
+  {
+    "settings": {
+      "tint": 10
+    },
+    "means": [
+      133.0,
+      124.0,
+      133.0
+    ],
+    "engine_applied": true,
+    "seconds": 0.13139974999999993
+  },
+  {
+    "settings": {
+      "tint": -10
+    },
+    "means": [
+      123.0,
+      132.0,
+      123.0
+    ],
+    "engine_applied": true,
+    "seconds": 0.12473200000000007
+  },
+  {
+    "settings": {
+      "vibrance": 10
+    },
+    "means": [
+      128.0,
+      128.0,
+      128.0
+    ],
+    "engine_applied": true,
+    "seconds": 0.12633441700000003
+  },
+  {
+    "settings": {
+      "local_contrast": 6
+    },
+    "means": [
+      128.0,
+      128.0,
+      128.0
+    ],
+    "engine_applied": true,
+    "seconds": 0.12138695799999999
+  }
+]

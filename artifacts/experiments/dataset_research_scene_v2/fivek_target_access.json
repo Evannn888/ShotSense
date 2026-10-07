@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0001-jmac_DSC1459.tif",
+    "http_status": 200,
+    "content_type": "image/tiff",
+    "content_length": "31609888",
+    "method": "HEAD",
+    "pixels_read": false
+  },
+  {
+    "url": "https://data.csail.mit.edu/graphics/fivek/legal/LicenseAdobe.txt",
+    "http_status": 200,
+    "content_type": "text/plain",
+    "content_length": "1841",
+    "method": "HEAD",
+    "pixels_read": false
+  },
+  {
+    "url": "https://data.csail.mit.edu/graphics/fivek/legal/LicenseAdobeMIT.txt",
+    "http_status": 200,
+    "content_type": "text/plain",
+    "content_length": "1994",
+    "method": "HEAD",
+    "pixels_read": false
+  }
+]

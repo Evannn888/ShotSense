@@ -1,0 +1,19 @@
+[Version]
+AppVersion=5.11
+Version=351
+[Directional Pyramid Denoising]
+Enabled=true
+Enhance=false
+Median=false
+Luma=0
+Ldetail=0
+Chroma=5
+Method=Lab
+LMethod=SLI
+CMethod=MAN
+C2Method=MANU
+SMethod=shal
+AutoGain=false
+Gamma=1.7
+Redchro=0
+Bluechro=0

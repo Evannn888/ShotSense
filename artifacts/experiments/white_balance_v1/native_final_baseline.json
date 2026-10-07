@@ -1,0 +1,15 @@
+{
+  "id": "day_portrait",
+  "source_sha256": "8d1d777dc2bd5bdb49f87ba062e0151f9148678ab383f27a90550786230133b8",
+  "source_size": [
+    5472,
+    3648
+  ],
+  "worker_contract": "Existing JPEG CLI plus --scene-aware --white-balance;60s bound; exact native PNG/zero-strength check only, not preference or latency acceptance.",
+  "source_sha256s": {
+    "artifacts/experiments/white_balance_v1/native_final_probe.py": "6c6ac3e69deddc60fcef84cc9e03b5fe9be3922cbd6eddbc1d01d613c2ea4930",
+    "src/scene_policy.py": "89cb9750c864947242ebaf0d074ed6995ad07e84ed81c112c2853f3cfcb100fb",
+    "src/lut_natural.py": "0b6d116d4c5f445a5de36644c3ca821a3ac9a23fedc6f59296769c6c7b5f167a",
+    "src/white_balance.py": "9af1adf64cb68d4a8938a77e1612420530792091f6f1177afa52170541f4ea99"
+  }
+}

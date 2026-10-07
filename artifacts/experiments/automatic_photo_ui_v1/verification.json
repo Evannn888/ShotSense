@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "date": "2026-10-05",
+  "scope": "Automatic novice default/UI lifecycle; unchanged photographic backends.",
+  "full_suite": {
+    "tests": 78,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 101.9,
+    "warning": "Existing optional Matplotlib API warning"
+  },
+  "focused_repaired": {
+    "tests": 6,
+    "seconds": 18.78,
+    "migration_check_added_afterward_and_passes_in_full_suite": true
+  },
+  "initial_focused_failure": "Test accessed nonexistent Expander.expanded; fixed to proto.expanded, original log/XML retained.",
+  "pip_check": "No broken requirements found.",
+  "git_diff_check": "passed",
+  "snapshot_matches_current": {
+    "app/streamlit_app.py": true,
+    "tests/test_automatic_photo.py": true,
+    "tests/test_app.py": true,
+    "tests/test_natural_lut.py": true,
+    "tests/test_photo_engine.py": true,
+    "tests/test_photo_fine_tuning.py": true,
+    "src/lut_natural.py": true,
+    "src/adaptive_lut.py": true,
+    "src/photo_engine.py": true,
+    "src/jpeg_inference.py": true,
+    "requirements.lock.txt": true
+  },
+  "backend_and_core_integrity": {
+    "backend_and_dependencies_preserved": {
+      "src/lut_natural.py": true,
+      "src/adaptive_lut.py": true,
+      "src/photo_engine.py": true,
+      "src/jpeg_inference.py": true,
+      "requirements.lock.txt": true
+    },
+    "core_matches_head": {
+      "src/inference.py": true,
+      "src/preview.py": true,
+      "src/color_pipeline.py": true,
+      "src/preprocess.py": true,
+      "src/extract_labels.py": true,
+      "artifacts/model/model.onnx": true,
+      "artifacts/model/model.json": true
+    }
+  },
+  "service": {
+    "status": "passed",
+    "address": "127.0.0.1:8501",
+    "health_status": 200,
+    "health_body": "ok",
+    "listener": "COMMAND   PID     USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nPython  53420 evanchen    6u  IPv4 0xbe34949073815178      0t0  TCP 127.0.0.1:8501 (LISTEN)\n",
+    "previous_pid": 52705,
+    "old_listener_released_before_start": true,
+    "live_browser_client_verified": false
+  },
+  "actual_personal_downloads_written": false,
+  "new_photographic_quality_or_50mp_measurement_claimed": false,
+  "live_browser_client_acceptance": false,
+  "records": {
+    "PROTOCOL.md": "830f3ae63b4f32e2e6ca47168a48e018338c84044615efa8f32d07638c11a5b3",
+    "baseline.json": "c9add6443b2c94a916f6b783c7fb82ec5fca313de6be79dc20da9b0a9ae5ba4e",
+    "source_before.zip": "6a7ce9744679577d911b5e57e5033e71fa51fc94af8f3e25e4027724a67b19d7",
+    "source_snapshot.zip": "692768d41d7a1902b591e401c765b261f2f980592bdc4310a4e1da1cae40d540",
+    "app-change.diff": "7ea5677ad78a7ef4ddcbb3c84fc02b773fffbe1da51207cc8aff2f23ff4da9ce",
+    "focused-initial.xml": "22c042a2d6d1e864bc2d8c3c856a6882ef2f3b10adf48d08e2976a673214ae46",
+    "focused-repaired.xml": "9818b7dec95d8577bb43b9ac3edf3f46d0f8eba874ec4cf50d94d137edbd0040",
+    "full-suite.xml": "0ff528a40e7d5b4eea30301a9f3ad9a67047a339d6d70c3fe889c51aba2c0afb",
+    "integrity.json": "6bcf27f2079dc76f580ab49842f82812f6a594999ed89b1023b4f718c4b2054e",
+    "service.json": "501f92e2dad6c43fd28248d9524197ca6c7fad1a491bf381522be8f34ab782b0",
+    "ACCEPTANCE.md": "c5779bdd772ae0d3293530915a2f9558f245e87d8556cb5c509228e43feb733b"
+  },
+  "final_document_hashes": {
+    "README.md": "e65c626f436aecf77fe1715e2033fb8d86806a5cbd70b6e6edc8838d1a1a9eba",
+    "SHOTSENSE_MASTER_PLAN.md": "4c0dcfa16260ff990184c242a4abfa82bd8f710d214904dca9f1ead3df176c3c",
+    "EXISTING_SOLUTIONS_RESEARCH.md": "2a53ec90216df3ad95077f0a0ac65c080e019d07907c2f083239fb4520b6493c"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "date": "2026-10-05",
+  "full_suite": {
+    "tests": 76,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 87.67,
+    "warning": "Existing optional colour-science Matplotlib API warning"
+  },
+  "focused_ui": {
+    "tests": 4,
+    "seconds": 7.1
+  },
+  "pip_check": "No broken requirements found.",
+  "git_diff_check": "passed",
+  "reports": {
+    "worker-1.json": "passed",
+    "worker-2.json": "passed",
+    "app-report.json": "passed",
+    "service.json": "passed"
+  },
+  "current_code_matches_source_snapshot": {
+    "app/streamlit_app.py": true,
+    "src/lut_natural.py": true,
+    "tests/test_natural_lut.py": true,
+    "src/adaptive_lut.py": true,
+    "src/photo_engine.py": true,
+    "src/jpeg_inference.py": true,
+    "requirements.lock.txt": true
+  },
+  "twelve_source_hash_checks_pass": true,
+  "fifteen_preserved_baseline_file_hashes_pass": 15,
+  "seven_core_files_match_head": true,
+  "final_hashes": {
+    "src/lut_natural.py": "d3a3d0ecb3de687eebf6a070f755b8602dace3264e7f7306ff5b6ada4f065dde",
+    "app/streamlit_app.py": "48dfd17381c23da3966269576acba610045f37ebc8e445c6f23fc4f85b970244",
+    "tests/test_natural_lut.py": "cc61d2273f6e783abbca1734d247367ac72bde2b1b3c89fd1d3230cb1156e0d5",
+    "README.md": "658e66722c66dce699511e9995ffcc138dcee69383d704d2bbb96feb1e17ed67",
+    "SHOTSENSE_MASTER_PLAN.md": "21f2ec0320e837b720356069ef787106cb765c6aecfcfa26d376781bd6d70c96",
+    "EXISTING_SOLUTIONS_RESEARCH.md": "43c5a07cb7cd6d987d5699c80f437ab1829d7dbdd540303ca06981831d531a8d"
+  },
+  "limitations": [
+    "Finite previously inspected development scenes; not independent preference acceptance.",
+    "Global luminance mapping can lift dark clouds; artistic intent is unknown.",
+    "No live browser-client/download acceptance.",
+    "Sharpening excluded."
+  ],
+  "records": {
+    "PROTOCOL.md": "78d824684c0386ffa431fc2161217085bc6ab9a9c5ea0f8afa31eec3dce32863",
+    "UI_AMENDMENT.md": "8779fa0077838ae00a62e268e1bd703ca3cf8537bc4d2c6425f09c7a586df3f4",
+    "inputs.json": "bb1c42fb5911d146d6ccd76d942b8253b7eecaa5a1b73eb7d06d83311578ceff",
+    "baseline.json": "9b3b94f7e0bff426833f55a942c05577193ce21656bc2b89e98ee337c8012546",
+    "results.json": "215a9807f8033ca910bdcecef5e825e3749b48aa462077efecc784bfd2b59859",
+    "controls.json": "46c0028a6f4ceb090e0fde1a95a682fa3900349668df47fa3a28ac7d8244112d",
+    "worker-1.json": "35adacfb4cfca3b11646b1dae0c62cdb25e15c16ead75fa7817462206e03a2cb",
+    "worker-2.json": "3bca7640a05356dd7961e799d44fc6cb11c82d00b1ebf2c2d1de7a24f263add6",
+    "app-report.json": "bb55d63c581cc346c0d325ad17e495cff06d0dd3603664ca52a23077ccdc5dea",
+    "integrity.json": "184185c1762c71e7becd039c3aaf6b1afef2477e915c29ed7c50cec993f8a0f0",
+    "full-suite.xml": "cc15cf8ec373138d2296b9d3ed5683bc5a0b79618e365dfb20a79506cf767462",
+    "source_snapshot.zip": "db6eb8187426538044b6c5b3a0f76de2fa30f60b74aceefb18326cdca409d7db",
+    "service.json": "bd47a4be303d9e797bd6803110ba4eb62243d6ece39ab6bec565802e5387b66c",
+    "ACCEPTANCE.md": "13aeb8daf9f1e172ad1de716f9fb999cb6d1d67de41d5ca742ef4f09efed7ff1"
+  }
+}

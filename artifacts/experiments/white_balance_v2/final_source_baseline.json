@@ -1,0 +1,7 @@
+{
+  "src/white_balance.py": "81c67f60f1382a4e4e9bc3f85e4aaafd1062b886f845cdaeb2acdf3fe93005cb",
+  "tests/test_white_balance.py": "964fc92b46d8a3be3e11dbdc7faa21243c3f900fd627a15bbb000b222cba687c",
+  "src/lut_natural.py": "0b6d116d4c5f445a5de36644c3ca821a3ac9a23fedc6f59296769c6c7b5f167a",
+  "src/scene_policy.py": "89cb9750c864947242ebaf0d074ed6995ad07e84ed81c112c2853f3cfcb100fb",
+  "app/streamlit_app.py": "63d5dc10901c7c329282e1225410e8c3fa800f543d0bc596c8eacecf9e27ef4e"
+}

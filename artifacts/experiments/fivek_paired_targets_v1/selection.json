@@ -1,0 +1,1983 @@
+{
+  "seed": 20261005,
+  "count": 100,
+  "expert": "C",
+  "requested_metadata_quotas": {
+    "subject": {
+      "person(s)": 30,
+      "nature": 25,
+      "man-made object": 25,
+      "animal(s)": 15,
+      "unknown": 5
+    },
+    "light": {
+      "sun or sky": 55,
+      "mixed": 25,
+      "artificial": 20
+    },
+    "location": {
+      "outdoors": 65,
+      "indoors": 30,
+      "unknown": 5
+    },
+    "time": {
+      "day": 60,
+      "dawn or dusk": 15,
+      "night": 10,
+      "unknown": 15
+    }
+  },
+  "selection": "Greedy metadata coverage; 80 train/20 development validation, intersection of both split versions; no target pixels.",
+  "excluded_test_groups": 879,
+  "protected_sha256": {
+    "app/streamlit_app.py": "0478115d5c81c6bd5cbe3ab1ca05361bc5515967dc2d0fc6df850bb6b806ce7c",
+    "src/lut_natural.py": "d3a3d0ecb3de687eebf6a070f755b8602dace3264e7f7306ff5b6ada4f065dde",
+    "src/photo_engine.py": "ac2f2186bd8a4651320322537f56e03323adf94c3def5193d11ed5deda2f95d7",
+    "src/adaptive_lut.py": "282ed35fbd26c719d2714ab93bec3872289c7ce53563b27dbf147e3042587a38",
+    "src/jpeg_inference.py": "969f6ef4ae05542f90f1477dc100623e30460e8c2bd4f732b81936acbf55f5f7",
+    "requirements.lock.txt": "2e25fa64419b03f08af92f9f58b2330b3d9e8811b05a0d81b901433b645e55b0",
+    "tests/test_automatic_photo.py": "e5bbe7b5c34bb5fb05b4fede7ec6f076a72039ee188bf5a894927ade83d15211",
+    "src/color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+    "src/preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6",
+    "data/processed/splits.json": "5daf75979d66fbba393f667fbc0f6661902e838a6065d8f80402214a8461b73b",
+    "data/processed/model_vnext/splits.json": "a409c9fde89d6ea3117decfd2b41fd4ead115361b16589ab76cef8287c4a1a07",
+    "data/processed/model_vnext/groups.json": "3bd76a2cb439c14f75754185818c4d1c1d397f5918e3a720a70d391c88821d17",
+    "artifacts/model/model.onnx": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+    "artifacts/model/model.json": "0e8f81c12684ce3ae2b993dbb097883df1576786c830235da2cfb4e6003b01b2",
+    "data/external_models/image_adaptive_3dlut/pretrained_models/sRGB/classifier.pth": "bae9865395625ecae58cfe86147e521093bb1e29e7b2544e02adb238b8035021",
+    "data/external_models/image_adaptive_3dlut/pretrained_models/sRGB/LUTs.pth": "c1bb2bc4b7239c1a7e96159f5923123ba796b1fceb0b8c3132b423ea825b821a",
+    "data/raw/fivek_dataset/raw_photos/fivek.lrcat": "2f956adeafa56603e48eae49f5a7ff8c75a790d0d20905d9b434bec32ff05b7b"
+  },
+  "coverage": {
+    "subject": {
+      "man-made object": 25,
+      "person(s)": 30,
+      "unknown": 5,
+      "nature": 25,
+      "animal(s)": 15
+    },
+    "light": {
+      "sun or sky": 55,
+      "artificial": 20,
+      "mixed": 25
+    },
+    "location": {
+      "outdoors": 64,
+      "indoors": 31,
+      "unknown": 5
+    },
+    "time": {
+      "day": 60,
+      "unknown": 15,
+      "night": 10,
+      "dawn or dusk": 15
+    }
+  },
+  "photos": [
+    {
+      "source_id": "a0784-_mg_7693.dng",
+      "public_id": "a0784-_MG_7693",
+      "group": "a0784-_mg_7693.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0784-_MG_7693.dng",
+      "source_sha256": "fa8aecb1ee745cb0da3f53bbb3fb34a035b1fe9ef5cfe1921916f92fa45beb28",
+      "cache_path": "data/processed/images/a0784-_mg_7693.jpg",
+      "cache_sha256": "3f1d8aca92b11c83d44c83e9a58c0b338136c53463601107b5bdd517188239c7",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0784-_MG_7693.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0784-_MG_7693.tif"
+    },
+    {
+      "source_id": "a0341-dgw_002.dng",
+      "public_id": "a0341-dgw_002",
+      "group": "a0341-dgw_002.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a0341-dgw_002.dng",
+      "source_sha256": "673126c915e328c60a87973dd55c98fe18c34d23ce5689ff981d532b55a6b9d2",
+      "cache_path": "data/processed/images/a0341-dgw_002.jpg",
+      "cache_sha256": "f90c387f33f6171aec1ed7a666a23f325f89cfd719a5ddfb8c80c84d14eac18e",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0341-dgw_002.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0341-dgw_002.tif"
+    },
+    {
+      "source_id": "a4796-20090208_at_17h53m27__mg_0089.dng",
+      "public_id": "a4796-20090208_at_17h53m27__MG_0089",
+      "group": "a4796-20090208_at_17h53m27__mg_0089.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "unknown",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a4796-20090208_at_17h53m27__MG_0089.dng",
+      "source_sha256": "fda954723bfb3dc0893df557ccf1f8043ee173cf14c70ad983412504d9f58557",
+      "cache_path": "data/processed/images/a4796-20090208_at_17h53m27__mg_0089.jpg",
+      "cache_sha256": "dc040759d80a7288104cb1b8d5ca927968a2fc6c6a02493ab7e9f11c34687566",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4796-20090208_at_17h53m27__MG_0089.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4796-20090208_at_17h53m27__MG_0089.tif"
+    },
+    {
+      "source_id": "a3322-_dgw6269.dng",
+      "public_id": "a3322-_DGW6269",
+      "group": "a3322-_dgw6269.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "unknown",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3322-_DGW6269.dng",
+      "source_sha256": "6278cf1708ea6f80efcefddfc9abd6e1c2c9510a5553d177ca5719ddb791dc77",
+      "cache_path": "data/processed/images/a3322-_dgw6269.jpg",
+      "cache_sha256": "5f464dffca2f3bca6fb29162a873f86b8e072bedffcce188de1bde76c3da9819",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3322-_DGW6269.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3322-_DGW6269.tif"
+    },
+    {
+      "source_id": "a2654-img_0032.dng",
+      "public_id": "a2654-IMG_0032",
+      "group": "a2654-img_0032.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a2654-IMG_0032.dng",
+      "source_sha256": "791776739f5d2ce2081672a3f55cdb568810cbf58eb985ca4cf230577c578759",
+      "cache_path": "data/processed/images/a2654-img_0032.jpg",
+      "cache_sha256": "78ca4268cbc20f325c7f5274aa43bb716bc78965b56551e8371b0c71e6760edb",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2654-IMG_0032.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2654-IMG_0032.tif"
+    },
+    {
+      "source_id": "a4133-dgw_020.dng",
+      "public_id": "a4133-dgw_020",
+      "group": "a4133-dgw_020.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a4133-dgw_020.dng",
+      "source_sha256": "caded5fd4f45bcd790406707fa5099fa543a6266e40bae9ba898e984f12cba4b",
+      "cache_path": "data/processed/images/a4133-dgw_020.jpg",
+      "cache_sha256": "622661bff2b5942fc1ad244ef26a6b76dca9d76c0a3572c88e9cee9f151010f0",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4133-dgw_020.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4133-dgw_020.tif"
+    },
+    {
+      "source_id": "a0986-ja_pe-81.dng",
+      "public_id": "a0986-Ja_Pe-81",
+      "group": "a0986-ja_pe-81.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0986-Ja_Pe-81.dng",
+      "source_sha256": "c966f77be6d0738e1a10730522480b5aec3cc4a16a57e97d56d47ec52bb92836",
+      "cache_path": "data/processed/images/a0986-ja_pe-81.jpg",
+      "cache_sha256": "71eb333a582ec4706b84c64cc7030f3bc6b25eded759745e3b40ecbf53df49e2",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0986-Ja_Pe-81.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0986-Ja_Pe-81.tif"
+    },
+    {
+      "source_id": "a4755-duggan_090323_6173.dng",
+      "public_id": "a4755-Duggan_090323_6173",
+      "group": "a4755-duggan_090323_6173.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a4755-Duggan_090323_6173.dng",
+      "source_sha256": "ee727763867c9aa81118b4a30090d90defb80a69eb1a3224a6a53dff1ff88534",
+      "cache_path": "data/processed/images/a4755-duggan_090323_6173.jpg",
+      "cache_sha256": "92bca3e77d6c1e7515d328a110c88ff4b5cfb577d1f6f8d51f682dd7179b1277",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4755-Duggan_090323_6173.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4755-Duggan_090323_6173.tif"
+    },
+    {
+      "source_id": "a1417-img_0012.dng",
+      "public_id": "a1417-IMG_0012",
+      "group": "a1417-img_0012.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a1417-IMG_0012.dng",
+      "source_sha256": "3f1360d1c4d6468617ab04ffa88a2717fc3d780faffd2ea6d6ab84e22ade7d5d",
+      "cache_path": "data/processed/images/a1417-img_0012.jpg",
+      "cache_sha256": "18b633d3a26d0807d9b1686e710917fe64235aeb0a0ec9b45702017158000047",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1417-IMG_0012.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1417-IMG_0012.tif"
+    },
+    {
+      "source_id": "a2370-ji2e5682.dng",
+      "public_id": "a2370-JI2E5682",
+      "group": "a2370-ji2e5682.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a2370-JI2E5682.dng",
+      "source_sha256": "9544fca16ca9b556ef87ea75895986a46ffe91e977b49bd9eaca9f7fd6c6355f",
+      "cache_path": "data/processed/images/a2370-ji2e5682.jpg",
+      "cache_sha256": "cc0a044632d810744140028b1a16a00f0350befa5779a1416ed27c8d31cc26ce",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2370-JI2E5682.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2370-JI2E5682.tif"
+    },
+    {
+      "source_id": "a4720-dsc_0022.dng",
+      "public_id": "a4720-DSC_0022",
+      "group": "a4720-dsc_0022.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a4720-DSC_0022.dng",
+      "source_sha256": "224294a50c0bcb80905a1ee3413170c9647c5ff9b331c0e9cffcd0c37422b642",
+      "cache_path": "data/processed/images/a4720-dsc_0022.jpg",
+      "cache_sha256": "6b07206c002fbcdead86a433f6cc8f5bab634e2112163af756e355131b1f1e3c",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4720-DSC_0022.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4720-DSC_0022.tif"
+    },
+    {
+      "source_id": "a3500-dgw_099.dng",
+      "public_id": "a3500-dgw_099",
+      "group": "a3500-dgw_099.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3500-dgw_099.dng",
+      "source_sha256": "7658c418d2f35c1223e9d4b1db1a05d33d2feac3a439d2fbeaf956cb25be8511",
+      "cache_path": "data/processed/images/a3500-dgw_099.jpg",
+      "cache_sha256": "f1ff1af9e064da1b4509258823b2db326d05fe7dd7ef6808ad3263551804fa82",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3500-dgw_099.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3500-dgw_099.tif"
+    },
+    {
+      "source_id": "a1797-jmac_mg_6883.dng",
+      "public_id": "a1797-jmac_MG_6883",
+      "group": "a1797-jmac_mg_6883.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a1797-jmac_MG_6883.dng",
+      "source_sha256": "63c7078b7199ac40c10d0568784cc0b15de4a0cfccf0d8e3f5ff74a2a79420b8",
+      "cache_path": "data/processed/images/a1797-jmac_mg_6883.jpg",
+      "cache_sha256": "31048d272a1b1e9a511153113b8ba279892b6575f5d8c610daac408def2d1914",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1797-jmac_MG_6883.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1797-jmac_MG_6883.tif"
+    },
+    {
+      "source_id": "a3250-dgw_113.dng",
+      "public_id": "a3250-dgw_113",
+      "group": "a3250-dgw_113.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3250-dgw_113.dng",
+      "source_sha256": "d8ccef7e42873234024e533e09d8a527f37ba197010dfca4b23fe5c0585f0923",
+      "cache_path": "data/processed/images/a3250-dgw_113.jpg",
+      "cache_sha256": "80baa2c8869a261631f26f7ae6a20c8fb632da9fe8006e518bab62792751f466",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3250-dgw_113.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3250-dgw_113.tif"
+    },
+    {
+      "source_id": "a1715-lsyd4o0733.dng",
+      "public_id": "a1715-LSYD4O0733",
+      "group": "a1715-lsyd4o0733.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1715-LSYD4O0733.dng",
+      "source_sha256": "4e58c156f57f658d92592fce03f601b02da4ed31ed9169f6df7e4e955aa49041",
+      "cache_path": "data/processed/images/a1715-lsyd4o0733.jpg",
+      "cache_sha256": "10ceab7746ce7c9146e72a6f85f699c16d86df391774eeb6cfeb4c8ab17f2b5f",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1715-LSYD4O0733.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1715-LSYD4O0733.tif"
+    },
+    {
+      "source_id": "a1231-_dgw6291.dng",
+      "public_id": "a1231-_DGW6291",
+      "group": "a1231-_dgw6291.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a1231-_DGW6291.dng",
+      "source_sha256": "e033802432c37bf5c225f63b45958dc1a1461e3e219f3841befb5074c860d437",
+      "cache_path": "data/processed/images/a1231-_dgw6291.jpg",
+      "cache_sha256": "28e180cb22301d1fb90edbe076831c095b87318f12d049894fc3df67ba13357b",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1231-_DGW6291.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1231-_DGW6291.tif"
+    },
+    {
+      "source_id": "a4408-duggan_080411_5973.dng",
+      "public_id": "a4408-Duggan_080411_5973",
+      "group": "a4408-duggan_080411_5973.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a4408-Duggan_080411_5973.dng",
+      "source_sha256": "b9425145934a1fb62b952179f35091aa41c2959d8bb38cc96c4fd58877ed91a2",
+      "cache_path": "data/processed/images/a4408-duggan_080411_5973.jpg",
+      "cache_sha256": "8ae1ca1708abcbe2e04e0dc5e81f150e6408e68e644b129d900a6a29e2516de0",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4408-Duggan_080411_5973.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4408-Duggan_080411_5973.tif"
+    },
+    {
+      "source_id": "a0072-img_5048.dng",
+      "public_id": "a0072-IMG_5048",
+      "group": "a0072-img_5048.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0072-IMG_5048.dng",
+      "source_sha256": "0e6e4f8b0268c20d6d0f00f13f68b1ffb2bff14810bf2441b3837462532d86ae",
+      "cache_path": "data/processed/images/a0072-img_5048.jpg",
+      "cache_sha256": "c1e5af5ad003caee3e5989f981b0e7121c28cd34e8b57e36bd9ddb545dc68c66",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0072-IMG_5048.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0072-IMG_5048.tif"
+    },
+    {
+      "source_id": "a0875-jmac_dsc1465.dng",
+      "public_id": "a0875-jmac_DSC1465",
+      "group": "a0875-jmac_dsc1465.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0875-jmac_DSC1465.dng",
+      "source_sha256": "10067f3615834e39f4e336f4434123f83afb94c091109dd21223294e2b3a0164",
+      "cache_path": "data/processed/images/a0875-jmac_dsc1465.jpg",
+      "cache_sha256": "d393f1b0b8e252cbc84322591ed1c0082b2355205bd887bb4abfe32cdc8fb10b",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0875-jmac_DSC1465.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0875-jmac_DSC1465.tif"
+    },
+    {
+      "source_id": "a3442-mb_060909_003.dng",
+      "public_id": "a3442-MB_060909_003",
+      "group": "a3442-mb_060909_003.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3442-MB_060909_003.dng",
+      "source_sha256": "7e4868d3d414be390618ac3c72aa49b8539a22f7d2f8633924af75faaaaefa70",
+      "cache_path": "data/processed/images/a3442-mb_060909_003.jpg",
+      "cache_sha256": "ef675f2c8992bfe8270c05933786486d2eb7c071f10cb6fcbacbbf459c0e5133",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3442-MB_060909_003.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3442-MB_060909_003.tif"
+    },
+    {
+      "source_id": "a3407-dsc_0008-1.dng",
+      "public_id": "a3407-DSC_0008-1",
+      "group": "a3407-dsc_0008-1.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a3407-DSC_0008-1.dng",
+      "source_sha256": "ef8e35f6df9f5df718f4055cf25c8b3d76549718893a958101bef9a1bb4db84c",
+      "cache_path": "data/processed/images/a3407-dsc_0008-1.jpg",
+      "cache_sha256": "719b860607dadbc3d65935c5316222fa01a3f33d80b32c9d34ab45019db8dd77",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3407-DSC_0008-1.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3407-DSC_0008-1.tif"
+    },
+    {
+      "source_id": "a4828-duggan_050710_1299.dng",
+      "public_id": "a4828-Duggan_050710_1299",
+      "group": "a4828-duggan_050710_1299.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a4828-Duggan_050710_1299.dng",
+      "source_sha256": "ddd61fbe970990e65347e479d151b8317dbc768218b3aa61e9e2440d94e7b905",
+      "cache_path": "data/processed/images/a4828-duggan_050710_1299.jpg",
+      "cache_sha256": "606ef8640196aec07161ebf18b3f7c37cb7aab041da44eca89e2d6cdd4b7c5fd",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4828-Duggan_050710_1299.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4828-Duggan_050710_1299.tif"
+    },
+    {
+      "source_id": "a2372-kme_139.dng",
+      "public_id": "a2372-kme_139",
+      "group": "a2372-kme_139.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "unknown",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a2372-kme_139.dng",
+      "source_sha256": "3fa28c11875255c7d6342d83c2e6af70a7731ca06bcd00e531557d5e8773daff",
+      "cache_path": "data/processed/images/a2372-kme_139.jpg",
+      "cache_sha256": "080abef6351adb9cc904a66ba1cf3fd5ac14059e9295c134da4622e9785e0eb6",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2372-kme_139.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2372-kme_139.tif"
+    },
+    {
+      "source_id": "a0327-lsyd4o0579.dng",
+      "public_id": "a0327-LSYD4O0579",
+      "group": "a0327-lsyd4o0579.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a0327-LSYD4O0579.dng",
+      "source_sha256": "cf482e824f799937d2562b3bb3a4d2978b6aed28cddb1cfd49ecef6b05a83d83",
+      "cache_path": "data/processed/images/a0327-lsyd4o0579.jpg",
+      "cache_sha256": "a639e4eac2588f0da45aa7ad98c6dba98a755ab4e2901273f14072fe69f902f7",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0327-LSYD4O0579.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0327-LSYD4O0579.tif"
+    },
+    {
+      "source_id": "a2808-20080516_072208__mg_0018.dng",
+      "public_id": "a2808-20080516_072208__MG_0018",
+      "group": "a2808-20080516_072208__mg_0018.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a2808-20080516_072208__MG_0018.dng",
+      "source_sha256": "5e2e165f72a34c632be77ed18fb71e3eaea0999482e3f80e7c58dbdaffa88e1d",
+      "cache_path": "data/processed/images/a2808-20080516_072208__mg_0018.jpg",
+      "cache_sha256": "748858a8a9e28580f797c6c3474869b5452e6465e1a5fa0f6a0a6fa9a4412cba",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2808-20080516_072208__MG_0018.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2808-20080516_072208__MG_0018.tif"
+    },
+    {
+      "source_id": "a2474-img_4319.dng",
+      "public_id": "a2474-IMG_4319",
+      "group": "a2474-img_4319.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "unknown",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a2474-IMG_4319.dng",
+      "source_sha256": "6cd9d4bbde075677cc0db84c71e807e2fc242b559ac2b2cdc3868ac3dbcf0283",
+      "cache_path": "data/processed/images/a2474-img_4319.jpg",
+      "cache_sha256": "763b7ebdf33afcbeb1dfc98fc59ad73955f76c2fada83d7b89f1957c8670a716",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2474-IMG_4319.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2474-IMG_4319.tif"
+    },
+    {
+      "source_id": "a0802-img_8346.dng",
+      "public_id": "a0802-IMG_8346",
+      "group": "a0802-img_8346.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0802-IMG_8346.dng",
+      "source_sha256": "2093656f56d95ce1dfdd2c761a77b03468c628f74c9c553231c2cd6e4d5995a4",
+      "cache_path": "data/processed/images/a0802-img_8346.jpg",
+      "cache_sha256": "0cfbe7608966bc7bc2a66245c8613b07f8d83c2fe9cc6764fd557cb1034f17dc",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0802-IMG_8346.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0802-IMG_8346.tif"
+    },
+    {
+      "source_id": "a0191-jmac_dsc2666.dng",
+      "public_id": "a0191-jmac_DSC2666",
+      "group": "a0191-jmac_dsc2666.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a0191-jmac_DSC2666.dng",
+      "source_sha256": "aa0cc42e3e3d3201b0ea034bd1cf47852ce5d96ca32f9e8faf9741e8d7499f38",
+      "cache_path": "data/processed/images/a0191-jmac_dsc2666.jpg",
+      "cache_sha256": "7ef3a294ce5b66930b00459b3b19b7f171a923271524d9122ace72c3a72c7294",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0191-jmac_DSC2666.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0191-jmac_DSC2666.tif"
+    },
+    {
+      "source_id": "a0472-mb_040506_010.dng",
+      "public_id": "a0472-MB_040506_010",
+      "group": "a0472-mb_040506_010.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0472-MB_040506_010.dng",
+      "source_sha256": "f427e424cbce78628291ff81a6548bbc27b661398e285978bfab2dc49a4b481b",
+      "cache_path": "data/processed/images/a0472-mb_040506_010.jpg",
+      "cache_sha256": "f6c8a1992e307c9097942e3b52991a2662d6b0165cb53435470cfd01b93f4c87",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0472-MB_040506_010.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0472-MB_040506_010.tif"
+    },
+    {
+      "source_id": "a4121-07-11-22-at-06h50m14s-_mg_6000.dng",
+      "public_id": "a4121-07-11-22-at-06h50m14s-_MG_6000",
+      "group": "a4121-07-11-22-at-06h50m14s-_mg_6000.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a4121-07-11-22-at-06h50m14s-_MG_6000.dng",
+      "source_sha256": "ff7d38596f19a31ab38016146a12115b55d1c65ac028c36e15275a5cb2b1450e",
+      "cache_path": "data/processed/images/a4121-07-11-22-at-06h50m14s-_mg_6000.jpg",
+      "cache_sha256": "15bc3130cb3f6a3db4822bb8e952e191974223ba1d6462b3fa9b0613a93da285",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4121-07-11-22-at-06h50m14s-_MG_6000.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4121-07-11-22-at-06h50m14s-_MG_6000.tif"
+    },
+    {
+      "source_id": "a3368-jmac_mg_0786.dng",
+      "public_id": "a3368-jmac_MG_0786",
+      "group": "a3368-jmac_mg_0786.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3368-jmac_MG_0786.dng",
+      "source_sha256": "c3f6c2cdf4c005e77e1aa5f4f2cc289c84a38b77d69ebfeba199e598f8b53594",
+      "cache_path": "data/processed/images/a3368-jmac_mg_0786.jpg",
+      "cache_sha256": "8b360840369e44dff9ea9ba6eb5d4e86a240839277ef4e7f4e78448375c8677f",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3368-jmac_MG_0786.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3368-jmac_MG_0786.tif"
+    },
+    {
+      "source_id": "a3536-wp_img_0921.dng",
+      "public_id": "a3536-WP_IMG_0921",
+      "group": "a3536-wp_img_0921.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a3536-WP_IMG_0921.dng",
+      "source_sha256": "d1b9a65003b5362d1b57127c7c573edbfa783c2a812cbfc51eaa41c5ab4ccb7d",
+      "cache_path": "data/processed/images/a3536-wp_img_0921.jpg",
+      "cache_sha256": "6c04ec3286d9702605da41e30a05243afe15bb581604583919ecb4fa777243de",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3536-WP_IMG_0921.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3536-WP_IMG_0921.tif"
+    },
+    {
+      "source_id": "a0133-050724_185320__i2e5160.dng",
+      "public_id": "a0133-050724_185320__I2E5160",
+      "group": "a0133-050724_185320__i2e5160.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0133-050724_185320__I2E5160.dng",
+      "source_sha256": "2a4b774552ea98e32d3f22832e5028973dca1110b66509b95d4c8d1d5f77b67b",
+      "cache_path": "data/processed/images/a0133-050724_185320__i2e5160.jpg",
+      "cache_sha256": "17aa689b05f46d88d6415378c9302e51640fe8050ab8951bd2e0e3fe3ea142b7",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0133-050724_185320__I2E5160.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0133-050724_185320__I2E5160.tif"
+    },
+    {
+      "source_id": "a1281-tc_dsc2356.dng",
+      "public_id": "a1281-tc_DSC2356",
+      "group": "a1281-tc_dsc2356.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1281-tc_DSC2356.dng",
+      "source_sha256": "56485fb3deeb79ce766931a42d48b695261f75df319a0af37019b121659cce36",
+      "cache_path": "data/processed/images/a1281-tc_dsc2356.jpg",
+      "cache_sha256": "203444f26cdb4a175fcbbf57399d499f9877cd741b5575c098a35ad78e659cdd",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1281-tc_DSC2356.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1281-tc_DSC2356.tif"
+    },
+    {
+      "source_id": "a2375-img_4979.dng",
+      "public_id": "a2375-IMG_4979",
+      "group": "a2375-img_4979.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a2375-IMG_4979.dng",
+      "source_sha256": "f32cf7df9b973bbaa7392693a08194c9e2fc1ecad2268bf2a6a91bb1b94583fc",
+      "cache_path": "data/processed/images/a2375-img_4979.jpg",
+      "cache_sha256": "78f749b7e6b126ab68331a0fd768d45730e3307824224b5010ca5aa8c696a970",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2375-IMG_4979.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2375-IMG_4979.tif"
+    },
+    {
+      "source_id": "a4925-_dgw7848.dng",
+      "public_id": "a4925-_DGW7848",
+      "group": "a4925-_dgw7848.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a4925-_DGW7848.dng",
+      "source_sha256": "7dcd60abd168421816ed6fbd62c34855852826a07b11913c81e104c0710bcdbd",
+      "cache_path": "data/processed/images/a4925-_dgw7848.jpg",
+      "cache_sha256": "c6c240e9b2082c30f295a1694788ed94cada08af14f50388afa5f67afab31c1a",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4925-_DGW7848.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4925-_DGW7848.tif"
+    },
+    {
+      "source_id": "a0842-tc_dsc2360.dng",
+      "public_id": "a0842-tc_DSC2360",
+      "group": "a0842-tc_dsc2360.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a0842-tc_DSC2360.dng",
+      "source_sha256": "528fde65cf97287e2cb4e614c70b4df08dd7e770e3b2619316600693e7dfcf60",
+      "cache_path": "data/processed/images/a0842-tc_dsc2360.jpg",
+      "cache_sha256": "1eb50cc612ca7ecc997a78f82f209686b564949372fc9a6f29f1feca94f91d3e",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0842-tc_DSC2360.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0842-tc_DSC2360.tif"
+    },
+    {
+      "source_id": "a2754-_dsc7455.dng",
+      "public_id": "a2754-_DSC7455",
+      "group": "a2754-_dsc7455.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a2754-_DSC7455.dng",
+      "source_sha256": "04112e3c6ca6f7127121b6b3503577479d8e9f3e335c2906391b5ab4c5104ff7",
+      "cache_path": "data/processed/images/a2754-_dsc7455.jpg",
+      "cache_sha256": "47e31e14f1e0789f34bc9bc0c55bdaa3896c49d192a6473d01388b9f28637ab6",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2754-_DSC7455.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2754-_DSC7455.tif"
+    },
+    {
+      "source_id": "a1305-nkim_mg_6827.dng",
+      "public_id": "a1305-NKIM_MG_6827",
+      "group": "a1305-nkim_mg_6827.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1305-NKIM_MG_6827.dng",
+      "source_sha256": "918a333b85d9a66ab967b7f094321908514c674ed0bacf260f952e8b5ae07135",
+      "cache_path": "data/processed/images/a1305-nkim_mg_6827.jpg",
+      "cache_sha256": "c11889298843713284b5260ad4057e3f02345d91d0f2855046c391e6c709fd07",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1305-NKIM_MG_6827.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1305-NKIM_MG_6827.tif"
+    },
+    {
+      "source_id": "a3042-kme_092.dng",
+      "public_id": "a3042-kme_092",
+      "group": "a3042-kme_092.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3042-kme_092.dng",
+      "source_sha256": "b1328cb52f7a145db8425404b58119613d30e7290c3ebd5251d0de8caffb277d",
+      "cache_path": "data/processed/images/a3042-kme_092.jpg",
+      "cache_sha256": "ca73e4000a69d1dcfc62f5fdbd60646ae8eab40cfbe4fbc8a63f202afeb87e2b",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3042-kme_092.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3042-kme_092.tif"
+    },
+    {
+      "source_id": "a4867-dsc_0350.dng",
+      "public_id": "a4867-DSC_0350",
+      "group": "a4867-dsc_0350.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a4867-DSC_0350.dng",
+      "source_sha256": "f5247b2e641acbf3e9850f507f1465c2def5499f658a38a63460634176060711",
+      "cache_path": "data/processed/images/a4867-dsc_0350.jpg",
+      "cache_sha256": "5540505eaaa48e195af46dbf95f05071c7acab64940d8680c9466e98b16a8f2d",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4867-DSC_0350.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4867-DSC_0350.tif"
+    },
+    {
+      "source_id": "a2160-kme_173.dng",
+      "public_id": "a2160-kme_173",
+      "group": "a2160-kme_173.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "unknown",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a2160-kme_173.dng",
+      "source_sha256": "10c7b92d4ae905a503385e30e57bf36cafe3fd1b1d6360082ccb2f40c72e6a64",
+      "cache_path": "data/processed/images/a2160-kme_173.jpg",
+      "cache_sha256": "bcc3a7703bd7b44ce8b41bf80c5b75d6ff7ab6e0b6cb4ed957f3c2189c5fd7e5",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2160-kme_173.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2160-kme_173.tif"
+    },
+    {
+      "source_id": "a0104-dvf_003.dng",
+      "public_id": "a0104-dvf_003",
+      "group": "a0104-dvf_003.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a0104-dvf_003.dng",
+      "source_sha256": "dcc8d1c1b682f3cb78dfd1b719560e793f5acd26741fc297ef56bb4725cfa420",
+      "cache_path": "data/processed/images/a0104-dvf_003.jpg",
+      "cache_sha256": "34d9d70068c07eeab3820d406d89bcff2d4aa31ae568ad9f7f9179faad6fc1ea",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0104-dvf_003.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0104-dvf_003.tif"
+    },
+    {
+      "source_id": "a1328-20080630_at_22h44m56__mg_1921.dng",
+      "public_id": "a1328-20080630_at_22h44m56__MG_1921",
+      "group": "a1328-20080630_at_22h44m56__mg_1921.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a1328-20080630_at_22h44m56__MG_1921.dng",
+      "source_sha256": "e4580a1e862bec6a1b985964aa1e9bd6cbab6e79d9e84ffc380f88c44e621569",
+      "cache_path": "data/processed/images/a1328-20080630_at_22h44m56__mg_1921.jpg",
+      "cache_sha256": "4b9cb57bcad7c961eb69e7acb2c7a341f77170a845aea5b6bc3b65c2557bf3f2",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1328-20080630_at_22h44m56__MG_1921.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1328-20080630_at_22h44m56__MG_1921.tif"
+    },
+    {
+      "source_id": "a1947-jn_20080703_ebony_002.dng",
+      "public_id": "a1947-jn_20080703_Ebony_002",
+      "group": "a1947-jn_20080703_ebony_002.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1947-jn_20080703_Ebony_002.dng",
+      "source_sha256": "c57a97f3680d7c7d0b4a287b86b206dd0d4baa1d900f1dae64e77de4f2d8e249",
+      "cache_path": "data/processed/images/a1947-jn_20080703_ebony_002.jpg",
+      "cache_sha256": "189297e8c81f27a02550062750ef916aeeff6fca913fe043373aee49397b12e9",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1947-jn_20080703_Ebony_002.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1947-jn_20080703_Ebony_002.tif"
+    },
+    {
+      "source_id": "a3423-_dgw6316.dng",
+      "public_id": "a3423-_DGW6316",
+      "group": "a3423-_dgw6316.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "unknown",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3423-_DGW6316.dng",
+      "source_sha256": "d86b4a109260bf80942364ae5c5bbef77928d2a7fc4420995e9a0da9d69a63e6",
+      "cache_path": "data/processed/images/a3423-_dgw6316.jpg",
+      "cache_sha256": "8665e06bf741c37482eeb169ecb497174e02b1667b2cef219a977a136ed4595c",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3423-_DGW6316.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3423-_DGW6316.tif"
+    },
+    {
+      "source_id": "a4820-dsc_0210.dng",
+      "public_id": "a4820-DSC_0210",
+      "group": "a4820-dsc_0210.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a4820-DSC_0210.dng",
+      "source_sha256": "7952de5ef484cee0e00b06a41b2d5fe88d9cd4d8b7cb91a55fc9454465e4b367",
+      "cache_path": "data/processed/images/a4820-dsc_0210.jpg",
+      "cache_sha256": "3052ae007af81f2c24eb1359aaf55710955fa85caf4b54c62c378763d26ba582",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4820-DSC_0210.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4820-DSC_0210.tif"
+    },
+    {
+      "source_id": "a2009-jn_20080129_las_vegas_0123.dng",
+      "public_id": "a2009-jn_20080129_Las_Vegas_0123",
+      "group": "a2009-jn_20080129_las_vegas_0123.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a2009-jn_20080129_Las_Vegas_0123.dng",
+      "source_sha256": "01000c686d0dcc32410055b5958613579fabe9112265fcd6ab6eb9268cc3a09d",
+      "cache_path": "data/processed/images/a2009-jn_20080129_las_vegas_0123.jpg",
+      "cache_sha256": "57ba90c3c903b58f0941080d622441c0790f213d34c8db1c7e507be408cd55fb",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2009-jn_20080129_Las_Vegas_0123.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2009-jn_20080129_Las_Vegas_0123.tif"
+    },
+    {
+      "source_id": "a0387-img_3388.dng",
+      "public_id": "a0387-IMG_3388",
+      "group": "a0387-img_3388.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0387-IMG_3388.dng",
+      "source_sha256": "8509ebd2a5d5382e28b62e2b942f6b6198c7f4890f26a2fcef36191ecfef2601",
+      "cache_path": "data/processed/images/a0387-img_3388.jpg",
+      "cache_sha256": "2afed1fa8296fa45c61d0f83cf688d54970cfb2ab5c3e97c37bf2e11f917e32a",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0387-IMG_3388.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0387-IMG_3388.tif"
+    },
+    {
+      "source_id": "a4485-_dsc0026.dng",
+      "public_id": "a4485-_DSC0026",
+      "group": "a4485-_dsc0026.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a4485-_DSC0026.dng",
+      "source_sha256": "477c593ece42ef558dea66583e43f59e6f36876c864fbcfe01817a5fc6f4b2b4",
+      "cache_path": "data/processed/images/a4485-_dsc0026.jpg",
+      "cache_sha256": "57500f46c27e234debc3da60adb4aa426d3c06d530512170677e1b6ee897a1fe",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4485-_DSC0026.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4485-_DSC0026.tif"
+    },
+    {
+      "source_id": "a1930-lsyd4o0656.dng",
+      "public_id": "a1930-LSYD4O0656",
+      "group": "a1930-lsyd4o0656.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1930-LSYD4O0656.dng",
+      "source_sha256": "b578564fbf5fce6752b160efbfdab4a4852a90410480bb746dbc2abe51ea1668",
+      "cache_path": "data/processed/images/a1930-lsyd4o0656.jpg",
+      "cache_sha256": "7a3348043ec907c11252d3b9f8548f59b024ede87d2d964a1b669be6aead4939",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1930-LSYD4O0656.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1930-LSYD4O0656.tif"
+    },
+    {
+      "source_id": "a1026-img_4256.dng",
+      "public_id": "a1026-IMG_4256",
+      "group": "a1026-img_4256.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a1026-IMG_4256.dng",
+      "source_sha256": "0913d8b06c76fa6def8106645a846f298a12792466a95d02f0161acc1443a215",
+      "cache_path": "data/processed/images/a1026-img_4256.jpg",
+      "cache_sha256": "9e921dd614ed76bbf7b90bcf63986f7515c2157717877bfdd8292a8ef303824f",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1026-IMG_4256.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1026-IMG_4256.tif"
+    },
+    {
+      "source_id": "a1603-mb_070908_037.dng",
+      "public_id": "a1603-MB_070908_037",
+      "group": "a1603-mb_070908_037.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1603-MB_070908_037.dng",
+      "source_sha256": "c75cabab6929fada1724b3fd7a8e41f3aa1c1d0287d3fb544484b68613b09820",
+      "cache_path": "data/processed/images/a1603-mb_070908_037.jpg",
+      "cache_sha256": "639b9763e72b52826e1dd4cd498e6db3c84eedfd77975fa43cf8f54518868be1",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1603-MB_070908_037.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1603-MB_070908_037.tif"
+    },
+    {
+      "source_id": "a3355-_dgw6412.dng",
+      "public_id": "a3355-_DGW6412",
+      "group": "a3355-_dgw6412.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3355-_DGW6412.dng",
+      "source_sha256": "fbb3afe8b504e9c8fae11318c20b5b060b28a8e20021220e157ad3b8708218b3",
+      "cache_path": "data/processed/images/a3355-_dgw6412.jpg",
+      "cache_sha256": "b46a28bb661f4a344be8a98100b8f1d43dc794cd39bf26f7bd397b39f19c01ed",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3355-_DGW6412.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3355-_DGW6412.tif"
+    },
+    {
+      "source_id": "a4026-nkim_mg_6632.dng",
+      "public_id": "a4026-NKIM_MG_6632",
+      "group": "a4026-nkim_mg_6632.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a4026-NKIM_MG_6632.dng",
+      "source_sha256": "7b473f0a96d496a66a960dc58891753ed5673eaf09ee8df8bba18b11434c6361",
+      "cache_path": "data/processed/images/a4026-nkim_mg_6632.jpg",
+      "cache_sha256": "95fa6bf76e97965bb17b48990b2fdfef4bf5352257b384e41388dfa675453afe",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4026-NKIM_MG_6632.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4026-NKIM_MG_6632.tif"
+    },
+    {
+      "source_id": "a1897-mb_20030906_094.dng",
+      "public_id": "a1897-MB_20030906_094",
+      "group": "a1897-mb_20030906_094.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a1897-MB_20030906_094.dng",
+      "source_sha256": "ebcd343b3a3d30fa25a990f169624d3b56d57888a3f8e25e36a7202e18563b46",
+      "cache_path": "data/processed/images/a1897-mb_20030906_094.jpg",
+      "cache_sha256": "73e705c03c2870b7194f3abea1ff294c28f5cfef3852993551342920d49126da",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1897-MB_20030906_094.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1897-MB_20030906_094.tif"
+    },
+    {
+      "source_id": "a1086-dsc_0010.dng",
+      "public_id": "a1086-DSC_0010",
+      "group": "a1086-dsc_0010.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1086-DSC_0010.dng",
+      "source_sha256": "11bbb42614a05f5ce93806cb8db62129e7459e922a0eb0cffae8bc9687912ed8",
+      "cache_path": "data/processed/images/a1086-dsc_0010.jpg",
+      "cache_sha256": "1f21cfbf6d1191a57ccc23767d3b3ac6add410a4b255c3ca98e7845815fa87b4",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1086-DSC_0010.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1086-DSC_0010.tif"
+    },
+    {
+      "source_id": "a3806-tc_dsc0674.dng",
+      "public_id": "a3806-tc_DSC0674",
+      "group": "a3806-tc_dsc0674.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a3806-tc_DSC0674.dng",
+      "source_sha256": "a38e254df76f7b2caab654f3c01199a53f1160977f17242512a77f825e9d2939",
+      "cache_path": "data/processed/images/a3806-tc_dsc0674.jpg",
+      "cache_sha256": "96d93fb3c1b4c85bfe258585f3f6720ed09e8148db3238c22a0a1879c61404a0",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3806-tc_DSC0674.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3806-tc_DSC0674.tif"
+    },
+    {
+      "source_id": "a1788-img_4387.dng",
+      "public_id": "a1788-IMG_4387",
+      "group": "a1788-img_4387.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1788-IMG_4387.dng",
+      "source_sha256": "90cad5303d7101bfffc3526be960482ddfba958ebfba7bf307d19e440b22d273",
+      "cache_path": "data/processed/images/a1788-img_4387.jpg",
+      "cache_sha256": "c1db250305a905dd4b9f2d9fc213e01f06174af4432cec078c3ca25e9069f390",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1788-IMG_4387.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1788-IMG_4387.tif"
+    },
+    {
+      "source_id": "a1647-mb_060909_078.dng",
+      "public_id": "a1647-MB_060909_078",
+      "group": "a1647-mb_060909_078.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1647-MB_060909_078.dng",
+      "source_sha256": "7cb420de00ae1b38bde764b69336f19116f64073b08e2d213a5acc5ea62f0524",
+      "cache_path": "data/processed/images/a1647-mb_060909_078.jpg",
+      "cache_sha256": "92ff262a7a9cb415304a2985c81a661d9b0feb41c0f844b036245b41ce021c25",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1647-MB_060909_078.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1647-MB_060909_078.tif"
+    },
+    {
+      "source_id": "a4634-dsc_0335.dng",
+      "public_id": "a4634-DSC_0335",
+      "group": "a4634-dsc_0335.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "unknown",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a4634-DSC_0335.dng",
+      "source_sha256": "ad7b10df7443974553dab38d655b51b0427c59a5154ccee17ab79e8ea50640af",
+      "cache_path": "data/processed/images/a4634-dsc_0335.jpg",
+      "cache_sha256": "9dc95885b4f7903095cb6623b257277994e630dc87aae1bbc482fc16733deb84",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4634-DSC_0335.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4634-DSC_0335.tif"
+    },
+    {
+      "source_id": "a4938-20090327_at_11h35m56__mg_1009.dng",
+      "public_id": "a4938-20090327_at_11h35m56__MG_1009",
+      "group": "a4938-20090327_at_11h35m56__mg_1009.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "unknown",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a4938-20090327_at_11h35m56__MG_1009.dng",
+      "source_sha256": "d5519799faffecdec13a83908e8943a74ac521a18b22dc5cf6fd054016c935a5",
+      "cache_path": "data/processed/images/a4938-20090327_at_11h35m56__mg_1009.jpg",
+      "cache_sha256": "1c233cab58db76f59a356407f6a89aed3e6ad041aa5eabe6c56591ce9ecc72b0",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4938-20090327_at_11h35m56__MG_1009.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4938-20090327_at_11h35m56__MG_1009.tif"
+    },
+    {
+      "source_id": "a3746-_i2e5991.dng",
+      "public_id": "a3746-_I2E5991",
+      "group": "a3746-_i2e5991.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a3746-_I2E5991.dng",
+      "source_sha256": "c392f981ef8e7c8a79f50670b3d079ea82d9993a32de83d0a51ba78d60ea4ed7",
+      "cache_path": "data/processed/images/a3746-_i2e5991.jpg",
+      "cache_sha256": "551af0d8de039952e8a5c88957617a16dbc2397c33cf9087879309c3397ed36e",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3746-_I2E5991.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3746-_I2E5991.tif"
+    },
+    {
+      "source_id": "a0903-_dsc0025.dng",
+      "public_id": "a0903-_DSC0025",
+      "group": "a0903-_dsc0025.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a0903-_DSC0025.dng",
+      "source_sha256": "827aa93a44a17f22d2c36fd2eda9c257c2e8de619853150b83e9a97995cc3b00",
+      "cache_path": "data/processed/images/a0903-_dsc0025.jpg",
+      "cache_sha256": "ca42221fb1f8ca334fcf8fd43c81ebc5532e442cdf5dbec0c5ace1682bd2eab6",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0903-_DSC0025.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0903-_DSC0025.tif"
+    },
+    {
+      "source_id": "a0218-kme_181.dng",
+      "public_id": "a0218-kme_181",
+      "group": "a0218-kme_181.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0218-kme_181.dng",
+      "source_sha256": "c0e7b4ff3e396c1ca477dd6d033da007db369f9e4002c7a249470c77a9068314",
+      "cache_path": "data/processed/images/a0218-kme_181.jpg",
+      "cache_sha256": "c91c774396cd8819b0035c81ed5b8d680eb510e10cd450da4c6bcc1e3ff03706",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0218-kme_181.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0218-kme_181.tif"
+    },
+    {
+      "source_id": "a3663-dvf_087.dng",
+      "public_id": "a3663-dvf_087",
+      "group": "a3663-dvf_087.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3663-dvf_087.dng",
+      "source_sha256": "2080b052adcfe9a029f76e3a1c8d180bc30314f2b6387f716bb0d27040341eac",
+      "cache_path": "data/processed/images/a3663-dvf_087.jpg",
+      "cache_sha256": "6e27056e0def5e2e8e8c89d67af5852c3536ffc943a6230eb79dd1ff1b8cbdf8",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3663-dvf_087.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3663-dvf_087.tif"
+    },
+    {
+      "source_id": "a1237-kme_389.dng",
+      "public_id": "a1237-kme_389",
+      "group": "a1237-kme_389.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a1237-kme_389.dng",
+      "source_sha256": "84118593f7df76359c80b8051d1470a86b722f7db5a8b6146dab3450f4753296",
+      "cache_path": "data/processed/images/a1237-kme_389.jpg",
+      "cache_sha256": "fe9f3ae3bd8574538f9ded5357e76e2c5c843c5b7d7e7882d4e5fe0d3b932692",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1237-kme_389.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1237-kme_389.tif"
+    },
+    {
+      "source_id": "a3690-_dgw6402.dng",
+      "public_id": "a3690-_DGW6402",
+      "group": "a3690-_dgw6402.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a3690-_DGW6402.dng",
+      "source_sha256": "76240c4b4857e31991e43d8e0c655f908c805d65a4ea73fb17dc51f1dbb2cfbb",
+      "cache_path": "data/processed/images/a3690-_dgw6402.jpg",
+      "cache_sha256": "30cfdb21e2e6d17dff0b40da21e5a2458b06acd8fddbbf619a56e88b77c74555",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3690-_DGW6402.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3690-_DGW6402.tif"
+    },
+    {
+      "source_id": "a3324-img_0080.dng",
+      "public_id": "a3324-IMG_0080",
+      "group": "a3324-img_0080.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3324-IMG_0080.dng",
+      "source_sha256": "cb4f57d35c8e603043a32875011ff665a4131a009d229b80c42bf1ca8a745e6b",
+      "cache_path": "data/processed/images/a3324-img_0080.jpg",
+      "cache_sha256": "7dd057a44e45bc4b838d6be71c51f4321af6d63f23e78cd5731a16fbfe03a3e8",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3324-IMG_0080.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3324-IMG_0080.tif"
+    },
+    {
+      "source_id": "a2600-img_0312.dng",
+      "public_id": "a2600-IMG_0312",
+      "group": "a2600-img_0312.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a2600-IMG_0312.dng",
+      "source_sha256": "4a03b5aab865ef490b57537ee3b9caf160e6e223f71922c5ade102cbf9a3ecf8",
+      "cache_path": "data/processed/images/a2600-img_0312.jpg",
+      "cache_sha256": "1373b9cba15dedb0fc918ac18c56bd5bb24d3c7c82451d78e48942eec3b37f67",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2600-IMG_0312.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2600-IMG_0312.tif"
+    },
+    {
+      "source_id": "a4656-dsc_0232.dng",
+      "public_id": "a4656-DSC_0232",
+      "group": "a4656-dsc_0232.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a4656-DSC_0232.dng",
+      "source_sha256": "ce8c69d4c445b92d848fda59660087a7a415b5fec8671791e2ad0717c0fa41bf",
+      "cache_path": "data/processed/images/a4656-dsc_0232.jpg",
+      "cache_sha256": "c5b31850469382bd916ee37498f36af1001c3f7a315f7733faf65ebeae1040a4",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4656-DSC_0232.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4656-DSC_0232.tif"
+    },
+    {
+      "source_id": "a3238-img_0891.dng",
+      "public_id": "a3238-IMG_0891",
+      "group": "a3238-img_0891.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3238-IMG_0891.dng",
+      "source_sha256": "bc71d9cedd7a94ab571ff36f4f3774760b31221a444f7816f127327587ef3112",
+      "cache_path": "data/processed/images/a3238-img_0891.jpg",
+      "cache_sha256": "68917c80cf2f79f89a2d2a90cf79bf7e6dfd1f96a93e03f56f28d5be383e1e5e",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3238-IMG_0891.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3238-IMG_0891.tif"
+    },
+    {
+      "source_id": "a2916-wp_crw_7798.dng",
+      "public_id": "a2916-WP_CRW_7798",
+      "group": "a2916-wp_crw_7798.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a2916-WP_CRW_7798.dng",
+      "source_sha256": "cb9341679f0d826095fdac5c539415b55b367153a29b12a5f60731f55c98b687",
+      "cache_path": "data/processed/images/a2916-wp_crw_7798.jpg",
+      "cache_sha256": "8bceb4c5bab0cfcd9a01057023679a5fa2f1c2d38a04397f0e548380f8128747",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2916-WP_CRW_7798.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2916-WP_CRW_7798.tif"
+    },
+    {
+      "source_id": "a0172-jmac_dsc3528.dng",
+      "public_id": "a0172-jmac_DSC3528",
+      "group": "a0172-jmac_dsc3528.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0172-jmac_DSC3528.dng",
+      "source_sha256": "1190746bf976ea4e2ed192c187ef5c6e904b912a8871aec126cedd079bb9e9ba",
+      "cache_path": "data/processed/images/a0172-jmac_dsc3528.jpg",
+      "cache_sha256": "c9d9af2fc2ea90b610b4b66660d6a4d7775e30648e70a25abebe83c6fede8a79",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0172-jmac_DSC3528.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0172-jmac_DSC3528.tif"
+    },
+    {
+      "source_id": "a1100-_dgw6248.dng",
+      "public_id": "a1100-_DGW6248",
+      "group": "a1100-_dgw6248.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a1100-_DGW6248.dng",
+      "source_sha256": "ef9659f5a4eb37bfce49bd285c7635d52f0adffd283a26f5b6538b5113b1a926",
+      "cache_path": "data/processed/images/a1100-_dgw6248.jpg",
+      "cache_sha256": "3eae7b1f166f7bf8dae64251494d59f91cc992c62ed01fb87593ad639b8f2fc7",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1100-_DGW6248.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1100-_DGW6248.tif"
+    },
+    {
+      "source_id": "a3826-kme_482.dng",
+      "public_id": "a3826-kme_482",
+      "group": "a3826-kme_482.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3826-kme_482.dng",
+      "source_sha256": "c301a862e8b09a8646ced79ed490ff8c37316b29617da743acb85c9467326671",
+      "cache_path": "data/processed/images/a3826-kme_482.jpg",
+      "cache_sha256": "f8cd216a15e4f4a092dd62cdbdf88d79311992c02c83d66bc037e0de323cf322",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3826-kme_482.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3826-kme_482.tif"
+    },
+    {
+      "source_id": "a4542-duggan_080411_6019.dng",
+      "public_id": "a4542-Duggan_080411_6019",
+      "group": "a4542-duggan_080411_6019.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a4542-Duggan_080411_6019.dng",
+      "source_sha256": "a374cc49e91bed6d845c2dcbfac1718181402b77f058d8345e368937d887f9ba",
+      "cache_path": "data/processed/images/a4542-duggan_080411_6019.jpg",
+      "cache_sha256": "1bf6fa2f56508ea575d550314629928d4113a27b97d96e5a8d5a5ac021530629",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4542-Duggan_080411_6019.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4542-Duggan_080411_6019.tif"
+    },
+    {
+      "source_id": "a0135-img_2595.dng",
+      "public_id": "a0135-IMG_2595",
+      "group": "a0135-img_2595.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0135-IMG_2595.dng",
+      "source_sha256": "071b27baba9a683d7e80acb716a11296c094b63ac7b3cb1ae204d6f25f473474",
+      "cache_path": "data/processed/images/a0135-img_2595.jpg",
+      "cache_sha256": "1616b56c74ddabb41c080fc28c8281ef9406f05de9dd9dbfb215a4f85b1acbcc",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0135-IMG_2595.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0135-IMG_2595.tif"
+    },
+    {
+      "source_id": "a2361-07-06-01-at-13h15m17-s_mg_1259.dng",
+      "public_id": "a2361-07-06-01-at-13h15m17-s_MG_1259",
+      "group": "a2361-07-06-01-at-13h15m17-s_mg_1259.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a2361-07-06-01-at-13h15m17-s_MG_1259.dng",
+      "source_sha256": "34b030d7999913d88dea57639146cc8ff27d1efa156327123682ffeff34879a4",
+      "cache_path": "data/processed/images/a2361-07-06-01-at-13h15m17-s_mg_1259.jpg",
+      "cache_sha256": "f399b0e6c643e8365365af1b1db9dd1df0022c08c5034f8d9624290b5664b8e3",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2361-07-06-01-at-13h15m17-s_MG_1259.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2361-07-06-01-at-13h15m17-s_MG_1259.tif"
+    },
+    {
+      "source_id": "a3009-_i2e9083.dng",
+      "public_id": "a3009-_I2E9083",
+      "group": "a3009-_i2e9083.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3009-_I2E9083.dng",
+      "source_sha256": "27e5f5182bc64bca28e0413e82e35216c8b18d26987861f6b52b57ae3aea4214",
+      "cache_path": "data/processed/images/a3009-_i2e9083.jpg",
+      "cache_sha256": "63e68560dbcae6a739e35fb53cf8e36aba924054fd6690fdf6bd59f089671d57",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3009-_I2E9083.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3009-_I2E9083.tif"
+    },
+    {
+      "source_id": "a0898-kme_251.dng",
+      "public_id": "a0898-kme_251",
+      "group": "a0898-kme_251.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0898-kme_251.dng",
+      "source_sha256": "c9beb5e37d18af4727d41f09fd99a4f11b791300809afe1fede02a72d351f97f",
+      "cache_path": "data/processed/images/a0898-kme_251.jpg",
+      "cache_sha256": "fa665e1301fb49f8890ec83f7b3c26330402848771e7cbee9da43e1a040d529a",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0898-kme_251.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0898-kme_251.tif"
+    },
+    {
+      "source_id": "a0407-img_8270.dng",
+      "public_id": "a0407-IMG_8270",
+      "group": "a0407-img_8270.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "unknown",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a0407-IMG_8270.dng",
+      "source_sha256": "0f3ada6b27e7a2bed04d2fb908e7aa6e333bfaaaa43ef5458987efb5f3008960",
+      "cache_path": "data/processed/images/a0407-img_8270.jpg",
+      "cache_sha256": "ac9adb4289eb99d337ddc8989d755b91e8129ff35c89aa7d03110e48373bdfde",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0407-IMG_8270.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0407-IMG_8270.tif"
+    },
+    {
+      "source_id": "a1607-kme_325.dng",
+      "public_id": "a1607-kme_325",
+      "group": "a1607-kme_325.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a1607-kme_325.dng",
+      "source_sha256": "d25059d941196bcf92b849ba566394083255e37917f3ef534d9a5c4d41e99e99",
+      "cache_path": "data/processed/images/a1607-kme_325.jpg",
+      "cache_sha256": "52473dca1105ba301bc1805b37bee1cf693db80e585ae74a7654273e6053e39f",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1607-kme_325.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1607-kme_325.tif"
+    },
+    {
+      "source_id": "a4915-20090321_at_18h47m58__mg_0200.dng",
+      "public_id": "a4915-20090321_at_18h47m58__MG_0200",
+      "group": "a4915-20090321_at_18h47m58__mg_0200.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a4915-20090321_at_18h47m58__MG_0200.dng",
+      "source_sha256": "155b08baf85d002a949454b356092d793d8895c291459d0d659f677d77f02bc5",
+      "cache_path": "data/processed/images/a4915-20090321_at_18h47m58__mg_0200.jpg",
+      "cache_sha256": "3cb4c651906a299a2cde9d95cc2c77bdb6ba68a0dbb8ce71585889387817ec54",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4915-20090321_at_18h47m58__MG_0200.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4915-20090321_at_18h47m58__MG_0200.tif"
+    },
+    {
+      "source_id": "a0828-img_1822.dng",
+      "public_id": "a0828-IMG_1822",
+      "group": "a0828-img_1822.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0828-IMG_1822.dng",
+      "source_sha256": "9ef1ca1f694b32cbfd0a792b99045da4a352be7c9ef74ffb28e93065e015f592",
+      "cache_path": "data/processed/images/a0828-img_1822.jpg",
+      "cache_sha256": "74692471c842627b00d7a1dcec4034c4a9f2875767c21a148ad8ac27ccef71b3",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0828-IMG_1822.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0828-IMG_1822.tif"
+    },
+    {
+      "source_id": "a0350-_dsc2622.dng",
+      "public_id": "a0350-_DSC2622",
+      "group": "a0350-_dsc2622.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "unknown",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0350-_DSC2622.dng",
+      "source_sha256": "69a39176351e72e20d11f5d84e31656c176a2449365e84f00805db6ccd421d6b",
+      "cache_path": "data/processed/images/a0350-_dsc2622.jpg",
+      "cache_sha256": "f4edb94cc5aec27133aa2fd148c77a09fab7e8b3ea78d808618cb20cb7e3b1a9",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0350-_DSC2622.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0350-_DSC2622.tif"
+    },
+    {
+      "source_id": "a0835-mb_080329_061.dng",
+      "public_id": "a0835-MB_080329_061",
+      "group": "a0835-mb_080329_061.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0835-MB_080329_061.dng",
+      "source_sha256": "1511d982b95d96687d2903ed61a6563706e3bf5418b46d5ebdc86013267b3d3e",
+      "cache_path": "data/processed/images/a0835-mb_080329_061.jpg",
+      "cache_sha256": "6f00b968074999159b8a6994a0cf7d1af5d5c7c91f09fd21be9c7e13e93d812d",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0835-MB_080329_061.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0835-MB_080329_061.tif"
+    },
+    {
+      "source_id": "a2072-img_2895.dng",
+      "public_id": "a2072-IMG_2895",
+      "group": "a2072-img_2895.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a2072-IMG_2895.dng",
+      "source_sha256": "471ac22b64d678a12ded153b4fb93dc8fb246771847340efab719eadfd717c13",
+      "cache_path": "data/processed/images/a2072-img_2895.jpg",
+      "cache_sha256": "85bb893018aa2ea5594939c4a387dfed762878aaccf558f4f7f59238c451c887",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a2072-IMG_2895.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2072-IMG_2895.tif"
+    },
+    {
+      "source_id": "a3269-_i2e5901.dng",
+      "public_id": "a3269-_I2E5901",
+      "group": "a3269-_i2e5901.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a3269-_I2E5901.dng",
+      "source_sha256": "09a182bf9b8bd727c0eb10c80c212b3c6b0e9ce81295c94039215444854ff85f",
+      "cache_path": "data/processed/images/a3269-_i2e5901.jpg",
+      "cache_sha256": "b84817f4b6dff4f57845a7c056c34bcc9dbcc53b376a172805949ae2ad7299d2",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3269-_I2E5901.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3269-_I2E5901.tif"
+    },
+    {
+      "source_id": "a0605-_mg_7197.dng",
+      "public_id": "a0605-_MG_7197",
+      "group": "a0605-_mg_7197.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a0605-_MG_7197.dng",
+      "source_sha256": "3a10ed5a2422d0626e2bd3fddc56887dbba66c5c0fb75b1a780cc002008beb05",
+      "cache_path": "data/processed/images/a0605-_mg_7197.jpg",
+      "cache_sha256": "c71c983585b075e79710989aef1b21083e0cf17de0c005bfb250e5ad083c666a",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0605-_MG_7197.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0605-_MG_7197.tif"
+    },
+    {
+      "source_id": "a0209-_dgw6273.dng",
+      "public_id": "a0209-_DGW6273",
+      "group": "a0209-_dgw6273.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0209-_DGW6273.dng",
+      "source_sha256": "d724942b8a63827ffac286e7dccdd5bd07e87eda86391acd8bc9ee4adb80bdf4",
+      "cache_path": "data/processed/images/a0209-_dgw6273.jpg",
+      "cache_sha256": "349a3b9b21137983e6b57a24205a39adc49023a03c875c8555fe29165a02869b",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0209-_DGW6273.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0209-_DGW6273.tif"
+    },
+    {
+      "source_id": "a3182-_dgw6265.dng",
+      "public_id": "a3182-_DGW6265",
+      "group": "a3182-_dgw6265.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_path": "data/raw/dngs/a3182-_DGW6265.dng",
+      "source_sha256": "e33a32d883c8f80ad0f3d4c0aadf2247016bec2e5cfbf3f3522dc86a26576f45",
+      "cache_path": "data/processed/images/a3182-_dgw6265.jpg",
+      "cache_sha256": "eec6f3b994eb0a3dfebe831e21cecadb33f307a4acac62e85e5c0348730c96a5",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3182-_DGW6265.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3182-_DGW6265.tif"
+    },
+    {
+      "source_id": "a3744-nkim_mg_6757.dng",
+      "public_id": "a3744-NKIM_MG_6757",
+      "group": "a3744-nkim_mg_6757.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_path": "data/raw/dngs/a3744-NKIM_MG_6757.dng",
+      "source_sha256": "98bc0f0a49d3f3f971edc65037ffd73ae5bd880b9542a70f6e5ac7364a361eab",
+      "cache_path": "data/processed/images/a3744-nkim_mg_6757.jpg",
+      "cache_sha256": "070ca2a5eb50baf0b60d850faa31b28b2e180803b2e115553165b7fe5288b761",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3744-NKIM_MG_6757.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3744-NKIM_MG_6757.tif"
+    },
+    {
+      "source_id": "a0954-_dsc0030.dng",
+      "public_id": "a0954-_DSC0030",
+      "group": "a0954-_dsc0030.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0954-_DSC0030.dng",
+      "source_sha256": "1bc8cea61046d1890ed6b06c72488e4e329830a2464a7609bf651ab86d97eb8f",
+      "cache_path": "data/processed/images/a0954-_dsc0030.jpg",
+      "cache_sha256": "73e15c0eeb8e0b4f5aaa4225f8bbd2151a1e0330bb7373d4989139ed48eafe1f",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0954-_DSC0030.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0954-_DSC0030.tif"
+    },
+    {
+      "source_id": "a3906-ls051025_day_3_ll003.dng",
+      "public_id": "a3906-LS051025_day_3_LL003",
+      "group": "a3906-ls051025_day_3_ll003.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a3906-LS051025_day_3_LL003.dng",
+      "source_sha256": "180ea88a1e59613ac22518715850e59f1b95cf5a8cb1d84f47944589fe86fd3e",
+      "cache_path": "data/processed/images/a3906-ls051025_day_3_ll003.jpg",
+      "cache_sha256": "80ab57b430972fe8170932e7ae911fa67cc60186b5461110b408b317fda45fe4",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a3906-LS051025_day_3_LL003.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3906-LS051025_day_3_LL003.tif"
+    },
+    {
+      "source_id": "a0724-img_4637.dng",
+      "public_id": "a0724-IMG_4637",
+      "group": "a0724-img_4637.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0724-IMG_4637.dng",
+      "source_sha256": "9fe533abc04bcbd54cc1d62f30f3d1e8b5e7145bb513232110ed2195d5742563",
+      "cache_path": "data/processed/images/a0724-img_4637.jpg",
+      "cache_sha256": "e27b886c8b0708195c01ca8ef8e91c0bbc9eb9d8c00ec997fd5e817c09510c14",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0724-IMG_4637.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0724-IMG_4637.tif"
+    },
+    {
+      "source_id": "a0338-wp_crw_9580.dng",
+      "public_id": "a0338-WP_CRW_9580",
+      "group": "a0338-wp_crw_9580.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0338-WP_CRW_9580.dng",
+      "source_sha256": "04d637c4a53c6f6e5310bd0d1bb371bba04778c71e753e8c2420139601bc9290",
+      "cache_path": "data/processed/images/a0338-wp_crw_9580.jpg",
+      "cache_sha256": "4351a97e7eba14bd4f8efaef6ee35c6d3c8445fd0569fce10c82f1182caee36c",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0338-WP_CRW_9580.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0338-WP_CRW_9580.tif"
+    },
+    {
+      "source_id": "a1029-jn_2007_05_11__724.dng",
+      "public_id": "a1029-jn_2007_05_11__724",
+      "group": "a1029-jn_2007_05_11__724.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_path": "data/raw/dngs/a1029-jn_2007_05_11__724.dng",
+      "source_sha256": "9d93509cbc7dbf73a0f2a85839d11eac0b12b8f260f7a94ed5533c5a0151de21",
+      "cache_path": "data/processed/images/a1029-jn_2007_05_11__724.jpg",
+      "cache_sha256": "78c77a7592078c7e14717756ecf39aa37f87a1408afa33cefe5f003b1b5c4254",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a1029-jn_2007_05_11__724.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1029-jn_2007_05_11__724.tif"
+    },
+    {
+      "source_id": "a4927-_dgw0242.dng",
+      "public_id": "a4927-_DGW0242",
+      "group": "a4927-_dgw0242.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a4927-_DGW0242.dng",
+      "source_sha256": "6876b7bb241336a8640610104ea78f3294e38e231f257e0841e9423ebabc32f3",
+      "cache_path": "data/processed/images/a4927-_dgw0242.jpg",
+      "cache_sha256": "06e2862f2d5aaa896588616ce14b903365935f5adb2c67a1d6a1d38575bcdabf",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a4927-_DGW0242.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4927-_DGW0242.tif"
+    },
+    {
+      "source_id": "a0742-img_2429.dng",
+      "public_id": "a0742-IMG_2429",
+      "group": "a0742-img_2429.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_path": "data/raw/dngs/a0742-IMG_2429.dng",
+      "source_sha256": "a5f7027d12dc2b85d6c40d2411045166acb9adf92ca6bfcb7ffdebe5f09255fb",
+      "cache_path": "data/processed/images/a0742-img_2429.jpg",
+      "cache_sha256": "17ddeb3ab769c90c6c9ca78e8160938672f23325805c59352fcc2355024ca330",
+      "expert": "C",
+      "target_url": "https://data.csail.mit.edu/graphics/fivek/img/tiff16_c/a0742-IMG_2429.tif",
+      "target_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0742-IMG_2429.tif"
+    }
+  ],
+  "limits": {
+    "max_file_bytes": 134217728,
+    "max_total_bytes": 8589934592,
+    "workers": 3
+  }
+}

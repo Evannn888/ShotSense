@@ -1,0 +1,288 @@
+[
+  {
+    "input": {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+      "bytes": 10823098,
+      "header_size": [
+        8192,
+        6144
+      ],
+      "sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3"
+    },
+    "status": "passed",
+    "parent_timeout_seconds": 60,
+    "memory_semantics": "250ms sampled root/process-tree RSS sum includes sampling command; shared pages may count twice and short peaks may be missed. macOS rusage high-water bytes recorded separately.",
+    "worker_call_seconds": 16.743103875000003,
+    "png_render_seconds": 7.2341798340000025,
+    "lut": {
+      "version": "image-adaptive-3dlut-paired-srgb-v1",
+      "engine": "Image-Adaptive-3DLUT",
+      "model": {
+        "author_repository": "https://github.com/HuiZeng/Image-Adaptive-3DLUT",
+        "revision": "b491f6df64a588864739a157db271e5c848e1805",
+        "variant": "paired-sRGB",
+        "repository_license": "Apache-2.0",
+        "files": {
+          "pretrained_models/sRGB/classifier.pth": {
+            "bytes": 1083261,
+            "git_blob": "439f2ada316f45d1d28dd86a161790aa3b4e334b",
+            "sha256": "bae9865395625ecae58cfe86147e521093bb1e29e7b2544e02adb238b8035021",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/classifier.pth"
+          },
+          "pretrained_models/sRGB/LUTs.pth": {
+            "bytes": 1294452,
+            "git_blob": "0830dceee2256ea5d0965c029945c329fac82a26",
+            "sha256": "c1bb2bc4b7239c1a7e96159f5923123ba796b1fceb0b8c3132b423ea825b821a",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/LUTs.pth"
+          },
+          "models.py": {
+            "bytes": 12014,
+            "git_blob": "8fbc2de9c12a474de774880a524198d54fb25fb7",
+            "sha256": "3f39c49aebd2b85787638bc9d402d21d5d664b844edd5fb8d5e4ce1fdb1d9f3f",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models.py"
+          },
+          "models_x.py": {
+            "bytes": 8474,
+            "git_blob": "fb3c44475ec62682a062d84ed89601f6a4458a0e",
+            "sha256": "5553ed2306152ecb31a51951f20388de65b96898ddeb4b9d03dc52bf3aa7ad9e",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models_x.py"
+          },
+          "demo_eval.py": {
+            "bytes": 2793,
+            "git_blob": "f6dd73969940e4eb6a21f3f9ef587289bba712df",
+            "sha256": "6d41a39d39041a098cccef085571816935955f9bba42810d4059e3d01dce5bcd",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/demo_eval.py"
+          },
+          "trilinear_cpp/src/trilinear.cpp": {
+            "bytes": 7615,
+            "git_blob": "b4d75b04c36b97559d7421b2ff2df98ee16405a2",
+            "sha256": "5b2b132b625b4bb1ba802213831dcb02e6d4c70b0fffad99f6d3b045da988185",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/trilinear_cpp/src/trilinear.cpp"
+          },
+          "LICENSE": {
+            "bytes": 11357,
+            "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/LICENSE"
+          },
+          "README.md": {
+            "bytes": 5488,
+            "git_blob": "eae43b086353d920e83042098dbefad24a642267",
+            "sha256": "45cd2cc7d86bd7f45649308b508fd1e42b5061e15d89d0ca9980e72656dd8956",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/README.md"
+          }
+        },
+        "semantics": "Frozen external color/tone model, not validated Adobe parameters or a personal-photo preference model."
+      },
+      "weights": [
+        1.811568260192871,
+        -0.6327214241027832,
+        -0.9646010994911194
+      ],
+      "lut_sha256": "cec5f205a7e30ca32fbbf5e8bc4e7de810c72104a1126216666aa2d57d6e5376",
+      "size": [
+        8192,
+        6144
+      ],
+      "device": "cpu",
+      "row_chunk": 128,
+      "new_full_channel_fraction": 0.0006466905275980631,
+      "new_black_pixel_fraction": 0.026678502559661865,
+      "float_below_zero_pixel_fraction": 0.08166138331095378,
+      "float_above_one_pixel_fraction": 0.0005866686503092448,
+      "input_pixels_sha256": "a11dbba98ab50c03463b4c9cbd15364a1cc13da8d04958e6a7e990e04434b6bb",
+      "output_pixels_sha256": "fad9ca08bce51220957d60ecc63c497efc71340d4cbfbc8c37e6586082748ce0",
+      "predictor_seconds": 0.05554799999999993,
+      "table_seconds": 4.470914083,
+      "seconds": 4.52646275,
+      "quality_status": "isolated experimental pilot; personal-photo preference pending",
+      "semantics": "Learned global sRGB color/tone transform of original pixels; not camera Kelvin, semantic region edits, denoising or reconstructed detail.",
+      "input_sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3",
+      "input_format": "JPEG",
+      "embedded_icc_converted_to_srgb": true,
+      "end_to_end_seconds": 6.794698667
+    },
+    "export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 1.0,
+      "blend_space": "display sRGB",
+      "size": [
+        8192,
+        6144
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 1.0,
+      "output_png_sha256": "8266e383116e552fa60c4afd5debfd12c09d9e320a1d1b959d9b8355392a3c36",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "half_export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 0.5,
+      "blend_space": "display sRGB",
+      "size": [
+        8192,
+        6144
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.9999751249949137,
+      "output_png_sha256": "83df6a3a14a67cf6cb4b099ffca707aab80512d4fc9f3f0bdf575a6f940aa924",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "source_preserved": true,
+    "matches_frozen_full_png": true,
+    "native_half_crop_matches": true,
+    "zero_strength_identity": true,
+    "total_seconds": 42.807759333999996,
+    "rss": {
+      "tree_peak_bytes": 1567997952,
+      "root_peak_bytes": 1566375936,
+      "samples": 156
+    },
+    "root_high_water_bytes": 1566375936,
+    "children_high_water_bytes": 1149157376
+  },
+  {
+    "input": {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+      "bytes": 2779239,
+      "header_size": [
+        8688,
+        5712
+      ],
+      "sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d"
+    },
+    "status": "passed",
+    "parent_timeout_seconds": 60,
+    "memory_semantics": "250ms sampled root/process-tree RSS sum includes sampling command; shared pages may count twice and short peaks may be missed. macOS rusage high-water bytes recorded separately.",
+    "worker_call_seconds": 12.675523541,
+    "png_render_seconds": 5.064227292000002,
+    "lut": {
+      "version": "image-adaptive-3dlut-paired-srgb-v1",
+      "engine": "Image-Adaptive-3DLUT",
+      "model": {
+        "author_repository": "https://github.com/HuiZeng/Image-Adaptive-3DLUT",
+        "revision": "b491f6df64a588864739a157db271e5c848e1805",
+        "variant": "paired-sRGB",
+        "repository_license": "Apache-2.0",
+        "files": {
+          "pretrained_models/sRGB/classifier.pth": {
+            "bytes": 1083261,
+            "git_blob": "439f2ada316f45d1d28dd86a161790aa3b4e334b",
+            "sha256": "bae9865395625ecae58cfe86147e521093bb1e29e7b2544e02adb238b8035021",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/classifier.pth"
+          },
+          "pretrained_models/sRGB/LUTs.pth": {
+            "bytes": 1294452,
+            "git_blob": "0830dceee2256ea5d0965c029945c329fac82a26",
+            "sha256": "c1bb2bc4b7239c1a7e96159f5923123ba796b1fceb0b8c3132b423ea825b821a",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/LUTs.pth"
+          },
+          "models.py": {
+            "bytes": 12014,
+            "git_blob": "8fbc2de9c12a474de774880a524198d54fb25fb7",
+            "sha256": "3f39c49aebd2b85787638bc9d402d21d5d664b844edd5fb8d5e4ce1fdb1d9f3f",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models.py"
+          },
+          "models_x.py": {
+            "bytes": 8474,
+            "git_blob": "fb3c44475ec62682a062d84ed89601f6a4458a0e",
+            "sha256": "5553ed2306152ecb31a51951f20388de65b96898ddeb4b9d03dc52bf3aa7ad9e",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models_x.py"
+          },
+          "demo_eval.py": {
+            "bytes": 2793,
+            "git_blob": "f6dd73969940e4eb6a21f3f9ef587289bba712df",
+            "sha256": "6d41a39d39041a098cccef085571816935955f9bba42810d4059e3d01dce5bcd",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/demo_eval.py"
+          },
+          "trilinear_cpp/src/trilinear.cpp": {
+            "bytes": 7615,
+            "git_blob": "b4d75b04c36b97559d7421b2ff2df98ee16405a2",
+            "sha256": "5b2b132b625b4bb1ba802213831dcb02e6d4c70b0fffad99f6d3b045da988185",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/trilinear_cpp/src/trilinear.cpp"
+          },
+          "LICENSE": {
+            "bytes": 11357,
+            "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/LICENSE"
+          },
+          "README.md": {
+            "bytes": 5488,
+            "git_blob": "eae43b086353d920e83042098dbefad24a642267",
+            "sha256": "45cd2cc7d86bd7f45649308b508fd1e42b5061e15d89d0ca9980e72656dd8956",
+            "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/README.md"
+          }
+        },
+        "semantics": "Frozen external color/tone model, not validated Adobe parameters or a personal-photo preference model."
+      },
+      "weights": [
+        1.6262226104736328,
+        -0.5302759408950806,
+        -1.044418215751648
+      ],
+      "lut_sha256": "f37e524b0c11ebfd5e5c1faeb3801417f88f33e53f967b994780aa78504bcf9e",
+      "size": [
+        8688,
+        5712
+      ],
+      "device": "cpu",
+      "row_chunk": 128,
+      "new_full_channel_fraction": 0.0,
+      "new_black_pixel_fraction": 0.022166327972257042,
+      "float_below_zero_pixel_fraction": 0.03365594338564155,
+      "float_above_one_pixel_fraction": 0.0,
+      "input_pixels_sha256": "f3dbe37f4a769b2fa6ccb809230d2753703f1c5a43599c0d12d90e5e07dacfd9",
+      "output_pixels_sha256": "8bc18ecb553c88d78312c96b1fb6b3040b1ab6bdc3ca337a4a1c98bb02ffd3ab",
+      "predictor_seconds": 0.05465058299999992,
+      "table_seconds": 4.218303958,
+      "seconds": 4.272954707999999,
+      "quality_status": "isolated experimental pilot; personal-photo preference pending",
+      "semantics": "Learned global sRGB color/tone transform of original pixels; not camera Kelvin, semantic region edits, denoising or reconstructed detail.",
+      "input_sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d",
+      "input_format": "JPEG",
+      "embedded_icc_converted_to_srgb": true,
+      "end_to_end_seconds": 6.2892860409999995
+    },
+    "export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 1.0,
+      "blend_space": "display sRGB",
+      "size": [
+        8688,
+        5712
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.9997300802226968,
+      "output_png_sha256": "274293daaa7770314a3eb469028a6055e4811063a381b326d78634320ef22550",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "half_export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 0.5,
+      "blend_space": "display sRGB",
+      "size": [
+        8688,
+        5712
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.9992503907640404,
+      "output_png_sha256": "ecf94b8c49f5a331049321ff0e97921e184cf3e583f4488e19619f844471e1f5",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "source_preserved": true,
+    "matches_frozen_full_png": true,
+    "native_half_crop_matches": true,
+    "zero_strength_identity": true,
+    "total_seconds": 31.24642,
+    "rss": {
+      "tree_peak_bytes": 1283014656,
+      "root_peak_bytes": 1281376256,
+      "samples": 114
+    },
+    "root_high_water_bytes": 1312587776,
+    "children_high_water_bytes": 1144717312
+  }
+]

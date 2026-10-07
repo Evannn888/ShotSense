@@ -1,0 +1,2514 @@
+{
+  "manifest": {
+    "scope": "Screenshot-derived JPEG proxy plus previously inspected public regressions and synthetic controls; no original-file or independent preference acceptance",
+    "engine": {
+      "engine": "RawTherapee",
+      "version": "5.11",
+      "pp3_version": 351,
+      "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+      "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+      "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+      "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+      "platform": "macOS universal, minimum 12.3",
+      "license": "GPL-3.0-or-later; separate unmodified application",
+      "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+    },
+    "profiles": {
+      "gentle": {
+        "path": "artifacts/photo_engine/natural.pp3",
+        "sha256": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+      },
+      "shadows": {
+        "path": "artifacts/experiments/photo_engine_shadow_v2/foreground-feedback/candidate-shadows.pp3",
+        "sha256": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+      },
+      "equalizer": {
+        "path": "artifacts/experiments/photo_engine_shadow_v2/foreground-feedback/candidate-equalizer.pp3",
+        "sha256": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+      }
+    },
+    "photos": [
+      {
+        "id": "screenshot-proxy",
+        "path": "data/user_photo_diagnostics/shadow-v2/screenshot-left-proxy.jpg",
+        "sha256": "2be35f5d4d277fc1f6b9be8c203dcc5f14b554571f38e9ab342a4e088db7b126"
+      },
+      {
+        "id": "LOL-27",
+        "path": "data/external/lol_pilot/27.jpg",
+        "sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3"
+      },
+      {
+        "id": "LOL-102",
+        "path": "data/external/lol_pilot/102.jpg",
+        "sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c"
+      },
+      {
+        "id": "LOL-254",
+        "path": "data/external/lol_pilot/254.jpg",
+        "sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45"
+      },
+      {
+        "id": "a0575-kme_040.dng",
+        "path": "data/raw/dngs/a0575-kme_040.dng",
+        "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+      },
+      {
+        "id": "a2132-IMG_4947.dng",
+        "path": "data/raw/dngs/a2132-IMG_4947.dng",
+        "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+      },
+      {
+        "id": "a2270-_DSC0033.dng",
+        "path": "data/raw/dngs/a2270-_DSC0033.dng",
+        "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+      },
+      {
+        "id": "synthetic-daylight",
+        "path": "data/user_photo_diagnostics/shadow-v2/daylight.jpg",
+        "sha256": "9fa07b7c2f7cfc6d719fd0c29ee1330b7f0889c07615f9c8476fa2e87663b5d7"
+      },
+      {
+        "id": "synthetic-black",
+        "path": "data/user_photo_diagnostics/shadow-v2/black.jpg",
+        "sha256": "d3a30c16739a45dd6b1bbde9424f567ab9c0f5bc9216e838e8ac36932cff5ad7"
+      },
+      {
+        "id": "synthetic-gray-ramp",
+        "path": "data/user_photo_diagnostics/shadow-v2/gray-ramp.jpg",
+        "sha256": "45db18524894828b11ded1332e9df3539dcec8ecb856f37c7d690c76572d193b"
+      },
+      {
+        "id": "synthetic-shadow-sky-step",
+        "path": "data/user_photo_diagnostics/shadow-v2/shadow-sky-step.jpg",
+        "sha256": "2c42c153bc7811eb1227868acdc09a197ce95d163302bdc915fbc8f64302a99a"
+      }
+    ],
+    "proxy_regions": {
+      "sky": [
+        0.02,
+        0.02,
+        0.55,
+        0.26
+      ],
+      "foreground": [
+        0.08,
+        0.55,
+        0.94,
+        0.94
+      ],
+      "silhouette": [
+        0.64,
+        0.16,
+        0.81,
+        0.4
+      ]
+    },
+    "source_sha256": "80eaf4330bf230de71eb7d079410fbfc984e50095472d531868fa445d419806e"
+  },
+  "cases": [
+    {
+      "id": "screenshot-proxy",
+      "size": [
+        580,
+        460
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "2be35f5d4d277fc1f6b9be8c203dcc5f14b554571f38e9ab342a4e088db7b126",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              580,
+              460
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.27398870899999994
+                }
+              ],
+              "end_to_end_seconds": 0.345628375
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              580,
+              460
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9998238380809595,
+            "output_png_sha256": "55fbec440d31f6d2c7a03048bafd0807fb73fc588e4c0079629692a7b1b9a10f",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.032081222534179686,
+          "median_luma_before": 0.1486690193414688,
+          "median_luma_after": 0.17047293484210968,
+          "regions": {
+            "sky": {
+              "mean_before": 0.5609782934188843,
+              "mean_after": 0.6256360411643982
+            },
+            "foreground": {
+              "mean_before": 0.10448522120714188,
+              "mean_after": 0.12143983691930771
+            },
+            "silhouette": {
+              "mean_before": 0.23636384308338165,
+              "mean_after": 0.26687896251678467
+            }
+          }
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "2be35f5d4d277fc1f6b9be8c203dcc5f14b554571f38e9ab342a4e088db7b126",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              580,
+              460
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.19101200000000018
+                }
+              ],
+              "end_to_end_seconds": 0.24461458299999994
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              580,
+              460
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9999737631184408,
+            "output_png_sha256": "72fc3292d67a2556d5cd909bdc1cb2631b57116707cfdaabad83ec40909c5b92",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.11713684680415135,
+          "median_luma_before": 0.1486690193414688,
+          "median_luma_after": 0.3183082342147827,
+          "regions": {
+            "sky": {
+              "mean_before": 0.5609782934188843,
+              "mean_after": 0.6477794647216797
+            },
+            "foreground": {
+              "mean_before": 0.10448522120714188,
+              "mean_after": 0.22708845138549805
+            },
+            "silhouette": {
+              "mean_before": 0.23636384308338165,
+              "mean_after": 0.33583763241767883
+            }
+          }
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "2be35f5d4d277fc1f6b9be8c203dcc5f14b554571f38e9ab342a4e088db7b126",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              580,
+              460
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.19588733299999994
+                }
+              ],
+              "end_to_end_seconds": 0.2497185420000001
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              580,
+              460
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9999737631184408,
+            "output_png_sha256": "a3dfa32d6c48bb19d00816f75971c448a45762092803ebff22d4166994491390",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.07831987119188495,
+          "median_luma_before": 0.1486690193414688,
+          "median_luma_after": 0.27152785658836365,
+          "regions": {
+            "sky": {
+              "mean_before": 0.5609782934188843,
+              "mean_after": 0.5844410061836243
+            },
+            "foreground": {
+              "mean_before": 0.10448522120714188,
+              "mean_after": 0.2154134064912796
+            },
+            "silhouette": {
+              "mean_before": 0.23636384308338165,
+              "mean_after": 0.2991022765636444
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "LOL-27",
+      "size": [
+        600,
+        400
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              600,
+              400
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": false,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.15455033400000007
+                }
+              ],
+              "end_to_end_seconds": 0.19569458299999987
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.759125,
+            "output_png_sha256": "b26ab720286324f14c8bb8170235be4dc4db214a723b45d142a38f8aa618e58d",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.00376052833070942,
+          "median_luma_before": 0.011198432184755802,
+          "median_luma_after": 0.014836862683296204
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              600,
+              400
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": false,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.16971212499999977
+                }
+              ],
+              "end_to_end_seconds": 0.21020208299999998
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9156833333333333,
+            "output_png_sha256": "2607c147d7a64ab8a497e690924daeacdf883185c1384dc7d1a7b6cb26f0ad43",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.049266545912798713,
+          "median_luma_before": 0.011198432184755802,
+          "median_luma_after": 0.06468470394611359
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              600,
+              400
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": false,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.17748279200000017
+                }
+              ],
+              "end_to_end_seconds": 0.21959937500000004
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9156833333333333,
+            "output_png_sha256": "8afe16219dbbf8bfe359b87277523fd107ed81e0d3d5363ca9924a5d26968d6f",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0412297342337814,
+          "median_luma_before": 0.011198432184755802,
+          "median_luma_after": 0.05599215626716614
+        }
+      }
+    },
+    {
+      "id": "LOL-102",
+      "size": [
+        600,
+        400
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 1.25e-05
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              600,
+              400
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": false,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.162568292
+                }
+              ],
+              "end_to_end_seconds": 0.2044943749999999
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.8503708333333333,
+            "output_png_sha256": "f5874b5a45158ab0984db384a5caced3d44d2e0a098093074301ee807dc4b7e1",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.010670703065161612,
+          "median_luma_before": 0.03891685977578163,
+          "median_luma_after": 0.050398435443639755
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              600,
+              400
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": false,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.17792470900000001
+                }
+              ],
+              "end_to_end_seconds": 0.2193843750000002
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9689875,
+            "output_png_sha256": "3eb26cbfe05f308671eef0b3368be474f67364334991b57886d1a79e09108c73",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.08194517247817096,
+          "median_luma_before": 0.03891685977578163,
+          "median_luma_after": 0.11287607997655869
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 5.833333333333333e-05
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              600,
+              400
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": false,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.18316520899999933
+                }
+              ],
+              "end_to_end_seconds": 0.2250212920000001
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9690375,
+            "output_png_sha256": "1d3f4a212b513df808513597a550fcf96ec07e87f2540e72efda99dd0a08c06b",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.06946885352041207,
+          "median_luma_before": 0.03891685977578163,
+          "median_luma_after": 0.12574197351932526
+        }
+      }
+    },
+    {
+      "id": "LOL-254",
+      "size": [
+        600,
+        400
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              600,
+              400
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": false,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.17480941600000044
+                }
+              ],
+              "end_to_end_seconds": 0.21608891700000044
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "5d230423b4c04ffe10169449b724d8a36dbda8cad142d2c66a176f5164243365",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.029356062646005668,
+          "median_luma_before": 0.20422039926052094,
+          "median_luma_after": 0.23167136311531067
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              600,
+              400
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": false,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.1801343330000007
+                }
+              ],
+              "end_to_end_seconds": 0.22131012500000047
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "bbe8e60baafbb13098fc4ffc4b58f68af635d55d2eab3a65eb2a6c38b8461566",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.19375731524299172,
+          "median_luma_before": 0.20422039926052094,
+          "median_luma_after": 0.4120839238166809
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              600,
+              400
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": false,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.18761208300000032
+                }
+              ],
+              "end_to_end_seconds": 0.22782266599999978
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "7cc222626495171d6b9184164302deba320a7ea05f7b2f1560a607b245c5de87",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.09641275592878754,
+          "median_luma_before": 0.20422039926052094,
+          "median_luma_after": 0.3095317780971527
+        }
+      }
+    },
+    {
+      "id": "a0575-kme_040.dng",
+      "size": [
+        3900,
+        2594
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "DNG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.000176047288614752
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "raw.pp3": "9db994a759d9702fe0b890baae2d8d1b6eaef60c09d5777babd333a35bbd7314",
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              3900,
+              2594
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "Neutral engine RAW development with camera WB",
+            "jpeg_color": null,
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "neutral",
+                  "seconds": 2.9041932920000004
+                },
+                {
+                  "recipe": "natural",
+                  "seconds": 2.8431200420000007
+                }
+              ],
+              "end_to_end_seconds": 6.501849833
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              3900,
+              2594
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9992800941027618,
+            "output_png_sha256": "160d35b6b6dfe830c3bf5b9bf04740e7aaea648ac32e238697fa9e40345e2e08",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.041742840935202204,
+          "median_luma_before": 0.3467113673686981,
+          "median_luma_after": 0.3894549012184143
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "DNG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 1.5420200462606013e-05
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "raw.pp3": "9db994a759d9702fe0b890baae2d8d1b6eaef60c09d5777babd333a35bbd7314",
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              3900,
+              2594
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "Neutral engine RAW development with camera WB",
+            "jpeg_color": null,
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "neutral",
+                  "seconds": 2.895358999999999
+                },
+                {
+                  "recipe": "natural",
+                  "seconds": 3.2807680419999983
+                }
+              ],
+              "end_to_end_seconds": 6.95984975
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              3900,
+              2594
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9988321175098354,
+            "output_png_sha256": "97fcc9209073b4f3d0a1d8a3abb11588a3720a702d4366b92ddda80b9195dd76",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.1290116553213082,
+          "median_luma_before": 0.3467113673686981,
+          "median_luma_after": 0.507707417011261
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "DNG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.00026382381432497084
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "raw.pp3": "9db994a759d9702fe0b890baae2d8d1b6eaef60c09d5777babd333a35bbd7314",
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              3900,
+              2594
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "Neutral engine RAW development with camera WB",
+            "jpeg_color": null,
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "neutral",
+                  "seconds": 2.933510124999998
+                },
+                {
+                  "recipe": "natural",
+                  "seconds": 3.222765332999998
+                }
+              ],
+              "end_to_end_seconds": 6.934581709
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              3900,
+              2594
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9994876737243737,
+            "output_png_sha256": "2afda6a7f30bc3a0c17a58b14fdc3c04fc43cde1e15bb7727f8561fa45e07c4a",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.06117857390759038,
+          "median_luma_before": 0.3467113673686981,
+          "median_luma_after": 0.4078902006149292
+        }
+      }
+    },
+    {
+      "id": "a2132-IMG_4947.dng",
+      "size": [
+        2848,
+        4282
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "DNG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0003956495442117251
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "raw.pp3": "9db994a759d9702fe0b890baae2d8d1b6eaef60c09d5777babd333a35bbd7314",
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              2848,
+              4282
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "Neutral engine RAW development with camera WB",
+            "jpeg_color": null,
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "neutral",
+                  "seconds": 3.7068897079999985
+                },
+                {
+                  "recipe": "natural",
+                  "seconds": 3.762668416000004
+                }
+              ],
+              "end_to_end_seconds": 8.375293749999997
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2848,
+              4282
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9993777027168864,
+            "output_png_sha256": "056386048439e03aa8cd9d4614af7c6b704b276b20d8bc9dda53f5f1d7ae721b",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.042333333632525276,
+          "median_luma_before": 0.3801388442516327,
+          "median_luma_after": 0.4264478385448456
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "DNG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 7.051991876105358e-06
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "raw.pp3": "9db994a759d9702fe0b890baae2d8d1b6eaef60c09d5777babd333a35bbd7314",
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              2848,
+              4282
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "Neutral engine RAW development with camera WB",
+            "jpeg_color": null,
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "neutral",
+                  "seconds": 3.6674817919999967
+                },
+                {
+                  "recipe": "natural",
+                  "seconds": 3.9923245419999915
+                }
+              ],
+              "end_to_end_seconds": 8.567668000000005
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2848,
+              4282
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9912930040304594,
+            "output_png_sha256": "14251aa8972aa190a6a299dfe9c1309c49c5e1b40a1d31f2b2a9ea54bb97f986",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.1241565180759804,
+          "median_luma_before": 0.3801388442516327,
+          "median_luma_after": 0.5285137295722961
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "DNG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.00020376976525723043
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "raw.pp3": "9db994a759d9702fe0b890baae2d8d1b6eaef60c09d5777babd333a35bbd7314",
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              2848,
+              4282
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "Neutral engine RAW development with camera WB",
+            "jpeg_color": null,
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "neutral",
+                  "seconds": 3.7825377909999958
+                },
+                {
+                  "recipe": "natural",
+                  "seconds": 3.938066500000005
+                }
+              ],
+              "end_to_end_seconds": 8.617229584
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2848,
+              4282
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9938623070706223,
+            "output_png_sha256": "5b879702ecbc6119a8963aa85bd552a70bb118b4266b6c0b075f1d7a3aa2b033",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.05846995185403263,
+          "median_luma_before": 0.3801388442516327,
+          "median_luma_after": 0.43473726511001587
+        }
+      }
+    },
+    {
+      "id": "a2270-_DSC0033.dng",
+      "size": [
+        2006,
+        3032
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "DNG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.000410707192406948
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "raw.pp3": "9db994a759d9702fe0b890baae2d8d1b6eaef60c09d5777babd333a35bbd7314",
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              2006,
+              3032
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "Neutral engine RAW development with camera WB",
+            "jpeg_color": null,
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "neutral",
+                  "seconds": 2.069262749999993
+                },
+                {
+                  "recipe": "natural",
+                  "seconds": 1.9063815840000018
+                }
+              ],
+              "end_to_end_seconds": 4.467284250000006
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2006,
+              3032
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.999976159910769,
+            "output_png_sha256": "27f176f9270b5cbba7f8d0543252013a140e194e776b0e6b0cc0055916b9acd1",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.04689651938045726,
+          "median_luma_before": 0.4973725378513336,
+          "median_luma_after": 0.5558509826660156
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "DNG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 6.0340087915672506e-05
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "raw.pp3": "9db994a759d9702fe0b890baae2d8d1b6eaef60c09d5777babd333a35bbd7314",
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              2006,
+              3032
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "Neutral engine RAW development with camera WB",
+            "jpeg_color": null,
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "neutral",
+                  "seconds": 1.8648124999999993
+                },
+                {
+                  "recipe": "natural",
+                  "seconds": 2.026803208000004
+                }
+              ],
+              "end_to_end_seconds": 4.354928791000006
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2006,
+              3032
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9955313807916619,
+            "output_png_sha256": "dcd8ab838163341f0b0332b9d11dbc4e7799cc74b8dca8dcbe1348cda267e44a",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.07406362645766314,
+          "median_luma_before": 0.4973725378513336,
+          "median_luma_after": 0.5431192517280579
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "DNG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 7.464414145426517e-05
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "raw.pp3": "9db994a759d9702fe0b890baae2d8d1b6eaef60c09d5777babd333a35bbd7314",
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              2006,
+              3032
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "Neutral engine RAW development with camera WB",
+            "jpeg_color": null,
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "neutral",
+                  "seconds": 2.1392238330000026
+                },
+                {
+                  "recipe": "natural",
+                  "seconds": 2.0143059579999942
+                }
+              ],
+              "end_to_end_seconds": 4.64529262500001
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2006,
+              3032
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9954792614241708,
+            "output_png_sha256": "8ea1d53e956062fb5cbaf5f80e7f49af45caf1752598fff5d451858df590a8df",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.05032424926757813,
+          "median_luma_before": 0.4973725378513336,
+          "median_luma_after": 0.5256831049919128
+        }
+      }
+    },
+    {
+      "id": "synthetic-daylight",
+      "size": [
+        256,
+        128
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "9fa07b7c2f7cfc6d719fd0c29ee1330b7f0889c07615f9c8476fa2e87663b5d7",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              256,
+              128
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.2030862909999911
+                }
+              ],
+              "end_to_end_seconds": 0.2223635839999929
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              128
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "ec7287cd9b548c1f29a24457119146fff894929f870317b7f1f29e6a030169f7",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.06013071770761527,
+          "median_luma_before": 0.7093906402587891,
+          "median_luma_after": 0.7715694308280945
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "9fa07b7c2f7cfc6d719fd0c29ee1330b7f0889c07615f9c8476fa2e87663b5d7",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              256,
+              128
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.1153738330000067
+                }
+              ],
+              "end_to_end_seconds": 0.13324912499999186
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              128
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "b6e62f24b4466317a2222f59f7d6a0b51bc9088e26489dd36634f405ef98e71d",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.009150326485727348,
+          "median_luma_before": 0.7093906402587891,
+          "median_luma_after": 0.7175168395042419
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "9fa07b7c2f7cfc6d719fd0c29ee1330b7f0889c07615f9c8476fa2e87663b5d7",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              256,
+              128
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.11726670799998828
+                }
+              ],
+              "end_to_end_seconds": 0.13676354199999707
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              128
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "1bda2b2d8ede46d4718848c2486ad9d8dff630911ec1ced7fa9326341f7a77fe",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.010457516651527554,
+          "median_luma_before": 0.7093906402587891,
+          "median_luma_after": 0.720872163772583
+        }
+      }
+    },
+    {
+      "id": "synthetic-black",
+      "size": [
+        256,
+        128
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "d3a30c16739a45dd6b1bbde9424f567ab9c0f5bc9216e838e8ac36932cff5ad7",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              256,
+              128
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.10497254199999873
+                }
+              ],
+              "end_to_end_seconds": 0.12303891599999872
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              128
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "f742faf88639c44b71a6a01669f9f459321b994791668fe23b23aec753367839",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0,
+          "median_luma_before": 0.0,
+          "median_luma_after": 0.0
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "d3a30c16739a45dd6b1bbde9424f567ab9c0f5bc9216e838e8ac36932cff5ad7",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              256,
+              128
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.10808045899999286
+                }
+              ],
+              "end_to_end_seconds": 0.12556570899999997
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              128
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "f742faf88639c44b71a6a01669f9f459321b994791668fe23b23aec753367839",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0,
+          "median_luma_before": 0.0,
+          "median_luma_after": 0.0
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "d3a30c16739a45dd6b1bbde9424f567ab9c0f5bc9216e838e8ac36932cff5ad7",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              256,
+              128
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.11237425000000201
+                }
+              ],
+              "end_to_end_seconds": 0.12925629199999378
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              128
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "f742faf88639c44b71a6a01669f9f459321b994791668fe23b23aec753367839",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0,
+          "median_luma_before": 0.0,
+          "median_luma_after": 0.0
+        }
+      }
+    },
+    {
+      "id": "synthetic-gray-ramp",
+      "size": [
+        256,
+        128
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "45db18524894828b11ded1332e9df3539dcec8ecb856f37c7d690c76572d193b",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              256,
+              128
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.11281012499999576
+                }
+              ],
+              "end_to_end_seconds": 0.13090400000000102
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              128
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.98046875,
+            "output_png_sha256": "a782f52934ed6fb99f8145f1036737ae582a31ce3d9f687747de9e48cfa50ba8",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0375765931372549,
+          "median_luma_before": 0.5,
+          "median_luma_after": 0.5588235855102539
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "45db18524894828b11ded1332e9df3539dcec8ecb856f37c7d690c76572d193b",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              256,
+              128
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.11361745800000733
+                }
+              ],
+              "end_to_end_seconds": 0.13159066700001176
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              128
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.8984375,
+            "output_png_sha256": "11e5e4d0d198ea3beeca341ef73a8453a94e7025324fa85585df6ba9c6f4aa60",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.07935049019607843,
+          "median_luma_before": 0.5,
+          "median_luma_after": 0.5784313678741455
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "45db18524894828b11ded1332e9df3539dcec8ecb856f37c7d690c76572d193b",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.00390625
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              256,
+              128
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.11920887499999822
+                }
+              ],
+              "end_to_end_seconds": 0.13729729199999952
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              128
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9921875,
+            "output_png_sha256": "164aad692ea60767e5aa393bda58f500405727a7cc934d5e90662826d556cf59",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.04502144607843137,
+          "median_luma_before": 0.5,
+          "median_luma_after": 0.5313725471496582
+        }
+      }
+    },
+    {
+      "id": "synthetic-shadow-sky-step",
+      "size": [
+        512,
+        256
+      ],
+      "candidates": {
+        "gentle": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "2c42c153bc7811eb1227868acdc09a197ce95d163302bdc915fbc8f64302a99a",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+            },
+            "output_size": [
+              512,
+              256
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.13869825000000446
+                }
+              ],
+              "end_to_end_seconds": 0.16366337499999872
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              512,
+              256
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "3e23dc6dfdddc9d2b4c28c993c97126c4707de89a9d51f1f905a9d60972ee58b",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.036612477022058824,
+          "median_luma_before": 0.445545494556427,
+          "median_luma_after": 0.4846196174621582
+        },
+        "shadows": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "2c42c153bc7811eb1227868acdc09a197ce95d163302bdc915fbc8f64302a99a",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e"
+            },
+            "output_size": [
+              512,
+              256
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.14745662500000378
+                }
+              ],
+              "end_to_end_seconds": 0.17341854199999318
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              512,
+              256
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "78123e045d23c5206158c2600be0cb8202aeb4fca612901f699f3ffb528692a5",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.08111477272183287,
+          "median_luma_before": 0.445545494556427,
+          "median_luma_after": 0.542043149471283
+        },
+        "equalizer": {
+          "result": {
+            "schema_version": 1,
+            "input_format": "JPEG",
+            "input_status": "experimental_photo_engine",
+            "processing_version": "rawtherapee-conservative-v1",
+            "input_sha256": "2c42c153bc7811eb1227868acdc09a197ce95d163302bdc915fbc8f64302a99a",
+            "requested_recipe": "natural",
+            "selected_recipe": "natural",
+            "selection": {
+              "reason": "explicit recipe",
+              "candidate_new_full_channel_fraction": 0.0
+            },
+            "engine": {
+              "engine": "RawTherapee",
+              "version": "5.11",
+              "pp3_version": 351,
+              "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+              "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+              "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+              "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+              "platform": "macOS universal, minimum 12.3",
+              "license": "GPL-3.0-or-later; separate unmodified application",
+              "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+            },
+            "profile_sha256": {
+              "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+              "natural.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305"
+            },
+            "output_size": [
+              512,
+              256
+            ],
+            "recommended_absolute": {},
+            "experimental_absolute": {},
+            "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+            "jpeg_color": {
+              "embedded_icc_converted_to_srgb": true,
+              "without_icc": "assumed sRGB"
+            },
+            "quality_status": "experimental; independent personal-photo preference acceptance pending",
+            "timing": {
+              "engine_runs": [
+                {
+                  "recipe": "natural",
+                  "seconds": 0.15818250000000944
+                }
+              ],
+              "end_to_end_seconds": 0.18410649999999862
+            }
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              512,
+              256
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "0bef9ce27cca1bc66d273b79b9a0a9f513e7ff3400403f3357e58e26305f8456",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.05792085610184015,
+          "median_luma_before": 0.445545494556427,
+          "median_luma_after": 0.5194992423057556
+        }
+      }
+    }
+  ]
+}

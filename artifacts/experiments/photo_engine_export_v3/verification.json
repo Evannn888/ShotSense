@@ -1,0 +1,50 @@
+{
+  "scope": "Confirmed display conversion and tested export-file bindings; reported live-client JSON download/native photo quality not reproduced",
+  "export_ui_version": "png-display-export-v3",
+  "source_sha256": {
+    "app/streamlit_app.py": "14f464609c9afd4ed55deb3515385f5ccdd5c1262726f3c3252d094331f3e042",
+    "tests/test_photo_engine.py": "2f2a967aefc82ab76e828cb2444cfb53cf5171be0f7ce6025caa31c53a1258e6",
+    "tests/test_app.py": "235b9a09f02f642bcb8db9a80148fafd7fee63216998f512bc3114c2155ee616",
+    "tests/test_jpeg_inference.py": "36485905382e2f5660e81ab68305acb1eaf16f4a9dfa650c7764134f79a567b4",
+    "tests/test_jpeg_restoration.py": "efe75be1b5f1c424a9dcced23c1e7087b51ef74342ec628ed5db22e0e3fd739b",
+    "src/photo_engine.py": "5269f631a79bd59e22a5de2bfbe074b60fff9b1adeea6defe3fac7022fdb40cf",
+    "README.md": "7ba072b67d746842df17967ed444bd3fe3f791f98e1469ff5c4872000fc32f7e",
+    "SHOTSENSE_MASTER_PLAN.md": "6485c2e8e95c3472da053353256faad902a6ff817a0d1626004e947c7b518cda",
+    "artifacts/experiments/photo_engine_export_v3/tests-before.py": "3609b78ec56d812b506ea726596f45f6a7834e941f6bf771c9ca4a84b2653022",
+    "artifacts/experiments/photo_engine_export_v3/legacy-jpeg_restoration-tests-before.py": "b08cb24f4a1260efc26b25301f0616a2a9be66f3a597729f8f423b9976cbbacd",
+    "artifacts/experiments/photo_engine_export_v3/legacy-app-tests-before.py": "be5ba73ead06cac2e4799089784dd4fac0e5874f223a235946104fb7bbcd7282",
+    "artifacts/experiments/photo_engine_export_v3/display-reproduction.json": "970cb0c32a4bd5f7f8421367b69c0cb4572f21e3344bd4421717f67ece3855a1",
+    "artifacts/experiments/photo_engine_export_v3/legacy-jpeg_inference-tests-before.py": "60d1631c7e5f2f4c31c048fc44deff0e10860f43c420c90027add5a2f0a59c72",
+    "artifacts/experiments/photo_engine_export_v3/streamlit_app-before.py": "9d9e9e9e13029120b6e78ea8efc15b927eec2a492d6e3c749a26a36314d33459",
+    "artifacts/experiments/photo_engine_export_v3/photo_engine-before.py": "5269f631a79bd59e22a5de2bfbe074b60fff9b1adeea6defe3fac7022fdb40cf",
+    "artifacts/experiments/photo_engine_export_v3/ACCEPTANCE.md": "1e6d12eff654e31c9093ca918bd575c6f7c7a1398541dfc86d0d85ccf5ecb425",
+    "artifacts/experiments/photo_engine_export_v3/PROTOCOL.md": "f8f8e5bb88df05ff176d0e37b78ab5a8bed932fdef18f9ea12138775c4df4516",
+    "artifacts/experiments/photo_engine_export_v3/reproduce_display.py": "da5585a70e56731d3c987c0157dcf1f8ed8e9ce37c0c200e13582f59f7379edc"
+  },
+  "unchanged_core": {
+    "src/inference.py": "ba8d6b7c50209f4e50737dc3af8d37d4577f6ce79a5ae13915f64ac4286e8873",
+    "src/jpeg_inference.py": "10efa21eafec0c760fefcf81baeecf8271a1018a0551af58b06be1a1dc72aefb",
+    "src/preview.py": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62",
+    "src/color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+    "src/preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6",
+    "src/extract_labels.py": "d8c9b2b2a261f41329437284de9874afa87b062c9d9b02ad51380eed548e4dde",
+    "artifacts/model/model.onnx": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+    "artifacts/model/model.json": "0e8f81c12684ce3ae2b993dbb097883df1576786c830235da2cfb4e6003b01b2"
+  },
+  "engine_and_profiles_unchanged": true,
+  "checks": {
+    "full_suite": {
+      "passed": 62,
+      "failed": 0,
+      "skipped": 0,
+      "elapsed_seconds": 74.177
+    },
+    "png_file_binding": "actual Streamlit MemoryMediaFileStorage PNG signature/MIME/.png filename/downloadable kind and independent .json entry",
+    "display_bytes": "actual image-proto data URL decoded equals prepared PNG bytes; original1801\u00d791 dimensions",
+    "detail": "actual320\u00d791 native crop equals corresponding blended full PNG region",
+    "prepared_downloads": "source/strength/settings changes invalidate; PNG and JSON widgets have separate keys and ignore rerun",
+    "health": "ok, port8501",
+    "real_browser": "getAXState timed out; no current browser click or client-download verification",
+    "photographic_quality": "no sharpening/upscaling or original-file quality acceptance; original user photo remains unavailable"
+  }
+}

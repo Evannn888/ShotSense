@@ -1,0 +1,682 @@
+{
+  "scope": "12previously inspected diagnostic sources; no independent quality/user preference claim.",
+  "cases": [
+    {
+      "id": "user-cloudy-trees",
+      "source": {
+        "id": "user-cloudy-trees",
+        "path": "/Users/evanchen/Downloads/images (2).jpeg",
+        "bytes": 25833,
+        "sha256": "e4172d7c619478e0272159d3c5b81450e527bb0a39139db690676ba19c4cf4fe",
+        "header_size": [
+          678,
+          452
+        ]
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.5,
+        "size": [
+          678,
+          452
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "492a3442d75ff0eb68f16a2ec5a2e35a1fa0e0f791f2a660228ed427f38cb046",
+        "output_pixels_sha256": "04146190ba7bad965cb38b9a886ceec48f44e664ae1fab0b51845cd4f7612ea4",
+        "seconds": 0.02194637499999974,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.5,
+          "sample_luminance_q30": 0.1994560807943344,
+          "sample_shadow_fraction": 0.5759260709530896,
+          "sample_size": [
+            226,
+            226
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          678,
+          452
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9801374422429321,
+        "output_png_sha256": "da7fcbc53bf74dcbc9147821694a2d107ea0ed07d1b8f66770b31fa8089a9336",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.3333573499405494,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 0.24416899999999986,
+      "display_luma_codes": {
+        "Original": {
+          "sky": 101.35044021931515,
+          "tree group": 38.89850507580477,
+          "foreground": 33.19132883480825
+        },
+        "Previous natural": {
+          "sky": 104.3159587456714,
+          "tree group": 40.67654501349948,
+          "foreground": 35.396040078662736
+        },
+        "New auto 50%": {
+          "sky": 107.74758261510837,
+          "tree group": 47.76224327310487,
+          "foreground": 47.60665193706981
+        }
+      }
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "source": {
+        "id": "nir-himi-1P1yaGS_Gek-unsplash",
+        "path": "/Users/evanchen/Downloads/nir-himi-1P1yaGS_Gek-unsplash.jpg",
+        "bytes": 1333473,
+        "header_size": [
+          2809,
+          4213
+        ],
+        "sha256": "649d9b8d4763487d787574812486cd62a381c6c25e92337223bafb59a1f3f5ee"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.75,
+        "size": [
+          2809,
+          4213
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "813b894ebe454cad44e9304f079fbba95691a8588e9694e4a369989efe190d8f",
+        "output_pixels_sha256": "9b4f40a460629e38ba1d787d961ea5c4139e02f25559305f8912782992b43406",
+        "seconds": 0.85258675,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.75,
+          "sample_luminance_q30": 0.1031545102596283,
+          "sample_shadow_fraction": 0.4809727822580645,
+          "sample_size": [
+            256,
+            248
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          2809,
+          4213
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.5492207957586399,
+        "output_png_sha256": "b939d89931d56430e9648e255e11f9608e8d752304e3ca603df5bd736b4a41cb",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.35,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 2.9937249159999997
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "source": {
+        "id": "a2132-IMG_4947",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2132-IMG_4947.dng",
+        "bytes": 12665412,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.3,
+        "size": [
+          2848,
+          4282
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "d177dfa3504d426473d504a01c60113a54da16ad0584d75732ddd77089660aa4",
+        "output_pixels_sha256": "e68a406626efce1fd4dd1e482686c2d45dda92ce3a98ca82d595bac73c6037e7",
+        "seconds": 0.8964191249999995,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.3,
+          "sample_luminance_q30": 0.27133335173130035,
+          "sample_shadow_fraction": 0.4481125783646792,
+          "sample_size": [
+            238,
+            252
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          2848,
+          4282
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9715979387191745,
+        "output_png_sha256": "150c934fe79eddbba7eeb0c6d2dfb789934486e683ce145c4c87a9ed4a267633",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.22398085567074824,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 3.7783659169999995
+    },
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "source": {
+        "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+        "path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+        "bytes": 10823098,
+        "header_size": [
+          8192,
+          6144
+        ],
+        "sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.6,
+        "size": [
+          8192,
+          6144
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "e8708161004891e4b352d6531ed8e785fdbddd1ac72a67a510aa3d431b2b4ab4",
+        "output_pixels_sha256": "2631f3709ec6b609eee31dc7060fddac59c2e9f9a5c76153eaa7e7634ce9bc3f",
+        "seconds": 6.608420666000001,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.6,
+          "sample_luminance_q30": 0.15877099335193634,
+          "sample_shadow_fraction": 0.81231689453125,
+          "sample_size": [
+            256,
+            256
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          8192,
+          6144
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9999998807907104,
+        "output_png_sha256": "83bdc040f0d517b4c5cf1e65ff1278c6101ca65672b6082977f5502755e70240",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.1444177826900597,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 17.062868458
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "source": {
+        "id": "martin-bennie-MhYU5K4A93I-unsplash",
+        "path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+        "bytes": 2779239,
+        "header_size": [
+          8688,
+          5712
+        ],
+        "sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.6,
+        "size": [
+          8688,
+          5712
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "63a616d54023533c58d4876379a0d84b15129389386d22bb190c486a9319103c",
+        "output_pixels_sha256": "76448800b2023b86a083118b9327a38c15d9353ce33d237d08a0a294cc2c4b32",
+        "seconds": 6.404068458000001,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.6,
+          "sample_luminance_q30": 0.15223277956247327,
+          "sample_shadow_fraction": 0.48948920682730923,
+          "sample_size": [
+            256,
+            249
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          8688,
+          5712
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.987589352614895,
+        "output_png_sha256": "5e9e26a2ed80d63602ebd9ba3768d43abe389c135ff6c231ea59c64202b1c448",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.2359131197176702,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 14.212229458
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "source": {
+        "id": "a0113-IMG_1129",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0113-IMG_1129.dng",
+        "bytes": 13563322,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.45,
+        "size": [
+          4282,
+          2848
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "5f0728e3478b28a8ebdfc8b2519b0426b758eb9cc60b9232de83826f636bab56",
+        "output_pixels_sha256": "539c1d05c59432e1a4912a821ac3d7b185ae3a7a25a3e7dacd6aeea39e5d4b7b",
+        "seconds": 1.6669885000000022,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.45,
+          "sample_luminance_q30": 0.22424431890249252,
+          "sample_shadow_fraction": 0.49419767907162865,
+          "sample_size": [
+            252,
+            238
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          4282,
+          2848
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.8365140003358716,
+        "output_png_sha256": "fa8deb853a712c72aefa8eefb039258c55f48c131c921284399c2a4989e29354",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.2622768160575846,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 4.179994125
+    },
+    {
+      "id": "a0575-kme_040",
+      "source": {
+        "id": "a0575-kme_040",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0575-kme_040.dng",
+        "bytes": 12118860,
+        "header_size": [
+          3944,
+          2622
+        ],
+        "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.35,
+        "size": [
+          3900,
+          2594
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "5c42d4f3d6143e94c97e631cef43bf13875908fcac364e8ee8cadf8dcc80b64a",
+        "output_pixels_sha256": "9b129d14e1a3ee40734a98fe60b981b226ef82691bfc353775a1e054c8c5b989",
+        "seconds": 1.6323312080000036,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.35,
+          "sample_luminance_q30": 0.250061959028244,
+          "sample_shadow_fraction": 0.5063732981383717,
+          "sample_size": [
+            244,
+            236
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          3900,
+          2594
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9698345293873436,
+        "output_png_sha256": "599725bed6be959a8ed5200a004190e89f899e3cf432ef0df33dc2fc32314c63",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.22370396094718087,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 4.2266782919999955
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "source": {
+        "id": "a0715-060812_182920__MG_6255",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+        "bytes": 11679930,
+        "header_size": [
+          4476,
+          2954
+        ],
+        "sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.7,
+        "size": [
+          4378,
+          2912
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "950f4969a9b51eda432e86f5b5a7eb8fc995307b81dfb0c454e435ad639608db",
+        "output_pixels_sha256": "5dcb2b52be25fdf0dfab3ca3ca6f94ef0ec1ef380f13cb6a1ffd484644a98177",
+        "seconds": 1.7077084169999992,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.7,
+          "sample_luminance_q30": 0.11212392523884772,
+          "sample_shadow_fraction": 0.6272009714632666,
+          "sample_size": [
+            244,
+            243
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          4378,
+          2912
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9960909850200051,
+        "output_png_sha256": "bc84019106d7b3a0df58c5e369f54c793947ec386b5c8ac7440087ab80a2808a",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.2323917108064581,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 4.313290459000001
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "source": {
+        "id": "a2049-IMG_1585",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2049-IMG_1585.dng",
+        "bytes": 14388136,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "288159dc4f30ded26db0f059d40c8ff85c9f59128cc8f3009c0862eb2b7ec22c"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.1,
+        "size": [
+          4282,
+          2848
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "1a02f9d087d77527b0119843c4abbd3761556462066da7ea2ea47d2ffce91399",
+        "output_pixels_sha256": "44d3c5557cd7a1875a735fbd32854f4992f79741a66b5052a38ad21b9bbd4dff",
+        "seconds": 1.7552300000000045,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.1,
+          "sample_luminance_q30": 0.35282665491104126,
+          "sample_shadow_fraction": 0.2968854208350007,
+          "sample_size": [
+            252,
+            238
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          4282,
+          2848
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.5003822015597038,
+        "output_png_sha256": "3aeda719050659dd348810a574cef173e0b336faa82e991f728a55e334278bc6",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.2548050424611068,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 4.713640333000001
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "source": {
+        "id": "a2270-_DSC0033",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2270-_DSC0033.dng",
+        "bytes": 3760142,
+        "header_size": [
+          3040,
+          2014
+        ],
+        "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.0,
+        "size": [
+          2006,
+          3032
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "0ac608231e0971e33dc8eeb7526f5d550c826a3ec19453ec1cfd2e7b98167472",
+        "output_pixels_sha256": "0ac608231e0971e33dc8eeb7526f5d550c826a3ec19453ec1cfd2e7b98167472",
+        "seconds": 0.0165816250000006,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.0,
+          "sample_luminance_q30": 0.41737853288650506,
+          "sample_shadow_fraction": 0.27107380753665183,
+          "sample_size": [
+            251,
+            253
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          2006,
+          3032
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.8398149877544149,
+        "output_png_sha256": "d9adbb3e330e7f276285f23bda57bad0f989a369db8865e4ba529701647be1fe",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.25679105995355794,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 1.603078625000002
+    },
+    {
+      "id": "a3246-kme_445",
+      "source": {
+        "id": "a3246-kme_445",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a3246-kme_445.dng",
+        "bytes": 6749044,
+        "header_size": [
+          3596,
+          2360
+        ],
+        "sha256": "ff04a6274a462690707ec2dffd5644a10dc9342f7b8e089170d5b65044361442"
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.7,
+        "size": [
+          3514,
+          2340
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "36c7f63f28b44d3d98a308765834d7eb6b8c1c3637e3eb54ec770bd032c94cff",
+        "output_pixels_sha256": "eac430181c5b61203c4e274cc2f67a14203dcb6d60c609ca43e4e935074c2777",
+        "seconds": 1.143953291999999,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.7,
+          "sample_luminance_q30": 0.1257011741399765,
+          "sample_shadow_fraction": 0.5981884428099568,
+          "sample_size": [
+            251,
+            234
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          3514,
+          2340
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9122169441890557,
+        "output_png_sha256": "79e6fc4c6c532e4db4bd7665fac864ed192dd6f9796e3e2871655104e9d57a39",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.35,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 3.2093543750000038
+    },
+    {
+      "id": "user-webp-1",
+      "source": {
+        "id": "user-webp-1",
+        "path": "/Users/evanchen/Downloads/1.webp",
+        "bytes": 9540,
+        "sha256": "2eeb453096da996fc5497a48a5491ec109f53cf72fa2e0c4a427cbeaef83c3f2",
+        "header_size": [
+          480,
+          270
+        ]
+      },
+      "shadow_adjustment": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.0,
+        "size": [
+          480,
+          270
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "80e00b3925bb467799a7978009e9a323593a6aea3440dbfee28475e8653fc724",
+        "output_pixels_sha256": "80e00b3925bb467799a7978009e9a323593a6aea3440dbfee28475e8653fc724",
+        "seconds": 0.0003256659999948397,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing.",
+        "selection": {
+          "suggested_strength": 0.0,
+          "sample_luminance_q30": 0.5916737914085388,
+          "sample_shadow_fraction": 0.22876543209876543,
+          "sample_size": [
+            240,
+            135
+          ],
+          "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+        }
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          480,
+          270
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.5506790123456791,
+        "output_png_sha256": "cf509396a4e55db942a0f662adf5bde9450f89cfa133e93396f3ac5e6a867a99",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "base_color_strength": 0.35,
+      "base_pixels_match_frozen": true,
+      "source_preserved": true,
+      "seconds": 0.10211954100000042
+    }
+  ]
+}

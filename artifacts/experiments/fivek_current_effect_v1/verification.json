@@ -1,0 +1,48 @@
+{
+  "verified_on": "2026-10-06 America/Los_Angeles",
+  "experiment_started_on": "2026-10-05",
+  "records_checked": 99,
+  "source_target_view_pairs_preserved": 99,
+  "input_jpeg_hashes_checked": 99,
+  "exports_hashes_checked": 198,
+  "protected_identities_unchanged": 19,
+  "implementation_baseline_unchanged": true,
+  "repeat_exact": true,
+  "all_final_outputs_zero_new_black_full_pixel_positions": true,
+  "fixed_visual_cases_reviewed": [
+    "a0341-dgw_002.dng",
+    "a3322-_dgw6269.dng",
+    "a2654-img_0032.dng",
+    "a4796-20090208_at_17h53m27__mg_0089.dng",
+    "a0784-_mg_7693.dng",
+    "a4133-dgw_020.dng",
+    "a0986-ja_pe-81.dng",
+    "a4755-duggan_090323_6173.dng",
+    "a1417-img_0012.dng",
+    "a2370-ji2e5682.dng",
+    "a4720-dsc_0022.dng",
+    "a3500-dgw_099.dng"
+  ],
+  "illustrative_summary_ids": [
+    "a2654-img_0032.dng",
+    "a4796-20090208_at_17h53m27__mg_0089.dng"
+  ],
+  "summary_selected_for_explanation_not_acceptance": true,
+  "runtime": {
+    "python": "3.9.8",
+    "Pillow": "11.3.0"
+  },
+  "health": {
+    "unavailable": "URLError"
+  },
+  "delivery_sha256": {
+    "artifacts/experiments/fivek_current_effect_v1/REPORT.zh-CN.md": "d705baafe6d690603f99e3738120f22963ce3dea8b08f2b00febcd1fb80f02f3",
+    "artifacts/experiments/fivek_current_effect_v1/PROTOCOL.md": "c324d905f874d317c4ee9cf59fe5b5d9db86ef518f880df5ef7361ddd6838da0",
+    "artifacts/experiments/fivek_current_effect_v1/results.json": "c9bea0173c9d62630ff771277cf4821e310e5eeff8e6c56b0711fad933c6d432",
+    "artifacts/experiments/fivek_current_effect_v1/baseline.json": "4335b7d1683b3f3c7b741441a22f82fa6c0335e8327de37322c764369399bf0b",
+    "artifacts/experiments/fivek_current_effect_v1/implementation_baseline.json": "fecf0085ee03964f10ffff9de7856ac4b2fead4b015ff4e9e2f4ea3701bc7c7c",
+    "artifacts/experiments/fivek_current_effect_v1/evaluate.py": "9c0cad8e40dae2b7df5fd2fb2bd478ea4ed510b9d6f010df6f8f3385f3a8be3e",
+    "data/external/fivek_current_effect_v1/comparisons/effect-summary.png": "a42055400a7ee98f07d82c63e70f2aef6f1b7921e84b6d9c6d4e0e6792c53277"
+  },
+  "scope": "Existing default JPEG inference and developmental visual diagnosis only. No training, tuning, production changes, native-resolution acceptance, sharpening or fresh independent preference evaluation."
+}

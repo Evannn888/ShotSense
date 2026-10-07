@@ -1,0 +1,11 @@
+# Unchanged-result UX correction — 2026-10-04
+
+User confirmed that the current right image says **Unchanged · Original baseline preserved**. A previously downloaded result for the same named photo requested auto and recorded candidate rejection:0.312683% new full-value-channel pixels versus the0.1% guard. That earlier result does not establish the current dropdown or strength; current browser observation failed with repeated CDP focus timeouts. No browser workaround or new photographic-quality claim was made.
+
+The page now states the recipe actually used and explains whether unchanged pixels come from zero strength, automatic preservation, or an explicit recipe with no pixel change. Clipping rejection includes the recorded candidate percentage and threshold. **Apply gentle lift** selects the explicit recipe and uses the existing bounded worker to reprocess the same retained upload/project sample, resetting strength to100%. A source-hash mismatch or removed upload fails rather than processing an unrelated file. The action does not relax auto thresholds or increase the fixed0.35EV recipe.
+
+The focused AppTest creates a controlled rejected-auto state, verifies the0.31%/0.10% explanation, clicks the action, runs the real RAW worker on the same sample hash, and checks the selected Gentle lift recipe, changed pixels and matching PNG/JSON. It then verifies the zero-strength explanation and rejection of a changed input before worker execution. Existing JPEG worker/download, cache-clearing and other workflow checks remain in the full suite.
+
+Full suite: **60 passed**, no failures/skips,62.09s. One existing optional Matplotlib warning remains. Server health returned `ok`; real interaction with the user's current browser page remains unverified because its documented observation APIs timed out. [Verification](verification.json) records final source identities and unchanged backend/profiles. [Original app](app_before.py) and [original tests](tests_before.py) match the frozen59-test pilot hashes.
+
+This fixes an ambiguous control path and explains the unchanged output. It does not establish a stronger/natural rendition of the personal photo. A0.35EV lift is intentionally small, and preferred contrast/color/detail still requires photographic review.

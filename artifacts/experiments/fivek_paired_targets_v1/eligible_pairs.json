@@ -1,0 +1,2619 @@
+{
+  "version": "fivek-expert-c-source-default-crop-pilot-v1",
+  "scope": "Provisional paired development views, <=960px; not native subpixel registration, preference labels or independent test.",
+  "selection_sha256": "bbaed04a7cac769a9166402aa2d01e088b68789ed33b89f797500e56fa7098a1",
+  "count": 99,
+  "split_counts": {
+    "train": 79,
+    "val": 20
+  },
+  "photos": [
+    {
+      "source_id": "a0784-_mg_7693.dng",
+      "group": "a0784-_mg_7693.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0784-_MG_7693.dng",
+      "source_original_sha256": "fa8aecb1ee745cb0da3f53bbb3fb34a035b1fe9ef5cfe1921916f92fa45beb28",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0784-_MG_7693-input.png",
+      "source_view_sha256": "b563f875a2c76fd8c564bbbff23c6374b0f17255486b203cc0384e5486dde2ce",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0784-_MG_7693.tif",
+      "target_original_sha256": "e98205a661ffd001b2e80433395908bb74521ff74c3c6da7a5395980725ee5b9",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0784-_MG_7693.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0784-_MG_7693-target.png",
+      "target_view_sha256": "2ff261d034b120802a6bd931c9e6001a69c8ef5eca6469ea035adf13a3bf202e",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0784-_MG_7693.json"
+    },
+    {
+      "source_id": "a0341-dgw_002.dng",
+      "group": "a0341-dgw_002.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a0341-dgw_002.dng",
+      "source_original_sha256": "673126c915e328c60a87973dd55c98fe18c34d23ce5689ff981d532b55a6b9d2",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0341-dgw_002-input.png",
+      "source_view_sha256": "6028fad55c089b47a866023c9ab1aca625a8563a9dad2fa75a73597cebc91e08",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0341-dgw_002.tif",
+      "target_original_sha256": "0cd1daaf578968def17cac540c7205bfb922d2c0458dc714b1b9512d415349bc",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0341-dgw_002.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0341-dgw_002-target.png",
+      "target_view_sha256": "c83b62bde113a0ca1eb6ee17d1c81897155672bdb8448b5ab0777bdf2b146420",
+      "development_view_size": [
+        960,
+        639
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0341-dgw_002.json"
+    },
+    {
+      "source_id": "a4796-20090208_at_17h53m27__mg_0089.dng",
+      "group": "a4796-20090208_at_17h53m27__mg_0089.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "unknown",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a4796-20090208_at_17h53m27__MG_0089.dng",
+      "source_original_sha256": "fda954723bfb3dc0893df557ccf1f8043ee173cf14c70ad983412504d9f58557",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4796-20090208_at_17h53m27__MG_0089-input.png",
+      "source_view_sha256": "a639ed3d1522689f9c84dd736f91e8f76b391819650487725056af4e8fff133e",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4796-20090208_at_17h53m27__MG_0089.tif",
+      "target_original_sha256": "7f28c29b45b52741727ad854ec08d833e1a78d38914d7a7bd0cc3a56d7d16dbc",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4796-20090208_at_17h53m27__MG_0089.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4796-20090208_at_17h53m27__MG_0089-target.png",
+      "target_view_sha256": "1fbe15f5147257b18d7bf2397a7581e710d9d89e71f40facae0f481d5b0cbd8b",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4796-20090208_at_17h53m27__MG_0089.json"
+    },
+    {
+      "source_id": "a3322-_dgw6269.dng",
+      "group": "a3322-_dgw6269.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "unknown",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3322-_DGW6269.dng",
+      "source_original_sha256": "6278cf1708ea6f80efcefddfc9abd6e1c2c9510a5553d177ca5719ddb791dc77",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3322-_DGW6269-input.png",
+      "source_view_sha256": "9e5411cad495564193667c2389445e0886c7321a3729ae3a03a7094a92c85cc4",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3322-_DGW6269.tif",
+      "target_original_sha256": "0e0d5e61b27d165f5ec42703036e6254b3c156c62af3a16c853fe860b1f15c4c",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3322-_DGW6269.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3322-_DGW6269-target.png",
+      "target_view_sha256": "f22738ad71225552737636e19b022843004e7e97165b97a259efa183e75dcf8c",
+      "development_view_size": [
+        960,
+        639
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3322-_DGW6269.json"
+    },
+    {
+      "source_id": "a2654-img_0032.dng",
+      "group": "a2654-img_0032.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a2654-IMG_0032.dng",
+      "source_original_sha256": "791776739f5d2ce2081672a3f55cdb568810cbf58eb985ca4cf230577c578759",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2654-IMG_0032-input.png",
+      "source_view_sha256": "b2f6d61f2d14beb4fa25410148fbe95ffd61210380a14d0294b47707e420f26f",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2654-IMG_0032.tif",
+      "target_original_sha256": "19a3643d4c2f93e2f08e7c3ca3a8a1f381b15eee74a3735ecff22a5475e8689c",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2654-IMG_0032.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2654-IMG_0032-target.png",
+      "target_view_sha256": "6734f3322443709cf6ccada7d493e177c109097e383f2aaf0101ed7cbdaa7abb",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2654-IMG_0032.json"
+    },
+    {
+      "source_id": "a4133-dgw_020.dng",
+      "group": "a4133-dgw_020.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a4133-dgw_020.dng",
+      "source_original_sha256": "caded5fd4f45bcd790406707fa5099fa543a6266e40bae9ba898e984f12cba4b",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4133-dgw_020-input.png",
+      "source_view_sha256": "1d571bb82c39ca54e81933425e813d34dbed1094b237a4b1748f91db19d0deb9",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4133-dgw_020.tif",
+      "target_original_sha256": "19327dc3b2774acbab78072e9a29a4f6025d88c067d3be11a4d5498f10d9b7f0",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4133-dgw_020.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4133-dgw_020-target.png",
+      "target_view_sha256": "ab11d0790722141f8f0b694ed37e6c2747055f51d4537b68a1ce872d13ebe898",
+      "development_view_size": [
+        639,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4133-dgw_020.json"
+    },
+    {
+      "source_id": "a0986-ja_pe-81.dng",
+      "group": "a0986-ja_pe-81.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0986-Ja_Pe-81.dng",
+      "source_original_sha256": "c966f77be6d0738e1a10730522480b5aec3cc4a16a57e97d56d47ec52bb92836",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0986-Ja_Pe-81-input.png",
+      "source_view_sha256": "2d1ae769dcd9ab6ca0f7e6f54aa0375d3615cbcbb267496c111618c8ba98a063",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0986-Ja_Pe-81.tif",
+      "target_original_sha256": "269491436aee030c1fb1308f488980592e3da0c6ef7c00618a4dd6ae55d476b5",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0986-Ja_Pe-81.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0986-Ja_Pe-81-target.png",
+      "target_view_sha256": "67bd9bd78301d6c0e1d4b07dda1d806fe918052c77ad182f39bed69e94ddae3e",
+      "development_view_size": [
+        639,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0986-Ja_Pe-81.json"
+    },
+    {
+      "source_id": "a4755-duggan_090323_6173.dng",
+      "group": "a4755-duggan_090323_6173.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a4755-Duggan_090323_6173.dng",
+      "source_original_sha256": "ee727763867c9aa81118b4a30090d90defb80a69eb1a3224a6a53dff1ff88534",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4755-Duggan_090323_6173-input.png",
+      "source_view_sha256": "a034a6957e4bc7e610f5f3129fee6c2545359b37fac85732520258a2da35ff28",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4755-Duggan_090323_6173.tif",
+      "target_original_sha256": "5ce29776c2451e9f7628709c69c7ccf5b9f1c2f83ece9cb90c79e0fa57bb30aa",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4755-Duggan_090323_6173.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4755-Duggan_090323_6173-target.png",
+      "target_view_sha256": "0ab4560f6e6316ef84781f8874fbd751c89ec1ee3083a9e008d9e322895b1e3c",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4755-Duggan_090323_6173.json"
+    },
+    {
+      "source_id": "a1417-img_0012.dng",
+      "group": "a1417-img_0012.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a1417-IMG_0012.dng",
+      "source_original_sha256": "3f1360d1c4d6468617ab04ffa88a2717fc3d780faffd2ea6d6ab84e22ade7d5d",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1417-IMG_0012-input.png",
+      "source_view_sha256": "413b9a4609cc9bcf5f4e0b713ff09ab19ecc464a26fd1c28838d07f05a5f73de",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1417-IMG_0012.tif",
+      "target_original_sha256": "afe8a132143ce2eb7f12b4545d91ca4fc035ab900cb6fa0f6be220bf55e3fe1b",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1417-IMG_0012.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1417-IMG_0012-target.png",
+      "target_view_sha256": "df482ddb38e4c68bb5fe198effa54f0397ab7da2e402221aa6bed165cdbcf999",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1417-IMG_0012.json"
+    },
+    {
+      "source_id": "a2370-ji2e5682.dng",
+      "group": "a2370-ji2e5682.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a2370-JI2E5682.dng",
+      "source_original_sha256": "9544fca16ca9b556ef87ea75895986a46ffe91e977b49bd9eaca9f7fd6c6355f",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2370-JI2E5682-input.png",
+      "source_view_sha256": "2df1f37c4323b014b43693a4a772384053a22893a071c27e4d848f9d627adf1a",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2370-JI2E5682.tif",
+      "target_original_sha256": "eb1a7b4b632fddd41b817917a09ad1e5ce14955038266eaf253b2a2157a60e43",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2370-JI2E5682.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2370-JI2E5682-target.png",
+      "target_view_sha256": "0ab77dc8ad9527507e04d68d58dd97d6d212abc701486b3684177533f9ae083a",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2370-JI2E5682.json"
+    },
+    {
+      "source_id": "a4720-dsc_0022.dng",
+      "group": "a4720-dsc_0022.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a4720-DSC_0022.dng",
+      "source_original_sha256": "224294a50c0bcb80905a1ee3413170c9647c5ff9b331c0e9cffcd0c37422b642",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4720-DSC_0022-input.png",
+      "source_view_sha256": "414c36982c922ccc3a542eed1dcb2914f874a8ebd85ed9620b373ae2ac76acdd",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4720-DSC_0022.tif",
+      "target_original_sha256": "5c01b161d753025b9d70f8d7b7d37b6ff28bf4a8c28b71b3a08ca126939512d9",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4720-DSC_0022.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4720-DSC_0022-target.png",
+      "target_view_sha256": "4d105bccd7f0341b0924c4037e4ee057548e99dd9d5be935eb53f08ff8a49ffa",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4720-DSC_0022.json"
+    },
+    {
+      "source_id": "a3500-dgw_099.dng",
+      "group": "a3500-dgw_099.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3500-dgw_099.dng",
+      "source_original_sha256": "7658c418d2f35c1223e9d4b1db1a05d33d2feac3a439d2fbeaf956cb25be8511",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3500-dgw_099-input.png",
+      "source_view_sha256": "788c8eb689d2775165ae49709310f9c62f64b25de2547171614fba644371cb38",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3500-dgw_099.tif",
+      "target_original_sha256": "ac2bbf82e6f802208cdc7a37533afe7192fb2442619d3ee684e4f9fa6bffc095",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3500-dgw_099.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3500-dgw_099-target.png",
+      "target_view_sha256": "726ca28a1a5172f27845408de19814ae6c5402134d74a4fd838e9742e43157e1",
+      "development_view_size": [
+        639,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3500-dgw_099.json"
+    },
+    {
+      "source_id": "a1797-jmac_mg_6883.dng",
+      "group": "a1797-jmac_mg_6883.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a1797-jmac_MG_6883.dng",
+      "source_original_sha256": "63c7078b7199ac40c10d0568784cc0b15de4a0cfccf0d8e3f5ff74a2a79420b8",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1797-jmac_MG_6883-input.png",
+      "source_view_sha256": "a8dc589c174cf385b00f531b60177d02ab88660657117ed0a844ac5bbf4a42c5",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1797-jmac_MG_6883.tif",
+      "target_original_sha256": "abb8bbe8069e0d90ced6e40fda4ca8b6a30a862b8ab61eade1c1ff7ba4371b47",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1797-jmac_MG_6883.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1797-jmac_MG_6883-target.png",
+      "target_view_sha256": "85cae4e4b9725c0cf11f1efdebd4b1ff81070f6ea258c2be7a3dcff892710864",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1797-jmac_MG_6883.json"
+    },
+    {
+      "source_id": "a3250-dgw_113.dng",
+      "group": "a3250-dgw_113.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3250-dgw_113.dng",
+      "source_original_sha256": "d8ccef7e42873234024e533e09d8a527f37ba197010dfca4b23fe5c0585f0923",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3250-dgw_113-input.png",
+      "source_view_sha256": "9445e24c7f527a9ac5c7825ed701852af114a6f7ee7da4c53be2644ef441ed90",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3250-dgw_113.tif",
+      "target_original_sha256": "a898a36ac1c3f9d2865b1a9f4c44f019ed586a3cc5fa91a7f3d5ca95b7e1260f",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3250-dgw_113.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3250-dgw_113-target.png",
+      "target_view_sha256": "2f3418e99ca1f01cc92e2ed1571d7f75fae1d8b11f13be43c7330445670873ea",
+      "development_view_size": [
+        960,
+        639
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3250-dgw_113.json"
+    },
+    {
+      "source_id": "a1231-_dgw6291.dng",
+      "group": "a1231-_dgw6291.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a1231-_DGW6291.dng",
+      "source_original_sha256": "e033802432c37bf5c225f63b45958dc1a1461e3e219f3841befb5074c860d437",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1231-_DGW6291-input.png",
+      "source_view_sha256": "1ce62dfa47f7715357c8dbe50bb590ece588c550a16bce358557908c469beb66",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1231-_DGW6291.tif",
+      "target_original_sha256": "04377cd9f894d2e758ce61caf9062f6aafc6d6bfbd2da2f3092569b19af609e4",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1231-_DGW6291.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1231-_DGW6291-target.png",
+      "target_view_sha256": "18529fc892bdfbe553c33416825bc58ce08b46087ef060e52a4b0a43edf2db6f",
+      "development_view_size": [
+        960,
+        639
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1231-_DGW6291.json"
+    },
+    {
+      "source_id": "a4408-duggan_080411_5973.dng",
+      "group": "a4408-duggan_080411_5973.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a4408-Duggan_080411_5973.dng",
+      "source_original_sha256": "b9425145934a1fb62b952179f35091aa41c2959d8bb38cc96c4fd58877ed91a2",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4408-Duggan_080411_5973-input.png",
+      "source_view_sha256": "4f228271d21ee0e50d21441b590bc0ddb1d76026b89fa6dbf5fb2ce98a1de0c6",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4408-Duggan_080411_5973.tif",
+      "target_original_sha256": "279d618699414dcf940c6d2cc508d3592eca1f4d536acb917b64e4bade3e2128",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4408-Duggan_080411_5973.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4408-Duggan_080411_5973-target.png",
+      "target_view_sha256": "839382d19ac8328c87d379e581478a7349daf4dfbd436c9d63a62ad7a5da91b5",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4408-Duggan_080411_5973.json"
+    },
+    {
+      "source_id": "a0072-img_5048.dng",
+      "group": "a0072-img_5048.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0072-IMG_5048.dng",
+      "source_original_sha256": "0e6e4f8b0268c20d6d0f00f13f68b1ffb2bff14810bf2441b3837462532d86ae",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0072-IMG_5048-input.png",
+      "source_view_sha256": "343b03b0a432d534fedb7461ce3a47acc855998863c41eee716b808c2880feb6",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0072-IMG_5048.tif",
+      "target_original_sha256": "a9123d84385f3f3b1c37ed122959bb0740400f54885ce3687a51c13d0cc36f68",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0072-IMG_5048.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0072-IMG_5048-target.png",
+      "target_view_sha256": "500026106b350cf7737da73c2155d5f227b5b9e8eb625e10953a82f02acfd95c",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0072-IMG_5048.json"
+    },
+    {
+      "source_id": "a0875-jmac_dsc1465.dng",
+      "group": "a0875-jmac_dsc1465.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0875-jmac_DSC1465.dng",
+      "source_original_sha256": "10067f3615834e39f4e336f4434123f83afb94c091109dd21223294e2b3a0164",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0875-jmac_DSC1465-input.png",
+      "source_view_sha256": "ddc8921492ae1360d09e01cf64a9aa8cc87b923bc149a1fcaa4a309054a5658d",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0875-jmac_DSC1465.tif",
+      "target_original_sha256": "c33974a3fc254c61fe89bcc67ed329933d02eefa622d058110c30668ad8caff3",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0875-jmac_DSC1465.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0875-jmac_DSC1465-target.png",
+      "target_view_sha256": "bab06bc14452f64110d42c39a141f33fb50d4aa20dcb5ce111928abb99282a73",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0875-jmac_DSC1465.json"
+    },
+    {
+      "source_id": "a3442-mb_060909_003.dng",
+      "group": "a3442-mb_060909_003.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3442-MB_060909_003.dng",
+      "source_original_sha256": "7e4868d3d414be390618ac3c72aa49b8539a22f7d2f8633924af75faaaaefa70",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3442-MB_060909_003-input.png",
+      "source_view_sha256": "b49efeba81f61d44b130eb88cb66064d4f4c5968851396389a4fd88716cd5ce7",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3442-MB_060909_003.tif",
+      "target_original_sha256": "488822e04186462b9a7a7bcff7fbf333be2e59dfb0d3c4f2cb66bb9b01b2981d",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3442-MB_060909_003.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3442-MB_060909_003-target.png",
+      "target_view_sha256": "f4d164d8150fa00b50a5d0f1debb363a7c5cee28de620b8c39da45c257eba222",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3442-MB_060909_003.json"
+    },
+    {
+      "source_id": "a3407-dsc_0008-1.dng",
+      "group": "a3407-dsc_0008-1.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a3407-DSC_0008-1.dng",
+      "source_original_sha256": "ef8e35f6df9f5df718f4055cf25c8b3d76549718893a958101bef9a1bb4db84c",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3407-DSC_0008-1-input.png",
+      "source_view_sha256": "3bc9a373eefd1013561dc15f20f34262e3f18ea57b4bc36067f72ff581a4292b",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3407-DSC_0008-1.tif",
+      "target_original_sha256": "30cf00a74d1f46383e89085b8510d9536e28cfab4d8ac9622ef2866347fcb2d7",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3407-DSC_0008-1.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3407-DSC_0008-1-target.png",
+      "target_view_sha256": "737ed8c6b3b3257e109384f6118fbfc97f9c14d0adaa5d59a9c410e794fa59d3",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3407-DSC_0008-1.json"
+    },
+    {
+      "source_id": "a4828-duggan_050710_1299.dng",
+      "group": "a4828-duggan_050710_1299.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a4828-Duggan_050710_1299.dng",
+      "source_original_sha256": "ddd61fbe970990e65347e479d151b8317dbc768218b3aa61e9e2440d94e7b905",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4828-Duggan_050710_1299-input.png",
+      "source_view_sha256": "3b7d3d19a33f9af7c0a7a52a93afb9c1a9d5ed6c3bf6ae183229130710a2d2fe",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4828-Duggan_050710_1299.tif",
+      "target_original_sha256": "5fc690ccbd3f856023c2e3d8860270e34cb47711a68636790401266b43d2a4bf",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4828-Duggan_050710_1299.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4828-Duggan_050710_1299-target.png",
+      "target_view_sha256": "e4d9ecf321071dc008dce7b110012692351071c98f0900a78f26b85711145138",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4828-Duggan_050710_1299.json"
+    },
+    {
+      "source_id": "a2372-kme_139.dng",
+      "group": "a2372-kme_139.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "unknown",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a2372-kme_139.dng",
+      "source_original_sha256": "3fa28c11875255c7d6342d83c2e6af70a7731ca06bcd00e531557d5e8773daff",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2372-kme_139-input.png",
+      "source_view_sha256": "2673f4715c661ac308ccf6b56bfdb0c206fa5770027ae4ff0c780b6e88e5370e",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2372-kme_139.tif",
+      "target_original_sha256": "687389db1c35af7f46d138c9cc3022e0132aa0404b447d9a1e187ca914863374",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2372-kme_139.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2372-kme_139-target.png",
+      "target_view_sha256": "9cfdb7b4c4cad727b6ae2bcde1146c4c2c7793a7072e01f809208aad944e3899",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2372-kme_139.json"
+    },
+    {
+      "source_id": "a0327-lsyd4o0579.dng",
+      "group": "a0327-lsyd4o0579.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a0327-LSYD4O0579.dng",
+      "source_original_sha256": "cf482e824f799937d2562b3bb3a4d2978b6aed28cddb1cfd49ecef6b05a83d83",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0327-LSYD4O0579-input.png",
+      "source_view_sha256": "5fbb1d50b17b2318e07a748faf0905f657735bc332fa6d60c3da0d2abcb22594",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0327-LSYD4O0579.tif",
+      "target_original_sha256": "62d6ec85cbf433f9d1499ba3f60be053de7c67315d2f6f0104784e369f45e00d",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0327-LSYD4O0579.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0327-LSYD4O0579-target.png",
+      "target_view_sha256": "00bc6f9b86a54b2751f0ad2d44d4f678b95942ad5dcdeda335c1fbbb520e8306",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0327-LSYD4O0579.json"
+    },
+    {
+      "source_id": "a2808-20080516_072208__mg_0018.dng",
+      "group": "a2808-20080516_072208__mg_0018.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a2808-20080516_072208__MG_0018.dng",
+      "source_original_sha256": "5e2e165f72a34c632be77ed18fb71e3eaea0999482e3f80e7c58dbdaffa88e1d",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2808-20080516_072208__MG_0018-input.png",
+      "source_view_sha256": "688a234746636de52fafefb0d482b6e0fdc9295ec56b36378d5789abc69f521f",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2808-20080516_072208__MG_0018.tif",
+      "target_original_sha256": "60d145d69251217823d9411053d7a584b955ad5953b468e4490127bad6be42fc",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2808-20080516_072208__MG_0018.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2808-20080516_072208__MG_0018-target.png",
+      "target_view_sha256": "201a661494edf2d391c5797ddd6ba3892afb3b6208415d6991311d2d66a0f720",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2808-20080516_072208__MG_0018.json"
+    },
+    {
+      "source_id": "a2474-img_4319.dng",
+      "group": "a2474-img_4319.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "unknown",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a2474-IMG_4319.dng",
+      "source_original_sha256": "6cd9d4bbde075677cc0db84c71e807e2fc242b559ac2b2cdc3868ac3dbcf0283",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2474-IMG_4319-input.png",
+      "source_view_sha256": "07bc0c3b29b809b30efaf1cd76fdd09b2b8d4036023935028f4f959cec855313",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2474-IMG_4319.tif",
+      "target_original_sha256": "df4cfdaaed4c1db106c64a086f4ae14bbaf54f4a9902a2dbf39211dfebedb51f",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2474-IMG_4319.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2474-IMG_4319-target.png",
+      "target_view_sha256": "0c950eeeedf61ee10cd2d6fa9db7789424708e8e7d93e0c600643c971afd877e",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2474-IMG_4319.json"
+    },
+    {
+      "source_id": "a0802-img_8346.dng",
+      "group": "a0802-img_8346.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0802-IMG_8346.dng",
+      "source_original_sha256": "2093656f56d95ce1dfdd2c761a77b03468c628f74c9c553231c2cd6e4d5995a4",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0802-IMG_8346-input.png",
+      "source_view_sha256": "b061b3a4e02a5ed6384b3b92021e4cf6b03675441090c8c1f78e9717850ef0dc",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0802-IMG_8346.tif",
+      "target_original_sha256": "be1362ec843ab75cdc71272e1ffabdde467e5570afc9a0e55952a69c0c28e42b",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0802-IMG_8346.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0802-IMG_8346-target.png",
+      "target_view_sha256": "e2b46ef1622218bcf8b31e480250d2662dd0358dd89cb593ca40dc404325096b",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0802-IMG_8346.json"
+    },
+    {
+      "source_id": "a0191-jmac_dsc2666.dng",
+      "group": "a0191-jmac_dsc2666.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a0191-jmac_DSC2666.dng",
+      "source_original_sha256": "aa0cc42e3e3d3201b0ea034bd1cf47852ce5d96ca32f9e8faf9741e8d7499f38",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0191-jmac_DSC2666-input.png",
+      "source_view_sha256": "bee4bfd3269aa8f9b907db796522b5080c7a98414f425345fcaaf7aec3a7f2fd",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0191-jmac_DSC2666.tif",
+      "target_original_sha256": "019a128cdca6207012ecc35e6992aca2c27b2212cb94bdb9d7c8c2c4ad74eda5",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0191-jmac_DSC2666.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0191-jmac_DSC2666-target.png",
+      "target_view_sha256": "ce5ae0e1e095de906e54bc18d3ca03629473370735636b0cdb8d4e958c4dadc0",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0191-jmac_DSC2666.json"
+    },
+    {
+      "source_id": "a0472-mb_040506_010.dng",
+      "group": "a0472-mb_040506_010.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0472-MB_040506_010.dng",
+      "source_original_sha256": "f427e424cbce78628291ff81a6548bbc27b661398e285978bfab2dc49a4b481b",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0472-MB_040506_010-input.png",
+      "source_view_sha256": "67fcdade5304214c04fb14294a99440a96aa3757daeaaa3a3cec2682410cca20",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0472-MB_040506_010.tif",
+      "target_original_sha256": "3943972fc12e18710fd65de2331d36b1d97ee721b38f5abaf8825b42ee0d0f83",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0472-MB_040506_010.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0472-MB_040506_010-target.png",
+      "target_view_sha256": "b1bc07f7a2ec3188ae2102589af6b295d45ffd094698122784c63bf7f885511f",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0472-MB_040506_010.json"
+    },
+    {
+      "source_id": "a4121-07-11-22-at-06h50m14s-_mg_6000.dng",
+      "group": "a4121-07-11-22-at-06h50m14s-_mg_6000.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a4121-07-11-22-at-06h50m14s-_MG_6000.dng",
+      "source_original_sha256": "ff7d38596f19a31ab38016146a12115b55d1c65ac028c36e15275a5cb2b1450e",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4121-07-11-22-at-06h50m14s-_MG_6000-input.png",
+      "source_view_sha256": "76e47c12eedd12c70a0519f3c3bc90da7d82f832d5aaf9bdd01a5291a1195db0",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4121-07-11-22-at-06h50m14s-_MG_6000.tif",
+      "target_original_sha256": "262ecae9b7eb364832b7d1b098899b2e197ebf35a6c994315d2213fe6825ec04",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4121-07-11-22-at-06h50m14s-_MG_6000.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4121-07-11-22-at-06h50m14s-_MG_6000-target.png",
+      "target_view_sha256": "9a1c443843c31f63585ca1cd95ca61f702068e38416f20e707632cad8fb02f3a",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4121-07-11-22-at-06h50m14s-_MG_6000.json"
+    },
+    {
+      "source_id": "a3368-jmac_mg_0786.dng",
+      "group": "a3368-jmac_mg_0786.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3368-jmac_MG_0786.dng",
+      "source_original_sha256": "c3f6c2cdf4c005e77e1aa5f4f2cc289c84a38b77d69ebfeba199e598f8b53594",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3368-jmac_MG_0786-input.png",
+      "source_view_sha256": "c56eb4bac120b9445a506efbb06fd637e40b67f189884b872211d7e6da0a4758",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3368-jmac_MG_0786.tif",
+      "target_original_sha256": "be0eb4c7bda83472b9aa4dbde8dca3a2427aac8c8eaeaee231598c5b012342a9",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3368-jmac_MG_0786.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3368-jmac_MG_0786-target.png",
+      "target_view_sha256": "019636a7341558aeaedb6da476c2695dd9a7ac2ff573f82a4b855b3e7305088d",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3368-jmac_MG_0786.json"
+    },
+    {
+      "source_id": "a3536-wp_img_0921.dng",
+      "group": "a3536-wp_img_0921.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a3536-WP_IMG_0921.dng",
+      "source_original_sha256": "d1b9a65003b5362d1b57127c7c573edbfa783c2a812cbfc51eaa41c5ab4ccb7d",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3536-WP_IMG_0921-input.png",
+      "source_view_sha256": "d9ab65ab634ba6199c9766a933d5ab2b0cbdddef206bab153088371ff2c3e8b3",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3536-WP_IMG_0921.tif",
+      "target_original_sha256": "2bb82d9310a889c2e9fba19e1e97bb98aa4b6069659cc17929cb6ba9bd113fb3",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3536-WP_IMG_0921.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3536-WP_IMG_0921-target.png",
+      "target_view_sha256": "f6caba78f7fef32e19be8471ce146b469d7a5d31ef45e2a6bba464375f2a738f",
+      "development_view_size": [
+        960,
+        720
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3536-WP_IMG_0921.json"
+    },
+    {
+      "source_id": "a0133-050724_185320__i2e5160.dng",
+      "group": "a0133-050724_185320__i2e5160.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0133-050724_185320__I2E5160.dng",
+      "source_original_sha256": "2a4b774552ea98e32d3f22832e5028973dca1110b66509b95d4c8d1d5f77b67b",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0133-050724_185320__I2E5160-input.png",
+      "source_view_sha256": "5c8202ed67a37b45551eb9f6d824d160f4b44aee952eae4cae12011306f7db3d",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0133-050724_185320__I2E5160.tif",
+      "target_original_sha256": "6978d7b90f39a2c9c85df8ebf27344b660656e13f684b09537293ade5a0978ed",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0133-050724_185320__I2E5160.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0133-050724_185320__I2E5160-target.png",
+      "target_view_sha256": "54295d59e4459b36939ee9f76b94365315aa4021c3ffaf8dad2ff790e8214957",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0133-050724_185320__I2E5160.json"
+    },
+    {
+      "source_id": "a1281-tc_dsc2356.dng",
+      "group": "a1281-tc_dsc2356.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a1281-tc_DSC2356.dng",
+      "source_original_sha256": "56485fb3deeb79ce766931a42d48b695261f75df319a0af37019b121659cce36",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1281-tc_DSC2356-input.png",
+      "source_view_sha256": "1d4f2de63120047eb2110e84f0c12384e68ab7fb9f2093b7675c8ffcdb246570",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1281-tc_DSC2356.tif",
+      "target_original_sha256": "5330294915dd3890fc1fd016c11aca106a977f12d044cca69834110632249286",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1281-tc_DSC2356.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1281-tc_DSC2356-target.png",
+      "target_view_sha256": "1cab7a7ff377b9149037886c06e084ca5e09518ffd690d82669956ba2dcc1afb",
+      "development_view_size": [
+        638,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1281-tc_DSC2356.json"
+    },
+    {
+      "source_id": "a2375-img_4979.dng",
+      "group": "a2375-img_4979.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a2375-IMG_4979.dng",
+      "source_original_sha256": "f32cf7df9b973bbaa7392693a08194c9e2fc1ecad2268bf2a6a91bb1b94583fc",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2375-IMG_4979-input.png",
+      "source_view_sha256": "7d0edf6772ed643e676f3aa9db35c486f28f6f2bfc492593e52088c6e4358105",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2375-IMG_4979.tif",
+      "target_original_sha256": "af1a4e8cfc60fd971499b2709de7b4c04c3b9344f34d89eb66a4a4cfa017279b",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2375-IMG_4979.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2375-IMG_4979-target.png",
+      "target_view_sha256": "fbf29142113b8a44eed7c47d7ff8e3b3e2f625b66f596c75ee6691717919171d",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2375-IMG_4979.json"
+    },
+    {
+      "source_id": "a4925-_dgw7848.dng",
+      "group": "a4925-_dgw7848.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a4925-_DGW7848.dng",
+      "source_original_sha256": "7dcd60abd168421816ed6fbd62c34855852826a07b11913c81e104c0710bcdbd",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4925-_DGW7848-input.png",
+      "source_view_sha256": "d6b835e2bf276f71e8f57f6465e07f1da0bca39c98eab0cc3099ec59d4bddf2b",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4925-_DGW7848.tif",
+      "target_original_sha256": "e6932754eff7a4f9e85e87ac873b0ff1bd3fe28f53707ec70f5847816f00bf73",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4925-_DGW7848.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4925-_DGW7848-target.png",
+      "target_view_sha256": "2b7769378d75f1ccde48478196ab921f11ac7e7dedfb5b2ed39cc770cb87fd51",
+      "development_view_size": [
+        639,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4925-_DGW7848.json"
+    },
+    {
+      "source_id": "a0842-tc_dsc2360.dng",
+      "group": "a0842-tc_dsc2360.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a0842-tc_DSC2360.dng",
+      "source_original_sha256": "528fde65cf97287e2cb4e614c70b4df08dd7e770e3b2619316600693e7dfcf60",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0842-tc_DSC2360-input.png",
+      "source_view_sha256": "7dc55395aaa7a106a0b38ae15b1273e9fd2e0680cb3c8bf247aa7e620277e5d3",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0842-tc_DSC2360.tif",
+      "target_original_sha256": "77abb114a443cac59f92b5b6cecff5861dc7933f775bce182a9a31fc3f0be450",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0842-tc_DSC2360.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0842-tc_DSC2360-target.png",
+      "target_view_sha256": "79d53b5d230d7cb8fe20aa19926e77cbb71732e895b3535dc48b5165e0b8882f",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0842-tc_DSC2360.json"
+    },
+    {
+      "source_id": "a2754-_dsc7455.dng",
+      "group": "a2754-_dsc7455.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a2754-_DSC7455.dng",
+      "source_original_sha256": "04112e3c6ca6f7127121b6b3503577479d8e9f3e335c2906391b5ab4c5104ff7",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2754-_DSC7455-input.png",
+      "source_view_sha256": "c7ef1b86b40881a2cfcca62f62b34046d5af932f4d3d2fc4a3a7e7b93245957b",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2754-_DSC7455.tif",
+      "target_original_sha256": "679d61f6ef7d43a9f3129f41fa360d6d9086d62be9e923e797482260557130ad",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2754-_DSC7455.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2754-_DSC7455-target.png",
+      "target_view_sha256": "55005ea1e1e89b48dffbef81818b089925c5b4dab7cd6e1bda543f44a65f01ae",
+      "development_view_size": [
+        639,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2754-_DSC7455.json"
+    },
+    {
+      "source_id": "a1305-nkim_mg_6827.dng",
+      "group": "a1305-nkim_mg_6827.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a1305-NKIM_MG_6827.dng",
+      "source_original_sha256": "918a333b85d9a66ab967b7f094321908514c674ed0bacf260f952e8b5ae07135",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1305-NKIM_MG_6827-input.png",
+      "source_view_sha256": "ff7c27f038f19db94b77a6c6dff6d2e96673cf4cbcd74727b2e40cc951a75099",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1305-NKIM_MG_6827.tif",
+      "target_original_sha256": "0f81994b69ed5c7d2fb561f9c93cb1b77bf56235e546478eeea4d353f80427f0",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1305-NKIM_MG_6827.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1305-NKIM_MG_6827-target.png",
+      "target_view_sha256": "cd6476330cc5086ceeb8c7561d90dd5568b92e86bc28dcbdac5c2db3a65cdbb8",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1305-NKIM_MG_6827.json"
+    },
+    {
+      "source_id": "a3042-kme_092.dng",
+      "group": "a3042-kme_092.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3042-kme_092.dng",
+      "source_original_sha256": "b1328cb52f7a145db8425404b58119613d30e7290c3ebd5251d0de8caffb277d",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3042-kme_092-input.png",
+      "source_view_sha256": "0cab3f7c7fc7af491b046849ae3d9061e0d51e2c85b4c4cde445cb4076165708",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3042-kme_092.tif",
+      "target_original_sha256": "4c2a3ae1528c59d5a9b5901ea0f135390c927566341b0e25deba4bfa2d29fe70",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3042-kme_092.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3042-kme_092-target.png",
+      "target_view_sha256": "c64d9043e9d943ffce7ca9d716d6f1b9cae6889e24d0e613789fea4b2b083443",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3042-kme_092.json"
+    },
+    {
+      "source_id": "a4867-dsc_0350.dng",
+      "group": "a4867-dsc_0350.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a4867-DSC_0350.dng",
+      "source_original_sha256": "f5247b2e641acbf3e9850f507f1465c2def5499f658a38a63460634176060711",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4867-DSC_0350-input.png",
+      "source_view_sha256": "d99b521ce60752bdea5d9d116837fe21f1ff75448ad5b7a1bbc87a255c15e269",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4867-DSC_0350.tif",
+      "target_original_sha256": "34e2a0106cf969560608ea1183c30098f9052eb076ccd7f8e30d9c47f86227cd",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4867-DSC_0350.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4867-DSC_0350-target.png",
+      "target_view_sha256": "e60ce6d217451607d3cbb70d9b2bb57195a6efa105ea3580ba9f764908b86af3",
+      "development_view_size": [
+        960,
+        643
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4867-DSC_0350.json"
+    },
+    {
+      "source_id": "a2160-kme_173.dng",
+      "group": "a2160-kme_173.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "unknown",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a2160-kme_173.dng",
+      "source_original_sha256": "10c7b92d4ae905a503385e30e57bf36cafe3fd1b1d6360082ccb2f40c72e6a64",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2160-kme_173-input.png",
+      "source_view_sha256": "3102e5130bad9670541da57fd9853501bf5d2725d507aa31cde4a09d57746d3e",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2160-kme_173.tif",
+      "target_original_sha256": "7582ac0ee26ca0f6fb50f1f412fa5877b4b13457a804d626c29cde8b0429f5be",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2160-kme_173.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2160-kme_173-target.png",
+      "target_view_sha256": "05c591b7ea117c9247644920d25780f6e90363552e60cf8014085a388e32c88d",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2160-kme_173.json"
+    },
+    {
+      "source_id": "a0104-dvf_003.dng",
+      "group": "a0104-dvf_003.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a0104-dvf_003.dng",
+      "source_original_sha256": "dcc8d1c1b682f3cb78dfd1b719560e793f5acd26741fc297ef56bb4725cfa420",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0104-dvf_003-input.png",
+      "source_view_sha256": "c47aca728e0a8855b0313b86a70b666acbb0e64cf640214700f5226dd4f78886",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0104-dvf_003.tif",
+      "target_original_sha256": "ed35d19d513db8dd45164e35df42ba8213f78c592da1a3d38266882c59a2d8ad",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0104-dvf_003.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0104-dvf_003-target.png",
+      "target_view_sha256": "b2139d18050c98a8302006d614e5b7b5098bcbe03b33032ff8fd522418138d27",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0104-dvf_003.json"
+    },
+    {
+      "source_id": "a1328-20080630_at_22h44m56__mg_1921.dng",
+      "group": "a1328-20080630_at_22h44m56__mg_1921.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a1328-20080630_at_22h44m56__MG_1921.dng",
+      "source_original_sha256": "e4580a1e862bec6a1b985964aa1e9bd6cbab6e79d9e84ffc380f88c44e621569",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1328-20080630_at_22h44m56__MG_1921-input.png",
+      "source_view_sha256": "18f4640a5a4f90db3aba2281d79a32af177a423e3417b30725818558b1254184",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1328-20080630_at_22h44m56__MG_1921.tif",
+      "target_original_sha256": "1b978b8b37e4d912d9e8f216a7f25bef92e9b0b780cadb4a779a9d5efd4e0c54",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1328-20080630_at_22h44m56__MG_1921.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1328-20080630_at_22h44m56__MG_1921-target.png",
+      "target_view_sha256": "8a490b9e131a6dfe352c05c8ee37597314a3bcccc4c52db8c5877d97fc222417",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1328-20080630_at_22h44m56__MG_1921.json"
+    },
+    {
+      "source_id": "a1947-jn_20080703_ebony_002.dng",
+      "group": "a1947-jn_20080703_ebony_002.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a1947-jn_20080703_Ebony_002.dng",
+      "source_original_sha256": "c57a97f3680d7c7d0b4a287b86b206dd0d4baa1d900f1dae64e77de4f2d8e249",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1947-jn_20080703_Ebony_002-input.png",
+      "source_view_sha256": "c570fce2204e4ab7cfe813c109c7b584dc3fa36c21c6c2c09ea090b76d3e0edc",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1947-jn_20080703_Ebony_002.tif",
+      "target_original_sha256": "798d80fd7a7bf310f17ef6678190c9160371b32cbe4ee3a5e22e4b3ca41536e9",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1947-jn_20080703_Ebony_002.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1947-jn_20080703_Ebony_002-target.png",
+      "target_view_sha256": "fdf613171c7929b2571022c829f07dcf131f2d210e969a251798a1af3fbc3294",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1947-jn_20080703_Ebony_002.json"
+    },
+    {
+      "source_id": "a3423-_dgw6316.dng",
+      "group": "a3423-_dgw6316.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "unknown",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3423-_DGW6316.dng",
+      "source_original_sha256": "d86b4a109260bf80942364ae5c5bbef77928d2a7fc4420995e9a0da9d69a63e6",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3423-_DGW6316-input.png",
+      "source_view_sha256": "89c532442f6162cae6e504bfef948c8148a0458d621119f464459ee8d09044cb",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3423-_DGW6316.tif",
+      "target_original_sha256": "cd2bc5802e0c60b5736e57b77e59a611cc5173b515ed7ab5b20f3f451fbcaeaf",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3423-_DGW6316.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3423-_DGW6316-target.png",
+      "target_view_sha256": "c2bcdf4c0d62b3b2371790ea1cbf00b2181378a108d9d6db98fc8e786e4faaf8",
+      "development_view_size": [
+        960,
+        639
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3423-_DGW6316.json"
+    },
+    {
+      "source_id": "a4820-dsc_0210.dng",
+      "group": "a4820-dsc_0210.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a4820-DSC_0210.dng",
+      "source_original_sha256": "7952de5ef484cee0e00b06a41b2d5fe88d9cd4d8b7cb91a55fc9454465e4b367",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4820-DSC_0210-input.png",
+      "source_view_sha256": "66e969c91484b7a3e7cc29a77e5fe41c4baf7f412a35878ce14c59d6579a83cb",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4820-DSC_0210.tif",
+      "target_original_sha256": "9738f5bebf528ae276b97f83d86468e335aa3a11d3737748790cdf42cc46d048",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4820-DSC_0210.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4820-DSC_0210-target.png",
+      "target_view_sha256": "822860ed1fed96553df37d67aa7ec5750e40208d90f8fe3340d949294b3ada65",
+      "development_view_size": [
+        960,
+        643
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4820-DSC_0210.json"
+    },
+    {
+      "source_id": "a2009-jn_20080129_las_vegas_0123.dng",
+      "group": "a2009-jn_20080129_las_vegas_0123.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a2009-jn_20080129_Las_Vegas_0123.dng",
+      "source_original_sha256": "01000c686d0dcc32410055b5958613579fabe9112265fcd6ab6eb9268cc3a09d",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2009-jn_20080129_Las_Vegas_0123-input.png",
+      "source_view_sha256": "30f93f554bb85aa27db6279c3191e3cd42e52c415c58ecd38b5ec505609baa6d",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2009-jn_20080129_Las_Vegas_0123.tif",
+      "target_original_sha256": "4046f6de70d09257cef8576f94ba1559486b4e3c2fb7d07e4a40e03117fe4aa6",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2009-jn_20080129_Las_Vegas_0123.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2009-jn_20080129_Las_Vegas_0123-target.png",
+      "target_view_sha256": "e04137fd933ab46872459931133599819eff49e3c7109d5541ba1fcc47b556c1",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2009-jn_20080129_Las_Vegas_0123.json"
+    },
+    {
+      "source_id": "a0387-img_3388.dng",
+      "group": "a0387-img_3388.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0387-IMG_3388.dng",
+      "source_original_sha256": "8509ebd2a5d5382e28b62e2b942f6b6198c7f4890f26a2fcef36191ecfef2601",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0387-IMG_3388-input.png",
+      "source_view_sha256": "e6efd3981e51f8dd351b96ff7c1989ebb695b0d3137663703edec8be306e2abf",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0387-IMG_3388.tif",
+      "target_original_sha256": "f418f6cf0e4b88faff388c19c080d54e32e44d7505403f89cee491bab6f84c67",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0387-IMG_3388.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0387-IMG_3388-target.png",
+      "target_view_sha256": "a28593291006cc076a57a70adc3f92c3f822669f20c3710e72d29101f171bf97",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0387-IMG_3388.json"
+    },
+    {
+      "source_id": "a4485-_dsc0026.dng",
+      "group": "a4485-_dsc0026.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a4485-_DSC0026.dng",
+      "source_original_sha256": "477c593ece42ef558dea66583e43f59e6f36876c864fbcfe01817a5fc6f4b2b4",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4485-_DSC0026-input.png",
+      "source_view_sha256": "914c8a849c8513d725aab8c4ced96e4301ee77ef95e0e8a8288f6ae089be7d46",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4485-_DSC0026.tif",
+      "target_original_sha256": "610a4fb0f731ce840f144e6a07b7bde5e3463c1e0d56b20d59ad45c96ca3f3ec",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4485-_DSC0026.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4485-_DSC0026-target.png",
+      "target_view_sha256": "3c550c2482ad1b976ddfc34074e87c651f68eb704e69181e078d85242604ca7b",
+      "development_view_size": [
+        638,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4485-_DSC0026.json"
+    },
+    {
+      "source_id": "a1930-lsyd4o0656.dng",
+      "group": "a1930-lsyd4o0656.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a1930-LSYD4O0656.dng",
+      "source_original_sha256": "b578564fbf5fce6752b160efbfdab4a4852a90410480bb746dbc2abe51ea1668",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1930-LSYD4O0656-input.png",
+      "source_view_sha256": "6334b1ca3efcb637e8995b38a6d6304955cc12c0241bf8810139ecb9a300c59d",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1930-LSYD4O0656.tif",
+      "target_original_sha256": "7cf736d8a2ff87ce6f225ba3602ae72e8ff7389b57718cc9b7ed110a35eec574",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1930-LSYD4O0656.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1930-LSYD4O0656-target.png",
+      "target_view_sha256": "7297ceaeb80dd1fcadf356753a8a9055266bf8cc4f3f4cd8f57f8c7283750e06",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1930-LSYD4O0656.json"
+    },
+    {
+      "source_id": "a1026-img_4256.dng",
+      "group": "a1026-img_4256.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a1026-IMG_4256.dng",
+      "source_original_sha256": "0913d8b06c76fa6def8106645a846f298a12792466a95d02f0161acc1443a215",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1026-IMG_4256-input.png",
+      "source_view_sha256": "183056d1fe68e428075d89aad43f46bf991dbd85e0d8a515fc7630d5a3e6c8c2",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1026-IMG_4256.tif",
+      "target_original_sha256": "970b96bbbc1657e773797ad4b4111c06bf4fdf23511b979508f7ab36b8f84c74",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1026-IMG_4256.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1026-IMG_4256-target.png",
+      "target_view_sha256": "2499f034fdc284156d8814edc7d6d45199d2a971429798cbbb87f33a337c8fde",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1026-IMG_4256.json"
+    },
+    {
+      "source_id": "a1603-mb_070908_037.dng",
+      "group": "a1603-mb_070908_037.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a1603-MB_070908_037.dng",
+      "source_original_sha256": "c75cabab6929fada1724b3fd7a8e41f3aa1c1d0287d3fb544484b68613b09820",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1603-MB_070908_037-input.png",
+      "source_view_sha256": "9a5cbb7b09f0d0cde2094af0e9f2243b96e2c92af0e982264a1a6481aa0127fe",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1603-MB_070908_037.tif",
+      "target_original_sha256": "2867bb8dba5c88794d0921544b10f445d588364146773ec146ba728328e8ea64",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1603-MB_070908_037.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1603-MB_070908_037-target.png",
+      "target_view_sha256": "28c2609a8a58ebcd60de5327055aa176638ce7d4952cf6e094be8d5d27ff35d5",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1603-MB_070908_037.json"
+    },
+    {
+      "source_id": "a3355-_dgw6412.dng",
+      "group": "a3355-_dgw6412.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3355-_DGW6412.dng",
+      "source_original_sha256": "fbb3afe8b504e9c8fae11318c20b5b060b28a8e20021220e157ad3b8708218b3",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3355-_DGW6412-input.png",
+      "source_view_sha256": "f476f55d10340af48c189e14d410afa4983d0f229fb7b43e26317b2c30c89307",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3355-_DGW6412.tif",
+      "target_original_sha256": "0f2292e09072e4b962d0f23d700f170cac3c4dcbd59b8f55648923fe069cc507",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3355-_DGW6412.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3355-_DGW6412-target.png",
+      "target_view_sha256": "205646ea3c7a78a050bbf9893bd15d156c80d2da31d8486b5be389fded154328",
+      "development_view_size": [
+        960,
+        639
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3355-_DGW6412.json"
+    },
+    {
+      "source_id": "a4026-nkim_mg_6632.dng",
+      "group": "a4026-nkim_mg_6632.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a4026-NKIM_MG_6632.dng",
+      "source_original_sha256": "7b473f0a96d496a66a960dc58891753ed5673eaf09ee8df8bba18b11434c6361",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4026-NKIM_MG_6632-input.png",
+      "source_view_sha256": "182f888d5fe951b4d164075ac0b1c10736ef4a1ddcf41453584485700336ce1d",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4026-NKIM_MG_6632.tif",
+      "target_original_sha256": "11abf8e84afd08df3cfb8b2e96a82f8bc54c6f1111357cf041c37f891d09f696",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4026-NKIM_MG_6632.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4026-NKIM_MG_6632-target.png",
+      "target_view_sha256": "25d7a52b53d73cf7eb462ed7bca8b8751fcc1e58e510edd4f8518d8d92063f32",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4026-NKIM_MG_6632.json"
+    },
+    {
+      "source_id": "a1897-mb_20030906_094.dng",
+      "group": "a1897-mb_20030906_094.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a1897-MB_20030906_094.dng",
+      "source_original_sha256": "ebcd343b3a3d30fa25a990f169624d3b56d57888a3f8e25e36a7202e18563b46",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1897-MB_20030906_094-input.png",
+      "source_view_sha256": "07c8275aff278f6d79990fb18fbd6c6958db1d7c39bb0ab4c7395a6bffd05a56",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1897-MB_20030906_094.tif",
+      "target_original_sha256": "1474c4bbc918f3d12622bc099f810b0a7ae78531b37ed759cd5866c02636efa9",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1897-MB_20030906_094.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1897-MB_20030906_094-target.png",
+      "target_view_sha256": "02efb2ea74f6b62cb963445ee491aeb2563cd1690f0f3c4b5f6f21ff5ebcbc10",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1897-MB_20030906_094.json"
+    },
+    {
+      "source_id": "a1086-dsc_0010.dng",
+      "group": "a1086-dsc_0010.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a1086-DSC_0010.dng",
+      "source_original_sha256": "11bbb42614a05f5ce93806cb8db62129e7459e922a0eb0cffae8bc9687912ed8",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1086-DSC_0010-input.png",
+      "source_view_sha256": "181198dfade883f15d6195402f5f77402d47a762de01a7821a8836b604e20d5a",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1086-DSC_0010.tif",
+      "target_original_sha256": "cfc846f1f9ac44bf3348412a1f40322e9cae69e0cdbe482a692c7ed60a507fa6",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1086-DSC_0010.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1086-DSC_0010-target.png",
+      "target_view_sha256": "553be911b3e255dbca012ca0f94b52bc2cce949b1e754c4b0327ca828b9ba9a2",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1086-DSC_0010.json"
+    },
+    {
+      "source_id": "a3806-tc_dsc0674.dng",
+      "group": "a3806-tc_dsc0674.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a3806-tc_DSC0674.dng",
+      "source_original_sha256": "a38e254df76f7b2caab654f3c01199a53f1160977f17242512a77f825e9d2939",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3806-tc_DSC0674-input.png",
+      "source_view_sha256": "3b584b4a2cd292ecca591b69a65be211f60dd04d8b8d583f9598a1a10639851c",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3806-tc_DSC0674.tif",
+      "target_original_sha256": "53b2371a1bd7bbba8eca64f0e6c560fa7ff6d02b91cc7422edc9796141f90578",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3806-tc_DSC0674.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3806-tc_DSC0674-target.png",
+      "target_view_sha256": "6c7b5437376ddbbd18d8ba5ebb80df3d274bc2d148f15a5d0de59be8db15eb9f",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3806-tc_DSC0674.json"
+    },
+    {
+      "source_id": "a1788-img_4387.dng",
+      "group": "a1788-img_4387.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a1788-IMG_4387.dng",
+      "source_original_sha256": "90cad5303d7101bfffc3526be960482ddfba958ebfba7bf307d19e440b22d273",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1788-IMG_4387-input.png",
+      "source_view_sha256": "99198b53dc0485e6b5fa299067a58b801dae6906a29483fb0ded993b34df614e",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1788-IMG_4387.tif",
+      "target_original_sha256": "96db236bd72ca8390ea58b0bc6655f30c0059721e011c766ca3fe3e1296d315c",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1788-IMG_4387.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1788-IMG_4387-target.png",
+      "target_view_sha256": "290e843b860dc7e0ecf99227f4f3986f93402801e1e93a04dab8105772f56f7c",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1788-IMG_4387.json"
+    },
+    {
+      "source_id": "a1647-mb_060909_078.dng",
+      "group": "a1647-mb_060909_078.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a1647-MB_060909_078.dng",
+      "source_original_sha256": "7cb420de00ae1b38bde764b69336f19116f64073b08e2d213a5acc5ea62f0524",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1647-MB_060909_078-input.png",
+      "source_view_sha256": "93d34e392939f7f6b5d63ecec090d6209a0155898b6d62d6d47a6ffe3df079e8",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1647-MB_060909_078.tif",
+      "target_original_sha256": "3805b61b146dcebd477258149202e8a7a524f456f7c65efd1d5da62d52fe1860",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1647-MB_060909_078.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1647-MB_060909_078-target.png",
+      "target_view_sha256": "5b759684e4574eb6d1131378406ae071f4d970fb97e39208f99c16d5168b193c",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1647-MB_060909_078.json"
+    },
+    {
+      "source_id": "a4634-dsc_0335.dng",
+      "group": "a4634-dsc_0335.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "unknown",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a4634-DSC_0335.dng",
+      "source_original_sha256": "ad7b10df7443974553dab38d655b51b0427c59a5154ccee17ab79e8ea50640af",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4634-DSC_0335-input.png",
+      "source_view_sha256": "3e9d25f623bdba44053830c3aabb3e87761d0369cca1f3f14c1cdcee49a69a1f",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4634-DSC_0335.tif",
+      "target_original_sha256": "f3269de42243452b61d352eaef2ed25f117a63982db21c1000a6027864ea231b",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4634-DSC_0335.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4634-DSC_0335-target.png",
+      "target_view_sha256": "abf17d51d03a75be257a9e1e38683856c127abe8088ec113b8feba93c848b07e",
+      "development_view_size": [
+        960,
+        643
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4634-DSC_0335.json"
+    },
+    {
+      "source_id": "a4938-20090327_at_11h35m56__mg_1009.dng",
+      "group": "a4938-20090327_at_11h35m56__mg_1009.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "unknown",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a4938-20090327_at_11h35m56__MG_1009.dng",
+      "source_original_sha256": "d5519799faffecdec13a83908e8943a74ac521a18b22dc5cf6fd054016c935a5",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4938-20090327_at_11h35m56__MG_1009-input.png",
+      "source_view_sha256": "d5025fb99d91df70007db0e40d13521fc0f7ada5e0c9516e5913b17bc266bbd5",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4938-20090327_at_11h35m56__MG_1009.tif",
+      "target_original_sha256": "af164bc52e533930f15af980caeb6697e0b01322a8aae3e90a6a5a9a404911fa",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4938-20090327_at_11h35m56__MG_1009.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4938-20090327_at_11h35m56__MG_1009-target.png",
+      "target_view_sha256": "97845f6a894b737f7cef63ce5b9af748a94cea22af29fdd71af2a5055af9879a",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4938-20090327_at_11h35m56__MG_1009.json"
+    },
+    {
+      "source_id": "a3746-_i2e5991.dng",
+      "group": "a3746-_i2e5991.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a3746-_I2E5991.dng",
+      "source_original_sha256": "c392f981ef8e7c8a79f50670b3d079ea82d9993a32de83d0a51ba78d60ea4ed7",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3746-_I2E5991-input.png",
+      "source_view_sha256": "eb686f05fa8ad76a74f0a1b26c34054fee42ced6731f3345b5094e70aeac7807",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3746-_I2E5991.tif",
+      "target_original_sha256": "974d5395add3b97b66b73a13aace54778b97ba6967d75cbb0092d69a613933ed",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3746-_I2E5991.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3746-_I2E5991-target.png",
+      "target_view_sha256": "3dd74a5acfc5f580d0295716802c7b016fdae0df8280d841f82ce2bb406a6ea3",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3746-_I2E5991.json"
+    },
+    {
+      "source_id": "a0903-_dsc0025.dng",
+      "group": "a0903-_dsc0025.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a0903-_DSC0025.dng",
+      "source_original_sha256": "827aa93a44a17f22d2c36fd2eda9c257c2e8de619853150b83e9a97995cc3b00",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0903-_DSC0025-input.png",
+      "source_view_sha256": "6cfd6c270bc4581946f6674823502b8b4c5e7e5a40d2627fa3a66e5407b5c10e",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0903-_DSC0025.tif",
+      "target_original_sha256": "08305717d4caacb276602e6015af128926844722bf3f497772a667f2e658336b",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0903-_DSC0025.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0903-_DSC0025-target.png",
+      "target_view_sha256": "9ec18a0e3d9e3b9db3fca31f6d60b0ddb4aa60d14e9e9f78a99054d1e3f4249b",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0903-_DSC0025.json"
+    },
+    {
+      "source_id": "a0218-kme_181.dng",
+      "group": "a0218-kme_181.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0218-kme_181.dng",
+      "source_original_sha256": "c0e7b4ff3e396c1ca477dd6d033da007db369f9e4002c7a249470c77a9068314",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0218-kme_181-input.png",
+      "source_view_sha256": "0ae49237d52d226f3edfe2bd53c39aaaca651c841f9734e67c06faa8d9b91d04",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0218-kme_181.tif",
+      "target_original_sha256": "50e343520a41c7be0743f7bfcb7a56dcb475dae6aba0c06ef556ef7aeae2cd0f",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0218-kme_181.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0218-kme_181-target.png",
+      "target_view_sha256": "7d03cc0e6bf70d12fdb2139929a6e17a11e1bf4b351fa46f01dfb330f03007a5",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0218-kme_181.json"
+    },
+    {
+      "source_id": "a3663-dvf_087.dng",
+      "group": "a3663-dvf_087.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3663-dvf_087.dng",
+      "source_original_sha256": "2080b052adcfe9a029f76e3a1c8d180bc30314f2b6387f716bb0d27040341eac",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3663-dvf_087-input.png",
+      "source_view_sha256": "e4e7c209b5c70e1d30f3e7d44a7fde8c073c214b7c1f5358b84e754d20fa8bb5",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3663-dvf_087.tif",
+      "target_original_sha256": "68dfb6bcc8a977b40cfbced3983ae226a8dfddfe7ce6762f9c310c723e214d06",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3663-dvf_087.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3663-dvf_087-target.png",
+      "target_view_sha256": "6ff4363d999c95043f0adf29d7836ab4d365f37e87f128fb4f024dcd6428d5e9",
+      "development_view_size": [
+        960,
+        646
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3663-dvf_087.json"
+    },
+    {
+      "source_id": "a1237-kme_389.dng",
+      "group": "a1237-kme_389.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a1237-kme_389.dng",
+      "source_original_sha256": "84118593f7df76359c80b8051d1470a86b722f7db5a8b6146dab3450f4753296",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1237-kme_389-input.png",
+      "source_view_sha256": "f9412d2c0e45df141a5588d692b1d462fd9f34942edee73aadbc911b3ee96f0d",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1237-kme_389.tif",
+      "target_original_sha256": "8edbc3a6473b549a3ecfde3ca5a7ec097e563f51682134e7d8279e3be334d4f0",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1237-kme_389.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1237-kme_389-target.png",
+      "target_view_sha256": "628b7883146e75e77c89457d3519cdba39cba9e88146032211d8144821435f1f",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1237-kme_389.json"
+    },
+    {
+      "source_id": "a3690-_dgw6402.dng",
+      "group": "a3690-_dgw6402.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a3690-_DGW6402.dng",
+      "source_original_sha256": "76240c4b4857e31991e43d8e0c655f908c805d65a4ea73fb17dc51f1dbb2cfbb",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3690-_DGW6402-input.png",
+      "source_view_sha256": "bfac3f5fa1bf78398c2c251a838144a5190c3c57d4b0eceb01cd8220c648890c",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3690-_DGW6402.tif",
+      "target_original_sha256": "97e1771ea2599adad9ef2ddae45244744f7b85f4e9057ca1fb35b62076e117c2",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3690-_DGW6402.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3690-_DGW6402-target.png",
+      "target_view_sha256": "12a2bf2470edd3d7fbab2d75f2661e78a3bc6a6699031c59b74b0474a489b1aa",
+      "development_view_size": [
+        960,
+        639
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3690-_DGW6402.json"
+    },
+    {
+      "source_id": "a3324-img_0080.dng",
+      "group": "a3324-img_0080.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3324-IMG_0080.dng",
+      "source_original_sha256": "cb4f57d35c8e603043a32875011ff665a4131a009d229b80c42bf1ca8a745e6b",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3324-IMG_0080-input.png",
+      "source_view_sha256": "fb3608e1286cf3714f4cdd1469fb32523ae8b84c8d72214a5881ae2e80727214",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3324-IMG_0080.tif",
+      "target_original_sha256": "19263349bf613c0278aadd8ac4fc6ac680e7f8ddb48c84933de9907a7241c1ce",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3324-IMG_0080.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3324-IMG_0080-target.png",
+      "target_view_sha256": "4b43e265b7d0013f576c045f5b1ba4c17540c691e127dfe716fcdfa0e9859d3e",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3324-IMG_0080.json"
+    },
+    {
+      "source_id": "a2600-img_0312.dng",
+      "group": "a2600-img_0312.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a2600-IMG_0312.dng",
+      "source_original_sha256": "4a03b5aab865ef490b57537ee3b9caf160e6e223f71922c5ade102cbf9a3ecf8",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2600-IMG_0312-input.png",
+      "source_view_sha256": "2dc118196ab51a8e058b17c0e04aa54e74a8cd2f496346eee61cafd8d9cae870",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2600-IMG_0312.tif",
+      "target_original_sha256": "4d04c85f295fe88d7aae11b46c3931b9c63716afd6147a703b53648bef11f87a",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2600-IMG_0312.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2600-IMG_0312-target.png",
+      "target_view_sha256": "b1d37eb9b1823561294b818fd2412d4dd3ece75bdbc3193b6919d4e852199734",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2600-IMG_0312.json"
+    },
+    {
+      "source_id": "a4656-dsc_0232.dng",
+      "group": "a4656-dsc_0232.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a4656-DSC_0232.dng",
+      "source_original_sha256": "ce8c69d4c445b92d848fda59660087a7a415b5fec8671791e2ad0717c0fa41bf",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4656-DSC_0232-input.png",
+      "source_view_sha256": "024f1dcc79b27295b178e321aa1ca2b1a3b76c39df6b768f1a031f95fc01c1d8",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4656-DSC_0232.tif",
+      "target_original_sha256": "6984c1dd157908379302eec510fdfe3ae5e6e407a03c155129f294abdcdabddb",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4656-DSC_0232.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4656-DSC_0232-target.png",
+      "target_view_sha256": "86a0d6e457f14f33f13c2ea65ece75b76b1af5755be453995a93e520e8802dcd",
+      "development_view_size": [
+        643,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4656-DSC_0232.json"
+    },
+    {
+      "source_id": "a3238-img_0891.dng",
+      "group": "a3238-img_0891.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3238-IMG_0891.dng",
+      "source_original_sha256": "bc71d9cedd7a94ab571ff36f4f3774760b31221a444f7816f127327587ef3112",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3238-IMG_0891-input.png",
+      "source_view_sha256": "904ffb792cce45a0141343703354b39fef12fcb1a07f71fd9138a094204758db",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3238-IMG_0891.tif",
+      "target_original_sha256": "08ad916dccece1c637c13de7412f8f2dee7ce6211a6f0cfda84d46d5e805f83a",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3238-IMG_0891.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3238-IMG_0891-target.png",
+      "target_view_sha256": "c747b38d84fec97a746aa3f81077227e0ff43b660da862f5077e47d634815994",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3238-IMG_0891.json"
+    },
+    {
+      "source_id": "a2916-wp_crw_7798.dng",
+      "group": "a2916-wp_crw_7798.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a2916-WP_CRW_7798.dng",
+      "source_original_sha256": "cb9341679f0d826095fdac5c539415b55b367153a29b12a5f60731f55c98b687",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2916-WP_CRW_7798-input.png",
+      "source_view_sha256": "df68504ec501b4286e3c461fab27f7adedc8c04cfe50319da7eecfb0a8fa994f",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2916-WP_CRW_7798.tif",
+      "target_original_sha256": "ae86dbe83096d0f64ea8b23ed624a15b4852e20f7406fd9e4a5d85a462e0810b",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2916-WP_CRW_7798.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2916-WP_CRW_7798-target.png",
+      "target_view_sha256": "91b7f2e2aa30d426d9650d08fc6ebb6123c16dbe0f1d4adbe576dbf89acf1c0e",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2916-WP_CRW_7798.json"
+    },
+    {
+      "source_id": "a0172-jmac_dsc3528.dng",
+      "group": "a0172-jmac_dsc3528.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0172-jmac_DSC3528.dng",
+      "source_original_sha256": "1190746bf976ea4e2ed192c187ef5c6e904b912a8871aec126cedd079bb9e9ba",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0172-jmac_DSC3528-input.png",
+      "source_view_sha256": "6b83606464cdd174a52494b09263ee251e75a818f2f465adda8991342f5fab5b",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0172-jmac_DSC3528.tif",
+      "target_original_sha256": "17a4e6f74916a2e1217efbc8495002c31b47583020525aee388ea94c2ea7192e",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0172-jmac_DSC3528.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0172-jmac_DSC3528-target.png",
+      "target_view_sha256": "b98255ff9c4e8c994c6f0a584eb73747a6b6712a02f9ed45764f7591fbdbf174",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0172-jmac_DSC3528.json"
+    },
+    {
+      "source_id": "a1100-_dgw6248.dng",
+      "group": "a1100-_dgw6248.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a1100-_DGW6248.dng",
+      "source_original_sha256": "ef9659f5a4eb37bfce49bd285c7635d52f0adffd283a26f5b6538b5113b1a926",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1100-_DGW6248-input.png",
+      "source_view_sha256": "618b7f7ab5e92dc835e116b90acbddf68ce178bc5bdc6d202037c08e15c79ae4",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1100-_DGW6248.tif",
+      "target_original_sha256": "22c5b44ef503936be784fdc084c16fd1033677b8601497e82f5961820f575d73",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1100-_DGW6248.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1100-_DGW6248-target.png",
+      "target_view_sha256": "9ced3bfe18f2e88293d6069673231952955c82acc0d14995fdf3f25f23a2a591",
+      "development_view_size": [
+        960,
+        639
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1100-_DGW6248.json"
+    },
+    {
+      "source_id": "a3826-kme_482.dng",
+      "group": "a3826-kme_482.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3826-kme_482.dng",
+      "source_original_sha256": "c301a862e8b09a8646ced79ed490ff8c37316b29617da743acb85c9467326671",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3826-kme_482-input.png",
+      "source_view_sha256": "f269fa4b10716afc0093a5b023e5e918c70a80eb95b5fb47d1e5c3efdefa0c0a",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3826-kme_482.tif",
+      "target_original_sha256": "6c77502141085ce7bc5c6730d835d2f4661db35c70650457d3891fee4e009412",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3826-kme_482.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3826-kme_482-target.png",
+      "target_view_sha256": "a53ef8e716fb2e1bce49f6503de46b682600128f67ac34c5e885b726882cf2ff",
+      "development_view_size": [
+        960,
+        720
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3826-kme_482.json"
+    },
+    {
+      "source_id": "a4542-duggan_080411_6019.dng",
+      "group": "a4542-duggan_080411_6019.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a4542-Duggan_080411_6019.dng",
+      "source_original_sha256": "a374cc49e91bed6d845c2dcbfac1718181402b77f058d8345e368937d887f9ba",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4542-Duggan_080411_6019-input.png",
+      "source_view_sha256": "42cf55c657d6543109b428c24b8abc0028bcf1188116247c5fa022a2f5088e2b",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4542-Duggan_080411_6019.tif",
+      "target_original_sha256": "831432ebe1457fd0cb961a2ef720a0b46a3e59c7fce57b55d573b9d9a84f810a",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4542-Duggan_080411_6019.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4542-Duggan_080411_6019-target.png",
+      "target_view_sha256": "cec1c042067a17eabb3820ab50f16b06db3f540613d9ad9f5b28640c21719171",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4542-Duggan_080411_6019.json"
+    },
+    {
+      "source_id": "a0135-img_2595.dng",
+      "group": "a0135-img_2595.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0135-IMG_2595.dng",
+      "source_original_sha256": "071b27baba9a683d7e80acb716a11296c094b63ac7b3cb1ae204d6f25f473474",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0135-IMG_2595-input.png",
+      "source_view_sha256": "f1aa898de0b70f1c29cc4b22d286a80bbdb7c784e91a61b6419ff1b8c57c8949",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0135-IMG_2595.tif",
+      "target_original_sha256": "ea584c44852a6e4f3c024f4687b64f89a95f2182278d7433563e5f53752782f9",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0135-IMG_2595.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0135-IMG_2595-target.png",
+      "target_view_sha256": "18820f5739c0ad54199898a95184e43f6ddbda5a2c0615ad9d5fb39085c614cb",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0135-IMG_2595.json"
+    },
+    {
+      "source_id": "a2361-07-06-01-at-13h15m17-s_mg_1259.dng",
+      "group": "a2361-07-06-01-at-13h15m17-s_mg_1259.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a2361-07-06-01-at-13h15m17-s_MG_1259.dng",
+      "source_original_sha256": "34b030d7999913d88dea57639146cc8ff27d1efa156327123682ffeff34879a4",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2361-07-06-01-at-13h15m17-s_MG_1259-input.png",
+      "source_view_sha256": "d6cb27a69c771f5e87f8d9d051610a9a77c7b58dda2b4588e438cc19f1ca8844",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2361-07-06-01-at-13h15m17-s_MG_1259.tif",
+      "target_original_sha256": "fc7c8733d1b3d81f9b37386d7eabda04a45309e8649c5c5ebe609e69a4796440",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2361-07-06-01-at-13h15m17-s_MG_1259.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2361-07-06-01-at-13h15m17-s_MG_1259-target.png",
+      "target_view_sha256": "23b7835f455ffda41a06c25e93420de8386f0707a1baf72ade61dfc5bd379e39",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2361-07-06-01-at-13h15m17-s_MG_1259.json"
+    },
+    {
+      "source_id": "a3009-_i2e9083.dng",
+      "group": "a3009-_i2e9083.dng",
+      "split": "train",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3009-_I2E9083.dng",
+      "source_original_sha256": "27e5f5182bc64bca28e0413e82e35216c8b18d26987861f6b52b57ae3aea4214",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3009-_I2E9083-input.png",
+      "source_view_sha256": "1257bd830bdbcf4b053a614bbef0e124154eca6af5f7c023c7e807b10b3d4bca",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3009-_I2E9083.tif",
+      "target_original_sha256": "5df3d6f97fcf22b7ebe0507849cf99305087c3ba873d5b533b1a7223c8021ec3",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3009-_I2E9083.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3009-_I2E9083-target.png",
+      "target_view_sha256": "c86e25f5ceb76f8de02b1ba6790d89e3ff834db5af42006a1a651f3674acc7d2",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3009-_I2E9083.json"
+    },
+    {
+      "source_id": "a0898-kme_251.dng",
+      "group": "a0898-kme_251.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0898-kme_251.dng",
+      "source_original_sha256": "c9beb5e37d18af4727d41f09fd99a4f11b791300809afe1fede02a72d351f97f",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0898-kme_251-input.png",
+      "source_view_sha256": "add11cb8a59360bc6c7bccba461aa40318fe140e179dfe323fa47e868618e7b7",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0898-kme_251.tif",
+      "target_original_sha256": "18c16ed41f95ec980ec793883c16599b94c768e8fa1a1ead254e2d4745d2977b",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0898-kme_251.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0898-kme_251-target.png",
+      "target_view_sha256": "809e01e6cbfd6634bc6056f51a3ec2e90999aa2bc325793bfd9f59cb2c7754e1",
+      "development_view_size": [
+        960,
+        638
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0898-kme_251.json"
+    },
+    {
+      "source_id": "a0407-img_8270.dng",
+      "group": "a0407-img_8270.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "unknown",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a0407-IMG_8270.dng",
+      "source_original_sha256": "0f3ada6b27e7a2bed04d2fb908e7aa6e333bfaaaa43ef5458987efb5f3008960",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0407-IMG_8270-input.png",
+      "source_view_sha256": "5f33657292e8ff14c2a9dfa9ccc1fff4660032857f809120d37c6b1111001078",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0407-IMG_8270.tif",
+      "target_original_sha256": "00c2564696748636ba2688c912d75491483c811a44d1dce667fa0028758307bb",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0407-IMG_8270.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0407-IMG_8270-target.png",
+      "target_view_sha256": "f93a0f525b3d047793681e2c7c4837b8cf3fb59c550ec0722ad407b263b8c717",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0407-IMG_8270.json"
+    },
+    {
+      "source_id": "a1607-kme_325.dng",
+      "group": "a1607-kme_325.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a1607-kme_325.dng",
+      "source_original_sha256": "d25059d941196bcf92b849ba566394083255e37917f3ef534d9a5c4d41e99e99",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1607-kme_325-input.png",
+      "source_view_sha256": "c5091c3842f6b6ca6adc1d92d2c3fedcc9d2c3ba91251dab231c0628b7d5bc65",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1607-kme_325.tif",
+      "target_original_sha256": "1c5fff129460c385e07097b7a5588a69610e3245d961aac2164c91859953e14b",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1607-kme_325.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1607-kme_325-target.png",
+      "target_view_sha256": "35a312aded4218129789f8b5a4be4e7d84fd1506c7cc318a9594195242727b47",
+      "development_view_size": [
+        638,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1607-kme_325.json"
+    },
+    {
+      "source_id": "a4915-20090321_at_18h47m58__mg_0200.dng",
+      "group": "a4915-20090321_at_18h47m58__mg_0200.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a4915-20090321_at_18h47m58__MG_0200.dng",
+      "source_original_sha256": "155b08baf85d002a949454b356092d793d8895c291459d0d659f677d77f02bc5",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4915-20090321_at_18h47m58__MG_0200-input.png",
+      "source_view_sha256": "779ee3e861d4eb67733ebfe8da60e58f96a41164a20c8f920a0d428750a26c4c",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4915-20090321_at_18h47m58__MG_0200.tif",
+      "target_original_sha256": "0ab7c88e6f4c3f0e73c0f45019e36ba07f168e16291ff518a5a04793f8360c86",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4915-20090321_at_18h47m58__MG_0200.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4915-20090321_at_18h47m58__MG_0200-target.png",
+      "target_view_sha256": "df9efc87d2a436e8c6ebdc995a0232ee2e722deca7c1fd94fc145e603bfa60a7",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4915-20090321_at_18h47m58__MG_0200.json"
+    },
+    {
+      "source_id": "a0828-img_1822.dng",
+      "group": "a0828-img_1822.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0828-IMG_1822.dng",
+      "source_original_sha256": "9ef1ca1f694b32cbfd0a792b99045da4a352be7c9ef74ffb28e93065e015f592",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0828-IMG_1822-input.png",
+      "source_view_sha256": "99c1741ebe5b1c3220b9409c1c3250549119d8fd67d94729fee4ae78c8c03c86",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0828-IMG_1822.tif",
+      "target_original_sha256": "be3baf9a65d61c6d3aa8ddb968d26b7b195b2dad3df9586e8a9bf653008de7ed",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0828-IMG_1822.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0828-IMG_1822-target.png",
+      "target_view_sha256": "2e7cf8cbd56a64387dd47422c52877ef4c3c043de715d97c7addb7d9ee2bad3e",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0828-IMG_1822.json"
+    },
+    {
+      "source_id": "a0350-_dsc2622.dng",
+      "group": "a0350-_dsc2622.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "unknown",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0350-_DSC2622.dng",
+      "source_original_sha256": "69a39176351e72e20d11f5d84e31656c176a2449365e84f00805db6ccd421d6b",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0350-_DSC2622-input.png",
+      "source_view_sha256": "576784b24636ae84cb2f5acf26ba314ec2e23de2a6540ab6c6e30f2657b7c344",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0350-_DSC2622.tif",
+      "target_original_sha256": "f9c235cafddc76bfbcf9dda5c995b6b47e1ec6b9910ddec21e9c9fc76e6dd7dc",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0350-_DSC2622.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0350-_DSC2622-target.png",
+      "target_view_sha256": "cad2fb145d2a7c2d6398eb52bd5fd42f36614d91446c77d22d62c38375a6d419",
+      "development_view_size": [
+        639,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0350-_DSC2622.json"
+    },
+    {
+      "source_id": "a0835-mb_080329_061.dng",
+      "group": "a0835-mb_080329_061.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0835-MB_080329_061.dng",
+      "source_original_sha256": "1511d982b95d96687d2903ed61a6563706e3bf5418b46d5ebdc86013267b3d3e",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0835-MB_080329_061-input.png",
+      "source_view_sha256": "301b0e9f2257f888e80fea905c4792bfa76bce0d18bd1bae9d0f92c56b5d11c9",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0835-MB_080329_061.tif",
+      "target_original_sha256": "84f40e95ff5ef7cedfcece25e8cfcdcda89da8eee60d7be8d20224e6ef157722",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0835-MB_080329_061.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0835-MB_080329_061-target.png",
+      "target_view_sha256": "d259d556e0a9ec708a333d3a83292c1ad1cfa6719ddfa6808c92bc6934696661",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0835-MB_080329_061.json"
+    },
+    {
+      "source_id": "a2072-img_2895.dng",
+      "group": "a2072-img_2895.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a2072-IMG_2895.dng",
+      "source_original_sha256": "471ac22b64d678a12ded153b4fb93dc8fb246771847340efab719eadfd717c13",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a2072-IMG_2895-input.png",
+      "source_view_sha256": "0a07b0ef0d9f947beaffba81e54b73d0a0ab5519bb6d798d9df2749490070b66",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a2072-IMG_2895.tif",
+      "target_original_sha256": "e3b34867b791e645eb57c3837eb50146c745f902906857125ef4ad883bd24076",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a2072-IMG_2895.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a2072-IMG_2895-target.png",
+      "target_view_sha256": "0d4fd1c12a4f6c00926685c0b319ba75fdb5c1cf870a932ea5c6fc01a56e19a5",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a2072-IMG_2895.json"
+    },
+    {
+      "source_id": "a3269-_i2e5901.dng",
+      "group": "a3269-_i2e5901.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a3269-_I2E5901.dng",
+      "source_original_sha256": "09a182bf9b8bd727c0eb10c80c212b3c6b0e9ce81295c94039215444854ff85f",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3269-_I2E5901-input.png",
+      "source_view_sha256": "f55a52724da757b3b8c9e9acc672db89230b66b90e3cf4cc72fef6f304341661",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3269-_I2E5901.tif",
+      "target_original_sha256": "8a5d5d6433b5180755d75b35704ee358bd667893b9bed093198d3bf2cc62b10b",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3269-_I2E5901.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3269-_I2E5901-target.png",
+      "target_view_sha256": "7b1a8f1ad25e826b5f58d7ccbc95e62f79b6c03d159b73f972f7b02b8b0d9a2b",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3269-_I2E5901.json"
+    },
+    {
+      "source_id": "a0605-_mg_7197.dng",
+      "group": "a0605-_mg_7197.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a0605-_MG_7197.dng",
+      "source_original_sha256": "3a10ed5a2422d0626e2bd3fddc56887dbba66c5c0fb75b1a780cc002008beb05",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0605-_MG_7197-input.png",
+      "source_view_sha256": "ec3079d66c8721d08f3b25f0231baf224fa1a7bc137289c70a33e90abcc0d445",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0605-_MG_7197.tif",
+      "target_original_sha256": "8402acee3e6b364234556cfcd4278f29976bcb26ef519b7c3cde3deda041ec15",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0605-_MG_7197.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0605-_MG_7197-target.png",
+      "target_view_sha256": "868b0256953d02d5b335b8d17c09555fe5c2c9ba553a087c0d23ad44e0a87672",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0605-_MG_7197.json"
+    },
+    {
+      "source_id": "a0209-_dgw6273.dng",
+      "group": "a0209-_dgw6273.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0209-_DGW6273.dng",
+      "source_original_sha256": "d724942b8a63827ffac286e7dccdd5bd07e87eda86391acd8bc9ee4adb80bdf4",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0209-_DGW6273-input.png",
+      "source_view_sha256": "03591f052c5be38ec466576bb3b38b5ff052f2b68723cbb8c022e34d97a43c3b",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0209-_DGW6273.tif",
+      "target_original_sha256": "1a7912fe6b29245b19b4d4e6a12109e67515aa882185bf2112548fa63da3b814",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0209-_DGW6273.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0209-_DGW6273-target.png",
+      "target_view_sha256": "e7c390f24a7f4843f43a6635fb62589e56d5bb5b810b90628d6d6d57599a469c",
+      "development_view_size": [
+        960,
+        639
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0209-_DGW6273.json"
+    },
+    {
+      "source_id": "a3182-_dgw6265.dng",
+      "group": "a3182-_dgw6265.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "outdoors",
+        "time": "unknown"
+      },
+      "source_original_path": "data/raw/dngs/a3182-_DGW6265.dng",
+      "source_original_sha256": "e33a32d883c8f80ad0f3d4c0aadf2247016bec2e5cfbf3f3522dc86a26576f45",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3182-_DGW6265-input.png",
+      "source_view_sha256": "f69d97ac8fe05b00e3d3ac456584cfe9c89cedf26a4fb44bc75e818fd624615c",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3182-_DGW6265.tif",
+      "target_original_sha256": "bfab2e469c00b55bd017890bb0df15883e576e5e13d40a4d432d240684ac4799",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3182-_DGW6265.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3182-_DGW6265-target.png",
+      "target_view_sha256": "de9ef12760e2f16cc242a915307c9b1b28dd8dc4c5265f802bc06a092ffa2538",
+      "development_view_size": [
+        639,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3182-_DGW6265.json"
+    },
+    {
+      "source_id": "a3744-nkim_mg_6757.dng",
+      "group": "a3744-nkim_mg_6757.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "artificial",
+        "location": "outdoors",
+        "time": "night"
+      },
+      "source_original_path": "data/raw/dngs/a3744-NKIM_MG_6757.dng",
+      "source_original_sha256": "98bc0f0a49d3f3f971edc65037ffd73ae5bd880b9542a70f6e5ac7364a361eab",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3744-NKIM_MG_6757-input.png",
+      "source_view_sha256": "6ab87be4443294d07a9551235acc82ff2be7a436b58be3053fd5bfba98e0896f",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3744-NKIM_MG_6757.tif",
+      "target_original_sha256": "be59271e75cd9d54b6c20253c853c2d5a7aab52a78dffbfc52a25551f227c665",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3744-NKIM_MG_6757.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3744-NKIM_MG_6757-target.png",
+      "target_view_sha256": "95e464ba09fbd6e419ef6db2b69e36b4507bc01d6ff4a4755c64f20a162be6ab",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3744-NKIM_MG_6757.json"
+    },
+    {
+      "source_id": "a0954-_dsc0030.dng",
+      "group": "a0954-_dsc0030.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0954-_DSC0030.dng",
+      "source_original_sha256": "1bc8cea61046d1890ed6b06c72488e4e329830a2464a7609bf651ab86d97eb8f",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0954-_DSC0030-input.png",
+      "source_view_sha256": "acd346c1e177bfc8b426f657f5f987531f303672cfdf906129a5173b83611d82",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0954-_DSC0030.tif",
+      "target_original_sha256": "9fbf6ce0e466701b577df93b2abc66aaac49114d3bc28412b31b3f492008bf20",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0954-_DSC0030.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0954-_DSC0030-target.png",
+      "target_view_sha256": "ac31054962e915bc10053260d536875ca0c71385d91b3ffb3d968c1fecc51b9d",
+      "development_view_size": [
+        638,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0954-_DSC0030.json"
+    },
+    {
+      "source_id": "a3906-ls051025_day_3_ll003.dng",
+      "group": "a3906-ls051025_day_3_ll003.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a3906-LS051025_day_3_LL003.dng",
+      "source_original_sha256": "180ea88a1e59613ac22518715850e59f1b95cf5a8cb1d84f47944589fe86fd3e",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a3906-LS051025_day_3_LL003-input.png",
+      "source_view_sha256": "145a4445c40c82568a8861d1c5aaaaea87ba02dde6e4193f293e6e890010a515",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a3906-LS051025_day_3_LL003.tif",
+      "target_original_sha256": "004b38bea3460af6cac4d1ca4c86f489f832a0bf17df37f2b63930bd11323dc9",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a3906-LS051025_day_3_LL003.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a3906-LS051025_day_3_LL003-target.png",
+      "target_view_sha256": "76d00c8808c55c33a326a24051878706e4e51e10879111fe2be18fd0c4c3def4",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a3906-LS051025_day_3_LL003.json"
+    },
+    {
+      "source_id": "a0724-img_4637.dng",
+      "group": "a0724-img_4637.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0724-IMG_4637.dng",
+      "source_original_sha256": "9fe533abc04bcbd54cc1d62f30f3d1e8b5e7145bb513232110ed2195d5742563",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0724-IMG_4637-input.png",
+      "source_view_sha256": "cca26d228c013cdaeeae3a4930f76436ac2357e2ee39e2304e91db7af99ca286",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0724-IMG_4637.tif",
+      "target_original_sha256": "2b09ff1b5f6af4ad9526854ba757cbf0008d29d72395c02c05980c59625a5b3e",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0724-IMG_4637.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0724-IMG_4637-target.png",
+      "target_view_sha256": "e05bbf2b34d7fc76e6aa2f2ca03b9dbb8ba8ab2385e0dd1b979ac0c1f32c97a2",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0724-IMG_4637.json"
+    },
+    {
+      "source_id": "a0338-wp_crw_9580.dng",
+      "group": "a0338-wp_crw_9580.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "animal(s)",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0338-WP_CRW_9580.dng",
+      "source_original_sha256": "04d637c4a53c6f6e5310bd0d1bb371bba04778c71e753e8c2420139601bc9290",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0338-WP_CRW_9580-input.png",
+      "source_view_sha256": "4e2be644b2c126216f969c8c842d4efad0d4b165ba52218ccde1ea76233f432c",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0338-WP_CRW_9580.tif",
+      "target_original_sha256": "1c011e6be3bf24bf448189c0ce7adf865dc156a234b4ae55054359b7e3615793",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0338-WP_CRW_9580.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0338-WP_CRW_9580-target.png",
+      "target_view_sha256": "205dcd3400eaefb2fb2f8acab76b0467e01f3ce1877ee101882532d852104db3",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0338-WP_CRW_9580.json"
+    },
+    {
+      "source_id": "a1029-jn_2007_05_11__724.dng",
+      "group": "a1029-jn_2007_05_11__724.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "nature",
+        "light": "sun or sky",
+        "location": "outdoors",
+        "time": "dawn or dusk"
+      },
+      "source_original_path": "data/raw/dngs/a1029-jn_2007_05_11__724.dng",
+      "source_original_sha256": "9d93509cbc7dbf73a0f2a85839d11eac0b12b8f260f7a94ed5533c5a0151de21",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1029-jn_2007_05_11__724-input.png",
+      "source_view_sha256": "35ff9155468da1cf0082e978343f3c20c1b83c2ce5e3ef27063f80e345aa050f",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a1029-jn_2007_05_11__724.tif",
+      "target_original_sha256": "9503279e5fa5544ba80bb53bfa9bca1a9bf1df8a3e2248aa49b83995ea8b8205",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a1029-jn_2007_05_11__724.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a1029-jn_2007_05_11__724-target.png",
+      "target_view_sha256": "344d4fb0a897472d13b0bc791d6a2a78d6c2f2bf8b8e7044fed7feebcff057cb",
+      "development_view_size": [
+        960,
+        640
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a1029-jn_2007_05_11__724.json"
+    },
+    {
+      "source_id": "a4927-_dgw0242.dng",
+      "group": "a4927-_dgw0242.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "person(s)",
+        "light": "artificial",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a4927-_DGW0242.dng",
+      "source_original_sha256": "6876b7bb241336a8640610104ea78f3294e38e231f257e0841e9423ebabc32f3",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a4927-_DGW0242-input.png",
+      "source_view_sha256": "bf48270451f3d5322234de12e589fce61605b11367d7d34f2100bb197656ba9b",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a4927-_DGW0242.tif",
+      "target_original_sha256": "72724b336274f063b97fb422a8aaf7e4f42421ec3aa368a29d6d783921629bf7",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a4927-_DGW0242.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a4927-_DGW0242-target.png",
+      "target_view_sha256": "e5ce6766d0ea95096faac8bce988ee98dcd35d85fa38cf38f36fe62bb663a8de",
+      "development_view_size": [
+        639,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a4927-_DGW0242.json"
+    },
+    {
+      "source_id": "a0742-img_2429.dng",
+      "group": "a0742-img_2429.dng",
+      "split": "val",
+      "attributes": {
+        "subject": "man-made object",
+        "light": "mixed",
+        "location": "indoors",
+        "time": "day"
+      },
+      "source_original_path": "data/raw/dngs/a0742-IMG_2429.dng",
+      "source_original_sha256": "a5f7027d12dc2b85d6c40d2411045166acb9adf92ca6bfcb7ffdebe5f09255fb",
+      "source_view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a0742-IMG_2429-input.png",
+      "source_view_sha256": "07dc194363e4aabba00b64558a31acb8e77b4a9ca8ba3bb29e3a9a736d89bb8f",
+      "target_expert": "C",
+      "target_original_path": "data/external/fivek_expert_c_pilot_v1/original_tiff/a0742-IMG_2429.tif",
+      "target_original_sha256": "3ea85173225bbf1cf4743dbcd952ef1d1a4654fa61e736d8cf8cc93626fa3640",
+      "target_srgb16_path": "data/external/fivek_expert_c_pilot_v1/srgb16/a0742-IMG_2429.png",
+      "target_view_path": "data/external/fivek_expert_c_pilot_v1/views/a0742-IMG_2429-target.png",
+      "target_view_sha256": "490e184d6e03a1e778058aab8d7723f6bdc4ccb436c742e874307727b7311fe2",
+      "development_view_size": [
+        640,
+        960
+      ],
+      "geometry_record": "artifacts/experiments/fivek_paired_targets_v1/default_crop_audit/a0742-IMG_2429.json"
+    }
+  ],
+  "quarantined": [
+    {
+      "source_id": "a1715-lsyd4o0733.dng",
+      "public_id": "a1715-LSYD4O0733",
+      "split": "train",
+      "source_sha256": "4e58c156f57f658d92592fce03f601b02da4ed31ed9169f6df7e4e955aa49041",
+      "source_default_crop_xywh": [
+        10,
+        3,
+        4992,
+        3328
+      ],
+      "libraw_flip": 0,
+      "crop_native_size": [
+        4992,
+        3328
+      ],
+      "target_native_size": [
+        3328,
+        4992
+      ],
+      "native_size_matches": false,
+      "uncropped_cache_recipe_matches": true,
+      "geometry": {
+        "relative_aspect_difference": 1.25,
+        "status": "quarantined",
+        "reason": "aspect or feature correspondence uncertain"
+      },
+      "view_path": "data/external/fivek_expert_c_pilot_v1/default_crop_views/a1715-LSYD4O0733-input.png",
+      "view_sha256": "743d31d06b127002b7ad1b71fa664bd7b3a279e2baf18af2e1427bd39e6b42b3",
+      "seconds": 0.9405474589999994
+    }
+  ]
+}

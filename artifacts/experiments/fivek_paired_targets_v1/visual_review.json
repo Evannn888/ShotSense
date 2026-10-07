@@ -1,0 +1,58 @@
+{
+  "scope": "All 100 initial paired overview photos visually inspected; crop-v2 uses source-only metadata and unchanged colors. Not native fine-detail/preference acceptance.",
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "7f1e08ce93a5d5f8dcf58c9df9bf087287baabf1b5117e3edc42bdde732a1458"
+    },
+    {
+      "page": 2,
+      "sha256": "bf15ea0fc2aca6ac56d2eea8b11e3ef338cfedc74dc20de06886dc1721c88859"
+    },
+    {
+      "page": 3,
+      "sha256": "258051be409f6c13b46e2b6095ad121dd086ad749502ddffbcfa2ff241996907"
+    },
+    {
+      "page": 4,
+      "sha256": "6b8b920935c7c2d3d0d09ae3f7d43322e40fbc345ace47c47709fecd7754fb84"
+    },
+    {
+      "page": 5,
+      "sha256": "82be7ff41946298040694758e9b17762c12142e76680e4dbb56251d30ddd7765"
+    },
+    {
+      "page": 6,
+      "sha256": "2b304a9935aa68e3c41974fad88b7cd470474c9a298982624728996cf112622d"
+    },
+    {
+      "page": 7,
+      "sha256": "e4722f7202b6f4db6998e04f079f62898b6b7562f503651035e98c5a55daa90e"
+    },
+    {
+      "page": 8,
+      "sha256": "a0adfa0e134b646405cfb8e3aa7425ecbb991eda24e79e4781d100afdd0ad162"
+    },
+    {
+      "page": 9,
+      "sha256": "ff7f5531e9e1a8ddf7882c417261f704b4f82bf153fee5d9c0cb7a71a693c2dd"
+    },
+    {
+      "page": 10,
+      "sha256": "b3b94a342c4cf508272d4fdaf921fbed864cacb19581abbd72bf7253a02b4554"
+    }
+  ],
+  "observations": [
+    "Urban/forest/flower examples often gain contrast and stronger palette; Expert C is not consistently restrained.",
+    "Moonlit water, skylines, silhouetted sunset dog/boat retain dark atmosphere; some targets darken backgrounds.",
+    "Indoor bedroom/candle portrait/night architecture show substantial white-balance shifts; RAW camera-WB inputs differ from already processed phone JPEGs.",
+    "Initial source a1715 is landscape-rotated versus portrait target, so source-only automatic orientation may leave it quarantined.",
+    "Stronger greens/pinks/cyan skies and altered contrast cannot alone define user preference or minimal-control feasibility."
+  ],
+  "representative_source_ids": [
+    "a0784-_MG_7693",
+    "a4796-20090208_at_17h53m27__MG_0089",
+    "a3322-_DGW6269"
+  ],
+  "representative_png_sha256": "ca54baf929695e74c4ce9355e4d914503de8508308e8f655281cfbeff3ed9b14"
+}

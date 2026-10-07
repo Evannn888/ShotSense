@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "address": "127.0.0.1:8501",
+  "health_status": 200,
+  "health_body": "ok",
+  "listener": "COMMAND   PID     USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nPython  53420 evanchen    6u  IPv4 0xbe34949073815178      0t0  TCP 127.0.0.1:8501 (LISTEN)\n",
+  "previous_pid": 52705,
+  "old_listener_released_before_start": true,
+  "live_browser_client_verified": false
+}

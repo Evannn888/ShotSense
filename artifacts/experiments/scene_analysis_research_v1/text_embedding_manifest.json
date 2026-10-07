@@ -1,0 +1,71 @@
+{
+  "labels": [
+    [
+      "subject",
+      "people"
+    ],
+    [
+      "subject",
+      "natural_landscape"
+    ],
+    [
+      "subject",
+      "indoor_room"
+    ],
+    [
+      "subject",
+      "urban_architecture"
+    ],
+    [
+      "subject",
+      "animal_pet"
+    ],
+    [
+      "subject",
+      "food"
+    ],
+    [
+      "subject",
+      "object_still_life"
+    ],
+    [
+      "subject",
+      "document_graphic"
+    ],
+    [
+      "lighting",
+      "daylight"
+    ],
+    [
+      "lighting",
+      "overcast"
+    ],
+    [
+      "lighting",
+      "sunset_sunrise"
+    ],
+    [
+      "lighting",
+      "night"
+    ],
+    [
+      "lighting",
+      "indoor_artificial"
+    ],
+    [
+      "lighting",
+      "indoor_natural"
+    ],
+    [
+      "lighting",
+      "underexposed_daylight"
+    ]
+  ],
+  "shape": [
+    15,
+    512
+  ],
+  "dtype": "float32",
+  "sha256": "9c08adcf7174338c0d6dcda27d7f8887c7a92c69b11a4048768564f18b40cee7",
+  "prompt_sha256": "64ea2ab33b14062be7b5e7cedd5638124535b3a02d05466f18c45a735b8a6877"
+}

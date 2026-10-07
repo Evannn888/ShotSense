@@ -1,0 +1,98 @@
+{
+  "scope": "Previously inspected public regressions and synthetic controls; no external-photo acceptance",
+  "engine": {
+    "engine": "RawTherapee",
+    "version": "5.11",
+    "pp3_version": 351,
+    "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+    "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+    "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+    "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+    "platform": "macOS universal, minimum 12.3",
+    "license": "GPL-3.0-or-later; separate unmodified application",
+    "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+  },
+  "recipes": [
+    "neutral",
+    "natural",
+    "chroma",
+    "auto"
+  ],
+  "photos": [
+    {
+      "id": "LOL-27",
+      "path": "data/external/lol_pilot/27.jpg",
+      "sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3"
+    },
+    {
+      "id": "LOL-102",
+      "path": "data/external/lol_pilot/102.jpg",
+      "sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c"
+    },
+    {
+      "id": "LOL-113",
+      "path": "data/external/lol_pilot/113.jpg",
+      "sha256": "b739525767492c7a1b3c64554f77b4b08c94522f44579f8b2704d6b66b5822a5"
+    },
+    {
+      "id": "LOL-254",
+      "path": "data/external/lol_pilot/254.jpg",
+      "sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45"
+    },
+    {
+      "id": "LOL-565",
+      "path": "data/external/lol_pilot/565.jpg",
+      "sha256": "cfd82849833bbe429fe91039f18e6051929fa8ac3fa81282607eb91c164e94b0"
+    },
+    {
+      "id": "LOL-6",
+      "path": "data/external/lol_pilot/6.jpg",
+      "sha256": "d54d46e822b3b91b29ebca555eb131ed4162bba80373317d0d37fbcf622c42c8"
+    },
+    {
+      "id": "a0113-IMG_1129.dng",
+      "path": "data/raw/dngs/a0113-IMG_1129.dng",
+      "sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5"
+    },
+    {
+      "id": "a0423-07-06-02-at-07h35m36-s_MG_1355.dng",
+      "path": "data/raw/dngs/a0423-07-06-02-at-07h35m36-s_MG_1355.dng",
+      "sha256": "6de6baff09632c953c95b15bf249a937b48c63c4b110bd7eb9012c17a9b3abca"
+    },
+    {
+      "id": "a0453-DSC_0025.dng",
+      "path": "data/raw/dngs/a0453-DSC_0025.dng",
+      "sha256": "8f916705b4fbd6861a5d61995687f56e11102d516da66bf71bed4771cfdf7172"
+    },
+    {
+      "id": "a0575-kme_040.dng",
+      "path": "data/raw/dngs/a0575-kme_040.dng",
+      "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+    },
+    {
+      "id": "a0627-_DSC5388.dng",
+      "path": "data/raw/dngs/a0627-_DSC5388.dng",
+      "sha256": "7a10637958e3492f9df96f152259882313481da4297e5dd9c9ea575ed6f02942"
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255.dng",
+      "path": "data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+      "sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef"
+    },
+    {
+      "id": "synthetic-daylight",
+      "path": "data/tools/rawtherapee-5.11/fixtures/daylight.jpg",
+      "sha256": "60d4c196c3fd51d44e037b8cc9781100b49e4fcddab583a9ec1996de804146c4"
+    },
+    {
+      "id": "synthetic-extreme-dark",
+      "path": "data/tools/rawtherapee-5.11/fixtures/extreme-dark.jpg",
+      "sha256": "2a918ad488cd715cda8479a51072628999e5969096ec7a60fad0b7380e031fc8"
+    },
+    {
+      "id": "synthetic-moderately-dim",
+      "path": "data/tools/rawtherapee-5.11/fixtures/moderately-dim.jpg",
+      "sha256": "f0ffe554f24847bfa41c37af50f3070c4ef83dbaa2cddab487be241ce8520d7e"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "full_suite": {
+    "passed": 75,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 91.31,
+    "warning": "Existing optional Matplotlib unavailable warning"
+  },
+  "focused_natural_tests": {
+    "passed": 3,
+    "seconds": 5.95
+  },
+  "pip_check": "passed",
+  "browser_client_acceptance": "unverified",
+  "current_files": {
+    "app/streamlit_app.py": "82ebb80ae14228bba91724c8238dd7cd48a9f877800b4bde44d03921aa5848fc",
+    "src/lut_natural.py": "a494aa150b9aba4cdfaa8d5f69917656e92b9de126488560b61009b6bf1e4562",
+    "tests/test_natural_lut.py": "aabc361abfa1b0466f99d90b90be56969d181a6982755e8fee4786ba6539e8ba"
+  },
+  "default": "Manual exposure (recommended)",
+  "diff_check": "passed",
+  "service_health": "ok"
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "window_portrait",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/window_portrait.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/window_portrait.png",
+    "title": "Portrait at the window.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_at_the_window.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Portrait_at_the_window.jpg",
+    "downloaded_sha256": "dc766122d1593581328375d21d476fd0ab5909309cb249ebacea5fb9c723b08c",
+    "thumbnail_sha256": "2dcb0a9db6209a03b01cd7776b496f8656570bb80bba382e37d1d112504f7cba",
+    "downloaded_asset_type": "commons_original",
+    "original_sha1_verified": true,
+    "commons_original_sha1": "b7c7d4f1fc8c04ffb46e7c884553c7b08abd844b",
+    "downloaded_bytes": 700700,
+    "commons_original_size": [
+      2070,
+      3105
+    ],
+    "decoded_size": [
+      2070,
+      3105
+    ],
+    "embedded_icc_converted": true,
+    "author": "Andrey Maximov",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "commons_page_revision": {
+      "revid": 1221618900,
+      "parentid": 925470825,
+      "timestamp": "2026-05-28T10:29:19Z"
+    },
+    "jpeg_path": "data/user_photo_diagnostics/white-balance-v2-fresh/window_portrait.diagnostic.jpg",
+    "jpeg_sha256": "707932bf3537ab7495709e8c2737d31cef4f191c32b88b4a3364fcf860b36b37",
+    "diagnostic_size": [
+      640,
+      960
+    ],
+    "diagnostic_recipe": "<=960px tagged sRGB JPEG quality100/subsampling0"
+  },
+  {
+    "id": "restaurant_window",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/restaurant_window.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/restaurant_window.png",
+    "title": "Man in suit interacts in a restaurant.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Man_in_suit_interacts_in_a_restaurant.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Man_in_suit_interacts_in_a_restaurant.jpg",
+    "downloaded_sha256": "dce4b7a672460b3c74fdf70a4db8b15180935a8d25c4acd2381870f2e3ff3ac9",
+    "thumbnail_sha256": "facac2ed7d7bfd1b29e06adff88b42b2671f19bee0bb67d70331edb5d9bdc6b2",
+    "downloaded_asset_type": "commons_original",
+    "original_sha1_verified": true,
+    "commons_original_sha1": "c6195c978263d3e8f4979a7259f428d24bb50348",
+    "downloaded_bytes": 8579333,
+    "commons_original_size": [
+      6048,
+      4024
+    ],
+    "decoded_size": [
+      6048,
+      4024
+    ],
+    "embedded_icc_converted": true,
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "commons_page_revision": {
+      "revid": 1200746528,
+      "parentid": 1200746507,
+      "timestamp": "2026-04-20T15:33:08Z"
+    },
+    "jpeg_path": "data/user_photo_diagnostics/white-balance-v2-fresh/restaurant_window.diagnostic.jpg",
+    "jpeg_sha256": "2ef5a9ae175b6f0c6be9b6bb39eac43b1a4b3be1315357fd597e2e2d8abbb10e",
+    "diagnostic_size": [
+      960,
+      639
+    ],
+    "diagnostic_recipe": "<=960px tagged sRGB JPEG quality100/subsampling0"
+  },
+  {
+    "id": "restaurant_people",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/restaurant_people.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/restaurant_people.png",
+    "title": "People in a restaurant (52378138372).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:People_in_a_restaurant_(52378138372).jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/People_in_a_restaurant_%2852378138372%29.jpg",
+    "downloaded_sha256": "fcc53d8a71541cfaddd1003d6e0cbb1d27001e31c9902a69dec38c799f6be40a",
+    "thumbnail_sha256": "ae3c9edc2282043c2cc2951821a99a4cdb8c9f691c5cf0dcf4dc0c0890103d61",
+    "downloaded_asset_type": "commons_original",
+    "original_sha1_verified": true,
+    "commons_original_sha1": "8439ad329cd864734e26344deeeafea72c3a9792",
+    "downloaded_bytes": 7376379,
+    "commons_original_size": [
+      7347,
+      5416
+    ],
+    "decoded_size": [
+      7347,
+      5416
+    ],
+    "embedded_icc_converted": true,
+    "author": "Sergiy Galyonkin from Raleigh, USA",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "commons_page_revision": {
+      "revid": 1147736222,
+      "parentid": 1102466374,
+      "timestamp": "2026-01-14T21:34:45Z"
+    },
+    "jpeg_path": "data/user_photo_diagnostics/white-balance-v2-fresh/restaurant_people.diagnostic.jpg",
+    "jpeg_sha256": "158b7ebc53e7474b2c9c0a0af9a90ae5272d43ab931dd28c0ae798079befc517",
+    "diagnostic_size": [
+      960,
+      708
+    ],
+    "diagnostic_recipe": "<=960px tagged sRGB JPEG quality100/subsampling0"
+  },
+  {
+    "id": "night_market",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/night_market.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/night_market.png",
+    "title": "Night at street market ,people selling shoes and clothes.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Night_at_street_market_,people_selling_shoes_and_clothes.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Night_at_street_market_%2Cpeople_selling_shoes_and_clothes.jpg",
+    "downloaded_sha256": "33f7e3f97c28a0b44d0f48987a7748f304f57e2547b73c406869334faa613a86",
+    "thumbnail_sha256": "ba3e64867ed845844ad0988f495817aab00682ab889e661cbbeeec9c11cd87ae",
+    "downloaded_asset_type": "commons_original",
+    "original_sha1_verified": true,
+    "commons_original_sha1": "4b1fb26275168417fd0a71a2e1d5fc44ceec86d9",
+    "downloaded_bytes": 2605720,
+    "commons_original_size": [
+      5184,
+      3456
+    ],
+    "decoded_size": [
+      5184,
+      3456
+    ],
+    "embedded_icc_converted": true,
+    "author": "KelvinJM",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_page_revision": {
+      "revid": 1142262022,
+      "parentid": 1090697211,
+      "timestamp": "2026-01-05T10:30:36Z"
+    },
+    "jpeg_path": "data/user_photo_diagnostics/white-balance-v2-fresh/night_market.diagnostic.jpg",
+    "jpeg_sha256": "620f7d3408f8b0033344d3b9fff58af577197ccf0619ce9b7059a371690bfde0",
+    "diagnostic_size": [
+      960,
+      640
+    ],
+    "diagnostic_recipe": "<=960px tagged sRGB JPEG quality100/subsampling0"
+  },
+  {
+    "id": "gold_sunset",
+    "downloaded_path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/gold_sunset.jpg",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/white-balance-v2-fresh/gold_sunset.png",
+    "title": "Golden Sunset Silhouette.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Golden_Sunset_Silhouette.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Golden_Sunset_Silhouette.jpg",
+    "downloaded_sha256": "1ae41471fbb920765532a69fdbc21f856acbd684a4cb4276960cd37aee6a2108",
+    "thumbnail_sha256": "59feaca9b142d639e1a9308ea03beb75e0105f421ec02c994fc688cf212cfa8b",
+    "downloaded_asset_type": "commons_original",
+    "original_sha1_verified": true,
+    "commons_original_sha1": "c41834f2f30012daa18d2a716b66e784f744a10f",
+    "downloaded_bytes": 2389433,
+    "commons_original_size": [
+      4608,
+      3456
+    ],
+    "decoded_size": [
+      4608,
+      3456
+    ],
+    "embedded_icc_converted": false,
+    "author": "Talha J Siam",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "commons_page_revision": {
+      "revid": 1165467525,
+      "parentid": 1122340739,
+      "timestamp": "2026-02-14T11:04:21Z"
+    },
+    "jpeg_path": "data/user_photo_diagnostics/white-balance-v2-fresh/gold_sunset.diagnostic.jpg",
+    "jpeg_sha256": "11af12c7e1e95da087e46122085c1c98961bd4018c981e7034c866ead728fedd",
+    "diagnostic_size": [
+      960,
+      720
+    ],
+    "diagnostic_recipe": "<=960px tagged sRGB JPEG quality100/subsampling0"
+  }
+]

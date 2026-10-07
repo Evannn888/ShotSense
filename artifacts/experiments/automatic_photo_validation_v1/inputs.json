@@ -1,0 +1,157 @@
+{
+  "scope": "17 previously inspected photographic regressions; external model overlap possible. Four user JPEGs, seven DNGs, six public extreme-dark JPEGs. WebP excluded as unsupported in uploader. No target/reference pixels used.",
+  "cases": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+      "bytes": 10823098,
+      "header_size": [
+        8192,
+        6144
+      ],
+      "sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3"
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+      "bytes": 2779239,
+      "header_size": [
+        8688,
+        5712
+      ],
+      "sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d"
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "path": "/Users/evanchen/Downloads/nir-himi-1P1yaGS_Gek-unsplash.jpg",
+      "bytes": 1333473,
+      "header_size": [
+        2809,
+        4213
+      ],
+      "sha256": "649d9b8d4763487d787574812486cd62a381c6c25e92337223bafb59a1f3f5ee"
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0113-IMG_1129.dng",
+      "bytes": 13563322,
+      "header_size": [
+        4312,
+        2876
+      ],
+      "sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5"
+    },
+    {
+      "id": "a0575-kme_040",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0575-kme_040.dng",
+      "bytes": 12118860,
+      "header_size": [
+        3944,
+        2622
+      ],
+      "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+      "bytes": 11679930,
+      "header_size": [
+        4476,
+        2954
+      ],
+      "sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef"
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2049-IMG_1585.dng",
+      "bytes": 14388136,
+      "header_size": [
+        4312,
+        2876
+      ],
+      "sha256": "288159dc4f30ded26db0f059d40c8ff85c9f59128cc8f3009c0862eb2b7ec22c"
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2132-IMG_4947.dng",
+      "bytes": 12665412,
+      "header_size": [
+        4312,
+        2876
+      ],
+      "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2270-_DSC0033.dng",
+      "bytes": 3760142,
+      "header_size": [
+        3040,
+        2014
+      ],
+      "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+    },
+    {
+      "id": "a3246-kme_445",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a3246-kme_445.dng",
+      "bytes": 6749044,
+      "header_size": [
+        3596,
+        2360
+      ],
+      "sha256": "ff04a6274a462690707ec2dffd5644a10dc9342f7b8e089170d5b65044361442"
+    },
+    {
+      "id": "user-cloudy-trees",
+      "path": "/Users/evanchen/Downloads/images (2).jpeg",
+      "bytes": 25833,
+      "sha256": "e4172d7c619478e0272159d3c5b81450e527bb0a39139db690676ba19c4cf4fe",
+      "header_size": [
+        678,
+        452
+      ]
+    },
+    {
+      "id": "LOL-27",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/27.jpg",
+      "bytes": 38327,
+      "sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3",
+      "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+    },
+    {
+      "id": "LOL-102",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/102.jpg",
+      "bytes": 57700,
+      "sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c",
+      "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+    },
+    {
+      "id": "LOL-113",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/113.jpg",
+      "bytes": 43559,
+      "sha256": "b739525767492c7a1b3c64554f77b4b08c94522f44579f8b2704d6b66b5822a5",
+      "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+    },
+    {
+      "id": "LOL-254",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/254.jpg",
+      "bytes": 65665,
+      "sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45",
+      "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+    },
+    {
+      "id": "LOL-565",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/565.jpg",
+      "bytes": 98195,
+      "sha256": "cfd82849833bbe429fe91039f18e6051929fa8ac3fa81282607eb91c164e94b0",
+      "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+    },
+    {
+      "id": "LOL-6",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/6.jpg",
+      "bytes": 83415,
+      "sha256": "d54d46e822b3b91b29ebca555eb131ed4162bba80373317d0d37fbcf622c42c8",
+      "scope": "Previously inspected extreme low-light public regression; no unseen-camera claim"
+    }
+  ]
+}

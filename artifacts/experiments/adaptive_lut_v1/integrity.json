@@ -1,0 +1,41 @@
+{
+  "current_baseline_preserved": {
+    "app/streamlit_app.py": true,
+    "src/photo_engine.py": true,
+    "src/jpeg_inference.py": true,
+    "src/inference.py": true,
+    "src/preview.py": true,
+    "src/color_pipeline.py": true,
+    "src/preprocess.py": true,
+    "src/extract_labels.py": true,
+    "artifacts/model/model.onnx": true,
+    "artifacts/model/model.json": true,
+    "artifacts/photo_engine/neutral.pp3": true,
+    "artifacts/photo_engine/natural.pp3": true,
+    "artifacts/photo_engine/chroma.pp3": true,
+    "artifacts/photo_engine/shadows.pp3": true
+  },
+  "core_matches_HEAD": {
+    "src/inference.py": true,
+    "src/preview.py": true,
+    "src/color_pipeline.py": true,
+    "src/preprocess.py": true,
+    "src/extract_labels.py": true,
+    "artifacts/model/model.onnx": true,
+    "artifacts/model/model.json": true
+  },
+  "ten_sources_preserved": {
+    "ahmet-yuksek-7lK0bpUj8AA-unsplash": true,
+    "martin-bennie-MhYU5K4A93I-unsplash": true,
+    "nir-himi-1P1yaGS_Gek-unsplash": true,
+    "a0113-IMG_1129": true,
+    "a0575-kme_040": true,
+    "a0715-060812_182920__MG_6255": true,
+    "a2049-IMG_1585": true,
+    "a2132-IMG_4947": true,
+    "a2270-_DSC0033": true,
+    "a3246-kme_445": true
+  },
+  "pip_check": "No broken requirements found.",
+  "private_output_root": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1"
+}

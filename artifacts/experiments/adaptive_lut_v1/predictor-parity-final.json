@@ -1,0 +1,42 @@
+[
+  {
+    "shape": [
+      1,
+      1,
+      3
+    ],
+    "resize_max_abs": 0.0,
+    "weights_max_abs": 0.0,
+    "architecture_exact_same_input": true
+  },
+  {
+    "shape": [
+      13,
+      17,
+      3
+    ],
+    "resize_max_abs": 0.0,
+    "weights_max_abs": 0.0,
+    "architecture_exact_same_input": true
+  },
+  {
+    "shape": [
+      257,
+      256,
+      3
+    ],
+    "resize_max_abs": 5.960464477539063e-08,
+    "weights_max_abs": 3.5762786865234375e-07,
+    "architecture_exact_same_input": true
+  },
+  {
+    "shape": [
+      1023,
+      801,
+      3
+    ],
+    "resize_max_abs": 1.7881393432617188e-07,
+    "weights_max_abs": 3.5762786865234375e-07,
+    "architecture_exact_same_input": true
+  }
+]

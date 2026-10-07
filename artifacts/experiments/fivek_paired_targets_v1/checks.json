@@ -1,0 +1,8 @@
+{
+  "srgb16_identity_max_error_codes": 0,
+  "prophoto_neutral_max_channel_spread_codes": 2,
+  "neutral_ramp_monotone": true,
+  "pillow8_parity_max_error_codes": 1,
+  "identity_geometry_passed": true,
+  "cropped_geometry_rejected": true
+}

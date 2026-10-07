@@ -1,0 +1,21 @@
+{
+  "size": [
+    5472,
+    3648
+  ],
+  "identity_exact": true,
+  "nontrivial_mapping_chunk_crop_exact": true,
+  "guards": {
+    "new_black_pixel_positions": 0,
+    "new_full_pixel_positions": 0,
+    "maximum_luma_change_codes": 0.430400013923645,
+    "maximum_channel_change_codes": 6.0,
+    "row_chunk": 128,
+    "blend": 0.5,
+    "channel_cap": 0.04,
+    "skin_color_proxy_cap": 0.025
+  },
+  "elapsed_seconds": 10.487606208,
+  "output_pixels_sha256": "6a410041d52f26a93239ded35c28828c8ecdfc63010ee57f13f6ea546ec6b962",
+  "scope": "Functional fixed-affine mapping control at native20MP, not a model-selected photographic preference or new photo."
+}

@@ -1,0 +1,23 @@
+{
+  "prior_and_fresh_records": 114,
+  "recorded_exports_hashes_and_icc": 149,
+  "immutable_protected_files": 509,
+  "authorized_changed_files": [
+    "src/white_balance.py",
+    "tests/test_white_balance.py"
+  ],
+  "inference_implementation_exact": true,
+  "photographic_rules_not_retuned": true,
+  "fivek_source_target_hashes_exact": 99,
+  "fresh_source_count": 5,
+  "unavailable_fresh_count": 1,
+  "project_tests_passed": 91,
+  "native_png_and_zero_exact": true,
+  "native_nonzero_tint_chunk_exact": true,
+  "streamlit_health": {
+    "status": 200,
+    "body": "ok"
+  },
+  "integration": "Existing default-off scene beta; upload cache includes WBv2 version.",
+  "limits": "Functional/export/diagnostic evidence only; no independent preference, intent, skin or WB ground truth."
+}

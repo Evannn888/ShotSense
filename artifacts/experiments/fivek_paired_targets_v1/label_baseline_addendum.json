@@ -1,0 +1,7 @@
+{
+  "reason": "Correct the discovery-time label path; Catalog already frozen in immutable selection.",
+  "protected_sha256": {
+    "data/intermediate/expert_labels.json": "86a02d54e75a09c190536349ac3b722b61c00812e59d5e3a4e9bbcb318eb5036",
+    "data/intermediate/label_audit.json": "da2088b6a9a56d419af51ee32df2de0281d3e9196bec6b361cb568df1d1d781c"
+  }
+}

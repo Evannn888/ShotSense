@@ -1,0 +1,12 @@
+{
+  "artifacts/experiments/scene_policy_connection_v1/evaluate.py": "8ce777cb29444424d68f28eda3fe1b21136957f53ee8efab6ec434304f7e28a4",
+  "artifacts/experiments/scene_policy_connection_v1/PROTOCOL.md": "097cf30b67c21523430123fa103684cf6cd09d503b1ab8a8ace1cd7d0b782154",
+  "artifacts/experiments/scene_policy_connection_v1/baseline.json": "f09760abc31e364ec98f1afb06a0ea88535d52db2a6576874333b924929163c2",
+  "artifacts/experiments/scene_policy_connection_v1/input_baseline.json": "aee9c97ce50e82b9500c847e1939f2c0ca304d800e891cad4185d041f72b9940",
+  "src/scene_policy.py": "b3dcbe31416834b2039add66f827650fa0319d7081581ee0b2a88095d7150d26",
+  "src/lut_natural.py": "9997637c8cd99862c93ce11c947f2828a1d15a8771edca71ce7b41c3edb367fb",
+  "app/streamlit_app.py": "952853c5503516aa467534fd0d5d534aa5622788b421acba1a33e1e6f65b27be",
+  "tests/test_scene_policy.py": "43af7208409408b6621f74f30be2793ce6b8ba23d81121b580600feac7d72d1c",
+  "tests/test_automatic_photo.py": "c52f3355f23ad55ffe2f5268f54456887beeb9cc6772ee5d7df687f63753c796",
+  "artifacts/experiments/fivek_current_effect_v1/evaluate.py": "9c0cad8e40dae2b7df5fd2fb2bd478ea4ed510b9d6f010df6f8f3385f3a8be3e"
+}

@@ -1,0 +1,75 @@
+{
+  "applied_union_ids": [
+    "a0218-kme_181.dng",
+    "a0387-img_3388.dng",
+    "a0605-_mg_7197.dng",
+    "a0835-mb_080329_061.dng",
+    "a0875-jmac_dsc1465.dng",
+    "a0903-_dsc0025.dng",
+    "a1231-_dgw6291.dng",
+    "a1237-kme_389.dng",
+    "a1305-nkim_mg_6827.dng",
+    "a1417-img_0012.dng",
+    "a1930-lsyd4o0656.dng",
+    "a2009-jn_20080129_las_vegas_0123.dng",
+    "a2754-_dsc7455.dng",
+    "a3042-kme_092.dng",
+    "a3407-dsc_0008-1.dng",
+    "a3423-_dgw6316.dng",
+    "a3442-mb_060909_003.dng",
+    "a3690-_dgw6402.dng",
+    "a3826-kme_482.dng",
+    "a3906-ls051025_day_3_ll003.dng",
+    "a4026-nkim_mg_6632.dng",
+    "a4133-dgw_020.dng",
+    "a4485-_dsc0026.dng"
+  ],
+  "fixed_ids": [
+    "a0341-dgw_002.dng",
+    "a3322-_dgw6269.dng",
+    "a2654-img_0032.dng",
+    "a4796-20090208_at_17h53m27__mg_0089.dng",
+    "a0784-_mg_7693.dng",
+    "a4133-dgw_020.dng",
+    "a0986-ja_pe-81.dng",
+    "a4755-duggan_090323_6173.dng",
+    "a1417-img_0012.dng",
+    "a2370-ji2e5682.dng",
+    "a4720-dsc_0022.dng",
+    "a3500-dgw_099.dng"
+  ],
+  "public_controls": [
+    "milky_way",
+    "shadow_portrait",
+    "sunset_silhouette",
+    "city_night"
+  ],
+  "additional_negatives": [
+    "a3746-_i2e5991.dng",
+    "a2916-wp_crw_7798.dng"
+  ],
+  "fresh_ids": [
+    "window_portrait",
+    "restaurant_window",
+    "restaurant_people",
+    "night_market",
+    "gold_sunset"
+  ],
+  "visually_inspected_sheets": [
+    "wb-review-01.png",
+    "wb-review-02.png",
+    "wb-review-03.png",
+    "wb-review-04.png",
+    "wb-review-05.png",
+    "wb-review-06.png",
+    "review-1.png",
+    "review-2.png",
+    "review-3.png",
+    "fresh-1.png",
+    "fresh-2.png",
+    "failure-controls.png",
+    "public-controls.png",
+    "early-review.png"
+  ],
+  "judgment": "Partial gold-warmth protection; indoor a0341 unresolved; no clear severe new skin failure in these views, unresolved fog/window-sunset intent and warm-room correction tradeoff; no independent preference acceptance."
+}

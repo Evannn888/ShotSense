@@ -1,0 +1,110 @@
+{
+  "source_snapshot_checks": [
+    {
+      "path": "artifacts/experiments/dataset_research_scene_v2/sources/msec.md",
+      "sha256": "18bec6ac5c15ed51a7e28bb3fc9ecc9a83afeb74cb16b87b91e4fbefb99e776b",
+      "matches": true
+    },
+    {
+      "path": "artifacts/experiments/dataset_research_scene_v2/sources/ppr10k.md",
+      "sha256": "62a8d89ff711d68de1d48110dfad3d0e96888be3d216de1133039ce4b2ec5077",
+      "matches": true
+    },
+    {
+      "path": "artifacts/experiments/dataset_research_scene_v2/sources/lcdp.md",
+      "sha256": "ab1f093b974ee51ef69f9eb21607042f1d0b2aff22a4e315657d9e626045c141",
+      "matches": true
+    },
+    {
+      "path": "artifacts/experiments/dataset_research_scene_v2/sources/lol_v2.md",
+      "sha256": "59e3f611890ffc6fc30090ad63a4f7fe356d585c66f6e365f50afc4935bbaf00",
+      "matches": true
+    },
+    {
+      "path": "artifacts/experiments/dataset_research_scene_v2/sources/sice.md",
+      "sha256": "11e6a5dc69c54c9669c1a48cb282a16c2bcd3a2afb2f45beb373ea403c844456",
+      "matches": true
+    },
+    {
+      "path": "artifacts/experiments/dataset_research_scene_v2/sources/adaptive_lut_fivek.md",
+      "sha256": "45cd2cc7d86bd7f45649308b508fd1e42b5061e15d89d0ca9980e72656dd8956",
+      "matches": true
+    },
+    {
+      "path": "artifacts/experiments/dataset_research_scene_v2/sources/white_balance.md",
+      "sha256": "a5c85a004cd1cad20ac563ddd70049978002077a30030afb06ab51f0f0511741",
+      "matches": true
+    },
+    {
+      "path": "artifacts/experiments/dataset_research_scene_v2/sources/rendered_wb.md",
+      "sha256": "2e0c775fe4af5980a7220e81315079d1ec13dd34076e866e40a183fc1e7e2ba6",
+      "matches": true
+    },
+    {
+      "path": "artifacts/experiments/dataset_research_scene_v2/sources/vera_retouch.md",
+      "sha256": "fc2a5cc87bac45329764597ea84d3d79aca1a048e0998479adbf0ced77d2935c",
+      "matches": true
+    }
+  ],
+  "production_baseline_checks": [
+    {
+      "path": "app/streamlit_app.py",
+      "sha256": "0478115d5c81c6bd5cbe3ab1ca05361bc5515967dc2d0fc6df850bb6b806ce7c",
+      "matches_frozen_baseline": true
+    },
+    {
+      "path": "src/lut_natural.py",
+      "sha256": "d3a3d0ecb3de687eebf6a070f755b8602dace3264e7f7306ff5b6ada4f065dde",
+      "matches_frozen_baseline": true
+    },
+    {
+      "path": "src/photo_engine.py",
+      "sha256": "ac2f2186bd8a4651320322537f56e03323adf94c3def5193d11ed5deda2f95d7",
+      "matches_frozen_baseline": true
+    },
+    {
+      "path": "src/adaptive_lut.py",
+      "sha256": "282ed35fbd26c719d2714ab93bec3872289c7ce53563b27dbf147e3042587a38",
+      "matches_frozen_baseline": true
+    },
+    {
+      "path": "src/jpeg_inference.py",
+      "sha256": "969f6ef4ae05542f90f1477dc100623e30460e8c2bd4f732b81936acbf55f5f7",
+      "matches_frozen_baseline": true
+    },
+    {
+      "path": "requirements.lock.txt",
+      "sha256": "2e25fa64419b03f08af92f9f58b2330b3d9e8811b05a0d81b901433b645e55b0",
+      "matches_frozen_baseline": true
+    },
+    {
+      "path": "tests/test_automatic_photo.py",
+      "sha256": "e5bbe7b5c34bb5fb05b4fede7ec6f076a72039ee188bf5a894927ade83d15211",
+      "matches_frozen_baseline": true
+    }
+  ],
+  "health": {
+    "url": "http://127.0.0.1:8501/_stcore/health",
+    "status": 200,
+    "body": "ok"
+  },
+  "scope": "Research and offline metadata audit only. No new photo pixels/archives, training, split changes, sharpening or application integration.",
+  "new_photo_quality_acceptance": false,
+  "whole_suite_rerun": false,
+  "access_checks_count": 8,
+  "offline_metadata_audit": {
+    "public_records": 5000,
+    "matched_local_sources": 4946,
+    "split_counts": {
+      "train": 3957,
+      "val": 495,
+      "test": 494
+    },
+    "split_sha256": "5daf75979d66fbba393f667fbc0f6661902e838a6065d8f80402214a8461b73b",
+    "scope": "Offline metadata only; no photo pixel access or writes."
+  },
+  "fivek_complete_html_sha256": "cc11c048a6c29459628cd0989ba28324857988eac10894773b8a20dbb9fd3127",
+  "fivek_public_annotations_sha256": "9e22e4eb56ab80bb36998bd893363a373eab4d04be5559a29c4eb320521f884a",
+  "report_sha256": "9c704613412289ac6c33e8f073ece52ff8b04d5ace54e5372b6757f5330284da",
+  "diff_check_passed": true
+}

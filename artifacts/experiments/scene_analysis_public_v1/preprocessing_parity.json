@@ -1,0 +1,4 @@
+{
+  "inputs": 10,
+  "stock_pil_matches_torchvision_uint8_exact": true
+}

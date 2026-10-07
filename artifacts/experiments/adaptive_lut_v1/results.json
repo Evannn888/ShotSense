@@ -1,0 +1,466 @@
+{
+  "scope": "Three user-downloaded JPEGs and seven previously inspected non-heldout RAW diagnostics; not independent camera preference acceptance. Frozen before tuning.",
+  "decision": "Reject this frozen checkpoint as natural automatic default; retain isolated CPU/CLI comparison. No UI integration or style preference acceptance.",
+  "cases": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "source": {
+        "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+        "path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+        "bytes": 10823098,
+        "header_size": [
+          8192,
+          6144
+        ],
+        "sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3"
+      },
+      "weights": [
+        1.811568260192871,
+        -0.6327214241027832,
+        -0.9646010994911194
+      ],
+      "size": [
+        8192,
+        6144
+      ],
+      "input_pixels_sha256": "a11dbba98ab50c03463b4c9cbd15364a1cc13da8d04958e6a7e990e04434b6bb",
+      "output_pixels_sha256": "fad9ca08bce51220957d60ecc63c497efc71340d4cbfbc8c37e6586082748ce0",
+      "lut_sha256": "cec5f205a7e30ca32fbbf5e8bc4e7de810c72104a1126216666aa2d57d6e5376",
+      "lut_seconds": 4.441598125,
+      "total_comparison_seconds": 17.294109249999998,
+      "png_bytes": 88965828,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          8192,
+          6144
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 1.0,
+        "output_png_sha256": "8266e383116e552fa60c4afd5debfd12c09d9e320a1d1b959d9b8355392a3c36",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 0.0006466905275980631,
+      "new_black_pixel_fraction": 0.026678502559661865,
+      "float_below_zero_pixel_fraction": 0.08166138331095378,
+      "float_above_one_pixel_fraction": 0.0005866686503092448
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "source": {
+        "id": "martin-bennie-MhYU5K4A93I-unsplash",
+        "path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+        "bytes": 2779239,
+        "header_size": [
+          8688,
+          5712
+        ],
+        "sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d"
+      },
+      "weights": [
+        1.6262226104736328,
+        -0.5302759408950806,
+        -1.044418215751648
+      ],
+      "size": [
+        8688,
+        5712
+      ],
+      "input_pixels_sha256": "f3dbe37f4a769b2fa6ccb809230d2753703f1c5a43599c0d12d90e5e07dacfd9",
+      "output_pixels_sha256": "8bc18ecb553c88d78312c96b1fb6b3040b1ab6bdc3ca337a4a1c98bb02ffd3ab",
+      "lut_sha256": "f37e524b0c11ebfd5e5c1faeb3801417f88f33e53f967b994780aa78504bcf9e",
+      "lut_seconds": 4.167064499999999,
+      "total_comparison_seconds": 14.042992708000003,
+      "png_bytes": 35885446,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          8688,
+          5712
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9997300802226968,
+        "output_png_sha256": "274293daaa7770314a3eb469028a6055e4811063a381b326d78634320ef22550",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 0.0,
+      "new_black_pixel_fraction": 0.022166327972257042,
+      "float_below_zero_pixel_fraction": 0.03365594338564155,
+      "float_above_one_pixel_fraction": 0.0
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "source": {
+        "id": "nir-himi-1P1yaGS_Gek-unsplash",
+        "path": "/Users/evanchen/Downloads/nir-himi-1P1yaGS_Gek-unsplash.jpg",
+        "bytes": 1333473,
+        "header_size": [
+          2809,
+          4213
+        ],
+        "sha256": "649d9b8d4763487d787574812486cd62a381c6c25e92337223bafb59a1f3f5ee"
+      },
+      "weights": [
+        1.51740562915802,
+        -0.48698124289512634,
+        -0.9682520627975464
+      ],
+      "size": [
+        2809,
+        4213
+      ],
+      "input_pixels_sha256": "8c7f98ee919953fdd7f0d76813da31d3ea9273f81760fbc2fd7de2897deff0a4",
+      "output_pixels_sha256": "0453b729b3bd768072927d5461cc8b7d9180789b02b54a446901032af0d9fd52",
+      "lut_sha256": "9e41db448d537e1e17facdc92a97f8c997a174051b948b2ce05db15dc223beaa",
+      "lut_seconds": 1.1010886250000027,
+      "total_comparison_seconds": 3.654928875000003,
+      "png_bytes": 9214727,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          2809,
+          4213
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9999953524990077,
+        "output_png_sha256": "f2fd6c0407dfa3e8373cef0c617c618eec0d287f769f3392a2e4172f73092321",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 0.0,
+      "new_black_pixel_fraction": 0.05881378705674354,
+      "float_below_zero_pixel_fraction": 0.17945387131340151,
+      "float_above_one_pixel_fraction": 0.0
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "source": {
+        "id": "a0113-IMG_1129",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0113-IMG_1129.dng",
+        "bytes": 13563322,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5"
+      },
+      "weights": [
+        1.4062705039978027,
+        0.5260400176048279,
+        -1.27159583568573
+      ],
+      "size": [
+        4282,
+        2848
+      ],
+      "input_pixels_sha256": "909dfa83169cfe28701679e1fe33b52c60075dd0f702f05021e018c4a2c8f68b",
+      "output_pixels_sha256": "ad7b09e76478b444ddfbd12f24dd8098ad0b8c369b18557e13dfa66a3e020ab9",
+      "lut_sha256": "8237b50cc8d2f7960fede1eb21c7f0b7daef8c81370932effb317b59cb075a5e",
+      "lut_seconds": 1.125015083000001,
+      "total_comparison_seconds": 3.3810780829999985,
+      "png_bytes": 16842078,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          4282,
+          2848
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9999984420017948,
+        "output_png_sha256": "525144405eeedab5c864106f4e1b7112f8f60bc46e473921c2240b6ad08fab2e",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 0.0,
+      "new_black_pixel_fraction": 0.011600280636476707,
+      "float_below_zero_pixel_fraction": 0.1345616809849435,
+      "float_above_one_pixel_fraction": 0.0
+    },
+    {
+      "id": "a0575-kme_040",
+      "source": {
+        "id": "a0575-kme_040",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0575-kme_040.dng",
+        "bytes": 12118860,
+        "header_size": [
+          3944,
+          2622
+        ],
+        "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+      },
+      "weights": [
+        1.54158616065979,
+        0.26383915543556213,
+        -1.2941808700561523
+      ],
+      "size": [
+        3900,
+        2594
+      ],
+      "input_pixels_sha256": "69f92f98c931577de35303c147fc84c7086137e85d3bab3abd01de927c256f80",
+      "output_pixels_sha256": "2ac444260eadb861078844dab5da4fb42f5852cf10200f023b2a371ddfa5ab1a",
+      "lut_sha256": "65c905a95a6ca1e49f0b8f18c7c5d9b236673b667ae0c5764fdbe0a7862ec3f4",
+      "lut_seconds": 0.8993731250000039,
+      "total_comparison_seconds": 3.1342007080000016,
+      "png_bytes": 14381421,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          3900,
+          2594
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9995719905897238,
+        "output_png_sha256": "218bdbf04521c863702230c39764732cbdf95ca029f9379f14bc7024a4fc5fbe",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 7.561829073008719e-05,
+      "new_black_pixel_fraction": 0.016933851293912974,
+      "float_below_zero_pixel_fraction": 0.0548259296601625,
+      "float_above_one_pixel_fraction": 0.0008271553684044046
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "source": {
+        "id": "a0715-060812_182920__MG_6255",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+        "bytes": 11679930,
+        "header_size": [
+          4476,
+          2954
+        ],
+        "sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef"
+      },
+      "weights": [
+        1.7326468229293823,
+        -0.783043622970581,
+        -0.9784751534461975
+      ],
+      "size": [
+        4378,
+        2912
+      ],
+      "input_pixels_sha256": "02e288a0b8432246eb4fab994f62592c69cc868a0c7657984a1f6d75009fc523",
+      "output_pixels_sha256": "b561625aa87f0e7a54b39851aff138d9d40414c8131c7b53cceb1e5dc129456b",
+      "lut_sha256": "8a974923a4c041ab0065ee833c34d6c3a466584b11d81efc3e90c32ff5c8a113",
+      "lut_seconds": 1.2162616250000013,
+      "total_comparison_seconds": 3.6093926250000052,
+      "png_bytes": 23354375,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          4378,
+          2912
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9997623293791635,
+        "output_png_sha256": "9acd8f9992c4f26b7e5c4ca8c417c38e249e4ff8bc3d7889f57f7fa8e355d019",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 0.00021845302938267762,
+      "new_black_pixel_fraction": 0.015924402230934893,
+      "float_below_zero_pixel_fraction": 0.05808222870094729,
+      "float_above_one_pixel_fraction": 0.0006441422898709331
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "source": {
+        "id": "a2049-IMG_1585",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2049-IMG_1585.dng",
+        "bytes": 14388136,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "288159dc4f30ded26db0f059d40c8ff85c9f59128cc8f3009c0862eb2b7ec22c"
+      },
+      "weights": [
+        1.3937029838562012,
+        0.9299631118774414,
+        -1.3339086771011353
+      ],
+      "size": [
+        4282,
+        2848
+      ],
+      "input_pixels_sha256": "10d1c7d25fb3344c553b4f1ad2b46112d67f22b88bde5c37ced3c03f2d23f645",
+      "output_pixels_sha256": "39a7a7c0498f02ca08e90316758661da8257aa57d97ed601ba9ab2f8c299e3a9",
+      "lut_sha256": "fb0efafb36f4adb608f30099775e2041ff58844dbd07674eab36785fd861be20",
+      "lut_seconds": 1.1309235829999977,
+      "total_comparison_seconds": 3.7550758329999994,
+      "png_bytes": 18115505,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          4282,
+          2848
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9991600749675936,
+        "output_png_sha256": "fbceaff3e5f33ee20bcada026e4889ed17ba8201e2f59e578e3d1023e81f14f5",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 8.749389920702812e-05,
+      "new_black_pixel_fraction": 0.002451059176379829,
+      "float_below_zero_pixel_fraction": 0.10328699901337714,
+      "float_above_one_pixel_fraction": 0.0018186759048853575
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "source": {
+        "id": "a2132-IMG_4947",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2132-IMG_4947.dng",
+        "bytes": 12665412,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+      },
+      "weights": [
+        1.5720423460006714,
+        0.11198801547288895,
+        -1.2037248611450195
+      ],
+      "size": [
+        2848,
+        4282
+      ],
+      "input_pixels_sha256": "1e4946b58ff66fdd32722d3abcaa16f41e13ff5d70a41815e5e9a58be2ff7c48",
+      "output_pixels_sha256": "300e92892338cb39ec2771538725cf7a709fd014cf8eb1803a42dda052430858",
+      "lut_sha256": "7f6b31ac62f4905e8a78c9ec958b452c4e068a63e5916c886a623e53efa48c98",
+      "lut_seconds": 1.152132250000001,
+      "total_comparison_seconds": 3.745539375,
+      "png_bytes": 17920797,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          2848,
+          4282
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9941780067069362,
+        "output_png_sha256": "7e65fc452c1df358f9a25f261174278aa1a9d9e3004dc6a4eed8b3e83d43bf6b",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 1.4759982996499589e-06,
+      "new_black_pixel_fraction": 0.005190102021002472,
+      "float_below_zero_pixel_fraction": 0.03283924016919532,
+      "float_above_one_pixel_fraction": 0.009032617594424532
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "source": {
+        "id": "a2270-_DSC0033",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2270-_DSC0033.dng",
+        "bytes": 3760142,
+        "header_size": [
+          3040,
+          2014
+        ],
+        "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+      },
+      "weights": [
+        1.533706784248352,
+        0.436489999294281,
+        -1.3156934976577759
+      ],
+      "size": [
+        2006,
+        3032
+      ],
+      "input_pixels_sha256": "3e75d21ee29a857c92a11726cadf44f0dcf10944f8eaffc23d78ec143539b93e",
+      "output_pixels_sha256": "24a3bffaf3dac780056e91d531bbfe0fed69b3f2f9d4b629eef87803d7d09949",
+      "lut_sha256": "75d734e4df4ed3b9a0d75b204280281ccf88752f193301f2ebead1fe31fc967e",
+      "lut_seconds": 0.5796192500000004,
+      "total_comparison_seconds": 2.0894700840000056,
+      "png_bytes": 6917995,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          2006,
+          3032
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9955420677282137,
+        "output_png_sha256": "7ab88312eaf77ba236545c9550b009555cc724358190e0d9c0311ff76f6fa48b",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 7.645269994765045e-05,
+      "new_black_pixel_fraction": 0.013874931932434885,
+      "float_below_zero_pixel_fraction": 0.17412801174313472,
+      "float_above_one_pixel_fraction": 0.005342810618277095
+    },
+    {
+      "id": "a3246-kme_445",
+      "source": {
+        "id": "a3246-kme_445",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a3246-kme_445.dng",
+        "bytes": 6749044,
+        "header_size": [
+          3596,
+          2360
+        ],
+        "sha256": "ff04a6274a462690707ec2dffd5644a10dc9342f7b8e089170d5b65044361442"
+      },
+      "weights": [
+        1.5385332107543945,
+        -0.1145591214299202,
+        -1.149326205253601
+      ],
+      "size": [
+        3514,
+        2340
+      ],
+      "input_pixels_sha256": "f780893a295cdfe3ecc5bbab135815cc80faac5aad9d3015bea4625d9e5fe57a",
+      "output_pixels_sha256": "69eee9f41fbc5ff1ec8e5542c2da4005ba2d081bb53bb2b563fdac76338337ae",
+      "lut_sha256": "fa7702d5745db6e9f7194a1947f8d53d63539cf598fb44151e8a0b7c3c7c80d4",
+      "lut_seconds": 0.7409875420000063,
+      "total_comparison_seconds": 2.607465832999999,
+      "png_bytes": 10916088,
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          3514,
+          2340
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9999930680209564,
+        "output_png_sha256": "09fcbc92a676872c9753e9f8a0ea55ed9f661c22bf22c10351d0d48eab72e830",
+        "semantics": "Frozen pretrained LUT result blended with original sRGB baseline."
+      },
+      "source_preserved": true,
+      "new_full_channel_fraction": 0.0,
+      "new_black_pixel_fraction": 0.00999919734979496,
+      "float_below_zero_pixel_fraction": 0.04293084073960568,
+      "float_above_one_pixel_fraction": 0.0
+    }
+  ]
+}

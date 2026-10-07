@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "input_format": "JPEG",
+  "input_status": "experimental_photo_engine",
+  "processing_version": "rawtherapee-recipes-v5",
+  "input_sha256": "d7cde605f1628f23c859522423ae18f16e00155eb010f4f6f37f004988f74bf6",
+  "requested_recipe": "shadows",
+  "selected_recipe": "shadows",
+  "selection": {
+    "reason": "explicit recipe",
+    "candidate_new_full_channel_fraction": 6.680394221851963e-05
+  },
+  "engine": {
+    "engine": "RawTherapee",
+    "version": "5.11",
+    "pp3_version": 351,
+    "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+    "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+    "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+    "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+    "platform": "macOS universal, minimum 12.3",
+    "license": "GPL-3.0-or-later; separate unmodified application",
+    "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+  },
+  "profile_sha256": {
+    "neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+    "shadows.pp3": "3a9f1182bb8f7b5fba3590b22a48c02656b543018ae5a9178be393a86dd1a355"
+  },
+  "output_size": [
+    563,
+    452
+  ],
+  "recommended_absolute": {},
+  "experimental_absolute": {},
+  "source_semantics": "EXIF-oriented, color-managed decoded JPEG",
+  "jpeg_color": {
+    "embedded_icc_converted_to_srgb": false,
+    "without_icc": "assumed sRGB"
+  },
+  "quality_status": "experimental; independent personal-photo preference acceptance pending",
+  "timing": {
+    "engine_runs": [
+      {
+        "recipe": "shadows",
+        "seconds": 0.29916383300000005
+      }
+    ],
+    "end_to_end_seconds": 0.343403708
+  },
+  "export": {
+    "renderer_version": "rawtherapee-recipes-v5",
+    "strength": 1.0,
+    "blend_space": "display sRGB",
+    "size": [
+      563,
+      452
+    ],
+    "full_resolution": true,
+    "changed_pixel_fraction": 1.0,
+    "output_png_sha256": "4d8d45177a803ec9cfb308a07b150632ede4c2368322e31b851550a5b4a87cd5",
+    "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+  }
+}

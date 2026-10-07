@@ -1,0 +1,23 @@
+{
+  "count": 109,
+  "same_classifier_scores_count": 109,
+  "changed_output_count": 9,
+  "changed_ids": [
+    "a2654-img_0032.dng",
+    "a3322-_dgw6269.dng",
+    "a0191-jmac_dsc2666.dng",
+    "a2370-ji2e5682.dng",
+    "shadow_portrait",
+    "a3746-_i2e5991.dng",
+    "a2916-wp_crw_7798.dng",
+    "backlit_landscape_dark_control",
+    "a1797-jmac_mg_6883.dng"
+  ],
+  "v1_fivek_reference_mae_mean": 0.09543856348127427,
+  "v2_fivek_reference_mae_mean": 0.09510827598848728,
+  "lower_reference_error_vs_v1_count": 5,
+  "higher_reference_error_vs_v1_count": 2,
+  "v1_night_limit_count": 20,
+  "v2_night_limit_count": 11,
+  "scope": "Failure-driven development revision on reused inputs, not independent preference or recognition accuracy."
+}

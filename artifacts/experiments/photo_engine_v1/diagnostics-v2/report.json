@@ -1,0 +1,2130 @@
+{
+  "manifest": {
+    "scope": "Previously inspected public regressions and synthetic controls; no external-photo acceptance",
+    "engine": {
+      "engine": "RawTherapee",
+      "version": "5.11",
+      "pp3_version": 351,
+      "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+      "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+      "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+      "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+      "platform": "macOS universal, minimum 12.3",
+      "license": "GPL-3.0-or-later; separate unmodified application",
+      "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+    },
+    "recipes": [
+      "neutral",
+      "natural",
+      "chroma",
+      "auto"
+    ],
+    "photos": [
+      {
+        "id": "LOL-27",
+        "path": "data/external/lol_pilot/27.jpg",
+        "sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3"
+      },
+      {
+        "id": "LOL-102",
+        "path": "data/external/lol_pilot/102.jpg",
+        "sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c"
+      },
+      {
+        "id": "LOL-113",
+        "path": "data/external/lol_pilot/113.jpg",
+        "sha256": "b739525767492c7a1b3c64554f77b4b08c94522f44579f8b2704d6b66b5822a5"
+      },
+      {
+        "id": "LOL-254",
+        "path": "data/external/lol_pilot/254.jpg",
+        "sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45"
+      },
+      {
+        "id": "LOL-565",
+        "path": "data/external/lol_pilot/565.jpg",
+        "sha256": "cfd82849833bbe429fe91039f18e6051929fa8ac3fa81282607eb91c164e94b0"
+      },
+      {
+        "id": "LOL-6",
+        "path": "data/external/lol_pilot/6.jpg",
+        "sha256": "d54d46e822b3b91b29ebca555eb131ed4162bba80373317d0d37fbcf622c42c8"
+      },
+      {
+        "id": "a0113-IMG_1129.dng",
+        "path": "data/raw/dngs/a0113-IMG_1129.dng",
+        "sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5"
+      },
+      {
+        "id": "a0575-kme_040.dng",
+        "path": "data/raw/dngs/a0575-kme_040.dng",
+        "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+      },
+      {
+        "id": "a0715-060812_182920__MG_6255.dng",
+        "path": "data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+        "sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef"
+      },
+      {
+        "id": "a2049-IMG_1585.dng",
+        "path": "data/raw/dngs/a2049-IMG_1585.dng",
+        "sha256": "288159dc4f30ded26db0f059d40c8ff85c9f59128cc8f3009c0862eb2b7ec22c"
+      },
+      {
+        "id": "a2132-IMG_4947.dng",
+        "path": "data/raw/dngs/a2132-IMG_4947.dng",
+        "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+      },
+      {
+        "id": "a2270-_DSC0033.dng",
+        "path": "data/raw/dngs/a2270-_DSC0033.dng",
+        "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+      },
+      {
+        "id": "synthetic-daylight",
+        "path": "data/tools/rawtherapee-5.11/fixtures/daylight.jpg",
+        "sha256": "60d4c196c3fd51d44e037b8cc9781100b49e4fcddab583a9ec1996de804146c4"
+      },
+      {
+        "id": "synthetic-extreme-dark",
+        "path": "data/tools/rawtherapee-5.11/fixtures/extreme-dark.jpg",
+        "sha256": "2a918ad488cd715cda8479a51072628999e5969096ec7a60fad0b7380e031fc8"
+      },
+      {
+        "id": "synthetic-moderately-dim",
+        "path": "data/tools/rawtherapee-5.11/fixtures/moderately-dim.jpg",
+        "sha256": "f0ffe554f24847bfa41c37af50f3070c4ef83dbaa2cddab487be241ce8520d7e"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "id": "LOL-27",
+      "size": [
+        600,
+        400
+      ],
+      "seconds": 1.000036291,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 0.14654458400000003
+              }
+            ],
+            "end_to_end_seconds": 0.1861784580000001
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "5ab07bf48396c39f566f48c4f6fade25c9818f8adbd8b74e482357ccb72a762f",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.16007858399999986
+              }
+            ],
+            "end_to_end_seconds": 0.20330854200000004
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.759125,
+            "output_png_sha256": "b26ab720286324f14c8bb8170235be4dc4db214a723b45d142a38f8aa618e58d",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.00376052833070942
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "chroma",
+                "seconds": 0.1787605000000001
+              }
+            ],
+            "end_to_end_seconds": 0.21752170900000012
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.7484041666666666,
+            "output_png_sha256": "816f34b49f2eb92d301e32cfc52cc772c17d34604cf6725e1a0d617eb0d1ca50",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.003634531591452804
+        },
+        "auto": {
+          "selected_recipe": "unchanged",
+          "selection": {
+            "median_linear_luminance": 0.0008667517104186118,
+            "p95_linear_luminance": 0.0046671596355736256,
+            "reason": "preserve ordinary, bright or extreme-dark intent",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [],
+            "end_to_end_seconds": 0.03645783399999991
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "5ab07bf48396c39f566f48c4f6fade25c9818f8adbd8b74e482357ccb72a762f",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        }
+      }
+    },
+    {
+      "id": "LOL-102",
+      "size": [
+        600,
+        400
+      ],
+      "seconds": 1.017919833,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 0.1589543750000002
+              }
+            ],
+            "end_to_end_seconds": 0.1980970419999999
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "b11d090df3c48e8cb863ecde59c87c7e808abdddf0d9fe7a6f5bb4e397106d72",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 1.25e-05
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.15696541699999988
+              }
+            ],
+            "end_to_end_seconds": 0.19674645800000023
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.8503708333333333,
+            "output_png_sha256": "f5874b5a45158ab0984db384a5caced3d44d2e0a098093074301ee807dc4b7e1",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.010670703065161612
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 1.25e-05
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "chroma",
+                "seconds": 0.19078458300000012
+              }
+            ],
+            "end_to_end_seconds": 0.23164295800000012
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.8721666666666666,
+            "output_png_sha256": "b7f8f1aa424f1af6c9ae8bed20324a287633601be137f8e39050a8e530f30c32",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.01070247818441952
+        },
+        "auto": {
+          "selected_recipe": "unchanged",
+          "selection": {
+            "median_linear_luminance": 0.003324062330648303,
+            "p95_linear_luminance": 0.029412904754281044,
+            "reason": "preserve ordinary, bright or extreme-dark intent",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [],
+            "end_to_end_seconds": 0.03511629100000002
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "b11d090df3c48e8cb863ecde59c87c7e808abdddf0d9fe7a6f5bb4e397106d72",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        }
+      }
+    },
+    {
+      "id": "LOL-113",
+      "size": [
+        600,
+        400
+      ],
+      "seconds": 1.026651417,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 0.1538621250000003
+              }
+            ],
+            "end_to_end_seconds": 0.19294924999999985
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "84f495bdecbc5cbb24bde595e5db9d51fabcda7732aad3defd6fb3eacfd157b6",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.15292666700000002
+              }
+            ],
+            "end_to_end_seconds": 0.1939510000000002
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9325458333333333,
+            "output_png_sha256": "32cc3774dfd2b9b04680547988a665feb68bb77085ba4b922f386fc7270b054d",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0055598146775189565
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "chroma",
+                "seconds": 0.18631595800000023
+              }
+            ],
+            "end_to_end_seconds": 0.22927804200000024
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.917725,
+            "output_png_sha256": "802a476d4a676cac4ba7b18af03511f2176d8103db26909465df1b3678056c34",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.005482935905456543
+        },
+        "auto": {
+          "selected_recipe": "unchanged",
+          "selection": {
+            "median_linear_luminance": 0.0017554180230945349,
+            "p95_linear_luminance": 0.004093852825462818,
+            "reason": "preserve ordinary, bright or extreme-dark intent",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [],
+            "end_to_end_seconds": 0.037419791999999674
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "84f495bdecbc5cbb24bde595e5db9d51fabcda7732aad3defd6fb3eacfd157b6",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        }
+      }
+    },
+    {
+      "id": "LOL-254",
+      "size": [
+        600,
+        400
+      ],
+      "seconds": 1.2442215840000004,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 0.17922866699999984
+              }
+            ],
+            "end_to_end_seconds": 0.21732987499999945
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "3581084209bcbcfbd23611b0e5880f5e181993585424f694b2c0ff1312579d38",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.1754991669999999
+              }
+            ],
+            "end_to_end_seconds": 0.2186127080000002
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "5d230423b4c04ffe10169449b724d8a36dbda8cad142d2c66a176f5164243365",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.029356062646005668
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "chroma",
+                "seconds": 0.20270087499999967
+              }
+            ],
+            "end_to_end_seconds": 0.24307425000000027
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "1886c6fe20d41a604f15a23ce34da5980a74c3dc23e9bd2e4392ad45c368d18d",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.029370364020852482
+        },
+        "auto": {
+          "selected_recipe": "natural",
+          "selection": {
+            "median_linear_luminance": 0.03525848686695099,
+            "p95_linear_luminance": 0.10224174708127975,
+            "reason": "moderately dim",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.17169341700000018
+              }
+            ],
+            "end_to_end_seconds": 0.21379341699999976
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "5d230423b4c04ffe10169449b724d8a36dbda8cad142d2c66a176f5164243365",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.029356062646005668
+        }
+      }
+    },
+    {
+      "id": "LOL-565",
+      "size": [
+        600,
+        400
+      ],
+      "seconds": 0.9658615830000006,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 0.16329654200000032
+              }
+            ],
+            "end_to_end_seconds": 0.19925095800000037
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "f936fd749aecba60dd324c353df1074c95274d13129e1c76f344209ffdde9930",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.16526124999999947
+              }
+            ],
+            "end_to_end_seconds": 0.20119733399999973
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9987166666666667,
+            "output_png_sha256": "1b139721940c57ffa7e4961002c0083a6bb29037f90209fecc4ca6c01a630056",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.013019177492927102
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "chroma",
+                "seconds": 0.20188962499999974
+              }
+            ],
+            "end_to_end_seconds": 0.23871541699999987
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9993958333333334,
+            "output_png_sha256": "cecec2d3a031f8b49905c57439db9928b7ed030d418bfcb029cb16dcb00e4e5f",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.013080157485662722
+        },
+        "auto": {
+          "selected_recipe": "unchanged",
+          "selection": {
+            "median_linear_luminance": 0.005242423620074987,
+            "p95_linear_luminance": 0.019716109149158,
+            "reason": "preserve ordinary, bright or extreme-dark intent",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [],
+            "end_to_end_seconds": 0.03138304200000075
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "f936fd749aecba60dd324c353df1074c95274d13129e1c76f344209ffdde9930",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        }
+      }
+    },
+    {
+      "id": "LOL-6",
+      "size": [
+        600,
+        400
+      ],
+      "seconds": 1.034728125,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 0.1701305839999998
+              }
+            ],
+            "end_to_end_seconds": 0.20905649999999998
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "99dd6db10e7b1cbf1c50d15f8ca4d650b41369fef8058d134824d5859325758d",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.16443116700000004
+              }
+            ],
+            "end_to_end_seconds": 0.20436733300000043
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9951375,
+            "output_png_sha256": "61d0a0d1fa7420d62a816badfb1fe67c31c701db1ef76965573e8f998896922a",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.013440316331152823
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "chroma",
+                "seconds": 0.20387379200000044
+              }
+            ],
+            "end_to_end_seconds": 0.2444364590000001
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9982708333333333,
+            "output_png_sha256": "6c468f49a6e701915b68eda7672074f3f84ed94c1c7ce40aad13b976ebeb2021",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.013715365353752585
+        },
+        "auto": {
+          "selected_recipe": "unchanged",
+          "selection": {
+            "median_linear_luminance": 0.006349901203066111,
+            "p95_linear_luminance": 0.02085317634046078,
+            "reason": "preserve ordinary, bright or extreme-dark intent",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [],
+            "end_to_end_seconds": 0.03589224999999985
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              600,
+              400
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "99dd6db10e7b1cbf1c50d15f8ca4d650b41369fef8058d134824d5859325758d",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        }
+      }
+    },
+    {
+      "id": "a0113-IMG_1129.dng",
+      "size": [
+        4282,
+        2848
+      ],
+      "seconds": 35.906710583999995,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.408554125
+              }
+            ],
+            "end_to_end_seconds": 4.007155375
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4282,
+              2848
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "88219c3fc456212dac1cf979e4ee930dc895c7dddacd0aab70e897c6975fd8ee",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.02027759264021328
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.4026245829999997
+              },
+              {
+                "recipe": "natural",
+                "seconds": 3.3509524999999982
+              }
+            ],
+            "end_to_end_seconds": 7.597150625000001
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4282,
+              2848
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.996464328073094,
+            "output_png_sha256": "553f875c8329af5a76e3c1bd2fe760c800cfd3184f129544cc644bf2699c8a3f",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.027545801798502603
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.020441100451852278
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.390889625
+              },
+              {
+                "recipe": "chroma",
+                "seconds": 4.758400375000001
+              }
+            ],
+            "end_to_end_seconds": 8.998728749999998
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4282,
+              2848
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9974999048801095,
+            "output_png_sha256": "2ad83d9852cbd738a9238ce40a1f0343fb3a38c3e4f8a70b86db12831f72bb1e",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.027698393429026885
+        },
+        "auto": {
+          "selected_recipe": "unchanged",
+          "selection": {
+            "median_linear_luminance": 0.10077284276485443,
+            "p95_linear_luminance": 1.0,
+            "reason": "preserve ordinary, bright or extreme-dark intent",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.310374375000002
+              }
+            ],
+            "end_to_end_seconds": 3.9783608329999964
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4282,
+              2848
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "88219c3fc456212dac1cf979e4ee930dc895c7dddacd0aab70e897c6975fd8ee",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        }
+      }
+    },
+    {
+      "id": "a0575-kme_040.dng",
+      "size": [
+        3900,
+        2594
+      ],
+      "seconds": 35.885847874999996,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 2.809283917000002
+              }
+            ],
+            "end_to_end_seconds": 3.338043875000004
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              3900,
+              2594
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "6a9e63d9e16b04084eb0479b0ac60e6cd7e8fefa4d495d30a2a38abd314f0c17",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.000176047288614752
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 2.852704749999994
+              },
+              {
+                "recipe": "natural",
+                "seconds": 2.7840295840000024
+              }
+            ],
+            "end_to_end_seconds": 6.384231917000001
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              3900,
+              2594
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9992800941027618,
+            "output_png_sha256": "160d35b6b6dfe830c3bf5b9bf04740e7aaea648ac32e238697fa9e40345e2e08",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.041742840935202204
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.00014797461597770002
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 2.8187857499999964
+              },
+              {
+                "recipe": "chroma",
+                "seconds": 3.8028371250000035
+              }
+            ],
+            "end_to_end_seconds": 7.386601833999997
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              3900,
+              2594
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9995289919538185,
+            "output_png_sha256": "29754a865b779456de81c6eefe5285ec4c6d46bc83cfe96af5ce03d176d35f22",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.04181980806238511
+        },
+        "auto": {
+          "selected_recipe": "natural",
+          "selection": {
+            "median_linear_luminance": 0.10667292401194572,
+            "p95_linear_luminance": 0.5611372649669647,
+            "reason": "moderately dim",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.000176047288614752
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 2.8218471670000014
+              },
+              {
+                "recipe": "natural",
+                "seconds": 2.7818733750000035
+              }
+            ],
+            "end_to_end_seconds": 6.410189625000001
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              3900,
+              2594
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9992800941027618,
+            "output_png_sha256": "160d35b6b6dfe830c3bf5b9bf04740e7aaea648ac32e238697fa9e40345e2e08",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.041742840935202204
+        }
+      }
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255.dng",
+      "size": [
+        4378,
+        2912
+      ],
+      "seconds": 43.407452125000006,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.6881611660000004
+              }
+            ],
+            "end_to_end_seconds": 4.370432875000006
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4378,
+              2912
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "29092e999682bf688bca266f8eb651a1455df1545abb4757d47dc57179069585",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0009035405549224645
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.817605209000007
+              },
+              {
+                "recipe": "natural",
+                "seconds": 3.662250333000003
+              }
+            ],
+            "end_to_end_seconds": 8.400217541000004
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4378,
+              2912
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9994413563823111,
+            "output_png_sha256": "8da7eb2d997303893c3552c058d118437a9842267af5d72e9b8dc24b56ffa46f",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0359590679991479
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0009016580153514827
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.6976635000000044
+              },
+              {
+                "recipe": "chroma",
+                "seconds": 5.686421374999995
+              }
+            ],
+            "end_to_end_seconds": 10.314868708999995
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4378,
+              2912
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9988581613110508,
+            "output_png_sha256": "5da7493e039f2b98e4588dd9d1a11a68ad0d075988bd5fc07fd30c0c05eaf3dc",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.036076841167375154
+        },
+        "auto": {
+          "selected_recipe": "natural",
+          "selection": {
+            "median_linear_luminance": 0.08351254463195801,
+            "p95_linear_luminance": 0.29583662301301944,
+            "reason": "moderately dim",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0009035405549224645
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.8024884590000028
+              },
+              {
+                "recipe": "natural",
+                "seconds": 3.6129795829999978
+              }
+            ],
+            "end_to_end_seconds": 8.434898458000006
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4378,
+              2912
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9994413563823111,
+            "output_png_sha256": "8da7eb2d997303893c3552c058d118437a9842267af5d72e9b8dc24b56ffa46f",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0359590679991479
+        }
+      }
+    },
+    {
+      "id": "a2049-IMG_1585.dng",
+      "size": [
+        4282,
+        2848
+      ],
+      "seconds": 44.044798,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.444861875000001
+              }
+            ],
+            "end_to_end_seconds": 4.095759000000001
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4282,
+              2848
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "7b9f7a71c58344ecbb651e11c8845586c6c00cbe253fa25c6269007d156f3e28",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 6.067993009672053e-06
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.4966155420000007
+              },
+              {
+                "recipe": "natural",
+                "seconds": 3.4726251250000075
+              }
+            ],
+            "end_to_end_seconds": 7.8750876670000025
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4282,
+              2848
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9995376845325874,
+            "output_png_sha256": "66e721ac1daf18e8bfa72bef58adbd6a6e6d12de2ad1df95a4004cb8ccac78e8",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.045967879949831494
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 5.493993670919291e-06
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.6277220420000162
+              },
+              {
+                "recipe": "chroma",
+                "seconds": 4.9016349169999955
+              }
+            ],
+            "end_to_end_seconds": 9.606710791000012
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4282,
+              2848
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9997257923158872,
+            "output_png_sha256": "4096ead5faaecbc4fd2c078d4bb80e242200af056ea958ce43dbffad96c120bc",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.04602038439582376
+        },
+        "auto": {
+          "selected_recipe": "natural",
+          "selection": {
+            "median_linear_luminance": 0.16911371052265167,
+            "p95_linear_luminance": 0.6450053453445435,
+            "reason": "moderately dim",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 6.067993009672053e-06
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.5451135419999957
+              },
+              {
+                "recipe": "natural",
+                "seconds": 3.5941916250000077
+              }
+            ],
+            "end_to_end_seconds": 8.202464332999995
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              4282,
+              2848
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9995376845325874,
+            "output_png_sha256": "66e721ac1daf18e8bfa72bef58adbd6a6e6d12de2ad1df95a4004cb8ccac78e8",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.045967879949831494
+        }
+      }
+    },
+    {
+      "id": "a2132-IMG_4947.dng",
+      "size": [
+        2848,
+        4282
+      ],
+      "seconds": 45.08087312500001,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.598179834000007
+              }
+            ],
+            "end_to_end_seconds": 4.222024457999993
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2848,
+              4282
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "b21092f3f7c7a4a3a0708d149e69c3aff0d5a251aabe44026866d161f404f86e",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0003956495442117251
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.6766351670000006
+              },
+              {
+                "recipe": "natural",
+                "seconds": 3.570167083000001
+              }
+            ],
+            "end_to_end_seconds": 8.170896875000011
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2848,
+              4282
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9993777027168864,
+            "output_png_sha256": "056386048439e03aa8cd9d4614af7c6b704b276b20d8bc9dda53f5f1d7ae721b",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.042333333632525276
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0004063915318369553
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.6321321249999983
+              },
+              {
+                "recipe": "chroma",
+                "seconds": 4.899515250000007
+              }
+            ],
+            "end_to_end_seconds": 9.402111458000007
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2848,
+              4282
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9994369066486836,
+            "output_png_sha256": "20bff0cdfd4dbcf5a9b0824671f8ccbf3890d716daa1404a9d4efccdee9e9025",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.04233563367058249
+        },
+        "auto": {
+          "selected_recipe": "natural",
+          "selection": {
+            "median_linear_luminance": 0.12046296522021294,
+            "p95_linear_luminance": 0.48555548042058855,
+            "reason": "moderately dim",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0003956495442117251
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 3.530323457999998
+              },
+              {
+                "recipe": "natural",
+                "seconds": 3.5494993750000106
+              }
+            ],
+            "end_to_end_seconds": 8.038569416000001
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2848,
+              4282
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.9993777027168864,
+            "output_png_sha256": "056386048439e03aa8cd9d4614af7c6b704b276b20d8bc9dda53f5f1d7ae721b",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.042333333632525276
+        }
+      }
+    },
+    {
+      "id": "a2270-_DSC0033.dng",
+      "size": [
+        2006,
+        3032
+      ],
+      "seconds": 22.980403332999998,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 1.772038834
+              }
+            ],
+            "end_to_end_seconds": 2.084413000000012
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2006,
+              3032
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "8ab99889dc32d49c4e4b6dfc20102f588711bf78fd26f635ec53997c6215cc71",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.000410707192406948
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 1.8007873749999987
+              },
+              {
+                "recipe": "natural",
+                "seconds": 1.8063871250000147
+              }
+            ],
+            "end_to_end_seconds": 4.080693334000017
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2006,
+              3032
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.999976159910769,
+            "output_png_sha256": "27f176f9270b5cbba7f8d0543252013a140e194e776b0e6b0cc0055916b9acd1",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.04689651938045726
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.00041169367885788546
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 1.7494117079999967
+              },
+              {
+                "recipe": "chroma",
+                "seconds": 2.428651500000001
+              }
+            ],
+            "end_to_end_seconds": 4.623412083999995
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2006,
+              3032
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.999999671171183,
+            "output_png_sha256": "61efabdbc610155660ec74f40d878b3712fdbf926da16ba30ed4e77503d9d99c",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.046623757306267236
+        },
+        "auto": {
+          "selected_recipe": "natural",
+          "selection": {
+            "median_linear_luminance": 0.22348923236131668,
+            "p95_linear_luminance": 0.28083614259958267,
+            "reason": "moderately dim",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.000410707192406948
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 1.7514621669999997
+              },
+              {
+                "recipe": "natural",
+                "seconds": 1.7694674579999798
+              }
+            ],
+            "end_to_end_seconds": 4.000020417000002
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              2006,
+              3032
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.999976159910769,
+            "output_png_sha256": "27f176f9270b5cbba7f8d0543252013a140e194e776b0e6b0cc0055916b9acd1",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.04689651938045726
+        }
+      }
+    },
+    {
+      "id": "synthetic-daylight",
+      "size": [
+        256,
+        192
+      ],
+      "seconds": 0.4317442500000084,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 0.11023566700001197
+              }
+            ],
+            "end_to_end_seconds": 0.12614683300000706
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "028b582da0e2b8d37409ff6dde6c552f89cf61f4fc0f7cbf7ab513d76286c077",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.10861054100001866
+              }
+            ],
+            "end_to_end_seconds": 0.1214367080000045
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "c4e404bba69f84e23914ddcf279b9d105de02e8bb4172462f4fbff86a3f0e6f5",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.06013071770761527
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "chroma",
+                "seconds": 0.11943954200000917
+              }
+            ],
+            "end_to_end_seconds": 0.13219987499999775
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "ea91b66479228f9fa04fedbedd45440ddfb4b67fd4fb9b8ec9fc0e088c18dea7",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.06143790974336512
+        },
+        "auto": {
+          "selected_recipe": "unchanged",
+          "selection": {
+            "median_linear_luminance": 0.46256953477859497,
+            "p95_linear_luminance": 0.46256953477859497,
+            "reason": "preserve ordinary, bright or extreme-dark intent",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [],
+            "end_to_end_seconds": 0.013037749999995185
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "028b582da0e2b8d37409ff6dde6c552f89cf61f4fc0f7cbf7ab513d76286c077",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        }
+      }
+    },
+    {
+      "id": "synthetic-extreme-dark",
+      "size": [
+        256,
+        192
+      ],
+      "seconds": 0.40680933300001243,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 0.1048684590000164
+              }
+            ],
+            "end_to_end_seconds": 0.11668158399999129
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "2486ecd96f06d47f62486cec4da17081c25121f308e9f4c88ac99ddc98c8bf55",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.10742199999998547
+              }
+            ],
+            "end_to_end_seconds": 0.12089633299999036
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "77c538b5aa00b7336858834b235efade528a601948ac9e1b4e5fc4825c820a16",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.006535947556589164
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "chroma",
+                "seconds": 0.11447137499999371
+              }
+            ],
+            "end_to_end_seconds": 0.12807379200000923
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "77c538b5aa00b7336858834b235efade528a601948ac9e1b4e5fc4825c820a16",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.006535947556589164
+        },
+        "auto": {
+          "selected_recipe": "unchanged",
+          "selection": {
+            "median_linear_luminance": 0.001841862453147769,
+            "p95_linear_luminance": 0.001841862453147769,
+            "reason": "preserve ordinary, bright or extreme-dark intent",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [],
+            "end_to_end_seconds": 0.01258745800001293
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "2486ecd96f06d47f62486cec4da17081c25121f308e9f4c88ac99ddc98c8bf55",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        }
+      }
+    },
+    {
+      "id": "synthetic-moderately-dim",
+      "size": [
+        256,
+        192
+      ],
+      "seconds": 0.5779397910000057,
+      "recipes": {
+        "neutral": {
+          "selected_recipe": "neutral",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "neutral",
+                "seconds": 0.10811116700000412
+              }
+            ],
+            "end_to_end_seconds": 0.11979558400000201
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 0.0,
+            "output_png_sha256": "97e09f6305124cd9fa160c0e7d8792c62a5cd39f5e3b20b520113ed1e7adcbc5",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0
+        },
+        "natural": {
+          "selected_recipe": "natural",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.1168782500000134
+              }
+            ],
+            "end_to_end_seconds": 0.13003108299997734
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "a28a514d526279f5419ed4d9e32f3a54e95779664034b549feac46967ba3cd24",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0392156862745098
+        },
+        "chroma": {
+          "selected_recipe": "chroma",
+          "selection": {
+            "reason": "explicit recipe",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "chroma",
+                "seconds": 0.14868458299997656
+              }
+            ],
+            "end_to_end_seconds": 0.1635430000000042
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "a28a514d526279f5419ed4d9e32f3a54e95779664034b549feac46967ba3cd24",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0392156862745098
+        },
+        "auto": {
+          "selected_recipe": "natural",
+          "selection": {
+            "median_linear_luminance": 0.07653534412384033,
+            "p95_linear_luminance": 0.07653534412384033,
+            "reason": "moderately dim",
+            "semantics": "Provisional fixed rule, not calibrated aesthetic confidence.",
+            "candidate_new_full_channel_fraction": 0.0
+          },
+          "timing": {
+            "engine_runs": [
+              {
+                "recipe": "natural",
+                "seconds": 0.11758800000001202
+              }
+            ],
+            "end_to_end_seconds": 0.1335072079999975
+          },
+          "export": {
+            "renderer_version": "rawtherapee-conservative-v1",
+            "strength": 1.0,
+            "blend_space": "display sRGB",
+            "size": [
+              256,
+              192
+            ],
+            "full_resolution": true,
+            "changed_pixel_fraction": 1.0,
+            "output_png_sha256": "a28a514d526279f5419ed4d9e32f3a54e95779664034b549feac46967ba3cd24",
+            "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+          },
+          "mean_absolute_srgb_change": 0.0392156862745098
+        }
+      }
+    }
+  ]
+}

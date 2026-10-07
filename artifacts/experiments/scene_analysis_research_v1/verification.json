@@ -1,0 +1,142 @@
+{
+  "status": "feasibility_probe_completed_not_production_acceptance",
+  "app_dependency_hashes_unchanged": true,
+  "all17_original_source_hashes_unchanged": true,
+  "case_count": 17,
+  "passes": 2,
+  "binary_sha256": "41729978512660fc3056029d43d0841f5e4d5541eda547460a893dd29630ea99",
+  "native_source_sha256": "e40df5078621c59732059c0b7cfaed6f13bcc1eb1c7690cfc417ad8ceef9202d",
+  "python_sha256": "c49169773a9e7fa9dd94b5768cda55e0e317af6f710995c53a7ff8e599ac6fd4",
+  "thumbnail_limit": 512,
+  "repeats": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "a0575-kme_040",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 1,
+      "second_face_count": 1
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "a3246-kme_445",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "user-cloudy-trees",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "LOL-27",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "LOL-102",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "LOL-113",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "LOL-254",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "LOL-565",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    },
+    {
+      "id": "LOL-6",
+      "max_label_score_difference": 0.0,
+      "first_face_count": 0,
+      "second_face_count": 0
+    }
+  ],
+  "single_processes": [
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "subprocess_wall_seconds": 0.2099960000000003,
+      "first_total_ms": 95.039963722229,
+      "second_total_ms": 16.26896858215332
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "subprocess_wall_seconds": 0.21086650000000073,
+      "first_total_ms": 98.60694408416748,
+      "second_total_ms": 21.202921867370605
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "subprocess_wall_seconds": 0.19781529200000048,
+      "first_total_ms": 91.3090705871582,
+      "second_total_ms": 16.093015670776367
+    }
+  ],
+  "warm_total_ms_quantiles": [
+    17.88496971130371,
+    19.333529472351074
+  ],
+  "native_model_downloads": 0,
+  "native_new_python_dependencies": 0,
+  "sharpening": false
+}

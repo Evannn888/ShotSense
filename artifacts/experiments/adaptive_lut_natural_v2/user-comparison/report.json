@@ -1,0 +1,53 @@
+{
+  "scope": "Existing native678x452PNG comparison; no new inference/renderer/style changes. Region rectangles include background and are descriptive display-sRGB statistics, not recovered detail or quality scores.",
+  "size": [
+    678,
+    452
+  ],
+  "cases": {
+    "original": {
+      "png_bytes": 269637,
+      "png_sha256": "64304e4c74d457a0b9b8b836db5a3a9df821a7d61bc490d8c746f46cc62ec893",
+      "mean_absolute_rgb_delta_codes": 0.0,
+      "new_all_black_fraction": 0.0,
+      "regions_display_luma_codes": {
+        "sky": 101.35044021931515,
+        "tree group": 38.89850507580477,
+        "foreground": 33.19132883480825
+      }
+    },
+    "old50": {
+      "png_bytes": 354083,
+      "png_sha256": "f3e39609dc7c19cf857a17b589d4d54615acfb9cc031c2da891cd431c66377b6",
+      "mean_absolute_rgb_delta_codes": 23.12482487969997,
+      "new_all_black_fraction": 0.0035665805205314957,
+      "regions_display_luma_codes": {
+        "sky": 132.3354823367962,
+        "tree group": 47.96050476843198,
+        "foreground": 39.75321164208455
+      }
+    },
+    "old100": {
+      "png_bytes": 362590,
+      "png_sha256": "38058b4715f90946c93247915a9ab9eada53da705a3d0fa8adc6e4ac2af11173",
+      "mean_absolute_rgb_delta_codes": 46.25000217540745,
+      "new_all_black_fraction": 0.04050173597514815,
+      "regions_display_luma_codes": {
+        "sky": 163.31443336539692,
+        "tree group": 57.030267460020774,
+        "foreground": 46.328862079646015
+      }
+    },
+    "natural": {
+      "png_bytes": 301073,
+      "png_sha256": "7756cdca4b6ee08221cfb3a0caa25fed8eab723972375156cde0bc982899403d",
+      "mean_absolute_rgb_delta_codes": 2.949914506487065,
+      "new_all_black_fraction": 0.0,
+      "regions_display_luma_codes": {
+        "sky": 104.3159587456714,
+        "tree group": 40.67654501349948,
+        "foreground": 35.396040078662736
+      }
+    }
+  }
+}

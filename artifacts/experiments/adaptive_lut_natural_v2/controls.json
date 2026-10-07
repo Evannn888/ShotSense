@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Neutral ramp",
+    "protection": {
+      "version": "natural-adaptive-lut-v1",
+      "settings": {
+        "color_strength": 0.35,
+        "tone_lift": 0.031176463365554796,
+        "sample_color_change_p95": 0.008414089679718018,
+        "sample_luminance_q30": 0.2980392277240753,
+        "sample_size": [
+          256,
+          256
+        ]
+      },
+      "size": [
+        256,
+        256
+      ],
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "minimum_shadow_luminance_delta_codes": 0.0,
+      "row_chunk": 128,
+      "input_pixels_sha256": "fb5f204ed84efa48484d193e260fcb573938c9153d852300b8f0cdf58cc2b85b",
+      "output_pixels_sha256": "9d87399b6f383e989b56756e6868f0522da0c08fc9150ff9b3c149a2c56a4f4f",
+      "seconds": 0.020313625000000002,
+      "shadow_protection": true,
+      "neutral_color_protection": true,
+      "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+    },
+    "export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 1.0,
+      "blend_space": "display sRGB",
+      "size": [
+        256,
+        256
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.625,
+      "output_png_sha256": "60273bdd0b2070b9678764beea81f94e87a3743628b435ba240d6b95d47006db",
+      "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+    },
+    "decreasing_channel_steps": [
+      0,
+      0,
+      0
+    ],
+    "maximum_neutral_channel_spread": 0
+  },
+  {
+    "name": "Color / skin patches",
+    "protection": {
+      "version": "natural-adaptive-lut-v1",
+      "settings": {
+        "color_strength": 0.15470578661536,
+        "tone_lift": 0.08244000434875487,
+        "sample_color_change_p95": 0.2585552930831909,
+        "sample_luminance_q30": 0.2125999927520752,
+        "sample_size": [
+          256,
+          256
+        ]
+      },
+      "size": [
+        256,
+        256
+      ],
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "minimum_shadow_luminance_delta_codes": 0.0,
+      "row_chunk": 128,
+      "input_pixels_sha256": "b08e59446b329ded70a1af74585d99ed49b39a3a7edb9032ee9aca9d8c70dc7c",
+      "output_pixels_sha256": "5fd4afaa5ff4009d67534542f0e944377c49ab25ad3a53c1d3d00176154e4cab",
+      "seconds": 0.013927166000000213,
+      "shadow_protection": true,
+      "neutral_color_protection": true,
+      "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+    },
+    "export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 1.0,
+      "blend_space": "display sRGB",
+      "size": [
+        256,
+        256
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.875,
+      "output_png_sha256": "882a2688199dab71d994e848480abc1729f4271370781ddbb080b10b716b12d0",
+      "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+    },
+    "patches": {
+      "original": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          128,
+          128,
+          128
+        ],
+        [
+          32,
+          32,
+          32
+        ],
+        [
+          192,
+          144,
+          112
+        ],
+        [
+          230,
+          195,
+          170
+        ],
+        [
+          138,
+          97,
+          78
+        ],
+        [
+          90,
+          120,
+          80
+        ],
+        [
+          70,
+          115,
+          150
+        ],
+        [
+          180,
+          155,
+          90
+        ],
+        [
+          180,
+          185,
+          190
+        ],
+        [
+          220,
+          220,
+          210
+        ],
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          0,
+          255,
+          0
+        ],
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          30,
+          45,
+          50
+        ]
+      ],
+      "raw": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          233,
+          233,
+          234
+        ],
+        [
+          145,
+          145,
+          145
+        ],
+        [
+          11,
+          12,
+          12
+        ],
+        [
+          193,
+          153,
+          118
+        ],
+        [
+          210,
+          187,
+          170
+        ],
+        [
+          159,
+          109,
+          77
+        ],
+        [
+          96,
+          138,
+          77
+        ],
+        [
+          47,
+          124,
+          166
+        ],
+        [
+          185,
+          163,
+          83
+        ],
+        [
+          181,
+          185,
+          189
+        ],
+        [
+          210,
+          208,
+          207
+        ],
+        [
+          214,
+          7,
+          0
+        ],
+        [
+          24,
+          236,
+          19
+        ],
+        [
+          31,
+          22,
+          208
+        ],
+        [
+          1,
+          33,
+          44
+        ]
+      ],
+      "natural": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          131,
+          131,
+          131
+        ],
+        [
+          34,
+          34,
+          34
+        ],
+        [
+          193,
+          146,
+          114
+        ],
+        [
+          229,
+          196,
+          172
+        ],
+        [
+          142,
+          100,
+          79
+        ],
+        [
+          92,
+          124,
+          80
+        ],
+        [
+          69,
+          119,
+          155
+        ],
+        [
+          182,
+          157,
+          90
+        ],
+        [
+          181,
+          186,
+          191
+        ],
+        [
+          220,
+          220,
+          211
+        ],
+        [
+          252,
+          4,
+          3
+        ],
+        [
+          6,
+          254,
+          5
+        ],
+        [
+          2,
+          1,
+          255
+        ],
+        [
+          31,
+          48,
+          53
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Edge / subtle grain",
+    "protection": {
+      "version": "natural-adaptive-lut-v1",
+      "settings": {
+        "color_strength": 0.35,
+        "tone_lift": 0.11588234961032866,
+        "sample_color_change_p95": 0.011785104870796204,
+        "sample_luminance_q30": 0.1568627506494522,
+        "sample_size": [
+          256,
+          256
+        ]
+      },
+      "size": [
+        256,
+        256
+      ],
+      "new_black_pixel_fraction": 0.0,
+      "new_full_channel_fraction": 0.0,
+      "minimum_shadow_luminance_delta_codes": 0.0,
+      "row_chunk": 128,
+      "input_pixels_sha256": "37edbafcac8979976024eef1803c45e9057bb2e22e53924951f8439ad23fb5ef",
+      "output_pixels_sha256": "ff331a3625bf51f1cd2ccf1f50aabc17ef288cd816901b74d656870fdf6b579e",
+      "seconds": 0.026941667000000002,
+      "shadow_protection": true,
+      "neutral_color_protection": true,
+      "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+    },
+    "export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 1.0,
+      "blend_space": "display sRGB",
+      "size": [
+        256,
+        256
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 1.0,
+      "output_png_sha256": "cdb468cac824074b69dd7a99cee2071ef4791fa296d667f70d46972e4ae57d75",
+      "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+    },
+    "grain_std_channels": {
+      "original": [
+        1.9978978030362997,
+        1.9978978030362997,
+        1.9978978030362997
+      ],
+      "raw": [
+        4.580397229008633,
+        4.788505569249665,
+        4.862776797509539
+      ],
+      "natural": [
+        1.9978978030362997,
+        1.9978978030362997,
+        1.9978978030362997
+      ]
+    }
+  }
+]

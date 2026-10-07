@@ -1,0 +1,12 @@
+{
+  "engine": "RawTherapee",
+  "version": "5.11",
+  "pp3_version": 351,
+  "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+  "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+  "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+  "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+  "platform": "macOS universal, minimum 12.3",
+  "license": "GPL-3.0-or-later; separate unmodified application",
+  "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+}

@@ -1,0 +1,7 @@
+{
+  "health": "ok",
+  "url": "http://127.0.0.1:8501",
+  "listener": "COMMAND   PID     USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nPython  50819 evanchen    6u  IPv4 0xe19e8125661835fb      0t0  TCP 127.0.0.1:8501 (LISTEN)\n",
+  "initial_restart": "First replacement launch found port still held during graceful shutdown; old process exited and next launch succeeded.",
+  "browser_visual_acceptance": "unverified"
+}

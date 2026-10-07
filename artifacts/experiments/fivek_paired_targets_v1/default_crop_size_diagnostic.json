@@ -1,0 +1,8 @@
+{
+  "scope": "Header size comparison, not an applied crop or pixel-alignment proof. Transpose does not identify who rotated a photo.",
+  "counts": {
+    "same_default_crop_size": 61,
+    "transposed_default_crop_size": 39
+  },
+  "special": []
+}

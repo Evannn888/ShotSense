@@ -1,0 +1,17 @@
+{
+  "count": 99,
+  "zero_new_black_full_count": 99,
+  "fixed_input_repeat_exact": true,
+  "original_reference_error_mean": 0.10089307276513239,
+  "automatic_reference_error_mean": 0.09459222467484499,
+  "lower_pooled_reference_error_count": 64,
+  "higher_pooled_reference_error_count": 35,
+  "shadow_strength_min_max": [
+    0.0,
+    0.75
+  ],
+  "jpeg_source_mae_codes_mean": 0.47917138584451235,
+  "protected_files_unchanged": 19,
+  "elapsed_seconds": 47.806571915999996,
+  "scope": "Unchanged actual JPEG route on <=960px RAW-developed FiveK development views. Coarse reference proximity is not independent photographic quality/preference or native alignment. No training, tuning or sharpening."
+}

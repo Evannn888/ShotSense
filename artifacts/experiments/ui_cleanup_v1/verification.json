@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-06",
+  "protected_baseline_unchanged": {
+    "src/lut_natural.py": true,
+    "src/white_balance.py": true,
+    "src/scene_policy.py": true,
+    "src/photo_engine.py": true,
+    "src/jpeg_inference.py": true,
+    "src/inference.py": true,
+    "src/preview.py": true,
+    "requirements.lock.txt": true,
+    "artifacts/model/model.onnx": true,
+    "artifacts/model/model.json": true
+  },
+  "app_sha256": "ee71d7e42732079247441ff00c52bb30c41caed65c7762a5fb319d04b040954c",
+  "full_project_tests": {
+    "passed": 91,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 1,
+    "log": "full_tests.log"
+  },
+  "browser_png_download": {
+    "user_input_path": "/Users/evanchen/Downloads/images (2).jpeg",
+    "source_sha256": "e4172d7c619478e0272159d3c5b81450e527bb0a39139db690676ba19c4cf4fe",
+    "actual_browser_download_path": "/Users/evanchen/Downloads/shotsense-natural-color-s100-678x452-da7fcbc5.png",
+    "png_sha256": "da7fcbc53bf74dcbc9147821694a2d107ea0ed07d1b8f66770b31fa8089a9336",
+    "format": "PNG",
+    "size": [
+      678,
+      452
+    ],
+    "exact_current_worker_and_render_pixels": true,
+    "after_prepare_png_visible_without_reopening": true,
+    "scene_beta_default_off": true,
+    "scope": "Actual IAB upload/PNG download plus offline pixel contract; no new image-quality claim."
+  },
+  "layout_observation": {
+    "desktop_viewport": [
+      1280,
+      900
+    ],
+    "heading_order": [
+      "ShotSense",
+      "1 · Add a photo",
+      "2 · Compare the result",
+      "3 · Save your photo"
+    ],
+    "desktop_horizontal_overflow": false,
+    "narrow_visual_check": true,
+    "viewport_restored": true
+  },
+  "screenshots": {
+    "home-desktop.jpg": {
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "82ff2aa30834ff39ecd4b5bef7c51dc8f104963b16f2f3a90a149e749ce7f4c3"
+    },
+    "home-narrow.jpg": {
+      "size": [
+        515,
+        724
+      ],
+      "sha256": "a5b62012a19139db1eef2dc6fc7b5ef5ec3264710ab57b2b9bc71f37d919bf4a"
+    },
+    "result-desktop.jpg": {
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "28761cc785154debc222181ad6458c3edadfc5130838f6bed915caa3e13f2e1a"
+    },
+    "result-narrow.jpg": {
+      "size": [
+        515,
+        724
+      ],
+      "sha256": "283916c9cb94735add60af4b6f58efd8d771be1611bf59fedf2645f08c4f3b7e"
+    }
+  },
+  "health": {
+    "status": 200,
+    "body": "ok"
+  },
+  "scope": "UI only; no image-quality acceptance or default promotion."
+}

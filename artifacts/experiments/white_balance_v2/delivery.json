@@ -1,0 +1,10 @@
+{
+  "source_baseline_exact": true,
+  "files": {
+    "artifacts/experiments/white_balance_v2/REPORT.zh-CN.md": "654a793e64ab22d55ec86c09c5ae61b64cfd590fd6ba9a9573d1fbf61d1dd1cb",
+    "artifacts/experiments/white_balance_v2/verification.json": "213c62d701702cb1959b23392d0c9b3e4133179c75f725ce50fa1a9478bb42a8",
+    "artifacts/experiments/white_balance_v2/visual_review.json": "2e745e45eb9b0bb8a079adbaf83ef44d8a2ac3cc9708a459656882951160b15f",
+    "SHOTSENSE_MASTER_PLAN.md": "dc1aed6f909a70dc22a2bd4d5b577dbffee21ca43b822fc2e58a6f414efdbe03"
+  },
+  "no_default_promotion": true
+}

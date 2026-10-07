@@ -1,0 +1,107 @@
+{
+  "scope": "Screenshot-derived JPEG proxy plus previously inspected public regressions and synthetic controls; no original-file or independent preference acceptance",
+  "engine": {
+    "engine": "RawTherapee",
+    "version": "5.11",
+    "pp3_version": 351,
+    "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+    "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+    "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+    "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+    "platform": "macOS universal, minimum 12.3",
+    "license": "GPL-3.0-or-later; separate unmodified application",
+    "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+  },
+  "profiles": {
+    "gentle": {
+      "path": "artifacts/photo_engine/natural.pp3",
+      "sha256": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b"
+    },
+    "shadows": {
+      "path": "artifacts/experiments/photo_engine_shadow_v2/candidate-shadows.pp3",
+      "sha256": "3664d1b6a80f55f9ec51ac19cca926f0937b384abd1359c23f24317a81a28c4c"
+    },
+    "equalizer": {
+      "path": "artifacts/experiments/photo_engine_shadow_v2/candidate-equalizer.pp3",
+      "sha256": "b17f48f716422eb6858c574bffe69b063f3b5a98467f6688c833f8bcd43a87c2"
+    }
+  },
+  "photos": [
+    {
+      "id": "screenshot-proxy",
+      "path": "data/user_photo_diagnostics/shadow-v2/screenshot-left-proxy.jpg",
+      "sha256": "2be35f5d4d277fc1f6b9be8c203dcc5f14b554571f38e9ab342a4e088db7b126"
+    },
+    {
+      "id": "LOL-27",
+      "path": "data/external/lol_pilot/27.jpg",
+      "sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3"
+    },
+    {
+      "id": "LOL-102",
+      "path": "data/external/lol_pilot/102.jpg",
+      "sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c"
+    },
+    {
+      "id": "LOL-254",
+      "path": "data/external/lol_pilot/254.jpg",
+      "sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45"
+    },
+    {
+      "id": "a0575-kme_040.dng",
+      "path": "data/raw/dngs/a0575-kme_040.dng",
+      "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+    },
+    {
+      "id": "a2132-IMG_4947.dng",
+      "path": "data/raw/dngs/a2132-IMG_4947.dng",
+      "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+    },
+    {
+      "id": "a2270-_DSC0033.dng",
+      "path": "data/raw/dngs/a2270-_DSC0033.dng",
+      "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+    },
+    {
+      "id": "synthetic-daylight",
+      "path": "data/user_photo_diagnostics/shadow-v2/daylight.jpg",
+      "sha256": "9fa07b7c2f7cfc6d719fd0c29ee1330b7f0889c07615f9c8476fa2e87663b5d7"
+    },
+    {
+      "id": "synthetic-black",
+      "path": "data/user_photo_diagnostics/shadow-v2/black.jpg",
+      "sha256": "d3a30c16739a45dd6b1bbde9424f567ab9c0f5bc9216e838e8ac36932cff5ad7"
+    },
+    {
+      "id": "synthetic-gray-ramp",
+      "path": "data/user_photo_diagnostics/shadow-v2/gray-ramp.jpg",
+      "sha256": "45db18524894828b11ded1332e9df3539dcec8ecb856f37c7d690c76572d193b"
+    },
+    {
+      "id": "synthetic-shadow-sky-step",
+      "path": "data/user_photo_diagnostics/shadow-v2/shadow-sky-step.jpg",
+      "sha256": "2c42c153bc7811eb1227868acdc09a197ce95d163302bdc915fbc8f64302a99a"
+    }
+  ],
+  "proxy_regions": {
+    "sky": [
+      0.02,
+      0.02,
+      0.55,
+      0.26
+    ],
+    "foreground": [
+      0.08,
+      0.55,
+      0.94,
+      0.94
+    ],
+    "silhouette": [
+      0.64,
+      0.16,
+      0.81,
+      0.4
+    ]
+  },
+  "source_sha256": "82b649a6dac433275a5882ee0293a52ba222fa00432f1e404b46be13cf3d0c76"
+}

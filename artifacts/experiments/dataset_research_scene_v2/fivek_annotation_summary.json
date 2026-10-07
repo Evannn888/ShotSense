@@ -1,0 +1,34 @@
+{
+  "source_url": "https://data.csail.mit.edu/graphics/fivek/",
+  "source_html_bytes": 4629128,
+  "source_html_sha256": "cc11c048a6c29459628cd0989ba28324857988eac10894773b8a20dbb9fd3127",
+  "record_count": 5000,
+  "complete_five_expert_url_records": 5000,
+  "annotation_counts": {
+    "subject": {
+      "nature": 1089,
+      "person(s)": 1341,
+      "man-made object": 1869,
+      "animal(s)": 300,
+      "unknown": 366,
+      "abstract": 35
+    },
+    "light": {
+      "sun or sky": 3404,
+      "mixed": 831,
+      "artificial": 765
+    },
+    "location": {
+      "outdoors": 3593,
+      "indoors": 1055,
+      "unknown": 352
+    },
+    "time": {
+      "day": 3294,
+      "unknown": 1367,
+      "dawn or dusk": 210,
+      "night": 129
+    }
+  },
+  "scope": "Public metadata only; no source/target photo pixels downloaded."
+}

@@ -1,0 +1,15 @@
+{
+  "src/scene_policy.py": "89cb9750c864947242ebaf0d074ed6995ad07e84ed81c112c2853f3cfcb100fb",
+  "src/lut_natural.py": "420fad05e4465b831992bd74e12bafccead95545dad7685b80ff0301f814d198",
+  "src/white_balance.py": "9af1adf64cb68d4a8938a77e1612420530792091f6f1177afa52170541f4ea99",
+  "scripts/prepare_white_balance.py": "b376a74d3dc2404979aca89fb0927ae009ff88fd2447602fa46e2d5249190554",
+  "tests/test_white_balance.py": "1725395a1ea2e8f45080de4c2bd96dbaab1353a2bdb7caf91c70feddc3418da2",
+  "artifacts/experiments/scene_policy_connection_v1/evaluate.py": "8ce777cb29444424d68f28eda3fe1b21136957f53ee8efab6ec434304f7e28a4",
+  "artifacts/experiments/white_balance_v1/PROTOCOL.md": "8c76d12b800f3a492e3552b3f493c214f73b35b3827f05f25941b298114c8d53",
+  "artifacts/experiments/white_balance_v1/evaluate.py": "08f392f231726297cc36ad0e32caa270de71ac0422154ef265353aeacdc4de4b",
+  "artifacts/experiments/white_balance_v1/input_baseline.json": "aee9c97ce50e82b9500c847e1939f2c0ca304d800e891cad4185d041f72b9940",
+  "artifacts/experiments/white_balance_v1/baseline.json": "6df3edfedb27e83a2a570afd093d0bdcabc16568d69d7bc28f0b260669a0e815",
+  "data/external_models/deep_white_balance/manifest.json": "d94b270d28ed858d8044ecc6a954e32ab35fca4fbd001b62e16153d2e5bd10ce",
+  "data/external_models/deep_white_balance/awb_fp32.onnx": "f237c85fb6fd4f49857a18026dbdb93e57e9871c4e5a505417dfc393c21cc3bb",
+  "data/external_models/deep_white_balance/PyTorch/models/net_awb.pth": "b70f4cfab8cc788d137836bdc54af7c9d7f329eaf83538c1bf616d34bedeb801"
+}

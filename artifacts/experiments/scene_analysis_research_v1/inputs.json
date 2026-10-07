@@ -1,0 +1,308 @@
+[
+  {
+    "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/ahmet-yuksek-7lK0bpUj8AA-unsplash.png",
+    "thumbnail_sha256": "f887b58a9f044c149a70dbca35c4e49493090ead9838ac4ae79dffd5eb01ae48",
+    "thumbnail_size": [
+      512,
+      384
+    ],
+    "original_render_sha256": "48f38472f4e693858ce2677a5ad142e2dbecd025013f27c806da79b6ca82463e",
+    "source_path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+    "source_sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3",
+    "source_quantiles": [
+      0.07394353300333023,
+      0.16408831775188445,
+      0.23323844373226166,
+      0.43165325224399564
+    ]
+  },
+  {
+    "id": "martin-bennie-MhYU5K4A93I-unsplash",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/martin-bennie-MhYU5K4A93I-unsplash.png",
+    "thumbnail_sha256": "ee5527e85fed3b6b49262295fbf4dbe1a27f838e9c4bc6b362a13e5023afe86a",
+    "thumbnail_size": [
+      512,
+      337
+    ],
+    "original_render_sha256": "4797cf8920a7bfccf4343f2cc94a88cf76c3f8a16fe27dc40b6391bcc6526766",
+    "source_path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+    "source_sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d",
+    "source_quantiles": [
+      0.040101177990436554,
+      0.15839513391256332,
+      0.3321152925491333,
+      0.7506431579589845
+    ]
+  },
+  {
+    "id": "nir-himi-1P1yaGS_Gek-unsplash",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/nir-himi-1P1yaGS_Gek-unsplash.png",
+    "thumbnail_sha256": "b176992bb2f60e32c097436f50b4d28fa58055c76f1c632e889ad10bb6787b68",
+    "thumbnail_size": [
+      341,
+      512
+    ],
+    "original_render_sha256": "f073df8c892ac50f05477795eb039bfc4277ad3ca1fab5b8d5d2e81ef3d86059",
+    "source_path": "/Users/evanchen/Downloads/nir-himi-1P1yaGS_Gek-unsplash.jpg",
+    "source_sha256": "649d9b8d4763487d787574812486cd62a381c6c25e92337223bafb59a1f3f5ee",
+    "source_quantiles": [
+      0.038993723690509796,
+      0.1068086251616478,
+      0.42818039655685425,
+      0.9098039269447327
+    ]
+  },
+  {
+    "id": "a0113-IMG_1129",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/a0113-IMG_1129.png",
+    "thumbnail_sha256": "1b2abe4587ce4dca573163ea1ac7f9a922d11113d7b7aa2e60561cbdd499c3f3",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "88219c3fc456212dac1cf979e4ee930dc895c7dddacd0aab70e897c6975fd8ee",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0113-IMG_1129.dng",
+    "source_sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5",
+    "source_quantiles": [
+      0.1282949149608612,
+      0.22568830549716948,
+      0.35394157469272614,
+      1.0
+    ]
+  },
+  {
+    "id": "a0575-kme_040",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/a0575-kme_040.png",
+    "thumbnail_sha256": "d6d7f07398b0e01deb9e5ebec248f86c8d707d0f3b7c5d1d3252ba61b96bacee",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "6a9e63d9e16b04084eb0479b0ac60e6cd7e8fefa4d495d30a2a38abd314f0c17",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0575-kme_040.dng",
+    "source_sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839",
+    "source_quantiles": [
+      0.11711215227842331,
+      0.2504047155380249,
+      0.34583136439323425,
+      0.7843399703502654
+    ]
+  },
+  {
+    "id": "a0715-060812_182920__MG_6255",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/a0715-060812_182920__MG_6255.png",
+    "thumbnail_sha256": "727988441e13b314fc9859b85229a714bb90c62bfd9f803221af9cec84d9db0b",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "29092e999682bf688bca266f8eb651a1455df1545abb4757d47dc57179069585",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+    "source_sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef",
+    "source_quantiles": [
+      0.04791294410824776,
+      0.10897490382194519,
+      0.3156988322734833,
+      0.5794214159250258
+    ]
+  },
+  {
+    "id": "a2049-IMG_1585",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/a2049-IMG_1585.png",
+    "thumbnail_sha256": "6f7e30393c012420eee422684d5c35e7e0a03e137bbbedb016387efcc7d55706",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "7b9f7a71c58344ecbb651e11c8845586c6c00cbe253fa25c6269007d156f3e28",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2049-IMG_1585.dng",
+    "source_sha256": "288159dc4f30ded26db0f059d40c8ff85c9f59128cc8f3009c0862eb2b7ec22c",
+    "source_quantiles": [
+      0.21085725724697113,
+      0.3527989059686661,
+      0.4487670660018921,
+      0.8257427215576172
+    ]
+  },
+  {
+    "id": "a2132-IMG_4947",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/a2132-IMG_4947.png",
+    "thumbnail_sha256": "582b00168a464972627c6e470e8cb16c965e4c0b6a6f4a85403ae3fdb843f642",
+    "thumbnail_size": [
+      341,
+      512
+    ],
+    "original_render_sha256": "b21092f3f7c7a4a3a0708d149e69c3aff0d5a251aabe44026866d161f404f86e",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2132-IMG_4947.dng",
+    "source_sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489",
+    "source_quantiles": [
+      0.1313492625951767,
+      0.2712388217449188,
+      0.3802807927131653,
+      0.7243084281682965
+    ]
+  },
+  {
+    "id": "a2270-_DSC0033",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/a2270-_DSC0033.png",
+    "thumbnail_sha256": "6773d92905052b29e0a814fc50ea2c6e4616cd177adca09d12e934bce4192d64",
+    "thumbnail_size": [
+      339,
+      512
+    ],
+    "original_render_sha256": "8ab99889dc32d49c4e4b6dfc20102f588711bf78fd26f635ec53997c6215cc71",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2270-_DSC0033.dng",
+    "source_sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99",
+    "source_quantiles": [
+      0.09711765497922897,
+      0.4185118496417999,
+      0.4979286193847656,
+      0.5432831645011902
+    ]
+  },
+  {
+    "id": "a3246-kme_445",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/a3246-kme_445.png",
+    "thumbnail_sha256": "29983e2e62500ba69aef7233c21b263bf6d21a401aac1f9b0c0683c6b2e88a31",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "690174c0d4f29f260861df377d52c1c917df64d96ac0b0c1dba8c26bc258cc54",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a3246-kme_445.dng",
+    "source_sha256": "ff04a6274a462690707ec2dffd5644a10dc9342f7b8e089170d5b65044361442",
+    "source_quantiles": [
+      0.08678902685642242,
+      0.1248878464102745,
+      0.15233883261680603,
+      0.9885097950696943
+    ]
+  },
+  {
+    "id": "user-cloudy-trees",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/user-cloudy-trees.png",
+    "thumbnail_sha256": "2f07b0b997ee56200fd25b22d05f9a1a814dcf577dc13671d264ff6431b8c649",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "64304e4c74d457a0b9b8b836db5a3a9df821a7d61bc490d8c746f46cc62ec893",
+    "source_path": "/Users/evanchen/Downloads/images (2).jpeg",
+    "source_sha256": "e4172d7c619478e0272159d3c5b81450e527bb0a39139db690676ba19c4cf4fe",
+    "source_quantiles": [
+      0.03808313608169556,
+      0.19752784073352814,
+      0.30644863843917847,
+      0.5601997703313827
+    ]
+  },
+  {
+    "id": "LOL-27",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/LOL-27.png",
+    "thumbnail_sha256": "976db4bfd2965823d3aafb131fec596a308af15e29c61122d5bc08ecf1cc8abc",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "5ab07bf48396c39f566f48c4f6fade25c9818f8adbd8b74e482357ccb72a762f",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/27.jpg",
+    "source_sha256": "124e851397fc6c63b50d1bee963cfa0d9d9ca51ec45b4d8ba7e5ab87185223e3",
+    "source_quantiles": [
+      0.0,
+      0.0072768633253872395,
+      0.011198431253433228,
+      0.05854039266705513
+    ]
+  },
+  {
+    "id": "LOL-102",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/LOL-102.png",
+    "thumbnail_sha256": "e2dcb53822375b3859df9daf3072a13a6d19ab734a308652f631c1448a89bb43",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "b11d090df3c48e8cb863ecde59c87c7e808abdddf0d9fe7a6f5bb4e397106d72",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/102.jpg",
+    "source_sha256": "a829c24979e614a6579de4992fba8db623cbc6a27aadcfbcb5bee2569f42b40c",
+    "source_quantiles": [
+      0.003067451063543558,
+      0.011198431253433228,
+      0.03920000419020653,
+      0.1898917704820633
+    ]
+  },
+  {
+    "id": "LOL-113",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/LOL-113.png",
+    "thumbnail_sha256": "d6ab4c55c38499b40af2a50a494fea98c4138ee600175f8dec4d2990028caf6f",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "84f495bdecbc5cbb24bde595e5db9d51fabcda7732aad3defd6fb3eacfd157b6",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/113.jpg",
+    "source_sha256": "b739525767492c7a1b3c64554f77b4b08c94522f44579f8b2704d6b66b5822a5",
+    "source_quantiles": [
+      0.0036384316626936197,
+      0.01316941250115633,
+      0.022679999470710754,
+      0.05238509923219681
+    ]
+  },
+  {
+    "id": "LOL-254",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/LOL-254.png",
+    "thumbnail_sha256": "ce075475e576004a053e52ed0f9dc8758d3597d0ab63fc2bf1a42236f06b7048",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "3581084209bcbcfbd23611b0e5880f5e181993585424f694b2c0ff1312579d38",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/254.jpg",
+    "source_sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45",
+    "source_quantiles": [
+      0.10617019981145859,
+      0.14453177154064178,
+      0.20422039926052094,
+      0.3529411852359772
+    ]
+  },
+  {
+    "id": "LOL-565",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/LOL-565.png",
+    "thumbnail_sha256": "f6c12237fae9266b2545f9d322e27af13c50fdef2dfaebb3780daadd1c9d65af",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "f936fd749aecba60dd324c353df1074c95274d13129e1c76f344209ffdde9930",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/565.jpg",
+    "source_sha256": "cfd82849833bbe429fe91039f18e6051929fa8ac3fa81282607eb91c164e94b0",
+    "source_quantiles": [
+      0.0235294122248888,
+      0.04704784229397774,
+      0.0630282387137413,
+      0.1599145233631134
+    ]
+  },
+  {
+    "id": "LOL-6",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-research-v1/LOL-6.png",
+    "thumbnail_sha256": "1c28d90ba8024dcb077e1eeca2bec798198530eca02bfa1aa4974e95af08a0f7",
+    "thumbnail_size": [
+      512,
+      341
+    ],
+    "original_render_sha256": "99dd6db10e7b1cbf1c50d15f8ca4d650b41369fef8058d134824d5859325758d",
+    "source_path": "/Users/evanchen/CS Projects/ShotSense/data/external/lol_pilot/6.jpg",
+    "source_sha256": "d54d46e822b3b91b29ebca555eb131ed4162bba80373317d0d37fbcf622c42c8",
+    "source_quantiles": [
+      0.019309019669890404,
+      0.0545152947306633,
+      0.07075215876102448,
+      0.166676864027977
+    ]
+  }
+]

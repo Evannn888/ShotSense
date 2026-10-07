@@ -1,0 +1,160 @@
+{
+  "status": "Isolated implementation/functionality passed; this frozen checkpoint rejected for natural automatic use.",
+  "tests": {
+    "tests": 72,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 82.816,
+    "focused_tests": 3,
+    "warning": "Existing optional Matplotlib unavailable warning; no new dependency installed."
+  },
+  "initial_failures_retained": true,
+  "baseline_integrity": {
+    "current_baseline_preserved": {
+      "app/streamlit_app.py": true,
+      "src/photo_engine.py": true,
+      "src/jpeg_inference.py": true,
+      "src/inference.py": true,
+      "src/preview.py": true,
+      "src/color_pipeline.py": true,
+      "src/preprocess.py": true,
+      "src/extract_labels.py": true,
+      "artifacts/model/model.onnx": true,
+      "artifacts/model/model.json": true,
+      "artifacts/photo_engine/neutral.pp3": true,
+      "artifacts/photo_engine/natural.pp3": true,
+      "artifacts/photo_engine/chroma.pp3": true,
+      "artifacts/photo_engine/shadows.pp3": true
+    },
+    "core_matches_HEAD": {
+      "src/inference.py": true,
+      "src/preview.py": true,
+      "src/color_pipeline.py": true,
+      "src/preprocess.py": true,
+      "src/extract_labels.py": true,
+      "artifacts/model/model.onnx": true,
+      "artifacts/model/model.json": true
+    },
+    "ten_sources_preserved": {
+      "ahmet-yuksek-7lK0bpUj8AA-unsplash": true,
+      "martin-bennie-MhYU5K4A93I-unsplash": true,
+      "nir-himi-1P1yaGS_Gek-unsplash": true,
+      "a0113-IMG_1129": true,
+      "a0575-kme_040": true,
+      "a0715-060812_182920__MG_6255": true,
+      "a2049-IMG_1585": true,
+      "a2132-IMG_4947": true,
+      "a2270-_DSC0033": true,
+      "a3246-kme_445": true
+    },
+    "pip_check": "No broken requirements found.",
+    "private_output_root": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1"
+  },
+  "author_interpolation_parity": {
+    "scope": "Actual extracted unchanged author CPU forward function versus current Torch grid_sample, not perceptual quality.",
+    "reference_build": "C math.h after C++ cmath header failure; clang -O2 shared.",
+    "checks": [
+      {
+        "dim": 17,
+        "author_CPU_max_abs_difference": 7.152557373046875e-07
+      },
+      {
+        "dim": 33,
+        "author_CPU_max_abs_difference": 1.430511474609375e-06
+      }
+    ]
+  },
+  "predictor_parity_final": [
+    {
+      "shape": [
+        1,
+        1,
+        3
+      ],
+      "resize_max_abs": 0.0,
+      "weights_max_abs": 0.0,
+      "architecture_exact_same_input": true
+    },
+    {
+      "shape": [
+        13,
+        17,
+        3
+      ],
+      "resize_max_abs": 0.0,
+      "weights_max_abs": 0.0,
+      "architecture_exact_same_input": true
+    },
+    {
+      "shape": [
+        257,
+        256,
+        3
+      ],
+      "resize_max_abs": 5.960464477539063e-08,
+      "weights_max_abs": 3.5762786865234375e-07,
+      "architecture_exact_same_input": true
+    },
+    {
+      "shape": [
+        1023,
+        801,
+        3
+      ],
+      "resize_max_abs": 1.7881393432617188e-07,
+      "weights_max_abs": 3.5762786865234375e-07,
+      "architecture_exact_same_input": true
+    }
+  ],
+  "predictor_parity_actual50MP": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "shape": [
+        6144,
+        8192,
+        3
+      ],
+      "resize_max_abs": 5.960464477539063e-08,
+      "weights_max_abs": 1.7881393432617188e-07,
+      "input_pixels_sha256": "a11dbba98ab50c03463b4c9cbd15364a1cc13da8d04958e6a7e990e04434b6bb",
+      "semantics": "Large full-float input is used only for author-resize reference verification; isolated production trial uses bounded sampling."
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "shape": [
+        5712,
+        8688,
+        3
+      ],
+      "resize_max_abs": 1.1920928955078125e-07,
+      "weights_max_abs": 1.1920928955078125e-07,
+      "input_pixels_sha256": "f3dbe37f4a769b2fa6ccb809230d2753703f1c5a43599c0d12d90e5e07dacfd9",
+      "semantics": "Large full-float input is used only for author-resize reference verification; isolated production trial uses bounded sampling."
+    }
+  ],
+  "full_size_worker_ids": [
+    "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+    "martin-bennie-MhYU5K4A93I-unsplash"
+  ],
+  "model_manifest_sha256": "519986cc91638064bbd852a1f12a539f12fbd5c2afece69b4d4313dec489e012",
+  "new_source_sha256": {
+    "src/adaptive_lut.py": "282ed35fbd26c719d2714ab93bec3872289c7ce53563b27dbf147e3042587a38",
+    "scripts/prepare_adaptive_lut.py": "b86dc6701c018777c34b5964d836894f0da5091b23aa15355e7c4ca42b99d045",
+    "tests/test_adaptive_lut.py": "f2f5ccbc75a6ba35ecf4f10ce3fd48055f187ac2e4984473bc077f3a7ec2cb6a",
+    "artifacts/experiments/adaptive_lut_v1/compare.py": "665b05cf0aedffc79c20def3224a41e56bd58deefae0524d0fa33550a233f901",
+    "artifacts/experiments/adaptive_lut_v1/diagnostics.py": "c9d933204446e82a15043a4aa9011f0ac7b802dee7fb7db334a5746ee0d73fa4",
+    "artifacts/experiments/adaptive_lut_v1/verify_worker.py": "e8bfc3e1841b20742463dade52c4911ea858d4e649a76521932c673da360aaa7",
+    "artifacts/experiments/adaptive_lut_v1/PROTOCOL.md": "8c505fc1122f42be4f75b1017fb4b550fa64b2f1f3b1bdeaae9f4e483cb8d9d4",
+    "artifacts/experiments/adaptive_lut_v1/trilinear-reference.c": "7d5a4e57e573d9031ac93486eab2315863a5dff1777e3b80c9babcaa6561960c",
+    "artifacts/experiments/adaptive_lut_v1/trilinear-reference.cpp": "481c098e0f28fb8aa8c279cde954db0d89acf26c1895e538ed60f73965c4115a"
+  },
+  "source_snapshot_sha256": "1d71ce21643f56ff68050eacb3d3ccb16a585afcbe604ac6518ede5c9b029c12",
+  "snapshot_semantics": "Final code; after actual worker measurements only two export metadata descriptions and an io import were clarified in verify_worker.py. No inference, rendering math or parent budget changed.",
+  "no_new_dependencies_or_training": true,
+  "no_UI_default_recipe_core_change": true,
+  "no_photo_transfer": true,
+  "no_browser_delivery_or_preference_acceptance_claim": true,
+  "current_local_service_health": "ok",
+  "service_restarted_this_pilot": false
+}

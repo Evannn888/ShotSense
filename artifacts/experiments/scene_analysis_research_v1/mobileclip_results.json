@@ -1,0 +1,2017 @@
+{
+  "scope": "Frozen17reused diagnostic sources; no classification/preference accuracy claim",
+  "model": "apple/MobileCLIP2-S0",
+  "revision": "3136ea51c8ed56b9f9abfab04cb816735aaad6cb",
+  "weights_sha256": "bc3bc861baa680df2f9e3dc1aa0acbe5a21af21032df385026dda70c33505aa6",
+  "open_clip_version": "3.3.0",
+  "timm_version": "1.0.30",
+  "torch_version": "2.8.0",
+  "torch_threads": 1,
+  "device": "cpu",
+  "strict_safe_loading": true,
+  "offline_inference": true,
+  "load_seconds": 1.690486375,
+  "text_cache_seconds": 0.6481468750000001,
+  "reparameterization_max_embedding_difference": 2.644956111907959e-07,
+  "preprocessing": "Compose(\n    Resize(size=256, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(256, 256))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=(0, 0, 0), std=(1, 1, 1))\n)",
+  "model_config": {
+    "embed_dim": 512,
+    "vision_cfg": {
+      "timm_model_name": "fastvit_mci0",
+      "timm_model_pretrained": false,
+      "timm_pool": "avg",
+      "timm_proj": null,
+      "timm_drop": 0.0,
+      "timm_drop_path": 0.0,
+      "image_size": 256
+    },
+    "text_cfg": {
+      "context_length": 77,
+      "vocab_size": 49408,
+      "width": 512,
+      "heads": 8,
+      "layers": 12,
+      "no_causal_mask": true
+    },
+    "custom_text": true
+  },
+  "image_parameter_count": 11357504,
+  "full_parameter_count": 74785601,
+  "prompt_sha256": "64ea2ab33b14062be7b5e7cedd5638124535b3a02d05466f18c45a735b8a6877",
+  "script_sha256": "2dc17b6bdd542374ac38294f364e50fa2ab5ab5949ab5e705a638d6d7f0c67e8",
+  "app_dependency_hashes_unchanged": true,
+  "rows": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10348691791296005,
+          "natural_landscape": 0.21320229768753052,
+          "indoor_room": 0.07706861197948456,
+          "urban_architecture": 0.11549168825149536,
+          "animal_pet": 0.10841743648052216,
+          "food": 0.0975707471370697,
+          "object_still_life": 0.12892410159111023,
+          "document_graphic": 0.13321086764335632
+        },
+        "lighting": {
+          "daylight": 0.1563219428062439,
+          "overcast": 0.14130234718322754,
+          "sunset_sunrise": 0.10696902871131897,
+          "night": 0.15288543701171875,
+          "indoor_artificial": 0.12130442261695862,
+          "indoor_natural": 0.12886366248130798,
+          "underexposed_daylight": 0.1750735640525818
+        }
+      },
+      "preprocessing_ms": 6.838499999999748,
+      "image_forward_ms": 125.9345000000005,
+      "preprocessing_and_forward_ms": 132.77300000000025
+    },
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.11457724869251251,
+          "natural_landscape": 0.21789363026618958,
+          "indoor_room": 0.07444627583026886,
+          "urban_architecture": 0.10785028338432312,
+          "animal_pet": 0.1082623153924942,
+          "food": 0.09202504903078079,
+          "object_still_life": 0.12830689549446106,
+          "document_graphic": 0.15032057464122772
+        },
+        "lighting": {
+          "daylight": 0.15593859553337097,
+          "overcast": 0.14877447485923767,
+          "sunset_sunrise": 0.10830457508563995,
+          "night": 0.16657380759716034,
+          "indoor_artificial": 0.12589165568351746,
+          "indoor_natural": 0.1226997971534729,
+          "underexposed_daylight": 0.17850720882415771
+        }
+      },
+      "preprocessing_ms": 2.1686670000002906,
+      "image_forward_ms": 124.9667909999994,
+      "preprocessing_and_forward_ms": 127.1354579999997
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10788436979055405,
+          "natural_landscape": 0.24055719375610352,
+          "indoor_room": 0.08338384330272675,
+          "urban_architecture": 0.0935954749584198,
+          "animal_pet": 0.10523457825183868,
+          "food": 0.10332667827606201,
+          "object_still_life": 0.10609655827283859,
+          "document_graphic": 0.10810725390911102
+        },
+        "lighting": {
+          "daylight": 0.16819269955158234,
+          "overcast": 0.14951714873313904,
+          "sunset_sunrise": 0.13002830743789673,
+          "night": 0.12469671666622162,
+          "indoor_artificial": 0.09686674177646637,
+          "indoor_natural": 0.12297172844409943,
+          "underexposed_daylight": 0.162990540266037
+        }
+      },
+      "preprocessing_ms": 6.116416000000235,
+      "image_forward_ms": 125.21466699999984,
+      "preprocessing_and_forward_ms": 131.33108300000006
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.10486716032028198,
+          "natural_landscape": 0.2395831048488617,
+          "indoor_room": 0.07030493021011353,
+          "urban_architecture": 0.0820724219083786,
+          "animal_pet": 0.09979434311389923,
+          "food": 0.09019076824188232,
+          "object_still_life": 0.10332098603248596,
+          "document_graphic": 0.10599976032972336
+        },
+        "lighting": {
+          "daylight": 0.16840994358062744,
+          "overcast": 0.14613020420074463,
+          "sunset_sunrise": 0.12018044292926788,
+          "night": 0.11202778667211533,
+          "indoor_artificial": 0.08805736899375916,
+          "indoor_natural": 0.11237133294343948,
+          "underexposed_daylight": 0.162156343460083
+        }
+      },
+      "preprocessing_ms": 1.9172499999999815,
+      "image_forward_ms": 125.95658300000068,
+      "preprocessing_and_forward_ms": 127.87383300000066
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.14472249150276184,
+          "natural_landscape": 0.21859301626682281,
+          "indoor_room": 0.11125174164772034,
+          "urban_architecture": 0.11499380320310593,
+          "animal_pet": 0.13988304138183594,
+          "food": 0.11278635263442993,
+          "object_still_life": 0.14019915461540222,
+          "document_graphic": 0.13379211723804474
+        },
+        "lighting": {
+          "daylight": 0.2110530138015747,
+          "overcast": 0.22386479377746582,
+          "sunset_sunrise": 0.1295212358236313,
+          "night": 0.1659577190876007,
+          "indoor_artificial": 0.13468950986862183,
+          "indoor_natural": 0.17106309533119202,
+          "underexposed_daylight": 0.21877652406692505
+        }
+      },
+      "preprocessing_ms": 5.398624999999768,
+      "image_forward_ms": 124.91645799999951,
+      "preprocessing_and_forward_ms": 130.31508299999928
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.15012282133102417,
+          "natural_landscape": 0.22762000560760498,
+          "indoor_room": 0.11965622007846832,
+          "urban_architecture": 0.13218191266059875,
+          "animal_pet": 0.14693543314933777,
+          "food": 0.1084614098072052,
+          "object_still_life": 0.14855584502220154,
+          "document_graphic": 0.14991116523742676
+        },
+        "lighting": {
+          "daylight": 0.221734419465065,
+          "overcast": 0.22639340162277222,
+          "sunset_sunrise": 0.1278775930404663,
+          "night": 0.16611120104789734,
+          "indoor_artificial": 0.14363417029380798,
+          "indoor_natural": 0.18715506792068481,
+          "underexposed_daylight": 0.22718416154384613
+        }
+      },
+      "preprocessing_ms": 1.9743339999998,
+      "image_forward_ms": 123.2631660000001,
+      "preprocessing_and_forward_ms": 125.2374999999999
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10578039288520813,
+          "natural_landscape": 0.25124219059944153,
+          "indoor_room": 0.07913348078727722,
+          "urban_architecture": 0.10383811593055725,
+          "animal_pet": 0.10236386954784393,
+          "food": 0.11669628322124481,
+          "object_still_life": 0.0860302746295929,
+          "document_graphic": 0.11651354283094406
+        },
+        "lighting": {
+          "daylight": 0.21236127614974976,
+          "overcast": 0.1826220601797104,
+          "sunset_sunrise": 0.09767475724220276,
+          "night": 0.12902548909187317,
+          "indoor_artificial": 0.09006325900554657,
+          "indoor_natural": 0.12994545698165894,
+          "underexposed_daylight": 0.17258761823177338
+        }
+      },
+      "preprocessing_ms": 6.156042000000639,
+      "image_forward_ms": 123.83233300000018,
+      "preprocessing_and_forward_ms": 129.98837500000081
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.11249436438083649,
+          "natural_landscape": 0.26224201917648315,
+          "indoor_room": 0.07698048651218414,
+          "urban_architecture": 0.10092221945524216,
+          "animal_pet": 0.09912712126970291,
+          "food": 0.1114790290594101,
+          "object_still_life": 0.08394055813550949,
+          "document_graphic": 0.12861791253089905
+        },
+        "lighting": {
+          "daylight": 0.21818120777606964,
+          "overcast": 0.19108805060386658,
+          "sunset_sunrise": 0.09793683886528015,
+          "night": 0.1332380622625351,
+          "indoor_artificial": 0.09948043525218964,
+          "indoor_natural": 0.13412955403327942,
+          "underexposed_daylight": 0.1826740950345993
+        }
+      },
+      "preprocessing_ms": 1.8479579999999274,
+      "image_forward_ms": 124.3293750000003,
+      "preprocessing_and_forward_ms": 126.17733300000023
+    },
+    {
+      "id": "a0575-kme_040",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12071583420038223,
+          "natural_landscape": 0.06828657537698746,
+          "indoor_room": 0.10097099095582962,
+          "urban_architecture": 0.083741195499897,
+          "animal_pet": 0.11870846897363663,
+          "food": 0.08953126519918442,
+          "object_still_life": 0.1598520278930664,
+          "document_graphic": 0.10919459909200668
+        },
+        "lighting": {
+          "daylight": 0.13221319019794464,
+          "overcast": 0.11923359334468842,
+          "sunset_sunrise": 0.04940704256296158,
+          "night": 0.09421270340681076,
+          "indoor_artificial": 0.1092931404709816,
+          "indoor_natural": 0.13584329187870026,
+          "underexposed_daylight": 0.12111498415470123
+        }
+      },
+      "preprocessing_ms": 7.134500000000266,
+      "image_forward_ms": 122.76220800000016,
+      "preprocessing_and_forward_ms": 129.89670800000042
+    },
+    {
+      "id": "a0575-kme_040",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.12077916413545609,
+          "natural_landscape": 0.07729331403970718,
+          "indoor_room": 0.08746380358934402,
+          "urban_architecture": 0.07646685838699341,
+          "animal_pet": 0.11485458165407181,
+          "food": 0.07574304938316345,
+          "object_still_life": 0.1408083438873291,
+          "document_graphic": 0.10246879607439041
+        },
+        "lighting": {
+          "daylight": 0.13188603520393372,
+          "overcast": 0.11497009545564651,
+          "sunset_sunrise": 0.04170285910367966,
+          "night": 0.09627268463373184,
+          "indoor_artificial": 0.10534884035587311,
+          "indoor_natural": 0.12485095113515854,
+          "underexposed_daylight": 0.12328024208545685
+        }
+      },
+      "preprocessing_ms": 1.7026250000000687,
+      "image_forward_ms": 122.90683399999924,
+      "preprocessing_and_forward_ms": 124.6094589999993
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12024930119514465,
+          "natural_landscape": 0.21661078929901123,
+          "indoor_room": 0.07626257836818695,
+          "urban_architecture": 0.07662409543991089,
+          "animal_pet": 0.13389122486114502,
+          "food": 0.0924127846956253,
+          "object_still_life": 0.10998567938804626,
+          "document_graphic": 0.10601921379566193
+        },
+        "lighting": {
+          "daylight": 0.21770401298999786,
+          "overcast": 0.24721163511276245,
+          "sunset_sunrise": 0.25675472617149353,
+          "night": 0.21124285459518433,
+          "indoor_artificial": 0.1270875781774521,
+          "indoor_natural": 0.15696507692337036,
+          "underexposed_daylight": 0.2534394860267639
+        }
+      },
+      "preprocessing_ms": 6.3687919999999565,
+      "image_forward_ms": 124.51387499999989,
+      "preprocessing_and_forward_ms": 130.88266699999986
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.12544415891170502,
+          "natural_landscape": 0.2261997014284134,
+          "indoor_room": 0.0768924131989479,
+          "urban_architecture": 0.08523404598236084,
+          "animal_pet": 0.13150548934936523,
+          "food": 0.08617031574249268,
+          "object_still_life": 0.10932625830173492,
+          "document_graphic": 0.11864014714956284
+        },
+        "lighting": {
+          "daylight": 0.21618443727493286,
+          "overcast": 0.24630622565746307,
+          "sunset_sunrise": 0.24037790298461914,
+          "night": 0.20541584491729736,
+          "indoor_artificial": 0.12388357520103455,
+          "indoor_natural": 0.14962811768054962,
+          "underexposed_daylight": 0.24808520078659058
+        }
+      },
+      "preprocessing_ms": 1.7201669999993285,
+      "image_forward_ms": 127.07625,
+      "preprocessing_and_forward_ms": 128.79641699999934
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10381468385457993,
+          "natural_landscape": 0.24126139283180237,
+          "indoor_room": 0.06590583175420761,
+          "urban_architecture": 0.07207320630550385,
+          "animal_pet": 0.11298587918281555,
+          "food": 0.0761464387178421,
+          "object_still_life": 0.09609075635671616,
+          "document_graphic": 0.09326926618814468
+        },
+        "lighting": {
+          "daylight": 0.16333338618278503,
+          "overcast": 0.222481831908226,
+          "sunset_sunrise": 0.08461647480726242,
+          "night": 0.1157039999961853,
+          "indoor_artificial": 0.07516446709632874,
+          "indoor_natural": 0.10680116713047028,
+          "underexposed_daylight": 0.1709986925125122
+        }
+      },
+      "preprocessing_ms": 5.888999999999811,
+      "image_forward_ms": 127.88583399999976,
+      "preprocessing_and_forward_ms": 133.77483399999957
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.11048939824104309,
+          "natural_landscape": 0.24671438336372375,
+          "indoor_room": 0.0592816099524498,
+          "urban_architecture": 0.06379973143339157,
+          "animal_pet": 0.12113437056541443,
+          "food": 0.07379518449306488,
+          "object_still_life": 0.08958317339420319,
+          "document_graphic": 0.10030446946620941
+        },
+        "lighting": {
+          "daylight": 0.16813160479068756,
+          "overcast": 0.21325013041496277,
+          "sunset_sunrise": 0.0840427577495575,
+          "night": 0.116352878510952,
+          "indoor_artificial": 0.07295866310596466,
+          "indoor_natural": 0.10233879089355469,
+          "underexposed_daylight": 0.1687115728855133
+        }
+      },
+      "preprocessing_ms": 1.8855000000002065,
+      "image_forward_ms": 142.37562499999967,
+      "preprocessing_and_forward_ms": 144.26112499999988
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.24869553744792938,
+          "natural_landscape": 0.1029244065284729,
+          "indoor_room": 0.06647258996963501,
+          "urban_architecture": 0.059967342764139175,
+          "animal_pet": 0.13506007194519043,
+          "food": 0.08427103608846664,
+          "object_still_life": 0.1340308040380478,
+          "document_graphic": 0.11230847239494324
+        },
+        "lighting": {
+          "daylight": 0.26546135544776917,
+          "overcast": 0.19244027137756348,
+          "sunset_sunrise": 0.10524052381515503,
+          "night": 0.15358984470367432,
+          "indoor_artificial": 0.13527581095695496,
+          "indoor_natural": 0.17415481805801392,
+          "underexposed_daylight": 0.21892547607421875
+        }
+      },
+      "preprocessing_ms": 6.1527919999999625,
+      "image_forward_ms": 125.23916600000007,
+      "preprocessing_and_forward_ms": 131.39195800000005
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.2843013405799866,
+          "natural_landscape": 0.12184436619281769,
+          "indoor_room": 0.09006579965353012,
+          "urban_architecture": 0.09278439730405807,
+          "animal_pet": 0.14806589484214783,
+          "food": 0.09776396304368973,
+          "object_still_life": 0.13565748929977417,
+          "document_graphic": 0.13854971528053284
+        },
+        "lighting": {
+          "daylight": 0.28366559743881226,
+          "overcast": 0.2153971940279007,
+          "sunset_sunrise": 0.11296483129262924,
+          "night": 0.17223519086837769,
+          "indoor_artificial": 0.15367522835731506,
+          "indoor_natural": 0.18844841420650482,
+          "underexposed_daylight": 0.24467213451862335
+        }
+      },
+      "preprocessing_ms": 1.734749999999785,
+      "image_forward_ms": 123.09233399999985,
+      "preprocessing_and_forward_ms": 124.82708399999964
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.11354127526283264,
+          "natural_landscape": 0.16391554474830627,
+          "indoor_room": 0.07406330108642578,
+          "urban_architecture": 0.09716496616601944,
+          "animal_pet": 0.1118597760796547,
+          "food": 0.09172147512435913,
+          "object_still_life": 0.11702444404363632,
+          "document_graphic": 0.09772560000419617
+        },
+        "lighting": {
+          "daylight": 0.19920724630355835,
+          "overcast": 0.17217078804969788,
+          "sunset_sunrise": 0.2777249813079834,
+          "night": 0.17783907055854797,
+          "indoor_artificial": 0.1353248655796051,
+          "indoor_natural": 0.1592436581850052,
+          "underexposed_daylight": 0.2189895510673523
+        }
+      },
+      "preprocessing_ms": 4.2902079999995735,
+      "image_forward_ms": 122.42291699999974,
+      "preprocessing_and_forward_ms": 126.71312499999931
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.13658423721790314,
+          "natural_landscape": 0.1777682900428772,
+          "indoor_room": 0.08922291547060013,
+          "urban_architecture": 0.1081346943974495,
+          "animal_pet": 0.11829779297113419,
+          "food": 0.09805697202682495,
+          "object_still_life": 0.13620734214782715,
+          "document_graphic": 0.12197861075401306
+        },
+        "lighting": {
+          "daylight": 0.20978088676929474,
+          "overcast": 0.18575339019298553,
+          "sunset_sunrise": 0.2800770103931427,
+          "night": 0.19532138109207153,
+          "indoor_artificial": 0.15494920313358307,
+          "indoor_natural": 0.17204993963241577,
+          "underexposed_daylight": 0.232706218957901
+        }
+      },
+      "preprocessing_ms": 1.9327080000000052,
+      "image_forward_ms": 123.75579199999987,
+      "preprocessing_and_forward_ms": 125.68849999999986
+    },
+    {
+      "id": "a3246-kme_445",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10801757872104645,
+          "natural_landscape": 0.12740835547447205,
+          "indoor_room": 0.1418512463569641,
+          "urban_architecture": 0.18287456035614014,
+          "animal_pet": 0.10573462396860123,
+          "food": 0.10201789438724518,
+          "object_still_life": 0.13921929895877838,
+          "document_graphic": 0.11543326079845428
+        },
+        "lighting": {
+          "daylight": 0.1786583662033081,
+          "overcast": 0.21956214308738708,
+          "sunset_sunrise": 0.1474599838256836,
+          "night": 0.17226874828338623,
+          "indoor_artificial": 0.159550279378891,
+          "indoor_natural": 0.19855709373950958,
+          "underexposed_daylight": 0.21373137831687927
+        }
+      },
+      "preprocessing_ms": 5.848124999999982,
+      "image_forward_ms": 123.4748329999995,
+      "preprocessing_and_forward_ms": 129.3229579999995
+    },
+    {
+      "id": "a3246-kme_445",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.11806663870811462,
+          "natural_landscape": 0.13062936067581177,
+          "indoor_room": 0.14435723423957825,
+          "urban_architecture": 0.18703097105026245,
+          "animal_pet": 0.11234132945537567,
+          "food": 0.10500539094209671,
+          "object_still_life": 0.1396433711051941,
+          "document_graphic": 0.12861469388008118
+        },
+        "lighting": {
+          "daylight": 0.1761203408241272,
+          "overcast": 0.2171858847141266,
+          "sunset_sunrise": 0.14727723598480225,
+          "night": 0.17862433195114136,
+          "indoor_artificial": 0.15946245193481445,
+          "indoor_natural": 0.18794339895248413,
+          "underexposed_daylight": 0.21346113085746765
+        }
+      },
+      "preprocessing_ms": 1.7193749999995234,
+      "image_forward_ms": 129.37750000000037,
+      "preprocessing_and_forward_ms": 131.0968749999999
+    },
+    {
+      "id": "user-cloudy-trees",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.1270560622215271,
+          "natural_landscape": 0.25874054431915283,
+          "indoor_room": 0.08749272674322128,
+          "urban_architecture": 0.11665326356887817,
+          "animal_pet": 0.11298297345638275,
+          "food": 0.10200075805187225,
+          "object_still_life": 0.10531067848205566,
+          "document_graphic": 0.11190112680196762
+        },
+        "lighting": {
+          "daylight": 0.24717594683170319,
+          "overcast": 0.30145832896232605,
+          "sunset_sunrise": 0.18127429485321045,
+          "night": 0.1816234141588211,
+          "indoor_artificial": 0.11422659456729889,
+          "indoor_natural": 0.15067259967327118,
+          "underexposed_daylight": 0.24198400974273682
+        }
+      },
+      "preprocessing_ms": 5.378125000000011,
+      "image_forward_ms": 123.87983300000016,
+      "preprocessing_and_forward_ms": 129.25795800000017
+    },
+    {
+      "id": "user-cloudy-trees",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.12880927324295044,
+          "natural_landscape": 0.2821098268032074,
+          "indoor_room": 0.07807671278715134,
+          "urban_architecture": 0.10072967410087585,
+          "animal_pet": 0.119031623005867,
+          "food": 0.09409794211387634,
+          "object_still_life": 0.11234048008918762,
+          "document_graphic": 0.12347986549139023
+        },
+        "lighting": {
+          "daylight": 0.24844859540462494,
+          "overcast": 0.2968236804008484,
+          "sunset_sunrise": 0.18736976385116577,
+          "night": 0.18115165829658508,
+          "indoor_artificial": 0.11110629141330719,
+          "indoor_natural": 0.14179840683937073,
+          "underexposed_daylight": 0.2405848652124405
+        }
+      },
+      "preprocessing_ms": 1.9446250000001442,
+      "image_forward_ms": 123.54345800000033,
+      "preprocessing_and_forward_ms": 125.48808300000047
+    },
+    {
+      "id": "LOL-27",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.14994941651821136,
+          "natural_landscape": 0.08349055051803589,
+          "indoor_room": 0.17440265417099,
+          "urban_architecture": 0.08141358941793442,
+          "animal_pet": 0.14978039264678955,
+          "food": 0.10844600200653076,
+          "object_still_life": 0.19257226586341858,
+          "document_graphic": 0.13150015473365784
+        },
+        "lighting": {
+          "daylight": 0.11395107209682465,
+          "overcast": 0.10910072177648544,
+          "sunset_sunrise": 0.11866870522499084,
+          "night": 0.23134030401706696,
+          "indoor_artificial": 0.25555723905563354,
+          "indoor_natural": 0.25265228748321533,
+          "underexposed_daylight": 0.25143757462501526
+        }
+      },
+      "preprocessing_ms": 5.791458000000027,
+      "image_forward_ms": 121.39370800000026,
+      "preprocessing_and_forward_ms": 127.1851660000003
+    },
+    {
+      "id": "LOL-27",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.15640750527381897,
+          "natural_landscape": 0.10917861014604568,
+          "indoor_room": 0.18718618154525757,
+          "urban_architecture": 0.09856811165809631,
+          "animal_pet": 0.14193189144134521,
+          "food": 0.10781778395175934,
+          "object_still_life": 0.18564526736736298,
+          "document_graphic": 0.1469101905822754
+        },
+        "lighting": {
+          "daylight": 0.12937459349632263,
+          "overcast": 0.13156239688396454,
+          "sunset_sunrise": 0.13691376149654388,
+          "night": 0.2225339710712433,
+          "indoor_artificial": 0.2515357732772827,
+          "indoor_natural": 0.25414177775382996,
+          "underexposed_daylight": 0.25248801708221436
+        }
+      },
+      "preprocessing_ms": 2.0445000000002267,
+      "image_forward_ms": 123.41391599999963,
+      "preprocessing_and_forward_ms": 125.45841599999986
+    },
+    {
+      "id": "LOL-102",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12867888808250427,
+          "natural_landscape": 0.06730753183364868,
+          "indoor_room": 0.2506437599658966,
+          "urban_architecture": 0.12278904020786285,
+          "animal_pet": 0.12002638727426529,
+          "food": 0.1585593819618225,
+          "object_still_life": 0.18439987301826477,
+          "document_graphic": 0.12186156213283539
+        },
+        "lighting": {
+          "daylight": 0.12556715309619904,
+          "overcast": 0.13411980867385864,
+          "sunset_sunrise": 0.1079416275024414,
+          "night": 0.18954482674598694,
+          "indoor_artificial": 0.2393028885126114,
+          "indoor_natural": 0.27354153990745544,
+          "underexposed_daylight": 0.22724971175193787
+        }
+      },
+      "preprocessing_ms": 4.949417000000622,
+      "image_forward_ms": 124.75199999999998,
+      "preprocessing_and_forward_ms": 129.7014170000006
+    },
+    {
+      "id": "LOL-102",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.15341027081012726,
+          "natural_landscape": 0.0938568115234375,
+          "indoor_room": 0.25734904408454895,
+          "urban_architecture": 0.13903729617595673,
+          "animal_pet": 0.1308138519525528,
+          "food": 0.16253086924552917,
+          "object_still_life": 0.189757838845253,
+          "document_graphic": 0.14376303553581238
+        },
+        "lighting": {
+          "daylight": 0.15198057889938354,
+          "overcast": 0.14812563359737396,
+          "sunset_sunrise": 0.12603801488876343,
+          "night": 0.19673560559749603,
+          "indoor_artificial": 0.24807366728782654,
+          "indoor_natural": 0.2835251986980438,
+          "underexposed_daylight": 0.24401281774044037
+        }
+      },
+      "preprocessing_ms": 2.2139590000005427,
+      "image_forward_ms": 126.96974999999978,
+      "preprocessing_and_forward_ms": 129.1837090000003
+    },
+    {
+      "id": "LOL-113",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12850016355514526,
+          "natural_landscape": 0.07106223702430725,
+          "indoor_room": 0.1838814616203308,
+          "urban_architecture": 0.10891039669513702,
+          "animal_pet": 0.13389599323272705,
+          "food": 0.17440596222877502,
+          "object_still_life": 0.26851093769073486,
+          "document_graphic": 0.1346743106842041
+        },
+        "lighting": {
+          "daylight": 0.12466005235910416,
+          "overcast": 0.14048945903778076,
+          "sunset_sunrise": 0.10116470605134964,
+          "night": 0.20670118927955627,
+          "indoor_artificial": 0.23693539202213287,
+          "indoor_natural": 0.23612885177135468,
+          "underexposed_daylight": 0.23081138730049133
+        }
+      },
+      "preprocessing_ms": 5.421750000000003,
+      "image_forward_ms": 129.1002919999995,
+      "preprocessing_and_forward_ms": 134.52204199999952
+    },
+    {
+      "id": "LOL-113",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.1419760137796402,
+          "natural_landscape": 0.0975821390748024,
+          "indoor_room": 0.19643911719322205,
+          "urban_architecture": 0.143543541431427,
+          "animal_pet": 0.1449345499277115,
+          "food": 0.14587806165218353,
+          "object_still_life": 0.25730276107788086,
+          "document_graphic": 0.147685706615448
+        },
+        "lighting": {
+          "daylight": 0.14968867599964142,
+          "overcast": 0.1591692566871643,
+          "sunset_sunrise": 0.12266748398542404,
+          "night": 0.20165598392486572,
+          "indoor_artificial": 0.23724108934402466,
+          "indoor_natural": 0.2479834258556366,
+          "underexposed_daylight": 0.22981949150562286
+        }
+      },
+      "preprocessing_ms": 1.7236250000003395,
+      "image_forward_ms": 128.30445900000063,
+      "preprocessing_and_forward_ms": 130.028084000001
+    },
+    {
+      "id": "LOL-254",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12043435871601105,
+          "natural_landscape": 0.16318288445472717,
+          "indoor_room": 0.12579305469989777,
+          "urban_architecture": 0.22010764479637146,
+          "animal_pet": 0.09970841556787491,
+          "food": 0.08084671944379807,
+          "object_still_life": 0.12441660463809967,
+          "document_graphic": 0.11613985896110535
+        },
+        "lighting": {
+          "daylight": 0.19334900379180908,
+          "overcast": 0.25256237387657166,
+          "sunset_sunrise": 0.17380794882774353,
+          "night": 0.20641547441482544,
+          "indoor_artificial": 0.14366140961647034,
+          "indoor_natural": 0.16363200545310974,
+          "underexposed_daylight": 0.26563185453414917
+        }
+      },
+      "preprocessing_ms": 5.495209000001111,
+      "image_forward_ms": 125.59812499999978,
+      "preprocessing_and_forward_ms": 131.09333400000088
+    },
+    {
+      "id": "LOL-254",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.14323121309280396,
+          "natural_landscape": 0.18465495109558105,
+          "indoor_room": 0.12502406537532806,
+          "urban_architecture": 0.22619640827178955,
+          "animal_pet": 0.10341402888298035,
+          "food": 0.08780501037836075,
+          "object_still_life": 0.13441526889801025,
+          "document_graphic": 0.13463404774665833
+        },
+        "lighting": {
+          "daylight": 0.2007889300584793,
+          "overcast": 0.2461560219526291,
+          "sunset_sunrise": 0.18157172203063965,
+          "night": 0.20022450387477875,
+          "indoor_artificial": 0.1449577510356903,
+          "indoor_natural": 0.15817272663116455,
+          "underexposed_daylight": 0.259477436542511
+        }
+      },
+      "preprocessing_ms": 2.2287500000004457,
+      "image_forward_ms": 124.13779199999908,
+      "preprocessing_and_forward_ms": 126.36654199999953
+    },
+    {
+      "id": "LOL-565",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.1265483945608139,
+          "natural_landscape": 0.17767521739006042,
+          "indoor_room": 0.14909674227237701,
+          "urban_architecture": 0.21877074241638184,
+          "animal_pet": 0.11403874307870865,
+          "food": 0.08391470462083817,
+          "object_still_life": 0.14810355007648468,
+          "document_graphic": 0.12342316657304764
+        },
+        "lighting": {
+          "daylight": 0.2071983963251114,
+          "overcast": 0.23215846717357635,
+          "sunset_sunrise": 0.1472550928592682,
+          "night": 0.22214046120643616,
+          "indoor_artificial": 0.1525045931339264,
+          "indoor_natural": 0.17220669984817505,
+          "underexposed_daylight": 0.274944931268692
+        }
+      },
+      "preprocessing_ms": 5.923624999999433,
+      "image_forward_ms": 123.6255410000009,
+      "preprocessing_and_forward_ms": 129.54916600000033
+    },
+    {
+      "id": "LOL-565",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.15062923729419708,
+          "natural_landscape": 0.1990501582622528,
+          "indoor_room": 0.15859326720237732,
+          "urban_architecture": 0.23494933545589447,
+          "animal_pet": 0.1274413913488388,
+          "food": 0.10768866539001465,
+          "object_still_life": 0.16699762642383575,
+          "document_graphic": 0.14830869436264038
+        },
+        "lighting": {
+          "daylight": 0.22458632290363312,
+          "overcast": 0.23563769459724426,
+          "sunset_sunrise": 0.14941854774951935,
+          "night": 0.22070187330245972,
+          "indoor_artificial": 0.16105632483959198,
+          "indoor_natural": 0.18743778765201569,
+          "underexposed_daylight": 0.2698390483856201
+        }
+      },
+      "preprocessing_ms": 1.7854579999987408,
+      "image_forward_ms": 126.02700000000056,
+      "preprocessing_and_forward_ms": 127.8124579999993
+    },
+    {
+      "id": "LOL-6",
+      "pass_index": 0,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.1301572322845459,
+          "natural_landscape": 0.08029240369796753,
+          "indoor_room": 0.18597999215126038,
+          "urban_architecture": 0.12227601557970047,
+          "animal_pet": 0.11188627779483795,
+          "food": 0.09964644908905029,
+          "object_still_life": 0.18187715113162994,
+          "document_graphic": 0.15277926623821259
+        },
+        "lighting": {
+          "daylight": 0.12068767845630646,
+          "overcast": 0.11916469037532806,
+          "sunset_sunrise": 0.09123029559850693,
+          "night": 0.13397547602653503,
+          "indoor_artificial": 0.1889193207025528,
+          "indoor_natural": 0.21173416078090668,
+          "underexposed_daylight": 0.16570422053337097
+        }
+      },
+      "preprocessing_ms": 5.595624999999771,
+      "image_forward_ms": 124.42033399999985,
+      "preprocessing_and_forward_ms": 130.0159589999996
+    },
+    {
+      "id": "LOL-6",
+      "pass_index": 0,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.13243205845355988,
+          "natural_landscape": 0.08717261999845505,
+          "indoor_room": 0.18252025544643402,
+          "urban_architecture": 0.13254733383655548,
+          "animal_pet": 0.10299474745988846,
+          "food": 0.09099983423948288,
+          "object_still_life": 0.17194229364395142,
+          "document_graphic": 0.1591997742652893
+        },
+        "lighting": {
+          "daylight": 0.12089862674474716,
+          "overcast": 0.124132439494133,
+          "sunset_sunrise": 0.09127244353294373,
+          "night": 0.1271759420633316,
+          "indoor_artificial": 0.18037369847297668,
+          "indoor_natural": 0.1930360049009323,
+          "underexposed_daylight": 0.1587546169757843
+        }
+      },
+      "preprocessing_ms": 2.3702920000001626,
+      "image_forward_ms": 130.09370799999863,
+      "preprocessing_and_forward_ms": 132.4639999999988
+    },
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10348691791296005,
+          "natural_landscape": 0.21320229768753052,
+          "indoor_room": 0.07706861197948456,
+          "urban_architecture": 0.11549168825149536,
+          "animal_pet": 0.10841743648052216,
+          "food": 0.0975707471370697,
+          "object_still_life": 0.12892410159111023,
+          "document_graphic": 0.13321086764335632
+        },
+        "lighting": {
+          "daylight": 0.1563219428062439,
+          "overcast": 0.14130234718322754,
+          "sunset_sunrise": 0.10696902871131897,
+          "night": 0.15288543701171875,
+          "indoor_artificial": 0.12130442261695862,
+          "indoor_natural": 0.12886366248130798,
+          "underexposed_daylight": 0.1750735640525818
+        }
+      },
+      "preprocessing_ms": 6.707249999999831,
+      "image_forward_ms": 133.0230840000013,
+      "preprocessing_and_forward_ms": 139.7303340000011
+    },
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.11457724869251251,
+          "natural_landscape": 0.21789363026618958,
+          "indoor_room": 0.07444627583026886,
+          "urban_architecture": 0.10785028338432312,
+          "animal_pet": 0.1082623153924942,
+          "food": 0.09202504903078079,
+          "object_still_life": 0.12830689549446106,
+          "document_graphic": 0.15032057464122772
+        },
+        "lighting": {
+          "daylight": 0.15593859553337097,
+          "overcast": 0.14877447485923767,
+          "sunset_sunrise": 0.10830457508563995,
+          "night": 0.16657380759716034,
+          "indoor_artificial": 0.12589165568351746,
+          "indoor_natural": 0.1226997971534729,
+          "underexposed_daylight": 0.17850720882415771
+        }
+      },
+      "preprocessing_ms": 2.4836669999999117,
+      "image_forward_ms": 128.84741700000114,
+      "preprocessing_and_forward_ms": 131.33108400000106
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10788436979055405,
+          "natural_landscape": 0.24055719375610352,
+          "indoor_room": 0.08338384330272675,
+          "urban_architecture": 0.0935954749584198,
+          "animal_pet": 0.10523457825183868,
+          "food": 0.10332667827606201,
+          "object_still_life": 0.10609655827283859,
+          "document_graphic": 0.10810725390911102
+        },
+        "lighting": {
+          "daylight": 0.16819269955158234,
+          "overcast": 0.14951714873313904,
+          "sunset_sunrise": 0.13002830743789673,
+          "night": 0.12469671666622162,
+          "indoor_artificial": 0.09686674177646637,
+          "indoor_natural": 0.12297172844409943,
+          "underexposed_daylight": 0.162990540266037
+        }
+      },
+      "preprocessing_ms": 5.116333999998446,
+      "image_forward_ms": 124.33566600000034,
+      "preprocessing_and_forward_ms": 129.4519999999988
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.10486716032028198,
+          "natural_landscape": 0.2395831048488617,
+          "indoor_room": 0.07030493021011353,
+          "urban_architecture": 0.0820724219083786,
+          "animal_pet": 0.09979434311389923,
+          "food": 0.09019076824188232,
+          "object_still_life": 0.10332098603248596,
+          "document_graphic": 0.10599976032972336
+        },
+        "lighting": {
+          "daylight": 0.16840994358062744,
+          "overcast": 0.14613020420074463,
+          "sunset_sunrise": 0.12018044292926788,
+          "night": 0.11202778667211533,
+          "indoor_artificial": 0.08805736899375916,
+          "indoor_natural": 0.11237133294343948,
+          "underexposed_daylight": 0.162156343460083
+        }
+      },
+      "preprocessing_ms": 1.9080420000001652,
+      "image_forward_ms": 124.64033300000033,
+      "preprocessing_and_forward_ms": 126.54837500000049
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.14472249150276184,
+          "natural_landscape": 0.21859301626682281,
+          "indoor_room": 0.11125174164772034,
+          "urban_architecture": 0.11499380320310593,
+          "animal_pet": 0.13988304138183594,
+          "food": 0.11278635263442993,
+          "object_still_life": 0.14019915461540222,
+          "document_graphic": 0.13379211723804474
+        },
+        "lighting": {
+          "daylight": 0.2110530138015747,
+          "overcast": 0.22386479377746582,
+          "sunset_sunrise": 0.1295212358236313,
+          "night": 0.1659577190876007,
+          "indoor_artificial": 0.13468950986862183,
+          "indoor_natural": 0.17106309533119202,
+          "underexposed_daylight": 0.21877652406692505
+        }
+      },
+      "preprocessing_ms": 4.8690830000008845,
+      "image_forward_ms": 125.34074999999945,
+      "preprocessing_and_forward_ms": 130.20983300000034
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.15012282133102417,
+          "natural_landscape": 0.22762000560760498,
+          "indoor_room": 0.11965622007846832,
+          "urban_architecture": 0.13218191266059875,
+          "animal_pet": 0.14693543314933777,
+          "food": 0.1084614098072052,
+          "object_still_life": 0.14855584502220154,
+          "document_graphic": 0.14991116523742676
+        },
+        "lighting": {
+          "daylight": 0.221734419465065,
+          "overcast": 0.22639340162277222,
+          "sunset_sunrise": 0.1278775930404663,
+          "night": 0.16611120104789734,
+          "indoor_artificial": 0.14363417029380798,
+          "indoor_natural": 0.18715506792068481,
+          "underexposed_daylight": 0.22718416154384613
+        }
+      },
+      "preprocessing_ms": 1.7893749999995379,
+      "image_forward_ms": 124.7967910000014,
+      "preprocessing_and_forward_ms": 126.58616600000094
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10578039288520813,
+          "natural_landscape": 0.25124219059944153,
+          "indoor_room": 0.07913348078727722,
+          "urban_architecture": 0.10383811593055725,
+          "animal_pet": 0.10236386954784393,
+          "food": 0.11669628322124481,
+          "object_still_life": 0.0860302746295929,
+          "document_graphic": 0.11651354283094406
+        },
+        "lighting": {
+          "daylight": 0.21236127614974976,
+          "overcast": 0.1826220601797104,
+          "sunset_sunrise": 0.09767475724220276,
+          "night": 0.12902548909187317,
+          "indoor_artificial": 0.09006325900554657,
+          "indoor_natural": 0.12994545698165894,
+          "underexposed_daylight": 0.17258761823177338
+        }
+      },
+      "preprocessing_ms": 5.423916999999889,
+      "image_forward_ms": 122.01433300000097,
+      "preprocessing_and_forward_ms": 127.43825000000086
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.11249436438083649,
+          "natural_landscape": 0.26224201917648315,
+          "indoor_room": 0.07698048651218414,
+          "urban_architecture": 0.10092221945524216,
+          "animal_pet": 0.09912712126970291,
+          "food": 0.1114790290594101,
+          "object_still_life": 0.08394055813550949,
+          "document_graphic": 0.12861791253089905
+        },
+        "lighting": {
+          "daylight": 0.21818120777606964,
+          "overcast": 0.19108805060386658,
+          "sunset_sunrise": 0.09793683886528015,
+          "night": 0.1332380622625351,
+          "indoor_artificial": 0.09948043525218964,
+          "indoor_natural": 0.13412955403327942,
+          "underexposed_daylight": 0.1826740950345993
+        }
+      },
+      "preprocessing_ms": 1.7070419999996034,
+      "image_forward_ms": 122.26758299999929,
+      "preprocessing_and_forward_ms": 123.9746249999989
+    },
+    {
+      "id": "a0575-kme_040",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12071583420038223,
+          "natural_landscape": 0.06828657537698746,
+          "indoor_room": 0.10097099095582962,
+          "urban_architecture": 0.083741195499897,
+          "animal_pet": 0.11870846897363663,
+          "food": 0.08953126519918442,
+          "object_still_life": 0.1598520278930664,
+          "document_graphic": 0.10919459909200668
+        },
+        "lighting": {
+          "daylight": 0.13221319019794464,
+          "overcast": 0.11923359334468842,
+          "sunset_sunrise": 0.04940704256296158,
+          "night": 0.09421270340681076,
+          "indoor_artificial": 0.1092931404709816,
+          "indoor_natural": 0.13584329187870026,
+          "underexposed_daylight": 0.12111498415470123
+        }
+      },
+      "preprocessing_ms": 6.133750000000049,
+      "image_forward_ms": 122.98412500000033,
+      "preprocessing_and_forward_ms": 129.11787500000037
+    },
+    {
+      "id": "a0575-kme_040",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.12077916413545609,
+          "natural_landscape": 0.07729331403970718,
+          "indoor_room": 0.08746380358934402,
+          "urban_architecture": 0.07646685838699341,
+          "animal_pet": 0.11485458165407181,
+          "food": 0.07574304938316345,
+          "object_still_life": 0.1408083438873291,
+          "document_graphic": 0.10246879607439041
+        },
+        "lighting": {
+          "daylight": 0.13188603520393372,
+          "overcast": 0.11497009545564651,
+          "sunset_sunrise": 0.04170285910367966,
+          "night": 0.09627268463373184,
+          "indoor_artificial": 0.10534884035587311,
+          "indoor_natural": 0.12485095113515854,
+          "underexposed_daylight": 0.12328024208545685
+        }
+      },
+      "preprocessing_ms": 1.6985419999997475,
+      "image_forward_ms": 124.35058300000001,
+      "preprocessing_and_forward_ms": 126.04912499999976
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12024930119514465,
+          "natural_landscape": 0.21661078929901123,
+          "indoor_room": 0.07626257836818695,
+          "urban_architecture": 0.07662409543991089,
+          "animal_pet": 0.13389122486114502,
+          "food": 0.0924127846956253,
+          "object_still_life": 0.10998567938804626,
+          "document_graphic": 0.10601921379566193
+        },
+        "lighting": {
+          "daylight": 0.21770401298999786,
+          "overcast": 0.24721163511276245,
+          "sunset_sunrise": 0.25675472617149353,
+          "night": 0.21124285459518433,
+          "indoor_artificial": 0.1270875781774521,
+          "indoor_natural": 0.15696507692337036,
+          "underexposed_daylight": 0.2534394860267639
+        }
+      },
+      "preprocessing_ms": 5.646833000000129,
+      "image_forward_ms": 128.32837500000062,
+      "preprocessing_and_forward_ms": 133.97520800000075
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.12544415891170502,
+          "natural_landscape": 0.2261997014284134,
+          "indoor_room": 0.0768924131989479,
+          "urban_architecture": 0.08523404598236084,
+          "animal_pet": 0.13150548934936523,
+          "food": 0.08617031574249268,
+          "object_still_life": 0.10932625830173492,
+          "document_graphic": 0.11864014714956284
+        },
+        "lighting": {
+          "daylight": 0.21618443727493286,
+          "overcast": 0.24630622565746307,
+          "sunset_sunrise": 0.24037790298461914,
+          "night": 0.20541584491729736,
+          "indoor_artificial": 0.12388357520103455,
+          "indoor_natural": 0.14962811768054962,
+          "underexposed_daylight": 0.24808520078659058
+        }
+      },
+      "preprocessing_ms": 2.22187500000004,
+      "image_forward_ms": 138.51079199999992,
+      "preprocessing_and_forward_ms": 140.732667
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10381468385457993,
+          "natural_landscape": 0.24126139283180237,
+          "indoor_room": 0.06590583175420761,
+          "urban_architecture": 0.07207320630550385,
+          "animal_pet": 0.11298587918281555,
+          "food": 0.0761464387178421,
+          "object_still_life": 0.09609075635671616,
+          "document_graphic": 0.09326926618814468
+        },
+        "lighting": {
+          "daylight": 0.16333338618278503,
+          "overcast": 0.222481831908226,
+          "sunset_sunrise": 0.08461647480726242,
+          "night": 0.1157039999961853,
+          "indoor_artificial": 0.07516446709632874,
+          "indoor_natural": 0.10680116713047028,
+          "underexposed_daylight": 0.1709986925125122
+        }
+      },
+      "preprocessing_ms": 6.788042000000161,
+      "image_forward_ms": 137.6891659999995,
+      "preprocessing_and_forward_ms": 144.47720799999962
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.11048939824104309,
+          "natural_landscape": 0.24671438336372375,
+          "indoor_room": 0.0592816099524498,
+          "urban_architecture": 0.06379973143339157,
+          "animal_pet": 0.12113437056541443,
+          "food": 0.07379518449306488,
+          "object_still_life": 0.08958317339420319,
+          "document_graphic": 0.10030446946620941
+        },
+        "lighting": {
+          "daylight": 0.16813160479068756,
+          "overcast": 0.21325013041496277,
+          "sunset_sunrise": 0.0840427577495575,
+          "night": 0.116352878510952,
+          "indoor_artificial": 0.07295866310596466,
+          "indoor_natural": 0.10233879089355469,
+          "underexposed_daylight": 0.1687115728855133
+        }
+      },
+      "preprocessing_ms": 2.3150839999992456,
+      "image_forward_ms": 143.01987500000024,
+      "preprocessing_and_forward_ms": 145.3349589999995
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.24869553744792938,
+          "natural_landscape": 0.1029244065284729,
+          "indoor_room": 0.06647258996963501,
+          "urban_architecture": 0.059967342764139175,
+          "animal_pet": 0.13506007194519043,
+          "food": 0.08427103608846664,
+          "object_still_life": 0.1340308040380478,
+          "document_graphic": 0.11230847239494324
+        },
+        "lighting": {
+          "daylight": 0.26546135544776917,
+          "overcast": 0.19244027137756348,
+          "sunset_sunrise": 0.10524052381515503,
+          "night": 0.15358984470367432,
+          "indoor_artificial": 0.13527581095695496,
+          "indoor_natural": 0.17415481805801392,
+          "underexposed_daylight": 0.21892547607421875
+        }
+      },
+      "preprocessing_ms": 5.592500000000555,
+      "image_forward_ms": 139.97204200000013,
+      "preprocessing_and_forward_ms": 145.5645420000007
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.2843013405799866,
+          "natural_landscape": 0.12184436619281769,
+          "indoor_room": 0.09006579965353012,
+          "urban_architecture": 0.09278439730405807,
+          "animal_pet": 0.14806589484214783,
+          "food": 0.09776396304368973,
+          "object_still_life": 0.13565748929977417,
+          "document_graphic": 0.13854971528053284
+        },
+        "lighting": {
+          "daylight": 0.28366559743881226,
+          "overcast": 0.2153971940279007,
+          "sunset_sunrise": 0.11296483129262924,
+          "night": 0.17223519086837769,
+          "indoor_artificial": 0.15367522835731506,
+          "indoor_natural": 0.18844841420650482,
+          "underexposed_daylight": 0.24467213451862335
+        }
+      },
+      "preprocessing_ms": 2.13175000000021,
+      "image_forward_ms": 129.53908299999915,
+      "preprocessing_and_forward_ms": 131.6708329999994
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.11354127526283264,
+          "natural_landscape": 0.16391554474830627,
+          "indoor_room": 0.07406330108642578,
+          "urban_architecture": 0.09716496616601944,
+          "animal_pet": 0.1118597760796547,
+          "food": 0.09172147512435913,
+          "object_still_life": 0.11702444404363632,
+          "document_graphic": 0.09772560000419617
+        },
+        "lighting": {
+          "daylight": 0.19920724630355835,
+          "overcast": 0.17217078804969788,
+          "sunset_sunrise": 0.2777249813079834,
+          "night": 0.17783907055854797,
+          "indoor_artificial": 0.1353248655796051,
+          "indoor_natural": 0.1592436581850052,
+          "underexposed_daylight": 0.2189895510673523
+        }
+      },
+      "preprocessing_ms": 4.483042000000381,
+      "image_forward_ms": 124.29283300000016,
+      "preprocessing_and_forward_ms": 128.77587500000055
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.13658423721790314,
+          "natural_landscape": 0.1777682900428772,
+          "indoor_room": 0.08922291547060013,
+          "urban_architecture": 0.1081346943974495,
+          "animal_pet": 0.11829779297113419,
+          "food": 0.09805697202682495,
+          "object_still_life": 0.13620734214782715,
+          "document_graphic": 0.12197861075401306
+        },
+        "lighting": {
+          "daylight": 0.20978088676929474,
+          "overcast": 0.18575339019298553,
+          "sunset_sunrise": 0.2800770103931427,
+          "night": 0.19532138109207153,
+          "indoor_artificial": 0.15494920313358307,
+          "indoor_natural": 0.17204993963241577,
+          "underexposed_daylight": 0.232706218957901
+        }
+      },
+      "preprocessing_ms": 1.7143750000006008,
+      "image_forward_ms": 129.53808299999992,
+      "preprocessing_and_forward_ms": 131.2524580000005
+    },
+    {
+      "id": "a3246-kme_445",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.10801757872104645,
+          "natural_landscape": 0.12740835547447205,
+          "indoor_room": 0.1418512463569641,
+          "urban_architecture": 0.18287456035614014,
+          "animal_pet": 0.10573462396860123,
+          "food": 0.10201789438724518,
+          "object_still_life": 0.13921929895877838,
+          "document_graphic": 0.11543326079845428
+        },
+        "lighting": {
+          "daylight": 0.1786583662033081,
+          "overcast": 0.21956214308738708,
+          "sunset_sunrise": 0.1474599838256836,
+          "night": 0.17226874828338623,
+          "indoor_artificial": 0.159550279378891,
+          "indoor_natural": 0.19855709373950958,
+          "underexposed_daylight": 0.21373137831687927
+        }
+      },
+      "preprocessing_ms": 5.440708000000072,
+      "image_forward_ms": 131.1356669999988,
+      "preprocessing_and_forward_ms": 136.57637499999885
+    },
+    {
+      "id": "a3246-kme_445",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.11806663870811462,
+          "natural_landscape": 0.13062936067581177,
+          "indoor_room": 0.14435723423957825,
+          "urban_architecture": 0.18703097105026245,
+          "animal_pet": 0.11234132945537567,
+          "food": 0.10500539094209671,
+          "object_still_life": 0.1396433711051941,
+          "document_graphic": 0.12861469388008118
+        },
+        "lighting": {
+          "daylight": 0.1761203408241272,
+          "overcast": 0.2171858847141266,
+          "sunset_sunrise": 0.14727723598480225,
+          "night": 0.17862433195114136,
+          "indoor_artificial": 0.15946245193481445,
+          "indoor_natural": 0.18794339895248413,
+          "underexposed_daylight": 0.21346113085746765
+        }
+      },
+      "preprocessing_ms": 1.8738749999993587,
+      "image_forward_ms": 127.7076250000011,
+      "preprocessing_and_forward_ms": 129.58150000000046
+    },
+    {
+      "id": "user-cloudy-trees",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.1270560622215271,
+          "natural_landscape": 0.25874054431915283,
+          "indoor_room": 0.08749272674322128,
+          "urban_architecture": 0.11665326356887817,
+          "animal_pet": 0.11298297345638275,
+          "food": 0.10200075805187225,
+          "object_still_life": 0.10531067848205566,
+          "document_graphic": 0.11190112680196762
+        },
+        "lighting": {
+          "daylight": 0.24717594683170319,
+          "overcast": 0.30145832896232605,
+          "sunset_sunrise": 0.18127429485321045,
+          "night": 0.1816234141588211,
+          "indoor_artificial": 0.11422659456729889,
+          "indoor_natural": 0.15067259967327118,
+          "underexposed_daylight": 0.24198400974273682
+        }
+      },
+      "preprocessing_ms": 4.833917000000909,
+      "image_forward_ms": 125.74824999999912,
+      "preprocessing_and_forward_ms": 130.58216700000003
+    },
+    {
+      "id": "user-cloudy-trees",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.12880927324295044,
+          "natural_landscape": 0.2821098268032074,
+          "indoor_room": 0.07807671278715134,
+          "urban_architecture": 0.10072967410087585,
+          "animal_pet": 0.119031623005867,
+          "food": 0.09409794211387634,
+          "object_still_life": 0.11234048008918762,
+          "document_graphic": 0.12347986549139023
+        },
+        "lighting": {
+          "daylight": 0.24844859540462494,
+          "overcast": 0.2968236804008484,
+          "sunset_sunrise": 0.18736976385116577,
+          "night": 0.18115165829658508,
+          "indoor_artificial": 0.11110629141330719,
+          "indoor_natural": 0.14179840683937073,
+          "underexposed_daylight": 0.2405848652124405
+        }
+      },
+      "preprocessing_ms": 1.948374999999558,
+      "image_forward_ms": 124.49862499999931,
+      "preprocessing_and_forward_ms": 126.44699999999887
+    },
+    {
+      "id": "LOL-27",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.14994941651821136,
+          "natural_landscape": 0.08349055051803589,
+          "indoor_room": 0.17440265417099,
+          "urban_architecture": 0.08141358941793442,
+          "animal_pet": 0.14978039264678955,
+          "food": 0.10844600200653076,
+          "object_still_life": 0.19257226586341858,
+          "document_graphic": 0.13150015473365784
+        },
+        "lighting": {
+          "daylight": 0.11395107209682465,
+          "overcast": 0.10910072177648544,
+          "sunset_sunrise": 0.11866870522499084,
+          "night": 0.23134030401706696,
+          "indoor_artificial": 0.25555723905563354,
+          "indoor_natural": 0.25265228748321533,
+          "underexposed_daylight": 0.25143757462501526
+        }
+      },
+      "preprocessing_ms": 4.769417000000331,
+      "image_forward_ms": 125.70020799999959,
+      "preprocessing_and_forward_ms": 130.46962499999992
+    },
+    {
+      "id": "LOL-27",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.15640750527381897,
+          "natural_landscape": 0.10917861014604568,
+          "indoor_room": 0.18718618154525757,
+          "urban_architecture": 0.09856811165809631,
+          "animal_pet": 0.14193189144134521,
+          "food": 0.10781778395175934,
+          "object_still_life": 0.18564526736736298,
+          "document_graphic": 0.1469101905822754
+        },
+        "lighting": {
+          "daylight": 0.12937459349632263,
+          "overcast": 0.13156239688396454,
+          "sunset_sunrise": 0.13691376149654388,
+          "night": 0.2225339710712433,
+          "indoor_artificial": 0.2515357732772827,
+          "indoor_natural": 0.25414177775382996,
+          "underexposed_daylight": 0.25248801708221436
+        }
+      },
+      "preprocessing_ms": 2.1615829999994673,
+      "image_forward_ms": 126.8615000000004,
+      "preprocessing_and_forward_ms": 129.02308299999987
+    },
+    {
+      "id": "LOL-102",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12867888808250427,
+          "natural_landscape": 0.06730753183364868,
+          "indoor_room": 0.2506437599658966,
+          "urban_architecture": 0.12278904020786285,
+          "animal_pet": 0.12002638727426529,
+          "food": 0.1585593819618225,
+          "object_still_life": 0.18439987301826477,
+          "document_graphic": 0.12186156213283539
+        },
+        "lighting": {
+          "daylight": 0.12556715309619904,
+          "overcast": 0.13411980867385864,
+          "sunset_sunrise": 0.1079416275024414,
+          "night": 0.18954482674598694,
+          "indoor_artificial": 0.2393028885126114,
+          "indoor_natural": 0.27354153990745544,
+          "underexposed_daylight": 0.22724971175193787
+        }
+      },
+      "preprocessing_ms": 4.930082999999641,
+      "image_forward_ms": 123.9880840000005,
+      "preprocessing_and_forward_ms": 128.91816700000015
+    },
+    {
+      "id": "LOL-102",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.15341027081012726,
+          "natural_landscape": 0.0938568115234375,
+          "indoor_room": 0.25734904408454895,
+          "urban_architecture": 0.13903729617595673,
+          "animal_pet": 0.1308138519525528,
+          "food": 0.16253086924552917,
+          "object_still_life": 0.189757838845253,
+          "document_graphic": 0.14376303553581238
+        },
+        "lighting": {
+          "daylight": 0.15198057889938354,
+          "overcast": 0.14812563359737396,
+          "sunset_sunrise": 0.12603801488876343,
+          "night": 0.19673560559749603,
+          "indoor_artificial": 0.24807366728782654,
+          "indoor_natural": 0.2835251986980438,
+          "underexposed_daylight": 0.24401281774044037
+        }
+      },
+      "preprocessing_ms": 1.8519169999997587,
+      "image_forward_ms": 122.7901659999997,
+      "preprocessing_and_forward_ms": 124.64208299999946
+    },
+    {
+      "id": "LOL-113",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12850016355514526,
+          "natural_landscape": 0.07106223702430725,
+          "indoor_room": 0.1838814616203308,
+          "urban_architecture": 0.10891039669513702,
+          "animal_pet": 0.13389599323272705,
+          "food": 0.17440596222877502,
+          "object_still_life": 0.26851093769073486,
+          "document_graphic": 0.1346743106842041
+        },
+        "lighting": {
+          "daylight": 0.12466005235910416,
+          "overcast": 0.14048945903778076,
+          "sunset_sunrise": 0.10116470605134964,
+          "night": 0.20670118927955627,
+          "indoor_artificial": 0.23693539202213287,
+          "indoor_natural": 0.23612885177135468,
+          "underexposed_daylight": 0.23081138730049133
+        }
+      },
+      "preprocessing_ms": 4.86212499999894,
+      "image_forward_ms": 126.20958299999963,
+      "preprocessing_and_forward_ms": 131.07170799999858
+    },
+    {
+      "id": "LOL-113",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.1419760137796402,
+          "natural_landscape": 0.0975821390748024,
+          "indoor_room": 0.19643911719322205,
+          "urban_architecture": 0.143543541431427,
+          "animal_pet": 0.1449345499277115,
+          "food": 0.14587806165218353,
+          "object_still_life": 0.25730276107788086,
+          "document_graphic": 0.147685706615448
+        },
+        "lighting": {
+          "daylight": 0.14968867599964142,
+          "overcast": 0.1591692566871643,
+          "sunset_sunrise": 0.12266748398542404,
+          "night": 0.20165598392486572,
+          "indoor_artificial": 0.23724108934402466,
+          "indoor_natural": 0.2479834258556366,
+          "underexposed_daylight": 0.22981949150562286
+        }
+      },
+      "preprocessing_ms": 1.7713750000005746,
+      "image_forward_ms": 130.68766699999833,
+      "preprocessing_and_forward_ms": 132.45904199999893
+    },
+    {
+      "id": "LOL-254",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.12043435871601105,
+          "natural_landscape": 0.16318288445472717,
+          "indoor_room": 0.12579305469989777,
+          "urban_architecture": 0.22010764479637146,
+          "animal_pet": 0.09970841556787491,
+          "food": 0.08084671944379807,
+          "object_still_life": 0.12441660463809967,
+          "document_graphic": 0.11613985896110535
+        },
+        "lighting": {
+          "daylight": 0.19334900379180908,
+          "overcast": 0.25256237387657166,
+          "sunset_sunrise": 0.17380794882774353,
+          "night": 0.20641547441482544,
+          "indoor_artificial": 0.14366140961647034,
+          "indoor_natural": 0.16363200545310974,
+          "underexposed_daylight": 0.26563185453414917
+        }
+      },
+      "preprocessing_ms": 6.044042000000971,
+      "image_forward_ms": 127.33599999999967,
+      "preprocessing_and_forward_ms": 133.38004200000063
+    },
+    {
+      "id": "LOL-254",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.14323121309280396,
+          "natural_landscape": 0.18465495109558105,
+          "indoor_room": 0.12502406537532806,
+          "urban_architecture": 0.22619640827178955,
+          "animal_pet": 0.10341402888298035,
+          "food": 0.08780501037836075,
+          "object_still_life": 0.13441526889801025,
+          "document_graphic": 0.13463404774665833
+        },
+        "lighting": {
+          "daylight": 0.2007889300584793,
+          "overcast": 0.2461560219526291,
+          "sunset_sunrise": 0.18157172203063965,
+          "night": 0.20022450387477875,
+          "indoor_artificial": 0.1449577510356903,
+          "indoor_natural": 0.15817272663116455,
+          "underexposed_daylight": 0.259477436542511
+        }
+      },
+      "preprocessing_ms": 1.7402080000010756,
+      "image_forward_ms": 128.64166700000013,
+      "preprocessing_and_forward_ms": 130.3818750000012
+    },
+    {
+      "id": "LOL-565",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.1265483945608139,
+          "natural_landscape": 0.17767521739006042,
+          "indoor_room": 0.14909674227237701,
+          "urban_architecture": 0.21877074241638184,
+          "animal_pet": 0.11403874307870865,
+          "food": 0.08391470462083817,
+          "object_still_life": 0.14810355007648468,
+          "document_graphic": 0.12342316657304764
+        },
+        "lighting": {
+          "daylight": 0.2071983963251114,
+          "overcast": 0.23215846717357635,
+          "sunset_sunrise": 0.1472550928592682,
+          "night": 0.22214046120643616,
+          "indoor_artificial": 0.1525045931339264,
+          "indoor_natural": 0.17220669984817505,
+          "underexposed_daylight": 0.274944931268692
+        }
+      },
+      "preprocessing_ms": 6.221665999998294,
+      "image_forward_ms": 130.873750000001,
+      "preprocessing_and_forward_ms": 137.09541599999932
+    },
+    {
+      "id": "LOL-565",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.15062923729419708,
+          "natural_landscape": 0.1990501582622528,
+          "indoor_room": 0.15859326720237732,
+          "urban_architecture": 0.23494933545589447,
+          "animal_pet": 0.1274413913488388,
+          "food": 0.10768866539001465,
+          "object_still_life": 0.16699762642383575,
+          "document_graphic": 0.14830869436264038
+        },
+        "lighting": {
+          "daylight": 0.22458632290363312,
+          "overcast": 0.23563769459724426,
+          "sunset_sunrise": 0.14941854774951935,
+          "night": 0.22070187330245972,
+          "indoor_artificial": 0.16105632483959198,
+          "indoor_natural": 0.18743778765201569,
+          "underexposed_daylight": 0.2698390483856201
+        }
+      },
+      "preprocessing_ms": 1.7694999999999794,
+      "image_forward_ms": 129.83975000000038,
+      "preprocessing_and_forward_ms": 131.60925000000034
+    },
+    {
+      "id": "LOL-6",
+      "pass_index": 1,
+      "view": "stock_center_crop",
+      "scores": {
+        "subject": {
+          "people": 0.1301572322845459,
+          "natural_landscape": 0.08029240369796753,
+          "indoor_room": 0.18597999215126038,
+          "urban_architecture": 0.12227601557970047,
+          "animal_pet": 0.11188627779483795,
+          "food": 0.09964644908905029,
+          "object_still_life": 0.18187715113162994,
+          "document_graphic": 0.15277926623821259
+        },
+        "lighting": {
+          "daylight": 0.12068767845630646,
+          "overcast": 0.11916469037532806,
+          "sunset_sunrise": 0.09123029559850693,
+          "night": 0.13397547602653503,
+          "indoor_artificial": 0.1889193207025528,
+          "indoor_natural": 0.21173416078090668,
+          "underexposed_daylight": 0.16570422053337097
+        }
+      },
+      "preprocessing_ms": 5.5932920000003605,
+      "image_forward_ms": 135.21266699999933,
+      "preprocessing_and_forward_ms": 140.8059589999997
+    },
+    {
+      "id": "LOL-6",
+      "pass_index": 1,
+      "view": "full_frame_letterbox",
+      "scores": {
+        "subject": {
+          "people": 0.13243205845355988,
+          "natural_landscape": 0.08717261999845505,
+          "indoor_room": 0.18252025544643402,
+          "urban_architecture": 0.13254733383655548,
+          "animal_pet": 0.10299474745988846,
+          "food": 0.09099983423948288,
+          "object_still_life": 0.17194229364395142,
+          "document_graphic": 0.1591997742652893
+        },
+        "lighting": {
+          "daylight": 0.12089862674474716,
+          "overcast": 0.124132439494133,
+          "sunset_sunrise": 0.09127244353294373,
+          "night": 0.1271759420633316,
+          "indoor_artificial": 0.18037369847297668,
+          "indoor_natural": 0.1930360049009323,
+          "underexposed_daylight": 0.1587546169757843
+        }
+      },
+      "preprocessing_ms": 2.5432080000005186,
+      "image_forward_ms": 140.9842920000006,
+      "preprocessing_and_forward_ms": 143.52750000000114
+    }
+  ]
+}

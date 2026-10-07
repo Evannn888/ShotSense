@@ -1,0 +1,43 @@
+{
+  "url": "https://data.csail.mit.edu/graphics/fivek/",
+  "http_status": 200,
+  "sha256": "cc11c048a6c29459628cd0989ba28324857988eac10894773b8a20dbb9fd3127",
+  "first_links": [
+    "main.css",
+    "http://people.csail.mit.edu/vladb/photoadjust/",
+    "http://www.katrineismann.com",
+    "http://www.schewephoto.com/",
+    "http://www.toddcarrollphototgraphy.com",
+    "http://www.davidmagerphotography.com",
+    "http://www.jaimepermuth.net",
+    "http://www.lanola.com",
+    "http://www.damianwampler.com",
+    "legal/LicenseAdobe.txt",
+    "legal/filesAdobe.txt",
+    "legal/LicenseAdobeMIT.txt",
+    "legal/filesAdobeMIT.txt",
+    "fivek_dataset.tar",
+    "fivek_dataset.tar.sha1",
+    "parts",
+    "http://www.cybercom.net/~dcoffin/dcraw/",
+    "http://www.adobe.com/Lightroom",
+    "http://en.wikipedia.org/wiki/Digital_Negative#Summary_of_products_that_support_DNG_in_some_way",
+    "http://groups.google.com/group/fivek-dataset",
+    "http://en.wikipedia.org/wiki/ProPhoto_RGB_color_space",
+    "img/dng/a0001-jmac_DSC1459.dng",
+    "img/tiff16_a/a0001-jmac_DSC1459.tif",
+    "img/tiff16_b/a0001-jmac_DSC1459.tif",
+    "img/tiff16_c/a0001-jmac_DSC1459.tif",
+    "img/tiff16_d/a0001-jmac_DSC1459.tif",
+    "img/tiff16_e/a0001-jmac_DSC1459.tif",
+    "img/dng/a0002-dgw_005.dng"
+  ],
+  "initial_partial_sample": {
+    "bytes": 524288,
+    "sha256": "e683b9346c8bb16c922753eaacdde57594b7ae6479a12d00377837d82a4cd0f0",
+    "scope": "Initial bounded response sample; superseded by the complete retained HTML."
+  },
+  "path": "artifacts/experiments/dataset_research_scene_v2/sources/fivek_official.html",
+  "bytes": 4629128,
+  "complete_html": true
+}

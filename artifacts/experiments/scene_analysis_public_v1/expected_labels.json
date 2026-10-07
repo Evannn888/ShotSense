@@ -1,0 +1,59 @@
+{
+  "day_portrait": {
+    "subject_acceptable": ["people"],
+    "lighting_acceptable": ["overcast", "daylight"],
+    "observation": "海滩白天人像，亮灰天空、柔和自然光；主角是人。"
+  },
+  "shadow_portrait": {
+    "subject_acceptable": ["people"],
+    "lighting_acceptable": ["indoor_artificial"],
+    "lighting_ambiguous": true,
+    "observation": "黑背景、蓝橙方向光的人像，有意保留暗部；人工布光明显，室内外或拍摄时刻无法单凭画面确认。"
+  },
+  "city_night": {
+    "subject_acceptable": ["urban_architecture"],
+    "lighting_acceptable": ["daylight", "sunset_sunrise", "night"],
+    "lighting_ambiguous": true,
+    "observation": "城市高楼全景，蓝色天空、清晰环境天光和建筑灯同时出现；接近日暮或蓝调时段，文件名不能确定夜间标签。"
+  },
+  "milky_way": {
+    "subject_acceptable": ["natural_landscape"],
+    "lighting_acceptable": ["night"],
+    "observation": "星空和银河、红色照明的低处地景；明确夜间，不能把星空亮到白天。"
+  },
+  "sunset_silhouette": {
+    "subject_acceptable": ["natural_landscape"],
+    "lighting_acceptable": ["sunset_sunrise"],
+    "observation": "粉橙蓝晚霞与约书亚树剪影；黑色前景是合理剪影，不是已知曝光错误。"
+  },
+  "kitchen": {
+    "subject_acceptable": ["indoor_room"],
+    "lighting_acceptable": ["indoor_natural", "indoor_artificial"],
+    "lighting_ambiguous": true,
+    "observation": "餐厅吧台室内，窗外天光和天花板人工灯混合；远处有人，但画面主体是室内空间。"
+  },
+  "backlit_landscape": {
+    "subject_acceptable": ["natural_landscape"],
+    "lighting_acceptable": ["daylight", "sunset_sunrise"],
+    "lighting_ambiguous": true,
+    "observation": "树林湖面、雾气和明显太阳光束；自然逆光，暖调可能来自低角度阳光，时刻不确定。"
+  },
+  "dog": {
+    "subject_acceptable": ["animal_pet"],
+    "lighting_acceptable": ["daylight"],
+    "observation": "户外幼犬，边缘受太阳照亮、地面阴影清楚；主体是宠物。"
+  },
+  "day_portrait_dark_control": {
+    "subject_acceptable": ["people"],
+    "lighting_acceptable": ["underexposed_daylight", "overcast", "daylight"],
+    "known_non_night_control": true,
+    "observation": "同一白天人像经过已声明的线性显示亮度乘1/8；拍摄场景未变，不能当成真实夜间或真实相机噪声。"
+  },
+  "backlit_landscape_dark_control": {
+    "subject_acceptable": ["natural_landscape"],
+    "lighting_acceptable": ["underexposed_daylight", "daylight", "sunset_sunrise"],
+    "known_non_night_control": true,
+    "lighting_ambiguous": true,
+    "observation": "同一有太阳光束的逆光风景经过线性显示亮度乘1/8；构图与太阳未变，时刻仍不确定，非真实低光相机样本。"
+  }
+}

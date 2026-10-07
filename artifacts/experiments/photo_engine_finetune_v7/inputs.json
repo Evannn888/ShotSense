@@ -1,0 +1,105 @@
+{
+  "scope": "Three user-downloaded JPEGs and seven previously inspected non-heldout RAW diagnostics; not independent camera preference acceptance. Frozen before tuning.",
+  "cases": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+      "bytes": 10823098,
+      "header_size": [
+        8192,
+        6144
+      ],
+      "sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3"
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+      "bytes": 2779239,
+      "header_size": [
+        8688,
+        5712
+      ],
+      "sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d"
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "path": "/Users/evanchen/Downloads/nir-himi-1P1yaGS_Gek-unsplash.jpg",
+      "bytes": 1333473,
+      "header_size": [
+        2809,
+        4213
+      ],
+      "sha256": "649d9b8d4763487d787574812486cd62a381c6c25e92337223bafb59a1f3f5ee"
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0113-IMG_1129.dng",
+      "bytes": 13563322,
+      "header_size": [
+        4312,
+        2876
+      ],
+      "sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5"
+    },
+    {
+      "id": "a0575-kme_040",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0575-kme_040.dng",
+      "bytes": 12118860,
+      "header_size": [
+        3944,
+        2622
+      ],
+      "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+      "bytes": 11679930,
+      "header_size": [
+        4476,
+        2954
+      ],
+      "sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef"
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2049-IMG_1585.dng",
+      "bytes": 14388136,
+      "header_size": [
+        4312,
+        2876
+      ],
+      "sha256": "288159dc4f30ded26db0f059d40c8ff85c9f59128cc8f3009c0862eb2b7ec22c"
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2132-IMG_4947.dng",
+      "bytes": 12665412,
+      "header_size": [
+        4312,
+        2876
+      ],
+      "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2270-_DSC0033.dng",
+      "bytes": 3760142,
+      "header_size": [
+        3040,
+        2014
+      ],
+      "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+    },
+    {
+      "id": "a3246-kme_445",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a3246-kme_445.dng",
+      "bytes": 6749044,
+      "header_size": [
+        3596,
+        2360
+      ],
+      "sha256": "ff04a6274a462690707ec2dffd5644a10dc9342f7b8e089170d5b65044361442"
+    }
+  ]
+}

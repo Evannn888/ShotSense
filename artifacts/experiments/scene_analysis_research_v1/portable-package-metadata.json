@@ -1,0 +1,39 @@
+[
+  {
+    "name": "open-clip-torch",
+    "version": "3.3.0",
+    "requires_python": ">=3.9",
+    "requires_dist": [
+      "torch>=2.0",
+      "torchvision",
+      "regex",
+      "ftfy",
+      "tqdm",
+      "huggingface-hub",
+      "safetensors",
+      "timm>=1.0.17",
+      "torch>=2.0; extra == \"training\"",
+      "webdataset<=0.2.86,>=0.2.5; extra == \"training\"",
+      "pandas; extra == \"training\"",
+      "transformers[sentencepiece]; extra == \"training\"",
+      "timm>=1.0.17; extra == \"training\"",
+      "fsspec; extra == \"training\"",
+      "pytest-split; extra == \"test\"",
+      "pytest; extra == \"test\"",
+      "open_clip_torch[training]; extra == \"test\"",
+      "requests; extra == \"test\""
+    ]
+  },
+  {
+    "name": "timm",
+    "version": "1.0.30",
+    "requires_python": ">=3.8",
+    "requires_dist": [
+      "torch",
+      "torchvision",
+      "pyyaml",
+      "huggingface_hub",
+      "safetensors"
+    ]
+  }
+]

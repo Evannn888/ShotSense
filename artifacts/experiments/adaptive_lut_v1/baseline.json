@@ -1,0 +1,16 @@
+{
+  "app/streamlit_app.py": "b1965a4047a39469cc305e3c555137bcf0938af6da0a536338e77b71ca57318b",
+  "src/photo_engine.py": "ac2f2186bd8a4651320322537f56e03323adf94c3def5193d11ed5deda2f95d7",
+  "src/jpeg_inference.py": "969f6ef4ae05542f90f1477dc100623e30460e8c2bd4f732b81936acbf55f5f7",
+  "src/inference.py": "ba8d6b7c50209f4e50737dc3af8d37d4577f6ce79a5ae13915f64ac4286e8873",
+  "src/preview.py": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62",
+  "src/color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+  "src/preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6",
+  "src/extract_labels.py": "d8c9b2b2a261f41329437284de9874afa87b062c9d9b02ad51380eed548e4dde",
+  "artifacts/model/model.onnx": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+  "artifacts/model/model.json": "0e8f81c12684ce3ae2b993dbb097883df1576786c830235da2cfb4e6003b01b2",
+  "artifacts/photo_engine/neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+  "artifacts/photo_engine/natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b",
+  "artifacts/photo_engine/chroma.pp3": "9828481c3d842fa443415f3f0f3c2626889133e5819abd0fbf6c3fa448faff0a",
+  "artifacts/photo_engine/shadows.pp3": "3a9f1182bb8f7b5fba3590b22a48c02656b543018ae5a9178be393a86dd1a355"
+}

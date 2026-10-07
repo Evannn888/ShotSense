@@ -1,0 +1,186 @@
+{
+  "input": {
+    "input": "/Users/evanchen/Downloads/1.webp",
+    "format": "WEBP",
+    "size": [
+      480,
+      270
+    ],
+    "mode": "RGB",
+    "frames": 1,
+    "icc_present": false,
+    "bytes": 9540,
+    "sha256": "2eeb453096da996fc5497a48a5491ec109f53cf72fa2e0c4a427cbeaef83c3f2",
+    "scope": "User-requested isolated WebP photo trial. Decode original pixels directly, with ICC conversion if present; no JPEG transcoding, resizing, denoising or sharpening. Reuse unchanged paired-sRGB model/strength/PNG renderer at0/50/100%. No website-format support or default promotion.",
+    "preserved_source_files": {
+      "app/streamlit_app.py": "b1965a4047a39469cc305e3c555137bcf0938af6da0a536338e77b71ca57318b",
+      "src/photo_engine.py": "ac2f2186bd8a4651320322537f56e03323adf94c3def5193d11ed5deda2f95d7",
+      "src/jpeg_inference.py": "969f6ef4ae05542f90f1477dc100623e30460e8c2bd4f732b81936acbf55f5f7",
+      "src/adaptive_lut.py": "282ed35fbd26c719d2714ab93bec3872289c7ce53563b27dbf147e3042587a38"
+    }
+  },
+  "lut": {
+    "version": "image-adaptive-3dlut-paired-srgb-v1",
+    "engine": "Image-Adaptive-3DLUT",
+    "model": {
+      "author_repository": "https://github.com/HuiZeng/Image-Adaptive-3DLUT",
+      "revision": "b491f6df64a588864739a157db271e5c848e1805",
+      "variant": "paired-sRGB",
+      "repository_license": "Apache-2.0",
+      "files": {
+        "pretrained_models/sRGB/classifier.pth": {
+          "bytes": 1083261,
+          "git_blob": "439f2ada316f45d1d28dd86a161790aa3b4e334b",
+          "sha256": "bae9865395625ecae58cfe86147e521093bb1e29e7b2544e02adb238b8035021",
+          "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/classifier.pth"
+        },
+        "pretrained_models/sRGB/LUTs.pth": {
+          "bytes": 1294452,
+          "git_blob": "0830dceee2256ea5d0965c029945c329fac82a26",
+          "sha256": "c1bb2bc4b7239c1a7e96159f5923123ba796b1fceb0b8c3132b423ea825b821a",
+          "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/pretrained_models/sRGB/LUTs.pth"
+        },
+        "models.py": {
+          "bytes": 12014,
+          "git_blob": "8fbc2de9c12a474de774880a524198d54fb25fb7",
+          "sha256": "3f39c49aebd2b85787638bc9d402d21d5d664b844edd5fb8d5e4ce1fdb1d9f3f",
+          "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models.py"
+        },
+        "models_x.py": {
+          "bytes": 8474,
+          "git_blob": "fb3c44475ec62682a062d84ed89601f6a4458a0e",
+          "sha256": "5553ed2306152ecb31a51951f20388de65b96898ddeb4b9d03dc52bf3aa7ad9e",
+          "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/models_x.py"
+        },
+        "demo_eval.py": {
+          "bytes": 2793,
+          "git_blob": "f6dd73969940e4eb6a21f3f9ef587289bba712df",
+          "sha256": "6d41a39d39041a098cccef085571816935955f9bba42810d4059e3d01dce5bcd",
+          "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/demo_eval.py"
+        },
+        "trilinear_cpp/src/trilinear.cpp": {
+          "bytes": 7615,
+          "git_blob": "b4d75b04c36b97559d7421b2ff2df98ee16405a2",
+          "sha256": "5b2b132b625b4bb1ba802213831dcb02e6d4c70b0fffad99f6d3b045da988185",
+          "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/trilinear_cpp/src/trilinear.cpp"
+        },
+        "LICENSE": {
+          "bytes": 11357,
+          "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/LICENSE"
+        },
+        "README.md": {
+          "bytes": 5488,
+          "git_blob": "eae43b086353d920e83042098dbefad24a642267",
+          "sha256": "45cd2cc7d86bd7f45649308b508fd1e42b5061e15d89d0ca9980e72656dd8956",
+          "url": "https://raw.githubusercontent.com/HuiZeng/Image-Adaptive-3DLUT/b491f6df64a588864739a157db271e5c848e1805/README.md"
+        }
+      },
+      "semantics": "Frozen external color/tone model, not validated Adobe parameters or a personal-photo preference model."
+    },
+    "weights": [
+      1.5626002550125122,
+      0.43797624111175537,
+      -1.2833881378173828
+    ],
+    "lut_sha256": "fc2e95fbaae73ab33963812a8796baf8fa96994958be344a4dd9af34f186e383",
+    "size": [
+      480,
+      270
+    ],
+    "device": "cpu",
+    "row_chunk": 128,
+    "new_full_channel_fraction": 0.0,
+    "new_black_pixel_fraction": 0.0011188271604938272,
+    "float_below_zero_pixel_fraction": 0.0038657407407407408,
+    "float_above_one_pixel_fraction": 0.0,
+    "input_pixels_sha256": "3c548f904ef169801d2e03beb62dffb13181fc435240c9bb48f3c2180bcacc62",
+    "output_pixels_sha256": "511788bce437f4f9ebe4125b9c19d741b31018582c87c3f479d44c4d83339165",
+    "predictor_seconds": 0.027259834000000094,
+    "table_seconds": 0.01595858299999975,
+    "seconds": 0.0432186670000001,
+    "quality_status": "isolated experimental pilot; personal-photo preference pending",
+    "semantics": "Learned global sRGB color/tone transform of original pixels; not camera Kelvin, semantic region edits, denoising or reconstructed detail."
+  },
+  "exports": [
+    {
+      "label": "original",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-webp-1/original.png",
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 0.0,
+        "blend_space": "display sRGB",
+        "size": [
+          480,
+          270
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.0,
+        "output_png_sha256": "72a05cce66e2a92827f34f8e7370fde719981d446daa6032b3e243308bc296fc",
+        "semantics": "Pretrained image-adaptive LUT blended with directly decoded WebP sRGB pixels."
+      }
+    },
+    {
+      "label": "lut50",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-webp-1/lut50.png",
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 0.5,
+        "blend_space": "display sRGB",
+        "size": [
+          480,
+          270
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9998996913580247,
+        "output_png_sha256": "995adfc465dade496a803c829fdf06783fda4dbbb008df3cdfc39c12961b0070",
+        "semantics": "Pretrained image-adaptive LUT blended with directly decoded WebP sRGB pixels."
+      }
+    },
+    {
+      "label": "lut100",
+      "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-webp-1/lut100.png",
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          480,
+          270
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 1.0,
+        "output_png_sha256": "aae613fdbe7bcc72c164a2e56897600dcc59c8f332b1f36405e77f4dbd71c82f",
+        "semantics": "Pretrained image-adaptive LUT blended with directly decoded WebP sRGB pixels."
+      }
+    }
+  ],
+  "same_input_deterministic": true,
+  "source_preserved": true,
+  "zero_strength_identity": true,
+  "png_pixels_size_srgb_verified": true,
+  "comparison_arch_weights": [
+    1.51740562915802,
+    -0.48698124289512634,
+    -0.9682520627975464
+  ],
+  "different_predicted_weights_and_lut_from_arch": true,
+  "webp_decode": "Direct EXIF-oriented RGB; embedded ICC converted to sRGB if present, otherwise sRGB assumed.",
+  "native_size_preserved": true,
+  "no_new_webapp_or_CLI_format_support": true,
+  "preserved_source_code": {
+    "app/streamlit_app.py": true,
+    "src/photo_engine.py": true,
+    "src/jpeg_inference.py": true,
+    "src/adaptive_lut.py": true
+  },
+  "visual_observations": {
+    "source": "Small480\u00d7270WebP; existing softness/compression limits texture assessment.",
+    "half": "Brighter cloud tones and more tree/grass separation with a milder global change.",
+    "full": "Brighter sky and stronger green/dark foreground contrast; deeper dark shrubs and0.1119% newly all-black pixels.",
+    "preference": "Reviewer provisionally favors50% to retain the muted overcast mood; user preference not yet recorded.",
+    "decision": "Useful example of adaptive global color/tone. No general naturalness/sharpness acceptance or automatic-default promotion."
+  },
+  "run_script_sha256": "1eec86445f9c4dd1b51aa3c13d10fcc73401d336fd34c3d0db866bea5cd6a39b"
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Actual temporary-home PNG delivery; live client download and personal-photo quality unverified",
+  "export_ui_version": "png-local-delivery-v4",
+  "full_suite": {
+    "passed": 63,
+    "seconds_reported": 78.11,
+    "junit": "data/tools/rawtherapee-5.11/photo-engine-delivery-v4-tests.xml",
+    "junit_sha256": "9a20beb11e7fb4d2ed0de3dc592c9074d1b0428c1111901b74fbe684bdc7b6bb"
+  },
+  "preservation_checks": {
+    "streamlit_app-before.py": true,
+    "tests-before.py": true,
+    "src/photo_engine.py": true,
+    "src/inference.py": true,
+    "src/jpeg_inference.py": true,
+    "src/preview.py": true,
+    "src/color_pipeline.py": true,
+    "src/preprocess.py": true,
+    "src/extract_labels.py": true,
+    "artifacts/model/model.onnx": true,
+    "artifacts/model/model.json": true
+  },
+  "server_health": "ok",
+  "source_sha256": {
+    "app/streamlit_app.py": "f95d61d7acb6a5b8ba9ae3afd02babf618f1b713ebb4938e4e181fc4d500a518",
+    "tests/test_photo_engine.py": "d2c333cd37a936cb19646be9b1bbe4f1ad4df16a8a7b26818a880f394c5a8818",
+    "README.md": "d0d3e2f3aeae879e1041a37f6e211179528ad72ca0f023060573c2cb8cbe6b84",
+    "SHOTSENSE_MASTER_PLAN.md": "009a4c10cf7470080c2b1ebfb7faafe12d5a2327ceca7d6dab1e46c842cd5b82",
+    "artifacts/experiments/photo_engine_delivery_v4/tests-before.py": "2f2a967aefc82ab76e828cb2444cfb53cf5171be0f7ce6025caa31c53a1258e6",
+    "artifacts/experiments/photo_engine_delivery_v4/streamlit_app-before.py": "14f464609c9afd4ed55deb3515385f5ccdd5c1262726f3c3252d094331f3e042",
+    "artifacts/experiments/photo_engine_delivery_v4/ACCEPTANCE.md": "609e5fbc914aa26795ba12241d33b1a6eeb36f7edb438bccb8dd93eb82692363",
+    "artifacts/experiments/photo_engine_delivery_v4/PROTOCOL.md": "81fbb277ab6402c30d908903345691cdb13cbf6b9257d5133844c2033281adc3"
+  },
+  "client_status": "Browser focus timed out; native Codex access denied and not bypassed; current personal photo not saved by agent"
+}

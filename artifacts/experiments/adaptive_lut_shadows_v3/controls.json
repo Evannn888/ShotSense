@@ -1,0 +1,444 @@
+{
+  "cases": [
+    {
+      "name": "Neutral ramp",
+      "selection": {
+        "suggested_strength": 0.25,
+        "sample_luminance_q30": 0.2980392277240753,
+        "sample_shadow_fraction": 0.328125,
+        "sample_size": [
+          256,
+          256
+        ],
+        "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+      },
+      "auto": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.25,
+        "size": [
+          256,
+          256
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "9d87399b6f383e989b56756e6868f0522da0c08fc9150ff9b3c149a2c56a4f4f",
+        "output_pixels_sha256": "c7a9108a18bd3f6cbba77ae64913f1c995e99f86d7ff629232871e142a70c558",
+        "seconds": 0.007876459000000002,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "maximum": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 1.0,
+        "size": [
+          256,
+          256
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "9d87399b6f383e989b56756e6868f0522da0c08fc9150ff9b3c149a2c56a4f4f",
+        "output_pixels_sha256": "89bdf6f12773e936b442127c10227e47b3454d4f59532831089bf8109d7a9625",
+        "seconds": 0.004949290999999967,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          256,
+          256
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.67578125,
+        "output_png_sha256": "ff0db5a2d48d1b119f32b8368aac87cfbdb9e51484b74095e7f45e6ba4132681",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "negative_steps": [
+        0,
+        0,
+        0
+      ],
+      "neutral_channel_spread": 0
+    },
+    {
+      "name": "Color / skin patches",
+      "selection": {
+        "suggested_strength": 0.45,
+        "sample_luminance_q30": 0.2125999927520752,
+        "sample_shadow_fraction": 0.25,
+        "sample_size": [
+          256,
+          256
+        ],
+        "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+      },
+      "auto": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.45,
+        "size": [
+          256,
+          256
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "5fd4afaa5ff4009d67534542f0e944377c49ab25ad3a53c1d3d00176154e4cab",
+        "output_pixels_sha256": "c8f6b1c0518d78fda8dd0b4e5f9dc8733138555fe96b4075d1f5276dc818aaad",
+        "seconds": 0.007564249999999939,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "maximum": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 1.0,
+        "size": [
+          256,
+          256
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "5fd4afaa5ff4009d67534542f0e944377c49ab25ad3a53c1d3d00176154e4cab",
+        "output_pixels_sha256": "53f350e9f25039658877a1e1b1a2285a3cb9a95a2ece9e55271f095a10db6ae6",
+        "seconds": 0.005045125000000095,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          256,
+          256
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.875,
+        "output_png_sha256": "dac7a58bed07bccbbd44ebbde3e7c1ea7092afabde7c4364108e9e9aa0af6d58",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "patches": {
+        "base": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            255,
+            255,
+            255
+          ],
+          [
+            131,
+            131,
+            131
+          ],
+          [
+            34,
+            34,
+            34
+          ],
+          [
+            193,
+            146,
+            114
+          ],
+          [
+            229,
+            196,
+            172
+          ],
+          [
+            142,
+            100,
+            79
+          ],
+          [
+            92,
+            124,
+            80
+          ],
+          [
+            69,
+            119,
+            155
+          ],
+          [
+            182,
+            157,
+            90
+          ],
+          [
+            181,
+            186,
+            191
+          ],
+          [
+            220,
+            220,
+            211
+          ],
+          [
+            252,
+            4,
+            3
+          ],
+          [
+            6,
+            254,
+            5
+          ],
+          [
+            2,
+            1,
+            255
+          ],
+          [
+            31,
+            48,
+            53
+          ]
+        ],
+        "auto": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            255,
+            255,
+            255
+          ],
+          [
+            131,
+            131,
+            131
+          ],
+          [
+            46,
+            46,
+            46
+          ],
+          [
+            193,
+            146,
+            114
+          ],
+          [
+            229,
+            196,
+            172
+          ],
+          [
+            144,
+            101,
+            80
+          ],
+          [
+            93,
+            125,
+            81
+          ],
+          [
+            70,
+            120,
+            156
+          ],
+          [
+            182,
+            157,
+            90
+          ],
+          [
+            181,
+            186,
+            191
+          ],
+          [
+            220,
+            220,
+            211
+          ],
+          [
+            254,
+            4,
+            3
+          ],
+          [
+            6,
+            254,
+            5
+          ],
+          [
+            2,
+            1,
+            255
+          ],
+          [
+            39,
+            60,
+            66
+          ]
+        ],
+        "max": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            255,
+            255,
+            255
+          ],
+          [
+            131,
+            131,
+            131
+          ],
+          [
+            60,
+            60,
+            60
+          ],
+          [
+            193,
+            146,
+            114
+          ],
+          [
+            229,
+            196,
+            172
+          ],
+          [
+            146,
+            103,
+            81
+          ],
+          [
+            93,
+            126,
+            81
+          ],
+          [
+            70,
+            121,
+            158
+          ],
+          [
+            182,
+            157,
+            90
+          ],
+          [
+            181,
+            186,
+            191
+          ],
+          [
+            220,
+            220,
+            211
+          ],
+          [
+            254,
+            4,
+            3
+          ],
+          [
+            6,
+            254,
+            5
+          ],
+          [
+            2,
+            1,
+            255
+          ],
+          [
+            49,
+            75,
+            83
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Neutral edge / grain",
+      "selection": {
+        "suggested_strength": 0.6,
+        "sample_luminance_q30": 0.1568627506494522,
+        "sample_shadow_fraction": 0.5,
+        "sample_size": [
+          256,
+          256
+        ],
+        "semantics": "Provisional brightness-distribution rule; photographic intent is unknown."
+      },
+      "auto": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 0.6,
+        "size": [
+          256,
+          256
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "ff331a3625bf51f1cd2ccf1f50aabc17ef288cd816901b74d656870fdf6b579e",
+        "output_pixels_sha256": "be6b75c7b57566190791159969baf5e4c9b3fde54eb1d3a5e002880ddaea74d2",
+        "seconds": 0.004457042000000078,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "maximum": {
+        "version": "natural-shadow-curve-v1",
+        "strength": 1.0,
+        "size": [
+          256,
+          256
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "input_pixels_sha256": "ff331a3625bf51f1cd2ccf1f50aabc17ef288cd816901b74d656870fdf6b579e",
+        "output_pixels_sha256": "ca191ddf85e886a7a982f17e3b995404bbcfbd7e85dcf8b155492b0af9405850",
+        "seconds": 0.00480404099999987,
+        "row_chunk": 128,
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          256,
+          256
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 1.0,
+        "output_png_sha256": "7f6d058a32256c4f6c1e3cd4982d586927c3259ed36d7bb980cc4ff4b537f031",
+        "semantics": "Brightness-only common display-sRGB RGB gain; deep-black and upper-midtone taper, bounded channel headroom. No semantic region detection or spatial processing."
+      },
+      "dark_grain_std": {
+        "base": [
+          1.9978978030362997,
+          1.9978978030362997,
+          1.9978978030362997
+        ],
+        "auto": [
+          1.810949935356385,
+          1.810949935356385,
+          1.810949935356385
+        ],
+        "max": [
+          1.5898202953254454,
+          1.5898202953254454,
+          1.5898202953254454
+        ]
+      }
+    }
+  ],
+  "minimum_continuous_curve_slope": 0.5121379740812699
+}

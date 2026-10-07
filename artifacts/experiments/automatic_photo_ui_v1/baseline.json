@@ -1,0 +1,13 @@
+{
+  "app/streamlit_app.py": "48dfd17381c23da3966269576acba610045f37ebc8e445c6f23fc4f85b970244",
+  "tests/test_app.py": "235b9a09f02f642bcb8db9a80148fafd7fee63216998f512bc3114c2155ee616",
+  "tests/test_natural_lut.py": "cc61d2273f6e783abbca1734d247367ac72bde2b1b3c89fd1d3230cb1156e0d5",
+  "tests/test_photo_engine.py": "441ab98c10cd4067354388e935c6dce75c175bb1d0ac4be072f06975b27b33e1",
+  "src/lut_natural.py": "d3a3d0ecb3de687eebf6a070f755b8602dace3264e7f7306ff5b6ada4f065dde",
+  "src/adaptive_lut.py": "282ed35fbd26c719d2714ab93bec3872289c7ce53563b27dbf147e3042587a38",
+  "src/photo_engine.py": "ac2f2186bd8a4651320322537f56e03323adf94c3def5193d11ed5deda2f95d7",
+  "src/jpeg_inference.py": "969f6ef4ae05542f90f1477dc100623e30460e8c2bd4f732b81936acbf55f5f7",
+  "requirements.lock.txt": "2e25fa64419b03f08af92f9f58b2330b3d9e8811b05a0d81b901433b645e55b0",
+  "SHOTSENSE_MASTER_PLAN.md": "21f2ec0320e837b720356069ef787106cb765c6aecfcfa26d376781bd6d70c96",
+  "README.md": "658e66722c66dce699511e9995ffcc138dcee69383d704d2bbb96feb1e17ed67"
+}

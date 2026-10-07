@@ -1,0 +1,15 @@
+{
+  "repo": "apple/MobileCLIP2-S0",
+  "revision": "3136ea51c8ed56b9f9abfab04cb816735aaad6cb",
+  "weights": {
+    "rfilename": "mobileclip2_s0.pt",
+    "blobId": "8f8262c5cbb94590ebf6aa2237239356a65c0ddf",
+    "size": 299864852,
+    "lfs": {
+      "sha256": "bc3bc861baa680df2f9e3dc1aa0acbe5a21af21032df385026dda70c33505aa6",
+      "size": 299864852,
+      "pointerSize": 134
+    }
+  },
+  "source": "https://huggingface.co/api/models/apple/MobileCLIP2-S0?blobs=true"
+}

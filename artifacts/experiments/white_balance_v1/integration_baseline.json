@@ -1,0 +1,11 @@
+{
+  "decision": "Fixed13applied/12fixed/4public/candle-flash visual review found no clear severe new color failure; mild sunset/sky changes and false night skip retained. Default-off only; no independent preference acceptance. Metadata WB status now reflects actual component status; photographic rules unchanged.",
+  "sha256": {
+    "src/lut_natural.py": "0b6d116d4c5f445a5de36644c3ca821a3ac9a23fedc6f59296769c6c7b5f167a",
+    "src/white_balance.py": "9af1adf64cb68d4a8938a77e1612420530792091f6f1177afa52170541f4ea99",
+    "src/scene_policy.py": "89cb9750c864947242ebaf0d074ed6995ad07e84ed81c112c2853f3cfcb100fb",
+    "app/streamlit_app.py": "2027c90839b3522325c973686e2cfa050704e41c2cb74f0c60ade87ba3eb0969",
+    "tests/test_automatic_photo.py": "b04b41950969bc3b0f629ccba4b2115b1fe64c8520ed33721e7ce94a7a30f9e1",
+    "tests/test_white_balance.py": "1725395a1ea2e8f45080de4c2bd96dbaab1353a2bdb7caf91c70feddc3418da2"
+  }
+}

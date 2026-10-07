@@ -1,0 +1,214 @@
+{
+  "scope": "JPEG pixel bounds and preview roundoff compatibility; not new photographic/color acceptance",
+  "limits": {
+    "jpeg_pixels": 64000000,
+    "dng_pixels": 40000000,
+    "input_bytes": 134217728,
+    "app_worker_timeout_seconds": 60,
+    "engine_cli_timeout_seconds": 45
+  },
+  "processing_version": "rawtherapee-recipes-v5",
+  "jpeg_processing_version": "rendered-jpeg-srgb-v2",
+  "full_suite": {
+    "passed": 67,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 81.317,
+    "junit_path": "data/user_photo_diagnostics/highres-v6/full-tests.xml",
+    "junit_sha256": "ce42823d11127c3e15e691aa8c74a3d0b2c4032662ebe4ac859b113d1bc6bf05"
+  },
+  "focused_initial_checks": {
+    "passed": 3,
+    "seconds": 4.79,
+    "junit_sha256": "5f3989815edc46c4c80845e242725a97d67a99bd66a5864a1382db1e7b7e885a"
+  },
+  "actual_worker_reports": {
+    "ahmet-natural": {
+      "path": "data/user_photo_diagnostics/highres-v6/ahmet-natural/report.json",
+      "sha256": "adb5776b53f3cecdd422ec11d0f949d99d4896f418b20abfb57f369b391b2c5d",
+      "status": "passed",
+      "total_seconds": 56.642334749999996,
+      "app_worker_seconds": 36.019312792,
+      "rss": {
+        "root_peak_bytes": 1718337536,
+        "tree_peak_bytes": 1719975936,
+        "samples": 206
+      },
+      "source_preserved": true,
+      "zero_identity_verified": true,
+      "error": null,
+      "export_100_seconds": 7.0600992090000005,
+      "png": {
+        "bytes": 79551950,
+        "sha256": "3c5363e80782fab4ed18c48a07d1ff201a94cc1430b9c952f3735a71d51e7130",
+        "size": [
+          8192,
+          6144
+        ]
+      }
+    },
+    "martin-natural": {
+      "path": "data/user_photo_diagnostics/highres-v6/martin-natural/report.json",
+      "sha256": "0cf5f36332025011454f734eac0e96f569210d64c24bf0d530d41c42b4078b63",
+      "status": "passed",
+      "total_seconds": 44.780043583,
+      "app_worker_seconds": 29.587785833,
+      "rss": {
+        "root_peak_bytes": 1698578432,
+        "tree_peak_bytes": 2262368256,
+        "samples": 163
+      },
+      "source_preserved": true,
+      "zero_identity_verified": true,
+      "error": null,
+      "export_100_seconds": 5.329609250000001,
+      "png": {
+        "bytes": 33808489,
+        "sha256": "98adca052236abb93f9b2c628c78ed3e22c025374b6914b116e9f6d5c9aed1fe",
+        "size": [
+          8688,
+          5712
+        ]
+      }
+    },
+    "ahmet-manual": {
+      "path": "data/user_photo_diagnostics/highres-v6/ahmet-manual/report.json",
+      "sha256": "3158cea4015f6f092fc0991692cd3cb7c232d156e2cfaef9200103e909072ab3",
+      "status": "passed",
+      "total_seconds": 5.139561082999999,
+      "app_worker_seconds": 4.673260915999999,
+      "rss": {
+        "root_peak_bytes": 323780608,
+        "tree_peak_bytes": 1359839232,
+        "samples": 19
+      },
+      "source_preserved": true,
+      "zero_identity_verified": true,
+      "error": null
+    },
+    "martin-manual": {
+      "path": "data/user_photo_diagnostics/highres-v6/martin-manual/report.json",
+      "sha256": "483b93a2ec4078b1fec6277d6360fc83b05af2da20c6df93092c679910cf7138",
+      "status": "failed",
+      "total_seconds": 3.4355892500000005,
+      "app_worker_seconds": null,
+      "rss": {
+        "root_peak_bytes": 179290112,
+        "tree_peak_bytes": 1221689344,
+        "samples": 13
+      },
+      "source_preserved": null,
+      "zero_identity_verified": null,
+      "error": "ValueError: ValueError: Preview source must be finite float32 RGB in [0,1], at most 1600 pixels per edge"
+    },
+    "ahmet-manual-resizefixed": {
+      "path": "data/user_photo_diagnostics/highres-v6/ahmet-manual-resizefixed/report.json",
+      "sha256": "094619f24199f19287453fe53fa70619e345ae75d1a1bb44501574a9f729bf44",
+      "status": "passed",
+      "total_seconds": 4.919119375,
+      "app_worker_seconds": 4.506258958,
+      "rss": {
+        "root_peak_bytes": 326516736,
+        "tree_peak_bytes": 1705984000,
+        "samples": 18
+      },
+      "source_preserved": true,
+      "zero_identity_verified": true,
+      "error": null
+    },
+    "martin-manual-resizefixed": {
+      "path": "data/user_photo_diagnostics/highres-v6/martin-manual-resizefixed/report.json",
+      "sha256": "cae5b96538a44d9e5f1e214e32db7c4c3b422c9ed2351e81200d4aefc01b4e03",
+      "status": "passed",
+      "total_seconds": 4.77894325,
+      "app_worker_seconds": 4.24665875,
+      "rss": {
+        "root_peak_bytes": 244301824,
+        "tree_peak_bytes": 1390411776,
+        "samples": 17
+      },
+      "source_preserved": true,
+      "zero_identity_verified": true,
+      "error": null
+    }
+  },
+  "isolated_actual_50MP_app_test": {
+    "scope": "Isolated AppTest of actual 50 MP worker result; does not establish live-browser delivery.",
+    "display_matches_actual_native_png": true,
+    "ordinary_button_saved_matching_native_png": true,
+    "temporary_save_bytes": 79551950,
+    "save_size": [
+      8192,
+      6144
+    ],
+    "no_actual_downloads_write": true,
+    "status": "passed",
+    "seconds": 18.466472792
+  },
+  "source_inputs_preserved": [
+    {
+      "path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+      "bytes": 10823098,
+      "sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3"
+    },
+    {
+      "path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+      "bytes": 2779239,
+      "sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d"
+    }
+  ],
+  "core_unchanged_against_HEAD": {
+    "src/inference.py": "ba8d6b7c50209f4e50737dc3af8d37d4577f6ce79a5ae13915f64ac4286e8873",
+    "src/preview.py": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62",
+    "src/color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+    "src/preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6",
+    "src/extract_labels.py": "d8c9b2b2a261f41329437284de9874afa87b062c9d9b02ad51380eed548e4dde",
+    "artifacts/model/model.onnx": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+    "artifacts/model/model.json": "0e8f81c12684ce3ae2b993dbb097883df1576786c830235da2cfb4e6003b01b2"
+  },
+  "profiles_unchanged_since_v5": {
+    "artifacts/photo_engine/neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+    "artifacts/photo_engine/natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b",
+    "artifacts/photo_engine/chroma.pp3": "9828481c3d842fa443415f3f0f3c2626889133e5819abd0fbf6c3fa448faff0a",
+    "artifacts/photo_engine/shadows.pp3": "3a9f1182bb8f7b5fba3590b22a48c02656b543018ae5a9178be393a86dd1a355"
+  },
+  "jpeg_code_change_scope": "Only shared pixel bound, resized display-preview bounding, comment and version; feature math/normalization/weights unchanged.",
+  "server": {
+    "old_pid": 8183,
+    "current_pid": 43253,
+    "url": "http://127.0.0.1:8501/",
+    "health": "ok",
+    "restart": "Graceful termination, one startup raced shutdown and was refused; subsequent startup succeeded."
+  },
+  "live_browser": "Current client delivery unverified; native/browser permission boundaries respected. Screenshot render failure may have been stale renderer; live imports not inspected.",
+  "source_sha256": {
+    "artifacts/experiments/photo_engine_highres_v6/verify_actual.py": "e645ce2bbfebb3dd68a6881b9b9a91c993c3bdc57ce891de49e193dc8977f8f8",
+    "artifacts/experiments/photo_engine_highres_v6/PHOTO_REVIEW-2026-10-05.md": "fe73d2e7a418b7e8ef715a30da62139d2bbb1471909abfad0d42987c6fbecce3",
+    "artifacts/experiments/photo_engine_highres_v6/verify_app.py": "54811d912e22a5d6c91091165fc5c94bf5a39f9f8baf57b5b2d84c7bae01a6a8",
+    "artifacts/experiments/photo_engine_highres_v6/jpeg_inference-before.py": "10efa21eafec0c760fefcf81baeecf8271a1018a0551af58b06be1a1dc72aefb",
+    "artifacts/experiments/photo_engine_highres_v6/engine-tests-before.py": "a7cdabe081d103f5bc6d2f3785f5e1451304498159bbb342a22b138ae1a35977",
+    "artifacts/experiments/photo_engine_highres_v6/inputs.json": "5704439cc05c47ec576025c072130c4f395ebb6139ebba10f275a7f3dbf3169d",
+    "artifacts/experiments/photo_engine_highres_v6/streamlit_app-before.py": "88a7dac92ef9096e4ab965915646f84c53f3bc0aafea2cb4ee19d624f3fb7d80",
+    "artifacts/experiments/photo_engine_highres_v6/jpeg-tests-before.py": "36485905382e2f5660e81ab68305acb1eaf16f4a9dfa650c7764134f79a567b4",
+    "artifacts/experiments/photo_engine_highres_v6/photo_engine-before.py": "91a4077a489f8bcab56ca2b361a50b0d4cec644ba91c7765f96f78e97c91b36a",
+    "artifacts/experiments/photo_engine_highres_v6/ACCEPTANCE.md": "2d3bbb1e0747b6a61c5fb02df28af009ba887902ae432a1396361515e5befde6",
+    "artifacts/experiments/photo_engine_highres_v6/PROTOCOL.md": "9b0df764c15d70aa5bf8337e7f6dc22c1ba4e4d601d81bce2cf04c6000f01a0e"
+  },
+  "current_code_sha256": {
+    "src/jpeg_inference.py": "969f6ef4ae05542f90f1477dc100623e30460e8c2bd4f732b81936acbf55f5f7",
+    "src/photo_engine.py": "619111f8f6b0b6abcf966519c7b6c27ba44fdd837303a213337a7de374364aa7",
+    "app/streamlit_app.py": "73bbc6bfb01ebc76aabd7eda2304a19b3f6df3d47a8c137822f5663b33260f49",
+    "tests/test_jpeg_inference.py": "b389520566a94974ae628a1ca9323d23759fe6c845a931295045ac435feb706b",
+    "tests/test_photo_engine.py": "6da832c7a0640af34986b735dcdeed3777f7bd7ca084d0e4d71c079e2741def2"
+  },
+  "next_candidate": "Approved native natural-color/local-tone comparison remains pending; fixed user inputs available. No automatic default promotion.",
+  "user_feedback": {
+    "date": "2026-10-05",
+    "text": "现在感觉效果不错",
+    "scope": "Subjective current effect after fixes/restart; exact live source/recipe/strength unobserved, no general quality/default promotion."
+  },
+  "photographic_review": {
+    "path": "artifacts/experiments/photo_engine_highres_v6/PHOTO_REVIEW-2026-10-05.md",
+    "scope": "Saved two actual50MP v5/100% shadows replays; current live source/recipe/strength unobserved. Review only, no new functional test run."
+  }
+}

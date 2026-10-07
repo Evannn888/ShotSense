@@ -1,0 +1,6 @@
+{
+  "stage": "before real target conversion",
+  "error": "sRGB16 identity max error 26 codes exceeds fixed <=1 gate",
+  "cause": "Pillow serialized sRGB input versus independently generated native LittleCMS destination profile; unify actual destination ICC instead of relaxing the gate.",
+  "real_pair_outputs_generated": false
+}

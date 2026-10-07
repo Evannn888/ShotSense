@@ -1,0 +1,701 @@
+{
+  "scope": "Frozen inspected12-source review; no independent photographic quality or user preference claim.",
+  "cases": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "source": {
+        "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+        "path": "/Users/evanchen/Downloads/ahmet-yuksek-7lK0bpUj8AA-unsplash.jpg",
+        "bytes": 10823098,
+        "header_size": [
+          8192,
+          6144
+        ],
+        "sha256": "2fc5b672331cfb4e4556522c5dc8a7e871200a612012936c9a73be9e24558ff3"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.1444177826900597,
+          "tone_lift": 0.11473740398883818,
+          "sample_color_change_p95": 0.2769742012023926,
+          "sample_luminance_q30": 0.15877099335193634,
+          "sample_size": [
+            256,
+            256
+          ]
+        },
+        "size": [
+          8192,
+          6144
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": 0.0,
+        "row_chunk": 128,
+        "input_pixels_sha256": "a11dbba98ab50c03463b4c9cbd15364a1cc13da8d04958e6a7e990e04434b6bb",
+        "output_pixels_sha256": "e8708161004891e4b352d6531ed8e785fdbddd1ac72a67a510aa3d431b2b4ab4",
+        "seconds": 16.477600916,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          8192,
+          6144
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9999998807907104,
+        "output_png_sha256": "3f36bb2a0d8dedb09677e8cc201caf170cbb4a5e9a266b4fda7b4b1ac64bcb17",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 75042227,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/ahmet-yuksek-7lK0bpUj8AA-unsplash/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/ahmet-yuksek-7lK0bpUj8AA-unsplash/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 26.838288833
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "source": {
+        "id": "martin-bennie-MhYU5K4A93I-unsplash",
+        "path": "/Users/evanchen/Downloads/martin-bennie-MhYU5K4A93I-unsplash.jpg",
+        "bytes": 2779239,
+        "header_size": [
+          8688,
+          5712
+        ],
+        "sha256": "52149e10cb1c335b4791065e6e37719b3067e4d9ba7372b8043cc5ed28d1288d"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.2359131197176702,
+          "tone_lift": 0.11866033226251602,
+          "sample_color_change_p95": 0.1695539444684981,
+          "sample_luminance_q30": 0.15223277956247327,
+          "sample_size": [
+            256,
+            249
+          ]
+        },
+        "size": [
+          8688,
+          5712
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": 0.0,
+        "row_chunk": 128,
+        "input_pixels_sha256": "f3dbe37f4a769b2fa6ccb809230d2753703f1c5a43599c0d12d90e5e07dacfd9",
+        "output_pixels_sha256": "63a616d54023533c58d4876379a0d84b15129389386d22bb190c486a9319103c",
+        "seconds": 15.078301,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          8688,
+          5712
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9857081356944251,
+        "output_png_sha256": "3a85747b783f1f04355152e98b32d5233bcd2c0eac06946c0dba7068d06787bb",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 31671101,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/martin-bennie-MhYU5K4A93I-unsplash/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/martin-bennie-MhYU5K4A93I-unsplash/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 22.891476209000004
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "source": {
+        "id": "nir-himi-1P1yaGS_Gek-unsplash",
+        "path": "/Users/evanchen/Downloads/nir-himi-1P1yaGS_Gek-unsplash.jpg",
+        "bytes": 1333473,
+        "header_size": [
+          2809,
+          4213
+        ],
+        "sha256": "649d9b8d4763487d787574812486cd62a381c6c25e92337223bafb59a1f3f5ee"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.35,
+          "tone_lift": 0.148107293844223,
+          "sample_color_change_p95": 0.07665646821260452,
+          "sample_luminance_q30": 0.1031545102596283,
+          "sample_size": [
+            256,
+            248
+          ]
+        },
+        "size": [
+          2809,
+          4213
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": 0.0,
+        "row_chunk": 128,
+        "input_pixels_sha256": "8c7f98ee919953fdd7f0d76813da31d3ea9273f81760fbc2fd7de2897deff0a4",
+        "output_pixels_sha256": "813b894ebe454cad44e9304f079fbba95691a8588e9694e4a369989efe190d8f",
+        "seconds": 2.3491819580000026,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          2809,
+          4213
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.5492207957586399,
+        "output_png_sha256": "384ae39c5ea4d84393d12b9de31311dfdbeb8348ce9028260b567d9942110f13",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 8746250,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/nir-himi-1P1yaGS_Gek-unsplash/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/nir-himi-1P1yaGS_Gek-unsplash/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 4.408058457999999
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "source": {
+        "id": "a0113-IMG_1129",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0113-IMG_1129.dng",
+        "bytes": 13563322,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "75bc71808c60895eccf7755400199424e27e9be76c75b811402085b8d59b6fa5"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.2622768160575846,
+          "tone_lift": 0.07545340865850447,
+          "sample_color_change_p95": 0.1525106206536293,
+          "sample_luminance_q30": 0.22424431890249252,
+          "sample_size": [
+            252,
+            238
+          ]
+        },
+        "size": [
+          4282,
+          2848
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": 0.0,
+        "row_chunk": 128,
+        "input_pixels_sha256": "909dfa83169cfe28701679e1fe33b52c60075dd0f702f05021e018c4a2c8f68b",
+        "output_pixels_sha256": "5f0728e3478b28a8ebdfc8b2519b0426b758eb9cc60b9232de83826f636bab56",
+        "seconds": 9.890772459000004,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          4282,
+          2848
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.8365133443366273,
+        "output_png_sha256": "5dc398fb757749025d7b8945835e76678dba68b38aee99f14ad5712383b44427",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 16076355,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/a0113-IMG_1129/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/a0113-IMG_1129/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 12.404121000000004
+    },
+    {
+      "id": "a0575-kme_040",
+      "source": {
+        "id": "a0575-kme_040",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0575-kme_040.dng",
+        "bytes": 12118860,
+        "header_size": [
+          3944,
+          2622
+        ],
+        "sha256": "2fd068d9c3e2cf0e39f805d703d1e627270adbe8e45cf70679261879aabc7839"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.22370396094718087,
+          "tone_lift": 0.059962824583053576,
+          "sample_color_change_p95": 0.17880774140357966,
+          "sample_luminance_q30": 0.250061959028244,
+          "sample_size": [
+            244,
+            236
+          ]
+        },
+        "size": [
+          3900,
+          2594
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": 0.0,
+        "row_chunk": 128,
+        "input_pixels_sha256": "69f92f98c931577de35303c147fc84c7086137e85d3bab3abd01de927c256f80",
+        "output_pixels_sha256": "5c42d4f3d6143e94c97e631cef43bf13875908fcac364e8ee8cadf8dcc80b64a",
+        "seconds": 3.4883871659999954,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          3900,
+          2594
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.968959927248285,
+        "output_png_sha256": "5d6ab84d6506db56b647f7c39f74ce26b1e5b6d33e9848d6c0d1d6267f0f4ffa",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 12804970,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/a0575-kme_040/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/a0575-kme_040/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 6.294803333000004
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "source": {
+        "id": "a0715-060812_182920__MG_6255",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a0715-060812_182920__MG_6255.dng",
+        "bytes": 11679930,
+        "header_size": [
+          4476,
+          2954
+        ],
+        "sha256": "3d5f002ed2ebbff2d4bbf403fcb8c3fd7cf7e0823a426b9fde5bbcea546a71ef"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.2323917108064581,
+          "tone_lift": 0.14272564485669134,
+          "sample_color_change_p95": 0.17212317883968353,
+          "sample_luminance_q30": 0.11212392523884772,
+          "sample_size": [
+            244,
+            243
+          ]
+        },
+        "size": [
+          4378,
+          2912
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": 0.0,
+        "row_chunk": 128,
+        "input_pixels_sha256": "02e288a0b8432246eb4fab994f62592c69cc868a0c7657984a1f6d75009fc523",
+        "output_pixels_sha256": "950f4969a9b51eda432e86f5b5a7eb8fc995307b81dfb0c454e435ad639608db",
+        "seconds": 4.237961541999994,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          4378,
+          2912
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9957133789577257,
+        "output_png_sha256": "8e0945e71528f6da9a19f983a13c40f01484295c8d4ed47fde83a9d5377b0673",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 21781224,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/a0715-060812_182920__MG_6255/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/a0715-060812_182920__MG_6255/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 6.904063540999999
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "source": {
+        "id": "a2049-IMG_1585",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2049-IMG_1585.dng",
+        "bytes": 14388136,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "288159dc4f30ded26db0f059d40c8ff85c9f59128cc8f3009c0862eb2b7ec22c"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.2548050424611068,
+          "tone_lift": 0.0,
+          "sample_color_change_p95": 0.15698276460170746,
+          "sample_luminance_q30": 0.35282665491104126,
+          "sample_size": [
+            252,
+            238
+          ]
+        },
+        "size": [
+          4282,
+          2848
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": -0.4973999857902527,
+        "row_chunk": 128,
+        "input_pixels_sha256": "10d1c7d25fb3344c553b4f1ad2b46112d67f22b88bde5c37ced3c03f2d23f645",
+        "output_pixels_sha256": "1a02f9d087d77527b0119843c4abbd3761556462066da7ea2ea47d2ffce91399",
+        "seconds": 4.8928157080000005,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          4282,
+          2848
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.4546870982004629,
+        "output_png_sha256": "59438dcfa842b903b30e113a2247c1d56e124775d3f4f68aa5d09a37fc279d8d",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 16764404,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/a2049-IMG_1585/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/a2049-IMG_1585/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 7.8355234170000045
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "source": {
+        "id": "a2132-IMG_4947",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2132-IMG_4947.dng",
+        "bytes": 12665412,
+        "header_size": [
+          4312,
+          2876
+        ],
+        "sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.22398085567074824,
+          "tone_lift": 0.047199988961219776,
+          "sample_color_change_p95": 0.1785866916179657,
+          "sample_luminance_q30": 0.27133335173130035,
+          "sample_size": [
+            238,
+            252
+          ]
+        },
+        "size": [
+          2848,
+          4282
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": 0.0,
+        "row_chunk": 128,
+        "input_pixels_sha256": "1e4946b58ff66fdd32722d3abcaa16f41e13ff5d70a41815e5e9a58be2ff7c48",
+        "output_pixels_sha256": "d177dfa3504d426473d504a01c60113a54da16ad0584d75732ddd77089660aa4",
+        "seconds": 2.141947000000002,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          2848,
+          4282
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.971259525109027,
+        "output_png_sha256": "4cd7a00ec1ae3da7444b8aae8def975d933a0aa4d241516efc375d95e85faac5",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 15700896,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/a2132-IMG_4947/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/a2132-IMG_4947/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 4.9379314170000015
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "source": {
+        "id": "a2270-_DSC0033",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a2270-_DSC0033.dng",
+        "bytes": 3760142,
+        "header_size": [
+          3040,
+          2014
+        ],
+        "sha256": "cd32c648728bdc6366ef35d4ca5cd2cced11640e29315a7231ca94d3609f8b99"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.25679105995355794,
+          "tone_lift": 0.0,
+          "sample_color_change_p95": 0.15576866269111633,
+          "sample_luminance_q30": 0.41737853288650506,
+          "sample_size": [
+            251,
+            253
+          ]
+        },
+        "size": [
+          2006,
+          3032
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": -0.45280009508132935,
+        "row_chunk": 128,
+        "input_pixels_sha256": "3e75d21ee29a857c92a11726cadf44f0dcf10944f8eaffc23d78ec143539b93e",
+        "output_pixels_sha256": "0ac608231e0971e33dc8eeb7526f5d550c826a3ec19453ec1cfd2e7b98167472",
+        "seconds": 0.9727514589999942,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          2006,
+          3032
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.8398149877544149,
+        "output_png_sha256": "d9adbb3e330e7f276285f23bda57bad0f989a369db8865e4ba529701647be1fe",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 6831274,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/a2270-_DSC0033/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/a2270-_DSC0033/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 2.5492159159999943
+    },
+    {
+      "id": "a3246-kme_445",
+      "source": {
+        "id": "a3246-kme_445",
+        "path": "/Users/evanchen/CS Projects/ShotSense/data/raw/dngs/a3246-kme_445.dng",
+        "bytes": 6749044,
+        "header_size": [
+          3596,
+          2360
+        ],
+        "sha256": "ff04a6274a462690707ec2dffd5644a10dc9342f7b8e089170d5b65044361442"
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.35,
+          "tone_lift": 0.13457929551601408,
+          "sample_color_change_p95": 0.033276140689849854,
+          "sample_luminance_q30": 0.1257011741399765,
+          "sample_size": [
+            251,
+            234
+          ]
+        },
+        "size": [
+          3514,
+          2340
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": 0.0,
+        "row_chunk": 128,
+        "input_pixels_sha256": "f780893a295cdfe3ecc5bbab135815cc80faac5aad9d3015bea4625d9e5fe57a",
+        "output_pixels_sha256": "36c7f63f28b44d3d98a308765834d7eb6b8c1c3637e3eb54ec770bd032c94cff",
+        "seconds": 3.9376340409999955,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          3514,
+          2340
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.912215606438714,
+        "output_png_sha256": "7bb5793540ab9f43e8386b6ebda62463792d16f5a3f74ade973547b934417950",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 9967129,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/finetune-v7/a3246-kme_445/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-v1/a3246-kme_445/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 6.026854999999998
+    },
+    {
+      "id": "user-webp-1",
+      "source": {
+        "id": "user-webp-1",
+        "path": "/Users/evanchen/Downloads/1.webp",
+        "bytes": 9540,
+        "sha256": "2eeb453096da996fc5497a48a5491ec109f53cf72fa2e0c4a427cbeaef83c3f2",
+        "header_size": [
+          480,
+          270
+        ]
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.35,
+          "tone_lift": 0.0,
+          "sample_color_change_p95": 0.053212523460388184,
+          "sample_luminance_q30": 0.5916737914085388,
+          "sample_size": [
+            240,
+            135
+          ]
+        },
+        "size": [
+          480,
+          270
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": -0.4291999936103821,
+        "row_chunk": 128,
+        "input_pixels_sha256": "3c548f904ef169801d2e03beb62dffb13181fc435240c9bb48f3c2180bcacc62",
+        "output_pixels_sha256": "80e00b3925bb467799a7978009e9a323593a6aea3440dbfee28475e8653fc724",
+        "seconds": 0.02320633300000452,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          480,
+          270
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.5506790123456791,
+        "output_png_sha256": "cf509396a4e55db942a0f662adf5bde9450f89cfa133e93396f3ac5e6a867a99",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 91494,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-webp-1/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-webp-1/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 0.13614641600000255
+    },
+    {
+      "id": "user-cloudy-trees",
+      "source": {
+        "id": "user-cloudy-trees",
+        "path": "/Users/evanchen/Downloads/images (2).jpeg",
+        "bytes": 25833,
+        "sha256": "e4172d7c619478e0272159d3c5b81450e527bb0a39139db690676ba19c4cf4fe",
+        "header_size": [
+          678,
+          452
+        ]
+      },
+      "natural": {
+        "version": "natural-adaptive-lut-v1",
+        "settings": {
+          "color_strength": 0.3333573499405494,
+          "tone_lift": 0.09032635152339934,
+          "sample_color_change_p95": 0.11999135464429855,
+          "sample_luminance_q30": 0.1994560807943344,
+          "sample_size": [
+            226,
+            226
+          ]
+        },
+        "size": [
+          678,
+          452
+        ],
+        "new_black_pixel_fraction": 0.0,
+        "new_full_channel_fraction": 0.0,
+        "minimum_shadow_luminance_delta_codes": 0.0,
+        "row_chunk": 128,
+        "input_pixels_sha256": "a08e8ff13e74759340d2482ec5233dc084995146c19b5b1857362ceac2577449",
+        "output_pixels_sha256": "492a3442d75ff0eb68f16a2ec5a2e35a1fa0e0f791f2a660228ed427f38cb046",
+        "seconds": 0.049517624999992904,
+        "shadow_protection": true,
+        "neutral_color_protection": true,
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "export": {
+        "renderer_version": "rawtherapee-recipes-v5",
+        "strength": 1.0,
+        "blend_space": "display sRGB",
+        "size": [
+          678,
+          452
+        ],
+        "full_resolution": true,
+        "changed_pixel_fraction": 0.9720775576265435,
+        "output_png_sha256": "7756cdca4b6ee08221cfb3a0caa25fed8eab723972375156cde0bc982899403d",
+        "semantics": "Bounded global display-sRGB color change with independent monotone mild brightness; not semantic masks, camera Kelvin/EV, denoising, sharpening or reconstructed detail."
+      },
+      "png_bytes": 301073,
+      "original_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-jpeg-2/original.png",
+      "raw_png": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/lut-jpeg-2/lut100.png",
+      "source_preserved": true,
+      "total_seconds": 0.2218748330000011
+    }
+  ]
+}

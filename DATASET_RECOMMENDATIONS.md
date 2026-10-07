@@ -1,5 +1,17 @@
 # Dataset recommendations for ShotSense
 
+## Current recommendation · 2026-10-05
+
+Reuse the complete [original FiveK release](https://data.csail.mit.edu/graphics/fivek/) first: its public metadata includes subject, light, location and time, plus five expert TIFF URLs per source. All 4,946 locally supported sources match the 5,000 public records by full filename with case normalization. Expert targets have not yet been acquired or audited. The old adaptive-LUT 480p Drive folder returns HTTP404; the original site and one Expert C TIFF HEAD request return HTTP200.
+
+Next consider MSEC for exposure variants (the same underlying FiveK scenes), PPR10K for portraits and Rendered WB for white-balance errors. LCDP, existing LOL and SICE serve targeted exposure diagnostics. Keep original-scene/group identity, dataset-specific terms and color/pairing audits separate from public-listing access; these resources do not establish independent model quality. See the [updated Chinese report](artifacts/experiments/dataset_research_scene_v2/REPORT.zh-CN.md) for primary sources, access evidence, local coverage and a bounded acquisition proposal. No new photo archives, expert pixels, training or production changes were made in this research task.
+
+The 2026-10-02 shortlist and protocol below are retained as historical research. Its preference for the old 480p mirror is superseded by the original FiveK source above.
+
+Approved acquisition follow-up (2026-10-05): all 100 frozen Expert C TIFFs were acquired and audited. Source-only DNG default cropping improved provisional <=960px alignment from 25/100 to 99/100, retaining one orientation mismatch in quarantine. The separate manifest contains 79 training and 20 development-validation pairs; native subpixel alignment and independent preference remain open. Original TIFFs, 16-bit color-managed targets, source recipes and all earlier evidence are preserved. See the [paired-target pilot report](artifacts/experiments/fivek_paired_targets_v1/REPORT.zh-CN.md). No model was trained or application behavior changed.
+
+## Earlier research · 2026-10-02
+
 Research date: 2026-10-02. This is a primary-source shortlist and proposed acquisition/evaluation protocol. No new dataset has been downloaded, audited or used for training in this task. Published download listings do not prove that every archive is currently retrievable or correctly paired.
 
 ## Recommended order

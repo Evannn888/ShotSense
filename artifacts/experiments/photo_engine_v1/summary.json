@@ -1,0 +1,187 @@
+{
+  "diagnostic_scope": "6 previously inspected public LOL JPEGs, 6 previously inspected public FiveK DNGs and 3 synthetic controls. No independent photo-quality or camera-generalization acceptance.",
+  "frozen_manifest_sha256": "2abefdc4c0db82b03d437531686eb76f0ea21f4591ef4f7407ad4bb5022fd374",
+  "automatic_unchanged_count": 8,
+  "automatic_gentle_lift_count": 7,
+  "visual_review": {
+    "viewed": [
+      "overview-1.jpg",
+      "overview-2.jpg",
+      "overview-3.jpg",
+      "native-crops-1.jpg",
+      "native-crops-2.jpg",
+      "native-crops-3.jpg",
+      "portrait-details.jpg"
+    ],
+    "observations": "Modest brightening; no conspicuous new cast, eye-color corruption or severe detail destruction observed in this finite review. Existing grain, blur, baseline clipping and lens fringing persist; chroma filtering can soften detail. Extreme-dark images remain dark. Sunsets may still be brightened despite intended mood. No human preference measurements.",
+    "current_baseline_limitation": "Overview current column is existing custom +0.35EV tone applied to engine-neutral baseline, not old RAW development/model recommendation. Its 1600px preview is omitted from native crops due differing scale.",
+    "decision": "Allow opt-in experimental website workflow; manual default remains. No quality superiority or practical completion claim."
+  },
+  "cases": [
+    {
+      "id": "LOL-27",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "unchanged",
+      "auto_decode_and_engine_seconds": 0.03645783399999991,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "5ab07bf48396c39f566f48c4f6fade25c9818f8adbd8b74e482357ccb72a762f"
+    },
+    {
+      "id": "LOL-102",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "unchanged",
+      "auto_decode_and_engine_seconds": 0.03511629100000002,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "b11d090df3c48e8cb863ecde59c87c7e808abdddf0d9fe7a6f5bb4e397106d72"
+    },
+    {
+      "id": "LOL-113",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "unchanged",
+      "auto_decode_and_engine_seconds": 0.037419791999999674,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "84f495bdecbc5cbb24bde595e5db9d51fabcda7732aad3defd6fb3eacfd157b6"
+    },
+    {
+      "id": "LOL-254",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "natural",
+      "auto_decode_and_engine_seconds": 0.21379341699999976,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "5d230423b4c04ffe10169449b724d8a36dbda8cad142d2c66a176f5164243365"
+    },
+    {
+      "id": "LOL-565",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "unchanged",
+      "auto_decode_and_engine_seconds": 0.03138304200000075,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "f936fd749aecba60dd324c353df1074c95274d13129e1c76f344209ffdde9930"
+    },
+    {
+      "id": "LOL-6",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "unchanged",
+      "auto_decode_and_engine_seconds": 0.03589224999999985,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "99dd6db10e7b1cbf1c50d15f8ca4d650b41369fef8058d134824d5859325758d"
+    },
+    {
+      "id": "a0113-IMG_1129.dng",
+      "size": [
+        4282,
+        2848
+      ],
+      "selected_recipe": "unchanged",
+      "auto_decode_and_engine_seconds": 3.9783608329999964,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "88219c3fc456212dac1cf979e4ee930dc895c7dddacd0aab70e897c6975fd8ee"
+    },
+    {
+      "id": "a0575-kme_040.dng",
+      "size": [
+        3900,
+        2594
+      ],
+      "selected_recipe": "natural",
+      "auto_decode_and_engine_seconds": 6.410189625000001,
+      "new_full_channel_fraction": 0.000176047288614752,
+      "output_png_sha256": "160d35b6b6dfe830c3bf5b9bf04740e7aaea648ac32e238697fa9e40345e2e08"
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255.dng",
+      "size": [
+        4378,
+        2912
+      ],
+      "selected_recipe": "natural",
+      "auto_decode_and_engine_seconds": 8.434898458000006,
+      "new_full_channel_fraction": 0.0009035405549224645,
+      "output_png_sha256": "8da7eb2d997303893c3552c058d118437a9842267af5d72e9b8dc24b56ffa46f"
+    },
+    {
+      "id": "a2049-IMG_1585.dng",
+      "size": [
+        4282,
+        2848
+      ],
+      "selected_recipe": "natural",
+      "auto_decode_and_engine_seconds": 8.202464332999995,
+      "new_full_channel_fraction": 6.067993009672053e-06,
+      "output_png_sha256": "66e721ac1daf18e8bfa72bef58adbd6a6e6d12de2ad1df95a4004cb8ccac78e8"
+    },
+    {
+      "id": "a2132-IMG_4947.dng",
+      "size": [
+        2848,
+        4282
+      ],
+      "selected_recipe": "natural",
+      "auto_decode_and_engine_seconds": 8.038569416000001,
+      "new_full_channel_fraction": 0.0003956495442117251,
+      "output_png_sha256": "056386048439e03aa8cd9d4614af7c6b704b276b20d8bc9dda53f5f1d7ae721b"
+    },
+    {
+      "id": "a2270-_DSC0033.dng",
+      "size": [
+        2006,
+        3032
+      ],
+      "selected_recipe": "natural",
+      "auto_decode_and_engine_seconds": 4.000020417000002,
+      "new_full_channel_fraction": 0.000410707192406948,
+      "output_png_sha256": "27f176f9270b5cbba7f8d0543252013a140e194e776b0e6b0cc0055916b9acd1"
+    },
+    {
+      "id": "synthetic-daylight",
+      "size": [
+        256,
+        192
+      ],
+      "selected_recipe": "unchanged",
+      "auto_decode_and_engine_seconds": 0.013037749999995185,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "028b582da0e2b8d37409ff6dde6c552f89cf61f4fc0f7cbf7ab513d76286c077"
+    },
+    {
+      "id": "synthetic-extreme-dark",
+      "size": [
+        256,
+        192
+      ],
+      "selected_recipe": "unchanged",
+      "auto_decode_and_engine_seconds": 0.01258745800001293,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "2486ecd96f06d47f62486cec4da17081c25121f308e9f4c88ac99ddc98c8bf55"
+    },
+    {
+      "id": "synthetic-moderately-dim",
+      "size": [
+        256,
+        192
+      ],
+      "selected_recipe": "natural",
+      "auto_decode_and_engine_seconds": 0.1335072079999975,
+      "new_full_channel_fraction": 0.0,
+      "output_png_sha256": "a28a514d526279f5419ed4d9e32f3a54e95779664034b549feac46967ba3cd24"
+    }
+  ]
+}

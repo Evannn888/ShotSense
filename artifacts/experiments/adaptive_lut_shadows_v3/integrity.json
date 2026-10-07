@@ -1,0 +1,78 @@
+{
+  "baseline_unchanged": {
+    "src/photo_engine.py": true,
+    "src/jpeg_inference.py": true,
+    "src/adaptive_lut.py": true,
+    "requirements.lock.txt": true,
+    "src/inference.py": true,
+    "src/preview.py": true,
+    "src/color_pipeline.py": true,
+    "src/preprocess.py": true,
+    "src/extract_labels.py": true,
+    "artifacts/model/model.onnx": true,
+    "artifacts/model/model.json": true,
+    "artifacts/photo_engine/neutral.pp3": true,
+    "artifacts/photo_engine/natural.pp3": true,
+    "artifacts/photo_engine/chroma.pp3": true,
+    "artifacts/photo_engine/shadows.pp3": true
+  },
+  "source_hash_checks": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "unchanged": true
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "unchanged": true
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "unchanged": true
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "unchanged": true
+    },
+    {
+      "id": "a0575-kme_040",
+      "unchanged": true
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "unchanged": true
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "unchanged": true
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "unchanged": true
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "unchanged": true
+    },
+    {
+      "id": "a3246-kme_445",
+      "unchanged": true
+    },
+    {
+      "id": "user-webp-1",
+      "unchanged": true
+    },
+    {
+      "id": "user-cloudy-trees",
+      "unchanged": true
+    }
+  ],
+  "core_matches_head": {
+    "src/inference.py": true,
+    "src/preview.py": true,
+    "src/color_pipeline.py": true,
+    "src/preprocess.py": true,
+    "src/extract_labels.py": true,
+    "artifacts/model/model.onnx": true,
+    "artifacts/model/model.json": true
+  }
+}

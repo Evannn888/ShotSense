@@ -48,3 +48,7 @@ artifacts/experiments/jpeg_illumination_v1/*.jpg
 
 artifacts/jpeg_restoration/*.safetensors
 artifacts/jpeg_restoration/*.jpg
+
+# Engine diagnostic photos/exports remain local; commit recipes and evidence.
+artifacts/experiments/photo_engine_v1/**/*.jpg
+artifacts/experiments/photo_engine_shadow_v2/**/*.jpg

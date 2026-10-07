@@ -1,0 +1,134 @@
+[
+  {
+    "dataset": "adaptive_lut_fivek",
+    "published_url": "https://drive.google.com/drive/folders/1Y1Rv3uGiJkP6CIrNTSKxPn1p-WFAc48a?usp=sharing",
+    "scope": "Public listing only; not archive accessibility/integrity.",
+    "http_status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "dataset": "adaptive_lut_fivek",
+    "published_url": "https://data.csail.mit.edu/graphics/fivek/",
+    "scope": "Public listing only; not archive accessibility/integrity.",
+    "http_status": 200,
+    "final_url": "https://data.csail.mit.edu/graphics/fivek/",
+    "content_type": "text/html",
+    "declared_response_length": "4629128",
+    "page_title": "MIT-Adobe FiveK dataset",
+    "filename_hints": [
+      "a0001-jmac_DSC1459.tif",
+      "a0002-dgw_005.tif",
+      "a0003-NKIM_MG_8178.tif",
+      "a0004-jmac_MG_1384.tif",
+      "a0005-jn_2007_05_10__564.tif",
+      "a0006-IMG_2787.tif",
+      "a0007-IMG_2480.tif",
+      "a0008-WP_CRW_3959.tif",
+      "a0009-kme_372.tif",
+      "a0010-jmac_MG_4807.tif",
+      "a0011-DSC_0082.tif",
+      "a0012-kme_143.tif",
+      "a0013-MB_20030906_001.tif",
+      "a0014-WP_CRW_6320.tif",
+      "a0015-DSC_0081.tif",
+      "a0016-jmac_MG_0795.tif",
+      "a0017-050710_031618__MG_3496.tif",
+      "a0018-kme_234.tif",
+      "a0019-jmac_MG_0653.tif",
+      "a0020-jmac_MG_6225.tif"
+    ],
+    "sampled_response_bytes": 262144,
+    "sampled_response_sha256": "e59a90190d80e1150291c9cf208a876d5ebe0c5869e6e76f125a6ac064a4e597"
+  },
+  {
+    "dataset": "msec",
+    "published_url": "https://drive.google.com/file/d/1YtsTeUThgD2tzF6RDwQ7Ol9VTSwqFHc_/view?usp=sharing",
+    "scope": "Public listing only; not archive accessibility/integrity.",
+    "http_status": 200,
+    "final_url": "https://drive.google.com/file/d/1YtsTeUThgD2tzF6RDwQ7Ol9VTSwqFHc_/view?usp=sharing",
+    "content_type": "text/html; charset=utf-8",
+    "declared_response_length": null,
+    "page_title": "training.zip - Google Drive",
+    "filename_hints": [
+      "training.zip"
+    ],
+    "sampled_response_bytes": 81860,
+    "sampled_response_sha256": "3d73f12809ae2cc1fb44addbfb131731c1845235b20c3e9e017b3fcc936fd66f"
+  },
+  {
+    "dataset": "msec",
+    "published_url": "https://ln2.sync.com/dl/141f68cf0/mrt3jtm9-ywbdrvtw-avba76t4-w6fw8fzj",
+    "scope": "Public listing only; not archive accessibility/integrity.",
+    "http_status": 200,
+    "final_url": "https://ln2.sync.com/dl/141f68cf0/mrt3jtm9-ywbdrvtw-avba76t4-w6fw8fzj",
+    "content_type": "text/html",
+    "declared_response_length": null,
+    "page_title": "training.zip",
+    "filename_hints": [
+      "training.zip"
+    ],
+    "sampled_response_bytes": 2681,
+    "sampled_response_sha256": "23a756d3327c23919ce2873c9a75ee3b5a8b8fada3e8f006f0ed32a123b7ee51"
+  },
+  {
+    "dataset": "ppr10k",
+    "published_url": "https://drive.google.com/drive/folders/1kB2OSAGy8uc0xUXaMKoPB0HMSc-rkrLW?usp=drive_link",
+    "scope": "Public listing only; not archive accessibility/integrity.",
+    "http_status": 200,
+    "final_url": "https://drive.google.com/drive/folders/1kB2OSAGy8uc0xUXaMKoPB0HMSc-rkrLW?usp=drive_link",
+    "content_type": "text/html; charset=utf-8",
+    "declared_response_length": null,
+    "page_title": "PPR0K_all_files_11161_zip - Google Drive",
+    "filename_hints": [
+      "hists.zip",
+      "masks_360p.zip",
+      "masks_full.zip",
+      "pretrained_models.zip"
+    ],
+    "sampled_response_bytes": 262144,
+    "sampled_response_sha256": "d1aed52299405a0f380ef7b7c9bcfa9d5f8017503a8d11a96f6d1ca688b3bde7"
+  },
+  {
+    "dataset": "lcdp",
+    "published_url": "https://drive.google.com/drive/folders/10Reaq-N0DiZiFpSrZ8j5g3g0EJes4JiS?usp=sharing",
+    "scope": "Public listing only; not archive accessibility/integrity.",
+    "http_status": 200,
+    "final_url": "https://drive.google.com/drive/folders/10Reaq-N0DiZiFpSrZ8j5g3g0EJes4JiS?usp=sharing",
+    "content_type": "text/html; charset=utf-8",
+    "declared_response_length": null,
+    "page_title": "lcdpnet - Google Drive",
+    "filename_hints": [],
+    "sampled_response_bytes": 262144,
+    "sampled_response_sha256": "cf83ab8035ca7524cfa098fef636e4c23e54fb3864a6a1b8c441283c5ed66428"
+  },
+  {
+    "dataset": "rendered_wb",
+    "published_url": "https://drive.google.com/file/d/12UhutFIMgnm27Eo6zrieat_kwbneh8Lw/view?usp=sharing",
+    "scope": "Public listing only; not archive accessibility/integrity.",
+    "http_status": 200,
+    "final_url": "https://drive.google.com/file/d/12UhutFIMgnm27Eo6zrieat_kwbneh8Lw/view?usp=sharing",
+    "content_type": "text/html; charset=utf-8",
+    "declared_response_length": null,
+    "page_title": "Set1_input_images_JPG.zip - Google Drive",
+    "filename_hints": [
+      "Set1_input_images_JPG.zip"
+    ],
+    "sampled_response_bytes": 81825,
+    "sampled_response_sha256": "457c1f33eee5ce5b7738d464c94ddf1a6ad0cc5519b334fe13c09a1398fc8d18"
+  },
+  {
+    "dataset": "lol_v2",
+    "published_url": "https://drive.google.com/file/d/1dzuLCk9_gE2bFF222n3-7GVUlSVHpMYC/view?usp=sharing",
+    "scope": "Public listing only; not archive accessibility/integrity.",
+    "http_status": 200,
+    "final_url": "https://drive.google.com/file/d/1dzuLCk9_gE2bFF222n3-7GVUlSVHpMYC/view?usp=sharing",
+    "content_type": "text/html; charset=utf-8",
+    "declared_response_length": null,
+    "page_title": "LOL-v2.zip - Google Drive",
+    "filename_hints": [
+      "LOL-v2.zip"
+    ],
+    "sampled_response_bytes": 82001,
+    "sampled_response_sha256": "6167df7e9e5823f1e5ee31681c8d891b562c17a290644917dc7d6f64425e52b3"
+  }
+]

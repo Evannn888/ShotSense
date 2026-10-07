@@ -1,0 +1,24 @@
+{
+  "size": [
+    5472,
+    3648
+  ],
+  "identity_exact": true,
+  "nonzero": true,
+  "chunk_crop_exact": true,
+  "maximum_red_minus_blue_drift_codes": 0,
+  "guards": {
+    "new_black_pixel_positions": 0,
+    "new_full_pixel_positions": 0,
+    "maximum_luma_change_codes": 0.29120004177093506,
+    "maximum_channel_change_codes": 6.0,
+    "row_chunk": 128,
+    "blend": 0.5,
+    "channel_cap": 0.04,
+    "skin_color_proxy_cap": 0.025,
+    "tint_only": true
+  },
+  "output_pixels_sha256": "8f1cbf7978a6b5f970d5846437735ff420d252ba1982196ae7430bb23724ab56",
+  "seconds_including_identity_and_crop": 13.580457,
+  "scope": "Fixed affine functional control, not learned or photographic preference evidence."
+}

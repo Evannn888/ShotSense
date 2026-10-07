@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+    "export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 0.5,
+      "blend_space": "display sRGB",
+      "size": [
+        8192,
+        6144
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.9999751249949137,
+      "output_png_sha256": "83df6a3a14a67cf6cb4b099ffca707aab80512d4fc9f3f0bdf575a6f940aa924",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "new_full_channel_fraction": 0.0,
+    "new_black_pixel_fraction": 0.0
+  },
+  {
+    "id": "martin-bennie-MhYU5K4A93I-unsplash",
+    "export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 0.5,
+      "blend_space": "display sRGB",
+      "size": [
+        8688,
+        5712
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.9992503907640404,
+      "output_png_sha256": "ecf94b8c49f5a331049321ff0e97921e184cf3e583f4488e19619f844471e1f5",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "new_full_channel_fraction": 0.0,
+    "new_black_pixel_fraction": 0.00012813884762007935
+  },
+  {
+    "id": "nir-himi-1P1yaGS_Gek-unsplash",
+    "export": {
+      "renderer_version": "rawtherapee-recipes-v5",
+      "strength": 0.5,
+      "blend_space": "display sRGB",
+      "size": [
+        2809,
+        4213
+      ],
+      "full_resolution": true,
+      "changed_pixel_fraction": 0.999991718998232,
+      "output_png_sha256": "c050e4c8e61e3cf155e0f02dd94f8ebcf225f54c36ab0725c82d32775cce95f5",
+      "semantics": "Engine recipe blended with decoded JPEG or neutral RAW baseline; not Adobe parameters."
+    },
+    "new_full_channel_fraction": 0.0,
+    "new_black_pixel_fraction": 5.070001082445231e-07
+  }
+]

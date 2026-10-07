@@ -1,0 +1,275 @@
+{
+  "scope": "17reused sources\u00d72views, fixed image-only FP32 feasibility, not scene accuracy",
+  "image_model_bytes": 45555991,
+  "image_model_sha256": "3719246574ad6edba0f5c700ed2cea82210d1318f29689355c3db2e165946a90",
+  "export_seconds": 0.767385,
+  "session_setup_seconds": 0.08831604200000065,
+  "onnx_version": "1.19.1",
+  "ort_version": "1.19.2",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "threads": 1,
+  "batch": 1,
+  "input_shape": [
+    1,
+    3,
+    256,
+    256
+  ],
+  "output_shape": [
+    1,
+    512
+  ],
+  "opset": 17,
+  "warmups": 10,
+  "repeats": 50,
+  "model_only_p50_p95_ms": [
+    101.16437499999975,
+    104.48430610000017
+  ],
+  "maximum_embedding_difference": 1.4081597328186035e-06,
+  "all_rankings_match": true,
+  "repeat_bitwise_identical": true,
+  "script_sha256": "a99bb99cd8416c0f7214caee9a4d7bbd24f36346d79538d192c153a6e6cbf6bd",
+  "rows": [
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 6.631016731262207e-07,
+      "max_cosine_difference": 1.4901161193847656e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "ahmet-yuksek-7lK0bpUj8AA-unsplash",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 5.21540641784668e-07,
+      "max_cosine_difference": 1.7881393432617188e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 4.4330954551696777e-07,
+      "max_cosine_difference": 7.450580596923828e-08,
+      "rankings_match": true
+    },
+    {
+      "id": "martin-bennie-MhYU5K4A93I-unsplash",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 3.441236913204193e-07,
+      "max_cosine_difference": 7.450580596923828e-08,
+      "rankings_match": true
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 7.152557373046875e-07,
+      "max_cosine_difference": 1.4901161193847656e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "nir-himi-1P1yaGS_Gek-unsplash",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 6.705522537231445e-07,
+      "max_cosine_difference": 1.1920928955078125e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 5.736947059631348e-07,
+      "max_cosine_difference": 2.086162567138672e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a0113-IMG_1129",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 4.023313522338867e-07,
+      "max_cosine_difference": 1.1920928955078125e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a0575-kme_040",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 5.252659320831299e-07,
+      "max_cosine_difference": 1.2665987014770508e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a0575-kme_040",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 6.034970283508301e-07,
+      "max_cosine_difference": 1.7881393432617188e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 4.172325134277344e-07,
+      "max_cosine_difference": 1.341104507446289e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a0715-060812_182920__MG_6255",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 3.9674341678619385e-07,
+      "max_cosine_difference": 1.341104507446289e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 5.140900611877441e-07,
+      "max_cosine_difference": 1.4901161193847656e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a2049-IMG_1585",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 5.122274160385132e-07,
+      "max_cosine_difference": 2.60770320892334e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 4.991888999938965e-07,
+      "max_cosine_difference": 1.4901161193847656e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a2132-IMG_4947",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 6.128102540969849e-07,
+      "max_cosine_difference": 1.9371509552001953e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 4.917383193969727e-07,
+      "max_cosine_difference": 2.8312206268310547e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a2270-_DSC0033",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 6.780028343200684e-07,
+      "max_cosine_difference": 2.8312206268310547e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a3246-kme_445",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 8.307397365570068e-07,
+      "max_cosine_difference": 1.1920928955078125e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "a3246-kme_445",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 7.003545761108398e-07,
+      "max_cosine_difference": 1.4901161193847656e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "user-cloudy-trees",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 4.023313522338867e-07,
+      "max_cosine_difference": 8.940696716308594e-08,
+      "rankings_match": true
+    },
+    {
+      "id": "user-cloudy-trees",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 5.159527063369751e-07,
+      "max_cosine_difference": 1.4901161193847656e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-27",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 7.599592208862305e-07,
+      "max_cosine_difference": 3.2782554626464844e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-27",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 7.301568984985352e-07,
+      "max_cosine_difference": 2.384185791015625e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-102",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 8.568167686462402e-07,
+      "max_cosine_difference": 2.682209014892578e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-102",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 6.556510925292969e-07,
+      "max_cosine_difference": 1.6391277313232422e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-113",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 1.1175870895385742e-06,
+      "max_cosine_difference": 2.5331974029541016e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-113",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 1.4081597328186035e-06,
+      "max_cosine_difference": 5.066394805908203e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-254",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 1.2218952178955078e-06,
+      "max_cosine_difference": 2.384185791015625e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-254",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 8.344650268554688e-07,
+      "max_cosine_difference": 1.6391277313232422e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-565",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 8.754432201385498e-07,
+      "max_cosine_difference": 1.1920928955078125e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-565",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 8.046627044677734e-07,
+      "max_cosine_difference": 2.2351741790771484e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-6",
+      "view": "stock_center_crop",
+      "max_embedding_difference": 5.476176738739014e-07,
+      "max_cosine_difference": 2.4586915969848633e-07,
+      "rankings_match": true
+    },
+    {
+      "id": "LOL-6",
+      "view": "full_frame_letterbox",
+      "max_embedding_difference": 6.705522537231445e-07,
+      "max_cosine_difference": 2.682209014892578e-07,
+      "rankings_match": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "src/white_balance.py": "81c67f60f1382a4e4e9bc3f85e4aaafd1062b886f845cdaeb2acdf3fe93005cb",
+  "src/scene_policy.py": "89cb9750c864947242ebaf0d074ed6995ad07e84ed81c112c2853f3cfcb100fb",
+  "src/lut_natural.py": "0b6d116d4c5f445a5de36644c3ca821a3ac9a23fedc6f59296769c6c7b5f167a",
+  "app/streamlit_app.py": "63d5dc10901c7c329282e1225410e8c3fa800f543d0bc596c8eacecf9e27ef4e",
+  "tests/test_white_balance.py": "e8c16f43921fd884f08194bd29108d2b44c5dc156f984d1a4f370c20d4dcc1ec",
+  "tests/test_automatic_photo.py": "b04b41950969bc3b0f629ccba4b2115b1fe64c8520ed33721e7ce94a7a30f9e1",
+  "artifacts/experiments/white_balance_v2/evaluate.py": "1050838e6361605394358b6a7400df4b661294a86c8ea5d74a65310c6a5382bb",
+  "artifacts/experiments/white_balance_v2/PROTOCOL.md": "b9d12f3c98f21bdf475e0041f906d9eef6597560158f7e78dc3ae4fd7dbca9fe",
+  "artifacts/experiments/white_balance_v2/fresh_inputs.json": "7d0f7cd2d4b3f9deba781ac56ab904cedd3c8286705fa0b4e2622196a21368ad",
+  "artifacts/experiments/white_balance_v2/fresh_unavailable.json": "0b22910128ccd9bd7e42c0e6609991ea09535adc91da6f937f4cc06c6e010c5b",
+  "data/user_photo_diagnostics/scene-analysis-research-v1/mobileclip2_s0_image_fp32.onnx": "3719246574ad6edba0f5c700ed2cea82210d1318f29689355c3db2e165946a90",
+  "data/user_photo_diagnostics/scene-analysis-research-v1/text_embeddings.npy": "9c08adcf7174338c0d6dcda27d7f8887c7a92c69b11a4048768564f18b40cee7",
+  "data/external_models/deep_white_balance/awb_fp32.onnx": "f237c85fb6fd4f49857a18026dbdb93e57e9871c4e5a505417dfc393c21cc3bb",
+  "data/external_models/deep_white_balance/PyTorch/models/net_awb.pth": "b70f4cfab8cc788d137836bdc54af7c9d7f329eaf83538c1bf616d34bedeb801"
+}

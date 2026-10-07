@@ -1,0 +1,22 @@
+{
+  "fivek_count": 99,
+  "public_originals": 8,
+  "synthetic_controls": 2,
+  "default_previous_exact_count": 99,
+  "fixed_repeat_exact": true,
+  "recognition_available_count": 109,
+  "reason_counts": {
+    "night_mood": 11,
+    "sunset_silhouette": 9,
+    "uncertain_lighting": 72,
+    "very_dark_source": 2,
+    "document_preserved": 0
+  },
+  "previous_reference_mae_mean": 0.09459222467484499,
+  "scene_reference_mae_mean": 0.09532453894916207,
+  "lower_reference_error_count": 32,
+  "higher_reference_error_count": 48,
+  "zero_new_endpoint_positions_count": 109,
+  "elapsed_seconds": 156.024444792,
+  "scope": "Reused <=960px FiveK/public development views. Public comparison distance is to decoded input, not an expert. No independent preference acceptance, training, sharpening or default promotion."
+}

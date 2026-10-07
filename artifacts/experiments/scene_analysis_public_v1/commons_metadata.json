@@ -1,0 +1,847 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "3544724": {
+        "pageid": 3544724,
+        "ns": 6,
+        "title": "File:Crepuscular rays in ggp 2.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 2788068,
+            "width": 2400,
+            "height": 1600,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crepuscular_rays_in_ggp_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Crepuscular_rays_in_ggp_2.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=3544724",
+            "sha1": "3343295de69483d0c110fc3714c93c9756061c87",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2008-02-12 19:06:48",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Crepuscular rays in ggp 2",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Canon EOS 400D|License migration redundant|CC-BY-SA-4.0,3.0,2.5,2.0,1.0|February 2008 in California|Water reflections of trees in California|Self-published work|Featured pictures on Wikipedia, English|Featured pictures on Wikipedia, Chinese|Featured pictures on Wikipedia, Persian|Featured pictures on Wikipedia, Spanish|Featured pictures of habitats|United States photographs taken on 2008-02-12|Featured pictures of crepuscular rays|Blue Heron Lake (San Francisco)|Featured pictures of parks|Photographic silhouettes of birds|Pictures of the Year/2008 (finalist)|Crepuscular rays in forests in the United States",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|poty|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "37.770000",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-122.471944",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Crepuscular_rays\" class=\"extiw\" title=\"en:Crepuscular rays\">Crepuscular Rays</a>. In the middle left of the image one could also see a different set of the rays coming upward from the lake. The  light source for these rays is the Sun's reflection. The image was taken at Stow Lake in <a href=\"https://en.wikipedia.org/wiki/Golden_Gate_Park\" class=\"extiw\" title=\"en:Golden Gate Park\">Golden Gate Park</a>, <a href=\"https://en.wikipedia.org/wiki/San_Francisco\" class=\"extiw\" title=\"en:San Francisco\">San Francisco</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/site/thebrockeninglory/\">Brocken Inaglory</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1250981068,
+            "parentid": 1250980992,
+            "timestamp": "2026-07-23T15:59:33Z"
+          }
+        ]
+      },
+      "96482791": {
+        "pageid": 96482791,
+        "ns": 6,
+        "title": "File:Joshua tree silhouette at sunset (50330255608).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 18671079,
+            "width": 7944,
+            "height": 5296,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Joshua_tree_silhouette_at_sunset_%2850330255608%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Joshua_tree_silhouette_at_sunset_(50330255608).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=96482791",
+            "sha1": "6a3888326124e367487a7443797dc8fe89bd3b9b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-11-21 22:19:01",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Joshua tree silhouette at sunset (50330255608)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US NPS|Yucca brevifolia in Joshua Tree National Park|Flickr images reviewed by FlickreviewR 2|Files from Joshua Tree National Park Flickr stream",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>NPS / Emily Hassell\n</p>\nAlt text: The dark shadow of a Joshua tree is offset against a sky filled with blue, purple, yellow, and pink clouds.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-08-18 19:36",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/joshuatreenp/50330255608/\">Joshua tree silhouette at sunset</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/115357548@N08\">Joshua Tree National Park</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1006277095,
+            "parentid": 887889672,
+            "timestamp": "2025-03-06T20:54:41Z"
+          }
+        ]
+      },
+      "105965405": {
+        "pageid": 105965405,
+        "ns": 6,
+        "title": "File:Labrador pup.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1114220,
+            "width": 1142,
+            "height": 1650,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Labrador_pup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Labrador_pup.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=105965405",
+            "sha1": "ee2f5f1bc14a50402d9b23512ad5350ce1fbe3e5",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-05-26 02:27:58",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Labrador pup",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Labrador Retriever puppies",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Labrador pup",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-06-29",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Bobjack_tom_andy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Bobjack tom andy (page does not exist)\">Bobjack tom andy</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1256272037,
+            "parentid": 1199448772,
+            "timestamp": "2026-08-04T01:53:03Z"
+          }
+        ]
+      },
+      "61858081": {
+        "pageid": 61858081,
+        "ns": 6,
+        "title": "File:Man in denim jacket posing (Unsplash).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 909993,
+            "width": 5472,
+            "height": 3648,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Man_in_denim_jacket_posing_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Man_in_denim_jacket_posing_(Unsplash).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=61858081",
+            "sha1": "bea2acece268494a3dcd3d561ce74d0ecf7e721a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-08-22 13:07:37",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Man in denim jacket posing (Unsplash)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|People of Los Angeles County, California|Images uploaded by F\u00e6|Images from Unsplash|Images from Unsplash (review needed)|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "33.993615",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-118.479910",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Venice Beach, Los Angeles, United States",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-04-17",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://unsplash.com/photos/7iTE5rhI6lc\">https://unsplash.com/photos/7iTE5rhI6lc</a>\n<bdi lang=\"en\" dir=\"ltr\" title=\"archived on 9 May 2017 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20170509140603/https%3A//images.unsplash.com/photo-1492447216082-4726bf04d1d1\">Image</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>\n</p>\n<bdi lang=\"en\" dir=\"ltr\" title=\"archived on 9 May 2017 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20170509140546/https%3A//unsplash.com/photos/7iTE5rhI6lc\">Gallery</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Brooke Cagle <a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@brookecagle\">brookecagle</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 768070777,
+            "parentid": 707372405,
+            "timestamp": "2023-05-28T19:33:26Z"
+          }
+        ]
+      },
+      "84934538": {
+        "pageid": 84934538,
+        "ns": 6,
+        "title": "File:Milky Way 3.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 4321547,
+            "width": 4928,
+            "height": 3264,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Milky_Way_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Milky_Way_3.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=84934538",
+            "sha1": "28c5fbeb83fd7a44d99361f56143159e70cf593c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-12-15 23:55:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Milky Way 3",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Night photography|Landscape photography|Milky Way Galaxy and a place on Earth|Self-published work|Uploaded via Campaign:wsc-us|Images from Wiki Science Competition 2019 in the United States|General category images from Wiki Science Competition 2019|General category images from Wiki Science Competition 2019 in the United States",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A photograph of the night sky in Badlands National Park.\u00a0<span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Milky_Way_3.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-07-07",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Gormzy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Gormzy (page does not exist)\">Dennis</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1028444402,
+            "parentid": 923342226,
+            "timestamp": "2025-05-05T17:08:36Z"
+          }
+        ]
+      },
+      "61848080": {
+        "pageid": 61848080,
+        "ns": 6,
+        "title": "File:Shadowed Portrait (Unsplash).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 676889,
+            "width": 5686,
+            "height": 3660,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Shadowed_Portrait_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Shadowed_Portrait_(Unsplash).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=61848080",
+            "sha1": "46866d8022ba4fe34705f9d9f750b9d68290960c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-08-22 03:13:30",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Shadowed Portrait (Unsplash)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Portrait photographs|Images uploaded by F\u00e6|Images from Unsplash|Images from Unsplash (review needed)|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "40.416775",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-3.703790",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Madrid, Spain",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-06-30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://unsplash.com/photos/xOeQ71xAWwc\">https://unsplash.com/photos/xOeQ71xAWwc</a>\n<bdi lang=\"en\" dir=\"ltr\" title=\"archived on 8 July 2017 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20170708092007/https%3A//images.unsplash.com/photo-1467281352684-9d059d88adc5\">Image</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>\n</p>\n<bdi lang=\"en\" dir=\"ltr\" title=\"archived on 5 May 2017 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20170505062908/https%3A//unsplash.com/photos/xOeQ71xAWwc\">Gallery</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "WillSpirit SBLN <a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@willspirit\">willspirit</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1084397485,
+            "parentid": 1042997569,
+            "timestamp": "2025-09-12T03:37:29Z"
+          }
+        ]
+      },
+      "68953599": {
+        "pageid": 68953599,
+        "ns": 6,
+        "title": "File:The New York City Skyline at night.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 19830060,
+            "width": 5880,
+            "height": 3868,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/The_New_York_City_Skyline_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_New_York_City_Skyline_at_night.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=68953599",
+            "sha1": "6c7257abe6460ba3b219c14400e7c086e2b7606d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-05-10 00:20:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "The New York City Skyline at night",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "New York City photographs taken on 2018-03-09|Self-published work|Midtown Manhattan skylines in 2018|Buildings during blue hour in the United States|Chrysler Building in 2018|Chrysler Building from the Empire State Building|Blue hour in New York City",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The New York City Skyline",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on\u00a09 March 2018, 18:52:21",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Bruce_Emmerling\" title=\"User:Bruce Emmerling\">Bruce Emmerling</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1052270895,
+            "parentid": 946499956,
+            "timestamp": "2025-07-04T16:39:38Z"
+          }
+        ]
+      },
+      "195593902": {
+        "pageid": 195593902,
+        "ns": 6,
+        "title": "File:The Scratch Kitchen Interior.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 4188836,
+            "width": 4080,
+            "height": 3072,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/The_Scratch_Kitchen_Interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_Scratch_Kitchen_Interior.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=195593902",
+            "sha1": "ff27b7d332f8b447c103c112be8d544c3534cbfd",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-07-12 23:10:50",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "The Scratch Kitchen Interior",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Diners in Pennsylvania|Files with coordinates missing SDC location of creation|Plains, Pennsylvania|Silk City Diners",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "41.290786",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-75.843578",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The Scratch Kitchen Interior",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-07-12 10:39:57",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Xanadu73&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Xanadu73 (page does not exist)\">Xanadu73</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1260166124,
+            "parentid": 1247152969,
+            "timestamp": "2026-08-12T11:54:44Z"
+          }
+        ]
+      }
+    }
+  }
+}

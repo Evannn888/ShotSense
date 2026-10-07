@@ -20,6 +20,7 @@ from src.preview import MAX_EDGE, validate_source
 
 _SRGB = np.arange(256,dtype=np.float32)/255
 _LINEAR_LUT = np.where(_SRGB<=.04045,_SRGB/12.92,((_SRGB+.055)/1.055)**2.4)
+MAX_JPEG_PIXELS = 64_000_000
 
 
 def decode_jpeg(path):
@@ -28,7 +29,7 @@ def decode_jpeg(path):
     if not 0<path.stat().st_size<=128*1024*1024: raise ValueError('JPEG must be between 1 byte and 128 MB')
     with Image.open(path) as image:
         if image.format!='JPEG': raise ValueError('File content is not JPEG')
-        if not 0<image.width*image.height<=40_000_000: raise ValueError('JPEG exceeds the 40 megapixel limit')
+        if not 0<image.width*image.height<=MAX_JPEG_PIXELS: raise ValueError('JPEG exceeds the 64 megapixel limit')
         profile=image.info.get('icc_profile')
         if image.mode not in ('RGB','L','CMYK'): raise ValueError('Unsupported JPEG color mode')
         if image.mode=='CMYK' and not profile: raise ValueError('CMYK JPEG requires an embedded ICC profile')
@@ -57,14 +58,16 @@ def predict_jpeg(path,bundle_dir=ROOT/'artifacts/model'):
     else: semantic=rgb
     jpeg=encode_semantic_image(semantic); image=decode_semantic_image(io.BytesIO(jpeg))
     h,w=rgb.shape[:2]; factor=min(1,MAX_EDGE/max(h,w))
-    preview=validate_source(np.ascontiguousarray(cv2.resize(linear,(max(1,round(w*factor)),max(1,round(h*factor))),interpolation=cv2.INTER_AREA),dtype=np.float32))
+    preview=cv2.resize(linear,(max(1,round(w*factor)),max(1,round(h*factor))),interpolation=cv2.INTER_AREA)
+    # Area-resize float32 roundoff can put white a few ULPs above 1; keep the display buffer bounded.
+    preview=validate_source(np.ascontiguousarray(np.clip(preview,0,1),dtype=np.float32))
     preprocessing_seconds=time.perf_counter()-preprocessing_started
     inference_started=time.perf_counter(); normalized=predict_arrays(session,image[None],physical[None])[0]
     inference_ms=(time.perf_counter()-inference_started)*1000
     absolute=(normalized.astype(np.float64)+1)/2*(PARAM_MAX-PARAM_MIN)+PARAM_MIN
     values={name:float(value) for name,value in zip(PARAMS,absolute) if name not in ('Temperature','Tint')}
     result={'schema_version':1,'input_format':'JPEG','input_status':'experimental_rendered_input',
-            'jpeg_processing_version':'rendered-jpeg-srgb-v1','jpeg_processing_sha256':sha256_file(__file__),
+            'jpeg_processing_version':'rendered-jpeg-srgb-v2','jpeg_processing_sha256':sha256_file(__file__),
             'recommended_absolute':{},'experimental_absolute':values,'unavailable_parameters':['Temperature','Tint'],
             'units':dict(zip(PARAMS,['EV','slider','slider','K','slider','slider'])),
             'parameter_semantics':'Experimental legacy PV2003 model outputs from an already rendered JPEG; not validated RAW settings or adjustment deltas.',

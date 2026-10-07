@@ -1,0 +1,13 @@
+{
+  "artifacts/experiments/scene_policy_connection_v2/PROTOCOL.md": "d00247344c78ccf282b86b9f22d3e494d92f15654d2358d898cce205fa95b858",
+  "artifacts/experiments/scene_policy_connection_v2/baseline.json": "0c333fe71bcab8b76d50846562a119bd37090e66da77493f7e58fd479f201ff8",
+  "artifacts/experiments/scene_policy_connection_v2/input_baseline.json": "aee9c97ce50e82b9500c847e1939f2c0ca304d800e891cad4185d041f72b9940",
+  "artifacts/experiments/scene_policy_connection_v2/evaluate.py": "fb7fe0015826bef5cac8eceed34b664a11b6e4fc857745c038de8f385b0d4bb7",
+  "artifacts/experiments/scene_policy_connection_v2/native_probe.py": "d1bb27b2738c26335cd183ee5ca7e6ff3ee5d0101c20a7d4725c5abd1aca3f00",
+  "artifacts/experiments/scene_policy_connection_v1/evaluate.py": "8ce777cb29444424d68f28eda3fe1b21136957f53ee8efab6ec434304f7e28a4",
+  "src/scene_policy.py": "89cb9750c864947242ebaf0d074ed6995ad07e84ed81c112c2853f3cfcb100fb",
+  "src/lut_natural.py": "9997637c8cd99862c93ce11c947f2828a1d15a8771edca71ce7b41c3edb367fb",
+  "app/streamlit_app.py": "52c98a6b813ae14e55a16dce4c7afe24ffc7316cf3a00fd59322d843fc69b093",
+  "tests/test_scene_policy.py": "510260576a635542336b9453eb2500c042a328afdc6c53cb4a8c86f735ccf895",
+  "tests/test_automatic_photo.py": "4476cc42138aaa9dbcd5297ffc229a6ba3e52678c5256d0d031d781cd724bb2e"
+}

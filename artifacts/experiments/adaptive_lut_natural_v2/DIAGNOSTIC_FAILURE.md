@@ -1,0 +1,1 @@
+Native crop PNG was successfully written, but the first sidecar-hash calculation passed a non-contiguous NumPy view to hashlib and raised ValueError: ndarray is not C-contiguous. No source/output pixels or renderer code changed; hash an explicit contiguous view and verify exported crop pixels. This was a presentation-sidecar failure, not a worker/quality failure.

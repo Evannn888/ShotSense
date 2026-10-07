@@ -1,0 +1,224 @@
+{
+  "items": [
+    {
+      "id": "day_portrait",
+      "name": "白天海滩人像",
+      "synthetic": false,
+      "full_subject": "people",
+      "crop_subject": "people",
+      "subject_matches_declared": true,
+      "full_lighting": "daylight",
+      "crop_lighting": "overcast",
+      "lighting_top_in_declared_set": true,
+      "lighting_ambiguous": false,
+      "subject_top_two_gap": 0.09999161958694458,
+      "lighting_top_two_gap": 0.0030611157417297363,
+      "linear_luminance_q05_q50_q95": [
+        0.04203321701491252,
+        0.5080186517326024,
+        0.6256172659284764
+      ],
+      "native_faces": 1,
+      "analysis": "主体合理；阴天与白天接近"
+    },
+    {
+      "id": "shadow_portrait",
+      "name": "蓝橙布光人像",
+      "synthetic": false,
+      "full_subject": "people",
+      "crop_subject": "people",
+      "subject_matches_declared": true,
+      "full_lighting": "underexposed_daylight",
+      "crop_lighting": "underexposed_daylight",
+      "lighting_top_in_declared_set": false,
+      "lighting_ambiguous": true,
+      "subject_top_two_gap": 0.08936603367328644,
+      "lighting_top_two_gap": 0.026721999049186707,
+      "linear_luminance_q05_q50_q95": [
+        0.0009544102470709645,
+        0.001886905845929703,
+        0.037885449442400236
+      ],
+      "native_faces": 1,
+      "analysis": "误判欠曝；不能据此强行提亮"
+    },
+    {
+      "id": "city_night",
+      "name": "蓝调城市全景",
+      "synthetic": false,
+      "full_subject": "urban_architecture",
+      "crop_subject": "urban_architecture",
+      "subject_matches_declared": true,
+      "full_lighting": "underexposed_daylight",
+      "crop_lighting": "underexposed_daylight",
+      "lighting_top_in_declared_set": false,
+      "lighting_ambiguous": true,
+      "subject_top_two_gap": 0.06113074719905853,
+      "lighting_top_two_gap": 0.027801036834716797,
+      "linear_luminance_q05_q50_q95": [
+        0.00245243593817395,
+        0.10052032280108411,
+        0.5597490592537625
+      ],
+      "native_faces": 0,
+      "analysis": "主体合理；欠曝不代表需纠正"
+    },
+    {
+      "id": "milky_way",
+      "name": "银河星空",
+      "synthetic": false,
+      "full_subject": "natural_landscape",
+      "crop_subject": "natural_landscape",
+      "subject_matches_declared": true,
+      "full_lighting": "night",
+      "crop_lighting": "night",
+      "lighting_top_in_declared_set": true,
+      "lighting_ambiguous": false,
+      "subject_top_two_gap": 0.05256180465221405,
+      "lighting_top_two_gap": 0.01675841212272644,
+      "linear_luminance_q05_q50_q95": [
+        0.00045170885691738,
+        0.004123574809059982,
+        0.04365105789668834
+      ],
+      "native_faces": 0,
+      "analysis": "识别夜景；应保留暗天空"
+    },
+    {
+      "id": "sunset_silhouette",
+      "name": "晚霞与树剪影",
+      "synthetic": false,
+      "full_subject": "natural_landscape",
+      "crop_subject": "natural_landscape",
+      "subject_matches_declared": true,
+      "full_lighting": "sunset_sunrise",
+      "crop_lighting": "sunset_sunrise",
+      "lighting_top_in_declared_set": true,
+      "lighting_ambiguous": false,
+      "subject_top_two_gap": 0.07160444557666779,
+      "lighting_top_two_gap": 0.017206192016601562,
+      "linear_luminance_q05_q50_q95": [
+        0.0,
+        0.058281144683899784,
+        0.5795506600469946
+      ],
+      "native_faces": 0,
+      "analysis": "识别日落；应保留剪影"
+    },
+    {
+      "id": "kitchen",
+      "name": "餐厅室内混合光",
+      "synthetic": false,
+      "full_subject": "indoor_room",
+      "crop_subject": "indoor_room",
+      "subject_matches_declared": true,
+      "full_lighting": "indoor_artificial",
+      "crop_lighting": "indoor_artificial",
+      "lighting_top_in_declared_set": true,
+      "lighting_ambiguous": true,
+      "subject_top_two_gap": 0.05528385937213898,
+      "lighting_top_two_gap": 0.012256145477294922,
+      "linear_luminance_q05_q50_q95": [
+        0.011382267748578262,
+        0.13737839028702845,
+        0.42279760220035567
+      ],
+      "native_faces": 0,
+      "analysis": "空间识别合理；光源混合"
+    },
+    {
+      "id": "backlit_landscape",
+      "name": "雾中逆光树林",
+      "synthetic": false,
+      "full_subject": "natural_landscape",
+      "crop_subject": "natural_landscape",
+      "subject_matches_declared": true,
+      "full_lighting": "underexposed_daylight",
+      "crop_lighting": "daylight",
+      "lighting_top_in_declared_set": false,
+      "lighting_ambiguous": true,
+      "subject_top_two_gap": 0.08671629428863525,
+      "lighting_top_two_gap": 0.008852869272232056,
+      "linear_luminance_q05_q50_q95": [
+        0.039972399095883834,
+        0.23219936156985568,
+        0.8661141186987336
+      ],
+      "native_faces": 0,
+      "analysis": "取景改变光线判断；需保护光束"
+    },
+    {
+      "id": "dog",
+      "name": "户外幼犬",
+      "synthetic": false,
+      "full_subject": "animal_pet",
+      "crop_subject": "animal_pet",
+      "subject_matches_declared": true,
+      "full_lighting": "daylight",
+      "crop_lighting": "daylight",
+      "lighting_top_in_declared_set": true,
+      "lighting_ambiguous": false,
+      "subject_top_two_gap": 0.08967672288417816,
+      "lighting_top_two_gap": 0.02673053741455078,
+      "linear_luminance_q05_q50_q95": [
+        0.029268935210838766,
+        0.12122243051549722,
+        0.39472556420404625
+      ],
+      "native_faces": 0,
+      "analysis": "主体与自然光判断合理"
+    },
+    {
+      "id": "day_portrait_dark_control",
+      "name": "白天人像 ×1/8 亮度",
+      "synthetic": true,
+      "full_subject": "people",
+      "crop_subject": "people",
+      "subject_matches_declared": true,
+      "full_lighting": "overcast",
+      "crop_lighting": "overcast",
+      "lighting_top_in_declared_set": true,
+      "lighting_ambiguous": false,
+      "subject_top_two_gap": 0.09856438636779785,
+      "lighting_top_two_gap": 0.012961119413375854,
+      "linear_luminance_q05_q50_q95": [
+        0.0053038045804303675,
+        0.0634471235674675,
+        0.0776382601674617
+      ],
+      "native_faces": 1,
+      "analysis": "未误判夜景；也未识别暗化程度"
+    },
+    {
+      "id": "backlit_landscape_dark_control",
+      "name": "逆光树林 ×1/8 亮度",
+      "synthetic": true,
+      "full_subject": "natural_landscape",
+      "crop_subject": "natural_landscape",
+      "subject_matches_declared": true,
+      "full_lighting": "underexposed_daylight",
+      "crop_lighting": "underexposed_daylight",
+      "lighting_top_in_declared_set": true,
+      "lighting_ambiguous": true,
+      "subject_top_two_gap": 0.0854247510433197,
+      "lighting_top_two_gap": 0.01066388189792633,
+      "linear_luminance_q05_q50_q95": [
+        0.0049679028588477895,
+        0.029054075376980872,
+        0.1084219803707803
+      ],
+      "native_faces": 0,
+      "analysis": "仍识别风景；未误判夜景"
+    }
+  ],
+  "original_count": 8,
+  "synthetic_count": 2,
+  "original_lighting_view_flips": [
+    "day_portrait",
+    "backlit_landscape"
+  ],
+  "warm_model_p50_p95_ms": [
+    101.44731249999973,
+    105.57452949999983
+  ]
+}

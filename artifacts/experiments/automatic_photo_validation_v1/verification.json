@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-05",
+  "functional_status": "passed",
+  "photographic_status": "limited; not universal direct-to-use acceptance",
+  "scene_count": 17,
+  "jpeg_count": 10,
+  "dng_count": 7,
+  "all_full_and_native_views_inspected": true,
+  "actual_fresh_uploads": 17,
+  "lifecycle": {
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 12.34,
+    "warning": "Existing optional Matplotlib API warning"
+  },
+  "same_code_previous_whole_suite": {
+    "tests": 78,
+    "seconds": 101.9,
+    "rerun_this_validation": false,
+    "record": "../automatic_photo_ui_v1/verification.json"
+  },
+  "code_unchanged": {
+    "app/streamlit_app.py": true,
+    "src/lut_natural.py": true,
+    "src/photo_engine.py": true,
+    "src/adaptive_lut.py": true,
+    "src/jpeg_inference.py": true,
+    "requirements.lock.txt": true,
+    "tests/test_automatic_photo.py": true
+  },
+  "source_hash_checks": {
+    "ahmet-yuksek-7lK0bpUj8AA-unsplash": true,
+    "martin-bennie-MhYU5K4A93I-unsplash": true,
+    "nir-himi-1P1yaGS_Gek-unsplash": true,
+    "a0113-IMG_1129": true,
+    "a0575-kme_040": true,
+    "a0715-060812_182920__MG_6255": true,
+    "a2049-IMG_1585": true,
+    "a2132-IMG_4947": true,
+    "a2270-_DSC0033": true,
+    "a3246-kme_445": true,
+    "user-cloudy-trees": true,
+    "LOL-27": true,
+    "LOL-102": true,
+    "LOL-113": true,
+    "LOL-254": true,
+    "LOL-565": true,
+    "LOL-6": true
+  },
+  "stored_png_and_source_json_checks": {
+    "ahmet-yuksek-7lK0bpUj8AA-unsplash": true,
+    "martin-bennie-MhYU5K4A93I-unsplash": true,
+    "nir-himi-1P1yaGS_Gek-unsplash": true,
+    "a0113-IMG_1129": true,
+    "a0575-kme_040": true,
+    "a0715-060812_182920__MG_6255": true,
+    "a2049-IMG_1585": true,
+    "a2132-IMG_4947": true,
+    "a2270-_DSC0033": true,
+    "a3246-kme_445": true,
+    "user-cloudy-trees": true,
+    "LOL-27": true,
+    "LOL-102": true,
+    "LOL-113": true,
+    "LOL-254": true,
+    "LOL-565": true,
+    "LOL-6": true
+  },
+  "core_matches_head": {
+    "src/inference.py": true,
+    "src/preview.py": true,
+    "src/color_pipeline.py": true,
+    "src/preprocess.py": true,
+    "src/extract_labels.py": true,
+    "artifacts/model/model.onnx": true,
+    "artifacts/model/model.json": true
+  },
+  "health": {
+    "http_status": 200,
+    "body": "ok"
+  },
+  "personal_downloads_written": false,
+  "live_browser_client_download_verified": false,
+  "human_preference_or_known_unseen_camera_acceptance": false,
+  "severe_processing_errors": 0,
+  "observed_quality_limits": [
+    "Extreme-low-light images remain dark/noisy and gray/flat; not a reliable finished-photo result.",
+    "DNG is conservative tone-only; two inspected backlight/highlight cases unchanged.",
+    "Only one native DNG portrait; no JPEG portrait/pet/multiple skin tone/mixed-light acceptance.",
+    "50MP upload-to-page33.43\u201346.56s in isolated AppTest; not browser-client latency."
+  ],
+  "records": {
+    "PROTOCOL.md": "2eb938935260cead6e6c3249a19eb33e6f1c5c01c8bfd307fbe014487d7a84e8",
+    "inputs.json": "582cdcdfbca57f1b114e50bc73fb181300ddfea2a49d5f995b31c3eb89e2700f",
+    "baseline.json": "7cb52f749e5b45ad8d4610072ef1105b57e05d81bebf2fe3be3a7b20facf96b1",
+    "source_snapshot.zip": "c8ebc44540d4f6422d538561630f2e90b2f38830882e8274e70da8bad5079c43",
+    "validate.py": "fc1b6014d172358f4ae53c4ff45850df6b508f64cc75f44116151ae4a1e69638",
+    "results.json": "ba8bfeffc76e96098e91fba418e787703768bdae27a7f5e8611c2c328cf72af9",
+    "REVIEW.md": "5a4e77cfa12648757ca6ea81cf2bb9d252941b7d03fef73ecd334f67b22e05f8",
+    "REPORT.zh-CN.md": "631afd81c43de38834d087c2edd60f4fd721b34352806a35e50d11bebc5b9997",
+    "lifecycle.xml": "5935a914cff42b371fcd535fa033bce59ba9b297e6b6ef1b0c263ff265f5873c"
+  },
+  "git_diff_check": "passed",
+  "final_document_hashes": {
+    "README.md": "bb22f3b954a66245a07b9c919595016d7888a1a5dd4e781ce7376b273776782f",
+    "SHOTSENSE_MASTER_PLAN.md": "5fd87c3c75f2d66e5cc4b49f576c44c450434257005b06df8b7dbe5339b9a645"
+  }
+}

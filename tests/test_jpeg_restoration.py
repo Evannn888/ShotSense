@@ -86,10 +86,13 @@ runpy.run_module('src.jpeg_restoration',run_name='__main__')
     at.run(timeout=30)
     assert not at.exception and not at.error
     baseline, unchanged, _ = render_linear_preview(linear, {'Exposure':0, 'HighlightRecovery':0})
+    next(b for b in at.button if b.label=='Prepare PNG download').click().run(timeout=30)
     assert baseline == unchanged == exports['Download approximate preview PNG']
     assert not any(c.label == 'Apply experimental JPEG estimates to preview' for c in at.checkbox)
     next(s for s in at.slider if s.label == 'Manual exposure (EV)').set_value(1.0).run(timeout=30)
     _, adjusted, expected = render_linear_preview(linear, {'Exposure':1., 'HighlightRecovery':0})
+    assert not at.get('download_button')
+    next(b for b in at.button if b.label=='Prepare PNG download').click().run(timeout=30)
     assert exports['Download approximate preview PNG'] == adjusted
     payload = json.loads(exports['Download parameters JSON'])
     assert payload['preview']['adjustment_mode'] == 'manual'

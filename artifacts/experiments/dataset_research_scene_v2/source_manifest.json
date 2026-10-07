@@ -1,0 +1,92 @@
+[
+  {
+    "id": "msec",
+    "repo": "mahmoudnafifi/Exposure_Correction",
+    "source_url": "https://github.com/mahmoudnafifi/Exposure_Correction",
+    "request_url": "https://api.github.com/repos/mahmoudnafifi/Exposure_Correction/readme",
+    "http_status": 200,
+    "path": "artifacts/experiments/dataset_research_scene_v2/sources/msec.md",
+    "bytes": 6023,
+    "sha256": "18bec6ac5c15ed51a7e28bb3fc9ecc9a83afeb74cb16b87b91e4fbefb99e776b"
+  },
+  {
+    "id": "ppr10k",
+    "repo": "csjliang/PPR10K",
+    "source_url": "https://github.com/csjliang/PPR10K",
+    "request_url": "https://api.github.com/repos/csjliang/PPR10K/readme",
+    "http_status": 200,
+    "path": "artifacts/experiments/dataset_research_scene_v2/sources/ppr10k.md",
+    "bytes": 7449,
+    "sha256": "62a8d89ff711d68de1d48110dfad3d0e96888be3d216de1133039ce4b2ec5077"
+  },
+  {
+    "id": "lcdp",
+    "repo": "onpix/LCDPNet",
+    "source_url": "https://github.com/onpix/LCDPNet",
+    "request_url": "https://api.github.com/repos/onpix/LCDPNet/readme",
+    "http_status": 200,
+    "path": "artifacts/experiments/dataset_research_scene_v2/sources/lcdp.md",
+    "bytes": 5323,
+    "sha256": "ab1f093b974ee51ef69f9eb21607042f1d0b2aff22a4e315657d9e626045c141"
+  },
+  {
+    "id": "lol_v2",
+    "repo": "flyywh/CVPR-2020-Semi-Low-Light",
+    "source_url": "https://github.com/flyywh/CVPR-2020-Semi-Low-Light",
+    "request_url": "https://api.github.com/repos/flyywh/CVPR-2020-Semi-Low-Light/readme",
+    "http_status": 200,
+    "path": "artifacts/experiments/dataset_research_scene_v2/sources/lol_v2.md",
+    "bytes": 6772,
+    "sha256": "59e3f611890ffc6fc30090ad63a4f7fe356d585c66f6e365f50afc4935bbaf00"
+  },
+  {
+    "id": "sice",
+    "repo": "csjcai/SICE",
+    "source_url": "https://github.com/csjcai/SICE",
+    "request_url": "https://api.github.com/repos/csjcai/SICE/readme",
+    "http_status": 200,
+    "path": "artifacts/experiments/dataset_research_scene_v2/sources/sice.md",
+    "bytes": 3915,
+    "sha256": "11e6a5dc69c54c9669c1a48cb282a16c2bcd3a2afb2f45beb373ea403c844456"
+  },
+  {
+    "id": "adaptive_lut_fivek",
+    "repo": "HuiZeng/Image-Adaptive-3DLUT",
+    "source_url": "https://github.com/HuiZeng/Image-Adaptive-3DLUT",
+    "request_url": "https://api.github.com/repos/HuiZeng/Image-Adaptive-3DLUT/readme",
+    "http_status": 200,
+    "path": "artifacts/experiments/dataset_research_scene_v2/sources/adaptive_lut_fivek.md",
+    "bytes": 5488,
+    "sha256": "45cd2cc7d86bd7f45649308b508fd1e42b5061e15d89d0ca9980e72656dd8956"
+  },
+  {
+    "id": "white_balance",
+    "repo": "mahmoudnafifi/Deep_White_Balance",
+    "source_url": "https://github.com/mahmoudnafifi/Deep_White_Balance",
+    "request_url": "https://api.github.com/repos/mahmoudnafifi/Deep_White_Balance/readme",
+    "http_status": 200,
+    "path": "artifacts/experiments/dataset_research_scene_v2/sources/white_balance.md",
+    "bytes": 8930,
+    "sha256": "a5c85a004cd1cad20ac563ddd70049978002077a30030afb06ab51f0f0511741"
+  },
+  {
+    "id": "rendered_wb",
+    "repo": "mahmoudnafifi/WB_sRGB",
+    "source_url": "https://github.com/mahmoudnafifi/WB_sRGB",
+    "request_url": "https://api.github.com/repos/mahmoudnafifi/WB_sRGB/readme",
+    "http_status": 200,
+    "path": "artifacts/experiments/dataset_research_scene_v2/sources/rendered_wb.md",
+    "bytes": 8832,
+    "sha256": "2e0c775fe4af5980a7220e81315079d1ec13dd34076e866e40a183fc1e7e2ba6"
+  },
+  {
+    "id": "vera_retouch",
+    "repo": "OpenVeraTeam/VeraRetouch",
+    "source_url": "https://github.com/OpenVeraTeam/VeraRetouch",
+    "request_url": "https://api.github.com/repos/OpenVeraTeam/VeraRetouch/readme",
+    "http_status": 200,
+    "path": "artifacts/experiments/dataset_research_scene_v2/sources/vera_retouch.md",
+    "bytes": 13592,
+    "sha256": "fc2a5cc87bac45329764597ea84d3d79aca1a048e0998479adbf0ced77d2935c"
+  }
+]

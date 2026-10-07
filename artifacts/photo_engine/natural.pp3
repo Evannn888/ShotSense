@@ -1,0 +1,7 @@
+[Version]
+AppVersion=5.11
+Version=351
+[Exposure]
+Compensation=0.35
+HighlightCompr=40
+HighlightComprThreshold=80

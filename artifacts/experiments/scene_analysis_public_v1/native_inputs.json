@@ -1,0 +1,42 @@
+[
+  {
+    "id": "day_portrait",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/day_portrait.png"
+  },
+  {
+    "id": "shadow_portrait",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/shadow_portrait.png"
+  },
+  {
+    "id": "city_night",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/city_night.png"
+  },
+  {
+    "id": "milky_way",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/milky_way.png"
+  },
+  {
+    "id": "sunset_silhouette",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/sunset_silhouette.png"
+  },
+  {
+    "id": "kitchen",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/kitchen.png"
+  },
+  {
+    "id": "backlit_landscape",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/backlit_landscape.png"
+  },
+  {
+    "id": "dog",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/dog.png"
+  },
+  {
+    "id": "day_portrait_dark_control",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/day_portrait_dark_control.png"
+  },
+  {
+    "id": "backlit_landscape_dark_control",
+    "path": "/Users/evanchen/CS Projects/ShotSense/data/user_photo_diagnostics/scene-analysis-public-v1/backlit_landscape_dark_control.png"
+  }
+]

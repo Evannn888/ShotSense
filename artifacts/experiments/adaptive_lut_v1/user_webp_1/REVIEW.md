@@ -1,0 +1,9 @@
+# User WebP result ·2026-10-05
+
+Direct source-only trial on /Users/evanchen/Downloads/1.webp: staticRGB480×270,9540bytes, noICC (assume sRGB), sourceSHA2eeb453096da996fc5497a48a5491ec109f53cf72fa2e0c4a427cbeaef83c3f2. No JPEG transcoding, resize, denoise or sharpening. Reuse unchanged safe pinned paired-sRGB predictor/basis tables and shared0/50/100%sRGBPNG strength renderer.
+
+Predicted weights[1.562600255,0.437976241,-1.283388138] differ from previous arch[1.517405629,-0.486981243,-0.968252063]; resulting LUT hashes differ. These are unconstrained linear coefficients, not probability percentages. The model/basis tables remain fixed; image analysis changes their combination. Same input repeats exactly. The resulting color table is global within each image and does not separately select sky/trees/grass. No online training or personal style learning occurs.
+
+Native separate outputs are in data/user_photo_diagnostics/lut-webp-1/original.png,lut50.png,lut100.png. Verify all PNG dimensions/mode/sRGB/pixel blend/output hashes,0%identity,replay determinism/source and current app/engine/JPEG/LUT source preservation. Model application with bundle already loaded takes0.0432s; no web workflow latency claim. No new functional suite run for this diagnostic; the prior72-test evidence is unchanged.
+
+Visual review:50% adds gentle cloud brightness/tree/grass separation;100% is brighter and greener with heavier dark shrubs and0.1119% newly all-black pixels,0% new full channels. Reviewer provisionally favors50% for the muted cloudy mood, not a user preference or general-quality acceptance. Original480×270texture is already soft; LUT color/contrast does not reconstruct lost high-resolution details. Current website and JPEG-only LUT CLI do not gain WebP support from this standalone pixel trial. No automatic/default promotion or training.

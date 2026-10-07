@@ -1,0 +1,73 @@
+{
+  "scope": "Explicit experimental shadow recipe with screenshot-proxy/public/synthetic development evidence; original user JPEG and independent personal-photo acceptance pending",
+  "processing_version": "rawtherapee-recipes-v2",
+  "all_11_input_and_profile_hashes_verified_in_both_rounds": true,
+  "unchanged_against_HEAD": {
+    "src/inference.py": "ba8d6b7c50209f4e50737dc3af8d37d4577f6ce79a5ae13915f64ac4286e8873",
+    "src/jpeg_inference.py": "10efa21eafec0c760fefcf81baeecf8271a1018a0551af58b06be1a1dc72aefb",
+    "src/preview.py": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62",
+    "src/color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+    "src/preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6",
+    "src/extract_labels.py": "d8c9b2b2a261f41329437284de9874afa87b062c9d9b02ad51380eed548e4dde",
+    "artifacts/model/model.onnx": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+    "artifacts/model/model.json": "0e8f81c12684ce3ae2b993dbb097883df1576786c830235da2cfb4e6003b01b2"
+  },
+  "source_sha256": {
+    "EXISTING_SOLUTIONS_RESEARCH.md": "4b0792c2c3f4f6be29cfa070e27816ad6017a365057bbcbaf62da9c454db4c0e",
+    "README.md": "dcb86920e8859a39847c65124725f9aff29e2b210796f23eb10cc7fbb1b2d3f0",
+    "SHOTSENSE_MASTER_PLAN.md": "aa45331da6c4698671e19fe88b15f839a0d5a4b9d66f059f81c5341c21696f64",
+    "app/streamlit_app.py": "9d9e9e9e13029120b6e78ea8efc15b927eec2a492d6e3c749a26a36314d33459",
+    "artifacts/experiments/photo_engine_shadow_v2/ACCEPTANCE.md": "9367d1bfe9a85b0062efc6dc0e8d4953d4575198b4fadbeb5287a98697ec0756",
+    "artifacts/experiments/photo_engine_shadow_v2/PROTOCOL.md": "136e997804afc34185a8aab7a21f4ac01195ad5a5a6bd3ec8ddc69a374dd271b",
+    "artifacts/experiments/photo_engine_shadow_v2/candidate-equalizer.pp3": "b17f48f716422eb6858c574bffe69b063f3b5a98467f6688c833f8bcd43a87c2",
+    "artifacts/experiments/photo_engine_shadow_v2/candidate-shadows.pp3": "3664d1b6a80f55f9ec51ac19cca926f0937b384abd1359c23f24317a81a28c4c",
+    "artifacts/experiments/photo_engine_shadow_v2/compare.py": "82b649a6dac433275a5882ee0293a52ba222fa00432f1e404b46be13cf3d0c76",
+    "artifacts/experiments/photo_engine_shadow_v2/foreground-feedback/DECISION.md": "fb70475b7ab78c68d18acec2f97ee344da33a9ca381409c5f8e295bd750b767d",
+    "artifacts/experiments/photo_engine_shadow_v2/foreground-feedback/PROTOCOL.md": "b3f6722d1edd53a54fa56919371bfb1e36b72251220989af4eaa32e3cb00e498",
+    "artifacts/experiments/photo_engine_shadow_v2/foreground-feedback/candidate-equalizer.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305",
+    "artifacts/experiments/photo_engine_shadow_v2/foreground-feedback/candidate-shadows.pp3": "33c55e9436c4a01eb649071b0a805cdece9215b2ef65035b97801c978ecef78e",
+    "artifacts/experiments/photo_engine_shadow_v2/foreground-feedback/compare.py": "80eaf4330bf230de71eb7d079410fbfc984e50095472d531868fa445d419806e",
+    "artifacts/experiments/photo_engine_shadow_v2/foreground-feedback/manifest.json": "ab2326eea361c77124c86f1d64578035559e92e6ab62f85f849748d34d9d1867",
+    "artifacts/experiments/photo_engine_shadow_v2/foreground-feedback/report.json": "cdc9da82b8296b1d8fe1aeb240e5c72af08583784a2b175f1b704bc3e91dc946",
+    "artifacts/experiments/photo_engine_shadow_v2/manifest.json": "49a3013637e28f63e60716f89117b5c40cb41d326650ecadc38fb9df64f20602",
+    "artifacts/experiments/photo_engine_shadow_v2/photo_engine-before.py": "1de69fcd12d1b6c4b3132d62adcef0f377fd08184f80c903b2577362996c8eaa",
+    "artifacts/experiments/photo_engine_shadow_v2/proxy-provenance.json": "34643c98b223e822a72b05cbd54ae9b9af5b040af859a8d3ff1c16c824fc41ad",
+    "artifacts/experiments/photo_engine_shadow_v2/report.json": "2e6f7dd5a9d0518b33d1230e334c5e8b68451bd0cebfdc9904bcca0f59af5714",
+    "artifacts/experiments/photo_engine_shadow_v2/streamlit_app-before.py": "2de4ae74c8a68daccde023267fd47a2e68b9d8d220817ba7562a16ce5c80d014",
+    "artifacts/experiments/photo_engine_shadow_v2/test-collection-correction.md": "2b4d3ef0c6d4f1bdb8784248d2b64380c1d0d92f897cdd16dff6bc8d1af5d6b1",
+    "artifacts/experiments/photo_engine_shadow_v2/tests-before.py": "effcc051e6aa148d5ddf4ae0267163bd1a330fe65efdfbb4f11e5ec60ba952ea",
+    "artifacts/photo_engine/chroma.pp3": "9828481c3d842fa443415f3f0f3c2626889133e5819abd0fbf6c3fa448faff0a",
+    "artifacts/photo_engine/natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b",
+    "artifacts/photo_engine/neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+    "artifacts/photo_engine/shadows.pp3": "a35effbeb275fa514bcb8c433065a4eea4c5b262ebba16e36aad80f391362305",
+    "src/photo_engine.py": "5269f631a79bd59e22a5de2bfbe074b60fff9b1adeea6defe3fac7022fdb40cf",
+    "tests/test_photo_engine.py": "3609b78ec56d812b506ea726596f45f6a7834e941f6bf771c9ca4a84b2653022"
+  },
+  "upstream_source_sha256": {
+    "procparams.cc": "971251e9a5c31d473afdb2d03827766635fe5b368ecae3ae66c71351b6077b5c",
+    "ipshadowshighlights.cc": "d50f6bfd75466da9f691c10eee79fc50bea6859e2fe39864e5450801a8375f13",
+    "iptoneequalizer.cc": "5878b69b65b0650a60210d1db3102fff336644014dd68c40c93609615938620a"
+  },
+  "checks": {
+    "focused_tests": {
+      "passed": 2,
+      "elapsed_seconds": 28.13
+    },
+    "full_suite": {
+      "passed": 61,
+      "failed": 0,
+      "skipped": 0,
+      "elapsed_seconds": 69.143,
+      "command": "venv/bin/python -m pytest -q --junitxml=data/tools/rawtherapee-5.11/photo-engine-shadow-v2-tests.xml"
+    },
+    "first_full_discovery": "67 passed/1 obsolete snapshot test failed99.71s; unchanged snapshot renamed tests-before.py and normal full discovery rerun; original JUnit retained locally",
+    "jpeg_worker": "actual bounded worker/engine replay, stronger dark tones than gentle, black/size/zero/export checks",
+    "raw_ui": "actual same-source explicit shadow action, hash/reset/profile isolation/zero strength/PNG-JSON agreement",
+    "prior_identities": "pre-change snapshots match60-test hashes; neutral/natural/chroma unchanged; auto selector AST and0.001 guard unchanged",
+    "health": "ok, port8501",
+    "real_browser": "not verified; CDP focus reading failures preserved, no workaround",
+    "visual": "both rounds full/native/proxy sheets reviewed; finite-set observation only; source grain remains visible",
+    "clipping": "selected proxy0; public controls below0.001; neutral ramp one new full-value column0.00390625; explicit recipe has no no-clipping guarantee",
+    "warnings": "existing optional Matplotlib warning; no dependency changes"
+  }
+}

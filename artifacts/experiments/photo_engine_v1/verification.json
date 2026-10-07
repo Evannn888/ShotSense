@@ -1,0 +1,56 @@
+{
+  "scope": "Functional verification and public/synthetic offline pilot only; human photographic acceptance remains pending.",
+  "all_15_frozen_source_hashes_verified": true,
+  "unchanged_against_HEAD": {
+    "src/inference.py": "ba8d6b7c50209f4e50737dc3af8d37d4577f6ce79a5ae13915f64ac4286e8873",
+    "src/jpeg_inference.py": "10efa21eafec0c760fefcf81baeecf8271a1018a0551af58b06be1a1dc72aefb",
+    "src/preview.py": "c429843fec504e9338c20ef902f40065a2264ef23c6bbc2593d615547d9f7d62",
+    "src/color_pipeline.py": "eb6b8bb26c0848487472ebde282f1767d8951e245ce489d65438e267593500ed",
+    "src/preprocess.py": "d1ea8bb9cc0a585a5e9dbacc4aac3e4c89e28bcf7405b3d0133f955b7f5360e6",
+    "src/extract_labels.py": "d8c9b2b2a261f41329437284de9874afa87b062c9d9b02ad51380eed548e4dde",
+    "artifacts/model/model.onnx": "b957179cafa1351a091e0993bdb8012079343ea6fde777d3480e80e3690cc17f",
+    "artifacts/model/model.json": "0e8f81c12684ce3ae2b993dbb097883df1576786c830235da2cfb4e6003b01b2"
+  },
+  "implementation_sha256": {
+    "src/photo_engine.py": "1de69fcd12d1b6c4b3132d62adcef0f377fd08184f80c903b2577362996c8eaa",
+    "app/streamlit_app.py": "3643e6f57bfbddf2bd9d1e0692b6cc41ab20ad44c124ac0b10a92afc112450ea",
+    "scripts/prepare_photo_engine.py": "fa78dcc572f69fe8cae0f75806e1a0823ad51de227b375da299283f7f548a2e2",
+    "scripts/compare_photo_engine.py": "345e79189fd8e453070ec49852b73e63d4c412bd393242247df0d9e3300eec7e",
+    "tests/test_photo_engine.py": "04c2431a438d04979909db904e3b90306c1ff94b770dfea687a05b2b7b1da471",
+    "artifacts/photo_engine/neutral.pp3": "904abf3572800e525dc45d2da8c36c0fb441672dc17d196a1c198ee7108f373c",
+    "artifacts/photo_engine/natural.pp3": "54800ec174d1befdd2e7f9a2232c31245e5d7cf55b495941477474941a5f6b8b",
+    "artifacts/photo_engine/chroma.pp3": "9828481c3d842fa443415f3f0f3c2626889133e5819abd0fbf6c3fa448faff0a"
+  },
+  "engine": {
+    "engine": "RawTherapee",
+    "version": "5.11",
+    "pp3_version": 351,
+    "archive_url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_12.3_Universal_5.11.zip",
+    "archive_sha256": "a3e928cafc7a00a090dcf50b84cd45af48ce8f457269d601d301072df7e0f7af",
+    "cli_sha256": "7d1e2d68a89f7f425f618acd4b515dce623326b8579237e560885ba9c58aa928",
+    "application_sha256": "c8473f8f97ba7a5650c2fe46d49f58dfee9154a66482cd559adaaacc80f18b38",
+    "platform": "macOS universal, minimum 12.3",
+    "license": "GPL-3.0-or-later; separate unmodified application",
+    "source": "https://github.com/RawTherapee/RawTherapee/tree/5.11"
+  },
+  "checks": {
+    "focused_engine_app_after_final_metadata_change": "passed",
+    "neutral_ramp_and_dark_color_patch_controls": "passed; actual pinned engine",
+    "pip_check": "passed, no broken requirements",
+    "offline_worker": "real isolated CLI with socket.create_connection/urllib blocked",
+    "streamlit": "AppTest actual RAW button and JPEG worker + full downloads, strengths100/50/0, stale state clearing",
+    "real_browser": "not attempted; saved localhost permission block preserved",
+    "full_suite": {
+      "passed": 59,
+      "failed": 0,
+      "skipped": 0,
+      "elapsed_seconds": 38.991,
+      "command": "venv/bin/python -m pytest -q --junitxml=data/tools/rawtherapee-5.11/fixtures/photo-engine-tests.xml",
+      "warnings": "One pre-existing optional Matplotlib warning"
+    },
+    "local_server_health": "HTTP _stcore/health returned ok on port8501; this is not browser visual acceptance",
+    "diff_check": "git diff --check passed"
+  },
+  "independent_personal_camera_acceptance": "not performed",
+  "original_user_failure": "source unavailable; screenshots only; not reproduced by this public portrait"
+}

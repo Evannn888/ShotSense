@@ -1,0 +1,18 @@
+{
+  "verified_artifacts_sha256": {
+    "REPORT.zh-CN.md": "974b3a103c37316a64f9d253f16e7de3bbafad13643185469288d45bc741d185",
+    "eligible_pairs.json": "ce3a9a336aa1dde1e51022f60950ef0445fac72c5e2a99d5a6bb984d93043438",
+    "verification.json": "ecc2414709ebb85f264c878b888de3ebf9734f272c739286af0765411aa155ae",
+    "visual_review.json": "801ee54340701588b48ef27047a2319be15ce1b873b004be4c687773b26d520c",
+    "verify.py": "a5a582c130582b8c2806726886476cb1cb6591ee87efc5f831ed3b627e29a4db",
+    "inspect_source_geometry.py": "809b3bdcb03258b7c149a6cc0066144c07fab64cbd13e47dfcd28fa55bd02ecc"
+  },
+  "eligible_views": 99,
+  "geometry_provisional": true,
+  "all100originals_and_derivatives_verified": true,
+  "production_protected_identity_count": 19,
+  "diff_check_passed": true,
+  "app_health": "ok",
+  "report_image_path_exists": true,
+  "new_training_or_controller": false
+}

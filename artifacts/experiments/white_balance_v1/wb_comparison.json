@@ -1,0 +1,50 @@
+{
+  "count": 109,
+  "same_scene_scores_count": 109,
+  "applied_count": 13,
+  "applied_ids": [
+    "a0218-kme_181.dng",
+    "a0835-mb_080329_061.dng",
+    "a0875-jmac_dsc1465.dng",
+    "a1237-kme_389.dng",
+    "a1305-nkim_mg_6827.dng",
+    "a2009-jn_20080129_las_vegas_0123.dng",
+    "a2754-_dsc7455.dng",
+    "a3042-kme_092.dng",
+    "a3407-dsc_0008-1.dng",
+    "a3442-mb_060909_003.dng",
+    "a4026-nkim_mg_6632.dng",
+    "a4133-dgw_020.dng",
+    "a4485-_dsc0026.dng"
+  ],
+  "changed_count": 13,
+  "changed_ids": [
+    "a0218-kme_181.dng",
+    "a0835-mb_080329_061.dng",
+    "a0875-jmac_dsc1465.dng",
+    "a1237-kme_389.dng",
+    "a1305-nkim_mg_6827.dng",
+    "a2009-jn_20080129_las_vegas_0123.dng",
+    "a2754-_dsc7455.dng",
+    "a3042-kme_092.dng",
+    "a3407-dsc_0008-1.dng",
+    "a3442-mb_060909_003.dng",
+    "a4026-nkim_mg_6632.dng",
+    "a4133-dgw_020.dng",
+    "a4485-_dsc0026.dng"
+  ],
+  "skipped_v2_exact_count": 96,
+  "reason_counts": {
+    "no_supported_neutral_improvement": 56,
+    "night_or_sunset_retained": 33,
+    "consistent_presumed_neutral_correction": 13,
+    "spatial_neutral_disagreement": 5,
+    "very_dark_source": 2
+  },
+  "v2_fivek_reference_mae_mean": 0.09510827598848728,
+  "wb_fivek_reference_mae_mean": 0.09532453894916207,
+  "lower_reference_error_vs_v2_count": 5,
+  "higher_reference_error_vs_v2_count": 8,
+  "repeat_accepted_exact": true,
+  "scope": "Reused diagnostic development, not independent preference/skin accuracy."
+}

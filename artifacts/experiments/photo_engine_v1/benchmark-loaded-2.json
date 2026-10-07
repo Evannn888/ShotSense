@@ -1,0 +1,50 @@
+{
+  "source_sha256": "cea3ec61caefe144aea717d2bc677be32535a04f870eebf8be9a6862eba894e2",
+  "scope": "One sequential measurement each on local macOS14 arm64; includes Python startup/import, decode, auto recipe, both full-resolution PNG encodes and temporary PNG/JSON writes. Excludes web rendering, NPZ serialization and user interaction. Synthetic uniform 12MP JPEG is not a textured real-photo timing sample.",
+  "memory_semantics": "macOS /usr/bin/time -l reported maximum resident set size; not a sampled summed Python+native-engine process-tree peak. No 40MP throughput or memory guarantee.",
+  "cases": [
+    {
+      "input_sha256": "0c5f760612fdd0e6ce74a2e8dbcab5845a4102ba845606747c1f5d03fa61fa45",
+      "size": [
+        600,
+        400
+      ],
+      "selected_recipe": "natural",
+      "output_png_sha256": "5d230423b4c04ffe10169449b724d8a36dbda8cad142d2c66a176f5164243365",
+      "seconds_including_import_decode_recipe_png_and_temp_exports": 1.924180958,
+      "input_path": "data/external/lol_pilot/254.jpg",
+      "isolated_wall_seconds": 2.035493209,
+      "reported_maximum_resident_set_size_bytes": 186925056,
+      "time_stderr": "/Users/evanchen/CS Projects/ShotSense/venv/lib/python3.9/site-packages/colour/utilities/verbose.py:265: ColourUsageWarning: \"Matplotlib\" related API features are not available: \"No module named 'matplotlib'\".\nSee the installation guide for more information: https://www.colour-science.org/installation-guide/\n  warn(*args, **kwargs)  # noqa: B028\n        2.03 real         4.56 user         0.47 sys\n           186925056  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               19504  page reclaims\n                3214  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                1802  voluntary context switches\n               22703  involuntary context switches\n         32129537994  instructions retired\n         12759923563  cycles elapsed\n           122047232  peak memory footprint\n"
+    },
+    {
+      "input_sha256": "a7153191180c9455b057de611d9e97f85349e2c868197901402bdf4b8034926c",
+      "size": [
+        4000,
+        3000
+      ],
+      "selected_recipe": "natural",
+      "output_png_sha256": "7a9fafc6e6338658a4beb1cd42d9937cb4a654bbed06b3d30c2a992dc0d94534",
+      "seconds_including_import_decode_recipe_png_and_temp_exports": 5.194698708000001,
+      "input_path": "data/tools/rawtherapee-5.11/fixtures/moderately-dim-12mp.jpg",
+      "isolated_wall_seconds": 5.2952085,
+      "reported_maximum_resident_set_size_bytes": 441040896,
+      "time_stderr": "/Users/evanchen/CS Projects/ShotSense/venv/lib/python3.9/site-packages/colour/utilities/verbose.py:265: ColourUsageWarning: \"Matplotlib\" related API features are not available: \"No module named 'matplotlib'\".\nSee the installation guide for more information: https://www.colour-science.org/installation-guide/\n  warn(*args, **kwargs)  # noqa: B028\n        5.29 real         7.48 user         0.63 sys\n           441040896  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               81462  page reclaims\n                  30  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                  12  voluntary context switches\n               12325  involuntary context switches\n         38038867502  instructions retired\n         13028968080  cycles elapsed\n           298437696  peak memory footprint\n"
+    },
+    {
+      "input_sha256": "78059da18a7da9ff26a2769a1fdd8f875b5daf611fe5840bf109d4bf90d86489",
+      "size": [
+        2848,
+        4282
+      ],
+      "selected_recipe": "natural",
+      "output_png_sha256": "056386048439e03aa8cd9d4614af7c6b704b276b20d8bc9dda53f5f1d7ae721b",
+      "seconds_including_import_decode_recipe_png_and_temp_exports": 10.776393167,
+      "input_path": "data/raw/dngs/a2132-IMG_4947.dng",
+      "isolated_wall_seconds": 10.887157792,
+      "reported_maximum_resident_set_size_bytes": 646152192,
+      "time_stderr": "/Users/evanchen/CS Projects/ShotSense/venv/lib/python3.9/site-packages/colour/utilities/verbose.py:265: ColourUsageWarning: \"Matplotlib\" related API features are not available: \"No module named 'matplotlib'\".\nSee the installation guide for more information: https://www.colour-science.org/installation-guide/\n  warn(*args, **kwargs)  # noqa: B028\n       10.88 real        12.49 user         1.54 sys\n           646152192  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n              153730  page reclaims\n                 300  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   0  messages sent\n                   0  messages received\n                   0  signals received\n                 144  voluntary context switches\n                7159  involuntary context switches\n         52153492169  instructions retired\n         20539380645  cycles elapsed\n           239504256  peak memory footprint\n"
+    }
+  ],
+  "load_note": "Brief neutral-ramp/dark-patch test ran concurrently with the first case. Retained as second loaded measurement."
+}

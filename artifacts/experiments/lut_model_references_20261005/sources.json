@@ -1,0 +1,211 @@
+{
+  "scope": "Public author repository metadata and checked-in checkpoint file sizes; no checkpoint downloaded or inference run. Licensing metadata is not proof of weight-specific authorization.",
+  "date": "2026-10-05",
+  "repositories": [
+    {
+      "repo": "HuiZeng/Image-Adaptive-3DLUT",
+      "default_branch": "master",
+      "archived": false,
+      "github_license": "Apache-2.0",
+      "artifacts": [
+        {
+          "path": "LICENSE",
+          "bytes": 11357,
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        },
+        {
+          "path": "pretrained_models/XYZ/LUTs.pth",
+          "bytes": 1294452,
+          "sha": "11af109c835444153af1727958eb9b90e11f0b2c"
+        },
+        {
+          "path": "pretrained_models/XYZ/LUTs_unpaired.pth",
+          "bytes": 1294452,
+          "sha": "61a89dd0d13dce56fba139a58a8bb7d4d9667317"
+        },
+        {
+          "path": "pretrained_models/XYZ/classifier.pth",
+          "bytes": 1083265,
+          "sha": "0cfba5290af2c5d8ef5f96f2f810b5bf99225b0e"
+        },
+        {
+          "path": "pretrained_models/XYZ/classifier_unpaired.pth",
+          "bytes": 1080741,
+          "sha": "641b2d8cddce0407f28326b4a71e4d27a51746ef"
+        },
+        {
+          "path": "pretrained_models/sRGB/LUTs.pth",
+          "bytes": 1294452,
+          "sha": "0830dceee2256ea5d0965c029945c329fac82a26"
+        },
+        {
+          "path": "pretrained_models/sRGB/LUTs_unpaired.pth",
+          "bytes": 1295370,
+          "sha": "15602df2214eaa2c435668c1a8640997446b3077"
+        },
+        {
+          "path": "pretrained_models/sRGB/classifier.pth",
+          "bytes": 1083261,
+          "sha": "439f2ada316f45d1d28dd86a161790aa3b4e334b"
+        },
+        {
+          "path": "pretrained_models/sRGB/classifier_unpaired.pth",
+          "bytes": 1083629,
+          "sha": "a1330989a5a2e19bff2644ddf4f624dfdf3fd51f"
+        }
+      ],
+      "tree_sha": "b491f6df64a588864739a157db271e5c848e1805"
+    },
+    {
+      "repo": "ImCharlesY/SepLUT",
+      "default_branch": "main",
+      "archived": false,
+      "github_license": "Apache-2.0",
+      "artifacts": [
+        {
+          "path": "LICENSE",
+          "bytes": 11424,
+          "sha": "94d620d25d08546d0405c41dd05527df955ac9e9"
+        },
+        {
+          "path": "pretrained/SepLUT-FiveK-XYZ-M6#3D9#1D9.pth",
+          "bytes": 195774,
+          "sha": "d7b7071c4d934de618e4e0b51932dc2552c4197d"
+        },
+        {
+          "path": "pretrained/SepLUT-FiveK-XYZ-M8#3D17#1D17.pth",
+          "bytes": 486462,
+          "sha": "bf2903952732476e0263b1afe855f1fc32bb02f2"
+        },
+        {
+          "path": "pretrained/SepLUT-FiveK-sRGB-M6#3D9#1D9.pth",
+          "bytes": 195774,
+          "sha": "6cce032e744f2811bdc4d55ad01cdfb6759a34ae"
+        },
+        {
+          "path": "pretrained/SepLUT-FiveK-sRGB-M8#3D17#1D17.pth",
+          "bytes": 486462,
+          "sha": "29574f89186a16504df5d81f9526de5f95d008dd"
+        },
+        {
+          "path": "pretrained/SepLUT-FiveK-sRGB-M8#3D33#1D33.pth",
+          "bytes": 1652670,
+          "sha": "3d8c25171ce7b1294d414ba25c9367c6e8e6fd51"
+        },
+        {
+          "path": "pretrained/SepLUT-PPR10KA-sRGB-Res18#3D17#1D17.pth",
+          "bytes": 45195668,
+          "sha": "d5a04c11d9c294c75049b93438481fa6cc4b751f"
+        },
+        {
+          "path": "pretrained/SepLUT-PPR10KA-sRGB-Res18#3D9#1D9.pth",
+          "bytes": 44895316,
+          "sha": "105feeaf7f98f3fd3b8083acfea85e376d3f7297"
+        }
+      ],
+      "tree_sha": "49d8bc3f42c5dfc09140786d0da1e47e3adb0619"
+    },
+    {
+      "repo": "ImCharlesY/AdaInt",
+      "default_branch": "main",
+      "archived": false,
+      "github_license": "Apache-2.0",
+      "artifacts": [
+        {
+          "path": "LICENSE",
+          "bytes": 11424,
+          "sha": "94d620d25d08546d0405c41dd05527df955ac9e9"
+        },
+        {
+          "path": "pretrained/AiLUT-FiveK-XYZ.pth",
+          "bytes": 2486206,
+          "sha": "101001421c9ca5938a2a012c249c8c8ea80cb04e"
+        },
+        {
+          "path": "pretrained/AiLUT-FiveK-sRGB.pth",
+          "bytes": 2486206,
+          "sha": "1238e582420a9fc312177d340bf358379562bca7"
+        },
+        {
+          "path": "pretrained/AiLUT-PPR10KA-sRGB.pth",
+          "bytes": 47149268,
+          "sha": "b8114f56a6b3c3e770aaec6b33e8702a0d5bf196"
+        }
+      ],
+      "tree_sha": "5678851339dff90becb09c3dec41e7214207ccbc"
+    },
+    {
+      "repo": "Jinwon-Ko/LUTFormer",
+      "default_branch": "main",
+      "archived": false,
+      "github_license": null,
+      "artifacts": [
+        {
+          "path": "LUTFormer_code/pretrained/Retouching_FiveK_expertC.pth",
+          "bytes": 1293449,
+          "sha": "e2a7acf2181886ad2d5d65bd105d544836ae35b3"
+        },
+        {
+          "path": "LUTFormer_code/pretrained/Retouching_PPR10K_expertA.pth",
+          "bytes": 14800961,
+          "sha": "e49cd9021ca6aa143d2f91120ae498ec397f94a3"
+        },
+        {
+          "path": "LUTFormer_code/pretrained/Retouching_PPR10K_expertB.pth",
+          "bytes": 14800961,
+          "sha": "5babe8d06be7c92e93731f8b91001a127baa8ef7"
+        },
+        {
+          "path": "LUTFormer_code/pretrained/Retouching_PPR10K_expertC.pth",
+          "bytes": 14800961,
+          "sha": "a3c6cd5b224180474a3a2c652b76188eab167f73"
+        },
+        {
+          "path": "LUTFormer_code/pretrained/ToneMap_FiveK_expertC.pth",
+          "bytes": 2115529,
+          "sha": "c665573bffd124ed583efc0d4a1e1fea02a34b1b"
+        },
+        {
+          "path": "LUTFormer_code/pretrained/Underwater_EUVP_expert.pth",
+          "bytes": 3569289,
+          "sha": "53a524f6d38bdfcbac98478a5c4af95d9f1c4bfe"
+        },
+        {
+          "path": "LUTFormer_code/pretrained/Underwater_UIEB_expert.pth",
+          "bytes": 3569289,
+          "sha": "fed32de6ad5ff32ecb04e968ce05150c92ce6cc1"
+        }
+      ],
+      "tree_sha": "a493a98402fec7692ec0d95cf213b17d17b0ba7d"
+    },
+    {
+      "repo": "Xian-Bei/CLUT",
+      "default_branch": "main",
+      "archived": true,
+      "github_license": null,
+      "artifacts": [
+        {
+          "path": "FiveK/CLUTNet_20+05+10/model0310.pth",
+          "bytes": 1122458,
+          "sha": "ac9b01a933d92ce0bda5da041015db3d2ac3ef02"
+        },
+        {
+          "path": "FiveK/CLUTNet_20+05+20/model0361.pth",
+          "bytes": 1178010,
+          "sha": "fcae0d6003f09c593da1e120f407b9eab74356a2"
+        },
+        {
+          "path": "FiveK/HashLUT_6+13_SmallBackbone/model0367.pth",
+          "bytes": 548518,
+          "sha": "8cd0ce81df70d224b309937a63398f1f6b165eb3"
+        },
+        {
+          "path": "FiveK/HashLUT_7+13/model0299.pth",
+          "bytes": 1396320,
+          "sha": "5d788756f2fe478bb3ebe1e806f60530603b8e42"
+        }
+      ],
+      "tree_sha": "88868fc8ffe13f1ca4c2008ffbac228d7c98e7bd"
+    }
+  ]
+}
